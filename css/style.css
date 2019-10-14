@@ -1,0 +1,41 @@
+*{
+
+}
+
+body{
+
+}
+
+/* ------ Aquí inicia o header -------*/
+
+.menu{
+    background: #FFD54F;
+}
+
+.logo-header .logo-mato{
+    width: 40%;
+}
+
+
+.logo-header .logo-logotipo{
+    width: 40%;
+}
+
+nav a{
+    color: #005662;
+}
+
+nav a:hover{
+    background: #005662;
+    color: #fff;
+}
+
+nav .btn-dark{
+    background:#005662;
+    border: none;
+}
+
+nav .btn-dark:hover{
+    background: #FFD54F;
+    color: black;
+}
