@@ -1,4 +1,5 @@
-No header.php, mudei para <header class="container-fluid"> pq se não não fica ocupando toda a extensão horizontal da página. Diminui o tamanho do logo do header para 30%.
+arrumei btn central, coloquei link cards, acrescentei parte de apoie
+css - acrescentei padrão ancora 
 
 "Amarelo
 Light: #FFFF81

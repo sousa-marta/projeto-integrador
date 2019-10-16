@@ -22,7 +22,7 @@
     <section class="home-summary">
       <div class="container">
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet aspernatur illo ipsum natus mollitia quae, labore, consequatur nemo aliquid, molestias tenetur eum consectetur quaerat expedita rerum quia voluptates repellat suscipit!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet aspernatur illo ipsum natus mollitia quae, labore, consequatur nemo aliquid, molestias tenetur eum consectetur quaerat expedita rerum quia voluptates repellat suscipit!</p>
-        <a href="#" class="btn btn-primary">Saiba Mais</a>
+        <a href="#" class="btn home-btn-trq">Saiba Mais</a>
       </div>
     </section>
 
@@ -30,13 +30,15 @@
     <section class="container">
       <div class="row justify-content-around align-itens-center py-5">
         <article class="col-md-4">
-          <div class="home-card">
-            <img src="img/home-card-whom.png" alt="" class="home-card-img">
-            <div class="card-body">
-              <h4 class="card-title">Para quem é o projeto</h4>
-              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem similique dicta a voluptatem est reprehenderit accusantium, recusandae cupiditate sunt eveniet eum magnam distinctio voluptate ducimus voluptates laudantium tempore temporibus mollitia.</p>
+          <a href="#">
+            <div class="home-card">
+              <img src="img/home-card-whom.png" alt="" class="home-card-img">
+              <div class="card-body">
+                <h4 class="card-title">Para quem é o projeto</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem similique dicta a voluptatem est reprehenderit accusantium, recusandae cupiditate sunt eveniet eum magnam distinctio voluptate ducimus voluptates laudantium tempore temporibus mollitia.</p>
+              </div>
             </div>
-          </div>
+          </a>
         </article>
         <article class="col-md-4">
           <div class="home-card">
@@ -57,13 +59,20 @@
           </div>
         </article>
       </div>
+    </section>
 
-      <!-- Banner Chamada Apoiadores -->
-      
-
+    <!-- Banner Chamada Apoiadores -->
+    <section class="home-banner-apoie d-flex align-items-center">
+      <div class="container">
+        <div class="row justify-content-around align-items-center">
+          <h4 class="col-md-4">Ajude-nos a ir mais longe</h4>
+          <a href="#" class="col-md-3 btn home-btn-trq">Seja Patrocinador</a>
+          <a href="#" class="col-md-3 btn home-btn-trq">Seja Voluntário</a>
+        </div>
+      </div>
     </section>
   </main>
-
+  
   <!-- <?php include_once("footer.php") ?> -->
 </body>
 </html>
