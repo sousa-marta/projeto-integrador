@@ -1,4 +1,4 @@
-<header class="container">
+<header class="container-fluid">
     <div class="row">
         <div class="col-12 menu">
             <div class="row">
