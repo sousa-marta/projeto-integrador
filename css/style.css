@@ -3,7 +3,7 @@
 }
 
 body{
-
+    font-family: 'Lato', sans-serif;
 }
 
 /* ------ Aquí inicia o header -------*/
@@ -13,12 +13,11 @@ body{
 }
 
 .logo-header .logo-mato{
-    width: 40%;
+    width: 30%;
 }
 
-
 .logo-header .logo-logotipo{
-    width: 40%;
+    width: 30%;
 }
 
 nav a{
@@ -39,3 +38,43 @@ nav .btn-dark:hover{
     background: #FFD54F;
     color: black;
 }
+
+
+/* Início Configurações Página HOME */
+
+.home-banner {
+    background-image: url('../img/home-banner.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    color: white;
+    text-transform: uppercase;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+}
+
+.home-summary {
+    height: 60vh;
+    display:flex;
+    line-height: 3rem;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: #FFFF81;
+
+}
+
+.home-card {
+    text-align: center;
+}
+
+.home-card-img {
+    height: 50%;
+    width: 50%;
+    border-radius: 50%;
+}
+
+
+/* Fim Configurações Página HOME */
