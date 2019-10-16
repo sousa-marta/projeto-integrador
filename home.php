@@ -73,6 +73,8 @@
     </section>
   </main>
   
-  <!-- <?php include_once("footer.php") ?> -->
+  <!-- Footer -->
+  <?php include_once("footer.php") ?>
+
 </body>
 </html>

@@ -50,7 +50,6 @@ nav .btn-dark:hover{
 
 
 /* Início Configurações Página HOME */
-
 .home-banner {
     background-image: url('../img/home-banner.jpg');
     background-size: cover;
@@ -101,5 +100,26 @@ nav .btn-dark:hover{
     background: #FFD54F;
     height: 8vh;
 }
-
 /* Fim Configurações Página HOME */
+
+
+
+/* Início Configurações FOOTER */
+footer {
+    background:#616161;
+}
+
+footer img {
+    width: 50%;
+}
+
+footer a {
+    color:white;
+}
+
+footer a:hover {
+    color:#005662;
+    background: none;
+}
+
+/* Fim Configurações FOOTER */
