@@ -1,0 +1,11 @@
+No header.php, mudei para <header class="container-fluid"> pq se não não fica ocupando toda a extensão horizontal da página. Diminui o tamanho do logo do header para 30%.
+
+"Amarelo
+Light: #FFFF81
+Medium: #FFD54F
+Dark: #C8A415
+
+Turquesa
+Light: #4fb3bf
+Medium: #00838F
+Dark: #005662"
