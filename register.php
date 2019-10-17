@@ -53,6 +53,7 @@ $countries = ["Afeganistão","África do Sul","Akrotiri","Albânia","Alemanha","
           for ($i = 1; $i < count($countries);$i++) {
             foreach ($countries as $country) {
               echo "<option value='$country'>$country</option>";
+              $i++;
             }
           }
           ?>
