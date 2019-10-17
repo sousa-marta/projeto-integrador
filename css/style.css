@@ -125,3 +125,10 @@ card {
   background-color: #4FB3BF;
 }
 /* Fim página login */
+
+/* Início página Esqueceu a senha? */
+.btn-redefine-color {
+  background-color: #005662;
+  color: #FFF;
+}
+/* Fim página Esqueceu a senha? */
