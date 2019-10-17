@@ -1,3 +1,9 @@
+<?php 
+
+$subjects = ["Apoio","Cadastro","Cursos","Doação","Voluntariado","Outros"];
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -22,17 +28,37 @@
   <main class="container-fluid remove-padding">
     <h1 class="contact-bg d-flex justify-content-center align-items-center">Contato</h1>
     <div id="remove-margin" class="row align-self-center justify-content-center">
-    <form action="" method="post" class="card p-5">
+    <form action="" method="post" class="card m-5 p-5 col-lg-6 different-form-border">
+      <p class="text-center">Caso não encontre a resposta para a sua pergunta abaixo, não hesite em nos contatar usando o formulário ou diretamente pelo e-mail: <a class="contact-email" href="mailto:">contato@oppy.com.br</a></p>
+      <div class="col-lg-8 align-self-center">
       <div class="form-group">
-        <label for="userEmail">E-mail</label>
-        <input type="text" class="form-control" name="userEmail" id="userEmail" required>
+        <label for="contactName">Nome</label>
+        <input type="text" class="form-control" name="contactName" id="contactName" placeholder="Nome" required>
       </div>
       <div class="form-group">
-        <label for="userPassword">Senha</label>
-        <input type="password" class="form-control" name="userPassword" id="userPassword" required>
+        <label for="contactEmail">E-mail</label>
+        <input type="text" class="form-control" name="contactEmail" id="contactEmail" placeholder="E-mail" required>
       </div>
-      <button type="submit" class="btn btn-color col-12">Entrar</button>
-      <p class="text-center mt-2"><a href="#">Esqueceu sua senha?</a></p>
+      <label for="contactSubject">Assunto</label>
+      <div class="form-group">
+        <select class="col-lg-12" name="contactSubject" id="contactSubject">
+          <option value="">Selecione o assunto</option>
+          <?php
+          for ($i = 1; $i < count($subjects); $i++) {
+            foreach ($subjects as $subject) {
+              echo "<option value='$subject'>$subject</option>";
+              $i++;
+            }
+          }
+          ?>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="userPassword">Mensagem</label>
+        <textarea class="form-control" id="contactMessage" rows="3"></textarea>
+      </div>
+      <button type="submit" class="btn btn-color">Enviar</button>
+      </div>
     </form>
     </div>
   </main>

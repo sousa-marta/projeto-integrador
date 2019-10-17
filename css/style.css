@@ -152,4 +152,22 @@ card {
   font-weight: bold;
   width: 100%;
 }
+
+.contact-email {
+  color: #005662;
+  font-weight: bold;
+}
+
+.contact-email:hover, .contact-email:focus {
+  text-decoration: none;
+  color: #005662;
+}
+
+.different-form-border {
+  border: 3px dashed #4FB3BF;
+}
+
+label {
+  font-weight: bold;
+}
 /* Fim página Contato */
