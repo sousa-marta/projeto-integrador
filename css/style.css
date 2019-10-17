@@ -17,6 +17,7 @@ Dark: #005662
 
 body{
   font-family: 'Lato', sans-serif;
+  color: #47525E;
 }
 
 /* ------ Aquí inicia o header -------*/
@@ -170,4 +171,30 @@ card {
 label {
   font-weight: bold;
 }
+
+.questions-title-bg {
+  background-color: #005662;
+  height: 150px;
+  color: #FFF;
+  font-size: 3em;
+  font-weight: bold;
+  width: 100%;
+}
+
+.questions-bg {
+  background-color: #EBF0F7;
+}
+
+.questions-subject {
+  color: #4FB3BF;
+}
+
+.plus-sign {
+  width: 20px;
+}
+
+.questions-color {
+  color: #47525E;
+}
+
 /* Fim página Contato */
