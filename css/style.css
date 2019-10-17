@@ -1,41 +1,127 @@
+/*Paleta de Cores
+Amarelo
+Light: #FFFF81
+Medium: #FFD54F
+Dark: #C8A415
+
+Turquesa
+Light: #4fb3bf
+Medium: #00838F
+Dark: #005662
+*/
+
 *{
 
 }
 
 body{
-
+  font-family: 'Lato', sans-serif;
 }
 
 /* ------ Aquí inicia o header -------*/
 
 .menu{
-    background: #FFD54F;
+  background: #FFD54F;
 }
 
 .logo-header .logo-mato{
-    width: 40%;
+  width: 40%;
 }
 
 
 .logo-header .logo-logotipo{
-    width: 40%;
+  width: 55%;
+  height: 45%
 }
 
 nav a{
-    color: #005662;
+  color: #47525E;
+  font-size: 1.2em;
+  font-weight: 700;
 }
 
-nav a:hover{
-    background: #005662;
-    color: #fff;
+nav a:hover, nav a:focus{
+  background: #4FB3BF;
+  color: #fff;
 }
 
-nav .btn-dark{
-    background:#005662;
-    border: none;
+nav #register-link {
+  color: #005662;
 }
 
-nav .btn-dark:hover{
-    background: #FFD54F;
-    color: black;
+nav #register-link:hover {
+  background: none;
 }
+
+nav .btn{
+  color: #FFF;
+  background:#005662;
+  border: none;
+}
+
+nav .btn:hover, nav .btn:focus{
+  background: #4FB3BF;
+  color: black;
+}
+
+/* Início breadcrumb */
+.breadcrumb {
+  border-radius: 0;
+}
+
+nav .breadcrumb-item-link {
+  font-size: 1em;
+}
+
+nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
+  background: #4FB3BF;
+  text-decoration: none;
+}
+/* Fim breadcrumb */
+
+/* Início página login */
+.btn-color {
+  background-color: #47525E;
+  color: #FFF;
+}
+
+card {
+  border: #47525E;
+}
+
+.login-indicator {
+  background-color: #FFD54F;
+  color: #47525E;
+  margin: 0;
+}
+
+.triangle-isosceles {
+  position: relative;
+  padding: 15px;
+  color: #000;
+  background: #f3961c;
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#FFD54F), to(#f3961c));
+  background: -moz-linear-gradient(#FFD54F, #f3961c);
+  background: -o-linear-gradient(#FFD54F, #f3961c);
+  background: linear-gradient(#FFD54F, #f3961c);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+
+.triangle-isosceles:after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 20px;
+  border-width: 15px 15px 0;
+  border-style: solid;
+  border-color: #f3961c transparent;
+  display: block;
+  width: 0;
+}
+
+.btn-register {
+  background-color: #4FB3BF;
+}
+/* Fim página login */
