@@ -15,18 +15,23 @@
   <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
       <li class="breadcrumb-item"><a class="breadcrumb-item-link" href="#">Home</a></li>
-      <li class="breadcrumb-item active" aria-current="page">Esqueceu a senha?</li>
+      <li class="breadcrumb-item active" aria-current="page">Cadastra-se</li>
     </ol>
   </nav>
   
   <main class="d-flex justify-content-center align-items-center p-2">
-    <form action="" method="post" class="card p-5 col-lg-3 text-center">
-      <h4>Esqueceu sua senha?</h4>
-      <p>Informe seu e-mail e enviaremos para você as instruções para redefinir sua senha</p>
-      <div class="form-group p-2">
-        <input type="text" class="form-control" name="userEmail" id="userEmail" placeholder="E-mail" required>
+    <form action="" method="post" class="card p-5 col-lg-4">
+      <h3>É uma alegria poder ajudar você!</h3>
+      <p>Crie uma nova conta informando os dados abaixo</p>
+      <div class="form-group">
+        <label for="userEmail">Nome completo</label>
+        <input type="text" class="form-control" name="username" id="username" placeholder="Nome completo" required>
       </div>
-      <button type="submit" class="btn btn-redefine-color align-self-center">Redefinir</button>
+      <div class="form-group">
+        <label for="userEmail">E-mail</label>
+        <input type="email" class="form-control" name="userEmail" id="userEmail" placeholder="E-mail" required>
+      </div>
+      <button type="submit" class="btn btn-redefine-color align-self-center">Criar conta gratuitamente</button>
     </form>
   </main>
 </body>
