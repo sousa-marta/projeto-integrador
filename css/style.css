@@ -11,7 +11,8 @@ Dark: #005662
 */
 
 *{
-
+  margin: 0;
+  padding: 0;
 }
 
 body{
@@ -132,3 +133,23 @@ card {
   color: #FFF;
 }
 /* Fim página Esqueceu a senha? */
+
+/* Início página Contato */
+.remove-padding {
+  padding: 0;
+}
+
+#remove-margin {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.contact-bg {
+  background-color: #4FB3BF;
+  height: 250px;
+  color: #FFF;
+  font-size: 4em;
+  font-weight: bold;
+  width: 100%;
+}
+/* Fim página Contato */
