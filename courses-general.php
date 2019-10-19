@@ -33,8 +33,8 @@
       <div class="col-md-9 order-2">
 
         <!-- Campo Pesquisa por Curso -->
-        <section class="courses-g-search">
-          <h2>Pesquise por Curso</h2>
+        <section class="courses-g-search border-bottom">
+          <h2 class="my-3">Pesquise por Curso</h2>
           <form action="" class="form-inline">
             <div class="form-group mx-3">
               <label for="searchCourse"></label>
@@ -45,10 +45,39 @@
         </section>
         
         <!-- Categorias de Cursos Imagens -->
-        <section class="row">
-          <div>
-    
+        <section class="row justify-content-center my-4">
+          <div class="col-md-5">
+            <div class="courses-g-cards my-4">
+              <h4 class="card-title text-center py-2">Idiomas</h4>
+              <img src="img/courses-g-languages.jpg" alt="página de livro aberta com poema" class="card-img-bottom">
+            </div>
           </div>
+          <div class="col-md-5">
+            <div class="courses-g-cards my-4">
+              <h4 class="card-title text-center py-2">Saúde</h4>
+              <img src="img/courses-g-health.jpg" alt="página de livro aberta com poema" class="card-img-bottom">
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="courses-g-cards my-4">
+              <h4 class="card-title text-center py-2">Beleza</h4>
+              <img src="img/courses-g-beauty.jpg" alt="página de livro aberta com poema" class="card-img-bottom">
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="courses-g-cards my-4">
+              <h4 class="card-title text-center py-2">Programação</h4>
+              <img src="img/courses-g-programming.jpg" alt="página de livro aberta com poema" class="card-img-bottom">
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="courses-g-cards my-4">
+              <h4 class="card-title text-center py-2">Direção</h4>
+              <img src="img/courses-g-car.jpg" alt="página de livro aberta com poema" class="card-img-bottom">
+            </div>
+          </div>
+          
+          
         </section>
       </div>
 
@@ -73,6 +102,12 @@
             <li>Manicure</li>
             <li>Cabelereira</li>
             <li>Esteticista</li>
+          </ul>
+          <h4>Programação</h3>
+          <ul>
+            <li>Front-end</li>
+            <li>Back-end</li>
+            <li>Python</li>
           </ul>
           <h4>Direção</h3>
           <ul>

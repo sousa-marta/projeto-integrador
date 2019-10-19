@@ -142,11 +142,9 @@ nav .btn-dark:hover{
 
 
 /* Início Configurações CURSOS-GERAL */
-
 .courses-g-banner {
     background: #005662;
     color:white;
-    font-family: 'Baloo', cursive;
     height: 50vh;
 }
 
@@ -155,11 +153,21 @@ nav .btn-dark:hover{
 }
 
 .courses-g-search {
+    background-color: #BDBDBD;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    height: 20vh;
+    height: 30vh;
+}
+
+.courses-g-cards {
+    width: 80%;
+    text-transform: uppercase;
+}
+
+.courses-g-cards img{
+    border-radius: 15px;
 }
 
 
