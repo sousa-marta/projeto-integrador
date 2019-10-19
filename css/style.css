@@ -141,6 +141,31 @@ nav .btn-dark:hover{
 /* Fim Configurações Página HOME */
 
 
+/* Início Configurações CURSOS-GERAL */
+
+.courses-g-banner {
+    background: #005662;
+    color:white;
+    font-family: 'Baloo', cursive;
+    height: 50vh;
+}
+
+.courses-g-banner h1{
+    font-size:4rem;
+}
+
+
+
+
+.courses-g-aside {
+    background:#FFD54F;
+}
+
+
+
+/* Fim Configurações CURSOS-GERAL */
+
+
 
 /* Início Configurações FOOTER */
 footer {
