@@ -23,30 +23,64 @@
   </nav>
 
   <main class="container-fluid">
-    <!-- Banner -->
     <div class="row">
+      <!-- Banner -->
       <section class="courses-g-banner col-md-12 d-flex justify-content-center align-items-center">
         <h1>Cursos</h1>
       </section>
-    </div>
-    
-    <!-- Conteúdo Central da Página -->
-    <div class="row">
-      <section class=" col-md-9">
-      </section>
-    </div>
+ 
+      <!-- Conteúdo Central da Página -->
+      <div class="col-md-9 order-2">
 
-    <!-- Barra de Navegação Lateral -->
-    <div class="row">
-      <aside class="courses-g-aside col-md-3">
-        <h2>Categorias</h2>
-        <h4>Idiomas</h3>
-        <ul>
-          <li>Portugês</li>
-          <li>Espanhol</li>
-          <li>Inglês</li>
-        </ul>
-      </aside>
+        <!-- Campo Pesquisa por Curso -->
+        <section class="courses-g-search">
+          <h2>Pesquise por Curso</h2>
+          <form action="" class="form-inline">
+            <div class="form-group mx-3">
+              <label for="searchCourse"></label>
+              <input class="form-control" type="text" name="" id="searchCourse" placeholder="Pesquise por curso">
+            </div>
+            <button type="submit" class="btn btn-light">Assinar</button>
+          </form>
+        </section>
+        
+        <!-- Categorias de Cursos Imagens -->
+        <section class="row">
+          <div>
+    
+          </div>
+        </section>
+      </div>
+
+      <!-- Barra de Navegação Lateral -->
+      <div class="col-md-3 order-1 ">
+        <aside class=" courses-g-aside ">
+          <h2>Categorias</h2>
+          <h4>Idiomas</h3>
+          <ul>
+            <li>Portugês</li>
+            <li>Espanhol</li>
+            <li>Inglês</li>
+          </ul>
+          <h4>Saúde</h3>
+          <ul>
+            <li>Cuidador de Idoso</li>
+            <li>Babá</li>
+            <li>Massagista</li>
+          </ul>
+          <h4>Beleza</h3>
+          <ul>
+            <li>Manicure</li>
+            <li>Cabelereira</li>
+            <li>Esteticista</li>
+          </ul>
+          <h4>Direção</h3>
+          <ul>
+            <li>Conhecimentos Teóricos</li>
+            <li>Reciclagem de Motorista</li>
+          </ul>
+        </aside>
+      </div>
     </div>
 
   </main>
