@@ -16,6 +16,7 @@ Dark: #005662
 
 body{
   font-family: 'Lato', sans-serif;
+  font-size: 16px;
 }
 
 /* ------ Aquí inicia o header -------*/
@@ -132,3 +133,64 @@ card {
   color: #FFF;
 }
 /* Fim página Esqueceu a senha? */
+
+
+/* Inicio da página apoio psicológico */ 
+
+.btn-primary{
+  background: #005662;
+  border: none;
+  padding: 1.5vh 2vh;
+}
+
+.btn-primary:hover{
+  background: #4FB3BF;
+}
+
+.support-introduction {
+  align-items: center;
+  height: 50vh;
+  text-align: center;
+}
+
+.support-introduction-img img, .support-details-img img, .testimony-img img{
+  border-radius: 50%;
+  height: 50%;
+  width: 50%;
+}
+
+.support-introduction-text{
+  align-content: center;
+}
+
+.support-introduction-text h1{
+  justify-content: center;
+}
+
+.support-details{
+  background: #005662;
+  height: 50vh;
+}
+
+.support-metodology{
+  align-items: center;
+  color: #fff;
+  justify-content: center;
+  text-align: center;
+}
+
+.psycho-explanation{
+  height: 50vh;
+  justify-content: center;
+}
+
+.psycho-explanation h1, .psycho-explanation p{
+  padding-bottom: 5vh;
+  text-align: center;
+}
+
+.testimony{
+  height: 50vh;
+  background: #FFD54F;
+  text-align: center;
+}
