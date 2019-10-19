@@ -63,25 +63,63 @@ nav .btn-dark:hover{
     justify-content: center; 
 }
 
+.home-banner h1 {
+    font-size: 60px;
+    font-family: 'Baloo', cursive;
+}
+
 .home-summary {
-    height: 60vh;
+    height: 70vh;
     display:flex;
     line-height: 3rem;
     flex-direction: column;
     justify-content: center;
     text-align: center;
     background-color: #FFFF81;
+}
 
+.home-summary p {
+    font-size: 1.8em;
 }
 
 .home-card {
     text-align: center;
 }
 
-.home-card-img {
+/* .home-card-img {
     height: 50%;
     width: 50%;
     border-radius: 50%;
+} */
+
+.home-card .card-img {
+    background-position: center;
+    background-size: 97%;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.home-card .card-whom {
+    background-image: url('../img/home-card-whom.png');
+    background-size: 93%;
+}
+
+.home-card .card-courses {
+    background-image: url('../img/home-card-glasses.png');
+    background-size: 97%;
+}
+
+.home-card .card-help {
+    background-image: url('../img/home-card-help.png');
+}
+
+.home-card .card-title {
+    font-weight: bold;
+}
+
+.home-card .card-text {
+    text-align: justify;
 }
 
 
@@ -98,7 +136,7 @@ nav .btn-dark:hover{
 
 .home-banner-apoie {
     background: #FFD54F;
-    height: 8vh;
+    height: 10vh;
 }
 /* Fim Configurações Página HOME */
 
