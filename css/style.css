@@ -132,3 +132,52 @@ card {
   color: #FFF;
 }
 /* Fim página Esqueceu a senha? */
+
+
+/* Início página course-detail */
+
+.course-detail-background-light-green{
+  background-color: #00838F;
+}
+
+.course-detail-background-dark-yellow{
+  background-color: #C8A415;
+}
+
+.course-detail-background-dark-gray{
+  background-color: #595f66;
+}
+
+.course-detail-font-white-all *{
+  color: white;
+}
+
+/* .course-detail-font-dark-gray{
+  color: #343a40;
+} */
+
+.course-detail-font-size-15{
+  font-size: 1.5em;
+}
+
+.course-detail-font-size-20{
+  font-size: 2em;
+}
+
+.course-detail-font-size-30{
+  font-size: 3em;
+}
+
+
+.course-detail-btn-inscrever{
+  color: #FFF;
+  background:#005662;
+  border: none;
+}
+
+.course-detail-btn-inscrever:hover{
+  background: #4FB3BF;
+  color: black;
+}
+
+/* Fim página course-detail */
