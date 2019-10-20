@@ -1,6 +1,7 @@
 <!--
 TODO:
 - Os <b></b>, bolt, não está funcionado, parece que é por causa de uma declaração do css em body
+- Falta incluir o footer também.
 
 -->
 
