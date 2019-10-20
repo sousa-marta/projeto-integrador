@@ -24,7 +24,7 @@
     <!-- INFORMAÇÕES -->
     <section class="user-page-background-dark-green">
       <div class="container d-flex justify-content-around p-3 align-items-center">
-        <img src="img/foto.jpeg" alt="foto usuário" class="figure-img img-fluid rounded user-page-photo">
+        <img src="img/foto.png" alt="foto usuário" class="figure-img img-fluid rounded user-page-photo">
         <div>
           <h1 class="user-page-font-white user-page-font-size-30">Alex Watanabe</h1>
           <p class="user-page-font-white"><b>País receptor:</b> Brasil</p>
