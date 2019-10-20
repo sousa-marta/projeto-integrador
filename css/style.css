@@ -136,8 +136,20 @@ card {
 
 /* Início página course-detail */
 
+.course-detail-text-important{
+  font-weight: 900;
+}
+
 .course-detail-background-light-green{
   background-color: #00838F;
+}
+
+.course-detail-background-dark-green{
+  background-color: #005662;
+}
+
+.course-detail-background-yellow{
+  background: #FFD54F;
 }
 
 .course-detail-background-dark-yellow{
@@ -146,6 +158,10 @@ card {
 
 .course-detail-background-dark-gray{
   background-color: #595f66;
+}
+
+.course-detail-background-light-gray{
+  background-color: #e4e4e4;
 }
 
 .course-detail-font-white-all *{
@@ -169,15 +185,31 @@ card {
 }
 
 
-.course-detail-btn-inscrever{
+/* .course-detail-btn-signup{
   color: #FFF;
   background:#005662;
   border: none;
 }
 
-.course-detail-btn-inscrever:hover{
+.course-detail-btn-signup:hover{
   background: #4FB3BF;
   color: black;
+} */
+
+.course-detail-logo-img{
+  height: 200px;
+}
+
+.course-detail-logo-img-alike{
+  height: 100px;
+  margin: 20px;
+}
+
+.course-detail-card{
+  background-color: white;
+  position: relative;
+  top: -40px;
+  border: 1px solid #005662;
 }
 
 /* Fim página course-detail */
