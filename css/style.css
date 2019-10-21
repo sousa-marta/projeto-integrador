@@ -406,7 +406,28 @@ label {
 
 /* Fim Configurações CURSOS-GERAL */
 
+/* Início Contribuição Pessoas */
+.banner-contribution-people{
+  align-items: center;
+  background: #005662;
+  color: #fff;
+  display: flex;
+  height: 50vh;
+  justify-content: center;
+}
 
+.text-contribution-people{
+  display: flex;
+  align-items: center;
+  background: #FFD54F;
+  height: 50vh;
+  justify-content: center;
+}
+
+.contribution-people-content{
+  text-align: center;
+}
+/* Fim Contribuição Pessoas */
 
 /* Início Configurações FOOTER */
 footer {
@@ -425,5 +446,4 @@ footer a:hover {
     color:#005662;
     background: none;
 }
-
 /* Fim Configurações FOOTER */
