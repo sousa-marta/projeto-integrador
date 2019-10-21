@@ -145,30 +145,45 @@ card {
 
 /* Início página user-page */
 
-/* .course-detail-background-light-green{
-  background-color: #00838F;
-} */
+.user-page-background-light-green{
+  background-color: #8bcdd3;
+}
 
 .user-page-background-dark-green{
   background-color: #005662;
 }
 
-/*.course-detail-background-yellow{
-  background: #FFD54F;
+.user-page-card{
+  padding: 0;
+  border: 2px solid #005662;
 }
 
-.course-detail-background-dark-yellow{
+.user-page-card-item{
+  background-color: #e4e4e4;
+  position: relative;
+}
+
+
+.user-page-background-dark-yellow{
   background-color: #C8A415;
 }
 
+/*
 .course-detail-background-dark-gray{
   background-color: #595f66;
 }
+*/
 
-.course-detail-background-light-gray{
+.user-page-background-light-gray{
   background-color: #e4e4e4;
 }
-*/
+
+.user-page-icon{
+  position: absolute;
+  top: -8px;
+  right: -7px;
+}
+
 .user-page-font-white{
   color: white;
 } 
