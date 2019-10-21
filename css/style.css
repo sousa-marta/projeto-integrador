@@ -11,12 +11,14 @@ Dark: #005662
 */
 
 *{
-
+  margin: 0;
+  padding: 0;
 }
 
 body{
   font-family: 'Lato', sans-serif;
   font-size: 16px;
+  color: #47525E;
 }
 
 /* ------ Aquí inicia o header -------*/
@@ -134,7 +136,6 @@ card {
 }
 /* Fim página Esqueceu a senha? */
 
-
 /* Inicio da página apoio psicológico */ 
 
 .btn-primary{
@@ -194,3 +195,69 @@ card {
   background: #FFD54F;
   text-align: center;
 }
+
+/* Fim da página apoio psicológico */ 
+
+/* Início página Contato */
+.remove-padding {
+  padding: 0;
+}
+
+#remove-margin {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.contact-bg {
+  background-color: #4FB3BF;
+  height: 250px;
+  color: #FFF;
+  font-size: 4em;
+  font-weight: bold;
+  width: 100%;
+}
+
+.contact-email {
+  color: #005662;
+  font-weight: bold;
+}
+
+.contact-email:hover, .contact-email:focus {
+  text-decoration: none;
+  color: #005662;
+}
+
+.different-form-border {
+  border: 3px dashed #4FB3BF;
+}
+
+label {
+  font-weight: bold;
+}
+
+.questions-title-bg {
+  background-color: #005662;
+  height: 150px;
+  color: #FFF;
+  font-size: 3em;
+  font-weight: bold;
+  width: 100%;
+}
+
+.questions-bg {
+  background-color: #EBF0F7;
+}
+
+.questions-subject {
+  color: #4FB3BF;
+}
+
+.plus-sign {
+  width: 20px;
+}
+
+.questions-color {
+  color: #47525E;
+}
+
+/* Fim página Contato */
