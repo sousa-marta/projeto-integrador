@@ -1,7 +1,6 @@
 <!--
 TODO:
 - Os <b></b>, bolt, não está funcionado, parece que é por causa de uma declaração do css em body
-- Falta incluir o footer também.
 -->
 
 <!DOCTYPE html>
@@ -20,12 +19,11 @@ TODO:
   <!-- CABEÇALHO -->
   <?php include_once('header.php'); ?>
   <nav aria-label="breadcrumb">
-    <ol class="breadcrumb">
+    <ol class="breadcrumb m-0">
       <li class="breadcrumb-item"><a class="breadcrumb-item-link" href="#">Home</a></li>
       <li class="breadcrumb-item active" aria-current="page">Página do Usuário</li>
     </ol>
   </nav>
-  <!-- FIXME: Tirar esse espeço que ten entre eles -->
   
   <main>
 
@@ -133,8 +131,8 @@ TODO:
 
   </main>
 
-
   <!-- FOOTER -->
+  <?php include_once("footer.php"); ?>
   
 </body>
 </html>

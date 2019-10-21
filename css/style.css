@@ -145,6 +145,10 @@ card {
 
 /* Início página user-page */
 
+.user-page-font-bold{
+  font-weight: bold;
+}
+
 .user-page-background-light-green{
   background-color: #8bcdd3;
 }
@@ -163,16 +167,9 @@ card {
   position: relative;
 }
 
-
 .user-page-background-dark-yellow{
   background-color: #C8A415;
 }
-
-/*
-.course-detail-background-dark-gray{
-  background-color: #595f66;
-}
-*/
 
 .user-page-background-light-gray{
   background-color: #e4e4e4;
@@ -188,48 +185,14 @@ card {
   color: white;
 } 
 
-/* .course-detail-font-dark-gray{
-  color: #343a40;
-} */
-
-/* .course-detail-font-size-15{
-  font-size: 1.5em;
-}
-
-.course-detail-font-size-20{
-  font-size: 2em;
-}
-*/
 .user-page-font-size-30{
   font-size: 3em;
 }
 
-
-/* .course-detail-btn-signup{
-  color: #FFF;
-  background:#005662;
-  border: none;
-}
-.course-detail-btn-signup:hover{
-  background: #4FB3BF;
-  color: black;
-} */
-
-/* .course-detail-logo-img{
-  height: 200px;
-}
-*/
 .user-page-photo{
   height: 400px;
   border: 2px solid white;
 }
-/*
-.course-detail-card{
-  background-color: white;
-  position: relative;
-  top: -40px;
-  border: 1px solid #005662;
-} */
 
 /* Fim página user-page */
 /* Inicio da página apoio psicológico */ 
