@@ -166,8 +166,10 @@ nav .btn-dark:hover{
     text-transform: uppercase;
 }
 
-.courses-g-cards img{
-    border-radius: 15px;
+.courses-g-cards h4 {
+    color: white;
+    background-color:#00838F;
+    margin:0;
 }
 
 .courses-g-aside {
