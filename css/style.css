@@ -429,6 +429,31 @@ label {
 }
 /* Fim Contribuição Pessoas */
 
+/* Início Contribua*/
+.contribua-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #00838F;
+  color: #FFF;
+  height: 40vh;
+  text-transform: uppercase;
+}
+
+.contribua-background {
+  height: 60vh;
+  background-color: #FFD54F;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Fim do Contribua */
+
+/* Início do Apoio */
+
+
+
 /* Início Configurações FOOTER */
 footer {
     background:#616161;
