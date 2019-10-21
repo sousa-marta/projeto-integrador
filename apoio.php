@@ -20,6 +20,54 @@
         <li class="breadcrumb-item active" aria-current="page">Apoio</li>
         </ol>
     </nav>
+
+    <!-- Banner -->
+
+    <section class="container apoio-banner">
+        <div class="row align-items-center">
+            <div class="col-lg-6 col-md-6 banner-img">
+                <img class="img-fluid" src="img/banner-apoio.svg" alt="apoio">
+            </div>
+            <div class="col-lg-6 col-md-6 banner-img">
+                <h1 class="h1-apoio">Ajudando você a começar</h1>
+            </div>
+        </div>
+    </section>
+
+    <!-- Corpo -->
+
+    <section class="background-apoio">
+      <div class="row justify-content-around align-itens-center py-5">
+        <article class="col-md-3">
+            <div class="home-card d-flex flex-column align-items-center">
+                <div class="card-img card-juridico"></div>
+                <div class="card-body">
+                <h4 class="h4-apoio card-title">Assistencia Juridica</h4>
+                <p class="p-apoio card-text justify-content-center">Enim nisi officia incididunt sint qui. Lorem cupidatat voluptate incididunt et cupidatat laboris dolore eiusmod ad et veniam in magna. Labore irure excepteur occaecat labore ut exercitation adipisicing. Duis amet veniam voluptate irure est. Aliquip eu fugiat tempor dolor ut minim adipisicing qui dolor eiusmod anim do proident et. Ut ea sunt esse ea incididunt excepteur exercitation Lorem irure elit. Magna excepteur duis in laborum nulla culpa velit quis.</p>
+                </div>
+            </div>
+        </article>
+        <article class="col-md-3">
+          <div class="home-card d-flex flex-column align-items-center">
+            <div class="card-img card-psicologico"></div>
+            <div class="card-body">
+              <h4 class="h4-apoio card-title">Acompanhamento Psicológico</h4>
+              <p class="p-apoio card-text">Enim nisi officia incididunt sint qui. Lorem cupidatat voluptate incididunt et cupidatat laboris dolore eiusmod ad et veniam in magna. Labore irure excepteur occaecat labore ut exercitation adipisicing. Duis amet veniam voluptate irure est. Aliquip eu fugiat tempor dolor ut minim adipisicing qui dolor eiusmod anim do proident et. Ut ea sunt esse ea incididunt excepteur exercitation Lorem irure elit. Magna excepteur duis in laborum nulla culpa velit quis.</p>
+            </div>
+          </div>
+        </article>
+        <article class="col-md-3">
+          <div class="home-card d-flex flex-column align-items-center">
+            <div class="card-img card-trabalho"></div>
+            <div class="card-body">
+              <h4 class="h4-apoio card-title">Apoio Novo Trabalho</h4>
+              <p class="p-apoio card-text">Enim nisi officia incididunt sint qui. Lorem cupidatat voluptate incididunt et cupidatat laboris dolore eiusmod ad et veniam in magna. Labore irure excepteur occaecat labore ut exercitation adipisicing. Duis amet veniam voluptate irure est. Aliquip eu fugiat tempor dolor ut minim adipisicing qui dolor eiusmod anim do proident et. Ut ea sunt esse ea incididunt excepteur exercitation Lorem irure elit. Magna excepteur duis in laborum nulla culpa velit quis.</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
     
+<?php include_once('footer.php') ?>
 </body>
 </html>
