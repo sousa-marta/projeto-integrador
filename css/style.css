@@ -369,6 +369,44 @@ label {
 /* Fim Configurações Página HOME */
 
 
+/* Início Configurações CURSOS-GERAL */
+.courses-g-banner {
+    background: #005662;
+    color:white;
+    height: 50vh;
+}
+
+.courses-g-banner h1{
+    font-size:4rem;
+}
+
+.courses-g-search {
+    background-color: #BDBDBD;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 30vh;
+}
+
+.courses-g-cards {
+    width: 80%;
+    text-transform: uppercase;
+}
+
+.courses-g-cards h4 {
+    color: white;
+    background-color:#00838F;
+    margin:0;
+}
+
+.courses-g-aside {
+    background:#FFD54F;
+}
+
+/* Fim Configurações CURSOS-GERAL */
+
+
 
 /* Início Configurações FOOTER */
 footer {
