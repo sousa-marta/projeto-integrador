@@ -1,15 +1,3 @@
-/*Paleta de Cores
-Amarelo
-Light: #FFFF81
-Medium: #FFD54F
-Dark: #C8A415
-
-Turquesa
-Light: #4fb3bf
-Medium: #00838F
-Dark: #005662
-*/
-
 *{
   margin: 0;
   padding: 0;
@@ -22,10 +10,10 @@ body{
 }
 
 /* Verificar se vai funcionar bem pra todo mundo, pois foi inserção da branch home */
-a {
+/*a {
     text-decoration: none;
     color:#000;
-}
+}*/
 
 a:hover {
     text-decoration: none;

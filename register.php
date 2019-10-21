@@ -63,5 +63,8 @@ $countries = ["Afeganistão","África do Sul","Akrotiri","Albânia","Alemanha","
       <p class="text-center mt-3">Ao criar minha conta, eu aceito os Termos de Uso e a Política de Privacidade da Oppy.</p>
     </form>
   </main>
+  <footer>
+    <?php include_once('footer.php'); ?>
+  </footer>
 </body>
 </html>

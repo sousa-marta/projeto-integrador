@@ -64,7 +64,7 @@ $subjects = ["Apoio","Cadastro","Cursos","Doação","Voluntariado","Outros"];
   
     <h1 class="questions-title-bg d-flex justify-content-center align-items-center m-0">Dúvidas</h1>
     
-    <div class="accordion pl-3 pr-3 questions-bg" id="questionsTopicOne">
+    <div class="accordion pl-3 pr-3 pb-5 questions-bg" id="questionsTopicOne">
       <h2 class="pt-5 questions-subject">Tópico 1</h2>
     <div class="card">
       <div class="card-header border-0 d-flex justify-content-between align-items-center" id="questionOne">
@@ -107,6 +107,9 @@ $subjects = ["Apoio","Cadastro","Cursos","Doação","Voluntariado","Outros"];
     </div>
     </div>
   </main>
+  <footer>
+    <?php include_once('footer.php'); ?>
+  </footer>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 
