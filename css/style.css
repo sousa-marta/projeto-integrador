@@ -1,22 +1,29 @@
-/*Paleta de Cores
-Amarelo
-Light: #FFFF81
-Medium: #FFD54F
-Dark: #C8A415
-
-Turquesa
-Light: #4fb3bf
-Medium: #00838F
-Dark: #005662
-*/
-
 *{
-
+  margin: 0;
+  padding: 0;
 }
 
 body{
   font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  color: #47525E;
 }
+
+/* Verificar se vai funcionar bem pra todo mundo, pois foi inserção da branch home */
+/*a {
+    text-decoration: none;
+    color:#000;
+}*/
+
+a:hover {
+    text-decoration: none;
+}
+
+nav .btn-dark:hover{
+    background: #FFD54F;
+    color: black;
+}
+/* Fim da verificação */
 
 /* ------ Aquí inicia o header -------*/
 
@@ -27,7 +34,6 @@ body{
 .logo-header .logo-mato{
   width: 40%;
 }
-
 
 .logo-header .logo-logotipo{
   width: 55%;
@@ -63,6 +69,7 @@ nav .btn:hover, nav .btn:focus{
   background: #4FB3BF;
   color: black;
 }
+/* Fim do header */
 
 /* Início breadcrumb */
 .breadcrumb {
@@ -213,3 +220,298 @@ card {
 }
 
 /* Fim página course-detail */
+/* Inicio da página apoio psicológico */ 
+
+.btn-primary{
+  background: #005662;
+  border: none;
+  padding: 1.5vh 2vh;
+}
+
+.btn-primary:hover{
+  background: #4FB3BF;
+}
+
+.support-introduction {
+  align-items: center;
+  height: 50vh;
+  text-align: center;
+}
+
+.support-introduction-img img, .support-details-img img, .testimony-img img{
+  border-radius: 50%;
+  height: 50%;
+  width: 50%;
+}
+
+.support-introduction-text{
+  align-content: center;
+}
+
+.support-introduction-text h1{
+  justify-content: center;
+}
+
+.support-details{
+  background: #005662;
+  height: 50vh;
+}
+
+.support-metodology{
+  align-items: center;
+  color: #fff;
+  justify-content: center;
+  text-align: center;
+}
+
+.psycho-explanation{
+  height: 50vh;
+  justify-content: center;
+}
+
+.psycho-explanation h1, .psycho-explanation p{
+  padding-bottom: 5vh;
+  text-align: center;
+}
+
+.testimony{
+  height: 50vh;
+  background: #FFD54F;
+  text-align: center;
+}
+
+/* Fim da página apoio psicológico */ 
+
+/* Início página Contato */
+.remove-padding {
+  padding: 0;
+}
+
+#remove-margin {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.contact-bg {
+  background-color: #4FB3BF;
+  height: 250px;
+  color: #FFF;
+  font-size: 4em;
+  font-weight: bold;
+  width: 100%;
+}
+
+.contact-email {
+  color: #005662;
+  font-weight: bold;
+}
+
+.contact-email:hover, .contact-email:focus {
+  text-decoration: none;
+  color: #005662;
+}
+
+.different-form-border {
+  border: 3px dashed #4FB3BF;
+}
+
+label {
+  font-weight: bold;
+}
+
+.questions-title-bg {
+  background-color: #005662;
+  height: 150px;
+  color: #FFF;
+  font-size: 3em;
+  font-weight: bold;
+  width: 100%;
+}
+
+.questions-bg {
+  background-color: #EBF0F7;
+}
+
+.questions-subject {
+  color: #4FB3BF;
+}
+
+.plus-sign {
+  width: 20px;
+}
+
+.questions-color {
+  color: #47525E;
+}
+/* Fim página Contato */
+
+/* Início Configurações Página HOME */
+.home-banner {
+    background-image: url('../img/home-banner.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    color: white;
+    text-transform: uppercase;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+}
+
+.home-banner h1 {
+    font-size: 60px;
+    font-family: 'Baloo', cursive;
+}
+
+.home-summary {
+    height: 70vh;
+    display:flex;
+    line-height: 3rem;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: #FFFF81;
+}
+
+.home-summary p {
+    font-size: 1.8em;
+}
+
+.home-card {
+    text-align: center;
+}
+
+/* .home-card-img {
+    height: 50%;
+    width: 50%;
+    border-radius: 50%;
+} */
+
+.home-card .card-img {
+    background-position: center;
+    background-size: 97%;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.home-card .card-whom {
+    background-image: url('../img/home-card-whom.png');
+    background-size: 93%;
+}
+
+.home-card .card-courses {
+    background-image: url('../img/home-card-glasses.png');
+    background-size: 97%;
+}
+
+.home-card .card-help {
+    background-image: url('../img/home-card-help.png');
+}
+
+.home-card .card-title {
+    font-weight: bold;
+}
+
+.home-card .card-text {
+    text-align: justify;
+}
+
+
+.home-btn-trq {
+    background:#005662;
+    color:white;
+    text-transform: uppercase;
+  }
+
+.home-btn-trq:hover {
+    background:#4fb3bf;
+}
+
+
+.home-banner-apoie {
+    background: #FFD54F;
+    height: 10vh;
+}
+/* Fim Configurações Página HOME */
+
+
+/* Início Configurações CURSOS-GERAL */
+.courses-g-banner {
+    background: #005662;
+    color:white;
+    height: 50vh;
+}
+
+.courses-g-banner h1{
+    font-size:4rem;
+}
+
+.courses-g-search {
+    background-color: #BDBDBD;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 30vh;
+}
+
+.courses-g-cards {
+    width: 80%;
+    text-transform: uppercase;
+}
+
+.courses-g-cards h4 {
+    color: white;
+    background-color:#00838F;
+    margin:0;
+}
+
+.courses-g-aside {
+    background:#FFD54F;
+}
+
+/* Fim Configurações CURSOS-GERAL */
+
+/* Início Contribuição Pessoas */
+.banner-contribution-people{
+  align-items: center;
+  background: #005662;
+  color: #fff;
+  display: flex;
+  height: 50vh;
+  justify-content: center;
+}
+
+.text-contribution-people{
+  display: flex;
+  align-items: center;
+  background: #FFD54F;
+  height: 50vh;
+  justify-content: center;
+}
+
+.contribution-people-content{
+  text-align: center;
+}
+/* Fim Contribuição Pessoas */
+
+/* Início Configurações FOOTER */
+footer {
+    background:#616161;
+}
+
+footer img {
+    width: 50%;
+}
+
+footer a {
+    color:white;
+}
+
+footer a:hover {
+    color:#005662;
+    background: none;
+}
+/* Fim Configurações FOOTER */

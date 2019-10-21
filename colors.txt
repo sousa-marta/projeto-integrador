@@ -1,0 +1,14 @@
+"Amarelo
+Light: #FFFF81
+Medium: #FFD54F
+Dark: #C8A415
+
+Turquesa
+Light: #4fb3bf
+Medium: #00838F
+Dark: #005662"
+
+Cinza:
+light:#BDBDBD
+medium: #9E9E9E
+Dark:#616161
