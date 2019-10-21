@@ -141,6 +141,60 @@ card {
 /* Fim página Esqueceu a senha? */
 
 
+
+
+/* Início página user-page */
+
+.user-page-font-bold{
+  font-weight: bold;
+}
+
+.user-page-background-light-green{
+  background-color: #8bcdd3;
+}
+
+.user-page-background-dark-green{
+  background-color: #005662;
+}
+
+.user-page-card{
+  padding: 0;
+  border: 2px solid #005662;
+}
+
+.user-page-card-item{
+  background-color: #e4e4e4;
+  position: relative;
+}
+
+.user-page-background-dark-yellow{
+  background-color: #C8A415;
+}
+
+.user-page-background-light-gray{
+  background-color: #e4e4e4;
+}
+
+.user-page-icon{
+  position: absolute;
+  top: -8px;
+  right: -7px;
+}
+
+.user-page-font-white{
+  color: white;
+} 
+
+.user-page-font-size-30{
+  font-size: 3em;
+}
+
+.user-page-photo{
+  height: 400px;
+  border: 2px solid white;
+}
+
+/* Fim página user-page */
 /* Início página course-detail */
 
 .course-detail-text-important{
