@@ -9,7 +9,7 @@
               <nav class="col-10 d-flex align-items-center justify-content-end">
                   <ul class="nav">
                       <li class="nav-item">
-                          <a class="nav-link active" href="#">Home</a>
+                          <a class="nav-link active" href="home.php">Home</a>
                       </li> 
                       <li class="nav-item">
                           <a class="nav-link active" href="#">Quem somos</a>
@@ -27,10 +27,10 @@
                           <a class="nav-link active" href="#">Contribua</a>
                       </li>
                       <li class="nav-item">
-                          <a class="nav-link active" href="#">Contato</a>
+                          <a class="nav-link active" href="contact.php">Contato</a>
                       </li>
                       <li class="nav-item">
-                          <a id="register-link" class="nav-link" href="#">Cadastre-se</a>
+                          <a id="register-link" class="nav-link" href="register.php">Cadastre-se</a>
                       </li>
                       <input class="btn" type="submit" value="Login">
                   </ul>
