@@ -67,6 +67,20 @@
         </article>
       </div>
     </section>
+
+    <!-- Texto Exemplo -->
+    <section class="texto-apoio">
+        <div class="container">
+            <h3> Texto Exemplo </h3>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque sapiente quae aut ipsum commodi placeat nam? Voluptate neque sit impedit. Similique explicabo excepturi hic pariatur rerum! Adipisci nulla necessitatibus laboriosam. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur aspernatur delectus non eos porro, officia natus corporis animi ut cumque velit dolorem quam! Obcaecati quisquam veniam soluta quos accusantium autem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui magni pariatur id, totam temporibus fugiat eveniet esse! Quo perferendis, nobis, et, nemo incidunt molestiae nulla fugit voluptas tenetur ab quisquam. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus cumque ab tenetur, distinctio sit aliquam facilis quisquam exercitationem ipsam minus animi laudantium veritatis nihil, perspiciatis nesciunt nemo, totam quo ducimus?</p>
+        </div>
+    </section>
+
+    <!-- Banner que se move -->
+
+    <section>
+
+    </section>
     
 <?php include_once('footer.php') ?>
 </body>

@@ -491,6 +491,23 @@ label {
   background-color: #FFF;
 }
 
+.texto-apoio {
+  height: 70vh;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.texto-apoio h3 {
+  font-size: 3em;
+}
+
+.texto-apoio p {
+  font-size: 1.5em;
+  font-style: italic;
+}
+
 /* fim do apoio */
 
 
