@@ -19,15 +19,18 @@
     </ol>
   </nav>
   
-  <main class="d-flex justify-content-center align-items-center p-2">
+  <main class="d-flex justify-content-center align-items-center p-2 mb-4">
     <form action="" method="post" class="card p-5 col-lg-3 text-center">
       <h4>Esqueceu sua senha?</h4>
       <p>Informe seu e-mail e enviaremos para você as instruções para redefinir sua senha</p>
-      <div class="form-group">
-        <input type="email" class="mt-2 form-control" name="userEmail" id="userEmail" placeholder="E-mail" required>
+      <div class="form-group p-2">
+        <input type="text" class="form-control" name="userEmail" id="userEmail" placeholder="E-mail" required>
       </div>
-      <button type="submit" class="mt-3 btn btn-redefine-color align-self-center">Redefinir</button>
+      <button type="submit" class="btn btn-redefine-color align-self-center">Redefinir</button>
     </form>
   </main>
+  <footer>
+    <?php include_once('footer.php'); ?>
+  </footer>
 </body>
 </html>

@@ -19,7 +19,7 @@
     </ol>
   </nav>
   
-  <main class="d-flex justify-content-center align-items-center p-2">
+  <main class="d-flex justify-content-center align-items-center p-2 mb-3">
     <form action="" method="post" class="card p-5">
       <div class="row mb-5">
         <p class="login-indicator rounded p-2 mr-2 triangle-isosceles">Faça login na sua conta</p>
@@ -27,15 +27,18 @@
       </div>
       <div class="form-group">
         <label for="userEmail">E-mail</label>
-        <input type="email" class="form-control" name="userEmail" id="userEmail" required>
+        <input type="text" class="form-control" name="userEmail" id="userEmail" required>
       </div>
       <div class="form-group">
         <label for="userPassword">Senha</label>
         <input type="password" class="form-control" name="userPassword" id="userPassword" required>
       </div>
       <button type="submit" class="btn btn-color col-12">Entrar</button>
-      <p class="text-center mt-2"><a href="#">Esqueceu sua senha?</a></p>
+      <p class="text-center mt-2"><a href="forgotten-password.php">Esqueceu sua senha?</a></p>
     </form>
   </main>
+  <footer>
+    <?php include_once('footer.php'); ?>
+  </footer>
 </body>
 </html>
