@@ -497,6 +497,24 @@ label {
 }
 /* Fim Contribuição Pessoas */
 
+/* Início página Quem Somos */
+.about-banner {
+  background-image: url('../img/about-banner.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 79vh;
+  color: white;
+  display:flex;
+  justify-content: flex-start;
+}
+
+.about-banner p {
+  font-size: 1em;
+  text-align: center;
+  
+}
+
+
 /* Início Configurações FOOTER */
 footer {
     background:#616161;
