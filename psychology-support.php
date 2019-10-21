@@ -53,10 +53,7 @@
         <button class="btn btn-primary">Contate-nos</button>
       </div>
     </div>
-    
   </main>
-  <footer>
-
-  </footer>
+  <?php include_once('footer.php') ?> 
 </body>
 </html>
