@@ -21,15 +21,13 @@ TODO:
   <!-- CABEÇALHO -->
   <?php include_once('header.php'); ?>
   <nav aria-label="breadcrumb">
-    <ol class="breadcrumb">
+    <ol class="breadcrumb m-0">
       <li class="breadcrumb-item"><a class="breadcrumb-item-link" href="#">Home</a></li>
       <li class="breadcrumb-item"><a class="breadcrumb-item-link" href="#">Cursos</a></li>
       <li class="breadcrumb-item active" aria-current="page">Hotelaria</li>
     </ol>
   </nav>
-  <!-- FIXME: Tirar esse espeço que ten entre eles -->
 
-  <!-- FIXME: Os <b></b>, bolt, não está funcionado, parece que é por causa de uma declaração do css em body -->
   <main>
 
     <!-- INFORMAÇÕES GERAIS -->
@@ -58,7 +56,7 @@ TODO:
               <div class="col-6"><p><b>Vagas:</b> 50</p></div>
             </div>
             <div>
-              <div class="row d-flex text-center"> <!-- cronograma-data -->
+              <div class="row d-flex text-center mt-3"> <!-- cronograma-data -->
                 <div class="col-3 border course-detail-background-dark-gray"><p class="m-0">01/10</div>
                 <div class="col-3 border course-detail-background-dark-gray"><p class="m-0">31/10</div>
                 <div class="col-3 border course-detail-background-dark-yellow"><p class="m-0">10/11</div>
@@ -71,7 +69,7 @@ TODO:
                 <div class="col-3"><p>Início Curso</p></div>
               </div>
             </div>
-            <div class="row pb-5"> <!-- botão escrever -->
+            <div class="row pb-5 mt-3"> <!-- botão escrever -->
               <button type="button" class="col-12 btn btn-dark">Inscrever</button>
             </div>
           </div>
@@ -87,7 +85,7 @@ TODO:
     </section>
     
     <!-- INFORMAÇÕES DETALHADAS -->
-    <section class="container">
+    <section class="container mt-4 mb-5">
       <h1 class="pt-4 pb-2">Informações Sobre o Curso</h1>
       <p>Preparar profissionais para confeccionar e reparar móveis e objetos em madeira. Além disso você aprenderá a interpretar projetos e especificações em todo o seu processo fabril, através de plantas e especificações técnicas, operando equipamentos manuais e elétricos e observando as normas técnicas de segurança.</p>
       <p><b>Duração:</b> 2 semanas</p>
@@ -176,16 +174,12 @@ TODO:
         </div>
       </div>
       
-
-    </section>
-
-
-    
+    </section> 
 
   </main>
 
   <!-- FOOTER -->
-
+  <?php include_once("footer.php"); ?>
 
 </body>
 </html>

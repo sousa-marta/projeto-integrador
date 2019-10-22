@@ -141,6 +141,60 @@ card {
 /* Fim página Esqueceu a senha? */
 
 
+
+
+/* Início página user-page */
+
+.user-page-font-bold{
+  font-weight: bold;
+}
+
+.user-page-background-light-green{
+  background-color: #8bcdd3;
+}
+
+.user-page-background-dark-green{
+  background-color: #005662;
+}
+
+.user-page-card{
+  padding: 0;
+  border: 2px solid #005662;
+}
+
+.user-page-card-item{
+  background-color: #e4e4e4;
+  position: relative;
+}
+
+.user-page-background-dark-yellow{
+  background-color: #C8A415;
+}
+
+.user-page-background-light-gray{
+  background-color: #e4e4e4;
+}
+
+.user-page-icon{
+  position: absolute;
+  top: -8px;
+  right: -7px;
+}
+
+.user-page-font-white{
+  color: white;
+} 
+
+.user-page-font-size-30{
+  font-size: 3em;
+}
+
+.user-page-photo{
+  height: 400px;
+  border: 2px solid white;
+}
+
+/* Fim página user-page */
 /* Início página course-detail */
 
 .course-detail-text-important{
@@ -590,6 +644,86 @@ label {
 }
 /* Fim página Quem Somos */
 
+/* Início Contribua*/
+.contribua-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #00838F;
+  color: #FFF;
+  height: 40vh;
+  text-transform: uppercase;
+}
+
+.contribua-background {
+  height: 60vh;
+  background-color: #FFD54F;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Fim do Contribua */
+
+/* Início do Apoio */
+
+.h1-apoio {
+  font-size: 4.5rem;
+  color: #005662;
+}
+
+.background-apoio {
+  background-color: #00838F;
+  height: 30%;
+}
+
+.p-apoio {
+ color: #FFF;
+}
+
+.h4-apoio {
+  color: #000;
+}
+
+.card-juridico {
+  background-image: url(../img/juridico-apoio.svg);
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-color: #FFF;
+}
+
+.card-psicologico {
+  background-image: url(../img/psicologico-apoio.svg);
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-color: #FFF;
+}
+
+.card-trabalho {
+  background-image: url(../img/trabalho-apoio.svg);
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-color: #FFF;
+}
+
+.texto-apoio {
+  height: 70vh;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.texto-apoio h3 {
+  font-size: 3em;
+}
+
+.texto-apoio p {
+  font-size: 1.5em;
+  font-style: italic;
+}
+
+/* fim do apoio */
 
 /* Início Configurações FOOTER */
 footer {
