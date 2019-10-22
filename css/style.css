@@ -503,16 +503,40 @@ label {
   background-size: cover;
   background-position: center;
   height: 79vh;
-  color: white;
-  display:flex;
-  justify-content: flex-start;
+  text-align: center;
+  color: whitesmoke;
+  justify-content: center;
+  border-bottom: 1px solid grey;
 }
 
-.about-banner p {
-  font-size: 1em;
-  text-align: center;
-  
+
+.quotation {
+  font-size: 1.2em;
+  padding: 0 20vw;
+  line-height: 1.7em;
 }
+
+.quotation::before {
+  content: open-quote;
+  font-size: 1.5em;
+}
+
+.quotation::after {
+  content: close-quote;
+  font-size: 1.5em;
+}
+
+.quotation-author {
+  font-size: 1em;
+  font-style: italic;
+}
+
+.quotation-author::before {
+  content: "\2014 \00A0";
+}
+
+
+/* Fim página Quem Somos */
 
 
 /* Início Configurações FOOTER */
