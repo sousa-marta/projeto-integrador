@@ -47,16 +47,84 @@
       </div>
     </section>
 
+    <!-- Como surgiu a Oppy? -->
     <section class="container-fluid">
       <div class="row oppy-info">
-        <img src="img/creativity.svg" alt="" class="col-lg-4">
-        <div class="col-lg-6 oppy-text">
+        <img src="img/creativity.svg" alt="" class="col-lg-2">
+        <div class="col-lg-6">
           <h2 class="text-uppercase">Como surgiu a oppy?</h2>
           <p>Criada em 2019 com o objetivo de integrar milhões de emigrantes do mundo a seus países receptores, facilitando a aquisição de habilidades técnicas que lhes permitam entrar no mercado de trabalho e melhorar suas condições de vida. Além disso, conta com o apoio de empresas e recrutadores para conectar essa mão-de-obra qualificada de modo a garantir que essas pessoas alcancem seus objetivos.</p>
         </div>
       </div>
     </section>
+
+    <!-- Nossa Proposta -->
+    <section class="container-fluid">
+      <div class="row oppy-proposal">
+        <div class="col-lg-6">
+          <h2 class="text-uppercase">Nossa Proposta</h2>
+          <p>Inserir os imigrantes (homens e mulheres) no mercado de trabalho do país destino, gerando valor agregado aos seus currículos, por meio do uso de ferramentas digitais que lhes permitam adquirir habilidades técnicas, e sem desconsiderar suas próprias bagagens pessoais e profissionais.</p>
+        </div>
+        <img src="img/population-system.svg" alt="" class="col-lg-2">
+      </div>
+    </section>
   </main>
+
+  <!-- Nossos Valores -->
+  <section class="container-fluid text-center border-config p-4">
+      <h2 class="text-uppercase pb-3">Nossos Valores</h2>
+      <div class="row">
+        <div class="col-lg-4 statistics-block">
+          <img src="img/hands.svg" alt="" class="statistics-images">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius praesentium amet soluta assumenda tenetur facere nemo, quod repudiandae excepturi esse quos, veritatis quia illum vero, nostrum ab ipsa totam neque?
+        </div>
+        <div class="col-lg-4 statistics-block">
+          <img src="img/reliability.svg" alt="" class="statistics-images">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius praesentium amet soluta assumenda tenetur facere nemo, quod repudiandae excepturi esse quos, veritatis quia illum vero, nostrum ab ipsa totam neque?
+        </div>
+        <div class="col-lg-4 statistics-block">
+          <img src="img/discussion.svg" alt="" class="statistics-images">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius praesentium amet soluta assumenda tenetur facere nemo, quod repudiandae excepturi esse quos, veritatis quia illum vero, nostrum ab ipsa totam neque?
+        </div>
+      </div>
+    </section>
+
+    <!-- O time -->
+    <section class="container-fluid text-center border-config p-4">
+      <h2 class="text-uppercase pb-3">As pessoas por trás disso tudo</h2>
+      <div class="row">
+        <div class="col-lg-2 statistics-block">
+          <img src="img/boy.svg" alt="" class="statistics-images">
+          <h5>Alex</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius praesentium amet soluta assumenda tenetur facere nemo, quod repudiandae excepturi esse quos, veritatis quia illum vero, nostrum ab ipsa totam neque?</p>
+        </div>
+        <div class="col-lg-2 statistics-block">
+          <img src="img/girl.svg" alt="" class="statistics-images">
+          <h5>Lislaine</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius praesentium amet soluta assumenda tenetur facere nemo, quod repudiandae excepturi esse quos, veritatis quia illum vero, nostrum ab ipsa totam neque?</p>
+        </div>
+        <div class="col-lg-2 statistics-block">
+          <img src="img/girl.svg" alt="" class="statistics-images">
+          <h5>Marta</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius praesentium amet soluta assumenda tenetur facere nemo, quod repudiandae excepturi esse quos, veritatis quia illum vero, nostrum ab ipsa totam neque?</p>
+        </div>
+        <div class="col-lg-2 statistics-block">
+          <img src="img/boy.svg" alt="" class="statistics-images">
+          <h5>Ricardo</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius praesentium amet soluta assumenda tenetur facere nemo, quod repudiandae excepturi esse quos, veritatis quia illum vero, nostrum ab ipsa totam neque?</p>
+        </div>
+        <div class="col-lg-2 statistics-block">
+          <img src="img/boy.svg" alt="" class="statistics-images">
+          <h5>Victor</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius praesentium amet soluta assumenda tenetur facere nemo, quod repudiandae excepturi esse quos, veritatis quia illum vero, nostrum ab ipsa totam neque?</p>
+        </div>
+        <div class="col-lg-2 statistics-block">
+          <img src="img/boy.svg" alt="" class="statistics-images">
+          <h5>Yuri</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius praesentium amet soluta assumenda tenetur facere nemo, quod repudiandae excepturi esse quos, veritatis quia illum vero, nostrum ab ipsa totam neque?</p>
+        </div>
+      </div>
+    </section>
   <footer>
     <?php include_once('footer.php'); ?>
   </footer>

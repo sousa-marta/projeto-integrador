@@ -564,8 +564,20 @@ label {
   height: 230px;
 }
 
-.oppy-text {
-  width: 100px;
+.oppy-proposal {
+  padding: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+.oppy-proposal h2 {
+  color: #F95F62;
+  padding-bottom: 20px;
+  font-weight: bold;
+}
+
+.oppy-proposal img {
+  height: 230px;
 }
 /* Fim página Quem Somos */
 
