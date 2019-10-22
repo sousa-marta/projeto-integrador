@@ -508,7 +508,6 @@ label {
   justify-content: center;
 }
 
-
 .quotation {
   font-size: 1.2em;
   padding: 0 20vw;
@@ -540,12 +539,33 @@ label {
 
 .statistics-block {
   display: flex;
- flex-direction: column;
- align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .statistics-images {
   width: 50px;
+}
+
+.oppy-info {
+  background-color: #EBF0F7;
+  padding: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+.oppy-info h2 {
+  color: #4FB3BF;
+  padding-bottom: 20px;
+  font-weight: bold;
+}
+
+.oppy-info img {
+  height: 230px;
+}
+
+.oppy-text {
+  width: 100px;
 }
 /* Fim página Quem Somos */
 

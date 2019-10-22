@@ -46,6 +46,16 @@
         </div>
       </div>
     </section>
+
+    <section class="container-fluid">
+      <div class="row oppy-info">
+        <img src="img/creativity.svg" alt="" class="col-lg-4">
+        <div class="col-lg-6 oppy-text">
+          <h2 class="text-uppercase">Como surgiu a oppy?</h2>
+          <p>Criada em 2019 com o objetivo de integrar milhões de emigrantes do mundo a seus países receptores, facilitando a aquisição de habilidades técnicas que lhes permitam entrar no mercado de trabalho e melhorar suas condições de vida. Além disso, conta com o apoio de empresas e recrutadores para conectar essa mão-de-obra qualificada de modo a garantir que essas pessoas alcancem seus objetivos.</p>
+        </div>
+      </div>
+    </section>
   </main>
   <footer>
     <?php include_once('footer.php'); ?>
