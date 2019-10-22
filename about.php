@@ -23,22 +23,26 @@
     <!-- Banner com citação -->
     <section class="about-banner">
       <blockquote>
-        <p class="mb-0 mt-4 quotation">Para a maioria dos imigrantes, mudar para um país novo é um ato de fé. Mesmo que você tenha ouvido histórias sobre segurança, oportunidade e prosperidade,  ainda assim é um grande salto se afastar de sua língua, de seu povo e de seu país. De suas raízes.</p>
+        <p class="mb-0 quotation">Para a maioria dos imigrantes, mudar para um país novo é um ato de fé. Mesmo que você tenha ouvido histórias sobre segurança, oportunidade e prosperidade,  ainda assim é um grande salto se afastar de sua língua, de seu povo e de seu país. De suas raízes.</p>
         <p class="mt-0 quotation-author">Nicola Yoon, escritora jamaicana-americana</p>
       </blockquote>
     </section>
 
     <!-- Dados Estatísticos -->
-    <section class="container border-bottom">
+    <section class="container-fluid text-center border-config p-4">
+      <h2 class="text-uppercase pb-3">Dados estatísticos</h2>
       <div class="row">
-        <div class="col-lg-4">
-          Dado 1
+        <div class="col-lg-4 statistics-block">
+          <img src="img/diagram.svg" alt="" class="statistics-images">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius praesentium amet soluta assumenda tenetur facere nemo, quod repudiandae excepturi esse quos, veritatis quia illum vero, nostrum ab ipsa totam neque?
         </div>
-        <div class="col-lg-4">
-          Dado 2
+        <div class="col-lg-4 statistics-block">
+          <img src="img/portfolio.svg" alt="" class="statistics-images">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius praesentium amet soluta assumenda tenetur facere nemo, quod repudiandae excepturi esse quos, veritatis quia illum vero, nostrum ab ipsa totam neque?
         </div>
-        <div class="col-lg-4">
-          Dado 3
+        <div class="col-lg-4 statistics-block">
+          <img src="img/collaboration.svg" alt="" class="statistics-images">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius praesentium amet soluta assumenda tenetur facere nemo, quod repudiandae excepturi esse quos, veritatis quia illum vero, nostrum ab ipsa totam neque?
         </div>
       </div>
     </section>

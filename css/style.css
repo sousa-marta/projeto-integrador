@@ -506,7 +506,6 @@ label {
   text-align: center;
   color: whitesmoke;
   justify-content: center;
-  border-bottom: 1px solid grey;
 }
 
 
@@ -535,7 +534,19 @@ label {
   content: "\2014 \00A0";
 }
 
+.border-config {
+  border: 1px solid grey;
+}
 
+.statistics-block {
+  display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+
+.statistics-images {
+  width: 50px;
+}
 /* Fim página Quem Somos */
 
 
