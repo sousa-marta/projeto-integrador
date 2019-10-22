@@ -21,10 +21,10 @@
                           <a class="nav-link active" href="#">Oportunidades</a>
                       </li>
                       <li class="nav-item">
-                          <a class="nav-link active" href="#">Apoio</a>
+                          <a class="nav-link active" href="apoio.php">Apoio</a>
                       </li>
                       <li class="nav-item">
-                          <a class="nav-link active" href="#">Contribua</a>
+                          <a class="nav-link active" href="contribua.php">Contribua</a>
                       </li>
                       <li class="nav-item">
                           <a class="nav-link active" href="contact.php">Contato</a>

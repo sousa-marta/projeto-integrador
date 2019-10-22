@@ -551,6 +551,88 @@ label {
 }
 /* Fim Contribuição Pessoas */
 
+/* Início Contribua*/
+.contribua-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #00838F;
+  color: #FFF;
+  height: 40vh;
+  text-transform: uppercase;
+}
+
+.contribua-background {
+  height: 60vh;
+  background-color: #FFD54F;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Fim do Contribua */
+
+/* Início do Apoio */
+
+.h1-apoio {
+  font-size: 4.5rem;
+  color: #005662;
+}
+
+.background-apoio {
+  background-color: #00838F;
+  height: 30%;
+}
+
+.p-apoio {
+ color: #FFF;
+}
+
+.h4-apoio {
+  color: #000;
+}
+
+.card-juridico {
+  background-image: url(../img/juridico-apoio.svg);
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-color: #FFF;
+}
+
+.card-psicologico {
+  background-image: url(../img/psicologico-apoio.svg);
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-color: #FFF;
+}
+
+.card-trabalho {
+  background-image: url(../img/trabalho-apoio.svg);
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-color: #FFF;
+}
+
+.texto-apoio {
+  height: 70vh;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.texto-apoio h3 {
+  font-size: 3em;
+}
+
+.texto-apoio p {
+  font-size: 1.5em;
+  font-style: italic;
+}
+
+/* fim do apoio */
+
+
 /* Início Configurações FOOTER */
 footer {
     background:#616161;
