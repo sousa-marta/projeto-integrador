@@ -71,27 +71,31 @@
   </main>
 
   <!-- Nossos Valores -->
-  <section class="container-fluid text-center border-config p-4">
-      <h2 class="text-uppercase pb-3">Nossos Valores</h2>
-      <div class="row">
+  <section class="container-fluid oppy-values text-center">
+    <h2 class="text-uppercase">Nossos Valores</h2>
+    <div class="row">
         <div class="col-lg-4 statistics-block">
           <img src="img/hands.svg" alt="" class="statistics-images">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius praesentium amet soluta assumenda tenetur facere nemo, quod repudiandae excepturi esse quos, veritatis quia illum vero, nostrum ab ipsa totam neque?
+          <h5>Solidariedade</h5>
+          <p>Acreditamos que dar oportunidades a essas pessoas auxilia na inserção delas na sociedade e cria um sentido mais amplo de comunidade.</p>
         </div>
         <div class="col-lg-4 statistics-block">
           <img src="img/reliability.svg" alt="" class="statistics-images">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius praesentium amet soluta assumenda tenetur facere nemo, quod repudiandae excepturi esse quos, veritatis quia illum vero, nostrum ab ipsa totam neque?
+          <h5>Integridade</h5>
+          <p>Trabalhamos com responsabilidade e comprometimento para cumprir cada um dos processos que permitem o crescimento de nossos beneficiários.</p>
         </div>
         <div class="col-lg-4 statistics-block">
           <img src="img/discussion.svg" alt="" class="statistics-images">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius praesentium amet soluta assumenda tenetur facere nemo, quod repudiandae excepturi esse quos, veritatis quia illum vero, nostrum ab ipsa totam neque?
+          <h5>Inovação</h5>
+          <p>Sabemos da importância de se manter atualizado nessa era digital e, por isso, buscamos oferecer as melhores ferramentas que auxiliem nessa adaptação e atualização pessoal.</p>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
     <!-- O time -->
-    <section class="container-fluid text-center border-config p-4">
-      <h2 class="text-uppercase pb-3">As pessoas por trás disso tudo</h2>
+    <section class="container-fluid text-center team-info">
+      <h2 class="text-uppercase">As pessoas por trás de tudo isso</h2>
       <div class="row">
         <div class="col-lg-2 statistics-block">
           <img src="img/boy.svg" alt="" class="statistics-images">

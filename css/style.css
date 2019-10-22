@@ -554,7 +554,7 @@ label {
   justify-content: center;
 }
 
-.oppy-info h2 {
+.oppy-info h2, .oppy-values h2 {
   color: #4FB3BF;
   padding-bottom: 20px;
   font-weight: bold;
@@ -570,7 +570,7 @@ label {
   justify-content: center;
 }
 
-.oppy-proposal h2 {
+.oppy-proposal h2, .team-info h2 {
   color: #F95F62;
   padding-bottom: 20px;
   font-weight: bold;
@@ -578,6 +578,15 @@ label {
 
 .oppy-proposal img {
   height: 230px;
+}
+
+.oppy-values {
+  background-color: #EBF0F7;
+  padding: 50px;
+}
+
+.team-info {
+  padding: 50px;
 }
 /* Fim página Quem Somos */
 
