@@ -34,15 +34,13 @@
     <section class="container">
       <div class="row justify-content-around align-itens-center py-5">
         <article class="col-md-4">
-          <a href="#">
-            <div class="home-card d-flex flex-column align-items-center">
-              <div class="card-img card-whom"></div>
-              <div class="card-body">
-                <h4 class="card-title">Para quem é o projeto</h4>
-                <p class="card-text">Para qualquer pessoa que deseja se integrar à comunidade de um novo país. Que busca obter informações dos passos para atingir esse objetivo, que precisa de apoio técnico, psicológico e jurídico para tal.</p>
-              </div>
+          <div class="home-card d-flex flex-column align-items-center">
+            <div class="card-img card-whom"></div>
+            <div class="card-body">
+              <h4 class="card-title">Para quem é o projeto</h4>
+              <p class="card-text">Para qualquer pessoa que deseja se integrar à comunidade de um novo país. Que busca obter informações dos passos para atingir esse objetivo, que precisa de apoio técnico, psicológico e jurídico para tal.</p>
             </div>
-          </a>
+          </div>
         </article>
         <article class="col-md-4">
           <div class="home-card d-flex flex-column align-items-center">

@@ -551,6 +551,99 @@ label {
 }
 /* Fim Contribuição Pessoas */
 
+/* Início página Quem Somos */
+.about-banner {
+  background-image: url('../img/about-banner.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 79vh;
+  text-align: center;
+  color: whitesmoke;
+  justify-content: center;
+}
+
+.quotation {
+  font-size: 1.2em;
+  padding: 0 20vw;
+  line-height: 1.7em;
+}
+
+.quotation::before {
+  content: open-quote;
+  font-size: 1.5em;
+}
+
+.quotation::after {
+  content: close-quote;
+  font-size: 1.5em;
+}
+
+.quotation-author {
+  font-size: 1em;
+  font-style: italic;
+}
+
+.quotation-author::before {
+  content: "\2014 \00A0";
+}
+
+.border-config {
+  border: 1px solid grey;
+}
+
+.statistics-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.statistics-images {
+  width: 50px;
+}
+
+.oppy-info {
+  background-color: #EBF0F7;
+  padding: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+.oppy-info h2, .oppy-values h2 {
+  color: #4FB3BF;
+  padding-bottom: 20px;
+  font-weight: bold;
+}
+
+.oppy-info img {
+  height: 230px;
+}
+
+.oppy-proposal {
+  padding: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+.oppy-proposal h2, .team-info h2 {
+  color: #F95F62;
+  padding-bottom: 20px;
+  font-weight: bold;
+}
+
+.oppy-proposal img {
+  height: 230px;
+}
+
+.oppy-values {
+  background-color: #EBF0F7;
+  padding: 50px;
+}
+
+.team-info {
+  padding: 50px;
+}
+/* Fim página Quem Somos */
+
 /* Início Contribua*/
 .contribua-banner {
   display: flex;
@@ -631,7 +724,6 @@ label {
 }
 
 /* fim do apoio */
-
 
 /* Início Configurações FOOTER */
 footer {

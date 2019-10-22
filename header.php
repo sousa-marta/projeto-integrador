@@ -12,10 +12,10 @@
                           <a class="nav-link active" href="home.php">Home</a>
                       </li> 
                       <li class="nav-item">
-                          <a class="nav-link active" href="#">Quem somos</a>
+                          <a class="nav-link active" href="about.php">Quem somos</a>
                       </li>
                       <li class="nav-item">
-                          <a class="nav-link active" href="#">Cursos</a>
+                          <a class="nav-link active" href="courses-general.php">Cursos</a>
                       </li>
                       <li class="nav-item">
                           <a class="nav-link active" href="#">Oportunidades</a>
