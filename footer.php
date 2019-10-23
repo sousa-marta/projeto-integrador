@@ -8,25 +8,25 @@
         <nav class="col-md-5 text-left py-2">
           <ul class="nav flex-column" >
             <li >
-              <a class="nav-link" href="#">Home</a>
+              <a class="nav-link" href="index.php">Home</a>
             </li> 
             <li >
-              <a class="nav-link" href="#">Quem somos</a>
+              <a class="nav-link" href="about.php">Quem somos</a>
             </li>
             <li >
-              <a class="nav-link" href="#">Cursos</a>
+              <a class="nav-link" href="courses.php">Cursos</a>
             </li>
             <li >
-              <a class="nav-link" href="#">Oportunidades</a>
+              <a class="nav-link" href="opportunities.php">Oportunidades</a>
             </li>
             <li >
-              <a class="nav-link" href="#">Apoio</a>
+              <a class="nav-link" href="support.php">Apoio</a>
             </li>
             <li >
-              <a class="nav-link" href="#">Contribua</a>
+              <a class="nav-link" href="contribute.php">Contribua</a>
             </li>
             <li >
-              <a class="nav-link" href="#">Contato</a>
+              <a class="nav-link" href="contact.php">Contato</a>
             </li>
           </ul>
         </nav>

@@ -15,16 +15,16 @@
                           <a class="nav-link active" href="about.php">Quem somos</a>
                       </li>
                       <li class="nav-item">
-                          <a class="nav-link active" href="courses-general.php">Cursos</a>
+                          <a class="nav-link active" href="courses.php">Cursos</a>
                       </li>
                       <li class="nav-item">
                           <a class="nav-link active" href="opportunities.php">Oportunidades</a>
                       </li>
                       <li class="nav-item">
-                          <a class="nav-link active" href="apoio.php">Apoio</a>
+                          <a class="nav-link active" href="support.php">Apoio</a>
                       </li>
                       <li class="nav-item">
-                          <a class="nav-link active" href="contribua.php">Contribua</a>
+                          <a class="nav-link active" href="contribute.php">Contribua</a>
                       </li>
                       <li class="nav-item">
                           <a class="nav-link active" href="contact.php">Contato</a>
