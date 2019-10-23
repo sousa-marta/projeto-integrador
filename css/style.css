@@ -529,6 +529,31 @@ label {
 /* Fim Configurações CURSOS-GERAL */
 
 /* Início Contribuição Pessoas */
+.contribution-enterprise{
+  background: #005662;
+  color: #fff;
+  height: 50vh;
+}
+
+.contribution-enterprise-text{
+  background: #FFD54F;
+  height: 50vh;
+}
+
+.contribution-enterprise-text h1{
+  padding-top: 5vh;
+}
+
+.contribution-enterprise-content{
+  width: 50%;
+  text-align: center;
+  padding: 5vh;
+}
+
+#btn-conttribution{
+  margin-bottom: 5vh;
+}
+
 .banner-contribution-people{
   align-items: center;
   background: #005662;

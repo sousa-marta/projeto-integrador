@@ -15,17 +15,17 @@
   <?php include_once('header.php'); ?>
   <main class="container">
     <div class="col-12">
-      <div class="d-flex justify-content-center align-items-center" style="background: #005662; height: 50vh; color: #fff"> 
+      <div class="d-flex justify-content-center align-items-center contribution-enterprise"> 
         <h1>Apoio empresarial</h1>
       </div>
     </div>
     <div class="col-12">
-        <div class="d-flex flex-column justify-content-center align-items-center" style="background: #FFD54F; height: 50vh">
-          <h1 style="padding-top:5vh">Empresas que nos apoiam</h1>
-           <div style="width: 50%; text-align: center; padding: 5vh">
+        <div class="d-flex flex-column justify-content-center align-items-center contribution-enterprise-text">
+          <h1>Empresas que nos apoiam</h1>
+           <div class="contribution-enterprise-content">
              <p>Acreditamos que todos podemos contribuir com um grão de areia para mudar o mundo e a Responsabilidade Social Corporativa não escapa. Se você compartilha nossa visão, contribua conosco através do nosso programa de suporte corporativo.</p>
             </div>
-          <button class="btn btn-primary">Contate-nos</button>
+          <button class="btn btn-primary" id="btn-conttribution">Contate-nos</button>
         </div>
     </div>
   </main>
