@@ -9,7 +9,7 @@
               <nav class="col-10 d-flex align-items-center justify-content-end">
                   <ul class="nav">
                       <li class="nav-item">
-                          <a class="nav-link active" href="home.php">Home</a>
+                          <a class="nav-link active" href="index.php">Home</a>
                       </li> 
                       <li class="nav-item">
                           <a class="nav-link active" href="about.php">Quem somos</a>
@@ -18,7 +18,7 @@
                           <a class="nav-link active" href="courses-general.php">Cursos</a>
                       </li>
                       <li class="nav-item">
-                          <a class="nav-link active" href="#">Oportunidades</a>
+                          <a class="nav-link active" href="opportunities.php">Oportunidades</a>
                       </li>
                       <li class="nav-item">
                           <a class="nav-link active" href="apoio.php">Apoio</a>
