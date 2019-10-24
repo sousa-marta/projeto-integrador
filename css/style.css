@@ -1,79 +1,84 @@
-*{
+/* Início CONFIGURAÇÕES GERAIS  */
+* {
   margin: 0;
   padding: 0;
 }
 
-body{
+body {
   font-family: 'Lato', sans-serif;
   font-size: 16px;
   color: #47525E;
 }
 
-/* Verificar se vai funcionar bem pra todo mundo, pois foi inserção da branch home */
-/*a {
-    text-decoration: none;
-    color:#000;
-}*/
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
 
-a:hover {
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+a:hover, a:focus {
     text-decoration: none;
 }
 
-nav .btn-dark:hover{
+nav .btn-dark:hover, nav .btn-dark:focus {
     background: #FFD54F;
-    color: black;
+    color: #000;
 }
-/* Fim da verificação */
+/* Fim CONFIGURAÇÕES GERAIS  */
 
-/* ------ Aquí inicia o header -------*/
-
-.menu{
+/* Início HEADER */
+.menu {
   background: #FFD54F;
 }
 
-.logo-header .logo-mato{
+.logo-header .logo-mato {
   width: 40%;
 }
 
-.logo-header .logo-logotipo{
+.logo-header .logo-logotipo {
   width: 55%;
   height: 45%
 }
 
-nav a{
+nav a {
   color: #47525E;
   font-size: 1.2em;
   font-weight: 700;
 }
 
-nav a:hover, nav a:focus{
+nav a:hover, nav a:focus {
   background: #4FB3BF;
-  color: #fff;
+  color: #FFF;
 }
 
 nav #register-link {
   color: #005662;
 }
 
-nav #register-link:hover {
+nav #register-link:hover, nav #register-link:focus {
   background: none;
 }
 
-nav .btn{
+nav .btn {
   color: #FFF;
   background:#005662;
   border: none;
 }
 
-nav .btn:hover, nav .btn:focus{
+nav .btn:hover, nav .btn:focus {
   background: #4FB3BF;
-  color: black;
+  color: #000;
 }
-/* Fim do header */
+/* Fim HEADER */
 
-/* Início breadcrumb */
+/* Início BREADCRUMB */
 .breadcrumb {
   border-radius: 0;
+  margin-bottom: 0;
 }
 
 nav .breadcrumb-item-link {
@@ -84,499 +89,98 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
   background: #4FB3BF;
   text-decoration: none;
 }
-/* Fim breadcrumb */
+/* Fim BREADCRUMB */
 
-/* Início página login */
-.btn-color {
-  background-color: #47525E;
-  color: #FFF;
-}
-
-card {
-  border: #47525E;
-}
-
-.login-indicator {
-  background-color: #FFD54F;
-  color: #47525E;
-  margin: 0;
-}
-
-.triangle-isosceles {
-  position: relative;
-  padding: 15px;
-  color: #000;
-  background: #f3961c;
-  background: -webkit-gradient(linear, 0 0, 0 100%, from(#FFD54F), to(#f3961c));
-  background: -moz-linear-gradient(#FFD54F, #f3961c);
-  background: -o-linear-gradient(#FFD54F, #f3961c);
-  background: linear-gradient(#FFD54F, #f3961c);
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
-}
-
-.triangle-isosceles:after {
-  content: "";
-  position: absolute;
-  bottom: -15px;
-  left: 20px;
-  border-width: 15px 15px 0;
-  border-style: solid;
-  border-color: #f3961c transparent;
-  display: block;
-  width: 0;
-}
-
-.btn-register {
-  background-color: #4FB3BF;
-}
-/* Fim página login */
-
-/* Início página Esqueceu a senha? */
-.btn-redefine-color {
-  background-color: #005662;
-  color: #FFF;
-}
-/* Fim página Esqueceu a senha? */
-
-
-
-
-/* Início página user-page */
-
-.user-page-font-bold{
-  font-weight: bold;
-}
-
-.user-page-background-light-green{
-  background-color: #8bcdd3;
-}
-
-.user-page-background-dark-green{
-  background-color: #005662;
-}
-
-.user-page-card{
-  padding: 0;
-  border: 2px solid #005662;
-}
-
-.user-page-card-item{
-  background-color: #e4e4e4;
-  position: relative;
-}
-
-.user-page-background-dark-yellow{
-  background-color: #C8A415;
-}
-
-.user-page-background-light-gray{
-  background-color: #e4e4e4;
-}
-
-.user-page-icon{
-  position: absolute;
-  top: -8px;
-  right: -7px;
-}
-
-.user-page-font-white{
-  color: white;
-} 
-
-.user-page-font-size-30{
-  font-size: 3em;
-}
-
-.user-page-photo{
-  height: 400px;
-  border: 2px solid white;
-}
-
-/* Fim página user-page */
-/* Início página course-detail */
-
-.course-detail-text-important{
-  font-weight: 900;
-}
-
-.course-detail-background-light-green{
-  background-color: #00838F;
-}
-
-.course-detail-background-dark-green{
-  background-color: #005662;
-}
-
-.course-detail-background-yellow{
-  background: #FFD54F;
-}
-
-.course-detail-background-dark-yellow{
-  background-color: #C8A415;
-}
-
-.course-detail-background-dark-gray{
-  background-color: #595f66;
-}
-
-.course-detail-background-light-gray{
-  background-color: #e4e4e4;
-}
-
-.course-detail-font-white-all *{
-  color: white;
-}
-
-/* .course-detail-font-dark-gray{
-  color: #343a40;
-} */
-
-.course-detail-font-size-15{
-  font-size: 1.5em;
-}
-
-.course-detail-font-size-20{
-  font-size: 2em;
-}
-
-.course-detail-font-size-30{
-  font-size: 3em;
-}
-
-
-/* .course-detail-btn-signup{
-  color: #FFF;
-  background:#005662;
-  border: none;
-}
-
-.course-detail-btn-signup:hover{
-  background: #4FB3BF;
-  color: black;
-} */
-
-.course-detail-logo-img{
-  height: 200px;
-}
-
-.course-detail-logo-img-alike{
-  height: 100px;
-  margin: 20px;
-}
-
-.course-detail-card{
-  background-color: white;
-  position: relative;
-  top: -40px;
-  border: 1px solid #005662;
-}
-
-/* Fim página course-detail */
-/* Inicio da página apoio psicológico */ 
-
-.btn-primary{
-  background: #005662;
-  border: none;
-  padding: 1.5vh 2vh;
-}
-
-.btn-primary:hover{
-  background: #4FB3BF;
-}
-
-.support-introduction {
-  align-items: center;
-  height: 50vh;
-  text-align: center;
-}
-
-.support-introduction-img img, .support-details-img img, .testimony-img img{
-  border-radius: 50%;
-  height: 50%;
-  width: 50%;
-}
-
-.support-introduction-text{
-  align-content: center;
-}
-
-.support-introduction-text h1{
-  justify-content: center;
-}
-
-.support-details{
-  background: #005662;
-  height: 50vh;
-}
-
-.support-metodology{
-  align-items: center;
-  color: #fff;
-  justify-content: center;
-  text-align: center;
-}
-
-.psycho-explanation{
-  height: 50vh;
-  justify-content: center;
-}
-
-.psycho-explanation h1, .psycho-explanation p{
-  padding-bottom: 5vh;
-  text-align: center;
-}
-
-.testimony{
-  height: 50vh;
-  background: #FFD54F;
-  text-align: center;
-}
-
-/* Fim da página apoio psicológico */ 
-
-/* Início página Contato */
-.remove-padding {
-  padding: 0;
-}
-
-#remove-margin {
-  margin-left: 0;
-  margin-right: 0;
-}
-
-.contact-bg {
-  background-color: #4FB3BF;
-  height: 250px;
-  color: #FFF;
-  font-size: 4em;
-  font-weight: bold;
-  width: 100%;
-}
-
-.contact-email {
-  color: #005662;
-  font-weight: bold;
-}
-
-.contact-email:hover, .contact-email:focus {
-  text-decoration: none;
-  color: #005662;
-}
-
-.different-form-border {
-  border: 3px dashed #4FB3BF;
-}
-
-label {
-  font-weight: bold;
-}
-
-.questions-title-bg {
-  background-color: #005662;
-  height: 150px;
-  color: #FFF;
-  font-size: 3em;
-  font-weight: bold;
-  width: 100%;
-}
-
-.questions-bg {
-  background-color: #EBF0F7;
-}
-
-.questions-subject {
-  color: #4FB3BF;
-}
-
-.plus-sign {
-  width: 20px;
-}
-
-.questions-color {
-  color: #47525E;
-}
-/* Fim página Contato */
-
-/* Início Configurações Página HOME */
+/* Início HOME */
 .home-banner {
-    background-image: url('../img/home-banner.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 90vh;
-    color: white;
-    text-transform: uppercase;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; 
+  background-image: url('../img/home-banner.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  color: #FFF;
+  text-transform: uppercase;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
 }
 
 .home-banner h1 {
-    font-size: 60px;
-    font-family: 'Baloo', cursive;
+  font-size: 60px;
+  font-family: 'Baloo', cursive;
 }
 
 .home-summary {
-    height: 70vh;
-    display:flex;
-    line-height: 3rem;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    background-color: #FFFF81;
+  height: 70vh;
+  display:flex;
+  line-height: 3rem;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: #FFFF81;
 }
 
 .home-summary p {
-    font-size: 1.8em;
+  font-size: 1.8em;
 }
 
 .home-card {
-    text-align: center;
+  text-align: center;
 }
 
 /* .home-card-img {
-    height: 50%;
-    width: 50%;
-    border-radius: 50%;
+  height: 50%;
+  width: 50%;
+  border-radius: 50%;
 } */
 
 .home-card .card-img {
-    background-position: center;
-    background-size: 97%;
-    height: 200px;
-    width: 200px;
-    border-radius: 50%;
+  background-position: center;
+  background-size: 97%;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
 }
 
 .home-card .card-whom {
-    background-image: url('../img/home-card-whom.png');
-    background-size: 93%;
+  background-image: url('../img/home-card-whom.png');
+  background-size: 93%;
 }
 
 .home-card .card-courses {
-    background-image: url('../img/home-card-glasses.png');
-    background-size: 97%;
+  background-image: url('../img/home-card-glasses.png');
+  background-size: 97%;
 }
 
 .home-card .card-help {
-    background-image: url('../img/home-card-help.png');
+  background-image: url('../img/home-card-help.png');
 }
 
 .home-card .card-title {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .home-card .card-text {
-    text-align: justify;
+  text-align: justify;
 }
-
 
 .home-btn-trq {
-    background:#005662;
-    color:white;
-    text-transform: uppercase;
-  }
-
-.home-btn-trq:hover {
-    background:#4fb3bf;
+  background:#005662;
+  color:#FFF;
+  text-transform: uppercase;
 }
 
+.home-btn-trq:hover, .home-btn-trq:focus {
+  background:#4fb3bf;
+}
 
 .home-banner-apoie {
-    background: #FFD54F;
-    height: 10vh;
-}
-/* Fim Configurações Página HOME */
-
-
-/* Início Configurações CURSOS-GERAL */
-.courses-g-banner {
-    background: #005662;
-    color:white;
-    height: 50vh;
-}
-
-.courses-g-banner h1{
-    font-size:4rem;
-}
-
-.courses-g-search {
-    background-color: #BDBDBD;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    height: 30vh;
-}
-
-.courses-g-cards {
-    width: 80%;
-    text-transform: uppercase;
-}
-
-.courses-g-cards h4 {
-    color: white;
-    background-color:#00838F;
-    margin:0;
-}
-
-.courses-g-aside {
-    background:#FFD54F;
-}
-
-/* Fim Configurações CURSOS-GERAL */
-
-/* Início Contribuição Pessoas */
-.contribution-enterprise{
-  background: #005662;
-  color: #fff;
-  height: 50vh;
-}
-
-.contribution-enterprise-text{
   background: #FFD54F;
-  height: 50vh;
+  height: 10vh;
 }
+/* Fim HOME */
 
-.contribution-enterprise-text h1{
-  padding-top: 5vh;
-}
-
-.contribution-enterprise-content{
-  width: 50%;
-  text-align: center;
-  padding: 5vh;
-}
-
-#btn-conttribution{
-  margin-bottom: 5vh;
-}
-
-.banner-contribution-people{
-  align-items: center;
-  background: #005662;
-  color: #fff;
-  display: flex;
-  height: 50vh;
-  justify-content: center;
-}
-
-.text-contribution-people{
-  display: flex;
-  align-items: center;
-  background: #FFD54F;
-  height: 50vh;
-  justify-content: center;
-}
-
-.contribution-people-content{
-  text-align: center;
-}
-/* Fim Contribuição Pessoas */
-
-/* Início página Quem Somos */
+/* Início QUEM SOMOS */
 .about-banner {
   background-image: url('../img/about-banner.jpg');
   background-size: cover;
@@ -667,31 +271,124 @@ label {
 .team-info {
   padding: 50px;
 }
-/* Fim página Quem Somos */
+/* Fim QUEM SOMOS */
 
-/* Início Contribua*/
-.contribua-banner {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+/* Início CURSOS-GERAL */
+.courses-g-banner {
+    background: #005662;
+    color:#FFF;
+    height: 50vh;
+}
+
+.courses-g-banner h1 {
+    font-size:4rem;
+}
+
+.courses-g-search {
+    background-color: #BDBDBD;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 30vh;
+}
+
+.courses-g-cards {
+    width: 80%;
+    text-transform: uppercase;
+}
+
+.courses-g-cards h4 {
+    color: #FFF;
+    background-color:#00838F;
+    margin:0;
+}
+
+.courses-g-aside {
+    background:#FFD54F;
+}
+/* Fim CURSOS-GERAL */
+
+/* Início CURSO-DETALHE */
+.course-detail-text-important {
+  font-weight: 900;
+}
+
+.course-detail-background-light-green {
   background-color: #00838F;
+}
+
+.course-detail-background-dark-green {
+  background-color: #005662;
+}
+
+.course-detail-background-yellow {
+  background: #FFD54F;
+}
+
+.course-detail-background-dark-yellow {
+  background-color: #C8A415;
+}
+
+.course-detail-background-dark-gray {
+  background-color: #595f66;
+}
+
+.course-detail-background-light-gray {
+  background-color: #e4e4e4;
+}
+
+.course-detail-font-white-all * {
   color: #FFF;
-  height: 40vh;
-  text-transform: uppercase;
 }
 
-.contribua-background {
-  height: 60vh;
-  background-color: #FFD54F;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+/* .course-detail-font-dark-gray{
+  color: #343a40;
+} */
+
+.course-detail-font-size-15 {
+  font-size: 1.5em;
 }
 
-/* Fim do Contribua */
+.course-detail-font-size-20 {
+  font-size: 2em;
+}
 
-/* Início do Apoio */
+.course-detail-font-size-30 {
+  font-size: 3em;
+}
 
+/* .course-detail-btn-signup{
+  color: #FFF;
+  background:#005662;
+  border: none;
+}
+
+.course-detail-btn-signup:hover{
+  background: #4FB3BF;
+  color: #000;
+} */
+
+.course-detail-logo-img {
+  height: 200px;
+}
+
+.course-detail-logo-img-alike {
+  height: 100px;
+  margin: 20px;
+}
+
+.course-detail-card {
+  background-color: #FFF;
+  position: relative;
+  top: -40px;
+  border: 1px solid #005662;
+}
+/* Fim CURSO-DETALHE */
+
+/* INSERIR STYLE PRA PÁGINA OPORTUNIDADES */
+
+/* Início APOIO-GERAL */
 .h1-apoio {
   font-size: 4.5rem;
   color: #005662;
@@ -747,10 +444,313 @@ label {
   font-size: 1.5em;
   font-style: italic;
 }
+/* Fim APOIO-GERAL */
 
-/* fim do apoio */
+/* INSERIR STYLE PRA PÁGINA APOIO JURÍDICO */
 
-/* Início Configurações FOOTER */
+/* INSERIR STYLE PRA PÁGINA APOIO PROFISSIONAL */
+
+/* Inicio APOIO PSICOLÓGICO */ 
+.btn-primary {
+  background: #005662;
+  border: none;
+  padding: 1.5vh 2vh;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+  background: #4FB3BF;
+}
+
+.support-introduction {
+  align-items: center;
+  height: 50vh;
+  text-align: center;
+}
+
+.support-introduction-img img, .support-details-img img, .testimony-img img {
+  border-radius: 50%;
+  height: 50%;
+  width: 50%;
+}
+
+.support-introduction-text {
+  align-content: center;
+}
+
+.support-introduction-text h1 {
+  justify-content: center;
+}
+
+.support-details {
+  background: #005662;
+  height: 50vh;
+}
+
+.support-metodology {
+  align-items: center;
+  color: #fff;
+  justify-content: center;
+  text-align: center;
+}
+
+.psycho-explanation {
+  height: 50vh;
+  justify-content: center;
+}
+
+.psycho-explanation h1, .psycho-explanation p {
+  padding-bottom: 5vh;
+  text-align: center;
+}
+
+.testimony {
+  height: 50vh;
+  background: #FFD54F;
+  text-align: center;
+}
+/* Fim APOIO PSICOLÓGICO */ 
+
+/* Início CONTRIBUA-GERAL */
+.contribua-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #00838F;
+  color: #FFF;
+  height: 40vh;
+  text-transform: uppercase;
+}
+
+.contribua-background {
+  height: 60vh;
+  background-color: #FFD54F;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Fim CONTRIBUA-GERAL */
+
+/* INSERIR STYLE PRA PÁGINA CONTRIBUIÇAO-EMPRESA */
+
+/* Início CONTRIBUIÇAO-PESSOA */
+.contribution-enterprise {
+  background: #005662;
+  color: #fff;
+  height: 50vh;
+}
+
+.contribution-enterprise-text {
+  background: #FFD54F;
+  height: 50vh;
+}
+
+.contribution-enterprise-text h1 {
+  padding-top: 5vh;
+}
+
+.contribution-enterprise-content {
+  width: 50%;
+  text-align: center;
+  padding: 5vh;
+}
+
+#btn-conttribution {
+  margin-bottom: 5vh;
+}
+
+.banner-contribution-people {
+  align-items: center;
+  background: #005662;
+  color: #fff;
+  display: flex;
+  height: 50vh;
+  justify-content: center;
+}
+
+.text-contribution-people {
+  display: flex;
+  align-items: center;
+  background: #FFD54F;
+  height: 50vh;
+  justify-content: center;
+}
+
+.contribution-people-content {
+  text-align: center;
+}
+/* Fim CONTRIBUIÇAO-PESSOA */
+
+/* Início CONTATO */
+.remove-padding {
+  padding: 0;
+}
+
+#remove-margin {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.contact-bg {
+  background-color: #4FB3BF;
+  height: 250px;
+  color: #FFF;
+  font-size: 4em;
+  font-weight: bold;
+  width: 100%;
+}
+
+.contact-email {
+  color: #005662;
+  font-weight: bold;
+}
+
+.contact-email:hover, .contact-email:focus {
+  text-decoration: none;
+  color: #005662;
+}
+
+.different-form-border {
+  border: 3px dashed #4FB3BF;
+}
+
+label {
+  font-weight: bold;
+}
+
+.questions-title-bg {
+  background-color: #005662;
+  height: 150px;
+  color: #FFF;
+  font-size: 3em;
+  font-weight: bold;
+  width: 100%;
+}
+
+.questions-bg {
+  background-color: #EBF0F7;
+}
+
+.questions-subject {
+  color: #4FB3BF;
+}
+
+.plus-sign {
+  width: 20px;
+}
+
+.questions-color {
+  color: #47525E;
+}
+/* Fim CONTATO */
+
+/* INSERIR STYLE PRA PÁGINA CADASTRE-SE */
+
+/* Início LOGIN */
+.btn-color {
+  background-color: #47525E;
+  color: #FFF;
+}
+
+card {
+  border: #47525E;
+}
+
+.login-indicator {
+  background-color: #FFD54F;
+  color: #47525E;
+  margin: 0;
+}
+
+.triangle-isosceles {
+  position: relative;
+  padding: 15px;
+  color: #000;
+  background: #f3961c;
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#FFD54F), to(#f3961c));
+  background: -moz-linear-gradient(#FFD54F, #f3961c);
+  background: -o-linear-gradient(#FFD54F, #f3961c);
+  background: linear-gradient(#FFD54F, #f3961c);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+
+.triangle-isosceles:after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 20px;
+  border-width: 15px 15px 0;
+  border-style: solid;
+  border-color: #f3961c transparent;
+  display: block;
+  width: 0;
+}
+
+.btn-register {
+  background-color: #4FB3BF;
+}
+/* Fim LOGIN */
+
+/* Início ESQUECEU A SENHA? */
+.btn-redefine-color {
+  background-color: #005662;
+  color: #FFF;
+}
+/* Fim ESQUECEU A SENHA? */
+
+/* Início PÁGINA USUÁRIO */
+.user-page-font-bold {
+  font-weight: bold;
+}
+
+.user-page-background-light-green {
+  background-color: #8bcdd3;
+}
+
+.user-page-background-dark-green {
+  background-color: #005662;
+}
+
+.user-page-card {
+  padding: 0;
+  border: 2px solid #005662;
+}
+
+.user-page-card-item {
+  background-color: #e4e4e4;
+  position: relative;
+}
+
+.user-page-background-dark-yellow {
+  background-color: #C8A415;
+}
+
+.user-page-background-light-gray {
+  background-color: #e4e4e4;
+}
+
+.user-page-icon {
+  position: absolute;
+  top: -8px;
+  right: -7px;
+}
+
+.user-page-font-white {
+  color: #FFF;
+} 
+
+.user-page-font-size-30 {
+  font-size: 3em;
+}
+
+.user-page-photo {
+  height: 400px;
+  border: 2px solid #FFF;
+}
+/* Fim PÁGINA USUÁRIO */
+
+/* Início FOOTER */
 footer {
     background:#616161;
 }
@@ -760,11 +760,15 @@ footer img {
 }
 
 footer a {
-    color:white;
+    color:#FFF;
 }
 
-footer a:hover {
+footer a:hover, footer a:focus {
     color:#005662;
     background: none;
 }
-/* Fim Configurações FOOTER */
+
+footer p {
+  color: #FFF;
+}
+/* Fim FOOTER */
