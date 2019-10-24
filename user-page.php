@@ -20,7 +20,7 @@ TODO:
   <?php include_once('header.php'); ?>
   <nav aria-label="breadcrumb">
     <ol class="breadcrumb m-0">
-      <li class="breadcrumb-item"><a class="breadcrumb-item-link" href="#">Home</a></li>
+      <li class="breadcrumb-item"><a class="breadcrumb-item-link" href="index.php">Home</a></li>
       <li class="breadcrumb-item active" aria-current="page">Página do Usuário</li>
     </ol>
   </nav>
