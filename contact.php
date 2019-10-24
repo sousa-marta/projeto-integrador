@@ -19,7 +19,7 @@ $subjects = ["Apoio","Cadastro","Cursos","Doação","Voluntariado","Outros"];
   <?php include_once('header.php'); ?>
   
   <nav aria-label="breadcrumb">
-    <ol class="breadcrumb mb-0">
+    <ol class="breadcrumb">
       <li class="breadcrumb-item"><a class="breadcrumb-item-link" href="index.php">Home</a></li>
       <li class="breadcrumb-item active" aria-current="page">Contato</li>
     </ol>
@@ -44,11 +44,9 @@ $subjects = ["Apoio","Cadastro","Cursos","Doação","Voluntariado","Outros"];
         <select class="col-lg-12" name="contactSubject" id="contactSubject">
           <option value="">Selecione o assunto</option>
           <?php
-          for ($i = 1; $i < count($subjects); $i++) {
-            foreach ($subjects as $subject) {
-              echo "<option value='$subject'>$subject</option>";
-              $i++;
-            }
+          foreach ($subjects as $subject) {
+            echo "<option value='$subject'>$subject</option>";
+            $i++;
           }
           ?>
         </select>
@@ -62,7 +60,7 @@ $subjects = ["Apoio","Cadastro","Cursos","Doação","Voluntariado","Outros"];
     </form>
     </div>
   
-    <h1 class="questions-title-bg d-flex justify-content-center align-items-center m-0">Dúvidas</h1>
+    <h1 class="questions-title-bg d-flex justify-content-center align-items-center m-0">FAQ</h1>
     
     <div class="accordion pl-3 pr-3 pb-5 questions-bg" id="questionsTopicOne">
       <h2 class="pt-5 questions-subject">Tópico 1</h2>
@@ -107,9 +105,7 @@ $subjects = ["Apoio","Cadastro","Cursos","Doação","Voluntariado","Outros"];
     </div>
     </div>
   </main>
-  <footer>
-    <?php include_once('footer.php'); ?>
-  </footer>
+  <?php include_once('footer.php'); ?>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 
