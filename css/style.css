@@ -772,3 +772,14 @@ footer p {
   color: #FFF;
 }
 /* Fim FOOTER */
+
+
+
+
+/* Início INFORMAÇÕES USUÁRIO */
+.user-info-photo {
+  height: 200px;
+  width: auto;
+  border: 2px solid #FFF;
+}
+/* Fim INFORMAÇÕES USUÁRIO */
