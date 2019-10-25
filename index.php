@@ -26,7 +26,7 @@
           
         <p> Contamos com apoio de empresas e recrutadores para conectar essa mão-de-obra qualificada e cheia de energia para aulixiar a integrassão dos novos habitantes do país! </p>
         
-        <a href="#" class="btn home-btn-trq">Saiba Mais</a>
+        <a href="about.php" class="btn home-btn-trq">Saiba Mais</a>
       </div>
     </section>
 
@@ -37,7 +37,7 @@
           <div class="home-card d-flex flex-column align-items-center">
             <div class="card-img card-whom"></div>
             <div class="card-body">
-              <h4 class="card-title">Para quem é o projeto</h4>
+              <h4 class="card-title"><a href="about.php">Para quem é o projeto</a></h4>
               <p class="card-text">Para qualquer pessoa que deseja se integrar à comunidade de um novo país. Que busca obter informações dos passos para atingir esse objetivo, que precisa de apoio técnico, psicológico e jurídico para tal.</p>
             </div>
           </div>
@@ -46,19 +46,19 @@
           <div class="home-card d-flex flex-column align-items-center">
             <div class="card-img card-courses"></div>
             <div class="card-body">
-              <h4 class="card-title">Cursos</h4>
+              <h4 class="card-title"><a href="courses.php">Cursos</a></h4>
               <p class="card-text">Em contato direto com os apoiadores que fornecem os cursos gratuitamente para o imigrantes, são disponibilizados cursos em áreas como: idiomas, estética, hotelaria, alimentação, cuidados, entreterimento, dentre outros.</p>
             </div>
           </div>
         </article>
         <article class="col-md-4">
-          <div class="home-card d-flex flex-column align-items-center">
-            <div class="card-img card-help"></div>
-            <div class="card-body">
-              <h4 class="card-title">Apoio Assistencial</h4>
-              <p class="card-text">Sabendo que mudar de país é algo que nunca é simples, contamos com apoiadores que dão apoio psicológico, jurídico e para encontrar o primeiro emprego no novo país. Buscamos ajudar essa transição ser a mais suave possível.</p>
+            <div class="home-card d-flex flex-column align-items-center">
+              <div class="card-img card-help"></div>
+              <div class="card-body">
+                <h4 class="card-title"><a href="support.php">Apoio Assistencial</a></h4>
+                <p class="card-text">Sabendo que mudar de país é algo que nunca é simples, contamos com apoiadores que dão apoio psicológico, jurídico e para encontrar o primeiro emprego no novo país. Buscamos ajudar essa transição ser a mais suave possível.</p>
+              </div>
             </div>
-          </div>
         </article>
       </div>
     </section>
@@ -68,8 +68,8 @@
       <div class="container">
         <div class="row justify-content-around align-items-center">
           <h4 class="col-md-4">Ajude-nos a ir mais longe</h4>
-          <a href="#" class="col-md-3 btn home-btn-trq">Seja Patrocinador</a>
-          <a href="#" class="col-md-3 btn home-btn-trq">Seja Voluntário</a>
+          <a href="contribute-enterprise.php" class="col-md-3 btn home-btn-trq">Seja Patrocinador</a>
+          <a href="contribute-people.php" class="col-md-3 btn home-btn-trq">Seja Voluntário</a>
         </div>
       </div>
     </section>

@@ -25,7 +25,7 @@
            <div class="contribution-enterprise-content">
              <p>Acreditamos que todos podemos contribuir com um grão de areia para mudar o mundo e a Responsabilidade Social Corporativa não escapa. Se você compartilha nossa visão, contribua conosco através do nosso programa de suporte corporativo.</p>
             </div>
-          <button class="btn btn-primary" id="btn-conttribution">Contate-nos</button>
+            <a href="contact.php"><button class="btn btn-primary" id="btn-conttribution">Contate-nos</button></a>
         </div>
     </div>
   </main>
