@@ -84,7 +84,7 @@
     </div>
 
     <div class="d-flex justify-content-center">
-      <button type="button" class="btn btn-primary btn-lg">Clique aqui para entrar em contato!</button>
+      <a href="contact.php"><button type="button" class="btn btn-primary btn-lg">Clique aqui para entrar em contato!</button></a>
 
     </div>
 
