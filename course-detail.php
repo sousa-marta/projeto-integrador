@@ -1,10 +1,3 @@
-<!--
-TODO:
-- Os <b></b>, bolt, não está funcionado, parece que é por causa de uma declaração do css em body
-- Falta incluir o footer também.
-
--->
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -106,7 +99,6 @@ TODO:
         </div>
       </div>
 
-      <!-- FIXME: Quando diminui o tamanho a quebra de página fica feia -->
       <!-- div do fundo cinza -->
       <div class="course-detail-background-light-gray">
         <div class="container">
