@@ -24,7 +24,7 @@
 
   <main>
 
-    <section class="jumbotron jumbotron-fluid text-white" style="background-color:#4FB3BF">
+    <section class="jumbotron jumbotron-fluid text-white">
       <!-- arrumar css -->
       <div class="container d-flex justify-content-center">
         <h1 class="display-4">Empregos</h1>
@@ -36,7 +36,7 @@
     <section class="container row">
       <!-- coluna esquerda menu / filtros de pesquisa -->
       <div class="list-group  col-lg-3 p-3">
-        <div class="list-group-item active row form-group">
+        <div class="list-group-item row form-group list-green text-white">
           <h3><i class="fa fa-search"></i> Filtros</h3>
           <!-- JS files: jQuery first, then Popper.js, then Bootstrap JS -->
           <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
