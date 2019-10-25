@@ -36,7 +36,7 @@
       <br><br> A OPPY possui um forte trabalho em rede, destacando-se a pareceria com Alto Comissariado das Nações Unidas para Refugiados (ACNUR), com a Associação Antonio Vieira (ASAV) e com o CIBAI Migrações. Ademais, integra o Fórum Permanente de Mobilidade Humana (FPMH) o Comitê Estadual de Atenção a Migrantes, Refugiados, Apátridas e Vítimas de Tráfico de Pessoas (COMIRAT-SP) e tem representantes junto ao Comitê de Acompanhamento pela Sociedade Civil sobre ações de Migração e Refúgio (CASC-Migrante) da Secretaria Nacional de Justiça.
     </h3>
     <div class="d-flex justify-content-center">
-      <button type="button" class="btn btn-primary btn-lg">Clique aqui para entrar em contato!</button>
+      <a href="contact.php"><button type="button" class="btn btn-primary btn-lg" href="contact.php">Clique aqui para entrar em contato!</button></a>
 
     </div>
 

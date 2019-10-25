@@ -24,7 +24,7 @@
       <div class="col-6 support-introduction-text">
         <h1>Apoio Psicológico</h1>
         <p>Nós o apoiamos no seu processo de migração. Conhecemos seus medos, suas preocupações e, acima de tudo, sua necessidade de lidar com a dor de estar longe daqueles que amam você. Agende uma consulta conosco.</p>
-        <button class="btn btn-primary">Contate-nos</button>
+        <a href="contact.php"><button class="btn btn-primary">Contate-nos</button></a>
       </div>
     </div>
     <div class="row d-flex justify-content-center align-items-center support-details">
@@ -50,7 +50,7 @@
         <h1>Testemunhas</h1>
         <p><i>"O apoio psicológico de Oppy me deu a oportunidade de superar meus medos e medos quando emigrou, restaurou minha confiança e me ajudou a seguir em frente contra os meus desafios".</i></p>
         <p><b>Larissa Costa, inmigrante paraguaya</b></p>
-        <button class="btn btn-primary">Contate-nos</button>
+        <a href="contact.php"><button class="btn btn-primary">Contate-nos</button></a>
       </div>
     </div>
   </main>

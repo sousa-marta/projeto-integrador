@@ -35,7 +35,7 @@
                         <div class="card-body">
                             <h4 class="card-title">Auxilio como Pessoa</h4>
                                 <p class="card-text">Você pode contribuir oferecendo um curso ou doando um valor para ajudar a manter nossa estrutura e nossa equipe!</p>   
-                                <button type="button" class="btn btn-primary">Saiba Mais</button>
+                                <a href="contribute-people.php"><button type="button" class="btn btn-primary">Saiba Mais</button></a>
                         </div>
                     </div>
                 </article>
@@ -44,7 +44,7 @@
                         <div class="card-body">
                             <h4 class="card-title">Auxilio como Empresa</h4>
                                 <p class="card-text">Como empresa, pode nos patrocinar em eventos, investir diretamente ou desenvolver campanhas para captação de recursos.</p>
-                                <button type="button" class="btn btn-primary">Saiba Mais</button>
+                                <a href="contribute-enterprise.php"><button type="button" class="btn btn-primary">Saiba Mais</button></a>
                         </div>
                     </div>
                 </article>
