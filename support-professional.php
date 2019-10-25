@@ -23,7 +23,7 @@
     <section class="container p-3">
       <div class="row align-items-center">
         <div class="col-lg-4 col-md-4 banner-img">
-          <img class="img-fluid" src="img/juridico.png" alt="apoio juridico">
+          <img class="img-fluid" src="img/mentoria.svg" alt="mentoria imigrantes">
         </div>
         <div class="col-lg-8 col-md-8 banner-img">
           <h1 class="h1-apoio">Mentoria Profissional</h1>
@@ -32,7 +32,7 @@
     </section>
 
 
-    <div class="card text-white mb-3" style="background-color: #4fb3bf">
+    <div class="card text-white mb-3 card-bg-green">
       <div class="card-header">
         <h5 class="card-title">O que é?</h5>
       </div>
@@ -41,7 +41,7 @@
       </div>
     </div>
 
-    <div class="card text-white mb-3" style="background-color: #4fb3bf">
+    <div class="card text-white mb-3 card-bg-green">
       <div class="card-header">
         <h5 class="card-title">Para que serve?</h5>
       </div>
@@ -62,7 +62,7 @@
           — Por seu lado, as entidades associadas vêem nesta experiência uma oportunidade de enriquecimento pessoal dos seus/suas colaboradores/as também e, logo, no ambiente e na cultura organizacional.</p>
       </div>
     </div>
-    <div class="card text-white mb-3" style="background-color: #4fb3bf" >
+    <div class="card text-white mb-3 card-bg-green" >
       <div class="card-header">
         <h5 class="card-title">O que pretende atingir?</h5>
       </div>
