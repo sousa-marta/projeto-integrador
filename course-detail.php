@@ -32,12 +32,12 @@
         <!-- nome do curso e ofertante do treinamento -->
         <div class="row pt-3">
           <div class="col-6">
-            <p class="course-detail-font-size-15">Hotelaria</p>
-            <h1 class="course-detail-font-size-30">Curso de Atendente</h1>
+            <h4>Hotelaria</h4>
+            <h1>Curso de Atendente</h1>
           </div>
           <div class="col-6 text-right">
-            <p class="course-detail-font-size-15">oferecido por:</p>
-            <p class="course-detail-font-size-20">evolke Treinamentos</p>
+            <h4>oferecido por:</h4>
+            <h3>evolke Treinamentos</h3>
           </div>
         </div>
 
@@ -79,7 +79,7 @@
     
     <!-- INFORMAÇÕES DETALHADAS -->
     <section class="container mt-4 mb-5">
-      <h1 class="pt-4 pb-2">Informações Sobre o Curso</h1>
+      <h2 class="pt-4 pb-2">Informações Sobre o Curso</h2>
       <p>Preparar profissionais para confeccionar e reparar móveis e objetos em madeira. Além disso você aprenderá a interpretar projetos e especificações em todo o seu processo fabril, através de plantas e especificações técnicas, operando equipamentos manuais e elétricos e observando as normas técnicas de segurança.</p>
       <p><b>Duração:</b> 2 semanas</p>
       <span><b>Requisitos:</b></span>
@@ -95,7 +95,7 @@
       <!-- div do fundo amarelo -->
       <div class="course-detail-background-yellow">
         <div class="container pt-3 pb-5">
-          <h1>Cursos Semelhantes</h1>
+          <h2>Cursos Semelhantes</h2>
         </div>
       </div>
 
@@ -109,7 +109,7 @@
               <div class="course-detail-card">
                 <div class="container course-detail-background-dark-green course-detail-font-white-all pt-2 pb-2">
                   <span>Hotelaria</span>
-                  <h2>Curso de Garçom</h2>
+                  <h2>Curso de Recepcionista</h2>
                 </div>
                 <div class="container d-flex flex-column">
                   <img src="img/emp-direan.png" alt="empresa treinamento" class="align-self-center course-detail-logo-img-alike">

@@ -34,13 +34,14 @@
 
         <!-- Campo Pesquisa por Curso -->
         <section class="courses-g-search border-bottom">
-          <h2 class="my-3">Pesquise por Curso</h2>
+          <h3 class="my-3">Pesquise por curso</h3>
           <form action="" class="form-inline">
             <div class="form-group mx-3">
               <label for="searchCourse"></label>
               <input class="form-control" type="text" name="" id="searchCourse" placeholder="Pesquise por curso">
             </div>
-            <button type="submit" class="btn btn-light">Assinar</button>
+            <!-- trocar o type de button para submit depois da sprint 2 -->
+            <button type="button" class="btn btn-light" onclick="location.href='course-detail.php'">Buscar</button>
           </form>
         </section>
         
@@ -84,32 +85,32 @@
       <!-- Barra de Navegação Lateral -->
       <aside class="col-lg-3 col-md-4 order-1 courses-g-aside">
         <div class="d-flex flex-column p-5">
-          <h2>Categorias</h2>
-          <h4>Idiomas</h3>
+          <h3>Categorias</h3>
+          <h4>Idiomas</h4>
           <ul>
             <li>Portugês</li>
             <li>Espanhol</li>
             <li>Inglês</li>
           </ul>
-          <h4>Saúde</h3>
+          <h4>Saúde</h4>
           <ul>
             <li>Cuidador de Idoso</li>
             <li>Babá</li>
             <li>Massagista</li>
           </ul>
-          <h4>Beleza</h3>
+          <h4>Beleza</h4>
           <ul>
             <li>Manicure</li>
             <li>Cabelereira</li>
             <li>Esteticista</li>
           </ul>
-          <h4>Programação</h3>
+          <h4>Programação</h4>
           <ul>
             <li>Front-end</li>
             <li>Back-end</li>
             <li>Python</li>
           </ul>
-          <h4>Direção</h3>
+          <h4>Direção</h4>
           <ul>
             <li>Conhecimentos Teóricos</li>
             <li>Reciclagem de Motorista</li>

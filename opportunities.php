@@ -24,11 +24,15 @@
 
   <main>
 
-    <section class="jumbotron jumbotron-fluid text-white">
+    <!-- <section class="jumbotron jumbotron-fluid text-white"> -->
       <!-- arrumar css -->
-      <div class="container d-flex justify-content-center">
+      <!-- <div class="container d-flex justify-content-center">
         <h1 class="display-4">Empregos</h1>
       </div>
+    </section> -->
+
+    <section class="opportunities-bg col-md-12 d-flex justify-content-center align-items-center">
+        <h1>Empregos</h1>
     </section>
 
     <!-- // => dividindo a tela -->
@@ -205,15 +209,15 @@
                 <img class="card-img-top h-100" src="img/panificadora.jpg" alt="Imagem de capa do card">
               </div>
               <div class="col-xl-7 p-3">
-                <h3 class="card-title"> Vaga Padeiro Jabaquara</h2>
-                  <h6 class="card-text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                <h3 class="card-title"> Vaga Padeiro Jabaquara</h3>
+                  <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Est modi delectus quos? Commodi eius doloribus ipsam iste autem sequi ad natus nobis,
-                    quae numquam perspiciatis. Veniam repellendus voluptate recusandae illo. </h6>
-                  <h6 class="card-text"> cidade: São Paulo </h6>
-                  <h6 class="card-text"> estado: SP </h6>
-                  <h6 class="card-text"> salário: R$ 1.500,00</h6>
-                  <h6 class="card-text"> email: contato@padarialegal.com.br </h6>
-                  <a href="#" class="btn btn-primary"><i class="fa fa-search"></i>enviar curriculo</a>
+                    quae numquam perspiciatis. Veniam repellendus voluptate recusandae illo. </p>
+                  <p> cidade: São Paulo </p>
+                  <p> estado: SP </p>
+                  <p> salário: R$ 1.500,00</p>
+                  <p> email: contato@padarialegal.com.br </p>
+                  <a href="#" class="btn btn-primary">enviar curriculo</a>
               </div>
             </div>
           </div>

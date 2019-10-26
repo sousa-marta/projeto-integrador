@@ -6,8 +6,49 @@
 
 body {
   font-family: 'Lato', sans-serif;
-  font-size: 16px;
   color: #47525E;
+  font-size: 15px;
+}
+
+nav a {
+  font-weight: bold;
+}
+
+p {
+  margin: 0;
+}
+
+h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+button {
+  color: #FFF;
+  background:#005662;
+  border: none;
+  text-transform: uppercase;
+}
+
+button:hover, button:focus {
+  background: #4FB3BF;
+  color: #000;
 }
 
 .row {
@@ -20,13 +61,18 @@ body {
   padding-right: 0;
 }
 
+a {
+  color: #4fb3bf;
+}
+
 a:hover, a:focus {
-    text-decoration: none;
+  text-decoration: none;
+  color: #005662;
 }
 
 nav .btn-dark:hover, nav .btn-dark:focus {
-    background: #FFD54F;
-    color: #000;
+  background: #FFD54F;
+  color: #000;
 }
 /* Fim CONFIGURAÇÕES GERAIS  */
 
@@ -36,18 +82,16 @@ nav .btn-dark:hover, nav .btn-dark:focus {
 }
 
 .logo-header .logo-mato {
-  width: 40%;
+  width: 30%;
 }
 
 .logo-header .logo-logotipo {
-  width: 55%;
+  width: 45%;
   height: 45%
 }
 
 nav a {
   color: #47525E;
-  font-size: 1.2em;
-  font-weight: 700;
 }
 
 nav a:hover, nav a:focus {
@@ -63,7 +107,7 @@ nav #register-link:hover, nav #register-link:focus {
   background: none;
 }
 
-nav .btn {
+/* nav .btn {
   color: #FFF;
   background:#005662;
   border: none;
@@ -72,17 +116,13 @@ nav .btn {
 nav .btn:hover, nav .btn:focus {
   background: #4FB3BF;
   color: #000;
-}
+} */
 /* Fim HEADER */
 
 /* Início BREADCRUMB */
 .breadcrumb {
   border-radius: 0;
   margin-bottom: 0;
-}
-
-nav .breadcrumb-item-link {
-  font-size: 1em;
 }
 
 nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
@@ -106,8 +146,8 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
 }
 
 .home-banner h1 {
-  font-size: 60px;
   font-family: 'Baloo', cursive;
+  font-size: 60px;
 }
 
 .home-summary {
@@ -185,14 +225,17 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
   background-image: url('../img/about-banner.jpg');
   background-size: cover;
   background-position: center;
-  height: 79vh;
+  height: 82vh;
   text-align: center;
-  color: whitesmoke;
+  color: #FFF;
   justify-content: center;
 }
 
+.bg-color {
+  background-color: #0003;
+}
+
 .quotation {
-  font-size: 1.2em;
   padding: 0 20vw;
   line-height: 1.7em;
 }
@@ -208,7 +251,7 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
 }
 
 .quotation-author {
-  font-size: 1em;
+  font-size: .9rem;
   font-style: italic;
 }
 
@@ -275,37 +318,33 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
 
 /* Início CURSOS-GERAL */
 .courses-g-banner {
-    background: #005662;
-    color:#FFF;
-    height: 50vh;
-}
-
-.courses-g-banner h1 {
-    font-size:4rem;
+  background: #005662;
+  color:#FFF;
+  height: 30vh;
 }
 
 .courses-g-search {
-    background-color: #BDBDBD;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    height: 30vh;
+  background-color: #BDBDBD;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 25vh;
 }
 
 .courses-g-cards {
-    width: 80%;
-    text-transform: uppercase;
+  width: 80%;
+  text-transform: uppercase;
 }
 
 .courses-g-cards h4 {
-    color: #FFF;
-    background-color:#00838F;
-    margin:0;
+  color: #FFF;
+  background-color:#00838F;
+  margin:0;
 }
 
 .courses-g-aside {
-    background:#FFD54F;
+  background:#FFD54F;
 }
 /* Fim CURSOS-GERAL */
 
@@ -346,6 +385,7 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
   color: #343a40;
 } */
 
+/*Padronizando o tamanho das fontes, troquei por h2-h4
 .course-detail-font-size-15 {
   font-size: 1.5em;
 }
@@ -356,7 +396,7 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
 
 .course-detail-font-size-30 {
   font-size: 3em;
-}
+}*/
 
 /* .course-detail-btn-signup{
   color: #FFF;
@@ -386,7 +426,17 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
 }
 /* Fim CURSO-DETALHE */
 
-/* INSERIR STYLE PRA PÁGINA OPORTUNIDADES */
+/* Início OPORTUNIDADES */
+.opportunities-bg {
+  background-color: #4FB3BF;
+  color:#FFF;
+  height: 30vh;
+}
+
+.list-green{
+  background-color:#005662
+}
+/* Fim OPORTUNIDADES */
 
 /* Início APOIO-GERAL */
 .h1-apoio {
@@ -434,10 +484,6 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-}
-
-.texto-apoio h3 {
-  font-size: 3em;
 }
 
 .texto-apoio p {
@@ -517,8 +563,7 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
   justify-content: center;
   background-color: #00838F;
   color: #FFF;
-  height: 40vh;
-  text-transform: uppercase;
+  height: 30vh;
 }
 
 .contribua-background {
@@ -536,7 +581,7 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
 .contribution-enterprise {
   background: #005662;
   color: #fff;
-  height: 50vh;
+  height: 30vh;
 }
 
 .contribution-enterprise-text {
@@ -563,7 +608,7 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
   background: #005662;
   color: #fff;
   display: flex;
-  height: 50vh;
+  height: 30vh;
   justify-content: center;
 }
 
@@ -592,9 +637,8 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
 
 .contact-bg {
   background-color: #4FB3BF;
-  height: 250px;
+  height: 30vh;
   color: #FFF;
-  font-size: 4em;
   font-weight: bold;
   width: 100%;
 }
@@ -619,9 +663,8 @@ label {
 
 .questions-title-bg {
   background-color: #005662;
-  height: 150px;
+  height: 30vh;
   color: #FFF;
-  font-size: 3em;
   font-weight: bold;
   width: 100%;
 }
@@ -689,6 +732,7 @@ card {
 
 .btn-register {
   background-color: #4FB3BF;
+  text-transform: none;
 }
 /* Fim LOGIN */
 
@@ -740,15 +784,23 @@ card {
   color: #FFF;
 } 
 
-.user-page-font-size-30 {
-  font-size: 3em;
-}
-
 .user-page-photo {
-  height: 400px;
+  height: 350px;
   border: 2px solid #FFF;
 }
+
+.btn-edit-info {
+  background-color: #4FB3BF;
+}
 /* Fim PÁGINA USUÁRIO */
+
+/* Início INFORMAÇÕES USUÁRIO */
+.user-info-photo {
+  height: 200px;
+  width: auto;
+  border: 2px solid #FFF;
+}
+/* Fim INFORMAÇÕES USUÁRIO */
 
 /* Início FOOTER */
 footer {
@@ -773,22 +825,9 @@ footer p {
 }
 /* Fim FOOTER */
 
-/* Início INFORMAÇÕES USUÁRIO */
-.user-info-photo {
-  height: 200px;
-  width: auto;
-  border: 2px solid #FFF;
-}
-/* Fim INFORMAÇÕES USUÁRIO */
 
-/* Início OPPORTUNITIES */
-.jumbotron{
-  background-color:#4FB3BF;
-}
-.list-green{
-  background-color:#005662
-}
-/* FIM OPPORTUNITIES */
+
+
 
 
 /* Início SUPPORT-PROFESSIONAL */

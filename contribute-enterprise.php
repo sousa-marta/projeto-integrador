@@ -21,11 +21,11 @@
     </div>
     <div class="col-12">
         <div class="d-flex flex-column justify-content-center align-items-center contribution-enterprise-text">
-          <h1>Empresas que nos apoiam</h1>
+          <h2>Empresas que nos apoiam</h2>
            <div class="contribution-enterprise-content">
              <p>Acreditamos que todos podemos contribuir com um grão de areia para mudar o mundo e a Responsabilidade Social Corporativa não escapa. Se você compartilha nossa visão, contribua conosco através do nosso programa de suporte corporativo.</p>
             </div>
-            <a href="contact.php"><button class="btn btn-primary" id="btn-conttribution">Contate-nos</button></a>
+            <button class="btn" onclick="location.href='contact.php'">Contate-nos</button>
         </div>
     </div>
   </main>
