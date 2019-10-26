@@ -28,7 +28,7 @@
         <img src="img/foto.png" alt="foto usuário" class="figure-img img-fluid rounded user-page-photo">
         <div>
           <h1 class="user-page-font-white">Alex Watanabe</h1>
-          <p class="user-page-font-white"><b>País receptor:</b> Brasil</p>
+          <p class="user-page-font-white"><b>País de origem:</b> Japão</p>
           <button class="mt-3 col-lg-12 btn btn-edit-info" onclick="location.href='user-info.php'">Editar informações</a>
         </div>
       </div>

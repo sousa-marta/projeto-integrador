@@ -39,21 +39,21 @@ $countries = ["Afeganistão","África do Sul","Akrotiri","Albânia","Alemanha","
 
 
       <div class="form-group text-center mt-3">
-        <small>Edite suas informações e depois clique em Salvar.</small>
+        <small>Edite suas informações e depois clique em Salvar.<br>* Informações obrigatórias.</small>
       </div>  
 
       <!-- informações obrigatórias -->
       <div class="form-group">
-        <label for="userFullName">Nome completo</label>
+        <label for="userFullName">Nome completo*</label>
         <input type="text" class="form-control" name="userFullName" id="userFullName" placeholder="Nome completo" required>
       </div>
       <div class="form-group">
-        <label for="userEmail">E-mail</label>
+        <label for="userEmail">E-mail*</label>
         <input type="email" class="form-control" name="userEmail" id="userEmail" placeholder="E-mail" required>
       </div>
-      <label for="userCountry">País de origem</label>
+      <label for="userCountry">País de origem*</label>
       <div class="form-group">
-        <select class="col-lg-12" name="userCountry" id="userCountry">
+        <select class="col-lg-12" name="userCountry" id="userCountry" required>
           <option value="">Selecione seu país de origem</option>
           <?php
             foreach ($countries as $country) {
