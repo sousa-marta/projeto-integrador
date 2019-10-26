@@ -33,18 +33,18 @@
                 <article class="col-3">
                     <div class="home-card d-flex flex-column justify-content-center">
                         <div class="card-body">
-                            <h4 class="card-title">Auxilio como Pessoa</h4>
+                            <h4 class="card-title">Auxílio como Pessoa</h4>
                                 <p class="card-text">Você pode contribuir oferecendo um curso ou doando um valor para ajudar a manter nossa estrutura e nossa equipe!</p>   
-                                <a href="contribute-people.php"><button type="button" class="btn btn-primary">Saiba Mais</button></a>
+                                <button type="button" class="btn" onclick="location.href='contribute-people.php'">Saiba mais</button>
                         </div>
                     </div>
                 </article>
                 <article class="col-3">
                     <div class="home-card d-flex flex-column">
                         <div class="card-body">
-                            <h4 class="card-title">Auxilio como Empresa</h4>
+                            <h4 class="card-title">Auxílio como Empresa</h4>
                                 <p class="card-text">Como empresa, pode nos patrocinar em eventos, investir diretamente ou desenvolver campanhas para captação de recursos.</p>
-                                <a href="contribute-enterprise.php"><button type="button" class="btn btn-primary">Saiba Mais</button></a>
+                                <button type="button" class="btn" onclick="location.href='contribute-enterprise.php'">Saiba mais</button>
                         </div>
                     </div>
                 </article>

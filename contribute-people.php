@@ -22,10 +22,10 @@
       </div>
       <div class="col-12 text-contribution-people">
         <div class="contribution-people-content">
-          <h1>Voluntariado</h1>
-          <h2>Participe de nossos projetos</h2>
+          <h2>Voluntariado</h2>
+          <h3>Participe de nossos projetos</h3>
           <p>Seja voluntario como professor, contrando um de nossos alunos ou doando um valor fixo ou mensal para nosso projeto!</p>
-          <a href="contact.php"><button class="btn btn-primary">Contate-nos</button></a>
+          <button class="btn" onclick="location.href='contact.php'">Contate-nos</button>
         </div>
       </div>
     </div>

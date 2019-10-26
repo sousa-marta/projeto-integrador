@@ -26,7 +26,7 @@
           
         <p> Contamos com apoio de empresas e recrutadores para conectar essa mão-de-obra qualificada e cheia de energia para aulixiar a integrassão dos novos habitantes do país! </p>
         
-        <a href="about.php" class="btn home-btn-trq">Saiba Mais</a>
+        <button class="btn" onclick="location.href='about.php'">Saiba Mais</button>
       </div>
     </section>
 
@@ -68,8 +68,11 @@
       <div class="container">
         <div class="row justify-content-around align-items-center">
           <h4 class="col-md-4">Ajude-nos a ir mais longe</h4>
+          <button class="btn col-md-3" onclick="location.href='contribute-enterprise.php'">Seja Patrocinador</button>
+          <button class="btn col-md-3" onclick="location.href='contribute-people.php'">Seja Voluntário</button>
+          <!-- Deixando comentado para padronizar botões
           <a href="contribute-enterprise.php" class="col-md-3 btn home-btn-trq">Seja Patrocinador</a>
-          <a href="contribute-people.php" class="col-md-3 btn home-btn-trq">Seja Voluntário</a>
+          <a href="contribute-people.php" class="col-md-3 btn home-btn-trq">Seja Voluntário</a> -->
         </div>
       </div>
     </section>

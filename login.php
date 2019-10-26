@@ -33,7 +33,8 @@
         <label for="userPassword">Senha</label>
         <input type="password" class="form-control" name="userPassword" id="userPassword" required>
       </div>
-      <button type="submit" class="btn btn-color col-12">Entrar</button>
+      <!-- Trocar o type para submit após o sprint 2 -->
+      <button type="button" class="btn btn-color col-12" onclick="location.href='user-page.php'">Entrar</button>
       <p class="text-center mt-2"><a href="forgotten-password.php">Esqueceu sua senha?</a></p>
     </form>
   </main>
