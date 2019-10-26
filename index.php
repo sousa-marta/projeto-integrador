@@ -24,7 +24,7 @@
       <div class="container">
         <p>A Oppy foi criada em 2019 com o objetivo de dar a oportunidade dos emigrantes saídos de diversas condições de vida obterem as habilidades técnicas e emocionais para entrar no mercado de trabalho de um novo país e melhorar suas condições de vida. 
           
-        <p> Contamos com apoio de empresas e recrutadores para conectar essa mão-de-obra qualificada e cheia de energia para aulixiar a integrassão dos novos habitantes do país! </p>
+        <p> Contamos com apoio de empresas e recrutadores para conectar essa mão-de-obra qualificada e cheia de energia para aulixiar a integração dos novos habitantes do país! </p>
         
         <button class="btn" onclick="location.href='about.php'">Saiba Mais</button>
       </div>
