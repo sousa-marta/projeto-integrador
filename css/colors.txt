@@ -12,3 +12,4 @@ Cinza:
 light:#BDBDBD
 medium: #9E9E9E
 Dark:#616161
+Darkest: #474747;

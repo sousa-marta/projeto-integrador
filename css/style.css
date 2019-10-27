@@ -7,7 +7,7 @@
 body {
   font-family: 'Lato', sans-serif;
   color: #47525E;
-  font-size: 15px;
+  font-size: 16px;
 }
 
 nav a {
@@ -90,6 +90,10 @@ nav .btn-dark:hover, nav .btn-dark:focus {
   height: 45%
 }
 
+header nav {
+  font-size: 0.9rem;
+}
+
 nav a {
   color: #47525E;
 }
@@ -168,33 +172,14 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
   text-align: center;
 }
 
-/* .home-card-img {
+.home-card {
+  text-align: center;
+}
+
+ .home-card-img {
   height: 50%;
   width: 50%;
-  border-radius: 50%;
-} */
-
-.home-card .card-img {
-  background-position: center;
-  background-size: 97%;
-  height: 200px;
-  width: 200px;
-  border-radius: 50%;
-}
-
-.home-card .card-whom {
-  background-image: url('../img/home-card-whom.png');
-  background-size: 93%;
-}
-
-.home-card .card-courses {
-  background-image: url('../img/home-card-glasses.png');
-  background-size: 97%;
-}
-
-.home-card .card-help {
-  background-image: url('../img/home-card-help.png');
-}
+} 
 
 .home-card .card-title {
   font-weight: bold;
@@ -202,6 +187,7 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
 
 .home-card .card-text {
   text-align: justify;
+  line-height: 1.5rem;
 }
 
 .home-btn-trq {
@@ -236,8 +222,10 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
 }
 
 .quotation {
-  padding: 0 20vw;
+  padding: 0 15vw;
   line-height: 1.7em;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
 }
 
 .quotation::before {
@@ -267,6 +255,8 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0 3rem;
+  line-height: 1.5rem;
 }
 
 .statistics-images {
@@ -278,6 +268,7 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
   padding: 50px;
   align-items: center;
   justify-content: center;
+  line-height: 1.5rem;
 }
 
 .oppy-info h2, .oppy-values h2 {
@@ -294,6 +285,7 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
   padding: 50px;
   align-items: center;
   justify-content: center;
+  line-height: 1.5rem;
 }
 
 .oppy-proposal h2, .team-info h2 {
@@ -439,6 +431,14 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
 /* Fim OPORTUNIDADES */
 
 /* Início APOIO-GERAL */
+
+.apoio-banner {
+  height:80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .h1-apoio {
   font-size: 4.5rem;
   color: #005662;
@@ -453,8 +453,8 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
  color: #FFF;
 }
 
-.h4-apoio {
-  color: #000;
+.h4-apoio a{
+  color: #FFD54F;
 }
 
 .card-juridico {
@@ -766,8 +766,8 @@ card {
   position: relative;
 }
 
-.user-page-background-dark-yellow {
-  background-color: #C8A415;
+.user-page-background-medium-yellow {
+  background-color: #FFD54F;
 }
 
 .user-page-background-light-gray {
@@ -784,13 +784,18 @@ card {
   color: #FFF;
 } 
 
+.user-page-font-gray {
+  columns: #475247;;
+}
+
 .user-page-photo {
   height: 350px;
   border: 2px solid #FFF;
 }
 
 .btn-edit-info {
-  background-color: #4FB3BF;
+  background-color: #FFD54F;
+  color: #474747;
 }
 /* Fim PÁGINA USUÁRIO */
 

@@ -80,9 +80,9 @@
     </section>
 
     <!-- CURSOS -->
-    <section class="user-page-background-dark-yellow">
+    <section class="user-page-background-medium-yellow">
       <div class="container pb-4">
-        <h2 class="user-page-font-white pl-4 pt-3">Cursos</h2>
+        <h2 class="user-page-font-gray pl-4 pt-3">Cursos</h2>
 
         <div class="row d-flex justify-content-around">
           <!-- cursos inscritas -->

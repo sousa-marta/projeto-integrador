@@ -25,7 +25,7 @@
           <h2>Voluntariado</h2>
           <h3>Participe de nossos projetos</h3>
           <p>Seja voluntario como professor, contrando um de nossos alunos ou doando um valor fixo ou mensal para nosso projeto!</p>
-          <button class="btn" onclick="location.href='contact.php'">Contate-nos</button>
+          <button class="btn mt-3" onclick="location.href='contact.php'">Contate-nos</button>
         </div>
       </div>
     </div>

@@ -30,7 +30,7 @@
     </section>
 
     <!-- Dados Estatísticos -->
-    <section class="container-fluid text-center border-config p-4">
+    <section class="container-fluid text-center border-config p-5">
       <h2 class="text-uppercase pb-3">Dados estatísticos</h2>
       <div class="row">
         <div class="col-lg-4 statistics-block">
@@ -98,32 +98,32 @@
     <section class="container-fluid text-center team-info">
       <h2 class="text-uppercase">As pessoas por trás de tudo isso</h2>
       <div class="row">
-        <div class="col-lg-2 statistics-block">
+        <div class="col-lg-2 statistics-block px-3">
           <img src="img/boy.svg" alt="" class="statistics-images">
           <h5>Alex</h5>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius praesentium amet soluta assumenda tenetur facere nemo, quod repudiandae excepturi esse quos, veritatis quia illum vero, nostrum ab ipsa totam neque?</p>
         </div>
-        <div class="col-lg-2 statistics-block">
+        <div class="col-lg-2 statistics-block px-3">
           <img src="img/girl.svg" alt="" class="statistics-images">
           <h5>Lislaine</h5>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius praesentium amet soluta assumenda tenetur facere nemo, quod repudiandae excepturi esse quos, veritatis quia illum vero, nostrum ab ipsa totam neque?</p>
         </div>
-        <div class="col-lg-2 statistics-block">
+        <div class="col-lg-2 statistics-block px-3">
           <img src="img/girl.svg" alt="" class="statistics-images">
           <h5>Marta</h5>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius praesentium amet soluta assumenda tenetur facere nemo, quod repudiandae excepturi esse quos, veritatis quia illum vero, nostrum ab ipsa totam neque?</p>
         </div>
-        <div class="col-lg-2 statistics-block">
+        <div class="col-lg-2 statistics-block px-3">
           <img src="img/boy.svg" alt="" class="statistics-images">
           <h5>Ricardo</h5>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius praesentium amet soluta assumenda tenetur facere nemo, quod repudiandae excepturi esse quos, veritatis quia illum vero, nostrum ab ipsa totam neque?</p>
         </div>
-        <div class="col-lg-2 statistics-block">
+        <div class="col-lg-2 statistics-block px-3">
           <img src="img/boy.svg" alt="" class="statistics-images">
           <h5>Victor</h5>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius praesentium amet soluta assumenda tenetur facere nemo, quod repudiandae excepturi esse quos, veritatis quia illum vero, nostrum ab ipsa totam neque?</p>
         </div>
-        <div class="col-lg-2 statistics-block">
+        <div class="col-lg-2 statistics-block px-3">
           <img src="img/boy.svg" alt="" class="statistics-images">
           <h5>Yuri</h5>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius praesentium amet soluta assumenda tenetur facere nemo, quod repudiandae excepturi esse quos, veritatis quia illum vero, nostrum ab ipsa totam neque?</p>

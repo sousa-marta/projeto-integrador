@@ -29,22 +29,22 @@
 
         <!-- Card Textos -->
         <section class="contribua-background">
-            <div class="row justify-content-around">
-                <article class="col-3">
+            <div class="row justify-content-center">
+                <article class="col-3 mx-5">
                     <div class="home-card d-flex flex-column justify-content-center">
                         <div class="card-body">
                             <h4 class="card-title">Auxílio como Pessoa</h4>
                                 <p class="card-text">Você pode contribuir oferecendo um curso ou doando um valor para ajudar a manter nossa estrutura e nossa equipe!</p>   
-                                <button type="button" class="btn" onclick="location.href='contribute-people.php'">Saiba mais</button>
+                                <button type="button" class="btn mt-3" onclick="location.href='contribute-people.php'">Saiba mais</button>
                         </div>
                     </div>
                 </article>
-                <article class="col-3">
+                <article class="col-3 mx-5">
                     <div class="home-card d-flex flex-column">
                         <div class="card-body">
                             <h4 class="card-title">Auxílio como Empresa</h4>
                                 <p class="card-text">Como empresa, pode nos patrocinar em eventos, investir diretamente ou desenvolver campanhas para captação de recursos.</p>
-                                <button type="button" class="btn" onclick="location.href='contribute-enterprise.php'">Saiba mais</button>
+                                <button type="button" class="btn mt-3" onclick="location.href='contribute-enterprise.php'">Saiba mais</button>
                         </div>
                     </div>
                 </article>
