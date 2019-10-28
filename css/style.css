@@ -113,6 +113,14 @@ nav #register-link:hover, nav #register-link:focus {
   background: none;
 }
 
+.modal-backdrop {
+  z-index: unset;
+}
+
+.modal-footer-bg-color {
+  background-color: #FFD54F;
+}
+
 /* nav .btn {
   color: #FFF;
   background:#005662;
