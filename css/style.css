@@ -224,7 +224,7 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
 .quotation {
   padding: 0 15vw;
   line-height: 1.7em;
-  font-size: 0.9rem;
+  /* font-size: 0.9rem; */
   margin-bottom: 0.5rem;
 }
 
@@ -239,7 +239,7 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
 }
 
 .quotation-author {
-  font-size: .9rem;
+  /* font-size: .9rem; */
   font-style: italic;
 }
 
