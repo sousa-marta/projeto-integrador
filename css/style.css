@@ -78,7 +78,9 @@ nav .btn-dark:hover, nav .btn-dark:focus {
 
 /* Início HEADER */
 .menu {
-  background: #FFD54F;
+  background: #FFD54FF0;
+  border-bottom: 1px #FFD54F solid;
+  z-index: 99;
 }
 
 .logo-header .logo-mato {
@@ -127,6 +129,7 @@ nav .btn:hover, nav .btn:focus {
 .breadcrumb {
   border-radius: 0;
   margin-bottom: 0;
+  margin-top: 63.9px;
 }
 
 nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
@@ -147,6 +150,7 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
   flex-direction: column;
   align-items: center;
   justify-content: center; 
+  margin-top: 63.9px;
 }
 
 .home-banner h1 {
@@ -224,7 +228,7 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
 .quotation {
   padding: 0 15vw;
   line-height: 1.7em;
-  font-size: 0.9rem;
+  /* font-size: 0.9rem; */
   margin-bottom: 0.5rem;
 }
 
@@ -239,7 +243,7 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
 }
 
 .quotation-author {
-  font-size: .9rem;
+  /* font-size: .9rem; */
   font-style: italic;
 }
 
@@ -809,24 +813,21 @@ card {
 
 /* Início FOOTER */
 footer {
-    background:#616161;
+  background:#616161;
+  padding: 2% 0;
 }
 
 footer img {
-    width: 50%;
+  width: 5vw;
 }
 
-footer a {
-    color:#FFF;
-}
-
-footer a:hover, footer a:focus {
-    color:#005662;
-    background: none;
+footer h4 {
+  color:#FFF;
 }
 
 footer p {
   color: #FFF;
+  font-size: 0.9rem;;
 }
 /* Fim FOOTER */
 
