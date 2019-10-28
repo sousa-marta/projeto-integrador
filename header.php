@@ -1,4 +1,4 @@
-<header class="container-fluid">
+<header class="container-fluid fixed-top">
   <div class="col-12 menu">
     <div class="row">
       <div class="col-2 logo-header">

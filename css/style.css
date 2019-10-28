@@ -78,7 +78,9 @@ nav .btn-dark:hover, nav .btn-dark:focus {
 
 /* Início HEADER */
 .menu {
-  background: #FFD54F;
+  background: #FFD54FF0;
+  border-bottom: 1px #FFD54F solid;
+  z-index: 99;
 }
 
 .logo-header .logo-mato {
