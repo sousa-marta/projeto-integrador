@@ -129,6 +129,7 @@ nav .btn:hover, nav .btn:focus {
 .breadcrumb {
   border-radius: 0;
   margin-bottom: 0;
+  margin-top: 63.9px;
 }
 
 nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
