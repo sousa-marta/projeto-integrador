@@ -638,15 +638,6 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
 /* Fim CONTRIBUIÇAO-PESSOA */
 
 /* Início CONTATO */
-.remove-padding {
-  padding: 0;
-}
-
-#remove-margin {
-  margin-left: 0;
-  margin-right: 0;
-}
-
 .contact-bg {
   background-color: #4FB3BF;
   height: 30vh;
@@ -665,8 +656,11 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
   color: #005662;
 }
 
-.different-form-border {
-  border: 3px dashed #4FB3BF;
+.contact-form-design {
+  /* border: 3px dashed #4FB3BF; */
+  background-color: #FFFF81;
+  margin: 2%;
+  padding: 2% 1%;
 }
 
 label {

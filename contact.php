@@ -28,9 +28,9 @@ $subjects = ["Apoio","Cadastro","Cursos","Doação","Voluntariado","Outros"];
   <main class="container-fluid remove-padding">
     <h1 class="contact-bg d-flex justify-content-center align-items-center">Contato</h1>
     <div id="remove-margin" class="row align-self-center justify-content-center">
-    <form action="" method="post" class="card m-5 p-5 col-lg-6 different-form-border">
+    <form action="" method="post" class="card col-lg-5 contact-form-design">
       <p class="text-center">Caso não encontre a resposta para a sua pergunta abaixo, não hesite em nos contatar usando o formulário ou diretamente pelo e-mail: <a class="contact-email" href="mailto:">contato@oppy.com.br</a></p>
-      <div class="col-lg-8 align-self-center">
+      <div class="col-lg-8 align-self-center mt-2">
       <div class="form-group">
         <label for="contactName">Nome</label>
         <input type="text" class="form-control" name="contactName" id="contactName" placeholder="Nome" required>
@@ -55,7 +55,7 @@ $subjects = ["Apoio","Cadastro","Cursos","Doação","Voluntariado","Outros"];
         <label for="userPassword">Mensagem</label>
         <textarea class="form-control" id="contactMessage" rows="3"></textarea>
       </div>
-      <button type="submit" class="btn btn-color">Enviar</button>
+      <button type="submit" class="btn col-lg-12">Enviar</button>
       </div>
     </form>
     </div>
