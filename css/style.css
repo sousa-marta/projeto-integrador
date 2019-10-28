@@ -813,24 +813,21 @@ card {
 
 /* Início FOOTER */
 footer {
-    background:#616161;
+  background:#616161;
+  padding: 2% 0;
 }
 
 footer img {
-    width: 50%;
+  width: 5vw;
 }
 
-footer a {
-    color:#FFF;
-}
-
-footer a:hover, footer a:focus {
-    color:#005662;
-    background: none;
+footer h4 {
+  color:#FFF;
 }
 
 footer p {
   color: #FFF;
+  font-size: 0.9rem;;
 }
 /* Fim FOOTER */
 
