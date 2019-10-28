@@ -2,8 +2,8 @@
   <div class="col-12 menu">
     <div class="row">
       <div class="col-2 logo-header">
-        <img class="logo-mato" src="img/a_logo-img_turquesa-dark.png" alt="imagem-logo-oppy">
-        <img class="logo-logotipo" src="img/b_logo-nome_turquesa-dark-white.png" alt="nome-logo-oppy">
+        <a href="index.php"><img class="logo-mato" src="img/a_logo-img_turquesa-dark.png" alt="imagem-logo-oppy"></a>
+        <a href="index.php"><img class="logo-logotipo" src="img/b_logo-nome_turquesa-dark-white.png" alt="nome-logo-oppy"></a>
       </div>
       <nav class="col-10 d-flex align-items-center justify-content-end">
         <ul class="nav">
