@@ -5,10 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Oportunidades | Empregos</title>
-  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
-
+  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Baloo&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -24,22 +24,15 @@
 
   <main>
 
-    <!-- <section class="jumbotron jumbotron-fluid text-white"> -->
-      <!-- arrumar css -->
-      <!-- <div class="container d-flex justify-content-center">
-        <h1 class="display-4">Empregos</h1>
-      </div>
-    </section> -->
-
     <section class="opportunities-bg col-md-12 d-flex justify-content-center align-items-center">
-        <h1>Empregos</h1>
+      <h1>Empregos</h1>
     </section>
 
     <!-- // => dividindo a tela -->
 
     <section class="container row">
       <!-- coluna esquerda menu / filtros de pesquisa -->
-      <div class="list-group  col-lg-3 p-3">
+      <div class="list-group  col-lg-3 col-md-4 p-3">
         <div class="list-group-item row form-group list-green text-white">
           <h3><i class="fa fa-search"></i> Filtros</h3>
           <!-- JS files: jQuery first, then Popper.js, then Bootstrap JS -->
@@ -185,7 +178,7 @@
         <div class="list-group-item row form-group p-3 bg-light border border-primary">
           <div class="form-group">
             <label class="text-primary" for="">Busca por Palavra Chave</label>
-            <input type="text" class="form-control"  placeholder="Buscar por...">
+            <input type="text" class="form-control" placeholder="Buscar por...">
           </div>
 
           <h5 class="btn btn-primary"><i class="fa fa-search"></i> Buscar Oportunidades</h5>
@@ -201,23 +194,23 @@
 
       </div>
       <!-- vagas de emprego coluda maior da direita -->
-      <div class="col ">
+      <div class="col-lg-9 ">
         <div class="container p-3">
           <div class="card">
             <div class="row">
-              <div class="col-xl-5">
-                <img class="card-img-top h-100" src="img/panificadora.jpg" alt="Imagem de capa do card">
+              <div class="d-flex align-items-center col-lg-5">
+                <img class="card-img-top h-90 " src="img/panificadora-quadro.jpg" alt="Imagem de capa do card">
               </div>
-              <div class="col-xl-7 p-3">
+              <div class="col-lg-7 p-3">
                 <h3 class="card-title"> Vaga Padeiro Jabaquara</h3>
-                  <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Est modi delectus quos? Commodi eius doloribus ipsam iste autem sequi ad natus nobis,
-                    quae numquam perspiciatis. Veniam repellendus voluptate recusandae illo. </p>
-                  <p> cidade: São Paulo </p>
-                  <p> estado: SP </p>
-                  <p> salário: R$ 1.500,00</p>
-                  <p> email: contato@padarialegal.com.br </p>
-                  <a href="#" class="btn btn-primary">enviar curriculo</a>
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Est modi delectus quos? Commodi eius doloribus ipsam iste autem sequi ad natus nobis,
+                  quae numquam perspiciatis. Veniam repellendus voluptate recusandae illo. </p>
+                <p> cidade: São Paulo </p>
+                <p> estado: SP </p>
+                <p> salário: R$ 1.500,00</p>
+                <p> email: contato@padarialegal.com.br </p>
+                <a href="#" class="btn btn-primary">enviar curriculo</a>
               </div>
             </div>
           </div>
@@ -226,8 +219,8 @@
         <div class="container p-3">
           <div class="card">
             <div class="row">
-              <div class="col-lg-5">
-                <img class="card-img-top h-100" src="img/panificadora.jpg" alt="Imagem de capa do card">
+              <div class="d-flex align-items-center col-lg-5">
+                <img class="card-img-top h-90 " src="img/panificadora-quadro.jpg" alt="Imagem de capa do card">
               </div>
               <div class="col-lg-7 p-3">
                 <h3 class="card-title"> Vaga Padeiro Jabaquara</h2>
@@ -248,8 +241,8 @@
         <div class="container p-3">
           <div class="card">
             <div class="row">
-              <div class="col-lg-5">
-                <img class="card-img-top h-100" src="img/panificadora.jpg" alt="Imagem de capa do card">
+              <div class="d-flex align-items-center col-lg-5">
+                <img class="card-img-top h-90 " src="img/panificadora-quadro.jpg" alt="Imagem de capa do card">
               </div>
               <div class="col-lg-7 p-3">
                 <h3 class="card-title"> Vaga Padeiro Jabaquara</h2>
@@ -270,8 +263,8 @@
         <div class="container p-3">
           <div class="card">
             <div class="row">
-              <div class="col-lg-5">
-                <img class="card-img-top h-100" src="img/panificadora.jpg" alt="Imagem de capa do card">
+              <div class="d-flex align-items-center col-lg-5">
+                <img class="card-img-top h-90 " src="img/panificadora-quadro.jpg" alt="Imagem de capa do card">
               </div>
               <div class="col-lg-7 p-3">
                 <h3 class="card-title"> Vaga Padeiro Jabaquara</h2>
@@ -290,7 +283,7 @@
       </div>
     </section>
   </main>
-  <?php include_once('footer.php') ?> 
+  <?php include_once('footer.php') ?>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 
