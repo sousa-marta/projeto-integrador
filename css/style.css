@@ -81,6 +81,7 @@ nav .btn-dark:hover, nav .btn-dark:focus {
   background: #FFD54FF0;
   border-bottom: 1px #FFD54F solid;
   z-index: 99;
+  height:10vh;
 }
 
 .logo-header .logo-mato {
@@ -120,24 +121,13 @@ nav #register-link:hover, nav #register-link:focus {
 .modal-footer-bg-color {
   background-color: #FFF;
 }
-
-/* nav .btn {
-  color: #FFF;
-  background:#005662;
-  border: none;
-}
-
-nav .btn:hover, nav .btn:focus {
-  background: #4FB3BF;
-  color: #000;
-} */
 /* Fim HEADER */
 
 /* Início BREADCRUMB */
 .breadcrumb {
   border-radius: 0;
   margin-bottom: 0;
-  margin-top: 63.9px;
+  margin-top: 10vh;
 }
 
 nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
@@ -148,6 +138,7 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
 
 /* Início HOME */
 .home-banner {
+  margin-top:10vh;
   background-image: url('../img/home-banner.jpg');
   background-size: cover;
   background-position: center;
@@ -158,12 +149,26 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
   flex-direction: column;
   align-items: center;
   justify-content: center; 
-  margin-top: 63.9px;
 }
 
 .home-banner h1 {
   font-family: 'Baloo', cursive;
   font-size: 60px;
+  margin-top: 4rem;
+}
+
+.home-banner button {
+  margin-top: 2rem;
+  color: #fff;
+  font-size: 1.4rem;
+  background-color: #00838F;
+  border-color:none;
+  padding: 0.5rem 3rem;
+}
+
+.home-banner button:hover {
+  background-color: #FFFF81;
+  color:#474747;
 }
 
 .home-summary {
@@ -200,16 +205,6 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
 .home-card .card-text {
   text-align: justify;
   line-height: 1.5rem;
-}
-
-.home-btn-trq {
-  background:#005662;
-  color:#FFF;
-  text-transform: uppercase;
-}
-
-.home-btn-trq:hover, .home-btn-trq:focus {
-  background:#4fb3bf;
 }
 
 .home-banner-apoie {
