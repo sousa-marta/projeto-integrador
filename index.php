@@ -17,6 +17,8 @@
     <!-- Banner -->
     <section class="home-banner">
       <h1>Onde a esperança se reencontra</h1>
+      <button class="btn" onclick="location.href='about.php'">Apoie-me</button>
+      <!-- <a href="about.php" class="btn">Apoie-me</a> -->
     </section>
 
     <!-- Texto Resumo Sobre o Site -->
@@ -76,9 +78,6 @@
           <h4 class="col-md-4">Ajude-nos a ir mais longe</h4>
           <button class="btn col-md-3" onclick="location.href='contribute-enterprise.php'">Seja Patrocinador</button>
           <button class="btn col-md-3" onclick="location.href='contribute-people.php'">Seja Voluntário</button>
-          <!-- Deixando comentado para padronizar botões
-          <a href="contribute-enterprise.php" class="col-md-3 btn home-btn-trq">Seja Patrocinador</a>
-          <a href="contribute-people.php" class="col-md-3 btn home-btn-trq">Seja Voluntário</a> -->
         </div>
       </div>
     </section>
