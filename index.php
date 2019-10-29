@@ -18,7 +18,6 @@
     <section class="home-banner">
       <h1>Onde a esperança se reencontra</h1>
       <button class="btn" onclick="location.href='about.php'">Apoie-me</button>
-      <!-- <a href="about.php" class="btn">Apoie-me</a> -->
     </section>
 
     <!-- Texto Resumo Sobre o Site -->
