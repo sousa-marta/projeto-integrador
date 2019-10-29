@@ -14,7 +14,7 @@
   <!-- CABEÇALHO -->
   <?php include_once('header.php'); ?>
   <nav aria-label="breadcrumb">
-    <ol class="breadcrumb m-0">
+    <ol class="breadcrumb">
       <li class="breadcrumb-item"><a class="breadcrumb-item-link" href="index.php">Home</a></li>
       <li class="breadcrumb-item"><a class="breadcrumb-item-link" href="courses.php">Cursos</a></li>
       <li class="breadcrumb-item active" aria-current="page">Hotelaria</li>
@@ -24,7 +24,7 @@
   <main>
 
     <!-- INFORMAÇÕES GERAIS -->
-    <section class="course-detail-background-light-green course-detail-font-white-all">
+    <section class="course-detail-main-banner">
 
       <!-- tudo em um container para deixar uma pequena margem dos lados -->
       <div class="container">
@@ -50,9 +50,9 @@
             </div>
             <div>
               <div class="row d-flex text-center mt-3"> <!-- cronograma-data -->
-                <div class="col-3 border course-detail-background-dark-gray"><p class="m-0">01/10</div>
-                <div class="col-3 border course-detail-background-dark-gray"><p class="m-0">31/10</div>
-                <div class="col-3 border course-detail-background-dark-yellow"><p class="m-0">10/11</div>
+                <div class="col-3 border course-detail-schedule-past"><p class="m-0">01/10</div>
+                <div class="col-3 border course-detail-schedule-past"><p class="m-0">31/10</div>
+                <div class="col-3 border course-detail-shedule-soon"><p class="m-0">10/11</div>
                 <div class="col-3 border"><p class="m-0">20/11</div>
               </div>
               <div class="row d-flex text-center"> <!-- cronograma-legenda -->
@@ -93,21 +93,21 @@
     <section>
       
       <!-- div do fundo amarelo -->
-      <div class="course-detail-background-yellow">
+      <div class="course-detail-similar-courses-top">
         <div class="container pt-3 pb-5">
           <h2>Cursos Semelhantes</h2>
         </div>
       </div>
 
       <!-- div do fundo cinza -->
-      <div class="course-detail-background-light-gray">
+      <div class="course-detail-similar-courses-bottom">
         <div class="container">
           <div class="row d-flex container justify-content-between">
 
             <!-- 1o card -->
             <div class="col-4 p-2">
               <div class="course-detail-card">
-                <div class="container course-detail-background-dark-green course-detail-font-white-all pt-2 pb-2">
+                <div class="container course-detail-card-title">
                   <span>Hotelaria</span>
                   <h2>Curso de Recepcionista</h2>
                 </div>
@@ -126,7 +126,7 @@
             <!-- 2o card -->
             <div class="col-4 p-2">
               <div class="course-detail-card">
-                <div class="container course-detail-background-dark-green course-detail-font-white-all pt-2 pb-2">
+                <div class="container course-detail-card-title">
                   <span>Gastronomia</span>
                   <h2>Curso de Cozinheiro</h2>
                 </div>
@@ -145,7 +145,7 @@
             <!-- 3o card -->
             <div class="col-4 p-2">
               <div class="course-detail-card">
-                <div class="container course-detail-background-dark-green course-detail-font-white-all pt-2 pb-2">
+                <div class="container course-detail-card-title">
                   <span>Serviços Gerais</span>
                   <h2>Curso de Marceneiro</h2>
                 </div>
