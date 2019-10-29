@@ -749,12 +749,18 @@ card {
   font-weight: bold;
 }
 
-.user-page-background-light-green {
-  background-color: #8bcdd3;
+.user-page-main-banner {
+  background-color: #005662;
 }
 
-.user-page-background-dark-green {
+.user-page-main-banner * {
+  color: #FFF;
+}
+
+.user-page-cards-title {
   background-color: #005662;
+  padding: 10px;
+  color: #FFF;
 }
 
 .user-page-card {
@@ -767,26 +773,20 @@ card {
   position: relative;
 }
 
-.user-page-background-medium-yellow {
+.user-page-section-courses {
   background-color: #FFD54F;
 }
 
-.user-page-background-light-gray {
+.user-page-item-inside-card {
   background-color: #e4e4e4;
+  margin: 10px;
+  padding: 5px;
 }
 
 .user-page-icon {
   position: absolute;
   top: -8px;
   right: -7px;
-}
-
-.user-page-font-white {
-  color: #FFF;
-} 
-
-.user-page-font-gray {
-  columns: #475247;;
 }
 
 .user-page-photo {
@@ -798,6 +798,7 @@ card {
   background-color: #FFD54F;
   color: #474747;
 }
+
 /* Fim PÁGINA USUÁRIO */
 
 /* Início INFORMAÇÕES USUÁRIO */
