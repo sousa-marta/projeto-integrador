@@ -348,73 +348,32 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
 /* Fim CURSOS-GERAL */
 
 /* Início CURSO-DETALHE */
-.course-detail-text-important {
-  font-weight: 900;
-}
-
-.course-detail-background-light-green {
+.course-detail-main-banner {
   background-color: #00838F;
 }
 
-.course-detail-background-dark-green {
-  background-color: #005662;
-}
-
-.course-detail-background-yellow {
-  background: #FFD54F;
-}
-
-.course-detail-background-dark-yellow {
-  background-color: #C8A415;
-}
-
-.course-detail-background-dark-gray {
-  background-color: #595f66;
-}
-
-.course-detail-background-light-gray {
-  background-color: #e4e4e4;
-}
-
-.course-detail-font-white-all * {
+.course-detail-main-banner * {
   color: #FFF;
 }
-
-/* .course-detail-font-dark-gray{
-  color: #343a40;
-} */
-
-/*Padronizando o tamanho das fontes, troquei por h2-h4
-.course-detail-font-size-15 {
-  font-size: 1.5em;
-}
-
-.course-detail-font-size-20 {
-  font-size: 2em;
-}
-
-.course-detail-font-size-30 {
-  font-size: 3em;
-}*/
-
-/* .course-detail-btn-signup{
-  color: #FFF;
-  background:#005662;
-  border: none;
-}
-
-.course-detail-btn-signup:hover{
-  background: #4FB3BF;
-  color: #000;
-} */
 
 .course-detail-logo-img {
   height: 200px;
 }
 
-.course-detail-logo-img-alike {
-  height: 100px;
-  margin: 20px;
+.course-detail-schedule-past {
+  background-color: #595f66;
+}
+
+.course-detail-shedule-soon {
+  background-color: #C8A415;
+}
+
+.course-detail-similar-courses-top {
+  background: #FFD54F;
+}
+
+.course-detail-similar-courses-bottom {
+  background-color: #e4e4e4;
 }
 
 .course-detail-card {
@@ -422,6 +381,21 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
   position: relative;
   top: -40px;
   border: 1px solid #005662;
+}
+
+.course-detail-card-title {
+  background-color: #005662;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.course-detail-card-title * {
+  color: #FFF;
+}
+
+.course-detail-logo-img-alike {
+  height: 100px;
+  margin: 20px;
 }
 /* Fim CURSO-DETALHE */
 
@@ -749,12 +723,18 @@ card {
   font-weight: bold;
 }
 
-.user-page-background-light-green {
-  background-color: #8bcdd3;
+.user-page-main-banner {
+  background-color: #005662;
 }
 
-.user-page-background-dark-green {
+.user-page-main-banner * {
+  color: #FFF;
+}
+
+.user-page-cards-title {
   background-color: #005662;
+  padding: 10px;
+  color: #FFF;
 }
 
 .user-page-card {
@@ -767,26 +747,20 @@ card {
   position: relative;
 }
 
-.user-page-background-medium-yellow {
+.user-page-section-courses {
   background-color: #FFD54F;
 }
 
-.user-page-background-light-gray {
+.user-page-item-inside-card {
   background-color: #e4e4e4;
+  margin: 10px;
+  padding: 5px;
 }
 
 .user-page-icon {
   position: absolute;
   top: -8px;
   right: -7px;
-}
-
-.user-page-font-white {
-  color: #FFF;
-} 
-
-.user-page-font-gray {
-  columns: #475247;;
 }
 
 .user-page-photo {
@@ -798,6 +772,7 @@ card {
   background-color: #FFD54F;
   color: #474747;
 }
+
 /* Fim PÁGINA USUÁRIO */
 
 /* Início INFORMAÇÕES USUÁRIO */
