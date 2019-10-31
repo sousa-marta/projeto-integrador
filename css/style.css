@@ -16,6 +16,7 @@ nav a {
 
 p {
   margin: 0;
+  font-size: 1.1rem;
 }
 
 h1 {
@@ -189,11 +190,7 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
   text-align: center;
 }
 
-.home-card {
-  text-align: center;
-}
-
- .home-card-img {
+.home-card-img {
   height: 50%;
   width: 50%;
 } 
@@ -538,7 +535,7 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
 /* Fim APOIO PSICOLÓGICO */ 
 
 /* Início CONTRIBUA-GERAL */
-.contribua-banner {
+.contribute-banner {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -547,64 +544,43 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
   height: 30vh;
 }
 
-.contribua-background {
-  height: 60vh;
-  background-color: #FFD54F;
+.contribute-background {
+  height: 70vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
+.contribute-banner-session {
+  align-items: center;
+  background: #005662;
+  color: #fff;
+  display: flex;
+  height: 20vh;
+  justify-content: center;
+}
+
+.contribute-text {
+  display: flex;
+  align-items: center;
+  background: #FFFF81;
+  height: 80vh;
+  justify-content: center;
+}
+
+.contribute-volunteer{
+  width:80vw;
+}
+
+.contribute-enterprise {
+  /* height: 80vh; */
+}
+
+.contribute-text img, .contribute-enterprise img {
+  width:70%;
+}
+
 /* Fim CONTRIBUA-GERAL */
-
-/* INSERIR STYLE PRA PÁGINA CONTRIBUIÇAO-EMPRESA */
-
-/* Início CONTRIBUIÇAO-PESSOA */
-.contribution-enterprise {
-  background: #005662;
-  color: #fff;
-  height: 30vh;
-}
-
-.contribution-enterprise-text {
-  background: #FFD54F;
-  height: 50vh;
-}
-
-.contribution-enterprise-text h1 {
-  padding-top: 5vh;
-}
-
-.contribution-enterprise-content {
-  width: 50%;
-  text-align: center;
-  padding: 5vh;
-}
-
-#btn-conttribution {
-  margin-bottom: 5vh;
-}
-
-.banner-contribution-people {
-  align-items: center;
-  background: #005662;
-  color: #fff;
-  display: flex;
-  height: 30vh;
-  justify-content: center;
-}
-
-.text-contribution-people {
-  display: flex;
-  align-items: center;
-  background: #FFD54F;
-  height: 50vh;
-  justify-content: center;
-}
-
-.contribution-people-content {
-  text-align: center;
-}
-/* Fim CONTRIBUIÇAO-PESSOA */
 
 /* Início CONTATO */
 .contact-bg {

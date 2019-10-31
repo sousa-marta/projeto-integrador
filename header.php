@@ -30,15 +30,8 @@
               <a class="dropdown-item" href="support-psychologic.php">Psicológico</a>
             </div>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Contribua
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="contribute.php">Geral</a>
-              <a class="dropdown-item" href="contribute-enterprise.php">Contribuição Empresas</a>
-              <a class="dropdown-item" href="contribute-people.php">Contribuição Pessoas</a>
-            </div>
+          <li class="nav-item">
+            <a class="nav-link active" href="contribute.php">Contribua</a>
           </li>
           <li class="nav-item">
             <a class="nav-link active" href="contact.php">Contato</a>
