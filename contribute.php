@@ -27,29 +27,21 @@
       <h1>Contribua</h1>
     </section>
 
-    <!-- Card Textos -->
-    <section class="container contribute-background">
-      <div class="row justify-content-center">
-        <article class="col-5 mx-1 text-center">
-          <div class="card">
-            <div class="card-body">
-              <img src="img/contribute-volunteer.png" alt="aperto de mão">
-              <h4 class="card-title">Auxílio como Pessoa</h4>
-              <p class="card-text">Você pode contribuir oferecendo um curso ou doando um valor para ajudar a manter nossa estrutura e nossa equipe!</p>   
-              <button type="button" class="align-self-end btn mt-3" onclick="location.href='#contribute-session-people'">Saiba mais</button>
-            </div>
-          </div>
-        </article>
-        <article class="col-5 mx-1 text-center">
-          <div class="card">
-            <div class="card-body">
-              <img src="img/contribute-enterprise.png" alt="aperto de mão">
-              <h4 class="card-title">Auxílio como Empresa</h4>
-              <p class="card-text">Como empresa, pode nos patrocinar em eventos, investir diretamente ou desenvolver campanhas para captação de recursos.</p>
-              <button type="button" class="btn mt-3" onclick="location.href='#contribute-session-company'">Saiba mais</button>
-            </div>
-          </div>
-        </article>
+    <!-- Cards Resumo Auxílio Pessoa e Empresa-->
+    <section class="container text-center">
+      <div class="row justify-content-center my-5">
+        <div class="col-5 py-4 px-2 mx-3 border">
+        <img src="img/contribute-volunteer.png" alt="aperto de mão">
+          <h4 class="card-title">Auxílio como Pessoa</h4>
+          <p class="card-text">Você pode contribuir oferecendo um curso ou doando um valor para ajudar a manter nossa estrutura e nossa equipe!</p>   
+          <button type="button" class="align-self-end btn mt-3" onclick="location.href='#contribute-session-people'">Saiba mais</button>
+        </div>
+        <div class="col-5 py-4 px-2 mx-3 border">
+          <img src="img/contribute-enterprise.png" alt="aperto de mão">
+          <h4 class="card-title">Auxílio como Empresa</h4>
+          <p class="card-text">Como empresa, pode nos patrocinar em eventos, investir diretamente ou desenvolver campanhas para captação de recursos.</p>
+          <button type="button" class="btn mt-3" onclick="location.href='#contribute-session-company'">Saiba mais</button>
+        </div>
       </div>
     </section>
 

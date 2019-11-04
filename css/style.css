@@ -568,14 +568,6 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
   justify-content: center;
 }
 
-.contribute-volunteer{
-  /* width:90vw; */
-}
-
-.contribute-enterprise {
-  /* height: 80vh; */
-}
-
 .contribute-text img, .contribute-enterprise img {
   width:70%;
 }
