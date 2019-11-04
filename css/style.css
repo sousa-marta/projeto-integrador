@@ -564,12 +564,12 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
   display: flex;
   align-items: center;
   background: #FFFF81;
-  height: 80vh;
+  /* height: 80vh; */
   justify-content: center;
 }
 
 .contribute-volunteer{
-  width:80vw;
+  /* width:90vw; */
 }
 
 .contribute-enterprise {
