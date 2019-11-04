@@ -564,16 +564,8 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
   display: flex;
   align-items: center;
   background: #FFFF81;
-  height: 80vh;
-  justify-content: center;
-}
-
-.contribute-volunteer{
-  width:80vw;
-}
-
-.contribute-enterprise {
   /* height: 80vh; */
+  justify-content: center;
 }
 
 .contribute-text img, .contribute-enterprise img {
