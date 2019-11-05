@@ -140,7 +140,7 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
 /* Início HOME */
 .home-banner {
   margin-top:10vh;
-  background-image: url('../img/home-banner2.jpg');
+  background-image: url('../img/home-banner.jpg');
   background-size: cover;
   background-position: center;
   height: 90vh;
