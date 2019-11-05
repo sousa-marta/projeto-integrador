@@ -86,12 +86,17 @@ nav .btn-dark:hover, nav .btn-dark:focus {
 }
 
 .logo-header .logo-mato {
-  width: 30%;
+  width: 20%;
+  padding-top: 1vh;
 }
 
 .logo-header .logo-logotipo {
   width: 45%;
-  height: 45%
+  height: 50%;
+}
+
+.logo-logotipo {
+  margin-top: 3.6vh;
 }
 
 header nav {

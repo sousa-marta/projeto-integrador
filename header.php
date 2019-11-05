@@ -5,42 +5,48 @@
         <a href="index.php"><img class="logo-mato" src="img/a_logo-img_turquesa-dark.png" alt="imagem-logo-oppy"></a>
         <a href="index.php"><img class="logo-logotipo" src="img/b_logo-nome_turquesa-dark-white.png" alt="nome-logo-oppy"></a>
       </div>
-      <nav class="col-10 d-flex align-items-center justify-content-end">
-        <ul class="nav">
-          <li class="nav-item">
-            <a class="nav-link active" href="index.php">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="about.php">Quem somos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="courses.php">Cursos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="opportunities.php">Oportunidades</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Apoio
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="support.php">Geral</a>
-              <a class="dropdown-item" href="support-legal.php">Jurídico</a>
-              <a class="dropdown-item" href="support-professional.php">Profissional</a>
-              <a class="dropdown-item" href="support-psychologic.php">Psicológico</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="contribute.php">Contribua</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="contact.php">Contato</a>
-          </li>
-          <li class="nav-item">
-            <a id="register-link" class="nav-link" href="register.php">Cadastre-se</a>
-          </li>
-          <button type="button" class="btn" data-toggle="modal" data-target="#login-modal" href="#">Login</button>
-        </ul>
+      <nav class="navbar col-10 d-flex align-items-center justify-content-end">
+        <button class="navbar-toggler dropdown-toggler d-none d-md-block" type="button" data-toggle="collapse" data-target="#collapseNavbar">
+          &#9776;  
+        </button>
+
+        <div class="navbar-toggleable-xs" id="collapseNavbar">
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.php">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="about.php">Quem somos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="courses.php">Cursos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="opportunities.php">Oportunidades</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Apoio
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="support.php">Geral</a>
+                <a class="dropdown-item" href="support-legal.php">Jurídico</a>
+                <a class="dropdown-item" href="support-professional.php">Profissional</a>
+                <a class="dropdown-item" href="support-psychologic.php">Psicológico</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="contribute.php">Contribua</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="contact.php">Contato</a>
+            </li>
+            <li class="nav-item">
+              <a id="register-link" class="nav-link" href="register.php">Cadastre-se</a>
+            </li>
+            <button type="button" class="btn" data-toggle="modal" data-target="#login-modal" href="#">Login</button>
+          </ul>
+        </div>
       </nav>
     </div>
   </div>
