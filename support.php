@@ -42,7 +42,7 @@
             <div class="home-card d-flex flex-column align-items-center">
                 <div class="card-img card-juridico"></div>
                 <div class="card-body">
-                <h4 class="h4-apoio card-title"><a href="support-legal.php">Assistencia Juridica</a></h4>
+                <h4 class="h4-apoio card-title"><a href="#support-legal">Assistencia Juridica</a></h4>
                 <p class="p-apoio card-text justify-content-center">Enim nisi officia incididunt sint qui. Lorem cupidatat voluptate incididunt et cupidatat laboris dolore eiusmod ad et veniam in magna. Labore irure excepteur occaecat labore ut exercitation adipisicing. Duis amet veniam voluptate irure est. Aliquip eu fugiat tempor dolor ut minim adipisicing qui dolor eiusmod anim do proident et. Ut ea sunt esse ea incididunt excepteur exercitation Lorem irure elit. Magna excepteur duis in laborum nulla culpa velit quis.</p>
                 </div>
             </div>
@@ -51,7 +51,7 @@
           <div class="home-card d-flex flex-column align-items-center">
             <div class="card-img card-psicologico"></div>
             <div class="card-body">
-              <h4 class="h4-apoio card-title"><a href="support-psychologic.php">Acompanhamento Psicológico</a></h4>
+              <h4 class="h4-apoio card-title"><a href="#support-psychologic">Acompanhamento Psicológico</a></h4>
               <p class="p-apoio card-text">Enim nisi officia incididunt sint qui. Lorem cupidatat voluptate incididunt et cupidatat laboris dolore eiusmod ad et veniam in magna. Labore irure excepteur occaecat labore ut exercitation adipisicing. Duis amet veniam voluptate irure est. Aliquip eu fugiat tempor dolor ut minim adipisicing qui dolor eiusmod anim do proident et. Ut ea sunt esse ea incididunt excepteur exercitation Lorem irure elit. Magna excepteur duis in laborum nulla culpa velit quis.</p>
             </div>
           </div>
@@ -60,7 +60,7 @@
           <div class="home-card d-flex flex-column align-items-center">
             <div class="card-img card-trabalho"></div>
             <div class="card-body">
-              <h4 class="h4-apoio card-title"><a href="support-professional.php">Apoio Novo Trabalho</a></h4>
+              <h4 class="h4-apoio card-title"><a href="#support-professional">Apoio Novo Trabalho</a></h4>
               <p class="p-apoio card-text">Enim nisi officia incididunt sint qui. Lorem cupidatat voluptate incididunt et cupidatat laboris dolore eiusmod ad et veniam in magna. Labore irure excepteur occaecat labore ut exercitation adipisicing. Duis amet veniam voluptate irure est. Aliquip eu fugiat tempor dolor ut minim adipisicing qui dolor eiusmod anim do proident et. Ut ea sunt esse ea incididunt excepteur exercitation Lorem irure elit. Magna excepteur duis in laborum nulla culpa velit quis.</p>
             </div>
           </div>
@@ -68,13 +68,157 @@
       </div>
     </section>
 
-    <!-- Texto Exemplo -->
-    <section class="texto-apoio">
-        <div class="container">
-            <h3> Texto Exemplo </h3>
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque sapiente quae aut ipsum commodi placeat nam? Voluptate neque sit impedit. Similique explicabo excepturi hic pariatur rerum! Adipisci nulla necessitatibus laboriosam. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur aspernatur delectus non eos porro, officia natus corporis animi ut cumque velit dolorem quam! Obcaecati quisquam veniam soluta quos accusantium autem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui magni pariatur id, totam temporibus fugiat eveniet esse! Quo perferendis, nobis, et, nemo incidunt molestiae nulla fugit voluptas tenetur ab quisquam. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus cumque ab tenetur, distinctio sit aliquam facilis quisquam exercitationem ipsam minus animi laudantium veritatis nihil, perspiciatis nesciunt nemo, totam quo ducimus?</p>
+     <!-- Inicia a página da Assistencia Jurídica  -->
+    <section class="container p-3" id="support-legal">
+      <div class="row align-items-center">
+        <div class="col-lg-4 col-md-4 banner-img">
+          <img class="img-fluid" src="img/juridico.png" alt="apoio juridico">
         </div>
+        <div class="col-lg-8 col-md-8 banner-img">
+          <h2 class="h2-apoio">Conheça a Assistência Jurídica da Oppy</h2>
+        </div>
+      </div>
     </section>
+
+    <div class="card text-white mb-3 card-bg-green">
+      <div class="card-header">
+        <h5 class="card-title">O que é?</h5>
+      </div>
+      <div class="card-body">
+        <p class="card-text">A assessoria jurídica a refugiados e a imigrantes é fundamental devido ao alto grau de desconhecimento da legislação brasileira por parte dessas pessoas e da sociedade em geral.
+          <br><br> Um migrante que passa a habitar o país sente necessidade de orientação em assuntos legais para poder se integrar devidamente ao ambiente e para ter consciência dos seus direitos e deveres.
+          <br><br> As questões tratadas pela OPPY já envolvem pedidos de naturalização e de nacionalização, vistos, previdência, casamento, acesso à educação e à saúde, entre outras.
+          <br><br> A OPPY possui um forte trabalho em rede, destacando-se a pareceria com Alto Comissariado das Nações Unidas para Refugiados (ACNUR), com a Associação Antonio Vieira (ASAV) e com o CIBAI Migrações. Ademais, integra o Fórum Permanente de Mobilidade Humana (FPMH) o Comitê Estadual de Atenção a Migrantes, Refugiados, Apátridas e Vítimas de Tráfico de Pessoas (COMIRAT-SP) e tem representantes junto ao Comitê de Acompanhamento pela Sociedade Civil sobre ações de Migração e Refúgio (CASC-Migrante) da Secretaria Nacional de Justiça.
+      </div>
+      <div class="d-flex justify-content-center p-4">
+      <a href="contact.php"><button type="button" class="btn btn-primary btn-lg" href="contact.php">Clique aqui para entrar em contato!</button></a>
+    </div>
+    </div>
+
+    
+
+
+    <!-- Inicia página da Mentoria Profissional -->
+    <section class="container p-3" id="support-professional">
+      <div class="row align-items-center">
+        <div class="col-lg-4 col-md-4 banner-img">
+          <img class="img-fluid" src="img/mentoria.svg" alt="mentoria imigrantes">
+        </div>
+        <div class="col-lg-8 col-md-8 banner-img">
+          <h1 class="h1-apoio">Mentoria Profissional</h1>
+        </div>
+      </div>
+    </section>
+
+
+    <div class="card text-white mb-3 card-bg-green">
+      <div class="card-header">
+        <h5 class="card-title">O que é?</h5>
+      </div>
+      <div class="card-body">
+        <p class="card-text">O Programa de Mentores para Migrantes é uma iniciativa promovida pelo Alto Comissariado para as Migrações e desenvolvida, por todo o país, por um conjunto de parceiros locais.</p>
+      </div>
+    </div>
+
+    <div class="card text-white mb-3 card-bg-green">
+      <div class="card-header">
+        <h5 class="card-title">Para que serve?</h5>
+      </div>
+      <div class="card-body">
+
+        <p class="card-text">Promover experiências de troca, entreajuda e apoio entre voluntários/as (cidadãos/ãs portugueses/as) e migrantes (emigrantes e imigrantes) e/ou refugiados.
+
+          Permite o conhecimento mútuo, em que as diferenças se esbatem na resolução das mesmas dificuldades, preocupações e desafios do dia-a-dia.
+
+          — Os/As imigrantes mentorados/as dispõem de uma oportunidade de resolver alguma necessidade ou apoio para concretizar um sonho.
+
+          — Os/As refugiados/as mentorados/as dispõem de um apoio voluntário na sua chegada e acolhimento em Portugal.
+
+          — Os/As emigrantes mentorados/as decididos/as a regressar podem contar com apoio e orientação para encontrar soluções adequadas à cosntrução do seu novo projeto pessoal e profissional em Portugal.
+
+          — Os/As mentores/as voluntários/as podem, a partir desta experiência, desenvolver mais as suas competências pessoais, abertura à diversidade e oportunidade de exercer a sua cidadania participativa.
+
+          — Por seu lado, as entidades associadas vêem nesta experiência uma oportunidade de enriquecimento pessoal dos seus/suas colaboradores/as também e, logo, no ambiente e na cultura organizacional.</p>
+      </div>
+    </div>
+    <div class="card text-white mb-3 card-bg-green" >
+      <div class="card-header">
+        <h5 class="card-title">O que pretende atingir?</h5>
+      </div>
+      <div class="card-body">
+        <p class="card-text">Proporcionar apoio, acompanhamento, orientação para a resolução de dificuldades ou preocupações dos/as imigrantes com vista à sua integração.
+
+          Disponibilizar formas de ligação, acompanhamento ou apoio ao regresso dos emigrantes portugueses.
+
+          Proporcionar apoio, acompanhamento, orientação para a resolução de dificuldades ou preocupações dos/as refugiado/as que o nosso país acolhe.
+
+          Promover a igualdade de oportunidades e sensibilizar para a riqueza da diversidade.
+
+          Promover o voluntariado, a cidadania participativa e a troca positiva de experiências.
+
+          Contribuir para o enriquecimento pessoal, social e organizacional das pessoas e entidades envolvidas.</p>
+      </div>
+      <div class="d-flex justify-content-center p-4">
+      <a href="contact.php"><button type="button" class="btn btn-primary btn-lg">Clique aqui para entrar em contato!</button></a>
+    </div>
+    </div>
+    
+    <!-- Inicia página do apoio Psicológico -->
+
+    <section class="container p-3" id="support-psychologic">
+      <div class="row align-items-center">
+        <div class="col-lg-4 col-md-4 banner-img">
+          <img class="img-fluid" src="img/psicologia2.png" alt="apoio psicologico">
+        </div>
+        <div class="col-lg-8 col-md-8 banner-img">
+          <h1 class="h2-apoio">Apoio Psicológico</h1>
+        </div>
+      </div>
+    </section>
+
+    <div class="card text-white mb-3 card-bg-green">
+      <!-- <div class="card-header">
+        <h5 class="card-title">O que é?</h5>
+      </div> -->
+      <div class="card-body">
+        <h4 class="card-text">Nós o apoiamos no seu processo de migração.
+          Conhecemos seus medos, suas preocupações e, acima de tudo,
+          sua necessidade de lidar com a dor de estar longe daqueles que amam você.
+          Agende uma consulta conosco.</p>
+      </div>
+
+    </div>
+
+    <div class="card text-white mb-3 card-bg-green">
+      <div class="card-header">
+        <h5 class="card-title">Nossa metodologia</h5>
+      </div>
+      <div class="card-body">
+        <p class="card-text">Trabalhamos com dezenas de especialistas na área de psicologia aplicada,
+          um ramo da psicanálise que fornece ferramentas para encontrar estratégias
+          com as quais você pode enfrentar desafios.</p>
+      </div>
+    </div>
+
+
+    <div class="card text-white mb-3 card-bg-green">
+      <div class="card-header">
+        <h5 class="card-title">Psicología Aplicada</h5>
+      </div>
+      <div class="card-body">
+        <p class="card-text">
+          <p>A psicologia aplicada é um ramo da psicologia que visa
+            fornecer a solução para problemas práticos e cotidianos do comportamento humano,
+            aumentar a qualidade de vida ou otimizar o funcionamento de grupos de pessoas.
+            Dessa forma, utiliza o conhecimento acumulado, as várias técnicas e métodos
+            desenvolvidos pela psicologia básica para atingir seu fim.</p>
+      </div>
+      <div class="d-flex justify-content-center mb-3 p-4">
+        <a href="contact.php"><button class="btn btn-primary">Contate-nos</button></a>
+      </div>
+    </div>
+
+    
 
     <!-- Banner que se move -->
 <!-- 
