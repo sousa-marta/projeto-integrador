@@ -17,7 +17,7 @@
     <!-- Banner -->
     <section class="home-banner">
       <h1>Onde a esperança se reencontra</h1>
-      <button class="btn" onclick="location.href='about.php'">Apoie-me</button>
+      <button class="btn" onclick="location.href='register.php'">Faça Parte Dessa Comunidade</button>
     </section>
 
     <!-- Texto Resumo Sobre o Site -->

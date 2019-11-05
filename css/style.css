@@ -140,31 +140,31 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
 /* Início HOME */
 .home-banner {
   margin-top:10vh;
-  background-image: url('../img/home-banner.jpg');
+  background-image: url('../img/home-banner2.jpg');
   background-size: cover;
   background-position: center;
   height: 90vh;
   color: #FFF;
-  text-transform: uppercase;
   display:flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; 
+  justify-content: flex-end;
 }
 
 .home-banner h1 {
+  text-transform: uppercase;
   font-family: 'Baloo', cursive;
-  font-size: 60px;
-  margin-top: 4rem;
+  font-size: 3rem;
+  margin-bottom: 3rem;
 }
 
 .home-banner button {
-  margin-top: 2rem;
+  margin-bottom: 10vh;
   color: #fff;
-  font-size: 1.4rem;
+  font-size: 1.1rem;
   background-color: #00838F;
   border-color:none;
-  padding: 0.5rem 3rem;
+  padding: 0.5rem 2rem;
 }
 
 .home-banner button:hover {
