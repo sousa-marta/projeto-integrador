@@ -36,16 +36,16 @@
 
     <!-- VAGAS -->
     <section class="container pb-4">
-      <h2 class=" pl-4 pt-3">Vagas de Emprego</h2>
+      <h2 class="pl-4 pt-3">Vagas de Emprego</h2>
 
       <div class="row d-flex justify-content-around">
         <!-- vagas inscritas -->
-        <div class="col-4 m-3 user-page-card">
+        <div class="col-8 col-md-4 m-3 user-page-card">
           <h3 class="user-page-cards-title">Vagas Inscritas</h3>
           <!-- vaga 1 -->
           <div class="user-page-item-inside-card">
-            <div class="d-flex justify-content-between">
-              <span>Hotelaria</span>
+            <div class="user-page-item-inside-card-top">
+              <span class="user-page-text-category">Hotelaria</span>
               <span>prazo: 20/11</span>
             </div>
             <h4>Recepcionista</h4>
@@ -53,13 +53,13 @@
         </div>
 
         <!-- vagas concluídas -->
-        <div class="col-4 m-3 user-page-card">
-          <h2 class="user-page-cards-title">Vagas Concluídas</h2>
+        <div class="col-8 col-md-4 m-3 user-page-card">
+          <h3 class="user-page-cards-title">Vagas Concluídas</h3>
           <!-- vaga 1 -->
           <div class="user-page-card-item m-3 p-2">
             <span class="badge badge-danger user-page-icon">X</span> <!-- ícone de status -->
-            <div class="d-flex justify-content-between">
-              <span>Gastronomia</span>
+            <div class="user-page-item-inside-card-top">
+              <span class="user-page-text-category">Gastronomia</span>
               <span>prazo: 20/08</span>
             </div>
             <h4>Cozinheiro</h4>
@@ -67,8 +67,8 @@
           <!-- vaga 2 -->
           <div class="user-page-card-item m-3 p-2">
             <span class="badge badge-success user-page-icon">&#10003</span> <!-- ícone de status -->
-            <div class="d-flex justify-content-between">
-              <span>Serviços Gerais</span>
+            <div class="user-page-item-inside-card-top">
+              <span class="user-page-text-category">Serviços Gerais</span>
               <span>prazo: 23/08</span>
             </div>
             <h4>Marceneiro</h4>
@@ -86,20 +86,20 @@
 
         <div class="row d-flex justify-content-around">
           <!-- cursos inscritas -->
-          <div class="col-4 m-3 user-page-card">
+          <div class="col-8 col-md-4 m-3 user-page-card">
             <h3 class="user-page-cards-title">Cursos Inscritos</h3>
             <!-- curso 1 -->
             <div class="user-page-item-inside-card">
-              <div class="d-flex justify-content-between">
-                <span>Hotelaria</span>
+              <div class="user-page-item-inside-card-top">
+                <span class="user-page-text-category">Hotelaria</span>
                 <span>prazo: 20/11</span>
               </div>
               <h4>Recepcionista</h4>
             </div>
             <!-- curso 2 -->
             <div class="user-page-item-inside-card">
-              <div class="d-flex justify-content-between">
-                <span>Serviços Gerais</span>
+              <div class="user-page-item-inside-card-top">
+                <span class="user-page-text-category">Serviços Gerais</span>
                 <span>prazo: 20/11</span>
               </div>
               <h4>Atendente</h4>
@@ -107,13 +107,13 @@
           </div>
 
           <!-- curso concluído -->
-          <div class="col-4 m-3 user-page-card">
+          <div class="col-8 col-md-4 m-3 user-page-card">
             <h3 class="user-page-cards-title">Cursos Concluídos</h3>
             <!-- curso 1 -->
             <div class="user-page-card-item m-3 p-2">
               <span class="badge badge-success user-page-icon">&#10003</span> <!-- ícone de status -->
-              <div class="d-flex justify-content-between">
-                <span>Gastronomia</span>
+              <div class="user-page-item-inside-card-top">
+                <span class="user-page-text-category">Gastronomia</span>
                 <span>prazo: 20/08</span>
               </div>
               <h4>Cozinheiro</h4>

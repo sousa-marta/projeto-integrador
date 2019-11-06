@@ -703,6 +703,7 @@ card {
   background-color: #005662;
   padding: 10px;
   color: #FFF;
+  width: 100%;
 }
 
 .user-page-card {
@@ -732,6 +733,7 @@ card {
 }
 
 .user-page-photo {
+  display: none;
   height: 350px;
   border: 2px solid #FFF;
 }
@@ -739,6 +741,29 @@ card {
 .btn-edit-info {
   background-color: #FFD54F;
   color: #474747;
+}
+
+.user-page-item-inside-card-top{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.user-page-text-category {
+  text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+
+  .user-page-photo {
+    display: block;
+  }
+
+ 
+
+  
+
 }
 
 /* Fim PÁGINA USUÁRIO */
