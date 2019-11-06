@@ -29,7 +29,7 @@
                 <img class="img-fluid" src="img/banner-apoio.svg" alt="apoio">
             </div>
             <div class="col-lg-6 col-md-6 banner-img">
-                <h1 class="h2-apoio text-center">Ajudando você a começar</h1>
+                <h2 class="h2-apoio text-center">Ajudando você a começar</h2>
             </div>
         </div>
     </section>
