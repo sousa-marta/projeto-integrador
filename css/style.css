@@ -756,10 +756,22 @@ card {
 /* Fim PÁGINA USUÁRIO */
 
 /* Início INFORMAÇÕES USUÁRIO */
+.user-info-top {
+  height: 250px;
+  align-self: center;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .user-info-photo {
-  height: 200px;
+  height: 80%;
   width: auto;
-  border: 2px solid #FFF;
+}
+
+.user-info-main {
+  background-color: #FFFF81;
 }
 /* Fim INFORMAÇÕES USUÁRIO */
 
