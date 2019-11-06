@@ -75,6 +75,10 @@ nav .btn-dark:hover, nav .btn-dark:focus {
   background: #FFD54F;
   color: #000;
 }
+
+.btn-nav{
+  width: 20vh;
+}
 /* Fim CONFIGURAÇÕES GERAIS  */
 
 /* Início HEADER */
@@ -92,7 +96,6 @@ nav .btn-dark:hover, nav .btn-dark:focus {
 
 .logo-header .logo-logotipo {
   width: 45%;
-  height: 50%;
 }
 
 .logo-logotipo {
@@ -100,11 +103,12 @@ nav .btn-dark:hover, nav .btn-dark:focus {
 }
 
 header nav {
-  font-size: 0.9rem;
+  font-size: 0.2rem;
 }
 
 nav a {
   color: #47525E;
+  font-size: 12px;
 }
 
 nav a:hover, nav a:focus {
@@ -416,14 +420,14 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
 /* Início APOIO-GERAL */
 
 .apoio-banner {
-  height:80vh;
+  height:50vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .h1-apoio {
-  font-size: 4.5rem;
+  font-size: 3.5rem;
   color: #005662;
 }
 

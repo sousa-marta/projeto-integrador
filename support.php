@@ -29,7 +29,7 @@
                 <img class="img-fluid" src="img/banner-apoio.svg" alt="apoio">
             </div>
             <div class="col-lg-6 col-md-6 banner-img">
-                <h1 class="h1-apoio">Ajudando você a começar</h1>
+                <h1 class="h2-apoio text-center">Ajudando você a começar</h1>
             </div>
         </div>
     </section>
@@ -43,7 +43,7 @@
                 <div class="card-img card-juridico"></div>
                 <div class="card-body">
                 <h4 class="h4-apoio card-title"><a href="#support-legal">Assistencia Juridica</a></h4>
-                <p class="p-apoio card-text justify-content-center">Enim nisi officia incididunt sint qui. Lorem cupidatat voluptate incididunt et cupidatat laboris dolore eiusmod ad et veniam in magna. Labore irure excepteur occaecat labore ut exercitation adipisicing. Duis amet veniam voluptate irure est. Aliquip eu fugiat tempor dolor ut minim adipisicing qui dolor eiusmod anim do proident et. Ut ea sunt esse ea incididunt excepteur exercitation Lorem irure elit. Magna excepteur duis in laborum nulla culpa velit quis.</p>
+                <p class="p-apoio card-text text-center">Enim nisi officia incididunt sint qui. Lorem cupidatat voluptate incididunt et cupidatat laboris dolore eiusmod ad et veniam in magna. Labore irure excepteur occaecat labore ut exercitation adipisicing. Duis amet veniam voluptate irure est. Aliquip eu fugiat tempor dolor ut minim adipisicing qui dolor eiusmod anim do proident et. Ut ea sunt esse ea incididunt excepteur exercitation Lorem irure elit. Magna excepteur duis in laborum nulla culpa velit quis.</p>
                 </div>
             </div>
         </article>
@@ -52,7 +52,7 @@
             <div class="card-img card-psicologico"></div>
             <div class="card-body">
               <h4 class="h4-apoio card-title"><a href="#support-psychologic">Acompanhamento Psicológico</a></h4>
-              <p class="p-apoio card-text">Enim nisi officia incididunt sint qui. Lorem cupidatat voluptate incididunt et cupidatat laboris dolore eiusmod ad et veniam in magna. Labore irure excepteur occaecat labore ut exercitation adipisicing. Duis amet veniam voluptate irure est. Aliquip eu fugiat tempor dolor ut minim adipisicing qui dolor eiusmod anim do proident et. Ut ea sunt esse ea incididunt excepteur exercitation Lorem irure elit. Magna excepteur duis in laborum nulla culpa velit quis.</p>
+              <p class="p-apoio card-text text-center">Enim nisi officia incididunt sint qui. Lorem cupidatat voluptate incididunt et cupidatat laboris dolore eiusmod ad et veniam in magna. Labore irure excepteur occaecat labore ut exercitation adipisicing. Duis amet veniam voluptate irure est. Aliquip eu fugiat tempor dolor ut minim adipisicing qui dolor eiusmod anim do proident et. Ut ea sunt esse ea incididunt excepteur exercitation Lorem irure elit. Magna excepteur duis in laborum nulla culpa velit quis.</p>
             </div>
           </div>
         </article>
@@ -61,7 +61,7 @@
             <div class="card-img card-trabalho"></div>
             <div class="card-body">
               <h4 class="h4-apoio card-title"><a href="#support-professional">Apoio Novo Trabalho</a></h4>
-              <p class="p-apoio card-text">Enim nisi officia incididunt sint qui. Lorem cupidatat voluptate incididunt et cupidatat laboris dolore eiusmod ad et veniam in magna. Labore irure excepteur occaecat labore ut exercitation adipisicing. Duis amet veniam voluptate irure est. Aliquip eu fugiat tempor dolor ut minim adipisicing qui dolor eiusmod anim do proident et. Ut ea sunt esse ea incididunt excepteur exercitation Lorem irure elit. Magna excepteur duis in laborum nulla culpa velit quis.</p>
+              <p class="p-apoio card-text text-center">Enim nisi officia incididunt sint qui. Lorem cupidatat voluptate incididunt et cupidatat laboris dolore eiusmod ad et veniam in magna. Labore irure excepteur occaecat labore ut exercitation adipisicing. Duis amet veniam voluptate irure est. Aliquip eu fugiat tempor dolor ut minim adipisicing qui dolor eiusmod anim do proident et. Ut ea sunt esse ea incididunt excepteur exercitation Lorem irure elit. Magna excepteur duis in laborum nulla culpa velit quis.</p>
             </div>
           </div>
         </article>
@@ -75,7 +75,7 @@
           <img class="img-fluid" src="img/juridico.png" alt="apoio juridico">
         </div>
         <div class="col-lg-8 col-md-8 banner-img">
-          <h2 class="h2-apoio">Conheça a Assistência Jurídica da Oppy</h2>
+          <h2 class="h2-apoio text-center">Conheça a Assistência Jurídica da Oppy</h2>
         </div>
       </div>
     </section>
@@ -91,7 +91,7 @@
           <br><br> A OPPY possui um forte trabalho em rede, destacando-se a pareceria com Alto Comissariado das Nações Unidas para Refugiados (ACNUR), com a Associação Antonio Vieira (ASAV) e com o CIBAI Migrações. Ademais, integra o Fórum Permanente de Mobilidade Humana (FPMH) o Comitê Estadual de Atenção a Migrantes, Refugiados, Apátridas e Vítimas de Tráfico de Pessoas (COMIRAT-SP) e tem representantes junto ao Comitê de Acompanhamento pela Sociedade Civil sobre ações de Migração e Refúgio (CASC-Migrante) da Secretaria Nacional de Justiça.
       </div>
       <div class="d-flex justify-content-center p-4">
-      <a href="contact.php"><button type="button" class="btn btn-primary btn-lg" href="contact.php">Clique aqui para entrar em contato!</button></a>
+      <a href="contact.php"><button type="button" class="btn btn-primary btn-lg" href="contact.php">Saiba mais</button></a>
     </div>
     </div>
 
@@ -105,7 +105,7 @@
           <img class="img-fluid" src="img/mentoria.svg" alt="mentoria imigrantes">
         </div>
         <div class="col-lg-8 col-md-8 banner-img">
-          <h1 class="h1-apoio">Mentoria Profissional</h1>
+          <h1 class="h2-apoio text-center">Mentoria Profissional</h1>
         </div>
       </div>
     </section>
@@ -159,7 +159,7 @@
           Contribuir para o enriquecimento pessoal, social e organizacional das pessoas e entidades envolvidas.</p>
       </div>
       <div class="d-flex justify-content-center p-4">
-      <a href="contact.php"><button type="button" class="btn btn-primary btn-lg">Clique aqui para entrar em contato!</button></a>
+      <a href="contact.php"><button type="button" class="btn btn-primary btn-lg">Saiba mais</button></a>
     </div>
     </div>
     
@@ -171,7 +171,7 @@
           <img class="img-fluid" src="img/psicologia2.png" alt="apoio psicologico">
         </div>
         <div class="col-lg-8 col-md-8 banner-img">
-          <h1 class="h2-apoio">Apoio Psicológico</h1>
+          <h1 class="h2-apoio text-center">Apoio Psicológico</h1>
         </div>
       </div>
     </section>
