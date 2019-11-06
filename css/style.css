@@ -753,15 +753,6 @@ card {
 .user-page-text-category {
   text-decoration: underline;
 }
-
-@media (min-width: 768px) {
-
-  .user-page-photo {
-    display: block;
-  }
-
-}
-
 /* Fim PÁGINA USUÁRIO */
 
 /* Início INFORMAÇÕES USUÁRIO */
@@ -794,9 +785,6 @@ footer p {
 
 
 
-
-
-
 /* Início SUPPORT-PROFESSIONAL */
 .card-bg-green{
   background-color:#4FB3BF;
@@ -808,3 +796,17 @@ footer p {
   background-color:#4FB3BF;
 }
 /* FIM SUPPORT-LEGAL */
+
+
+
+/* --------------------------------- MEDIAS QUERIES --------------------------------- */
+
+@media (min-width: 768px) {
+
+  /* Início PÁGINA USUÁRIO */
+  .user-page-photo {
+    display: block;
+  }
+  /* Fim PÁGINA USUÁRIO */
+
+}
