@@ -24,8 +24,8 @@
     <!-- Banner com citação -->
     <section class="about-banner">
       <blockquote class="bg-color">
-        <h5 class="mb-0 quotation">Para a maioria dos imigrantes, mudar para um país novo é um ato de fé. Mesmo que você tenha ouvido histórias sobre segurança, oportunidade e prosperidade,  ainda assim é um grande salto se afastar de sua língua, de seu povo e de seu país. De suas raízes.</h5>
-        <h5 class="mt-0 quotation-author">Nicola Yoon, escritora jamaicana-americana</h5>
+        <p class="mb-0 quotation">Para a maioria dos imigrantes, mudar para um país novo é um ato de fé. Mesmo que você tenha ouvido histórias sobre segurança, oportunidade e prosperidade,  ainda assim é um grande salto se afastar de sua língua, de seu povo e de seu país. De suas raízes.</p>
+        <p class="mt-0 quotation-author">Nicola Yoon, escritora jamaicana-americana</p>
       </blockquote>
     </section>
 
@@ -33,17 +33,17 @@
     <section class="container-fluid text-center border-config p-5">
       <h2 class="text-uppercase pb-3">Dados estatísticos</h2>
       <div class="row">
-        <div class="col-md-4 statistics-block mt-3">
+        <div class="col-sm-4 statistics-block mt-3">
           <img src="img/diagram.svg" alt="" class="statistics-images">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius praesentium amet soluta assumenda tenetur facere nemo, quod repudiandae excepturi esse quos, veritatis quia illum vero, nostrum ab ipsa totam neque?
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
         </div>
-        <div class="col-md-4 statistics-block mt-3">
+        <div class="col-sm-4 statistics-block mt-3">
           <img src="img/portfolio.svg" alt="" class="statistics-images">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius praesentium amet soluta assumenda tenetur facere nemo, quod repudiandae excepturi esse quos, veritatis quia illum vero, nostrum ab ipsa totam neque?
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
         </div>
-        <div class="col-md-4 statistics-block mt-3">
+        <div class="col-sm-4 statistics-block mt-3">
           <img src="img/collaboration.svg" alt="" class="statistics-images">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius praesentium amet soluta assumenda tenetur facere nemo, quod repudiandae excepturi esse quos, veritatis quia illum vero, nostrum ab ipsa totam neque?
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
         </div>
       </div>
     </section>
@@ -61,12 +61,12 @@
 
     <!-- Nossa Proposta -->
     <section class="container-fluid">
-      <div class="row oppy-proposal">
+      <div class="row oppy-proposal mb-0 pb-0">
         <div class="col-sm-6 col-lg-7">
           <h2 class="text-uppercase">Nossa Proposta</h2>
           <p>Inserir os imigrantes (homens e mulheres) no mercado de trabalho do país destino, gerando valor agregado aos seus currículos, por meio do uso de ferramentas digitais que lhes permitam adquirir habilidades técnicas, e sem desconsiderar suas próprias bagagens pessoais e profissionais.</p>
         </div>
-        <img src="img/population-system.svg" alt="desenho de duas mãos segurando a rede de conexões de uma pessoa" class="col-sm-6 col-lg-4 mt-3">
+        <img src="img/population-system.svg" alt="desenho de duas mãos segurando a rede de conexões de uma pessoa" class="col-sm-6 col-lg-4">
       </div>
     </section>
   </main>
