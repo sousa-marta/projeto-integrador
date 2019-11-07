@@ -331,7 +331,7 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
 }
 
 .course-detail-schedule-legend {
-  font-size: 0.8rem;
+  font-size:2.3vw;
 }
 
 .course-detail-similar-courses-top {
@@ -791,6 +791,12 @@ footer p {
   .home-btn-sm{display:none;}
   .home-btn-big{display:flex;}
   /* Fim Página HOME */
+
+  /* Início CURSO-DETALHE */
+  .course-detail-schedule-legend {
+    font-size: 0.8em;
+  }
+  /* Fim CURSO-DETALHE */
 }
 
 
