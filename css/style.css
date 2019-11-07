@@ -290,7 +290,7 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
   text-transform: uppercase;
 }
 
-.courses-g-cards h4 {
+.courses-g-cards h5 {
   color: #FFF;
   background-color:#00838F;
   margin:0;
