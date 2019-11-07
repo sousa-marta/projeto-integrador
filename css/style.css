@@ -1,7 +1,7 @@
 /* Início CONFIGURAÇÕES GERAIS  */
 * {
-  margin: 0;
-  padding: 0;
+  /* margin: 0;
+  padding: 0; */
 }
 
 body {
@@ -15,7 +15,7 @@ nav a {
 }
 
 p {
-  margin: 0;
+  /* margin: 0; */
   font-size: 4vw; /*valor menor que xs*/
 }
 
@@ -38,13 +38,13 @@ button:hover, button:focus {
 }
 
 .row {
-  margin-left: 0;
-  margin-right: 0;
+  /* margin-left: 0;
+  margin-right: 0; */
 }
 
 .container-fluid {
-  padding-left: 0;
-  padding-right: 0;
+  /* padding-left: 0;
+  padding-right: 0; */
 }
 
 a {
