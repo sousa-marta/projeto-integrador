@@ -25,7 +25,7 @@
   <main>
     <div class="row no-gutters">
       <!-- Banner -->
-      <section class="courses-g-banner col-md-12 d-flex justify-content-center align-items-center">
+      <section class="pages-title-bg d-flex justify-content-center align-items-center">
         <h1>Cursos</h1>
       </section>
  
