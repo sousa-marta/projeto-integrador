@@ -22,8 +22,8 @@ p {
 h1 {font-size:10.0vw;}
 h2 {font-size:8.0vw;}
 h3 {font-size:5.5vw;}
-h4 {font-size:4.5vw;}
-h5 {font-size:4.0vw; font-weight: bold;}
+h4 {font-size:5.0vw;}
+h5 {font-size:4.5vw; font-weight: bold;}
 
 
 button {
@@ -84,9 +84,9 @@ nav .btn-dark:hover, nav .btn-dark:focus {
   height: 45%
 }
 
-header nav {
-  /* font-size: 0.9rem; */
-}
+/*header nav {
+  font-size: 0.9rem;
+}*/
 
 nav a {
   color: #47525E;
@@ -775,9 +775,9 @@ footer p {
   p {font-size:2.7vw;}
   h1 {font-size:8.0vw;}
   h2 {font-size:6.0vw;}
-  h3 {font-size:4.2vw;}
+  h3 {font-size:4.3vw;}
   h4 {font-size:3.8vw;}
-  h5 {font-size:2.8vw;}
+  h5 {font-size:3.2vw;}
 
   /* Início Página HOME */
   .home-btn-sm{display:none;}
@@ -791,9 +791,9 @@ footer p {
   p {font-size:2.3vw;}
   h1 {font-size:7.0vw;}
   h2 {font-size:5.0vw;}
-  h3 {font-size:3.0vw;}
-  h4 {font-size:2.8vw;}
-  h5 {font-size:2.2vw;}
+  h3 {font-size:3.8vw;}
+  h4 {font-size:3.3vw;}
+  h5 {font-size:2.8vw;}
 
   /* Início Página HOME */
   .home-card {margin: 0 1rem;}
@@ -817,8 +817,9 @@ footer p {
   p {font-size:1.7vw;}
   h1 {font-size:6.0vw;}
   h2 {font-size:4.0vw;}
-  h4 {font-size:2.6vw}
-  h5 {font-size:2.0vw;}
+  h3 {font-size:3.2vw;}
+  h4 {font-size:2.7vw}
+  h5 {font-size:2.2vw;}
   
   /* Início Página HOME */
   .home-card-section {margin:2rem 0;}
@@ -884,7 +885,7 @@ footer p {
   }
   h1 {font-size:5.0vw;}
   h2 {font-size:3.0vw;}
-  h5 {font-size:1.6vw;}
+  h5 {font-size:1.7vw;}
   
   /* Início Página HOME */
   .home-summary {padding: 3.2rem 0 2.4rem 0;}
