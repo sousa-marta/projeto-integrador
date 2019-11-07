@@ -40,7 +40,7 @@
               <img src="img/home-card-whom.png" class="home-card-img" alt="mãos se dando às mãos">
             </a>
             <div class="card-body">
-              <h4 class="card-title"><a href="about.php">Para quem é o projeto</a></h4>
+              <h3 class="card-title"><a href="about.php">Para quem é o projeto</a></h3>
               <p class="card-text">Para qualquer pessoa que deseja se integrar à comunidade de um novo país. Que busca obter informações dos passos para atingir esse objetivo, que precisa de apoio técnico, psicológico e jurídico para tal.</p>
             </div>
           </div>
@@ -51,7 +51,7 @@
               <img src="img/home-card-glasses.png" class="home-card-img" alt="óculos">
             </a>
             <div class="card-body">
-              <h4 class="card-title"><a href="courses.php">Cursos</a></h4>
+              <h3 class="card-title"><a href="courses.php">Cursos</a></h3>
               <p class="card-text">Em contato direto com os apoiadores que fornecem os cursos gratuitamente para o imigrantes, são disponibilizados cursos em áreas como: idiomas, estética, hotelaria, alimentação, cuidados, entreterimento, dentre outros.</p>
             </div>
           </div>
@@ -62,7 +62,7 @@
                 <img src="img/home-card-help.png" class="home-card-img" alt="bóia de navio">
               </a>
               <div class="card-body">
-                <h4 class="card-title"><a href="support.php">Apoio Assistencial</a></h4>
+                <h3 class="card-title"><a href="support.php">Apoio Assistencial</a></h3>
                 <p class="card-text">Sabendo que mudar de país é algo que nunca é simples, contamos com apoiadores que dão apoio psicológico, jurídico e para encontrar o primeiro emprego no novo país. Buscamos ajudar essa transição ser a mais suave possível.</p>
               </div>
             </div>

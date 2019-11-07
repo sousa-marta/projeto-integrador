@@ -1,13 +1,13 @@
 /* Início CONFIGURAÇÕES GERAIS  */
 * {
-  margin: 0;
-  padding: 0;
+  /* margin: 0;
+  padding: 0; */
 }
 
 body {
   font-family: 'Lato', sans-serif;
   color: #47525E;
-  font-size: 16px;
+  /* font-size: 16px; */
 }
 
 nav a {
@@ -15,30 +15,15 @@ nav a {
 }
 
 p {
-  margin: 0;
-  font-size: 1.1rem;
+  /* margin: 0; */
+  font-size: 4vw; /*valor menor que xs*/
 }
 
-h1 {
-  font-size: 3.5rem;
-  font-weight: bold;
-}
+h1 {font-size:6.5vw;}
+h2 {font-size:5.0vw;}
+h3 {font-size:4.5vw;}
+h4 {font-size:4.0vw;}
 
-h2 {
-  font-size: 2.5rem;
-}
-
-h3 {
-  font-size: 1.75rem;
-}
-
-h4 {
-  font-size: 1.5rem;
-}
-
-h5 {
-  font-size: 1.25rem;
-}
 
 button {
   color: #FFF;
@@ -53,13 +38,13 @@ button:hover, button:focus {
 }
 
 .row {
-  margin-left: 0;
-  margin-right: 0;
+  /* margin-left: 0;
+  margin-right: 0; */
 }
 
 .container-fluid {
-  padding-left: 0;
-  padding-right: 0;
+  /* padding-left: 0;
+  padding-right: 0; */
 }
 
 a {
@@ -95,7 +80,7 @@ nav .btn-dark:hover, nav .btn-dark:focus {
 }
 
 header nav {
-  font-size: 0.9rem;
+  /* font-size: 0.9rem; */
 }
 
 nav a {
@@ -154,14 +139,14 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
 .home-banner h1 {
   text-transform: uppercase;
   font-family: 'Baloo', cursive;
-  font-size: 3rem;
+  /* font-size: 3rem; */
   margin-bottom: 3rem;
 }
 
 .home-banner button {
   margin-bottom: 10vh;
   color: #fff;
-  font-size: 1.1rem;
+  /* font-size: 1.1rem; */
   background-color: #00838F;
   border-color:none;
   padding: 0.5rem 2rem;
@@ -183,7 +168,7 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
 }
 
 .home-summary p {
-  font-size: 1.8em;
+  /* font-size: 1.8em; */
 }
 
 .home-card {
@@ -386,7 +371,7 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
 }
 
 .h1-apoio {
-  font-size: 4.5rem;
+  /* font-size: 4.5rem; */
   color: #005662;
 }
 
@@ -433,7 +418,7 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
 }
 
 .texto-apoio p {
-  font-size: 1.5em;
+  /* font-size: 1.5em; */
   font-style: italic;
 }
 /* Fim APOIO-GERAL */
@@ -759,7 +744,7 @@ footer h4 {
 
 footer p {
   color: #FFF;
-  font-size: 0.9rem;;
+  /* font-size: 0.9rem;; */
 }
 /* Fim FOOTER */
 
@@ -781,17 +766,40 @@ footer p {
 
 /* --------------------------------- MEDIAS QUERIES --------------------------------- */
 
-@media (min-width: 768px) {
+/* Extra small devices (portrait phones, less than 576px) */
+/* No media query since this is the default in Bootstrap */
 
-  /* Início PÁGINA USUÁRIO */
-  .user-page-photo {
-    display: block;
-  }
-  /* Fim PÁGINA USUÁRIO */
-
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  p {font-size:3.5vw;}
+  h1 {font-size:5.0vw;}
+  h2 {font-size:4.6vw;}
+  h3 {font-size:4.2vw;}
+  h4 {font-size:3.8vw;}
 }
 
-@media (min-width: 992px) {
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  p {font-size:2.5vw;}
+  h1 {font-size:4.0vw;}
+  h2 {font-size:3.6vw;}
+  h3 {font-size:3.0vw;}
+  h4 {font-size:2.8vw;}
+
+  /* Início PÁGINA USUÁRIO */
+  .user-page-photo {display: block;}
+  /* Fim PÁGINA USUÁRIO */
+}
+
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  p {font-size:2vw;}
+
+  h2 {font-size:3.5vw;}
+  h4 {font-size:2.6vw}
+  
   /* Início PÁGINA SOBRE */
   .about-banner {
     display: flex;
@@ -840,3 +848,8 @@ footer p {
   /* Fim PÁGINA SOBRE */
 }
 
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+  p {font-size:1.5vw;}
+  h2 {font-size:3.0vw;}
+}
