@@ -10,28 +10,28 @@
     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
         <li class="nav-item active">
-            <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="index.php"><span class="fa">&#xf015;</span> Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="about.php">Quem Somos</a>
+            <a class="nav-link" href="about.php"><span class="fa">&#xf0c0;</span> Quem Somos</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="courses.php">Cursos</a>
+            <a class="nav-link" href="courses.php"><span class="fa">&#xf19d;</span> Cursos</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="opportunities.php">Oportunidades</a>
+            <a class="nav-link" href="opportunities.php"><span class="fa">&#xf0b1;</span> Oportunidades</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="support.php">Apoio</a>
+            <a class="nav-link" href="support.php"><span class="fa">&#xf004;</span> Apoio</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="contribute.php">Contribua</a>
+          <a class="nav-link" href="contribute.php"><span class="fa">&#xf155;</span> Contribua</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="contact.php">Contato</a>
+          <a class="nav-link" href="contact.php"><span class="fa">&#xf086;</span> Contato</a>
         </li>
         <li class="nav-item">
-          <a id="register-link" class="nav-link" href="register.php">Cadastre-se</a>
+          <a id="register-link" class="nav-link" href="register.php"><span class="fa">&#xf2b9;</span> Cadastre-se</a>
         </li>
         <button type="button" class="btn" data-toggle="modal" data-target="#login-modal" href="#">Login</button>
       </ul>

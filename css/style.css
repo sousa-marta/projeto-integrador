@@ -100,6 +100,7 @@ nav .btn-dark:hover, nav .btn-dark:focus {
 
 nav a {
   color: #47525E;
+  font-size: 12px;
 }
 
 nav a:hover, nav a:focus {
@@ -307,6 +308,14 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
   background-color: #00838F;
 }
 
+.course-detail-main-banner-offered-by {
+  display: none;
+}
+
+.course-detail-main-banner-div-img {
+  display: none;
+}
+
 .course-detail-main-banner * {
   color: #FFF;
 }
@@ -321,6 +330,10 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
 
 .course-detail-shedule-soon {
   background-color: #C8A415;
+}
+
+.course-detail-schedule-legend {
+  font-size:2.3vw;
 }
 
 .course-detail-similar-courses-top {
@@ -349,8 +362,13 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
 }
 
 .course-detail-logo-img-alike {
-  height: 100px;
+  max-height: 100px;
+  max-width: 100%;
   margin: 20px;
+}
+
+.course-detail-div-cards { /* div que segura os cards */
+  justify-content: center;
 }
 /* Fim CURSO-DETALHE */
 
@@ -369,7 +387,7 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
 /* Início APOIO-GERAL */
 
 .apoio-banner {
-  height:80vh;
+  height:50vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -783,6 +801,12 @@ footer p {
   .home-btn-big{display:flex;}
   /* Fim HOME */
 
+  /* Início CURSO-DETALHE */
+  .course-detail-schedule-legend {
+    font-size: 0.8em;
+  }
+  /* Fim CURSO-DETALHE */
+
   /* Início FOOTER */
   footer img {
     width: 15vw;
@@ -906,6 +930,21 @@ footer p {
     text-align: left;
   }
   /* Fim SOBRE */
+
+  /* Início CURSO-DETALHE */
+  .course-detail-main-banner-offered-by {
+    display: block;
+  }
+  
+  .course-detail-main-banner-div-img {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .course-detail-div-cards { /* div que segura os cards */
+    justify-content: space-between;
+  }
+  /* Fim CURSO-DETALHE */
 
   /* Início FOOTER */
   footer img {
