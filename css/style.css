@@ -16,7 +16,7 @@ nav a {
 
 p {
   margin: 0;
-  font-size: 3.6vw; /*valor menor que xs*/
+  font-size: 4.0vw; /*valor menor que xs*/
 }
 
 h1 {font-size:10.0vw;}
@@ -151,10 +151,13 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
 .home-banner button {
   margin-bottom: 10vh;
   color: #fff;
-  /* font-size: 1.1rem; */
   background-color: #00838F;
   border-color:none;
   padding: 0.5rem 2rem;
+}
+
+.home-btn-big {
+  display:none;
 }
 
 .home-banner button:hover {
@@ -178,13 +181,15 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
   width: 50%;
 } 
 
+.home-card-img-md {display:none;}
+
 .home-card .card-title {
   font-weight: bold;
+  margin-top:0.8em;
 }
 
 .home-card .card-text {
   text-align: justify;
-  line-height: 1.5rem;
 }
 
 .home-banner-apoie {
@@ -770,24 +775,40 @@ footer p {
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
-  p {font-size:2.4vw;}
+  p {font-size:2.7vw;}
   h1 {font-size:8.0vw;}
   h2 {font-size:6.0vw;}
   h3 {font-size:4.2vw;}
   h4 {font-size:3.8vw;}
   h5 {font-size:2.8vw;}
 
+  /* Início Página HOME */
+  .home-btn-sm{display:none;}
+  .home-btn-big{display:flex;}
+  /* Fim Página HOME */
+
+
 }
 
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-  p {font-size:1.9vw;}
+  p {font-size:2.3vw;}
   h1 {font-size:7.0vw;}
   h2 {font-size:5.0vw;}
   h3 {font-size:3.0vw;}
   h4 {font-size:2.8vw;}
   h5 {font-size:2.2vw;}
+
+  /* Início Página HOME */
+  .home-card {margin: 0 1rem;}
+  .home-card-img-sm{display:none;}
+  .home-card-img-md{display:flex;}
+  .home-card-img {
+    height: 60%;
+    width: 60%;
+  } 
+  /* Fim Página HOME */
 
   /* Início PÁGINA USUÁRIO */
   .user-page-photo {display: block;}
@@ -804,6 +825,10 @@ footer p {
   h4 {font-size:2.6vw}
   h5 {font-size:2.0vw;}
   
+  /* Início Página HOME */
+  .home-card-section {margin:2rem 0;}
+  /* Fim Página HOME */
+
   /* Início PÁGINA SOBRE */
   .about-banner {
     display: flex;
@@ -858,15 +883,24 @@ footer p {
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
-  p {font-size:1.4vw;}
+  p {
+    font-size:1.4vw;
+    line-height:1.6;
+  }
   h1 {font-size:5.0vw;}
   h2 {font-size:3.0vw;}
   h5 {font-size:1.6vw;}
   
   /* Início Página HOME */
-  .home-summary {
-    line-height: 2.8rem;
-    padding: 4rem 0 2rem 0;
+  .home-summary {padding: 3.2rem 0 2.4rem 0;}
+
+  .home-summary p {line-height: 2.2;}
+
+  .home-summary p {margin-bottom:1rem;}
+
+  .home-summary button {
+    padding-left:2rem;
+    padding-right:2rem;
   }
   /* Fim Página HOME */
 }
