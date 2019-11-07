@@ -1,7 +1,7 @@
 /* Início CONFIGURAÇÕES GERAIS  */
 * {
-  /* margin: 0;
-  padding: 0; */
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -15,14 +15,15 @@ nav a {
 }
 
 p {
-  /* margin: 0; */
-  font-size: 4vw; /*valor menor que xs*/
+  margin: 0;
+  font-size: 3.4vw; /*valor menor que xs*/
 }
 
-h1 {font-size:6.5vw;}
-h2 {font-size:5.0vw;}
-h3 {font-size:4.5vw;}
-h4 {font-size:4.0vw;}
+h1 {font-size:10.0vw;}
+h2 {font-size:8.0vw;}
+h3 {font-size:5.5vw;}
+h4 {font-size:4.5vw;}
+h5 {font-size:4.0vw; font-weight: bold;}
 
 
 button {
@@ -38,13 +39,13 @@ button:hover, button:focus {
 }
 
 .row {
-  /* margin-left: 0;
-  margin-right: 0; */
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .container-fluid {
-  /* padding-left: 0;
-  padding-right: 0; */
+  padding-left: 0;
+  padding-right: 0;
 }
 
 a {
@@ -204,6 +205,10 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
   text-align: center;
 }
 
+.oppy-info p, .oppy-proposal p {
+  text-align: center;
+}
+
 .border-config {
   border: 1px solid grey;
 }
@@ -234,8 +239,9 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
   font-weight: bold;
 }
 
-.oppy-info img {
-  height: 230px;
+.oppy-info img, .oppy-proposal img {
+  height: 40vh;
+  width: 40vw;
 }
 
 .oppy-proposal {
@@ -249,10 +255,6 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
   color: #F95F62;
   padding-bottom: 20px;
   font-weight: bold;
-}
-
-.oppy-proposal img {
-  height: 230px;
 }
 
 .oppy-values {
@@ -771,34 +773,39 @@ footer p {
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
-  p {font-size:3.5vw;}
-  h1 {font-size:5.0vw;}
-  h2 {font-size:4.6vw;}
+  p {font-size:2.4vw;}
+  h1 {font-size:8.0vw;}
+  h2 {font-size:6.0vw;}
   h3 {font-size:4.2vw;}
   h4 {font-size:3.8vw;}
+  h5 {font-size:2.8vw;}
+
 }
 
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-  p {font-size:2.5vw;}
-  h1 {font-size:4.0vw;}
-  h2 {font-size:3.6vw;}
+  p {font-size:1.8vw;}
+  h1 {font-size:7.0vw;}
+  h2 {font-size:5.0vw;}
   h3 {font-size:3.0vw;}
   h4 {font-size:2.8vw;}
+  h5 {font-size:2.2vw;}
 
   /* Início PÁGINA USUÁRIO */
   .user-page-photo {display: block;}
   /* Fim PÁGINA USUÁRIO */
+
 }
 
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
-  p {font-size:2vw;}
-
-  h2 {font-size:3.5vw;}
+  p {font-size:1.6vw;}
+  h1 {font-size:6.0vw;}
+  h2 {font-size:4.0vw;}
   h4 {font-size:2.6vw}
+  h5 {font-size:2.0vw;}
   
   /* Início PÁGINA SOBRE */
   .about-banner {
@@ -845,11 +852,17 @@ footer p {
   .oppy-info h2, .oppy-proposal h2 {
     text-align: left;
   }
+
+  .oppy-info p, .oppy-proposal p {
+    text-align: left;
+  }
   /* Fim PÁGINA SOBRE */
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
-  p {font-size:1.5vw;}
+  p {font-size:1.4vw;}
+  h1 {font-size:5.0vw;}
   h2 {font-size:3.0vw;}
+  h5 {font-size:1.6vw;}
 }
