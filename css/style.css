@@ -212,43 +212,11 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
 
 /* Início QUEM SOMOS */
 .about-banner {
-  background-image: url('../img/about-banner.jpg');
-  background-size: cover;
-  background-position: center;
-  height: 82vh;
+  display: none;
+}
+
+.oppy-info h2, .oppy-proposal h2 {
   text-align: center;
-  color: #FFF;
-  justify-content: center;
-}
-
-.bg-color {
-  background-color: #0003;
-}
-
-.quotation {
-  padding: 0 15vw;
-  line-height: 1.7em;
-  /* font-size: 0.9rem; */
-  margin-bottom: 0.5rem;
-}
-
-.quotation::before {
-  content: open-quote;
-  font-size: 1.5em;
-}
-
-.quotation::after {
-  content: close-quote;
-  font-size: 1.5em;
-}
-
-.quotation-author {
-  /* font-size: .9rem; */
-  font-style: italic;
-}
-
-.quotation-author::before {
-  content: "\2014 \00A0";
 }
 
 .border-config {
@@ -822,3 +790,53 @@ footer p {
   /* Fim PÁGINA USUÁRIO */
 
 }
+
+@media (min-width: 992px) {
+  /* Início PÁGINA SOBRE */
+  .about-banner {
+    display: flex;
+    background-image: url('../img/about-banner.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 82vh;
+    text-align: center;
+    color: #FFF;
+    justify-content: center;
+  }
+  
+  .bg-color {
+    background-color: #0003;
+  }
+  
+  .quotation {
+    padding: 0 15vw;
+    line-height: 1.7em;
+    /* font-size: 0.9rem; */
+    margin-bottom: 0.5rem;
+  }
+  
+  .quotation::before {
+    content: open-quote;
+    font-size: 1.5em;
+  }
+  
+  .quotation::after {
+    content: close-quote;
+    font-size: 1.5em;
+  }
+  
+  .quotation-author {
+    /* font-size: .9rem; */
+    font-style: italic;
+  }
+  
+  .quotation-author::before {
+    content: "\2014 \00A0";
+  }
+
+  .oppy-info h2, .oppy-proposal h2 {
+    text-align: left;
+  }
+  /* Fim PÁGINA SOBRE */
+}
+
