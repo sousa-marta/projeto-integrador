@@ -63,7 +63,7 @@ nav .btn-dark:hover, nav .btn-dark:focus {
 }
 
 .indent {
-  text-indent: 2.5em;
+  text-indent: 1.8em;
 }
 /* Fim CONFIGURAÇÕES GERAIS  */
 
@@ -156,9 +156,7 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
   padding: 0.5rem 2rem;
 }
 
-.home-btn-big {
-  display:none;
-}
+.home-btn-big {display:none;}
 
 .home-banner button:hover {
   background-color: #FFFF81;
@@ -172,9 +170,7 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
   text-align: justify;
 }
 
-.home-card {
-  text-align: center;
-}
+.home-card {text-align: center;}
 
 .home-card-img {
   height: 50%;
@@ -185,16 +181,17 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
 
 .home-card .card-title {
   font-weight: bold;
-  margin-top:0.8em;
+  margin-top:0.5em;
+  border-bottom: solid 2px #4fb3bf;
 }
 
-.home-card .card-text {
-  text-align: justify;
-}
+.home-card .card-text {text-align: justify;}
 
-.home-banner-apoie {
-  background: #FFD54F;
-  height: 10vh;
+.home-banner-apoie {background: #FFD54F;}
+
+.home-banner-apoie button {
+  margin: 0.5em;
+  padding: 0.3em 1em;
 }
 /* Fim HOME */
 
@@ -786,8 +783,6 @@ footer p {
   .home-btn-sm{display:none;}
   .home-btn-big{display:flex;}
   /* Fim Página HOME */
-
-
 }
 
 

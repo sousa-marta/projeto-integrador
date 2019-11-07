@@ -48,7 +48,7 @@
         </article>
         <article class="col-12 col-md-6 col-lg-4 pb-3">
           <div class="home-card d-flex flex-column align-items-center">
-            <a href="courses.php">  
+            <a href="courses.php" class="d-flex justify-content-center">  
               <img src="img/home-card-glasses2.png" class="home-card-img home-card-img-sm" alt="óculos">
               <img src="img/home-card-glasses.png" class="home-card-img home-card-img-md" alt="óculos">
             </a>
@@ -73,13 +73,11 @@
     </section>
 
     <!-- Banner Chamada Apoiadores -->
-    <section class="home-banner-apoie d-flex align-items-center">
-      <div class="container">
-        <div class="row justify-content-around align-items-center">
-          <h5 class="col-md-4">Ajude-nos a ir mais longe</h5>
-          <button class="btn col-md-3" onclick="location.href='contribute-enterprise.php'">Seja Patrocinador</button>
-          <button class="btn col-md-3" onclick="location.href='contribute-people.php'">Seja Voluntário</button>
-        </div>
+    <section class="home-banner-apoie">
+      <div class="row justify-content-center align-items-center py-2">
+        <h5 class="col-12 col-lg-4 text-center mt-2">Ajude-nos a ir mais longe!</h5>
+        <button class="btn col-10 col-sm-5 col-md-5 col-lg-3" onclick="location.href='contribute-enterprise.php'">Seja Patrocinador</button>
+        <button class="btn col-10 col-sm-5 col-md-5 col-lg-3" onclick="location.href='contribute-people.php'">Seja Voluntário</button>
       </div>
     </section>
   </main>
