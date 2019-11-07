@@ -276,12 +276,6 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
 /* Fim QUEM SOMOS */
 
 /* Início CURSOS-GERAL */
-.courses-g-banner {
-  background: #005662;
-  color:#FFF;
-  height: 30vh;
-}
-
 .courses-g-search {
   background-color: #BDBDBD;
   display: flex;
