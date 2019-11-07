@@ -65,6 +65,15 @@ nav .btn-dark:hover, nav .btn-dark:focus {
 .indent {
   text-indent: 1.8em;
 }
+
+.pages-title-bg {
+  background-color: #005662;
+  height: 20vh;
+  color: #FFF;
+  font-weight: bold;
+  width: 100%;
+}
+
 /* Fim CONFIGURAÇÕES GERAIS  */
 
 /* Início HEADER */
@@ -489,7 +498,7 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
 /* Fim APOIO PSICOLÓGICO */ 
 
 /* Início CONTRIBUA-GERAL */
-.contribute-banner {
+/*.contribute-banner {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -503,7 +512,7 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
   display: flex;
   align-items: center;
   justify-content: center;
-}
+}*/
 
 .contribute-banner-session {
   align-items: center;
@@ -529,14 +538,6 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
 /* Fim CONTRIBUA-GERAL */
 
 /* Início CONTATO */
-.contact-bg {
-  background-color: #4FB3BF;
-  height: 30vh;
-  color: #FFF;
-  font-weight: bold;
-  width: 100%;
-}
-
 .contact-email {
   color: #005662;
   font-weight: bold;
@@ -552,10 +553,6 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
   background-color: #FFFF81;
   margin: 2%;
   padding: 2% 1%;
-}
-
-label {
-  font-weight: bold;
 }
 
 .questions-title-bg {
@@ -779,6 +776,8 @@ footer p {
   h4 {font-size:3.8vw;}
   h5 {font-size:3.2vw;}
 
+  .pages-title-bg {height: 25vh;}
+
   /* Início Página HOME */
   .home-btn-sm{display:none;}
   .home-btn-big{display:flex;}
@@ -794,6 +793,8 @@ footer p {
   h3 {font-size:3.8vw;}
   h4 {font-size:3.3vw;}
   h5 {font-size:2.8vw;}
+
+  .pages-title-bg {height: 30vh;}
 
   /* Início Página HOME */
   .home-card {margin: 0 1rem;}
