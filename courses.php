@@ -9,6 +9,8 @@
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Baloo&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
 </head>
 <body>
   <!-- Header -->
@@ -90,62 +92,73 @@
         </div>
 
         <div class="list-group-item row form-group bg-light">
-            <div class="form-group form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Alimentação</label>
+          <div class="container">
+
+            <div class="panel-group">
+              <div class="panel panel-default">
+                <div class="panel-heading mt-2">
+                <h5 class="panel-title">
+                    <a data-toggle="collapse" href="#collapse1"><i class="far fa-caret-square-down"></i>  Idiomas</a>
+                  </h5>
+                </div>
+                <div id="collapse1" class="panel-collapse collapse">
+                  <ul class="list-group">
+                    <li class="list-group-item"><a href="#portugues">Português</a></li>
+                    <li class="list-group-item"><a href="#ingles">Inglês</a></li>
+                    <li class="list-group-item"><a href="#espanhol">Espanhol</a></li>
+                  </ul>
+                </div>
+              </div>
             </div>
-            <div class="form-group form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Hotelaria</label>
+
+            <div class="panel-group">
+              <div class="panel panel-default">
+                <div class="panel-heading mt-2">
+                  <h5 class="panel-title">
+                    <a data-toggle="collapse" href="#collapse2"><i class="far fa-caret-square-down"></i>  Hotelaria</a>
+                  </h5>
+                </div>
+                <div id="collapse2" class="panel-collapse collapse">
+                  <ul class="list-group">
+                    <li class="list-group-item"><a href="#camareiro">Camareiro</a></li>
+                    <li class="list-group-item"><a href="#recepcionista">Recepcionista</a></li>
+                    <li class="list-group-item"><a href="#mensageiro">Mensageiro</a></li>
+                  </ul>
+                </div>
+              </div>
             </div>
-            <div class="form-group form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Segurança Patrimonial</label>
+
+            <div class="panel-group">
+              <div class="panel panel-default">
+                <div class="panel-heading mt-2">
+                  <h5 class="panel-title">
+                    <a data-toggle="collapse" href="#collapse3"><i class="far fa-caret-square-down"></i>  Programação</a>
+                  </h5>
+                </div>
+                <div id="collapse3" class="panel-collapse collapse">
+                  <ul class="list-group">
+                    <li class="list-group-item"><a href="#csshtlm">CSS + HTML</a></li>
+                    <li class="list-group-item"><a href="#phyton">Phyton</a></li>
+                    <li class="list-group-item"><a href="#logica">Lógica de Programação</a></li>
+                  </ul>
+                </div>
+              </div>
             </div>
-            <div class="form-group form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Jardinagem</label>
-            </div>
-            <div class="form-group form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Comércio</label>
-            </div>
-            <div class="form-group form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Manutenção Predial</label>
-            </div>
-            <div class="form-group form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Construção Civil</label>
-            </div>
+          </div>
         </div>
 
-        
-
-        <div class="list-group-item row form-group p-3 bg-light">
-            <div class="form-group">
-                <label class="text-primary" for="">Busca por Palavra Chave</label>
-                <input type="text" class="form-control" placeholder="Procurar...">
-            </div>
-
-            <h5 class="btn btn-primary"><i class="fa fa-search"></i> Procurar Cursos</h5>
-            <!-- JS files: jQuery first, then Popper.js, then Bootstrap JS -->
-            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-            <!-- Font Awesome CSS -->
-            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <div class="list-group-item row form-group p-3 bg-secondary">
+          <div class="form-group ">
+            <label class="font-weight-bold text-light" for="busca">Busca por Palavra Chave</label>
+            <input type="text" class="form-control" id="busca" placeholder="Procurar...">
+          </div>
+          <h5 class="btn btn-primary"><i class="fa fa-search"></i> Procurar Cursos</h5>
         </div>
       </aside>
       
     </div>
 
   </main>
-
-
-
-
-  
 
 
 
@@ -157,6 +170,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  
+  <script src="https://kit.fontawesome.com/e75d4b0fd5.js" crossorigin="anonymous"></script>
 
 </body>
 </html>
