@@ -17,53 +17,55 @@
     <!-- Banner -->
     <section class="home-banner">
       <h1>Onde a esperança se reencontra</h1>
-      <button class="btn" onclick="location.href='about.php'">Apoie-me</button>
+      <button class="btn home-btn-big" onclick="location.href='register.php'">Faça Parte Dessa Comunidade</button>
+      <button class="btn home-btn-sm" onclick="location.href='register.php'">Faça Parte </button>
     </section>
 
     <!-- Texto Resumo Sobre o Site -->
     <section class="home-summary">
-      <div class="container">
-        <p>A Oppy foi criada em 2019 com o objetivo de dar a oportunidade dos emigrantes saídos de diversas condições de vida obterem as habilidades técnicas e emocionais para entrar no mercado de trabalho de um novo país e melhorar suas condições de vida. 
+      <div class="container d-flex flex-column">
+        <p class="indent">A Oppy foi criada em 2019 com o objetivo de dar a oportunidade dos emigrantes saídos de diversas condições de vida obterem as habilidades técnicas e emocionais para entrar no mercado de trabalho de um novo país e melhorar suas condições de vida. 
           
-        <p> Contamos com apoio de empresas e recrutadores para conectar essa mão-de-obra qualificada e cheia de energia para aulixiar a integração dos novos habitantes do país! </p>
+        <p class="indent"> Contamos com apoio de empresas e recrutadores para conectar essa mão-de-obra qualificada e cheia de energia para aulixiar a integração dos novos habitantes do país! </p>
         
-        <button class="btn" onclick="location.href='about.php'">Saiba Mais</button>
+        <button class="btn align-self-center my-2" onclick="location.href='about.php'">Saiba Mais</button>
       </div>
     </section>
 
     <!-- Cards Resumo Conteúdo do Site -->
     <section class="container">
-      <div class="row justify-content-around align-itens-center py-5">
-        <article class="col-md-4">
+      <div class="row justify-content-around align-itens-center py-1 home-card-section">
+        <article class="col-12 col-md-6 col-lg-4 pb-3">
           <div class="home-card d-flex flex-column align-items-center">
             <a href="about.php">
               <img src="img/home-card-whom.png" class="home-card-img" alt="mãos se dando às mãos">
             </a>
-            <div class="card-body">
-              <h4 class="card-title"><a href="about.php">Para quem é o projeto</a></h4>
-              <p class="card-text">Para qualquer pessoa que deseja se integrar à comunidade de um novo país. Que busca obter informações dos passos para atingir esse objetivo, que precisa de apoio técnico, psicológico e jurídico para tal.</p>
+            <div>
+              <h4 class="card-title"><a href="about.php">Para você?</a></h4>
+              <p class="card-text indent">Para qualquer pessoa que deseja se integrar à comunidade de um novo país. Que busca obter informações dos passos para atingir esse objetivo, que precisa de apoio técnico, psicológico e jurídico para tal.</p>
             </div>
           </div>
         </article>
-        <article class="col-md-4">
+        <article class="col-12 col-md-6 col-lg-4 pb-3">
           <div class="home-card d-flex flex-column align-items-center">
-            <a href="courses.php">  
-              <img src="img/home-card-glasses.png" class="home-card-img" alt="óculos">
+            <a href="courses.php" class="d-flex justify-content-center">  
+              <img src="img/home-card-glasses2.png" class="home-card-img home-card-img-sm" alt="óculos">
+              <img src="img/home-card-glasses.png" class="home-card-img home-card-img-md" alt="óculos">
             </a>
-            <div class="card-body">
+            <div>
               <h4 class="card-title"><a href="courses.php">Cursos</a></h4>
-              <p class="card-text">Em contato direto com os apoiadores que fornecem os cursos gratuitamente para o imigrantes, são disponibilizados cursos em áreas como: idiomas, estética, hotelaria, alimentação, cuidados, entreterimento, dentre outros.</p>
+              <p class="card-text indent">Em contato direto com os apoiadores que fornecem os cursos gratuitamente para o imigrantes, são disponibilizados cursos em áreas como: idiomas, estética, hotelaria, alimentação, cuidados, entreterimento, dentre outros.</p>
             </div>
           </div>
         </article>
-        <article class="col-md-4">
+        <article class="col-12 col-md-6 col-lg-4 pb-3">
             <div class="home-card d-flex flex-column align-items-center">
               <a href="support.php">
                 <img src="img/home-card-help.png" class="home-card-img" alt="bóia de navio">
               </a>
-              <div class="card-body">
-                <h4 class="card-title"><a href="support.php">Apoio Assistencial</a></h4>
-                <p class="card-text">Sabendo que mudar de país é algo que nunca é simples, contamos com apoiadores que dão apoio psicológico, jurídico e para encontrar o primeiro emprego no novo país. Buscamos ajudar essa transição ser a mais suave possível.</p>
+              <div>
+                <h4 class="card-title"><a href="support.php">Assistências</a></h4>
+                <p class="card-text indent">Sabendo que mudar de país é algo que nunca é simples, contamos com apoiadores que dão apoio psicológico, jurídico e para encontrar o primeiro emprego no novo país. Buscamos ajudar essa transição ser a mais suave possível.</p>
               </div>
             </div>
         </article>
@@ -71,13 +73,11 @@
     </section>
 
     <!-- Banner Chamada Apoiadores -->
-    <section class="home-banner-apoie d-flex align-items-center">
-      <div class="container">
-        <div class="row justify-content-around align-items-center">
-          <h4 class="col-md-4">Ajude-nos a ir mais longe</h4>
-          <button class="btn col-md-3" onclick="location.href='contribute-enterprise.php'">Seja Patrocinador</button>
-          <button class="btn col-md-3" onclick="location.href='contribute-people.php'">Seja Voluntário</button>
-        </div>
+    <section class="home-banner-apoie">
+      <div class="row justify-content-center align-items-center py-2">
+        <h5 class="col-12 col-lg-4 text-center mt-2">Ajude-nos a ir mais longe!</h5>
+        <button class="btn col-10 col-sm-5 col-md-5 col-lg-3" onclick="location.href='contribute-enterprise.php'">Seja Patrocinador</button>
+        <button class="btn col-10 col-sm-5 col-md-5 col-lg-3" onclick="location.href='contribute-people.php'">Seja Voluntário</button>
       </div>
     </section>
   </main>

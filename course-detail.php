@@ -31,11 +31,11 @@
 
         <!-- nome do curso e ofertante do treinamento -->
         <div class="row pt-3">
-          <div class="col-6">
+          <div class="col-12 col-lg-6">
             <h4>Hotelaria</h4>
             <h1>Curso de Atendente</h1>
           </div>
-          <div class="col-6 text-right">
+          <div class="col-12 col-lg-6 text-right course-detail-main-banner-offered-by">
             <h4>oferecido por:</h4>
             <h3>evolke Treinamentos</h3>
           </div>
@@ -43,10 +43,10 @@
 
         <div class="row">
           <!-- informações do curso -->
-          <div class="col-6 d-flex flex-column justify-content-between">
+          <div class="col-12 col-lg-6 d-flex flex-column justify-content-between">
             <div class="row"> <!-- inscritos e vagas -->
-              <div class="col-6"><p><b>Inscritos:</b> 2.341</p></div>
-              <div class="col-6"><p><b>Vagas:</b> 50</p></div>
+              <div class="col-12 col-lg-6"><p><b>Inscritos:</b> 2.341</p></div>
+              <div class="col-12 col-lg-6"><p><b>Vagas:</b> 50</p></div>
             </div>
             <div>
               <div class="row d-flex text-center mt-3"> <!-- cronograma-data -->
@@ -56,10 +56,10 @@
                 <div class="col-3 border"><p class="m-0">20/11</div>
               </div>
               <div class="row d-flex text-center"> <!-- cronograma-legenda -->
-                <div class="col-3"><p>Abertura</p></div>
-                <div class="col-3"><p>Encerramento Inscrições</p></div>
-                <div class="col-3"><p>Divulgação Selecionados</p></div>
-                <div class="col-3"><p>Início Curso</p></div>
+                <div class="col-3"><p class="course-detail-schedule-legend">Abertura</p></div>
+                <div class="col-3"><p class="course-detail-schedule-legend">Encerramento Inscrições</p></div>
+                <div class="col-3"><p class="course-detail-schedule-legend">Divulgação Selecionados</p></div>
+                <div class="col-3"><p class="course-detail-schedule-legend">Início Curso</p></div>
               </div>
             </div>
             <div class="row pb-5 mt-3"> <!-- botão escrever -->
@@ -68,7 +68,7 @@
           </div>
           
           <!-- imagem do ofertante do treinamento -->
-          <div class="col-6 d-flex justify-content-end">
+          <div class="col-12 col-lg-6 course-detail-main-banner-div-img">
             <img src="img/emp-evolke.jpg" alt="empresa treinamento" class="rounded pb-5 course-detail-logo-img">
           </div>
         </div>
@@ -82,10 +82,10 @@
       <h2 class="pt-4 pb-2">Informações Sobre o Curso</h2>
       <p>Preparar profissionais para confeccionar e reparar móveis e objetos em madeira. Além disso você aprenderá a interpretar projetos e especificações em todo o seu processo fabril, através de plantas e especificações técnicas, operando equipamentos manuais e elétricos e observando as normas técnicas de segurança.</p>
       <p><b>Duração:</b> 2 semanas</p>
-      <span><b>Requisitos:</b></span>
+      <p><b>Requisitos:</b></p>
       <ul class="pb-2">
-        <li>Idade mínima de 16 anos.</li>
-        <li>Conhecimentos equivalentes ao Ensino Fundamental completo.</li>
+        <li><p>Idade mínima de 16 anos.</p></li>
+        <li><p>Conhecimentos equivalentes ao Ensino Fundamental completo.</p></li>
       </ul>
     </section>
 
@@ -102,10 +102,10 @@
       <!-- div do fundo cinza -->
       <div class="course-detail-similar-courses-bottom">
         <div class="container">
-          <div class="row d-flex container justify-content-between">
+          <div class="row d-flex container course-detail-div-cards">
 
             <!-- 1o card -->
-            <div class="col-4 p-2">
+            <div class="col-8 col-lg-4 p-2">
               <div class="course-detail-card">
                 <div class="container course-detail-card-title">
                   <span>Hotelaria</span>
@@ -124,7 +124,7 @@
             </div>
 
             <!-- 2o card -->
-            <div class="col-4 p-2">
+            <div class="col-8 col-lg-4 p-2">
               <div class="course-detail-card">
                 <div class="container course-detail-card-title">
                   <span>Gastronomia</span>
@@ -143,7 +143,7 @@
             </div>
 
             <!-- 3o card -->
-            <div class="col-4 p-2">
+            <div class="col-8 col-lg-4 p-2">
               <div class="course-detail-card">
                 <div class="container course-detail-card-title">
                   <span>Serviços Gerais</span>

@@ -7,7 +7,7 @@
 body {
   font-family: 'Lato', sans-serif;
   color: #47525E;
-  font-size: 16px;
+  /* font-size: 16px; */
 }
 
 nav a {
@@ -16,29 +16,15 @@ nav a {
 
 p {
   margin: 0;
-  font-size: 1.1rem;
+  font-size: 4.0vw; /*valor menor que xs*/
 }
 
-h1 {
-  font-size: 3.5rem;
-  font-weight: bold;
-}
+h1 {font-size:10.0vw;}
+h2 {font-size:8.0vw;}
+h3 {font-size:5.5vw;}
+h4 {font-size:5.0vw;}
+h5 {font-size:4.5vw; font-weight: bold;}
 
-h2 {
-  font-size: 2.5rem;
-}
-
-h3 {
-  font-size: 1.75rem;
-}
-
-h4 {
-  font-size: 1.5rem;
-}
-
-h5 {
-  font-size: 1.25rem;
-}
 
 button {
   color: #FFF;
@@ -76,9 +62,18 @@ nav .btn-dark:hover, nav .btn-dark:focus {
   color: #000;
 }
 
-.btn-nav{
-  width: 20vh;
+.indent {
+  text-indent: 1.8em;
 }
+
+.pages-title-bg {
+  background-color: #005662;
+  height: 20vh;
+  color: #FFF;
+  font-weight: bold;
+  width: 100%;
+}
+
 /* Fim CONFIGURAÇÕES GERAIS  */
 
 /* Início HEADER */
@@ -86,24 +81,21 @@ nav .btn-dark:hover, nav .btn-dark:focus {
   background: #FFD54FF0;
   border-bottom: 1px #FFD54F solid;
   z-index: 99;
-  height:10vh;
+  height: 10vh;
+}
+
+.navbar-nav {
+  background-color: #FFD54F;
+  text-align: center;
 }
 
 .logo-header .logo-mato {
-  width: 20%;
-  padding-top: 1vh;
+  display: none;
 }
 
 .logo-header .logo-logotipo {
-  width: 45%;
-}
-
-.logo-logotipo {
-  margin-top: 3.6vh;
-}
-
-header nav {
-  font-size: 0.2rem;
+  width: 30vw;
+  height: 5vh;
 }
 
 nav a {
@@ -154,27 +146,28 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
   background-position: center;
   height: 90vh;
   color: #FFF;
-  text-transform: uppercase;
   display:flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; 
+  justify-content: flex-end;
 }
 
 .home-banner h1 {
+  text-transform: uppercase;
   font-family: 'Baloo', cursive;
-  font-size: 60px;
-  margin-top: 4rem;
+  margin-bottom: 3rem;
+  text-align: center;
 }
 
 .home-banner button {
-  margin-top: 2rem;
+  margin-bottom: 10vh;
   color: #fff;
-  font-size: 1.4rem;
   background-color: #00838F;
   border-color:none;
-  padding: 0.5rem 3rem;
+  padding: 0.5rem 2rem;
 }
+
+.home-btn-big {display:none;}
 
 .home-banner button:hover {
   background-color: #FFFF81;
@@ -182,82 +175,48 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
 }
 
 .home-summary {
-  height: 70vh;
-  display:flex;
-  line-height: 3rem;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
+  padding: 1rem 0;
+  line-height: 2rem;
   background-color: #FFFF81;
+  text-align: justify;
 }
 
-.home-summary p {
-  font-size: 1.8em;
-}
-
-.home-card {
-  text-align: center;
-}
+.home-card {text-align: center;}
 
 .home-card-img {
   height: 50%;
   width: 50%;
 } 
 
+.home-card-img-md {display:none;}
+
 .home-card .card-title {
   font-weight: bold;
+  margin-top:0.5em;
+  border-bottom: solid 2px #4fb3bf;
 }
 
-.home-card .card-text {
-  text-align: justify;
-  line-height: 1.5rem;
-}
+.home-card .card-text {text-align: justify;}
 
-.home-banner-apoie {
-  background: #FFD54F;
-  height: 10vh;
+.home-banner-apoie {background: #FFD54F;}
+
+.home-banner-apoie button {
+  margin: 0.5em;
+  padding: 0.3em 1em;
 }
 /* Fim HOME */
 
 /* Início QUEM SOMOS */
 .about-banner {
-  background-image: url('../img/about-banner.jpg');
-  background-size: cover;
-  background-position: center;
-  height: 82vh;
+  display: none;
+}
+
+.oppy-info h2, .oppy-proposal h2 {
   text-align: center;
-  color: #FFF;
-  justify-content: center;
 }
 
-.bg-color {
-  background-color: #0003;
-}
-
-.quotation {
-  padding: 0 15vw;
-  line-height: 1.7em;
-  /* font-size: 0.9rem; */
-  margin-bottom: 0.5rem;
-}
-
-.quotation::before {
-  content: open-quote;
-  font-size: 1.5em;
-}
-
-.quotation::after {
-  content: close-quote;
-  font-size: 1.5em;
-}
-
-.quotation-author {
-  /* font-size: .9rem; */
-  font-style: italic;
-}
-
-.quotation-author::before {
-  content: "\2014 \00A0";
+.oppy-info p, .oppy-proposal p {
+  text-align: center;
 }
 
 .border-config {
@@ -290,8 +249,9 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
   font-weight: bold;
 }
 
-.oppy-info img {
-  height: 230px;
+.oppy-info img, .oppy-proposal img {
+  height: 40vh;
+  width: 40vw;
 }
 
 .oppy-proposal {
@@ -307,10 +267,6 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
   font-weight: bold;
 }
 
-.oppy-proposal img {
-  height: 230px;
-}
-
 .oppy-values {
   background-color: #EBF0F7;
   padding: 50px;
@@ -322,12 +278,6 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
 /* Fim QUEM SOMOS */
 
 /* Início CURSOS-GERAL */
-.courses-g-banner {
-  background: #005662;
-  color:#FFF;
-  height: 30vh;
-}
-
 .courses-g-search {
   background-color: #BDBDBD;
   display: flex;
@@ -358,6 +308,14 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
   background-color: #00838F;
 }
 
+.course-detail-main-banner-offered-by {
+  display: none;
+}
+
+.course-detail-main-banner-div-img {
+  display: none;
+}
+
 .course-detail-main-banner * {
   color: #FFF;
 }
@@ -372,6 +330,10 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
 
 .course-detail-shedule-soon {
   background-color: #C8A415;
+}
+
+.course-detail-schedule-legend {
+  font-size:2.3vw;
 }
 
 .course-detail-similar-courses-top {
@@ -403,6 +365,10 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
   height: 100px;
   margin: 20px;
 }
+
+.course-detail-div-cards { /* div que segura os cards */
+  justify-content: center;
+}
 /* Fim CURSO-DETALHE */
 
 /* Início OPORTUNIDADES */
@@ -427,7 +393,7 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
 }
 
 .h1-apoio {
-  font-size: 3.5rem;
+  /* font-size: 4.5rem; */
   color: #005662;
 }
 
@@ -474,7 +440,7 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
 }
 
 .texto-apoio p {
-  font-size: 1.5em;
+  /* font-size: 1.5em; */
   font-style: italic;
 }
 /* Fim APOIO-GERAL */
@@ -544,7 +510,7 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
 /* Fim APOIO PSICOLÓGICO */ 
 
 /* Início CONTRIBUA-GERAL */
-.contribute-banner {
+/*.contribute-banner {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -558,7 +524,7 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
   display: flex;
   align-items: center;
   justify-content: center;
-}
+}*/
 
 .contribute-banner-session {
   align-items: center;
@@ -584,14 +550,6 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
 /* Fim CONTRIBUA-GERAL */
 
 /* Início CONTATO */
-.contact-bg {
-  background-color: #4FB3BF;
-  height: 30vh;
-  color: #FFF;
-  font-weight: bold;
-  width: 100%;
-}
-
 .contact-email {
   color: #005662;
   font-weight: bold;
@@ -603,14 +561,9 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
 }
 
 .contact-form-design {
-  /* border: 3px dashed #4FB3BF; */
-  background-color: #FFFF81;
+  background-color: #FFD54F;
   margin: 2%;
   padding: 2% 1%;
-}
-
-label {
-  font-weight: bold;
 }
 
 .questions-title-bg {
@@ -712,6 +665,7 @@ card {
   background-color: #005662;
   padding: 10px;
   color: #FFF;
+  width: 100%;
 }
 
 .user-page-card {
@@ -741,6 +695,7 @@ card {
 }
 
 .user-page-photo {
+  display: none;
   height: 350px;
   border: 2px solid #FFF;
 }
@@ -750,13 +705,35 @@ card {
   color: #474747;
 }
 
+.user-page-item-inside-card-top{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.user-page-text-category {
+  text-decoration: underline;
+}
 /* Fim PÁGINA USUÁRIO */
 
 /* Início INFORMAÇÕES USUÁRIO */
+.user-info-top {
+  height: 250px;
+  align-self: center;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .user-info-photo {
-  height: 200px;
+  height: 80%;
   width: auto;
-  border: 2px solid #FFF;
+}
+
+.user-info-main {
+  background-color: #FFFF81;
 }
 /* Fim INFORMAÇÕES USUÁRIO */
 
@@ -767,7 +744,7 @@ footer {
 }
 
 footer img {
-  width: 5vw;
+  width: 17vw;
 }
 
 footer h4 {
@@ -776,12 +753,8 @@ footer h4 {
 
 footer p {
   color: #FFF;
-  font-size: 0.9rem;;
 }
 /* Fim FOOTER */
-
-
-
 
 
 
@@ -796,3 +769,209 @@ footer p {
   background-color:#4FB3BF;
 }
 /* FIM SUPPORT-LEGAL */
+
+
+
+/* --------------------------------- MEDIAS QUERIES --------------------------------- */
+
+/* Extra small devices (portrait phones, less than 576px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  p {font-size:2.7vw;}
+  h1 {font-size:8.0vw;}
+  h2 {font-size:6.0vw;}
+  h3 {font-size:4.3vw;}
+  h4 {font-size:3.8vw;}
+  h5 {font-size:3.2vw;}
+
+  .pages-title-bg {height: 25vh;}
+
+  /* Início HEADER */
+  .logo-header .logo-logotipo {
+    width: 15vw;
+    height: 5vh;
+  }
+  /* Fim HEADER */
+
+  /* Início HOME */
+  .home-btn-sm{display:none;}
+  .home-btn-big{display:flex;}
+  /* Fim HOME */
+
+  /* Início CURSO-DETALHE */
+  .course-detail-schedule-legend {
+    font-size: 0.8em;
+  }
+  /* Fim CURSO-DETALHE */
+
+  /* Início FOOTER */
+  footer img {
+    width: 15vw;
+  }
+  /* Fim FOOTER */
+}
+
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  p {font-size:2.3vw;}
+  h1 {font-size:7.0vw;}
+  h2 {font-size:5.0vw;}
+  h3 {font-size:3.8vw;}
+  h4 {font-size:3.3vw;}
+  h5 {font-size:2.8vw;}
+
+  .pages-title-bg {height: 30vh;}
+
+  /* Início HEADER */
+  .logo-header .logo-logotipo {
+    width: 10vw;
+    height: 5vh;
+  }
+  /* Fim HEADER */
+
+  /* Início HOME */
+  .home-card {margin: 0 1rem;}
+  .home-card-img-sm{display:none;}
+  .home-card-img-md{display:flex;}
+  .home-card-img {
+    height: 60%;
+    width: 60%;
+  } 
+  /* Fim HOME */
+
+  /* Início USUÁRIO */
+  .user-page-photo {display: block;}
+  /* Fim USUÁRIO */
+
+  /* Início FOOTER */
+  footer img {
+    width: 10vw;
+  }
+  /* Fim FOOTER */
+
+}
+
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  p {font-size:1.7vw;}
+  h1 {font-size:6.0vw;}
+  h2 {font-size:4.0vw;}
+  h3 {font-size:3.2vw;}
+  h4 {font-size:2.7vw}
+  h5 {font-size:2.2vw;}
+
+  /* Início HEADER */
+  .logo-header .logo-mato {
+    height: 10vh;
+    margin-right: 10px;
+    display: flex;
+  }
+
+  .logo-header .logo-logotipo {
+    width: 8vw;
+    height: 5vh;
+  }
+  /* Fim HEADER */
+  
+  /* Início HOME */
+  .home-card-section {margin:2rem 0;}
+  /* Fim HOME */
+
+  /* Início SOBRE */
+  .about-banner {
+    display: flex;
+    background-image: url('../img/about-banner.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 82vh;
+    text-align: center;
+    color: #FFF;
+    justify-content: center;
+  }
+  
+  .bg-color {
+    background-color: #0003;
+  }
+  
+  .quotation {
+    padding: 0 15vw;
+    line-height: 1.7em;
+    margin-bottom: 0.5rem;
+  }
+  
+  .quotation::before {
+    content: open-quote;
+    font-size: 1.5em;
+  }
+  
+  .quotation::after {
+    content: close-quote;
+    font-size: 1.5em;
+  }
+  
+  .quotation-author {
+    font-style: italic;
+  }
+  
+  .quotation-author::before {
+    content: "\2014 \00A0";
+  }
+
+  .oppy-info h2, .oppy-proposal h2 {
+    text-align: left;
+  }
+
+  .oppy-info p, .oppy-proposal p {
+    text-align: left;
+  }
+  /* Fim SOBRE */
+
+  /* Início CURSO-DETALHE */
+  .course-detail-main-banner-offered-by {
+    display: block;
+  }
+  
+  .course-detail-main-banner-div-img {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .course-detail-div-cards { /* div que segura os cards */
+    justify-content: space-between;
+  }
+  /* Fim CURSO-DETALHE */
+
+  /* Início FOOTER */
+  footer img {
+    width: 8vw;
+  }
+  /* Fim FOOTER */
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+  p {
+    font-size:1.4vw;
+    line-height:1.6;
+  }
+  h1 {font-size:5.0vw;}
+  h2 {font-size:3.0vw;}
+  h5 {font-size:1.7vw;}
+  
+  /* Início HOME */
+  .home-summary {padding: 3.2rem 0 2.4rem 0;}
+
+  .home-summary p {line-height: 2.2;}
+
+  .home-summary p {margin-bottom:1rem;}
+
+  .home-summary button {
+    padding-left:2rem;
+    padding-right:2rem;
+  }
+  /* Fim HOME */
+}

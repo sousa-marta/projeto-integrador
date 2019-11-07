@@ -24,8 +24,8 @@
     <!-- Banner com citação -->
     <section class="about-banner">
       <blockquote class="bg-color">
-        <h5 class="mb-0 quotation">Para a maioria dos imigrantes, mudar para um país novo é um ato de fé. Mesmo que você tenha ouvido histórias sobre segurança, oportunidade e prosperidade,  ainda assim é um grande salto se afastar de sua língua, de seu povo e de seu país. De suas raízes.</h5>
-        <h5 class="mt-0 quotation-author">Nicola Yoon, escritora jamaicana-americana</h5>
+        <p class="mb-0 quotation">Para a maioria dos imigrantes, mudar para um país novo é um ato de fé. Mesmo que você tenha ouvido histórias sobre segurança, oportunidade e prosperidade,  ainda assim é um grande salto se afastar de sua língua, de seu povo e de seu país. De suas raízes.</p>
+        <p class="mt-0 quotation-author">Nicola Yoon, escritora jamaicana-americana</p>
       </blockquote>
     </section>
 
@@ -33,17 +33,17 @@
     <section class="container-fluid text-center border-config p-5">
       <h2 class="text-uppercase pb-3">Dados estatísticos</h2>
       <div class="row">
-        <div class="col-lg-4 statistics-block">
+        <div class="col-sm-4 statistics-block mt-3">
           <img src="img/diagram.svg" alt="" class="statistics-images">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius praesentium amet soluta assumenda tenetur facere nemo, quod repudiandae excepturi esse quos, veritatis quia illum vero, nostrum ab ipsa totam neque?
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
         </div>
-        <div class="col-lg-4 statistics-block">
+        <div class="col-sm-4 statistics-block mt-3">
           <img src="img/portfolio.svg" alt="" class="statistics-images">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius praesentium amet soluta assumenda tenetur facere nemo, quod repudiandae excepturi esse quos, veritatis quia illum vero, nostrum ab ipsa totam neque?
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
         </div>
-        <div class="col-lg-4 statistics-block">
+        <div class="col-sm-4 statistics-block mt-3">
           <img src="img/collaboration.svg" alt="" class="statistics-images">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius praesentium amet soluta assumenda tenetur facere nemo, quod repudiandae excepturi esse quos, veritatis quia illum vero, nostrum ab ipsa totam neque?
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
         </div>
       </div>
     </section>
@@ -51,9 +51,9 @@
     <!-- Como surgiu a Oppy? -->
     <section class="container-fluid">
       <div class="row oppy-info">
-        <img src="img/creativity.svg" alt="" class="col-lg-2">
-        <div class="col-lg-6">
-          <h2 class="text-uppercase">Como surgiu a oppy?</h2>
+        <img src="img/creativity.svg" alt="desenho de uma caixa com lápis, lâmpada e nuvem, representando criação" class="col-sm-6 col-lg-4">
+        <div class="col-sm-6 col-lg-7">
+          <h2 class="text-uppercase mt-3">Como surgiu a oppy?</h2>
           <p>Criada em 2019 com o objetivo de integrar milhões de emigrantes do mundo a seus países receptores, facilitando a aquisição de habilidades técnicas que lhes permitam entrar no mercado de trabalho e melhorar suas condições de vida. Além disso, conta com o apoio de empresas e recrutadores para conectar essa mão-de-obra qualificada de modo a garantir que essas pessoas alcancem seus objetivos.</p>
         </div>
       </div>
@@ -61,12 +61,12 @@
 
     <!-- Nossa Proposta -->
     <section class="container-fluid">
-      <div class="row oppy-proposal">
-        <div class="col-lg-6">
+      <div class="row oppy-proposal mb-0 pb-0">
+        <div class="col-sm-6 col-lg-7">
           <h2 class="text-uppercase">Nossa Proposta</h2>
           <p>Inserir os imigrantes (homens e mulheres) no mercado de trabalho do país destino, gerando valor agregado aos seus currículos, por meio do uso de ferramentas digitais que lhes permitam adquirir habilidades técnicas, e sem desconsiderar suas próprias bagagens pessoais e profissionais.</p>
         </div>
-        <img src="img/population-system.svg" alt="" class="col-lg-2">
+        <img src="img/population-system.svg" alt="desenho de duas mãos segurando a rede de conexões de uma pessoa" class="col-sm-6 col-lg-4">
       </div>
     </section>
   </main>
@@ -75,17 +75,17 @@
   <section class="container-fluid oppy-values text-center">
     <h2 class="text-uppercase">Nossos Valores</h2>
     <div class="row">
-        <div class="col-lg-4 statistics-block">
+        <div class="col-md-4 statistics-block mt-3">
           <img src="img/hands.svg" alt="" class="statistics-images">
           <h5>Solidariedade</h5>
           <p>Acreditamos que dar oportunidades a essas pessoas auxilia na inserção delas na sociedade e cria um sentido mais amplo de comunidade.</p>
         </div>
-        <div class="col-lg-4 statistics-block">
+        <div class="col-md-4 statistics-block mt-3">
           <img src="img/reliability.svg" alt="" class="statistics-images">
           <h5>Integridade</h5>
           <p>Trabalhamos com responsabilidade e comprometimento para cumprir cada um dos processos que permitem o crescimento de nossos beneficiários.</p>
         </div>
-        <div class="col-lg-4 statistics-block">
+        <div class="col-md-4 statistics-block mt-3">
           <img src="img/discussion.svg" alt="" class="statistics-images">
           <h5>Inovação</h5>
           <p>Sabemos da importância de se manter atualizado nessa era digital e, por isso, buscamos oferecer as melhores ferramentas que auxiliem nessa adaptação e atualização pessoal.</p>
@@ -98,32 +98,32 @@
     <section class="container-fluid text-center team-info">
       <h2 class="text-uppercase">As pessoas por trás de tudo isso</h2>
       <div class="row">
-        <div class="col-lg-2 statistics-block px-3">
+        <div class="col-md-4 col-lg-2 statistics-block px-3 mt-3">
           <img src="img/boy.svg" alt="" class="statistics-images">
           <h5>Alex</h5>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius praesentium amet soluta assumenda tenetur facere nemo, quod repudiandae excepturi esse quos, veritatis quia illum vero, nostrum ab ipsa totam neque?</p>
         </div>
-        <div class="col-lg-2 statistics-block px-3">
+        <div class="col-md-4 col-lg-2 statistics-block px-3 mt-3">
           <img src="img/girl.svg" alt="" class="statistics-images">
           <h5>Lislaine</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius praesentium amet soluta assumenda tenetur facere nemo, quod repudiandae excepturi esse quos, veritatis quia illum vero, nostrum ab ipsa totam neque?</p>
+          <p>Dev que pretende trabalhar com Segurança da Informação e acredita que saber programar será o diferencial para entrar na nova área.</p>
         </div>
-        <div class="col-lg-2 statistics-block px-3">
+        <div class="col-md-4 col-lg-2 statistics-block px-3 mt-3">
           <img src="img/girl.svg" alt="" class="statistics-images">
           <h5>Marta</h5>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius praesentium amet soluta assumenda tenetur facere nemo, quod repudiandae excepturi esse quos, veritatis quia illum vero, nostrum ab ipsa totam neque?</p>
         </div>
-        <div class="col-lg-2 statistics-block px-3">
+        <div class="col-md-4 col-lg-2 statistics-block px-3 mt-3">
           <img src="img/boy.svg" alt="" class="statistics-images">
           <h5>Ricardo</h5>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius praesentium amet soluta assumenda tenetur facere nemo, quod repudiandae excepturi esse quos, veritatis quia illum vero, nostrum ab ipsa totam neque?</p>
         </div>
-        <div class="col-lg-2 statistics-block px-3">
+        <div class="col-md-4 col-lg-2 statistics-block px-3 mt-3">
           <img src="img/boy.svg" alt="" class="statistics-images">
           <h5>Victor</h5>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius praesentium amet soluta assumenda tenetur facere nemo, quod repudiandae excepturi esse quos, veritatis quia illum vero, nostrum ab ipsa totam neque?</p>
         </div>
-        <div class="col-lg-2 statistics-block px-3">
+        <div class="col-md-4 col-lg-2 statistics-block px-3 mt-3">
           <img src="img/boy.svg" alt="" class="statistics-images">
           <h5>Yuri</h5>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius praesentium amet soluta assumenda tenetur facere nemo, quod repudiandae excepturi esse quos, veritatis quia illum vero, nostrum ab ipsa totam neque?</p>

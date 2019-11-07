@@ -29,12 +29,12 @@ $countries = ["Afeganistão","África do Sul","Akrotiri","Albânia","Alemanha","
   
   <!-- INFORMAÇÕES DO USUÁRIO -->
   <main class="d-flex justify-content-center align-items-center p-4 mb-5">
-    <form action="" method="post" class="card p-5 col-lg-5">
+    <form action="" method="post" class="user-info-main card p-5 col-lg-5">
       
       <!-- foto -->
-      <div class="align-self-center user-info-photo">
-        <img src="img/foto.png" alt="foto usuário" class="rounded user-info-photo">
-        <button type="button" class="btn btn-secondary">Alterar foto</button>
+      <div class="user-info-top">
+        <img src="img/foto.png" alt="foto usuário" class="rounded m-1 user-info-photo">
+        <button type="button" class="btn btn-secondary m-1">Alterar foto</button>
       </div>
 
 
