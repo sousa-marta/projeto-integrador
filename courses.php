@@ -32,35 +32,35 @@
       </section>
  
       <!-- Conteúdo Central da Página -->
-      <div class="col-lg-9 col-md-8 order-2">
+      <div class="col-md-8 col-lg-9 order-2">
       
         <!-- Categorias de Cursos Imagens -->
         <section class="row justify-content-center my-4">
-          <div class="col-lg-5 col-md-7 d-flex flex-column align-items-center">
+          <div class="col-lg-5 col-md-10 d-flex flex-column align-items-center">
             <div class="courses-g-cards my-4">
               <h5 class="card-title text-center py-2">Idiomas</h5>
               <img src="img/courses-g-languages.jpg" alt="página de livro aberta com poema" class="card-img-bottom">
             </div>
           </div>
-          <div class="col-lg-5 col-md-7 d-flex flex-column align-items-center">
+          <div class="col-lg-5 col-md-10 d-flex flex-column align-items-center">
             <div class="courses-g-cards my-4">
               <h5 class="card-title text-center py-2">Saúde</h5>
               <img src="img/courses-g-health.jpg" alt="página de livro aberta com poema" class="card-img-bottom">
             </div>
           </div>
-          <div class="col-lg-5 col-md-7 d-flex flex-column align-items-center">
+          <div class="col-lg-5 col-md-10 d-flex flex-column align-items-center">
             <div class="courses-g-cards my-4">
               <h5 class="card-title text-center py-2">Beleza</h5>
               <img src="img/courses-g-beauty.jpg" alt="página de livro aberta com poema" class="card-img-bottom">
             </div>
           </div>
-          <div class="col-lg-5 col-md-7 d-flex flex-column align-items-center">
+          <div class="col-lg-5 col-md-10 d-flex flex-column align-items-center">
             <div class="courses-g-cards my-4">
               <h5 class="card-title text-center py-2">Programação</h5>
               <img src="img/courses-g-programming.jpg" alt="página de livro aberta com poema" class="card-img-bottom">
             </div>
           </div>
-          <div class="col-lg-5 col-md-7 d-flex flex-column align-items-center">
+          <div class="col-lg-5 col-md-10 d-flex flex-column align-items-center">
             <div class="courses-g-cards my-4">
               <h5 class="card-title text-center py-2">Direção</h5>
               <img src="img/courses-g-car.jpg" alt="página de livro aberta com poema" class="card-img-bottom">
@@ -72,7 +72,7 @@
       </div>
 
       <!-- Barra de Navegação Lateral -->
-      <aside class="col-lg-3 col-md-4 order-1 p-3">
+      <aside class="col-md-4 col-lg-3 order-1 p-3">
 
         <div class="list-group-item row form-group list-green text-white">
             <h5><i class="fa fa-search"></i> Filtros</h5>
