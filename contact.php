@@ -25,9 +25,9 @@ $subjects = ["Apoio","Cadastro","Cursos","Doação","Voluntariado","Outros"];
     </ol>
   </nav>
   
-  <main class="container-fluid remove-padding">
+  <main class="container-fluid">
     <h1 class="pages-title-bg d-flex justify-content-center align-items-center">Contato</h1>
-    <div id="remove-margin" class="row align-self-center justify-content-center">
+    <div class="row align-self-center justify-content-center mb-3">
     <form action="" method="post" class="card col-lg-5 contact-form-design">
       <p class="text-center">Caso não encontre a resposta para a sua pergunta abaixo, não hesite em nos contatar usando o formulário ou diretamente pelo e-mail: <a class="contact-email" href="mailto:">contato@oppy.com.br</a></p>
       <div class="col-lg-8 align-self-center mt-2">
@@ -60,7 +60,7 @@ $subjects = ["Apoio","Cadastro","Cursos","Doação","Voluntariado","Outros"];
     </form>
     </div>
   
-    <h1 class="questions-title-bg d-flex justify-content-center align-items-center m-0">FAQ</h1>
+    <h1 class="pages-title-bg d-flex justify-content-center align-items-center m-0">FAQ</h1>
     
     <div class="accordion pl-3 pr-3 pb-5 questions-bg" id="questionsTopicOne">
       <h2 class="pt-5 questions-subject">Tópico 1</h2>
