@@ -1,49 +1,43 @@
-<header class="container-fluid fixed-top">
-  <div class="col-12 menu">
-    <div class="row">
-      <div class="col-2 logo-header">
-        <a href="index.php"><img class="logo-mato" src="img/a_logo-img_turquesa-dark.png" alt="imagem-logo-oppy"></a>
-        <a href="index.php"><img class="logo-logotipo" src="img/b_logo-nome_turquesa-dark-white.png" alt="nome-logo-oppy"></a>
-      </div>
-      <nav class="col-10 d-flex align-items-center justify-content-end">
-        <ul class="nav">
-          <li class="nav-item">
-            <a class="nav-link active" href="index.php">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="about.php">Quem somos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="courses.php">Cursos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="opportunities.php">Oportunidades</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Apoio
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="support.php">Geral</a>
-              <a class="dropdown-item" href="support-legal.php">Jurídico</a>
-              <a class="dropdown-item" href="support-professional.php">Profissional</a>
-              <a class="dropdown-item" href="support-psychologic.php">Psicológico</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="contribute.php">Contribua</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="contact.php">Contato</a>
-          </li>
-          <li class="nav-item">
-            <a id="register-link" class="nav-link" href="register.php">Cadastre-se</a>
-          </li>
-          <button type="button" class="btn" data-toggle="modal" data-target="#login-modal" href="#">Login</button>
-        </ul>
-      </nav>
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light menu fixed-top">
+    <div class="col-3 logo-header row align-items-center">          
+      <a href="index.php"><img class="logo-mato" src="img/a_logo-img_turquesa-dark.png" alt="imagem-logo-oppy"></a>
+      <a href="index.php"><img class="logo-logotipo" src="img/b_logo-nome_turquesa-dark-white.png" alt="nome-logo-oppy"></a>
     </div>
-  </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+        <li class="nav-item active">
+            <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="about.php">Quem Somos</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="courses.php">Cursos</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="opportunities.php">Oportunidades</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="support.php">Apoio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contribute.php">Contribua</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.php">Contato</a>
+        </li>
+        <li class="nav-item">
+          <a id="register-link" class="nav-link" href="register.php">Cadastre-se</a>
+        </li>
+        <button type="button" class="btn" data-toggle="modal" data-target="#login-modal" href="#">Login</button>
+      </ul>
+    </div>
+</nav>
+</header>
 
 <!-- Modal -->
 <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="login-modal" aria-hidden="true">
@@ -76,5 +70,3 @@
     </dialog>
   </div>
 </div>
-
-</header>
