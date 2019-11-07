@@ -303,6 +303,14 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
   background-color: #00838F;
 }
 
+.course-detail-main-banner-offered-by {
+  display: none;
+}
+
+.course-detail-main-banner-div-img {
+  display: none;
+}
+
 .course-detail-main-banner * {
   color: #FFF;
 }
@@ -317,6 +325,10 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
 
 .course-detail-shedule-soon {
   background-color: #C8A415;
+}
+
+.course-detail-schedule-legend {
+  font-size: 0.8rem;
 }
 
 .course-detail-similar-courses-top {
@@ -347,6 +359,10 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
 .course-detail-logo-img-alike {
   height: 100px;
   margin: 20px;
+}
+
+.course-detail-div-cards { /* div que segura os cards */
+  justify-content: center;
 }
 /* Fim CURSO-DETALHE */
 
@@ -874,6 +890,22 @@ footer p {
     text-align: left;
   }
   /* Fim PÁGINA SOBRE */
+
+  /* Início CURSO-DETALHE */
+  .course-detail-main-banner-offered-by {
+    display: block;
+  }
+  
+  .course-detail-main-banner-div-img {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .course-detail-div-cards { /* div que segura os cards */
+    justify-content: space-between;
+  }
+  /* Fim CURSO-DETALHE */
+
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
