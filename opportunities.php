@@ -27,7 +27,7 @@
     <main>
         <div class="row no-gutters">
             <!-- Banner -->
-            <section class="courses-g-banner col-md-12 d-flex justify-content-center align-items-center">
+            <section class="pages-title-bg d-flex justify-content-center align-items-center">
                 <h1>Empregos</h1>
             </section>
 
@@ -132,7 +132,7 @@
             <aside class="col-lg-3 col-md-4 order-1 p-3">
 
                 <div class="list-group-item row form-group list-green text-white">
-                    <h3><i class="fa fa-search"></i> Filtros</h3>
+                    <h5><i class="fa fa-search"></i> Filtros</h5>
                     <!-- JS files: jQuery first, then Popper.js, then Bootstrap JS -->
                     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
                     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -144,7 +144,7 @@
                 <div class="list-group-item row form-group bg-light"></div>
 
                 <div class="list-group-item row form-group bg-secondary text-white">
-                    <h3>Localização</h3>
+                    <h5>Localização</h5>
                 </div>
 
                 <div class="list-group-item row form-group p-3 bg-light">
@@ -191,7 +191,7 @@
                     </select>
                 </div>
                 <div class="list-group-item row form-group bg-secondary text-white">
-                    <h3>Cargos</h3>
+                    <h5>Cargos</h5>
                 </div>
 
                 <div class="list-group-item row form-group bg-light">
@@ -226,7 +226,7 @@
                 </div>
 
                 <div class="list-group-item row form-group bg-secondary text-white">
-                    <h3>Área de Atuação</h3>
+                    <h5>Área de Atuação</h5>
                 </div>
 
                 <div class="list-group-item row form-group bg-light">
@@ -261,7 +261,7 @@
                 </div>
 
                 <div class="list-group-item row form-group bg-secondary text-white">
-                    <h3>Faixa Salárial</h3>
+                    <h5>Faixa Salárial</h5>
                 </div>
 
                 <div class="list-group-item row form-group p-3 bg-light">

@@ -22,8 +22,8 @@ p {
 h1 {font-size:10.0vw;}
 h2 {font-size:8.0vw;}
 h3 {font-size:5.5vw;}
-h4 {font-size:4.5vw;}
-h5 {font-size:4.0vw; font-weight: bold;}
+h4 {font-size:5.0vw;}
+h5 {font-size:4.5vw; font-weight: bold;}
 
 
 button {
@@ -65,6 +65,15 @@ nav .btn-dark:hover, nav .btn-dark:focus {
 .indent {
   text-indent: 1.8em;
 }
+
+.pages-title-bg {
+  background-color: #005662;
+  height: 20vh;
+  color: #FFF;
+  font-weight: bold;
+  width: 100%;
+}
+
 /* Fim CONFIGURAÇÕES GERAIS  */
 
 /* Início HEADER */
@@ -84,9 +93,9 @@ nav .btn-dark:hover, nav .btn-dark:focus {
   height: 45%
 }
 
-header nav {
-  /* font-size: 0.9rem; */
-}
+/*header nav {
+  font-size: 0.9rem;
+}*/
 
 nav a {
   color: #47525E;
@@ -267,12 +276,6 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
 /* Fim QUEM SOMOS */
 
 /* Início CURSOS-GERAL */
-.courses-g-banner {
-  background: #005662;
-  color:#FFF;
-  height: 30vh;
-}
-
 .courses-g-search {
   background-color: #BDBDBD;
   display: flex;
@@ -505,7 +508,7 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
 /* Fim APOIO PSICOLÓGICO */ 
 
 /* Início CONTRIBUA-GERAL */
-.contribute-banner {
+/*.contribute-banner {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -519,7 +522,7 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
   display: flex;
   align-items: center;
   justify-content: center;
-}
+}*/
 
 .contribute-banner-session {
   align-items: center;
@@ -545,14 +548,6 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
 /* Fim CONTRIBUA-GERAL */
 
 /* Início CONTATO */
-.contact-bg {
-  background-color: #4FB3BF;
-  height: 30vh;
-  color: #FFF;
-  font-weight: bold;
-  width: 100%;
-}
-
 .contact-email {
   color: #005662;
   font-weight: bold;
@@ -564,14 +559,9 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
 }
 
 .contact-form-design {
-  /* border: 3px dashed #4FB3BF; */
-  background-color: #FFFF81;
+  background-color: #FFD54F;
   margin: 2%;
   padding: 2% 1%;
-}
-
-label {
-  font-weight: bold;
 }
 
 .questions-title-bg {
@@ -791,9 +781,11 @@ footer p {
   p {font-size:2.7vw;}
   h1 {font-size:8.0vw;}
   h2 {font-size:6.0vw;}
-  h3 {font-size:4.2vw;}
+  h3 {font-size:4.3vw;}
   h4 {font-size:3.8vw;}
-  h5 {font-size:2.8vw;}
+  h5 {font-size:3.2vw;}
+
+  .pages-title-bg {height: 25vh;}
 
   /* Início Página HOME */
   .home-btn-sm{display:none;}
@@ -807,9 +799,11 @@ footer p {
   p {font-size:2.3vw;}
   h1 {font-size:7.0vw;}
   h2 {font-size:5.0vw;}
-  h3 {font-size:3.0vw;}
-  h4 {font-size:2.8vw;}
-  h5 {font-size:2.2vw;}
+  h3 {font-size:3.8vw;}
+  h4 {font-size:3.3vw;}
+  h5 {font-size:2.8vw;}
+
+  .pages-title-bg {height: 30vh;}
 
   /* Início Página HOME */
   .home-card {margin: 0 1rem;}
@@ -833,8 +827,9 @@ footer p {
   p {font-size:1.7vw;}
   h1 {font-size:6.0vw;}
   h2 {font-size:4.0vw;}
-  h4 {font-size:2.6vw}
-  h5 {font-size:2.0vw;}
+  h3 {font-size:3.2vw;}
+  h4 {font-size:2.7vw}
+  h5 {font-size:2.2vw;}
   
   /* Início Página HOME */
   .home-card-section {margin:2rem 0;}
@@ -916,7 +911,7 @@ footer p {
   }
   h1 {font-size:5.0vw;}
   h2 {font-size:3.0vw;}
-  h5 {font-size:1.6vw;}
+  h5 {font-size:1.7vw;}
   
   /* Início Página HOME */
   .home-summary {padding: 3.2rem 0 2.4rem 0;}

@@ -25,21 +25,21 @@ $subjects = ["Apoio","Cadastro","Cursos","Doação","Voluntariado","Outros"];
     </ol>
   </nav>
   
-  <main class="container-fluid remove-padding">
-    <h1 class="contact-bg d-flex justify-content-center align-items-center">Contato</h1>
-    <div id="remove-margin" class="row align-self-center justify-content-center">
+  <main class="container-fluid">
+    <h1 class="pages-title-bg d-flex justify-content-center align-items-center">Contato</h1>
+    <div class="row align-self-center justify-content-center mb-3">
     <form action="" method="post" class="card col-lg-5 contact-form-design">
       <p class="text-center">Caso não encontre a resposta para a sua pergunta abaixo, não hesite em nos contatar usando o formulário ou diretamente pelo e-mail: <a class="contact-email" href="mailto:">contato@oppy.com.br</a></p>
       <div class="col-lg-8 align-self-center mt-2">
       <div class="form-group">
-        <label for="contactName">Nome</label>
+        <label for="contactName"><h5>Nome</h5></label>
         <input type="text" class="form-control" name="contactName" id="contactName" placeholder="Nome" required>
       </div>
       <div class="form-group">
-        <label for="contactEmail">E-mail</label>
+        <label for="contactEmail"><h5>E-mail</h5></label>
         <input type="text" class="form-control" name="contactEmail" id="contactEmail" placeholder="E-mail" required>
       </div>
-      <label for="contactSubject">Assunto</label>
+      <label for="contactSubject"><h5>Assunto</h5></label>
       <div class="form-group">
         <select class="col-lg-12" name="contactSubject" id="contactSubject">
           <option value="">Selecione o assunto</option>
@@ -52,7 +52,7 @@ $subjects = ["Apoio","Cadastro","Cursos","Doação","Voluntariado","Outros"];
         </select>
       </div>
       <div class="form-group">
-        <label for="userPassword">Mensagem</label>
+        <label for="userPassword"><h5>Mensagem</h5></label>
         <textarea class="form-control" id="contactMessage" rows="3"></textarea>
       </div>
       <button type="submit" class="btn col-lg-12">Enviar</button>
@@ -60,7 +60,7 @@ $subjects = ["Apoio","Cadastro","Cursos","Doação","Voluntariado","Outros"];
     </form>
     </div>
   
-    <h1 class="questions-title-bg d-flex justify-content-center align-items-center m-0">FAQ</h1>
+    <h1 class="pages-title-bg d-flex justify-content-center align-items-center m-0">FAQ</h1>
     
     <div class="accordion pl-3 pr-3 pb-5 questions-bg" id="questionsTopicOne">
       <h2 class="pt-5 questions-subject">Tópico 1</h2>

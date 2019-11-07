@@ -23,7 +23,7 @@
 
   <main>
     <!-- Banner -->
-    <section class="contribute-banner">
+    <section class="pages-title-bg d-flex justify-content-center align-items-center">
       <h1>Contribua</h1>
     </section>
 
