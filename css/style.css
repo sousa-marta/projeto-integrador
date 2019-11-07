@@ -14,11 +14,6 @@ nav a {
   font-weight: bold;
 }
 
-.navbar-nav {
-  background-color: #FFD54F;
-  text-align: center;
-}
-
 p {
   margin: 0;
   font-size: 4.0vw; /*valor menor que xs*/
@@ -87,6 +82,11 @@ nav .btn-dark:hover, nav .btn-dark:focus {
   border-bottom: 1px #FFD54F solid;
   z-index: 99;
   height: 10vh;
+}
+
+.navbar-nav {
+  background-color: #FFD54F;
+  text-align: center;
 }
 
 .logo-header .logo-mato {
