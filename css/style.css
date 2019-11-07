@@ -81,21 +81,22 @@ nav .btn-dark:hover, nav .btn-dark:focus {
   background: #FFD54FF0;
   border-bottom: 1px #FFD54F solid;
   z-index: 99;
-  height:10vh;
+  height: 10vh;
+}
+
+.navbar-nav {
+  background-color: #FFD54F;
+  text-align: center;
 }
 
 .logo-header .logo-mato {
-  width: 30%;
+  display: none;
 }
 
 .logo-header .logo-logotipo {
-  width: 45%;
-  height: 45%
+  width: 30vw;
+  height: 5vh;
 }
-
-/*header nav {
-  font-size: 0.9rem;
-}*/
 
 nav a {
   color: #47525E;
@@ -726,7 +727,7 @@ footer {
 }
 
 footer img {
-  width: 5vw;
+  width: 17vw;
 }
 
 footer h4 {
@@ -735,7 +736,6 @@ footer h4 {
 
 footer p {
   color: #FFF;
-  /* font-size: 0.9rem;; */
 }
 /* Fim FOOTER */
 
@@ -771,10 +771,23 @@ footer p {
 
   .pages-title-bg {height: 25vh;}
 
-  /* Início Página HOME */
+  /* Início HEADER */
+  .logo-header .logo-logotipo {
+    width: 15vw;
+    height: 5vh;
+  }
+  /* Fim HEADER */
+
+  /* Início HOME */
   .home-btn-sm{display:none;}
   .home-btn-big{display:flex;}
-  /* Fim Página HOME */
+  /* Fim HOME */
+
+  /* Início FOOTER */
+  footer img {
+    width: 15vw;
+  }
+  /* Fim FOOTER */
 }
 
 
@@ -789,7 +802,14 @@ footer p {
 
   .pages-title-bg {height: 30vh;}
 
-  /* Início Página HOME */
+  /* Início HEADER */
+  .logo-header .logo-logotipo {
+    width: 10vw;
+    height: 5vh;
+  }
+  /* Fim HEADER */
+
+  /* Início HOME */
   .home-card {margin: 0 1rem;}
   .home-card-img-sm{display:none;}
   .home-card-img-md{display:flex;}
@@ -797,11 +817,17 @@ footer p {
     height: 60%;
     width: 60%;
   } 
-  /* Fim Página HOME */
+  /* Fim HOME */
 
-  /* Início PÁGINA USUÁRIO */
+  /* Início USUÁRIO */
   .user-page-photo {display: block;}
-  /* Fim PÁGINA USUÁRIO */
+  /* Fim USUÁRIO */
+
+  /* Início FOOTER */
+  footer img {
+    width: 10vw;
+  }
+  /* Fim FOOTER */
 
 }
 
@@ -814,12 +840,25 @@ footer p {
   h3 {font-size:3.2vw;}
   h4 {font-size:2.7vw}
   h5 {font-size:2.2vw;}
-  
-  /* Início Página HOME */
-  .home-card-section {margin:2rem 0;}
-  /* Fim Página HOME */
 
-  /* Início PÁGINA SOBRE */
+  /* Início HEADER */
+  .logo-header .logo-mato {
+    height: 10vh;
+    margin-right: 10px;
+    display: flex;
+  }
+
+  .logo-header .logo-logotipo {
+    width: 8vw;
+    height: 5vh;
+  }
+  /* Fim HEADER */
+  
+  /* Início HOME */
+  .home-card-section {margin:2rem 0;}
+  /* Fim HOME */
+
+  /* Início SOBRE */
   .about-banner {
     display: flex;
     background-image: url('../img/about-banner.jpg');
@@ -838,7 +877,6 @@ footer p {
   .quotation {
     padding: 0 15vw;
     line-height: 1.7em;
-    /* font-size: 0.9rem; */
     margin-bottom: 0.5rem;
   }
   
@@ -853,7 +891,6 @@ footer p {
   }
   
   .quotation-author {
-    /* font-size: .9rem; */
     font-style: italic;
   }
   
@@ -868,7 +905,13 @@ footer p {
   .oppy-info p, .oppy-proposal p {
     text-align: left;
   }
-  /* Fim PÁGINA SOBRE */
+  /* Fim SOBRE */
+
+  /* Início FOOTER */
+  footer img {
+    width: 8vw;
+  }
+  /* Fim FOOTER */
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
@@ -881,7 +924,7 @@ footer p {
   h2 {font-size:3.0vw;}
   h5 {font-size:1.7vw;}
   
-  /* Início Página HOME */
+  /* Início HOME */
   .home-summary {padding: 3.2rem 0 2.4rem 0;}
 
   .home-summary p {line-height: 2.2;}
@@ -892,5 +935,5 @@ footer p {
     padding-left:2rem;
     padding-right:2rem;
   }
-  /* Fim Página HOME */
+  /* Fim HOME */
 }
