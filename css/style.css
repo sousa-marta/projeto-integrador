@@ -16,7 +16,7 @@ nav a {
 
 p {
   margin: 0;
-  font-size: 3.4vw; /*valor menor que xs*/
+  font-size: 3.6vw; /*valor menor que xs*/
 }
 
 h1 {font-size:10.0vw;}
@@ -60,6 +60,10 @@ a:hover, a:focus {
 nav .btn-dark:hover, nav .btn-dark:focus {
   background: #FFD54F;
   color: #000;
+}
+
+.indent {
+  text-indent: 2.5em;
 }
 /* Fim CONFIGURAÇÕES GERAIS  */
 
@@ -140,8 +144,8 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
 .home-banner h1 {
   text-transform: uppercase;
   font-family: 'Baloo', cursive;
-  /* font-size: 3rem; */
   margin-bottom: 3rem;
+  text-align: center;
 }
 
 .home-banner button {
@@ -159,17 +163,10 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
 }
 
 .home-summary {
-  height: 70vh;
-  display:flex;
-  line-height: 3rem;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
+  padding: 1rem 0;
+  line-height: 2rem;
   background-color: #FFFF81;
-}
-
-.home-summary p {
-  /* font-size: 1.8em; */
+  text-align: justify;
 }
 
 .home-card {
@@ -785,7 +782,7 @@ footer p {
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-  p {font-size:1.8vw;}
+  p {font-size:1.9vw;}
   h1 {font-size:7.0vw;}
   h2 {font-size:5.0vw;}
   h3 {font-size:3.0vw;}
@@ -801,7 +798,7 @@ footer p {
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
-  p {font-size:1.6vw;}
+  p {font-size:1.7vw;}
   h1 {font-size:6.0vw;}
   h2 {font-size:4.0vw;}
   h4 {font-size:2.6vw}
@@ -865,4 +862,11 @@ footer p {
   h1 {font-size:5.0vw;}
   h2 {font-size:3.0vw;}
   h5 {font-size:1.6vw;}
+  
+  /* Início Página HOME */
+  .home-summary {
+    line-height: 2.8rem;
+    padding: 4rem 0 2rem 0;
+  }
+  /* Fim Página HOME */
 }

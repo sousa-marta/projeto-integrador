@@ -21,13 +21,13 @@
     </section>
 
     <!-- Texto Resumo Sobre o Site -->
-    <section class="home-summary">
-      <div class="container">
-        <p>A Oppy foi criada em 2019 com o objetivo de dar a oportunidade dos emigrantes saídos de diversas condições de vida obterem as habilidades técnicas e emocionais para entrar no mercado de trabalho de um novo país e melhorar suas condições de vida. 
+    <section class=" home-summary">
+      <div class="container d-flex flex-column">
+        <p class="indent">A Oppy foi criada em 2019 com o objetivo de dar a oportunidade dos emigrantes saídos de diversas condições de vida obterem as habilidades técnicas e emocionais para entrar no mercado de trabalho de um novo país e melhorar suas condições de vida. 
           
-        <p> Contamos com apoio de empresas e recrutadores para conectar essa mão-de-obra qualificada e cheia de energia para aulixiar a integração dos novos habitantes do país! </p>
+        <p class="indent"> Contamos com apoio de empresas e recrutadores para conectar essa mão-de-obra qualificada e cheia de energia para aulixiar a integração dos novos habitantes do país! </p>
         
-        <button class="btn" onclick="location.href='about.php'">Saiba Mais</button>
+        <button class="btn align-self-center my-2" onclick="location.href='about.php'">Saiba Mais</button>
       </div>
     </section>
 
@@ -40,7 +40,7 @@
               <img src="img/home-card-whom.png" class="home-card-img" alt="mãos se dando às mãos">
             </a>
             <div class="card-body">
-              <h3 class="card-title"><a href="about.php">Para quem é o projeto</a></h3>
+              <h4 class="card-title"><a href="about.php">Para quem é o projeto</a></h4>
               <p class="card-text">Para qualquer pessoa que deseja se integrar à comunidade de um novo país. Que busca obter informações dos passos para atingir esse objetivo, que precisa de apoio técnico, psicológico e jurídico para tal.</p>
             </div>
           </div>
@@ -51,7 +51,7 @@
               <img src="img/home-card-glasses.png" class="home-card-img" alt="óculos">
             </a>
             <div class="card-body">
-              <h3 class="card-title"><a href="courses.php">Cursos</a></h3>
+              <h4 class="card-title"><a href="courses.php">Cursos</a></h4>
               <p class="card-text">Em contato direto com os apoiadores que fornecem os cursos gratuitamente para o imigrantes, são disponibilizados cursos em áreas como: idiomas, estética, hotelaria, alimentação, cuidados, entreterimento, dentre outros.</p>
             </div>
           </div>
@@ -62,7 +62,7 @@
                 <img src="img/home-card-help.png" class="home-card-img" alt="bóia de navio">
               </a>
               <div class="card-body">
-                <h3 class="card-title"><a href="support.php">Apoio Assistencial</a></h3>
+                <h4 class="card-title"><a href="support.php">Apoio Assistencial</a></h4>
                 <p class="card-text">Sabendo que mudar de país é algo que nunca é simples, contamos com apoiadores que dão apoio psicológico, jurídico e para encontrar o primeiro emprego no novo país. Buscamos ajudar essa transição ser a mais suave possível.</p>
               </div>
             </div>
@@ -74,7 +74,7 @@
     <section class="home-banner-apoie d-flex align-items-center">
       <div class="container">
         <div class="row justify-content-around align-items-center">
-          <h4 class="col-md-4">Ajude-nos a ir mais longe</h4>
+          <h5 class="col-md-4">Ajude-nos a ir mais longe</h5>
           <button class="btn col-md-3" onclick="location.href='contribute-enterprise.php'">Seja Patrocinador</button>
           <button class="btn col-md-3" onclick="location.href='contribute-people.php'">Seja Voluntário</button>
         </div>
