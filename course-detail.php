@@ -110,7 +110,7 @@
               <div class="course-detail-card">
                 <div class="container course-detail-card-title">
                   <span>Hotelaria</span>
-                  <h2>Curso de Recepcionista</h2>
+                  <h2>Curso de Porteiro</h2>
                 </div>
                 <div class="container d-flex flex-column">
                   <img src="img/emp-direan.png" alt="empresa treinamento" class="align-self-center course-detail-logo-img-alike">
@@ -131,7 +131,7 @@
                   <span>Gastronomia</span>
                   <h2>Curso de Cozinheiro</h2>
                 </div>
-                <div class="container d-flex flex-column">
+                <div class="container d-flex flex-column">                
                   <img src="img/emp-cookinglogo.png" alt="empresa treinamento" class="align-self-center course-detail-logo-img-alike">
                   <div class="pb-2">
                     <span><b>Inscritos:</b> 505<br></span>
@@ -151,7 +151,7 @@
                   <h2>Curso de Marceneiro</h2>
                 </div>
                 <div class="container d-flex flex-column">
-                  <img src="img/emp-logoname.png" alt="empresa treinamento" class="align-self-center course-detail-logo-img-alike">
+                  <img src="img/emp-marcenaria.jpg" alt="empresa treinamento" class="align-self-center course-detail-logo-img-alike">
                   <div class="pb-2">
                     <span><b>Inscritos:</b> 505<br></span>
                     <span><b>Vagas:</b> 10<br></span>
