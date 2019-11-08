@@ -29,7 +29,7 @@ $subjects = ["Apoio","Cadastro","Cursos","Doação","Voluntariado","Outros"];
   <main class="container-fluid">
     <h1 class="pages-title-bg d-flex justify-content-center align-items-center">Contato</h1>
     <div class="row align-self-center justify-content-center mb-3">
-    <form action="" method="post" class="card col-lg-5 contact-form-design">
+    <form action="" method="post" class="card col-sm-8 col-lg-6 contact-form-design">
       <p class="text-center">Caso não encontre a resposta para a sua pergunta abaixo, não hesite em nos contatar usando o formulário ou diretamente pelo e-mail: <a class="contact-email" href="mailto:">contato@oppy.com.br</a></p>
       <div class="col-lg-8 align-self-center mt-2">
       <div class="form-group">

@@ -18,11 +18,11 @@ p {
   font-size: 16px;
 }
 
-h1 {font-size:10.0vw;}
-h2 {font-size:8.0vw;}
-h3 {font-size:5.5vw;}
-h4 {font-size:5.0vw;}
-h5 {font-size:4.5vw; font-weight: bold;}
+h1 {font-size:50px;}
+h2 {font-size:40px;}
+h3 {font-size:30px;}
+h4 {font-size:25px;}
+h5 {font-size:18px; font-weight: bold;}
 
 
 button {
@@ -99,7 +99,7 @@ nav .btn-dark:hover, nav .btn-dark:focus {
 
 nav a {
   color: #47525E;
-  font-size: 12px;
+  /* font-size: 12px; */
 }
 
 nav a:hover, nav a:focus {
@@ -236,7 +236,6 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
 
 .oppy-info {
   background-color: #EBF0F7;
-  padding: 50px;
   align-items: center;
   justify-content: center;
   line-height: 1.5rem;
@@ -249,12 +248,10 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
 }
 
 .oppy-info img, .oppy-proposal img {
-  height: 40vh;
-  width: 40vw;
+  width: 200px;
 }
 
 .oppy-proposal {
-  padding: 50px;
   align-items: center;
   justify-content: center;
   line-height: 1.5rem;
@@ -268,11 +265,6 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
 
 .oppy-values {
   background-color: #EBF0F7;
-  padding: 50px;
-}
-
-.team-info {
-  padding: 50px;
 }
 /* Fim QUEM SOMOS */
 
@@ -816,6 +808,12 @@ footer p {
   .home-btn-big{display:flex;}
   /* Fim HOME */
 
+  /* Início ABOUT */
+  .oppy-info img, .oppy-proposal img {
+    height: 30vh;
+  }
+  /* Fim ABOUT */
+
   /* Início CURSO-DETALHE */
   .course-detail-schedule-legend {
     font-size: 0.8em;
@@ -879,19 +877,6 @@ footer p {
   h3 {font-size:3.2vw;}
   h4 {font-size:2.7vw}
   h5 {font-size:2.2vw;}
-
-  /* Início HEADER */
-  .logo-header .logo-mato {
-    height: 10vh;
-    margin-right: 10px;
-    display: flex;
-  }
-
-  .logo-header .logo-logotipo {
-    width: 8vw;
-    height: 5vh;
-  }
-  /* Fim HEADER */
   
   /* Início HOME */
   .home-card-section {margin:2rem 0;}
@@ -903,14 +888,18 @@ footer p {
     background-image: url('../img/about-banner.jpg');
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    flex-direction: column-reverse;
     height: 82vh;
     text-align: center;
     color: #FFF;
-    justify-content: center;
+    /* justify-content: center; */
   }
   
   .bg-color {
     background-color: #0003;
+    height: 30%;
   }
   
   .quotation {
@@ -966,6 +955,27 @@ footer p {
     width: 8vw;
   }
   /* Fim FOOTER */
+}
+
+/* Special break for the complete logo to show up (1025px and up) */
+@media (min-width: 1025px) {
+  /* Início HEADER */
+  .logo-header .logo-mato {
+    height: 10vh;
+    margin-right: 10px;
+    display: flex;
+  }
+
+  .navbar-nav {
+    background-color: transparent;
+    text-align: center;
+  }
+
+  .logo-header .logo-logotipo {
+    width: 8vw;
+    height: 5vh;
+  }
+  /* Fim HEADER */
 }
 
 /* Extra large devices (large desktops, 1200px and up) */

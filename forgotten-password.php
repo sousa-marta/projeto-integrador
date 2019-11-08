@@ -22,7 +22,7 @@
   </nav>
   
   <main class="d-flex justify-content-center align-items-center">
-    <form action="" method="post" class="card p-5 contact-form-design col-lg-3 text-center">
+    <form action="" method="post" class="card p-3 contact-form-design col-10 col-sm-6 col-lg-5 text-center">
       <h4>Esqueceu sua senha?</h4>
       <p>Informe seu e-mail e enviaremos para você as instruções para redefinir sua senha</p>
       <div class="form-group p-2">
