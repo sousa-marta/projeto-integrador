@@ -35,18 +35,18 @@ $countries = ["Afeganistão","África do Sul","Akrotiri","Albânia","Alemanha","
         <p>Crie uma nova conta informando os dados abaixo</p>
       </div>  
       <div class="form-group">
-        <label for="userFullName">Nome completo</label>
+        <label for="userFullName"><h5>Nome completo</h5></label>
         <input type="text" class="form-control" name="userFullName" id="userFullName" placeholder="Nome completo" required>
       </div>
       <div class="form-group">
-        <label for="userEmail">E-mail</label>
+        <label for="userEmail"><h5>E-mail</h5></label>
         <input type="email" class="form-control" name="userEmail" id="userEmail" placeholder="E-mail" required>
       </div>
       <div class="form-group">
-        <label for="userPassword">Senha</label>
+        <label for="userPassword"><h5>Senha</h5></label>
         <input type="password" class="form-control" name="userPassword" id="userPassword" placeholder="Senha" required>
       </div>
-      <label for="userCountry">País de origem</label>
+      <label for="userCountry"><h5>País de origem</h5></label>
       <div class="form-group">
         <select class="col-lg-12" name="userCountry" id="userCountry">
           <option value="">Selecione seu país de origem</option>
