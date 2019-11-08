@@ -49,9 +49,9 @@
                                 <p> estado: SP </p>
                                 <p> salário: R$ 1.500,00</p>
                                 <p> email: contato@padarialegal.com.br </p>
-                                <div class="d-flex justify-content-between">
+                                <div class="d-flex justify-content-between align-itens-center">
                                     <a href="#" class="btn btn-primary">enviar curriculo</a>
-                                    <a href="#" class="btn opportunities-button-disabled">verificar cursos</a>
+                                    <a href="#" class="btn btn-secondary disabled">verificar cursos</a>
                                 </div>  
                             </div>
                         </div>
@@ -75,7 +75,7 @@
                                     <h6 class="card-text"> email: contato@padarialegal.com.br </h6>
                                     <div class="d-flex justify-content-between">
                                         <a href="#" class="btn btn-primary">enviar curriculo</a>
-                                        <a href="#" class="btn opportunities-button-course">verificar cursos</a>
+                                        <a href="#" class="btn btn-warning">verificar cursos</a>
                                     </div>  
 
                             </div>
@@ -101,7 +101,7 @@
                                     <h6 class="card-text"> email: contato@padarialegal.com.br </h6>
                                     <div class="d-flex justify-content-between">
                                         <a href="#" class="btn btn-primary">enviar curriculo</a>
-                                        <a href="#" class="btn opportunities-button-disabled">verificar cursos</a>
+                                        <a href="#" class="btn btn-secondary disabled">verificar cursos</a>
                                     </div>  
                             </div>
                         </div>
@@ -126,7 +126,7 @@
                                     <h6 class="card-text"> email: contato@padarialegal.com.br </h6>
                                     <div class="d-flex justify-content-between">
                                         <a href="#" class="btn btn-primary">enviar curriculo</a>
-                                        <a href="#" class="btn opportunities-button-disabled">verificar cursos</a>
+                                        <a href="#" class="btn btn-secondary disabled">verificar cursos</a>
                                     </div>  
                             </div>
                         </div>
