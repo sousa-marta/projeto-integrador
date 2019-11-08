@@ -31,7 +31,7 @@ $countries = ["Afeganistão","África do Sul","Akrotiri","Albânia","Alemanha","
   <main class="d-flex justify-content-center align-items-center">
     <form action="" method="post" class="card p-5 col-lg-5 contact-form-design">
       <div class="form-group text-center">
-        <h3>Estamos felizes por você querer fazer parte da nossa comunidade</h3>
+        <h4>Estamos felizes por você querer fazer parte da nossa comunidade</h4>
         <p>Crie uma nova conta informando os dados abaixo</p>
       </div>  
       <div class="form-group">
