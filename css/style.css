@@ -236,7 +236,6 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
 
 .oppy-info {
   background-color: #EBF0F7;
-  padding: 50px;
   align-items: center;
   justify-content: center;
   line-height: 1.5rem;
@@ -249,12 +248,10 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
 }
 
 .oppy-info img, .oppy-proposal img {
-  height: 40vh;
-  width: 40vw;
+  width: 200px;
 }
 
 .oppy-proposal {
-  padding: 50px;
   align-items: center;
   justify-content: center;
   line-height: 1.5rem;
@@ -268,11 +265,6 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
 
 .oppy-values {
   background-color: #EBF0F7;
-  padding: 50px;
-}
-
-.team-info {
-  padding: 50px;
 }
 /* Fim QUEM SOMOS */
 
@@ -799,6 +791,12 @@ footer p {
   .home-btn-sm{display:none;}
   .home-btn-big{display:flex;}
   /* Fim HOME */
+
+  /* Início ABOUT */
+  .oppy-info img, .oppy-proposal img {
+    height: 30vh;
+  }
+  /* Fim ABOUT */
 
   /* Início CURSO-DETALHE */
   .course-detail-schedule-legend {
