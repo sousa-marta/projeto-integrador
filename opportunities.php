@@ -49,7 +49,10 @@
                                 <p> estado: SP </p>
                                 <p> salário: R$ 1.500,00</p>
                                 <p> email: contato@padarialegal.com.br </p>
-                                <a href="#" class="btn btn-primary">enviar curriculo</a>
+                                <div class="d-flex justify-content-between">
+                                    <a href="#" class="btn btn-primary">enviar curriculo</a>
+                                    <a href="#" class="btn opportunities-button-disabled">verificar cursos</a>
+                                </div>  
                             </div>
                         </div>
                     </div>
@@ -70,10 +73,10 @@
                                     <h6 class="card-text"> estado: SP </h6>
                                     <h6 class="card-text"> salário: R$ 1.500,00</h6>
                                     <h6 class="card-text"> email: contato@padarialegal.com.br </h6>
-                                    <div class="row">
+                                    <div class="d-flex justify-content-between">
                                         <a href="#" class="btn btn-primary">enviar curriculo</a>
-                                        <a href="#" class="btn btn-warning ml-3">curso padeiro</a>
-                                    </div>
+                                        <a href="#" class="btn opportunities-button-course">verificar cursos</a>
+                                    </div>  
 
                             </div>
                         </div>
@@ -96,7 +99,10 @@
                                     <h6 class="card-text"> estado: SP </h6>
                                     <h6 class="card-text"> salário: R$ 1.500,00</h6>
                                     <h6 class="card-text"> email: contato@padarialegal.com.br </h6>
-                                    <a href="#" class="btn btn-primary">enviar curriculo</a>
+                                    <div class="d-flex justify-content-between">
+                                        <a href="#" class="btn btn-primary">enviar curriculo</a>
+                                        <a href="#" class="btn opportunities-button-disabled">verificar cursos</a>
+                                    </div>  
                             </div>
                         </div>
                     </div>
@@ -118,7 +124,10 @@
                                     <h6 class="card-text"> estado: SP </h6>
                                     <h6 class="card-text"> salário: R$ 1.500,00</h6>
                                     <h6 class="card-text"> email: contato@padarialegal.com.br </h6>
-                                    <a href="#" class="btn btn-primary">enviar curriculo</a>
+                                    <div class="d-flex justify-content-between">
+                                        <a href="#" class="btn btn-primary">enviar curriculo</a>
+                                        <a href="#" class="btn opportunities-button-disabled">verificar cursos</a>
+                                    </div>  
                             </div>
                         </div>
                     </div>
