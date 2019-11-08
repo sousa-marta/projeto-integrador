@@ -1,6 +1,6 @@
 <header>
   <nav class="navbar navbar-expand-lg navbar-light menu fixed-top">
-    <div class="col-3 logo-header row align-items-center">          
+    <div class="col-2 pr-0 pl-0 logo-header row align-items-center">          
       <a href="index.php"><img class="logo-mato" src="img/a_logo-img_turquesa-dark.png" alt="imagem-logo-oppy"></a>
       <a href="index.php"><img class="logo-logotipo" src="img/b_logo-nome_turquesa-dark-white.png" alt="nome-logo-oppy"></a>
     </div>
