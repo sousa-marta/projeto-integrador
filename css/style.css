@@ -373,22 +373,6 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
 .list-green{
   background-color:#005662
 }
-
-.opportunities-button-disabled{
-  background-color: #cccccc;
-  color: #6b6969;
-  pointer-events: none;
-  box-sizing: border-box;
-  padding: 13px;
-}
-
-.opportunities-button-course{
-  background-color: #FFBF32;
-  color: black;
-  box-sizing: border-box;
-  padding: 13px;
-}
-
 /* Fim OPORTUNIDADES */
 
 /* Início APOIO-GERAL */
