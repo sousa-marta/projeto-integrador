@@ -25,8 +25,8 @@
     <!-- Banner com citação -->
     <section class="about-banner">
       <blockquote class="bg-color">
-        <p class="mb-0 quotation">Para a maioria dos imigrantes, mudar para um país novo é um ato de fé. Mesmo que você tenha ouvido histórias sobre segurança, oportunidade e prosperidade,  ainda assim é um grande salto se afastar de sua língua, de seu povo e de seu país. De suas raízes.</p>
-        <p class="mt-0 quotation-author">Nicola Yoon, escritora jamaicana-americana</p>
+        <p class="quotation">Para a maioria dos imigrantes, mudar para um país novo é um ato de fé. Mesmo que você tenha ouvido histórias sobre segurança, oportunidade e prosperidade,  ainda assim é um grande salto se afastar de sua língua, de seu povo e de seu país. De suas raízes.</p>
+        <p class="quotation-author">Nicola Yoon, escritora jamaicana-americana</p>
       </blockquote>
     </section>
 

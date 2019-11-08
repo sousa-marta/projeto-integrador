@@ -872,14 +872,18 @@ footer p {
     background-image: url('../img/about-banner.jpg');
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    flex-direction: column-reverse;
     height: 82vh;
     text-align: center;
     color: #FFF;
-    justify-content: center;
+    /* justify-content: center; */
   }
   
   .bg-color {
     background-color: #0003;
+    height: 30%;
   }
   
   .quotation {
