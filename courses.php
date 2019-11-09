@@ -76,17 +76,11 @@
       <aside class="col-md-4 col-lg-3 order-1 p-3">
 
         <div class="list-group-item row form-group list-green text-white">
-            <h5><i class="fa fa-search"></i> Filtros</h5>
-            <!-- JS files: jQuery first, then Popper.js, then Bootstrap JS -->
-            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-            <!-- Font Awesome CSS -->
-            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+          <h5><i class="fa fa-search"></i> Filtros</h5>
         </div>
 
+        <!-- Elemento de separação entre partes do aside -->
         <div class="list-group-item row form-group bg-light"></div>
-
 
         <div class="list-group-item row form-group bg-secondary text-white">
             <h5>Área de Atuação</h5>
@@ -95,10 +89,11 @@
         <div class="list-group-item row form-group bg-light">
           <div class="container">
 
+            <!-- Seção com Collapses das Áreas de Cursos -->
             <div class="panel-group">
               <div class="panel panel-default">
                 <div class="panel-heading mt-2">
-                <h5 class="panel-title">
+                  <h5 class="panel-title">
                     <a data-toggle="collapse" href="#collapse1"><i class="far fa-caret-square-down"></i>  Idiomas</a>
                   </h5>
                 </div>
@@ -156,22 +151,18 @@
           <h5 class="btn btn-primary"><i class="fa fa-search"></i> Procurar Cursos</h5>
         </div>
       </aside>
-      
     </div>
-
   </main>
-
-
 
   <!-- Footer -->
   <?php include_once("footer.php") ?>
 
+  <!-- JS files: jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <script src="https://kit.fontawesome.com/e75d4b0fd5.js" crossorigin="anonymous"></script>
 
 </body>
