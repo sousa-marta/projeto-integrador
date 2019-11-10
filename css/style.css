@@ -25,7 +25,7 @@ h4 {font-size:25px;}
 h5 {font-size:18px; font-weight: bold;}
 
 
-button {
+/* button {
   color: #FFF;
   background:#005662;
   border: none;
@@ -35,7 +35,39 @@ button {
 button:hover, button:focus {
   background: #4FB3BF;
   color: #000;
+} */
+
+.btn {
+  padding: 1.0vh 2.2vh;
 }
+
+/*Turquesa*/
+.btn-primary {
+  color: #FFF;
+  background:#005662;
+  border: none;
+  text-transform: uppercase;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+  background: #4FB3BF;
+  color: #000;
+}
+
+/*Amarelo*/
+.btn-secondary {
+  color: #000;
+  background:#FFD54F;
+  border: none;
+  text-transform: uppercase;
+}
+
+.btn-secondary:hover, .btn-secondary:focus {
+  background: #4FB3BF;
+}
+
+
+
 
 .row {
   margin-left: 0;
@@ -56,10 +88,10 @@ a:hover, a:focus {
   color: #005662;
 }
 
-nav .btn-dark:hover, nav .btn-dark:focus {
+/* nav .btn-dark:hover, nav .btn-dark:focus {
   background: #FFD54F;
   color: #000;
-}
+} */
 
 .indent {
   text-indent: 1.8em;
@@ -97,31 +129,22 @@ nav .btn-dark:hover, nav .btn-dark:focus {
   height: 5vh;
 }
 
-nav a {
-  color: #47525E;
-  /* font-size: 12px; */
-}
+nav a {color: #47525E;}
 
 nav a:hover, nav a:focus {
   background: #4FB3BF;
   color: #FFF;
 }
 
-nav #register-link {
-  color: #005662;
-}
+nav #register-link {color: #005662;}
 
 nav #register-link:hover, nav #register-link:focus {
   background: none;
 }
 
-.modal-backdrop {
-  z-index: unset;
-}
+.modal-backdrop {z-index: unset;}
 
-.modal-footer-bg-color {
-  background-color: #FFF;
-}
+.modal-footer-bg-color {background-color: #FFF;}
 /* Fim HEADER */
 
 /* Início BREADCRUMB */
@@ -160,18 +183,10 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
 
 .home-banner button {
   margin-bottom: 10vh;
-  color: #fff;
-  background-color: #00838F;
-  border-color:none;
   padding: 0.5rem 2rem;
 }
 
 .home-btn-big {display:none;}
-
-.home-banner button:hover {
-  background-color: #FFFF81;
-  color:#474747;
-}
 
 .home-summary {
   padding: 1rem 0;
@@ -297,6 +312,7 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
 /* Início CURSO-DETALHE */
 .course-detail-main-banner {
   background-color: #00838F;
+  color: #FFF;
 }
 
 .course-detail-main-banner-offered-by {
@@ -305,10 +321,6 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
 
 .course-detail-main-banner-div-img {
   display: none;
-}
-
-.course-detail-main-banner * {
-  color: #FFF;
 }
 
 .course-detail-logo-img {
@@ -442,16 +454,6 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
 /* INSERIR STYLE PRA PÁGINA APOIO PROFISSIONAL */
 
 /* Inicio APOIO PSICOLÓGICO */ 
-.btn-primary {
-  background: #005662;
-  border: none;
-  padding: 1.5vh 2vh;
-}
-
-.btn-primary:hover, .btn-primary:focus {
-  background: #4FB3BF;
-}
-
 .support-introduction {
   align-items: center;
   height: 50vh;
@@ -586,10 +588,10 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
 /* INSERIR STYLE PRA PÁGINA CADASTRE-SE */
 
 /* Início LOGIN */
-.btn-color {
+/* .btn-color {
   background-color: #47525E;
   color: #FFF;
-}
+} */
 
 card {
   border: #47525E;
@@ -627,18 +629,11 @@ card {
   width: 0;
 }
 
-.btn-register {
+/* .btn-register {
   background-color: #4FB3BF;
   text-transform: none;
-}
+} */
 /* Fim LOGIN */
-
-/* Início ESQUECEU A SENHA? */
-.btn-redefine-color {
-  background-color: #005662;
-  color: #FFF;
-}
-/* Fim ESQUECEU A SENHA? */
 
 /* Início PÁGINA USUÁRIO */
 .user-page-font-bold {
@@ -647,9 +642,6 @@ card {
 
 .user-page-main-banner {
   background-color: #005662;
-}
-
-.user-page-main-banner * {
   color: #FFF;
 }
 
@@ -692,10 +684,10 @@ card {
   border: 2px solid #FFF;
 }
 
-.btn-edit-info {
+/* .btn-edit-info {
   background-color: #FFD54F;
   color: #474747;
-}
+} */
 
 .user-page-item-inside-card-top{
   display: flex;
@@ -839,6 +831,13 @@ footer p {
     width: 60%;
   } 
   /* Fim HOME */
+
+  /* Início CONTRIBUA */
+  .contribute-volunteer div {
+    margin-bottom:1rem;
+  }
+
+  /* Fim CONTRIBUA */
 
   /* Início USUÁRIO */
   .user-page-photo {display: block;}

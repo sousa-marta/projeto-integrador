@@ -64,7 +64,7 @@
               </div>
             </div>
             <div class="row pb-5 mt-3"> <!-- botão escrever -->
-              <button type="button" class="col-12 btn btn-dark">Inscrever</button>
+              <button type="button" class="col-12 btn btn-secondary">Inscrever</button>
             </div>
           </div>
           

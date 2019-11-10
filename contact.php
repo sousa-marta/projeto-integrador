@@ -56,7 +56,7 @@ $subjects = ["Apoio","Cadastro","Cursos","Doação","Voluntariado","Outros"];
         <label for="userPassword"><h5>Mensagem</h5></label>
         <textarea class="form-control" id="contactMessage" rows="3"></textarea>
       </div>
-      <button type="submit" class="btn col-lg-12">Enviar</button>
+      <button type="submit" class="btn btn-primary col-lg-12">Enviar</button>
       </div>
     </form>
     </div>

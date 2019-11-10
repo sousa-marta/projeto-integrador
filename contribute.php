@@ -35,13 +35,13 @@
         <img src="img/contribute-volunteer.png" alt="aperto de mão">
           <h4 class="card-title">Auxílio como Pessoa</h4>
           <p class="card-text">Você pode contribuir oferecendo um curso ou doando um valor para ajudar a manter nossa estrutura e nossa equipe!</p>   
-          <button type="button" class="align-self-end btn mt-3" onclick="location.href='#contribute-session-people'">Saiba mais</button>
+          <button type="button" class="align-self-end btn btn-primary mt-3" onclick="location.href='#contribute-session-people'">Saiba mais</button>
         </div>
         <div class="col-sm-12 col-md-5 col-lg-5 py-4 px-2 mx-3 border">
           <img src="img/contribute-enterprise.png" alt="aperto de mão">
           <h4 class="card-title">Auxílio como Empresa</h4>
           <p class="card-text">Como empresa, pode nos patrocinar em eventos, investir diretamente ou desenvolver campanhas para captação de recursos.</p>
-          <button type="button" class="btn mt-3" onclick="location.href='#contribute-session-company'">Saiba mais</button>
+          <button type="button" class="btn btn-primary mt-3" onclick="location.href='#contribute-session-company'">Saiba mais</button>
         </div>
       </div>
     </section>
@@ -57,28 +57,28 @@
             <!-- <h2>Voluntariado</h2> -->
             <h3 class="mb-5">Participe de nossos projetos como <span>voluntário</span></h3>
             <div class="row contribute-volunteer justify-content-center">
-              <div class="col-sm-12 col-md-2 col-lg-2 py-1 px-2 mx-3 mb-2 pb-3 bg-light">
+              <div class="col-sm-12 col-md-5 col-lg-2 py-1 px-2 mx-3 mb-2 pb-3 bg-light">
                 <img src="img/contribute-volunteer-teach.png" alt="">
                 <h4>Cursos</h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex quos ullam</p>
               </div>
-              <div class="col-sm-12 col-md-2 col-lg-2 py-1 px-2 mx-3 mb-2 p-3 bg-light">
+              <div class="col-sm-12 col-md-5 col-lg-2 py-1 px-2 mx-3 mb-2 p-3 bg-light">
                 <img src="img/contribute-volunteer-juridical.png" alt="">
                 <h4>Jurídico</h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex quos ullam 
               </div>
-              <div class="col-sm-12 col-md-2 col-lg-2 py-1 px-2 mx-3 mb-2 p-3 bg-light">
+              <div class="col-sm-12 col-md-5 col-lg-2 py-1 px-2 mx-3 mb-2 p-3 bg-light">
                 <img src="img/contribute-volunteer-talk.png" alt="">
                 <h4>Psicológico</h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex quos ullam 
               </div>
-              <div class="col-sm-12 col-md-2 col-lg-2 py-1 px-2 mx-3 p-3 bg-light">
+              <div class="col-sm-12 col-md-5 col-lg-2 py-1 px-2 mx-3 mb-2 p-3 bg-light">
                 <img src="img/contribute-volunteer-money.png" alt="">
                 <h4>Financeiro</h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex quos ullam 
               </div>
             </div>
-            <button class="btn mt-5" onclick="location.href='contact.php'">Contate-nos</button>
+            <button class="btn btn-primary mt-5" onclick="location.href='contact.php'">Contate-nos</button>
           </div>
         </div>
       </div>
@@ -93,33 +93,32 @@
         <div class="text-center contribute-enterprise container">
           <div class="row justify-content-center align-items-center mt-4 mb-5">
             <h2>Organizações que nos apoiam</h2>
-            <div class="row my-3">
-              <div class="col-3">
+            <div class="row justify-content-center my-3">
+              <div class="col-6 col-md-3">
                 <img src="img/contribute-enterprise-logo1.png" alt="">
               </div>
-              <div class="col-3">
+              <div class="col-6 col-md-3">
                 <img src="img/contribute-enterprise-logo2.jpg" alt="">
               </div>
-              <div class="col-3">
+              <div class="col-6 col-md-3">
                 <img src="img/contribute-enterprise-logo1.png" alt="">
               </div>
-              <div class="col-3">
+              <div class="col-6 col-md-3">
                 <img src="img/contribute-enterprise-logo2.jpg" alt="">
               </div>
-              <div class="col-3">
+              <div class="col-6 col-md-3">
                 <img src="img/contribute-enterprise-logo2.jpg" alt="">
               </div>
-              <div class="col-3">
+              <div class="col-6 col-md-3">
                 <img src="img/contribute-enterprise-logo1.png" alt="">
               </div>
-              <div class="col-3">
+              <div class="col-6 col-md-3">
                 <img src="img/contribute-enterprise-logo2.jpg" alt="">
               </div>
-              <div class="col-3">
+              <div class="col-6 col-md-3">
                 <img src="img/contribute-enterprise-logo1.png" alt="">
               </div>         
             </div>
-            <button class="btn mt-3" onclick="location.href='contact.php'">Contate-nos</button>
           </div>
         </div>
       </div>

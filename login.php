@@ -23,7 +23,7 @@
     <form action="" method="post" class="card p-5">
       <div class="row mb-5">
         <p class="login-indicator rounded p-2 mr-2 triangle-isosceles">Faça login na sua conta</p>
-        <button type="button" class="btn btn-register" onclick="location.href='register.php'">Ainda não tem conta? Cadastre-se agora!</button>
+        <button type="button" class="btn btn-primary" onclick="location.href='register.php'">Ainda não tem conta? Cadastre-se agora!</button>
       </div>
       <div class="form-group">
         <label for="userEmail">E-mail</label>
@@ -34,7 +34,7 @@
         <input type="password" class="form-control" name="userPassword" id="userPassword" required>
       </div>
       <!-- Trocar o type para submit após o sprint 2 -->
-      <button type="button" class="btn btn-color col-12" onclick="location.href='user-page.php'">Entrar</button>
+      <button type="button" class="btn btn-primary col-12" onclick="location.href='user-page.php'">Entrar</button>
       <p class="text-center mt-2"><a href="forgotten-password.php">Esqueceu sua senha?</a></p>
     </form>
   </main>
