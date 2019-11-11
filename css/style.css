@@ -50,7 +50,7 @@ h5 {font-size:18px; font-weight: bold;}
 }
 
 .btn-secondary:hover, .btn-secondary:focus {
-  background: #4FB3BF;
+  background: #005662;
 }
 
 .row {
@@ -375,12 +375,12 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
   background-color: #00838F;
 }
 
-.p-apoio {
- color: #FFF;
-}
-
 .h4-apoio a{
   color: #FFD54F;
+}
+
+.card-bg-green{
+  background-color:#4FB3BF;
 }
 
 .card-juridico {
@@ -406,7 +406,7 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
 /* Fim APOIO */
 
 /* Inicio APOIO PSICOLÓGICO */ 
-.support-introduction {
+/*.support-introduction {
   align-items: center;
   height: 50vh;
   text-align: center;
@@ -452,7 +452,7 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
   height: 50vh;
   background: #FFD54F;
   text-align: center;
-}
+}*/
 /* Fim APOIO PSICOLÓGICO */ 
 
 /* Início CONTRIBUA */
@@ -671,20 +671,6 @@ footer p {
 }
 /* Fim FOOTER */
 
-/* Início SUPPORT-PROFESSIONAL */
-.card-bg-green{
-  background-color:#4FB3BF;
-}
-/* FIM SUPPORT-PROFESSIONAL */
-
-/* Início SUPPORT-LEGAL */
-.jumbotron{
-  background-color:#4FB3BF;
-}
-/* FIM SUPPORT-LEGAL */
-
-
-
 /* --------------------------------- MEDIAS QUERIES --------------------------------- */
 
 /* Extra small devices (portrait phones, less than 576px) */
@@ -788,6 +774,13 @@ footer p {
   h3 {font-size:3.2vw;}
   h4 {font-size:2.7vw}
   h5 {font-size:2.2vw;}
+
+  /* Início HEADER */
+  .navbar-nav {
+    background-color: transparent;
+    text-align: center;
+  }
+  /* Fim HEADER */
   
   /* Início HOME */
   .home-card-section {margin:2rem 0;}

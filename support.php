@@ -29,7 +29,7 @@
     <!-- Banner -->
     <section class="container-fluid">      
       <div class="row apoio-banner text-center">
-        <img class="col-sm-6" src="img/banner-apoio.svg" aria-hidden="true" alt="">
+        <img class="img-fluid col-11 col-sm-6 col-lg-5" src="img/banner-apoio.svg" aria-hidden="true" alt="">
         <div class="col-sm-6">
           <h1>Ajudando você a recomeçar</h1>
         </div>
@@ -37,130 +37,110 @@
     </section>
 
     <!-- Resumo 3 tipos de assistência -->
-    <section class="background-apoio row justify-content-around align-itens-center text-center">
+    <section class="background-apoio row justify-content-around align-itens-center">
       <article class="col-lg-4">
         <div class="home-card card-body">
           <a href="#support-legal"><h4 class="h4-apoio card-title">Assistência Jurídica</a></h4>
-          <p class="p-apoio card-text text-center">Enim nisi officia incididunt sint qui. Lorem cupidatat voluptate incididunt et cupidatat laboris dolore eiusmod ad et veniam in magna.</p>
+          <p class="text-white card-text text-center">Enim nisi officia incididunt sint qui. Lorem cupidatat voluptate incididunt et cupidatat laboris dolore eiusmod ad et veniam in magna.</p>
         </div>
       </article>
       <article class="col-lg-4">
         <div class="home-card card-body">
           <a href="#support-psychologic"><h4 class="h4-apoio card-title">Acompanhamento Psicológico</a></h4>
-          <p class="p-apoio card-text text-center">Enim nisi officia incididunt sint qui. Lorem cupidatat voluptate incididunt et cupidatat laboris dolore eiusmod ad et veniam in magna.</p>
+          <p class="text-white card-text text-center">Enim nisi officia incididunt sint qui. Lorem cupidatat voluptate incididunt et cupidatat laboris dolore eiusmod ad et veniam in magna.</p>
         </div>
       </article>
       <article class="col-lg-4">
         <div class="home-card card-body">
           <a href="#support-professional"><h4 class="h4-apoio card-title">Apoio Novo Trabalho</a></h4>
-          <p class="p-apoio card-text text-center">Enim nisi officia incididunt sint qui. Lorem cupidatat voluptate incididunt et cupidatat laboris dolore eiusmod ad et veniam in magna.</p>
+          <p class="text-white card-text text-center">Enim nisi officia incididunt sint qui. Lorem cupidatat voluptate incididunt et cupidatat laboris dolore eiusmod ad et veniam in magna.</p>
         </div>
       </article>
     </section>
 
-     <!-- Inicia a página da Assistencia Jurídica  -->
-    <section class="container p-3" id="support-legal">
-      <div class="row align-items-center">
-        <div class="col-lg-4 col-md-4 banner-img">
-          <img class="img-fluid" src="img/juridico.png" alt="apoio juridico">
+    <!-- Assistência Jurídica -->
+    <section>
+    <div class="container p-3 text-center">
+      <div class="row align-items-center justify-content-center">
+        <div class="col-6 col-md-4">
+          <img class="img-fluid" src="img/juridico.png" aria-hidden="true" alt="">
         </div>
-        <div class="col-lg-8 col-md-8 banner-img">
-          <h2 class="h2-apoio text-center">Conheça a Assistência Jurídica da Oppy</h2>
+        <div class="col-md-8">
+          <h2>Conheça a assistência jurídica da Oppy</h2>
         </div>
       </div>
+    </div>  
+    <div class="card text-white mb-3 card-bg-green">
+      <div class="card-header">
+        <h5>O que é?</h5>
+      </div>
+      <div class="card-body">
+        <p class="p-1">A assessoria jurídica a refugiados e a imigrantes é fundamental devido ao alto grau de desconhecimento da legislação brasileira por parte dessas pessoas e da sociedade em geral.</p>
+        <p class="p-1">Uma pessoa que passa a habitar um novo país sente necessidade de orientação em assuntos legais para poder se integrar devidamente ao ambiente e para ter consciência de seus direitos e deveres.</p>
+        <p class="p-1">As questões tratadas pela Oppy já envolvem pedidos de naturalização e nacionalização, vistos, previdência, casamento, acesso à educação e à saúde, entre outras.</p>
+        <p>A Oppy possui um forte trabalho em rede, destacando-se as parcerias com Alto Comissariado das Nações Unidas para Refugiados (ACNUR), a Associação Antonio Vieira (ASAV) e o CIBAI Migrações. Ademais, integra o Fórum Permanente de Mobilidade Humana (FPMH), o Comitê Estadual de Atenção a Migrantes, Refugiados, Apátridas e Vítimas de Tráfico de Pessoas (COMIRAT-SP), e tem representantes junto ao Comitê de Acompanhamento pela Sociedade Civil sobre ações de Migração e Refúgio (CASC-Migrante) da Secretaria Nacional de Justiça.</p>
+      </div>
+      <button type="button" aria-label="Saiba mais sobre o apoio jurídico" class="btn btn-secondary btn-lg align-self-center mb-3" href="contact.php">Saiba mais</button>
+    </div>
     </section>
 
-    <div class="card text-white mb-3 card-bg-green">
-      <div class="card-header">
-        <h5 class="card-title">O que é?</h5>
-      </div>
-      <div class="card-body">
-        <p class="card-text">A assessoria jurídica a refugiados e a imigrantes é fundamental devido ao alto grau de desconhecimento da legislação brasileira por parte dessas pessoas e da sociedade em geral.
-          <br><br> Um migrante que passa a habitar o país sente necessidade de orientação em assuntos legais para poder se integrar devidamente ao ambiente e para ter consciência dos seus direitos e deveres.
-          <br><br> As questões tratadas pela OPPY já envolvem pedidos de naturalização e de nacionalização, vistos, previdência, casamento, acesso à educação e à saúde, entre outras.
-          <br><br> A OPPY possui um forte trabalho em rede, destacando-se a pareceria com Alto Comissariado das Nações Unidas para Refugiados (ACNUR), com a Associação Antonio Vieira (ASAV) e com o CIBAI Migrações. Ademais, integra o Fórum Permanente de Mobilidade Humana (FPMH) o Comitê Estadual de Atenção a Migrantes, Refugiados, Apátridas e Vítimas de Tráfico de Pessoas (COMIRAT-SP) e tem representantes junto ao Comitê de Acompanhamento pela Sociedade Civil sobre ações de Migração e Refúgio (CASC-Migrante) da Secretaria Nacional de Justiça.
-      </div>
-      <div class="d-flex justify-content-center p-4">
-      <a href="contact.php"><button type="button" class="btn btn-primary btn-lg" href="contact.php">Saiba mais</button></a>
-    </div>
-    </div>
-
-    
-
-
-    <!-- Inicia página da Mentoria Profissional -->
-    <section class="container p-3" id="support-professional">
+    <!-- Mentoria Profissional -->
+    <section>
+    <div class="container p-3 text-center">
       <div class="row align-items-center">
-        <div class="col-lg-4 col-md-4 banner-img">
-          <img class="img-fluid" src="img/mentoria.svg" alt="mentoria imigrantes">
+        <div class="col-6 col-md-4">
+          <img class="img-fluid" src="img/mentoria.svg" aria-hidden="true" alt="">
         </div>
-        <div class="col-lg-8 col-md-8 banner-img">
-          <h1 class="h2-apoio text-center">Mentoria Profissional</h1>
+        <div class="col-md-8">
+          <h2>Mentoria Profissional</h2>
         </div>
-      </div>
-    </section>
-
-
-    <div class="card text-white mb-3 card-bg-green">
-      <div class="card-header">
-        <h5 class="card-title">O que é?</h5>
-      </div>
-      <div class="card-body">
-        <p class="card-text">O Programa de Mentores para Migrantes é uma iniciativa promovida pelo Alto Comissariado para as Migrações e desenvolvida, por todo o país, por um conjunto de parceiros locais.</p>
       </div>
     </div>
-
     <div class="card text-white mb-3 card-bg-green">
       <div class="card-header">
-        <h5 class="card-title">Para que serve?</h5>
+        <h5>O que é?</h5>
       </div>
       <div class="card-body">
-
-        <p class="card-text">Promover experiências de troca, entreajuda e apoio entre voluntários/as (cidadãos/ãs portugueses/as) e migrantes (emigrantes e imigrantes) e/ou refugiados.
-
-          Permite o conhecimento mútuo, em que as diferenças se esbatem na resolução das mesmas dificuldades, preocupações e desafios do dia-a-dia.
-
-          — Os/As imigrantes mentorados/as dispõem de uma oportunidade de resolver alguma necessidade ou apoio para concretizar um sonho.
-
-          — Os/As refugiados/as mentorados/as dispõem de um apoio voluntário na sua chegada e acolhimento em Portugal.
-
-          — Os/As emigrantes mentorados/as decididos/as a regressar podem contar com apoio e orientação para encontrar soluções adequadas à cosntrução do seu novo projeto pessoal e profissional em Portugal.
-
-          — Os/As mentores/as voluntários/as podem, a partir desta experiência, desenvolver mais as suas competências pessoais, abertura à diversidade e oportunidade de exercer a sua cidadania participativa.
-
-          — Por seu lado, as entidades associadas vêem nesta experiência uma oportunidade de enriquecimento pessoal dos seus/suas colaboradores/as também e, logo, no ambiente e na cultura organizacional.</p>
+        <p>O Programa de Mentores para Migrantes é uma iniciativa promovida pelo Alto Comissariado para as Migrações e desenvolvida, por todo o país, por um conjunto de parcerias locais.</p>
+      </div>
+    </div>
+    <div class="card text-white mb-3 card-bg-green">
+      <div class="card-header">
+        <h5>Para que serve?</h5>
+      </div>
+      <div class="card-body">
+        <p class="p-1">Promover experiências de troca, ajuda e apoio entre pessoas voluntárias e migrantes e/ou refugiados.</p>
+        <p class="p-1">Permite o conhecimento mútuo, em que as diferenças se esbatem na resolução das mesmas dificuldades, preocupações e desafios do dia-a-dia.</p>
+        <p class="p-1">As pessoas mentoradas:</p>
+        <ul class="pl-5">
+          <li>dispõem de uma oportunidade de resolver alguma necessidade ou apoio para concretizar um sonho;</li>
+          <li>dispõem de um apoio voluntário na sua chegada e acolhimento ao país;</li>
+          <li>decididas a regressar podem contar com apoio e orientação para encontrar soluções adequadas à construção de seu novo projeto pessoal e profissional.</li>
+        </ul>
       </div>
     </div>
     <div class="card text-white mb-3 card-bg-green" >
       <div class="card-header">
-        <h5 class="card-title">O que pretende atingir?</h5>
+        <h5>O que pretende atingir?</h5>
       </div>
       <div class="card-body">
-        <p class="card-text">Proporcionar apoio, acompanhamento, orientação para a resolução de dificuldades ou preocupações dos/as imigrantes com vista à sua integração.
-
-          Disponibilizar formas de ligação, acompanhamento ou apoio ao regresso dos emigrantes portugueses.
-
-          Proporcionar apoio, acompanhamento, orientação para a resolução de dificuldades ou preocupações dos/as refugiado/as que o nosso país acolhe.
-
-          Promover a igualdade de oportunidades e sensibilizar para a riqueza da diversidade.
-
-          Promover o voluntariado, a cidadania participativa e a troca positiva de experiências.
-
-          Contribuir para o enriquecimento pessoal, social e organizacional das pessoas e entidades envolvidas.</p>
+        <p class="p-1">Proporcionar apoio, acompanhamento, orientação para a resolução de dificuldades ou preocupações das pessoas recebidas pelo país;</p>
+        <p class="p-1">Disponibilizar formas de ligação, acompanhamento ou apoio ao regresso dos emigrantes;</p>
+        <p class="p-1">Promover a igualdade de oportunidades e sensibilizar para a riqueza da diversidade;</p>
+        <p class="p-1">Promover o voluntariado, a cidadania participativa e a troca positiva de experiências;</p>
+        <p class="p-1">Contribuir para o enriquecimento pessoal, social e organizacional das pessoas e entidades envolvidas.</p>
       </div>
-      <div class="d-flex justify-content-center p-4">
-      <a href="contact.php"><button type="button" class="btn btn-primary btn-lg">Saiba mais</button></a>
+      <button type="button" aria-label="Saiba mais sobre a mentoria profissional" class="btn btn-secondary btn-lg align-self-center mb-3" href="contact.php">Saiba mais</button>
     </div>
-    </div>
+    </section>
     
-    <!-- Inicia página do apoio Psicológico -->
-
+    <!-- Apoio Psicológico -->
     <section class="container p-3" id="support-psychologic">
       <div class="row align-items-center">
-        <div class="col-lg-4 col-md-4 banner-img">
+        <div class="col-lg-4 col-md-4">
           <img class="img-fluid" src="img/psicologia2.png" alt="apoio psicologico">
         </div>
-        <div class="col-lg-8 col-md-8 banner-img">
+        <div class="col-lg-8 col-md-8">
           <h1 class="h2-apoio text-center">Apoio Psicológico</h1>
         </div>
       </div>
