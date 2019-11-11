@@ -40,15 +40,15 @@
       <div class="row">
         <div class="col-sm-4 statistics-block mt-3">
           <img src="img/diagram.svg" alt="" class="statistics-images">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          Em 10 anos, número de imigrantes aumenta 160% no Brasil.
         </div>
         <div class="col-sm-4 statistics-block mt-3">
           <img src="img/portfolio.svg" alt="" class="statistics-images">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          Mais de 112 mil imigrantes possuem trabalho formal no Brasil.
         </div>
         <div class="col-sm-4 statistics-block mt-3">
           <img src="img/collaboration.svg" alt="" class="statistics-images">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          Iniciativas ajudam refugiados a ingressarem no mercado de trabalho brasileiro.
         </div>
       </div>
     </section>
