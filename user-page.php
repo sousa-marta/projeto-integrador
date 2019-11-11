@@ -30,7 +30,7 @@
         <div>
           <h1>Alex Watanabe</h1>
           <p><b>País de origem:</b> Japão</p>
-          <button class="mt-3 col-lg-12 btn btn-edit-info" onclick="location.href='user-info.php'">Editar informações</a>
+          <button class="mt-3 col-lg-12 btn btn-secondary" onclick="location.href='user-info.php'">Editar informações</a>
         </div>
       </div>
     </section>

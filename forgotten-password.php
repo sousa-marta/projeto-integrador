@@ -28,7 +28,7 @@
       <div class="form-group p-2">
         <input type="text" class="form-control" name="userEmail" id="userEmail" placeholder="E-mail" required>
       </div>
-      <button type="submit" class="btn btn-redefine-color align-self-center">Redefinir</button>
+      <button type="submit" class="btn btn-primary align-self-center">Redefinir</button>
     </form>
   </main>
   

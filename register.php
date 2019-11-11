@@ -58,7 +58,7 @@ $countries = ["Afeganistão","África do Sul","Akrotiri","Albânia","Alemanha","
           ?>
         </select>
       </div>
-      <button type="submit" class="btn btn-redefine-color align-self-center mt-3">Criar conta gratuitamente</button>
+      <button type="submit" class="btn btn-primary align-self-center mt-3">Criar conta gratuitamente</button>
       <p class="text-center mt-3">Ao criar minha conta, eu aceito os Termos de Uso e a Política de Privacidade da Oppy.</p>
     </form>
   </main>

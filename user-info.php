@@ -35,7 +35,7 @@ $countries = ["Afeganistão","África do Sul","Akrotiri","Albânia","Alemanha","
       <!-- foto -->
       <div class="user-info-top">
         <img src="img/foto.png" alt="foto usuário" class="rounded m-1 user-info-photo">
-        <button type="button" class="btn btn-secondary m-1">Alterar foto</button>
+        <button type="button" class="btn btn-primary m-1">Alterar foto</button>
       </div>
 
 
@@ -93,7 +93,7 @@ $countries = ["Afeganistão","África do Sul","Akrotiri","Albânia","Alemanha","
         </div>
       </div>
 
-      <button type="submit" class="btn btn-redefine-color align-self-center mt-3">Salvar</button>
+      <button type="submit" class="btn btn-primary align-self-center mt-3">Salvar</button>
     </form>
   </main>
   

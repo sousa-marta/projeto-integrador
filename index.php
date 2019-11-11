@@ -18,8 +18,8 @@
     <!-- Banner -->
     <section class="home-banner">
       <h1>Onde a esperança se reencontra</h1>
-      <button class="btn home-btn-big" onclick="location.href='register.php'">Faça Parte Dessa Comunidade</button>
-      <button class="btn home-btn-sm" onclick="location.href='register.php'">Faça Parte </button>
+      <button class="btn btn-primary home-btn-big" onclick="location.href='register.php'">Faça Parte Dessa Comunidade</button>
+      <button class="btn btn-primary home-btn-sm" onclick="location.href='register.php'">Faça Parte </button>
     </section>
 
     <!-- Texto Resumo Sobre o Site -->
@@ -29,7 +29,7 @@
           
         <p class="indent"> Contamos com apoio de empresas e recrutadores para conectar essa mão-de-obra qualificada e cheia de energia para aulixiar a integração dos novos habitantes do país! </p>
         
-        <button class="btn align-self-center my-2" onclick="location.href='about.php'">Saiba Mais</button>
+        <button class="btn btn-primary align-self-center my-2" onclick="location.href='about.php'">Saiba Mais</button>
       </div>
     </section>
 
@@ -77,8 +77,8 @@
     <section class="home-banner-apoie">
       <div class="row justify-content-center align-items-center py-2">
         <h5 class="col-12 col-lg-4 text-center mt-2">Ajude-nos a ir mais longe!</h5>
-        <button class="btn col-10 col-sm-5 col-md-5 col-lg-3" onclick="location.href='contribute-enterprise.php'">Seja Patrocinador</button>
-        <button class="btn col-10 col-sm-5 col-md-5 col-lg-3" onclick="location.href='contribute-people.php'">Seja Voluntário</button>
+        <button class="btn btn-primary col-10 col-sm-5 col-md-5 col-lg-3" onclick="location.href='contribute-people.php'">Seja Voluntário</button>
+        <button class="btn btn-primary col-10 col-sm-5 col-md-5 col-lg-3" onclick="location.href='contribute-enterprise.php'">Seja Patrocinador</button>
       </div>
     </section>
   </main>

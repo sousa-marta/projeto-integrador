@@ -33,7 +33,7 @@
         <li class="nav-item">
           <a id="register-link" class="nav-link" href="register.php"><span class="fa">&#xf2b9;</span> Cadastre-se</a>
         </li>
-        <button type="button" class="btn" data-toggle="modal" data-target="#login-modal" href="#">Login</button>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#login-modal" href="#">Login</button>
       </ul>
     </div>
 </nav>
@@ -65,7 +65,7 @@
         </form>
       </main>
       <footer class="modal-footer modal-footer-bg-color">
-        <button type="submit" class="btn col-lg-12">Enviar</button>
+        <button type="submit" class="btn btn-primary col-lg-12">Enviar</button>
       </footer>
     </dialog>
   </div>
