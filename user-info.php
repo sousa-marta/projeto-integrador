@@ -13,10 +13,12 @@ $countries = ["Afeganistão","África do Sul","Akrotiri","Albânia","Alemanha","
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Informações do Usuário</title>
   <link rel="icon" href="img/favicon.ico">
+  <!-- Fontes -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+  <!-- CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 
@@ -84,7 +86,7 @@ $countries = ["Afeganistão","África do Sul","Akrotiri","Albânia","Alemanha","
       </div>
       
       <div class="row">
-        <div class="form-group col-6 p-0">
+        <div class="form-group col-6 p-0 m-2 align-self-center">
             <label for="userAddressComp">Complemento</label>
             <input type="text" class="form-control" name="userAddressComp" id="userAddressComp" placeholder="Complemento">
         </div>
