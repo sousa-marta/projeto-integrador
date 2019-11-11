@@ -86,7 +86,7 @@ $countries = ["Afeganistão","África do Sul","Akrotiri","Albânia","Alemanha","
       </div>
       
       <div class="row">
-        <div class="form-group col-6 p-0 m-2 align-self-center">
+        <div class="form-group col-6 p-0">
             <label for="userAddressComp">Complemento</label>
             <input type="text" class="form-control" name="userAddressComp" id="userAddressComp" placeholder="Complemento">
         </div>
