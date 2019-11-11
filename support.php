@@ -36,38 +36,26 @@
       </div>
     </section>
 
-    <!-- Corpo -->
-
-    <section class="background-apoio">
-      <div class="row justify-content-around align-itens-center py-5">
-        <article class="col-md-3">
-            <div class="home-card d-flex flex-column align-items-center">
-                <div class="card-img card-juridico"></div>
-                <div class="card-body">
-                <h4 class="h4-apoio card-title"><a href="#support-legal">Assistencia Juridica</a></h4>
-                <p class="p-apoio card-text text-center">Enim nisi officia incididunt sint qui. Lorem cupidatat voluptate incididunt et cupidatat laboris dolore eiusmod ad et veniam in magna. Labore irure excepteur occaecat labore ut exercitation adipisicing. Duis amet veniam voluptate irure est. Aliquip eu fugiat tempor dolor ut minim adipisicing qui dolor eiusmod anim do proident et. Ut ea sunt esse ea incididunt excepteur exercitation Lorem irure elit. Magna excepteur duis in laborum nulla culpa velit quis.</p>
-                </div>
-            </div>
-        </article>
-        <article class="col-md-3">
-          <div class="home-card d-flex flex-column align-items-center">
-            <div class="card-img card-psicologico"></div>
-            <div class="card-body">
-              <h4 class="h4-apoio card-title"><a href="#support-psychologic">Acompanhamento Psicológico</a></h4>
-              <p class="p-apoio card-text text-center">Enim nisi officia incididunt sint qui. Lorem cupidatat voluptate incididunt et cupidatat laboris dolore eiusmod ad et veniam in magna. Labore irure excepteur occaecat labore ut exercitation adipisicing. Duis amet veniam voluptate irure est. Aliquip eu fugiat tempor dolor ut minim adipisicing qui dolor eiusmod anim do proident et. Ut ea sunt esse ea incididunt excepteur exercitation Lorem irure elit. Magna excepteur duis in laborum nulla culpa velit quis.</p>
-            </div>
-          </div>
-        </article>
-        <article class="col-md-3">
-          <div class="home-card d-flex flex-column align-items-center">
-            <div class="card-img card-trabalho"></div>
-            <div class="card-body">
-              <h4 class="h4-apoio card-title"><a href="#support-professional">Apoio Novo Trabalho</a></h4>
-              <p class="p-apoio card-text text-center">Enim nisi officia incididunt sint qui. Lorem cupidatat voluptate incididunt et cupidatat laboris dolore eiusmod ad et veniam in magna. Labore irure excepteur occaecat labore ut exercitation adipisicing. Duis amet veniam voluptate irure est. Aliquip eu fugiat tempor dolor ut minim adipisicing qui dolor eiusmod anim do proident et. Ut ea sunt esse ea incididunt excepteur exercitation Lorem irure elit. Magna excepteur duis in laborum nulla culpa velit quis.</p>
-            </div>
-          </div>
-        </article>
-      </div>
+    <!-- Resumo 3 tipos de assistência -->
+    <section class="background-apoio row justify-content-around align-itens-center text-center">
+      <article class="col-lg-4">
+        <div class="home-card card-body">
+          <a href="#support-legal"><h4 class="h4-apoio card-title">Assistência Jurídica</a></h4>
+          <p class="p-apoio card-text text-center">Enim nisi officia incididunt sint qui. Lorem cupidatat voluptate incididunt et cupidatat laboris dolore eiusmod ad et veniam in magna.</p>
+        </div>
+      </article>
+      <article class="col-lg-4">
+        <div class="home-card card-body">
+          <a href="#support-psychologic"><h4 class="h4-apoio card-title">Acompanhamento Psicológico</a></h4>
+          <p class="p-apoio card-text text-center">Enim nisi officia incididunt sint qui. Lorem cupidatat voluptate incididunt et cupidatat laboris dolore eiusmod ad et veniam in magna.</p>
+        </div>
+      </article>
+      <article class="col-lg-4">
+        <div class="home-card card-body">
+          <a href="#support-professional"><h4 class="h4-apoio card-title">Apoio Novo Trabalho</a></h4>
+          <p class="p-apoio card-text text-center">Enim nisi officia incididunt sint qui. Lorem cupidatat voluptate incididunt et cupidatat laboris dolore eiusmod ad et veniam in magna.</p>
+        </div>
+      </article>
     </section>
 
      <!-- Inicia a página da Assistencia Jurídica  -->
