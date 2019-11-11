@@ -787,11 +787,11 @@ footer p {
   .home-btn-big{display:flex;}
   /* Fim HOME */
 
-  /* Início ABOUT */
+  /* Início QUEM SOMOS */
   .oppy-info img, .oppy-proposal img {
     height: 30vh;
   }
-  /* Fim ABOUT */
+  /* Fim QUEM SOMOS */
 
   /* Início CURSO-DETALHE */
   .course-detail-schedule-legend {
@@ -868,7 +868,7 @@ footer p {
   .home-card-section {margin:2rem 0;}
   /* Fim HOME */
 
-  /* Início SOBRE */
+  /* Início QUEM SOMOS */
   .about-banner {
     display: flex;
     background-image: url('../img/about-banner.jpg');
@@ -919,7 +919,7 @@ footer p {
   .oppy-info p, .oppy-proposal p {
     text-align: left;
   }
-  /* Fim SOBRE */
+  /* Fim QUEM SOMOS */
 
   /* Início CURSO-DETALHE */
   .course-detail-main-banner-offered-by {

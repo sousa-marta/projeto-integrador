@@ -51,7 +51,7 @@
 
     <!-- Como surgiu a Oppy? -->
     <section class="container-fluid">
-      <div class="row oppy-info pt-3 pb-4 pr-5">
+      <div class="row oppy-info p-4">
         <img src="img/creativity.svg" alt="desenho de uma caixa com lápis, lâmpada e nuvem, representando criação" class="col-sm-6 col-lg-4">
         <div class="col-sm-6 col-lg-7">
           <h2 class="text-uppercase mt-3">Como surgiu a oppy?</h2>
@@ -62,7 +62,7 @@
 
     <!-- Nossa Proposta -->
     <section class="container-fluid">
-      <div class="row oppy-proposal pt-3 pb-4 pl-5">
+      <div class="row oppy-proposal p-4">
         <div class="col-sm-6 col-lg-7 mb-3">
           <h2 class="text-uppercase">Nossa Proposta</h2>
           <p>Inserir imigrantes (homens e mulheres) no mercado de trabalho do país destino, gerando valor agregado aos seus currículos, por meio do uso de ferramentas digitais que lhes permitam adquirir habilidades técnicas, e sem desconsiderar suas próprias bagagens pessoais e profissionais.</p>
