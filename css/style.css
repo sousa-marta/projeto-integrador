@@ -24,24 +24,11 @@ h3 {font-size:30px;}
 h4 {font-size:25px;}
 h5 {font-size:18px; font-weight: bold;}
 
-
-/* button {
-  color: #FFF;
-  background:#005662;
-  border: none;
-  text-transform: uppercase;
-}
-
-button:hover, button:focus {
-  background: #4FB3BF;
-  color: #000;
-} */
-
 .btn {
   padding: 1.0vh 2.2vh;
 }
 
-/*Turquesa*/
+/*Botão Turquesa*/
 .btn-primary {
   color: #FFF;
   background:#005662;
@@ -54,7 +41,7 @@ button:hover, button:focus {
   color: #000;
 }
 
-/*Amarelo*/
+/*Botão Amarelo*/
 .btn-secondary {
   color: #000;
   background:#FFD54F;
@@ -65,9 +52,6 @@ button:hover, button:focus {
 .btn-secondary:hover, .btn-secondary:focus {
   background: #4FB3BF;
 }
-
-
-
 
 .row {
   margin-left: 0;
@@ -88,11 +72,6 @@ a:hover, a:focus {
   color: #005662;
 }
 
-/* nav .btn-dark:hover, nav .btn-dark:focus {
-  background: #FFD54F;
-  color: #000;
-} */
-
 .indent {
   text-indent: 1.8em;
 }
@@ -104,7 +83,6 @@ a:hover, a:focus {
   font-weight: bold;
   width: 100%;
 }
-
 /* Fim CONFIGURAÇÕES GERAIS  */
 
 /* Início HEADER */
@@ -385,22 +363,15 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
 .list-green{
   background-color:#005662
 }
-
-
-
 /* Fim OPORTUNIDADES */
 
-/* Início APOIO-GERAL */
-
+/* Início APOIO */
 .apoio-banner {
-  height:50vh;
-  display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .h1-apoio {
-  /* font-size: 4.5rem; */
   color: #005662;
 }
 
@@ -437,24 +408,7 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
   background-repeat: no-repeat;
   background-color: #FFF;
 }
-
-.texto-apoio {
-  height: 70vh;
-  display:flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-}
-
-.texto-apoio p {
-  /* font-size: 1.5em; */
-  font-style: italic;
-}
-/* Fim APOIO-GERAL */
-
-/* INSERIR STYLE PRA PÁGINA APOIO JURÍDICO */
-
-/* INSERIR STYLE PRA PÁGINA APOIO PROFISSIONAL */
+/* Fim APOIO */
 
 /* Inicio APOIO PSICOLÓGICO */ 
 .support-introduction {

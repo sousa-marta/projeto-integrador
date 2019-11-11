@@ -1,39 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Apoio</title>
-    <link rel="icon" href="img/favicon.ico">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Baloo&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Apoio</title>
+  <link rel="icon" href="img/favicon.ico">
+  <!-- Fontes -->
+  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<?php include_once('header.php') ?>
+  <?php include_once('header.php') ?>
 
-    <!-- Navegação Breadcrumb  -->
+    <!-- Breadcrumb  -->
     <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
+      <ol class="breadcrumb">
         <li class="breadcrumb-item"><a class="breadcrumb-item-link" href="index.php">Home</a></li>
         <li class="breadcrumb-item active" aria-current="page">Apoio</li>
-        </ol>
+      </ol>
     </nav>
 
+    <main>
     <!-- Banner -->
-
-    <section class="container apoio-banner">
-        <div class="row align-items-center">
-            <div class="col-lg-6 col-md-6 banner-img">
-                <img class="img-fluid" src="img/banner-apoio.svg" alt="apoio">
-            </div>
-            <div class="col-lg-6 col-md-6 banner-img">
-                <h2 class="h2-apoio text-center">Ajudando você a começar</h2>
-            </div>
+    <section class="container-fluid">      
+      <div class="row apoio-banner text-center">
+        <img class="col-sm-6" src="img/banner-apoio.svg" aria-hidden="true" alt="">
+        <div class="col-sm-6">
+          <h1>Ajudando você a recomeçar</h1>
         </div>
+      </div>
     </section>
 
     <!-- Corpo -->
@@ -220,7 +220,7 @@
       </div>
     </div>
 
-    
+    </main>
 
     <!-- Banner que se move -->
 <!-- 
