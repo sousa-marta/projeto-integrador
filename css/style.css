@@ -382,78 +382,7 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
 .card-bg-green{
   background-color:#4FB3BF;
 }
-
-.card-juridico {
-  background-image: url(../img/juridico-apoio.svg);
-  background-size: 50%;
-  background-repeat: no-repeat;
-  background-color: #FFF;
-}
-
-.card-psicologico {
-  background-image: url(../img/psicologico-apoio.svg);
-  background-size: 50%;
-  background-repeat: no-repeat;
-  background-color: #FFF;
-}
-
-.card-trabalho {
-  background-image: url(../img/trabalho-apoio.svg);
-  background-size: 50%;
-  background-repeat: no-repeat;
-  background-color: #FFF;
-}
 /* Fim APOIO */
-
-/* Inicio APOIO PSICOLÓGICO */ 
-/*.support-introduction {
-  align-items: center;
-  height: 50vh;
-  text-align: center;
-}
-
-.support-introduction-img img, .support-details-img img, .testimony-img img {
-  border-radius: 50%;
-  height: 50%;
-  width: 50%;
-}
-
-.support-introduction-text {
-  align-content: center;
-}
-
-.support-introduction-text h1 {
-  justify-content: center;
-}
-
-.support-details {
-  background: #005662;
-  height: 50vh;
-}
-
-.support-metodology {
-  align-items: center;
-  color: #fff;
-  justify-content: center;
-  text-align: center;
-}
-
-.psycho-explanation {
-  height: 50vh;
-  justify-content: center;
-}
-
-.psycho-explanation h1, .psycho-explanation p {
-  padding-bottom: 5vh;
-  text-align: center;
-}
-
-.testimony {
-  height: 50vh;
-  background: #FFD54F;
-  text-align: center;
-}*/
-/* Fim APOIO PSICOLÓGICO */ 
 
 /* Início CONTRIBUA */
 .contribute-banner-session {
