@@ -6,10 +6,13 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Quem Somos</title>
   <link rel="icon" href="img/favicon.ico">
+  <!-- Fontes -->
   <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
   <?php include_once('header.php'); ?>
@@ -37,15 +40,15 @@
       <div class="row">
         <div class="col-sm-4 statistics-block mt-3">
           <img src="img/diagram.svg" alt="" class="statistics-images">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          Em 10 anos, número de imigrantes aumenta 160% no Brasil.
         </div>
         <div class="col-sm-4 statistics-block mt-3">
           <img src="img/portfolio.svg" alt="" class="statistics-images">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          Mais de 112 mil imigrantes possuem trabalho formal no Brasil.
         </div>
         <div class="col-sm-4 statistics-block mt-3">
           <img src="img/collaboration.svg" alt="" class="statistics-images">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          Iniciativas ajudam refugiados a ingressarem no mercado de trabalho brasileiro.
         </div>
       </div>
     </section>
@@ -77,7 +80,7 @@
   <section class="container-fluid oppy-values text-center pt-4 pb-4">
     <h2 class="text-uppercase">Nossos Valores</h2>
     <div class="row">
-        <div class="col-md-4 statistics-block">
+        <div class="col-md-4 statistics-block mt-3">
           <img src="img/hands.svg" alt="" class="statistics-images">
           <h5>Solidariedade</h5>
           <p>Acreditamos que dar oportunidades a essas pessoas auxilia na inserção delas na sociedade e cria um sentido mais amplo de comunidade.</p>
@@ -128,7 +131,7 @@
         <div class="col-md-4 col-lg-2 statistics-block mt-3">
           <img src="img/boy.svg" alt="" class="statistics-images">
           <h5>Yuri</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius praesentium amet soluta assumenda tenetur facere nemo, quod repudiandae excepturi esse quos, veritatis quia illum vero, nostrum ab ipsa totam neque?</p>
+          <p>Dev que acredita que programação se tornará essencial em todas as áreas em um futuro próximo e começa a investir nesse futuro desde agora.</p>
         </div>
       </div>
     </section>

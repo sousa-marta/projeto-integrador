@@ -6,10 +6,13 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Esqueceu a senha?</title>
   <link rel="icon" href="img/favicon.ico">
+  <!-- Fontes -->
   <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
   <?php include_once('header.php'); ?>
@@ -22,7 +25,7 @@
     </ol>
   </nav>
   
-  <main class="d-flex justify-content-center align-items-center">
+  <main class="d-flex justify-content-center align-items-center"style="height: 600px;">
     <form action="" method="post" class="card p-3 contact-form-design col-10 col-sm-6 col-lg-5 text-center">
       <h4>Esqueceu sua senha?</h4>
       <p>Informe seu e-mail e enviaremos para você as instruções para redefinir sua senha</p>
