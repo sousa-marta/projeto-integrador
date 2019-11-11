@@ -506,23 +506,7 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
 }
 /* Fim APOIO PSICOLÓGICO */ 
 
-/* Início CONTRIBUA-GERAL */
-/*.contribute-banner {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #00838F;
-  color: #FFF;
-  height: 30vh;
-}
-
-.contribute-background {
-  height: 70vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}*/
-
+/* Início CONTRIBUA */
 .contribute-banner-session {
   align-items: center;
   background: #005662;
@@ -536,7 +520,6 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
   display: flex;
   align-items: center;
   background: #FFFF81;
-  /* height: 80vh; */
   justify-content: center;
 }
 
@@ -544,7 +527,7 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
   width:70%;
 }
 
-/* Fim CONTRIBUA-GERAL */
+/* Fim CONTRIBUA */
 
 /* Início CONTATO */
 .contact-email {
@@ -734,16 +717,10 @@ footer img {
   width: 17vw;
 }
 
-footer h4 {
-  color:#FFF;
-}
-
 footer p {
   color: #FFF;
 }
 /* Fim FOOTER */
-
-
 
 /* Início SUPPORT-PROFESSIONAL */
 .card-bg-green{
@@ -839,7 +816,6 @@ footer p {
   .contribute-volunteer div {
     margin-bottom:1rem;
   }
-
   /* Fim CONTRIBUA */
 
   /* Início USUÁRIO */

@@ -1,8 +1,8 @@
 <header>
   <nav class="navbar navbar-expand-lg navbar-light menu fixed-top">
     <div class="col-2 pr-0 pl-0 logo-header row align-items-center">          
-      <a href="index.php"><img class="logo-mato" src="img/a_logo-img_turquesa-dark.png" alt="imagem-logo-oppy"></a>
-      <a href="index.php"><img class="logo-logotipo" src="img/b_logo-nome_turquesa-dark-white.png" alt="nome-logo-oppy"></a>
+      <a href="index.php" role="logo"><img class="logo-mato" src="img/a_logo-img_turquesa-dark.png" alt="Logo da Oppy: desenho de árvore com pessoa de pé embaixo dos galhos"></a>
+      <a href="index.php" role="logo"><img class="logo-logotipo" src="img/b_logo-nome_turquesa-dark-white.png" alt="Oppy"></a>
     </div>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
