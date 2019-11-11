@@ -373,6 +373,18 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
 .list-green{
   background-color:#005662
 }
+
+.btn-warning {
+  background: #FFD54F;
+  border: none;
+  padding: 1.5vh 2vh;
+}
+
+.btn-warning:hover, .btn-warning:focus {
+  background: #C8A415;
+}
+
+
 /* Fim OPORTUNIDADES */
 
 /* Início APOIO-GERAL */
@@ -443,12 +455,26 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
 
 /* Inicio APOIO PSICOLÓGICO */ 
 .btn-primary {
+  color: #FFF;
   background: #005662;
   border: none;
-  padding: 1.5vh 2vh;
+  text-transform: uppercase;
 }
 
 .btn-primary:hover, .btn-primary:focus {
+  color: #FFF;
+  background: #4FB3BF;
+}
+
+.btn-secundary {
+  color: #FFF;
+  background: #FFD54F;
+  border: none;
+  text-transform: uppercase;
+}
+
+.btn-secundary:hover, .btn-secundary:focus {
+  color: #FFF;
   background: #4FB3BF;
 }
 
