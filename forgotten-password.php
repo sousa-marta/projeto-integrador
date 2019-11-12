@@ -15,8 +15,10 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <!-- Header -->
   <?php include_once('header.php'); ?>
   
+  <!-- Breadcrumb -->
   <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
       <li class="breadcrumb-item"><a class="breadcrumb-item-link" href="index.php">Home</a></li>
@@ -25,8 +27,9 @@
     </ol>
   </nav>
   
-  <main class="d-flex justify-content-center align-items-center"style="height: 600px;">
-    <form action="" method="post" class="card p-3 contact-form-design col-10 col-sm-6 col-lg-5 text-center">
+  <!-- Formulário -->
+  <main class="d-flex justify-content-center align-items-center my-4 py-4">
+    <form action="" method="post" class="card my-5 p-3 contact-form-design col-10 col-sm-6 col-lg-4 text-center">
       <h4>Esqueceu sua senha?</h4>
       <p>Informe seu e-mail e enviaremos para você as instruções para redefinir sua senha</p>
       <div class="form-group p-2">
@@ -36,6 +39,7 @@
     </form>
   </main>
   
+  <!-- Footer -->
   <?php include_once('footer.php'); ?>
   
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
