@@ -280,11 +280,7 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
   color: #FFF;
 }
 
-.course-detail-main-banner-offered-by {
-  display: none;
-}
-
-.course-detail-main-banner-div-img {
+.course-detail-offered-by, .course-detail-provider {
   display: none;
 }
 
@@ -756,11 +752,11 @@ footer p {
   /* Fim QUEM SOMOS */
 
   /* Início CURSO-DETALHE */
-  .course-detail-main-banner-offered-by {
+  .course-detail-offered-by {
     display: block;
   }
   
-  .course-detail-main-banner-div-img {
+  .course-detail-provider {
     display: flex;
     justify-content: flex-end;
   }

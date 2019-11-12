@@ -6,15 +6,19 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Detalhes do Curso</title>
   <link rel="icon" href="img/favicon.ico">
+  <!-- Fontes -->
   <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-
-  <!-- CABEÇALHO -->
+  <!-- Header -->
   <?php include_once('header.php'); ?>
+  
+  <!-- Breadcrumb  -->
   <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
       <li class="breadcrumb-item"><a class="breadcrumb-item-link" href="index.php">Home</a></li>
@@ -24,7 +28,6 @@
   </nav>
 
   <main>
-
     <!-- INFORMAÇÕES GERAIS -->
     <section class="course-detail-main-banner">
 
@@ -37,7 +40,7 @@
             <h4>Hotelaria</h4>
             <h1>Curso de Atendente</h1>
           </div>
-          <div class="col-12 col-lg-6 text-right course-detail-main-banner-offered-by">
+          <div class="col-12 col-lg-6 text-right course-detail-offered-by">
             <h4>oferecido por:</h4>
             <h3>evolke Treinamentos</h3>
           </div>
@@ -46,54 +49,73 @@
         <div class="row">
           <!-- informações do curso -->
           <div class="col-12 col-lg-6 d-flex flex-column justify-content-between">
-            <div class="row"> <!-- inscritos e vagas -->
-              <div class="col-12 col-lg-6"><p><b>Inscritos:</b> 2.341</p></div>
-              <div class="col-12 col-lg-6"><p><b>Vagas:</b> 50</p></div>
-            </div>
-            <div>
-              <div class="row d-flex text-center mt-3"> <!-- cronograma-data -->
-                <div class="col-3 border course-detail-schedule-past"><p class="m-0">01/10</div>
-                <div class="col-3 border course-detail-schedule-past"><p class="m-0">31/10</div>
-                <div class="col-3 border course-detail-shedule-soon"><p class="m-0">10/11</div>
-                <div class="col-3 border"><p class="m-0">20/11</div>
+            <div class="row"> 
+              <!-- inscritos e vagas -->
+              <div class="col-12 col-lg-6">
+                <p><strong>Inscritos:</strong> 2.341</p>
               </div>
-              <div class="row d-flex text-center"> <!-- cronograma-legenda -->
-                <div class="col-3"><p class="course-detail-schedule-legend">Abertura</p></div>
-                <div class="col-3"><p class="course-detail-schedule-legend">Encerramento Inscrições</p></div>
-                <div class="col-3"><p class="course-detail-schedule-legend">Divulgação Selecionados</p></div>
-                <div class="col-3"><p class="course-detail-schedule-legend">Início Curso</p></div>
+              <div class="col-12 col-lg-6">
+                <p><strong>Vagas:</strong> 50</p>
               </div>
             </div>
-            <div class="row pb-5 mt-3"> <!-- botão escrever -->
-              <button type="button" class="col-12 btn btn-secondary">Inscrever</button>
+              <div class="row d-flex text-center mt-3"> 
+                <!-- cronograma-data -->
+                <div class="col-3 border course-detail-schedule-past">
+                  <p class="m-0">01/10</p>
+                </div>
+                <div class="col-3 border course-detail-schedule-past">
+                  <p class="m-0">31/10</p>
+                </div>
+                <div class="col-3 border course-detail-shedule-soon">
+                  <p class="m-0">10/11</p>
+                </div>
+                <div class="col-3 border">
+                  <p class="m-0">20/11</p>
+                </div>
+              </div>
+              <div class="row d-flex text-center"> 
+                <!-- cronograma-legenda -->
+                <div class="col-3">
+                  <p class="course-detail-schedule-legend">Abertura</p>
+                </div>
+                <div class="col-3">
+                  <p class="course-detail-schedule-legend">Encerramento Inscrições</p>
+                </div>
+                <div class="col-3">
+                  <p class="course-detail-schedule-legend">Divulgação Selecionados</p>
+                </div>
+                <div class="col-3">
+                  <p class="course-detail-schedule-legend">Início Curso</p>
+                </div>
+              </div>
+            <div class="row pb-5 mt-3"> 
+              <!-- botão de inscrição -->
+              <button type="submit" class="col-12 btn   btn-secondary">Inscreva-se</button>
             </div>
           </div>
           
           <!-- imagem do ofertante do treinamento -->
-          <div class="col-12 col-lg-6 course-detail-main-banner-div-img">
-            <img src="img/emp-evolke.jpg" alt="empresa treinamento" class="rounded pb-5 course-detail-logo-img">
+          <div class="col-12 col-lg-6 course-detail-provider">
+            <img src="img/emp-evolke.jpg" alt="Logo da empresa XPTO de treinamento" class="rounded pb-5 course-detail-logo-img">
           </div>
         </div>
-
       </div>
-
     </section>
     
     <!-- INFORMAÇÕES DETALHADAS -->
-    <section class="container mt-4 mb-5">
-      <h2 class="pt-4 pb-2">Informações Sobre o Curso</h2>
-      <p>Preparar profissionais para confeccionar e reparar móveis e objetos em madeira. Além disso você aprenderá a interpretar projetos e especificações em todo o seu processo fabril, através de plantas e especificações técnicas, operando equipamentos manuais e elétricos e observando as normas técnicas de segurança.</p>
-      <p><b>Duração:</b> 2 semanas</p>
-      <p><b>Requisitos:</b></p>
-      <ul class="pb-2">
-        <li><p>Idade mínima de 16 anos.</p></li>
-        <li><p>Conhecimentos equivalentes ao Ensino Fundamental completo.</p></li>
+    <section class="container mt-4 mb-5 px-4">
+      <h2 class="pt-4 pb-2">Informações sobre o curso</h2>
+      <p>Preparar profissionais para confeccionar e reparar móveis e objetos em madeira. Além disso, você aprenderá a interpretar projetos e especificações em todo o seu processo fabril, através de plantas e especificações técnicas, operando equipamentos manuais e elétricos e observando as normas técnicas de segurança.</p>
+      <p><strong>Duração:</strong> 2 semanas</p>
+      <p><strong>Requisitos:</strong></p>
+      <ul class="px-4">
+        <li>Idade mínima de 16 anos.</li>
+        <li>Conhecimentos equivalentes ao Ensino Fundamental completo.</li>
       </ul>
     </section>
 
     <!-- CURSOS SEMELHANTES -->
     <section>
-      
       <!-- div do fundo amarelo -->
       <div class="course-detail-similar-courses-top">
         <div class="container pt-3 pb-5">
@@ -107,69 +129,65 @@
           <div class="row d-flex container course-detail-div-cards">
 
             <!-- 1o card -->
-            <div class="col-8 col-lg-4 p-2">
+            <div class="col-12 col-md-8 col-lg-4 p-2">
               <div class="course-detail-card">
                 <div class="container course-detail-card-title">
-                  <span>Hotelaria</span>
-                  <h2>Curso de Porteiro</h2>
+                  <p>Hotelaria</p>
+                  <h2>Curso para Recepção</h2>
                 </div>
                 <div class="container d-flex flex-column">
-                  <img src="img/emp-direan.png" alt="empresa treinamento" class="align-self-center course-detail-logo-img-alike">
+                  <img src="img/emp-direan.png" alt="Logo da empresa XPTO de treinamento" class="align-self-center course-detail-logo-img-alike">
                   <div class="pb-2">
-                    <span><b>Inscritos:</b> 505<br></span>
-                    <span><b>Vagas:</b> 10<br></span>
-                    <span><b>Inscritos:</b> 15/11/2019<br></span>
-                    <span><b>Início:</b> 01/12/2019<br></span>
+                    <p><strong>Inscritos:</strong> 505</p>
+                    <p><strong>Vagas:</strong> 10</p>
+                    <p><strong>Inscrição até:</strong> 15/11/2019</p>
+                    <p><strong>Início:</strong> 01/12/2019</p>
                   </div>
                 </div>
               </div>
             </div>
 
             <!-- 2o card -->
-            <div class="col-8 col-lg-4 p-2">
+            <div class="col-12 col-md-8 col-lg-4 p-2">
               <div class="course-detail-card">
                 <div class="container course-detail-card-title">
-                  <span>Gastronomia</span>
-                  <h2>Curso de Cozinheiro</h2>
+                  <p>Gastronomia</p>
+                  <h2>Curso de Auxiliar</h2>
                 </div>
                 <div class="container d-flex flex-column">                
-                  <img src="img/emp-cookinglogo.png" alt="empresa treinamento" class="align-self-center course-detail-logo-img-alike">
+                  <img src="img/emp-cookinglogo.png" alt="Logo da empresa XPTO de treinamento" class="align-self-center course-detail-logo-img-alike">
                   <div class="pb-2">
-                    <span><b>Inscritos:</b> 505<br></span>
-                    <span><b>Vagas:</b> 10<br></span>
-                    <span><b>Inscritos:</b> 15/11/2019<br></span>
-                    <span><b>Início:</b> 01/12/2019<br></span>
+                    <p><strong>Inscritos:</strong> 505</p>
+                    <p><strong>Vagas:</strong> 10</p>
+                    <p><strong>Inscrição até:</strong> 15/11/2019</p>
+                    <p><strong>Início:</strong> 01/12/2019</p>
                   </div>
                 </div>
               </div>
             </div>
 
             <!-- 3o card -->
-            <div class="col-8 col-lg-4 p-2">
+            <div class="col-12 col-md-8 col-lg-4 p-2">
               <div class="course-detail-card">
                 <div class="container course-detail-card-title">
-                  <span>Serviços Gerais</span>
-                  <h2>Curso de Marceneiro</h2>
+                  <p>Serviços Gerais</p>
+                  <h2>Curso de Marcenaria</h2>
                 </div>
                 <div class="container d-flex flex-column">
-                  <img src="img/emp-marcenaria.jpg" alt="empresa treinamento" class="align-self-center course-detail-logo-img-alike">
+                  <img src="img/emp-marcenaria.jpg" alt="Logo da empresa XPTO de treinamento" class="align-self-center course-detail-logo-img-alike">
                   <div class="pb-2">
-                    <span><b>Inscritos:</b> 505<br></span>
-                    <span><b>Vagas:</b> 10<br></span>
-                    <span><b>Inscritos:</b> 15/11/2019<br></span>
-                    <span><b>Início:</b> 01/12/2019<br></span>
+                    <p><strong>Inscritos:</strong> 505</p>
+                    <p><strong>Vagas:</strong> 10</p>
+                    <p><strong>Inscrição até:</strong> 15/11/2019</p>
+                    <p><strong>Início:</strong> 01/12/2019</p>
                   </div>
                 </div>
               </div>
             </div>
-
-            
           </div>
         </div>
       </div>
-      
     </section> 
-
   </main>
 
   <!-- FOOTER -->
