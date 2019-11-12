@@ -1,14 +1,14 @@
 <header>
   <nav class="navbar navbar-expand-lg navbar-light menu fixed-top">
-    <div class="col-2 pr-0 pl-0 logo-header row align-items-center">          
-      <a href="index.php"><img class="logo-mato" src="img/a_logo-img_turquesa-dark.png" alt="imagem-logo-oppy"></a>
-      <a href="index.php"><img class="logo-logotipo" src="img/b_logo-nome_turquesa-dark-white.png" alt="nome-logo-oppy"></a>
+    <div class="col-2 pr-0 pl-0 logo-header row align-items-center">
+      <a href="index.php" role="logo"><img class="logo-mato" src="img/a_logo-img_turquesa-dark.png" alt="Logo da Oppy: desenho de árvore com pessoa de pé embaixo dos galhos"></a>
+      <a href="index.php" role="logo"><img class="logo-logotipo" src="img/b_logo-nome_turquesa-dark-white.png" alt="Oppy"></a>
     </div>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Menu recolhido">
     <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav">
+      <ul class="navbar-nav">
         <li class="nav-item active">
             <a class="nav-link" href="index.php"><span class="fa">&#xf015;</span> Home <span class="sr-only">(current)</span></a>
         </li>
@@ -36,17 +36,17 @@
         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#login-modal" href="#">Login</button>
       </ul>
     </div>
-</nav>
+  </nav>
 </header>
 
-<!-- Modal -->
+<!-- Modal do Login -->
 <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="login-modal" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <dialog class="modal-content">
       <header class="modal-header">
         <h5 class="modal-title" id="login-modal">Faça login na sua conta</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
+        <span aria-hidden="true">&times;</span>
         </button>
       </header>
       <main class="modal-body">

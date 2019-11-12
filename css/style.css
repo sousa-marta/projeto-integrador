@@ -24,24 +24,11 @@ h3 {font-size:30px;}
 h4 {font-size:25px;}
 h5 {font-size:18px; font-weight: bold;}
 
-
-/* button {
-  color: #FFF;
-  background:#005662;
-  border: none;
-  text-transform: uppercase;
-}
-
-button:hover, button:focus {
-  background: #4FB3BF;
-  color: #000;
-} */
-
 .btn {
   padding: 1.0vh 2.2vh;
 }
 
-/*Turquesa*/
+/*Botão Turquesa*/
 .btn-primary {
   color: #FFF;
   background:#005662;
@@ -54,7 +41,7 @@ button:hover, button:focus {
   color: #000;
 }
 
-/*Amarelo*/
+/*Botão Amarelo*/
 .btn-secondary {
   color: #000;
   background:#FFD54F;
@@ -63,11 +50,8 @@ button:hover, button:focus {
 }
 
 .btn-secondary:hover, .btn-secondary:focus {
-  background: #4FB3BF;
+  background: #005662;
 }
-
-
-
 
 .row {
   margin-left: 0;
@@ -88,11 +72,6 @@ a:hover, a:focus {
   color: #005662;
 }
 
-/* nav .btn-dark:hover, nav .btn-dark:focus {
-  background: #FFD54F;
-  color: #000;
-} */
-
 .indent {
   text-indent: 1.8em;
 }
@@ -104,7 +83,6 @@ a:hover, a:focus {
   font-weight: bold;
   width: 100%;
 }
-
 /* Fim CONFIGURAÇÕES GERAIS  */
 
 /* Início HEADER */
@@ -192,7 +170,6 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
   padding: 1rem 0;
   line-height: 2rem;
   background-color: #FFFF81;
-  text-align: justify;
 }
 
 .home-card {text-align: center;}
@@ -210,7 +187,7 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
   border-bottom: solid 2px #4fb3bf;
 }
 
-.home-card .card-text {text-align: justify;}
+/* .home-card .card-text {text-align: justify;} */
 
 .home-banner-apoie {background: #FFD54F;}
 
@@ -284,15 +261,6 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
 /* Fim QUEM SOMOS */
 
 /* Início CURSOS-GERAL */
-.courses-g-search {
-  background-color: #BDBDBD;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  height: 25vh;
-}
-
 .courses-g-cards {
   width: 80%;
   text-transform: uppercase;
@@ -303,10 +271,6 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
   background-color:#00838F;
   margin:0;
 }
-
-.courses-g-aside {
-  background:#FFD54F;
-}
 /* Fim CURSOS-GERAL */
 
 /* Início CURSO-DETALHE */
@@ -315,11 +279,7 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
   color: #FFF;
 }
 
-.course-detail-main-banner-offered-by {
-  display: none;
-}
-
-.course-detail-main-banner-div-img {
+.course-detail-offered-by, .course-detail-provider {
   display: none;
 }
 
@@ -370,7 +330,8 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
   margin: 20px;
 }
 
-.course-detail-div-cards { /* div que segura os cards */
+/* div que segura os cards */
+.course-detail-div-cards { 
   justify-content: center;
 }
 /* Fim CURSO-DETALHE */
@@ -385,144 +346,28 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
 .list-green{
   background-color:#005662
 }
-
-
-
 /* Fim OPORTUNIDADES */
 
-/* Início APOIO-GERAL */
-
+/* Início APOIO */
 .apoio-banner {
-  height:50vh;
-  display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.h1-apoio {
-  /* font-size: 4.5rem; */
-  color: #005662;
-}
-
 .background-apoio {
   background-color: #00838F;
-  height: 30%;
-}
-
-.p-apoio {
- color: #FFF;
 }
 
 .h4-apoio a{
   color: #FFD54F;
 }
 
-.card-juridico {
-  background-image: url(../img/juridico-apoio.svg);
-  background-size: 50%;
-  background-repeat: no-repeat;
-  background-color: #FFF;
+.card-bg-green{
+  background-color:#4FB3BF;
 }
+/* Fim APOIO */
 
-.card-psicologico {
-  background-image: url(../img/psicologico-apoio.svg);
-  background-size: 50%;
-  background-repeat: no-repeat;
-  background-color: #FFF;
-}
-
-.card-trabalho {
-  background-image: url(../img/trabalho-apoio.svg);
-  background-size: 50%;
-  background-repeat: no-repeat;
-  background-color: #FFF;
-}
-
-.texto-apoio {
-  height: 70vh;
-  display:flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-}
-
-.texto-apoio p {
-  /* font-size: 1.5em; */
-  font-style: italic;
-}
-/* Fim APOIO-GERAL */
-
-/* INSERIR STYLE PRA PÁGINA APOIO JURÍDICO */
-
-/* INSERIR STYLE PRA PÁGINA APOIO PROFISSIONAL */
-
-/* Inicio APOIO PSICOLÓGICO */ 
-.support-introduction {
-  align-items: center;
-  height: 50vh;
-  text-align: center;
-}
-
-.support-introduction-img img, .support-details-img img, .testimony-img img {
-  border-radius: 50%;
-  height: 50%;
-  width: 50%;
-}
-
-.support-introduction-text {
-  align-content: center;
-}
-
-.support-introduction-text h1 {
-  justify-content: center;
-}
-
-.support-details {
-  background: #005662;
-  height: 50vh;
-}
-
-.support-metodology {
-  align-items: center;
-  color: #fff;
-  justify-content: center;
-  text-align: center;
-}
-
-.psycho-explanation {
-  height: 50vh;
-  justify-content: center;
-}
-
-.psycho-explanation h1, .psycho-explanation p {
-  padding-bottom: 5vh;
-  text-align: center;
-}
-
-.testimony {
-  height: 50vh;
-  background: #FFD54F;
-  text-align: center;
-}
-/* Fim APOIO PSICOLÓGICO */ 
-
-/* Início CONTRIBUA-GERAL */
-/*.contribute-banner {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #00838F;
-  color: #FFF;
-  height: 30vh;
-}
-
-.contribute-background {
-  height: 70vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}*/
-
+/* Início CONTRIBUA */
 .contribute-banner-session {
   align-items: center;
   background: #005662;
@@ -536,7 +381,6 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
   display: flex;
   align-items: center;
   background: #FFFF81;
-  /* height: 80vh; */
   justify-content: center;
 }
 
@@ -544,7 +388,7 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
   width:70%;
 }
 
-/* Fim CONTRIBUA-GERAL */
+/* Fim CONTRIBUA */
 
 /* Início CONTATO */
 .contact-email {
@@ -734,30 +578,10 @@ footer img {
   width: 17vw;
 }
 
-footer h4 {
-  color:#FFF;
-}
-
 footer p {
   color: #FFF;
 }
 /* Fim FOOTER */
-
-
-
-/* Início SUPPORT-PROFESSIONAL */
-.card-bg-green{
-  background-color:#4FB3BF;
-}
-/* FIM SUPPORT-PROFESSIONAL */
-
-/* Início SUPPORT-LEGAL */
-.jumbotron{
-  background-color:#4FB3BF;
-}
-/* FIM SUPPORT-LEGAL */
-
-
 
 /* --------------------------------- MEDIAS QUERIES --------------------------------- */
 
@@ -839,7 +663,6 @@ footer p {
   .contribute-volunteer div {
     margin-bottom:1rem;
   }
-
   /* Fim CONTRIBUA */
 
   /* Início USUÁRIO */
@@ -863,6 +686,13 @@ footer p {
   h3 {font-size:3.2vw;}
   h4 {font-size:2.7vw}
   h5 {font-size:2.2vw;}
+
+  /* Início HEADER */
+  .navbar-nav {
+    background-color: transparent;
+    text-align: center;
+  }
+  /* Fim HEADER */
   
   /* Início HOME */
   .home-card-section {margin:2rem 0;}
@@ -922,16 +752,17 @@ footer p {
   /* Fim QUEM SOMOS */
 
   /* Início CURSO-DETALHE */
-  .course-detail-main-banner-offered-by {
+  .course-detail-offered-by {
     display: block;
   }
   
-  .course-detail-main-banner-div-img {
+  .course-detail-provider {
     display: flex;
     justify-content: flex-end;
   }
 
-  .course-detail-div-cards { /* div que segura os cards */
+  /* div que segura os cards */
+  .course-detail-div-cards { 
     justify-content: space-between;
   }
   /* Fim CURSO-DETALHE */

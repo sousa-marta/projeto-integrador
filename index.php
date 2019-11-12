@@ -6,31 +6,33 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Oppy</title>
   <link rel="icon" href="img/favicon.ico">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/style.css">
+  <!-- Fontes -->
   <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Baloo&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <!-- Header -->
   <?php include_once("header.php") ?>
 
   <main>
     <!-- Banner -->
     <section class="home-banner">
       <h1>Onde a esperança se reencontra</h1>
-      <button class="btn btn-primary home-btn-big" onclick="location.href='register.php'">Faça Parte Dessa Comunidade</button>
-      <button class="btn btn-primary home-btn-sm" onclick="location.href='register.php'">Faça Parte </button>
+      <button type="button" class="btn btn-primary home-btn-big" onclick="location.href='register.php'">Faça parte dessa comunidade</button>
+      <button type="button" class="btn btn-primary home-btn-sm" onclick="location.href='register.php'">Faça parte</button>
     </section>
 
     <!-- Texto Resumo Sobre o Site -->
     <section class="home-summary">
       <div class="container d-flex flex-column">
-        <p class="indent">A Oppy foi criada em 2019 com o objetivo de dar a oportunidade dos emigrantes saídos de diversas condições de vida obterem as habilidades técnicas e emocionais para entrar no mercado de trabalho de um novo país e melhorar suas condições de vida. 
-          
-        <p class="indent"> Contamos com apoio de empresas e recrutadores para conectar essa mão-de-obra qualificada e cheia de energia para aulixiar a integração dos novos habitantes do país! </p>
-        
-        <button class="btn btn-primary align-self-center my-2" onclick="location.href='about.php'">Saiba Mais</button>
+        <p class="indent">A Oppy foi criada em 2019 com o objetivo de dar a oportunidade para pessoas que emigraram obterem as habilidades técnicas e emocionais para entrar no mercado de trabalho no novo país e melhorar suas condições de vida.</p>
+        <p class="indent">Contamos com o apoio de empresas e pessoas voluntárias para conectar essa mão-de-obra qualificada e cheia de energia e auxiliar a integração delas.</p>
+        <button type="button" aria-label="Saiba mais sobre a Oppy" class="btn btn-primary align-self-center my-2" onclick="location.href='about.php'">Saiba mais</button>
       </div>
     </section>
 
@@ -40,23 +42,23 @@
         <article class="col-12 col-md-6 col-lg-4 pb-3">
           <div class="home-card d-flex flex-column align-items-center">
             <a href="about.php">
-              <img src="img/home-card-whom.png" class="home-card-img" alt="mãos se dando às mãos">
+              <img src="img/home-card-whom.png" class="home-card-img" aria-hidden="true" alt="">
             </a>
             <div>
-              <h4 class="card-title"><a href="about.php">Para você?</a></h4>
-              <p class="card-text indent">Para qualquer pessoa que deseja se integrar à comunidade de um novo país. Que busca obter informações dos passos para atingir esse objetivo, que precisa de apoio técnico, psicológico e jurídico para tal.</p>
+              <a href="about.php"><h4 class="card-title">Para você?</h4></a>
+              <p class="card-text indent">Para qualquer pessoa que deseja se integrar à comunidade de um novo país, que busca obter informações dos passos para atingir esse objetivo, que precisa de apoio técnico, psicológico e jurídico.</p>
             </div>
           </div>
         </article>
         <article class="col-12 col-md-6 col-lg-4 pb-3">
           <div class="home-card d-flex flex-column align-items-center">
             <a href="courses.php" class="d-flex justify-content-center">  
-              <img src="img/home-card-glasses2.png" class="home-card-img home-card-img-sm" alt="óculos">
-              <img src="img/home-card-glasses.png" class="home-card-img home-card-img-md" alt="óculos">
+              <img src="img/home-card-glasses2.png" class="home-card-img home-card-img-sm" aria-hidden="true" alt="">
+              <img src="img/home-card-glasses.png" class="home-card-img home-card-img-md" aria-hidden="true" alt="">
             </a>
             <div>
-              <h4 class="card-title"><a href="courses.php">Cursos</a></h4>
-              <p class="card-text indent">Em contato direto com os apoiadores que fornecem os cursos gratuitamente para o imigrantes, são disponibilizados cursos em áreas como: idiomas, estética, hotelaria, alimentação, cuidados, entreterimento, dentre outros.</p>
+              <a href="courses.php"><h4 class="card-title">Cursos</h4></a>
+              <p class="card-text indent">Por meio de nossas parcerias, disponibilizamos cursos gratuitamente para imigrantes em áreas como: idiomas, estética, hotelaria, alimentação, cuidados, entreterimento, dentre outros.</p>
             </div>
           </div>
         </article>
@@ -67,7 +69,7 @@
               </a>
               <div>
                 <h4 class="card-title"><a href="support.php">Assistências</a></h4>
-                <p class="card-text indent">Sabendo que mudar de país é algo que nunca é simples, contamos com apoiadores que dão apoio psicológico, jurídico e para encontrar o primeiro emprego no novo país. Buscamos ajudar essa transição ser a mais suave possível.</p>
+                <p class="card-text indent">Mudar de país nunca é simples, por isso, contamos com apoiadores que dão apoio psicológico, jurídico e profissional para encontrar o primeiro emprego no novo país. Buscamos ajudar a fazer essa transição ser a mais suave possível.</p>
               </div>
             </div>
         </article>
@@ -78,8 +80,8 @@
     <section class="home-banner-apoie">
       <div class="row justify-content-center align-items-center py-2">
         <h5 class="col-12 col-lg-4 text-center mt-2">Ajude-nos a ir mais longe!</h5>
-        <button class="btn btn-primary col-10 col-sm-5 col-md-5 col-lg-3" onclick="location.href='contribute-people.php'">Seja Voluntário</button>
-        <button class="btn btn-primary col-10 col-sm-5 col-md-5 col-lg-3" onclick="location.href='contribute-enterprise.php'">Seja Patrocinador</button>
+        <button type="button" aria-label="Clique para saber mais sobre como ajudar como voluntário" class="btn btn-primary col-10 col-sm-5 col-md-5 col-lg-3" onclick="location.href='contribute.php'">Seja Voluntário</button>
+        <button type="button" aria-label="Clique para saber mais sobre como apoiar como empresa" class="btn btn-primary col-10 col-sm-5 col-md-5 col-lg-3" onclick="location.href='contribute.php'">Seja Patrocinador</button>
       </div>
     </section>
   </main>

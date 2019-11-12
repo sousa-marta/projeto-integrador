@@ -6,21 +6,24 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Contribua</title>
   <link rel="icon" href="img/favicon.ico">
+  <!-- Fontes -->
   <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Baloo&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <!-- Header -->
   <?php include_once('header.php'); ?>
 
-  <!-- Navegação Breadcrumb  -->
+  <!-- Breadcrumb  -->
   <nav aria-label="breadcrumb">
-      <ol class="breadcrumb">
+    <ol class="breadcrumb">
       <li class="breadcrumb-item"><a class="breadcrumb-item-link" href="index.php">Home</a></li>
       <li class="breadcrumb-item active" aria-current="page">Contribua</li>
-      </ol>
+    </ol>
   </nav>
 
   <main>
@@ -33,102 +36,97 @@
     <section class="container text-center">
       <div class="row justify-content-center my-5">
         <div class="col-sm-12 col-md-5 col-lg-5 py-4 px-2 mx-3 mb-2 border">
-        <img src="img/contribute-volunteer.png" alt="aperto de mão">
+          <img src="img/contribute-volunteer.png" aria-hidden="true" alt="">
           <h4 class="card-title">Auxílio como Pessoa</h4>
-          <p class="card-text">Você pode contribuir oferecendo um curso ou doando um valor para ajudar a manter nossa estrutura e nossa equipe!</p>   
-          <button type="button" class="align-self-end btn btn-primary mt-3" onclick="location.href='#contribute-session-people'">Saiba mais</button>
+          <p class="card-text">Contribua oferecendo um curso ou doando um valor para ajudar a manter nossa estrutura e nossa equipe.</p> 
+          <button type="button" aria-label="Saiba mais sobre o auxílio como pessoa" class="btn btn-primary mt-3" onclick="location.href='#contribute-session-people'">Saiba mais</button>
         </div>
-        <div class="col-sm-12 col-md-5 col-lg-5 py-4 px-2 mx-3 border">
-          <img src="img/contribute-enterprise.png" alt="aperto de mão">
+
+        <div class="col-sm-12 col-md-5 col-lg-5 py-4 px-2 mx-3 mb-2 border">
+          <img src="img/contribute-enterprise.png" aria-hidden="true" alt="">
           <h4 class="card-title">Auxílio como Empresa</h4>
-          <p class="card-text">Como empresa, pode nos patrocinar em eventos, investir diretamente ou desenvolver campanhas para captação de recursos.</p>
-          <button type="button" class="btn btn-primary mt-3" onclick="location.href='#contribute-session-company'">Saiba mais</button>
+          <p class="card-text">Patrocine o nosso projeto em eventos, investa diretamente ou desenvolva campanhas para captação de recursos.</p>
+          <button type="button" aria-label="Saiba mais sobre o auxílio como empresa" class="btn btn-primary mt-3" onclick="location.href='#contribute-session-company'">Saiba mais</button>
         </div>
       </div>
     </section>
 
     <!-- Section Pessoa -->
-    <section id="contribute-session-people" >
-      <div class="container-fluid"> 
-        <div class="contribute-banner-session">
-          <h2>Seja um de nós!</h2>
-        </div>
-        <div class="contribute-text py-5">
-          <div class="text-center">
-            <!-- <h2>Voluntariado</h2> -->
-            <h3 class="mb-5">Participe de nossos projetos como <span>voluntário</span></h3>
-            <div class="row contribute-volunteer justify-content-center">
-              <div class="col-sm-12 col-md-5 col-lg-2 py-1 px-2 mx-3 mb-2 pb-3 bg-light">
-                <img src="img/contribute-volunteer-teach.png" alt="">
-                <h4>Cursos</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex quos ullam</p>
-              </div>
-              <div class="col-sm-12 col-md-5 col-lg-2 py-1 px-2 mx-3 mb-2 p-3 bg-light">
-                <img src="img/contribute-volunteer-juridical.png" alt="">
-                <h4>Jurídico</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex quos ullam 
-              </div>
-              <div class="col-sm-12 col-md-5 col-lg-2 py-1 px-2 mx-3 mb-2 p-3 bg-light">
-                <img src="img/contribute-volunteer-talk.png" alt="">
-                <h4>Psicológico</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex quos ullam 
-              </div>
-              <div class="col-sm-12 col-md-5 col-lg-2 py-1 px-2 mx-3 mb-2 p-3 bg-light">
-                <img src="img/contribute-volunteer-money.png" alt="">
-                <h4>Financeiro</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex quos ullam 
-              </div>
+    <section class="container-fluid">
+      <div class="contribute-banner-session">
+        <h2>Faça parte do time!</h2>
+      </div>
+      <div class="contribute-text p-5">
+        <div class="text-center">
+          <h3 class="mb-5">Participe de nossos projetos como voluntário</h3>
+          <div class="row contribute-volunteer justify-content-center">
+            <div class="col-sm-12 col-md-5 col-lg-2 py-1 px-2 mx-3 mb-2 pb-3 bg-light">
+              <img src="img/contribute-volunteer-teach.png" aria-hidden="true" alt="">
+              <h4>Cursos</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex quos ullam</p>
             </div>
-            <button class="btn btn-primary mt-5" onclick="location.href='contact.php'">Contate-nos</button>
+            <div class="col-sm-12 col-md-5 col-lg-2 py-1 px-2 mx-3 mb-2 p-3 bg-light">
+              <img src="img/contribute-volunteer-juridical.png" aria-hidden="true" alt="">
+              <h4>Jurídico</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex quos ullam</p>
+            </div>
+            <div class="col-sm-12 col-md-5 col-lg-2 py-1 px-2 mx-3 mb-2 p-3 bg-light">
+              <img src="img/contribute-volunteer-talk.png" aria-hidden="true" alt="">
+              <h4>Psicológico</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex quos ullam</p>
+            </div>
+            <div class="col-sm-12 col-md-5 col-lg-2 py-1 px-2 mx-3 mb-2 p-3 bg-light">
+              <img src="img/contribute-volunteer-money.png" aria-hidden="true" alt="" class="mb-1">
+              <h4>Financeiro</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex quos ullam</p>
+            </div>
           </div>
+          <button class="btn btn-primary mt-5" onclick="location.href='contact.php'">Contate-nos</button>
         </div>
       </div>
     </section>
 
     <!-- Section Empresa -->
-    <section id="contribute-session-company" >
-      <div class="container-fluid"> 
-        <div class="contribute-banner-session text-center">
-          <h2>Apoio Empresarial</h2>
-        </div>
-        <div class="text-center contribute-enterprise container">
-          <div class="row justify-content-center align-items-center mt-4 mb-5">
-            <h2>Organizações que nos apoiam</h2>
-            <div class="row justify-content-center my-3">
-              <div class="col-6 col-md-3">
-                <img src="img/contribute-enterprise-logo1.png" alt="">
-              </div>
-              <div class="col-6 col-md-3">
-                <img src="img/contribute-enterprise-logo2.jpg" alt="">
-              </div>
-              <div class="col-6 col-md-3">
-                <img src="img/contribute-enterprise-logo1.png" alt="">
-              </div>
-              <div class="col-6 col-md-3">
-                <img src="img/contribute-enterprise-logo2.jpg" alt="">
-              </div>
-              <div class="col-6 col-md-3">
-                <img src="img/contribute-enterprise-logo2.jpg" alt="">
-              </div>
-              <div class="col-6 col-md-3">
-                <img src="img/contribute-enterprise-logo1.png" alt="">
-              </div>
-              <div class="col-6 col-md-3">
-                <img src="img/contribute-enterprise-logo2.jpg" alt="">
-              </div>
-              <div class="col-6 col-md-3">
-                <img src="img/contribute-enterprise-logo1.png" alt="">
-              </div>         
+    <section class="container-fluid">
+      <div class="contribute-banner-session">
+        <h2>Apoio Empresarial</h2>
+      </div>
+      <div class="text-center contribute-enterprise container">
+        <div class="row justify-content-center align-items-center mt-4 mb-5">
+          <h3>Organizações que nos apoiam</h3>
+          <div class="row justify-content-center my-3">
+            <div class="col-6 col-md-3">
+              <img src="img/contribute-enterprise-logo1.png" alt="">
             </div>
+            <div class="col-6 col-md-3">
+              <img src="img/contribute-enterprise-logo2.jpg" alt="">
+            </div>
+            <div class="col-6 col-md-3">
+              <img src="img/contribute-enterprise-logo1.png" alt="">
+            </div>
+            <div class="col-6 col-md-3">
+              <img src="img/contribute-enterprise-logo2.jpg" alt="">
+            </div>
+            <div class="col-6 col-md-3">
+              <img src="img/contribute-enterprise-logo2.jpg" alt="">
+            </div>
+            <div class="col-6 col-md-3">
+              <img src="img/contribute-enterprise-logo1.png" alt="">
+            </div>
+            <div class="col-6 col-md-3">
+              <img src="img/contribute-enterprise-logo2.jpg" alt="">
+            </div>
+            <div class="col-6 col-md-3">
+              <img src="img/contribute-enterprise-logo1.png" alt="">
+            </div>         
           </div>
         </div>
       </div>
     </section>
-
-
-
-  <?php include_once('footer.php'); ?>
   </main>
+
+  <!-- Footer -->
+  <?php include_once('footer.php'); ?>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 
