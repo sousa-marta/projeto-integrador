@@ -28,8 +28,8 @@
   </nav>
   
   <!-- Formulário -->
-  <main class="d-flex justify-content-center align-items-center my-4 py-4">
-    <form action="" method="post" class="card my-5 p-3 contact-form-design col-10 col-sm-6 col-lg-4 text-center">
+  <main class="d-flex justify-content-center align-items-center my-5 py-5">
+    <form action="" method="post" class="card p-3 col-10 col-sm-7 col-lg-5 contact-form-design text-center">
       <h4>Esqueceu sua senha?</h4>
       <p>Informe seu e-mail e enviaremos para você as instruções para redefinir sua senha</p>
       <div class="form-group p-2">
