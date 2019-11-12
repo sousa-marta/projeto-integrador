@@ -21,8 +21,10 @@ $subjects = ["Apoio","Cadastro","Cursos","Doação","Voluntariado","Outros"];
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <!-- Header -->
   <?php include_once('header.php'); ?>
   
+  <!-- Breadcrumb -->
   <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
       <li class="breadcrumb-item"><a class="breadcrumb-item-link" href="index.php">Home</a></li>
@@ -31,6 +33,7 @@ $subjects = ["Apoio","Cadastro","Cursos","Doação","Voluntariado","Outros"];
   </nav>
   
   <main class="container-fluid">
+    <!-- Formulário de Contato -->
     <h1 class="pages-title-bg d-flex justify-content-center align-items-center">Contato</h1>
     <div class="row align-self-center justify-content-center mb-3">
     <form action="" method="post" class="card col-sm-8 col-lg-6 contact-form-design">
@@ -65,6 +68,7 @@ $subjects = ["Apoio","Cadastro","Cursos","Doação","Voluntariado","Outros"];
     </form>
     </div>
   
+    <!-- Perguntas e Respostas -->
     <h1 class="pages-title-bg d-flex justify-content-center align-items-center m-0">FAQ</h1>
     
     <div class="accordion pl-3 pr-3 pb-5 questions-bg" id="questionsTopicOne">
@@ -110,6 +114,8 @@ $subjects = ["Apoio","Cadastro","Cursos","Doação","Voluntariado","Outros"];
     </div>
     </div>
   </main>
+
+  <!-- Footer -->
   <?php include_once('footer.php'); ?>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

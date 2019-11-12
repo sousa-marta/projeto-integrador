@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <!-- Header -->
   <?php include_once('header.php'); ?>
   
   <!-- Breadcrumb -->
@@ -39,15 +40,15 @@
       <h2 class="text-uppercase pb-3">Dados estatísticos</h2>
       <div class="row">
         <div class="col-sm-4 statistics-block mt-3">
-          <img src="img/diagram.svg" alt="" class="statistics-images">
-          Em 10 anos, número de imigrantes aumenta 160% no Brasil.
+          <img src="img/diagram.svg" aria-hidden="true" alt="" class="statistics-images">
+          Em 10 anos, o número de imigrantes aumentou 160% no Brasil.
         </div>
         <div class="col-sm-4 statistics-block mt-3">
-          <img src="img/portfolio.svg" alt="" class="statistics-images">
+          <img src="img/portfolio.svg" aria-hidden="true" alt="" class="statistics-images">
           Mais de 112 mil imigrantes possuem trabalho formal no Brasil.
         </div>
         <div class="col-sm-4 statistics-block mt-3">
-          <img src="img/collaboration.svg" alt="" class="statistics-images">
+          <img src="img/collaboration.svg" aria-hidden="true" alt="" class="statistics-images">
           Iniciativas ajudam refugiados a ingressarem no mercado de trabalho brasileiro.
         </div>
       </div>
@@ -56,7 +57,7 @@
     <!-- Como surgiu a Oppy? -->
     <section class="container-fluid">
       <div class="row oppy-info p-4">
-        <img src="img/creativity.svg" alt="desenho de uma caixa com lápis, lâmpada e nuvem, representando criação" class="col-sm-6 col-lg-4">
+        <img src="img/creativity.svg" aria-hidden="true" alt="" class="col-sm-6 col-lg-4">
         <div class="col-sm-6 col-lg-7">
           <h2 class="text-uppercase mt-3">Como surgiu a oppy?</h2>
           <p>Criada em 2019 com o objetivo de integrar milhões de emigrantes do mundo a seus países receptores, facilitando a aquisição de habilidades técnicas que lhes permitam entrar no mercado de trabalho e melhorar suas condições de vida. Além disso, conta com o apoio de empresas e recrutadores para conectar essa mão-de-obra qualificada de modo a garantir que essas pessoas alcancem seus objetivos.</p>
@@ -71,33 +72,32 @@
           <h2 class="text-uppercase">Nossa Proposta</h2>
           <p>Inserir imigrantes (homens e mulheres) no mercado de trabalho do país destino, gerando valor agregado aos seus currículos, por meio do uso de ferramentas digitais que lhes permitam adquirir habilidades técnicas, e sem desconsiderar suas próprias bagagens pessoais e profissionais.</p>
         </div>
-        <img src="img/population-system.svg" alt="desenho de duas mãos segurando a rede de conexões de uma pessoa" class="col-sm-6 col-lg-4">
+        <img src="img/population-system.svg" aria-hidden="true" alt="" class="col-sm-6 col-lg-4">
       </div>
     </section>
-  </main>
 
-  <!-- Nossos Valores -->
-  <section class="container-fluid oppy-values text-center pt-4 pb-4">
-    <h2 class="text-uppercase">Nossos Valores</h2>
-    <div class="row">
-        <div class="col-md-4 statistics-block mt-3">
-          <img src="img/hands.svg" alt="" class="statistics-images">
-          <h5>Solidariedade</h5>
-          <p>Acreditamos que dar oportunidades a essas pessoas auxilia na inserção delas na sociedade e cria um sentido mais amplo de comunidade.</p>
-        </div>
-        <div class="col-md-4 statistics-block mt-3">
-          <img src="img/reliability.svg" alt="" class="statistics-images">
-          <h5>Integridade</h5>
-          <p>Trabalhamos com responsabilidade e comprometimento para cumprir cada um dos processos que permitem o crescimento de nossos beneficiários.</p>
-        </div>
-        <div class="col-md-4 statistics-block mt-3">
-          <img src="img/discussion.svg" alt="" class="statistics-images">
-          <h5>Inovação</h5>
-          <p>Sabemos da importância de se manter atualizado nessa era digital e, por isso, buscamos oferecer as melhores ferramentas que auxiliem nessa adaptação e atualização pessoal.</p>
+    <!-- Nossos Valores -->
+    <section class="container-fluid oppy-values text-center pt-4 pb-4">
+      <h2 class="text-uppercase">Nossos Valores</h2>
+      <div class="row">
+          <div class="col-md-4 statistics-block mt-3">
+            <img src="img/hands.svg" aria-hidden="true" alt="" class="statistics-images">
+            <h5>Solidariedade</h5>
+            <p>Acreditamos que dar oportunidades a essas pessoas auxilia na inserção delas na sociedade e cria um sentido mais amplo de comunidade.</p>
+          </div>
+          <div class="col-md-4 statistics-block mt-3">
+            <img src="img/reliability.svg" aria-hidden="true" alt="" class="statistics-images">
+            <h5>Integridade</h5>
+            <p>Trabalhamos com responsabilidade e comprometimento para cumprir cada um dos processos que permitem o crescimento de nossos beneficiários.</p>
+          </div>
+          <div class="col-md-4 statistics-block mt-3">
+            <img src="img/discussion.svg" aria-hidden="true" alt="" class="statistics-images">
+            <h5>Inovação</h5>
+            <p>Sabemos da importância de se manter atualizado nessa era digital e, por isso, buscamos oferecer as melhores ferramentas que auxiliem nessa adaptação e atualização pessoal.</p>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
     <!-- O time -->
     <section class="container-fluid text-center team-info pt-4 pb-4">
@@ -135,6 +135,9 @@
         </div>
       </div>
     </section>
+  </main>
+
+  <!-- Footer -->
   <?php include_once('footer.php'); ?>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
