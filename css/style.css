@@ -170,7 +170,6 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
   padding: 1rem 0;
   line-height: 2rem;
   background-color: #FFFF81;
-  text-align: justify;
 }
 
 .home-card {text-align: center;}
@@ -188,7 +187,7 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
   border-bottom: solid 2px #4fb3bf;
 }
 
-.home-card .card-text {text-align: justify;}
+/* .home-card .card-text {text-align: justify;} */
 
 .home-banner-apoie {background: #FFD54F;}
 
@@ -331,7 +330,8 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
   margin: 20px;
 }
 
-.course-detail-div-cards { /* div que segura os cards */
+/* div que segura os cards */
+.course-detail-div-cards { 
   justify-content: center;
 }
 /* Fim CURSO-DETALHE */
@@ -761,7 +761,8 @@ footer p {
     justify-content: flex-end;
   }
 
-  .course-detail-div-cards { /* div que segura os cards */
+  /* div que segura os cards */
+  .course-detail-div-cards { 
     justify-content: space-between;
   }
   /* Fim CURSO-DETALHE */
