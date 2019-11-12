@@ -9,7 +9,7 @@
   <!-- Fontes -->
   <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+  
   <!-- CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
@@ -34,35 +34,35 @@
       </section>
  
       <!-- Conteúdo Central da Página -->
-      <section class="col-md-8 col-lg-9 order-2">
+      <section class="col-lg-9 order-2">
       
         <!-- Categorias de Cursos Imagens -->
         <div class="row justify-content-center my-4">
-          <div class="col-lg-5 col-md-10 d-flex flex-column align-items-center">
+          <div class="col-lg-5 col-sm-6 d-flex flex-column align-items-center">
             <div class="courses-g-cards my-4">
               <h5 class="card-title text-center py-2">Idiomas</h5>
               <img src="img/courses-g-languages.jpg" aria-hidden="true" alt="" class="card-img-bottom">
             </div>
           </div>
-          <div class="col-lg-5 col-md-10 d-flex flex-column align-items-center">
+          <div class="col-lg-5 col-sm-6 d-flex flex-column align-items-center">
             <div class="courses-g-cards my-4">
               <h5 class="card-title text-center py-2">Saúde</h5>
               <img src="img/courses-g-health.jpg"aria-hidden="true" alt="" class="card-img-bottom">
             </div>
           </div>
-          <div class="col-lg-5 col-md-10 d-flex flex-column align-items-center">
+          <div class="col-lg-5 col-sm-6 d-flex flex-column align-items-center">
             <div class="courses-g-cards my-4">
               <h5 class="card-title text-center py-2">Beleza</h5>
               <img src="img/courses-g-beauty.jpg" aria-hidden="true" alt="" class="card-img-bottom">
             </div>
           </div>
-          <div class="col-lg-5 col-md-10 d-flex flex-column align-items-center">
+          <div class="col-lg-5 col-sm-6 d-flex flex-column align-items-center">
             <div class="courses-g-cards my-4">
               <h5 class="card-title text-center py-2">Programação</h5>
               <img src="img/courses-g-programming.jpg" aria-hidden="true" alt="" class="card-img-bottom">
             </div>
           </div>
-          <div class="col-lg-5 col-md-10 d-flex flex-column align-items-center">
+          <div class="col-lg-5 col-sm-6 d-flex flex-column align-items-center">
             <div class="courses-g-cards my-4">
               <h5 class="card-title text-center py-2">Direção</h5>
               <img src="img/courses-g-car.jpg" aria-hidden="true" alt="" class="card-img-bottom">
@@ -71,8 +71,8 @@
         </div>
       </section>
 
-      <!-- Barra de Navegação Lateral -->
-      <aside class="col-md-4 col-lg-3 order-1 p-3">
+      <!-- Barra de Navegação Lateral -->      
+      <aside class="complete-menu col-md-4 col-lg-3 order-1 p-3">
         <div class="list-group-item row list-green text-white">
           <h5 class="text-center">Filtros</h5>
         </div>
@@ -89,7 +89,7 @@
               <div class="panel panel-default">
                 <div class="panel-heading mt-2">
                   <h5 class="panel-title">
-                    <a data-toggle="collapse" href="#collapse1"><i class="far fa-caret-square-down"></i> Idiomas</a>
+                    <a data-toggle="collapse" href="#collapse1"><i class="fa fa-caret-square-o-down"></i> Idiomas</a>
                   </h5>
                 </div>
                 <div id="collapse1" class="panel-collapse collapse">
@@ -106,7 +106,7 @@
               <div class="panel panel-default">
                 <div class="panel-heading mt-2">
                   <h5 class="panel-title">
-                    <a data-toggle="collapse" href="#collapse2"><i class="far fa-caret-square-down"></i> Hotelaria</a>
+                    <a data-toggle="collapse" href="#collapse2"><i class="fa fa-caret-square-o-down"></i> Hotelaria</a>
                   </h5>
                 </div>
                 <div id="collapse2" class="panel-collapse collapse">
@@ -123,7 +123,7 @@
               <div class="panel panel-default">
                 <div class="panel-heading mt-2">
                   <h5 class="panel-title">
-                    <a data-toggle="collapse" href="#collapse3"><i class="far fa-caret-square-down"></i> Programação</a>
+                    <a data-toggle="collapse" href="#collapse3"><i class="fa fa-caret-square-o-down"></i> Programação</a>
                   </h5>
                 </div>
                 <div id="collapse3" class="panel-collapse collapse">
@@ -144,6 +144,16 @@
             <input type="text" class="form-control" id="busca" placeholder="Procurar...">
           </div>
           <button type="button" class="btn btn-secondary" onclick="location.href='course-detail.php'"><i class="fa fa-search"></i> Procurar Cursos</button>
+        </div>
+      </aside>
+
+      <aside class="container keyword-search">
+        <div class="list-group-item row form-group col-12 mt-3 p-3 bg-secondary">
+          <div class="form-group text-center">
+            <label class="font-weight-bold text-light" for="busca">Busca por Palavra Chave</label>
+            <input type="text" class="form-control" id="busca" placeholder="Procurar...">
+          </div>
+          <button type="button" class="btn btn-secondary col-12" onclick="location.href='course-detail.php'"><i class="fa fa-search"></i> Procurar Cursos</button>
         </div>
       </aside>
     </div>

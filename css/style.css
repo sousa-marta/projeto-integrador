@@ -271,6 +271,14 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
   background-color:#00838F;
   margin:0;
 }
+
+.complete-menu {
+  display: none;
+}
+
+.keyword-search {
+  display: flex;
+}
 /* Fim CURSOS-GERAL */
 
 /* Início CURSO-DETALHE */
@@ -432,14 +440,7 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
 }
 /* Fim CONTATO */
 
-/* INSERIR STYLE PRA PÁGINA CADASTRE-SE */
-
 /* Início LOGIN */
-/* .btn-color {
-  background-color: #47525E;
-  color: #FFF;
-} */
-
 card {
   border: #47525E;
 }
@@ -475,11 +476,6 @@ card {
   display: block;
   width: 0;
 }
-
-/* .btn-register {
-  background-color: #4FB3BF;
-  text-transform: none;
-} */
 /* Fim LOGIN */
 
 /* Início PÁGINA USUÁRIO */
@@ -530,11 +526,6 @@ card {
   height: 350px;
   border: 2px solid #FFF;
 }
-
-/* .btn-edit-info {
-  background-color: #FFD54F;
-  color: #474747;
-} */
 
 .user-page-item-inside-card-top{
   display: flex;
@@ -750,6 +741,16 @@ footer p {
     text-align: left;
   }
   /* Fim QUEM SOMOS */
+
+  /* Início CURSO-GERAL */
+  .complete-menu {
+    display: block;
+  }
+
+  .keyword-search {
+    display: none;
+  }
+  /* Fim CURSO_GERAL */
 
   /* Início CURSO-DETALHE */
   .course-detail-offered-by {
