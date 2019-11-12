@@ -28,7 +28,7 @@
 
   <main>
     <!-- Banner -->
-    <section class="container-fluid">      
+    <section class="container p-3">      
       <div class="row apoio-banner text-center">
         <img class="img-fluid col-11 col-sm-6 col-lg-5" src="img/banner-apoio.svg" aria-hidden="true" alt="">
         <div class="col-sm-6">
@@ -38,55 +38,52 @@
     </section>
 
     <!-- Resumo 3 tipos de assistência -->
-    <section class="background-apoio row justify-content-around align-itens-center">
+    <section class="background-apoio row justify-content-around align-items-center">
       <article class="col-lg-4">
-        <div class="home-card card-body">
-          <a href="#support-legal"><h4 class="h4-apoio card-title">Assistência Jurídica</a></h4>
-          <p class="text-white card-text text-center">Enim nisi officia incididunt sint qui. Lorem cupidatat voluptate incididunt et cupidatat laboris dolore eiusmod ad et veniam in magna.</p>
+        <div class="support-card">
+          <a href="#card-legal"><h4 class="h4-apoio card-title">Assistência Jurídica</a></h4>
         </div>
       </article>
       <article class="col-lg-4">
-        <div class="home-card card-body">
-          <a href="#support-psychologic"><h4 class="h4-apoio card-title">Apoio Psicológico</a></h4>
-          <p class="text-white card-text text-center">Enim nisi officia incididunt sint qui. Lorem cupidatat voluptate incididunt et cupidatat laboris dolore eiusmod ad et veniam in magna.</p>
+        <div class="support-card">
+          <a href="#card-professional"><h4 class="h4-apoio card-title">Apoio Profissional</a></h4>
         </div>
       </article>
       <article class="col-lg-4">
-        <div class="home-card card-body">
-          <a href="#support-professional"><h4 class="h4-apoio card-title">Apoio Profissional</a></h4>
-          <p class="text-white card-text text-center">Enim nisi officia incididunt sint qui. Lorem cupidatat voluptate incididunt et cupidatat laboris dolore eiusmod ad et veniam in magna.</p>
+        <div class="support-card">
+          <a href="#card-psychologic"><h4 class="h4-apoio card-title">Apoio Psicológico</a></h4>
         </div>
       </article>
     </section>
 
     <!-- Assistência Jurídica -->
-    <section>
-    <div class="container p-3 text-center">
-      <div class="row align-items-center justify-content-center">
-        <div class="col-6 col-md-4">
-          <img class="img-fluid" src="img/juridico.png" aria-hidden="true" alt="">
+    <section id ="card-legal" class="container">
+      <div class="container p-3 text-center">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-6 col-md-4">
+            <img class="img-fluid" src="img/juridico.png" aria-hidden="true" alt="">
+          </div>
+          <div class="col-md-8">
+            <h2>Conheça a assistência jurídica da Oppy</h2>
+          </div>
         </div>
-        <div class="col-md-8">
-          <h2>Conheça a assistência jurídica da Oppy</h2>
+      </div>  
+      <div class="card text-white mb-3 card-bg-green">
+        <div class="card-header">
+          <h5>O que é?</h5>
         </div>
+        <div class="card-body">
+          <p class="p-2">A assessoria jurídica a refugiados e a imigrantes é fundamental devido ao alto grau de desconhecimento da legislação brasileira por parte dessas pessoas e da sociedade em geral.</p>
+          <p class="p-2">Uma pessoa que passa a habitar um novo país sente necessidade de orientação em assuntos legais para poder se integrar devidamente ao ambiente e para ter consciência de seus direitos e deveres.</p>
+          <p class="p-2">As questões tratadas pela Oppy já envolvem pedidos de naturalização e nacionalização, vistos, previdência, casamento, acesso à educação e à saúde, entre outras.</p>
+          <p class="p-2">A Oppy possui um forte trabalho em rede, destacando-se as parcerias com Alto Comissariado das Nações Unidas para Refugiados (ACNUR), a Associação Antonio Vieira (ASAV) e o CIBAI Migrações. Ademais, integra o Fórum Permanente de Mobilidade Humana (FPMH), o Comitê Estadual de Atenção a Migrantes, Refugiados, Apátridas e Vítimas de Tráfico de Pessoas (COMIRAT-SP), e tem representantes junto ao Comitê de Acompanhamento pela Sociedade Civil sobre ações de Migração e Refúgio (CASC-Migrante) da Secretaria Nacional de Justiça.</p>
+        </div>
+        <button type="button" aria-label="Para saber mais sobre o apoio jurídico" class="btn btn-secondary btn-lg align-self-center mb-3"  onclick="location.href='contact.php'">Entre em contato</button>
       </div>
-    </div>  
-    <div class="card text-white mb-3 card-bg-green">
-      <div class="card-header">
-        <h5>O que é?</h5>
-      </div>
-      <div class="card-body">
-        <p class="p-2">A assessoria jurídica a refugiados e a imigrantes é fundamental devido ao alto grau de desconhecimento da legislação brasileira por parte dessas pessoas e da sociedade em geral.</p>
-        <p class="p-2">Uma pessoa que passa a habitar um novo país sente necessidade de orientação em assuntos legais para poder se integrar devidamente ao ambiente e para ter consciência de seus direitos e deveres.</p>
-        <p class="p-2">As questões tratadas pela Oppy já envolvem pedidos de naturalização e nacionalização, vistos, previdência, casamento, acesso à educação e à saúde, entre outras.</p>
-        <p class="p-2">A Oppy possui um forte trabalho em rede, destacando-se as parcerias com Alto Comissariado das Nações Unidas para Refugiados (ACNUR), a Associação Antonio Vieira (ASAV) e o CIBAI Migrações. Ademais, integra o Fórum Permanente de Mobilidade Humana (FPMH), o Comitê Estadual de Atenção a Migrantes, Refugiados, Apátridas e Vítimas de Tráfico de Pessoas (COMIRAT-SP), e tem representantes junto ao Comitê de Acompanhamento pela Sociedade Civil sobre ações de Migração e Refúgio (CASC-Migrante) da Secretaria Nacional de Justiça.</p>
-      </div>
-      <button type="button" aria-label="Para saber mais sobre o apoio jurídico" class="btn btn-secondary btn-lg align-self-center mb-3"  onclick="location.href='contact.php'">Entre em contato</button>
-    </div>
     </section>
 
     <!-- Mentoria Profissional -->
-    <section>
+    <section id="card-professional" class="container">
     <div class="container p-3 text-center">
       <div class="row align-items-center justify-content-center">
         <div class="col-6 col-md-4">
@@ -136,7 +133,7 @@
     </section>
     
     <!-- Apoio Psicológico -->
-    <section>
+    <section id="card-psychologic" class="container">
     <div class="container p-3 text-center">
       <div class="row align-items-center justify-content-center">
         <div class="col-6 col-md-4">
