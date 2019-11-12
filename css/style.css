@@ -4,14 +4,14 @@
   padding: 0;
 }
 
+html {scroll-behavior: smooth;}
+
 body {
   font-family: 'Lato', sans-serif;
   color: #47525E;
 }
 
-nav a {
-  font-weight: bold;
-}
+nav a {font-weight: bold;}
 
 p {
   margin: 0;
@@ -90,7 +90,7 @@ a:hover, a:focus {
   background: #FFD54FF0;
   border-bottom: 1px #FFD54F solid;
   z-index: 99;
-  height: 10vh;
+  height: 11vh;
 }
 
 .navbar-nav {
@@ -98,13 +98,13 @@ a:hover, a:focus {
   text-align: center;
 }
 
-.logo-header .logo-mato {
-  display: none;
-}
+.logo-header .logo-column, .logo-row {display: none;}
 
-.logo-header .logo-logotipo {
-  width: 30vw;
-  height: 5vh;
+.logo-header .logo-name {width: 100px;}
+
+.btn-login {
+  max-height: 9vh;
+  align-self: center;
 }
 
 nav a {color: #47525E;}
@@ -186,8 +186,6 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
   margin-top:0.5em;
   border-bottom: solid 2px #4fb3bf;
 }
-
-/* .home-card .card-text {text-align: justify;} */
 
 .home-banner-apoie {background: #FFD54F;}
 
@@ -368,6 +366,13 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
 
 .h4-apoio a{
   color: #FFD54F;
+}
+
+.support-card {
+  font-weight: bold;
+  border-bottom: solid 2px #4fb3bf;
+  margin: 1rem 0;
+  text-align: center;
 }
 
 .card-bg-green{
@@ -590,13 +595,6 @@ footer p {
 
   .pages-title-bg {height: 25vh;}
 
-  /* Início HEADER */
-  .logo-header .logo-logotipo {
-    width: 15vw;
-    height: 5vh;
-  }
-  /* Fim HEADER */
-
   /* Início HOME */
   .home-btn-sm{display:none;}
   .home-btn-big{display:flex;}
@@ -634,10 +632,7 @@ footer p {
   .pages-title-bg {height: 30vh;}
 
   /* Início HEADER */
-  .logo-header .logo-logotipo {
-    width: 10vw;
-    height: 5vh;
-  }
+  .logo-header logo-name {width: 110px;}
   /* Fim HEADER */
 
   /* Início HOME */
@@ -682,11 +677,22 @@ footer p {
   .navbar-nav {
     background-color: transparent;
     text-align: center;
+    align-items: baseline;
+  }
+
+  .menu {height: 13vh;}
+
+  .logo-header .logo-name, .logo-row {display:none;}  
+
+  .logo-header .logo-column {
+    max-height: 12vh;
+    display: flex;
   }
   /* Fim HEADER */
   
   /* Início HOME */
   .home-card-section {margin:2rem 0;}
+  .home-banner {margin-top:13vh;}
   /* Fim HOME */
 
   /* Início QUEM SOMOS */
@@ -763,38 +769,17 @@ footer p {
   }
 
   /* div que segura os cards */
-  .course-detail-div-cards { 
-    justify-content: space-between;
-  }
+  .course-detail-div-cards {justify-content: space-between;}
   /* Fim CURSO-DETALHE */
 
   /* Início FOOTER */
-  footer img {
-    width: 8vw;
-  }
+  footer img {width: 8vw;}
   /* Fim FOOTER */
 }
 
-/* Special break for the complete logo to show up (1025px and up) */
-@media (min-width: 1025px) {
-  /* Início HEADER */
-  .logo-header .logo-mato {
-    height: 10vh;
-    margin-right: 10px;
-    display: flex;
-  }
-
-  .navbar-nav {
-    background-color: transparent;
-    text-align: center;
-  }
-
-  .logo-header .logo-logotipo {
-    width: 8vw;
-    height: 5vh;
-  }
-  /* Fim HEADER */
-}
+  /* Início APOIO */
+  .support-card {margin: 2rem 0;}
+  /* Fim APOIO */
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
@@ -806,6 +791,19 @@ footer p {
   h2 {font-size:3.0vw;}
   h5 {font-size:1.7vw;}
   
+  /* Início HEADER */
+  .menu {height: 10vh;}
+
+  .logo-header .logo-name, .logo-header .logo-column {display:none;}  
+
+  .logo-header .logo-row {
+    max-height: 10vh;
+    max-width:100%;
+    display: flex;
+  }
+  /* Fim HEADER */
+
+
   /* Início HOME */
   .home-summary {padding: 3.2rem 0 2.4rem 0;}
 
@@ -817,5 +815,7 @@ footer p {
     padding-left:2rem;
     padding-right:2rem;
   }
+
+  .home-banner {margin-top:10vh;}
   /* Fim HOME */
 }
