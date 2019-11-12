@@ -29,7 +29,7 @@
   <main>
     <!-- Banner -->
     <section class="container p-3">      
-      <div class="row apoio-banner text-center">
+      <div class="row banner-support-page text-center">
         <img class="img-fluid col-11 col-sm-6 col-lg-5" src="img/banner-apoio.svg" aria-hidden="true" alt="">
         <div class="col-sm-6">
           <h1>Ajudando você a recomeçar</h1>
@@ -38,20 +38,20 @@
     </section>
 
     <!-- Resumo 3 tipos de assistência -->
-    <section class="background-apoio row justify-content-around align-items-center">
+    <section class="support-page-bg row justify-content-around align-items-center">
       <article class="col-lg-4">
         <div class="support-card">
-          <a href="#card-legal"><h4 class="h4-apoio card-title">Assistência Jurídica</a></h4>
+          <h4 class="card-title support-anchor"><a href="#card-legal">Assistência Jurídica</h4></a>
         </div>
       </article>
       <article class="col-lg-4">
         <div class="support-card">
-          <a href="#card-professional"><h4 class="h4-apoio card-title">Apoio Profissional</a></h4>
+          <h4 class="card-title support-anchor"><a href="#card-professional">Apoio Profissional</h4></a>
         </div>
       </article>
       <article class="col-lg-4">
         <div class="support-card">
-          <a href="#card-psychologic"><h4 class="h4-apoio card-title">Apoio Psicológico</a></h4>
+          <h4 class="card-title support-anchor"><a href="#card-psychologic">Apoio Psicológico</h4></a>
         </div>
       </article>
     </section>

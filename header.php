@@ -1,7 +1,7 @@
 <header>
   <nav class="navbar navbar-expand-lg navbar-light menu fixed-top">
     <div class="col-1 col-lg-2 pr-0 pl-0 logo-header row align-items-center">
-      <a href="index.php" role="logo"><img class="logo-img" src="img/a_logo-img_turquesa-dark.png" alt="Logo da Oppy: desenho de árvore com pessoa de pé embaixo dos galhos"></a>
+      <a href="index.php" role="logo" id="logo"><img class="logo-img" src="img/a_logo-img_turquesa-dark.png" alt="Logo da Oppy: desenho de árvore com pessoa de pé embaixo dos galhos"></a>
       <a href="index.php" role="logo"><img class="logo-name" src="img/b_logo-nome_turquesa-dark-white.png" alt="Oppy"></a>
     </div>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Menu recolhido">

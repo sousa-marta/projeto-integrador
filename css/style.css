@@ -97,10 +97,9 @@ a:hover, a:focus {
 
 .logo-header .logo-name {width: 100px;}
 
-nav a {color: #47525E;}
-
-nav a:hover, nav a:focus {
+.navbar-nav a:hover, .navbar-nav a:focus {
   background: #4FB3BF;
+  max-height: 98%;
   color: #FFF;
 }
 
@@ -307,14 +306,14 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
 /* Fim OPORTUNIDADES */
 
 /* Início APOIO */
-.apoio-banner {
+.banner-support-page {
   align-items: center;
   justify-content: center;
 }
 
-.background-apoio {background-color: #00838F;}
+.support-page-bg {background-color: #00838F;}
 
-.h4-apoio a {color: #FFD54F;}
+.support-anchor a {color: #FFD54F;}
 
 .support-card {
   font-weight: bold;
