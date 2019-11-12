@@ -1,5 +1,5 @@
 <header>
-  <nav class="navbar navbar-expand-lg navbar-light menu fixed-top">
+  <nav class="navbar pl-2 pr-2 navbar-expand-lg navbar-light menu fixed-top">
     <div class="col-1 col-lg-2 pr-0 pl-0 logo-header row align-items-center">
       <a href="index.php" role="logo"><img class="logo-img" src="img/a_logo-img_turquesa-dark.png" alt="Logo da Oppy: desenho de árvore com pessoa de pé embaixo dos galhos"></a>
       <a href="index.php" role="logo"><img class="logo-name" src="img/b_logo-nome_turquesa-dark-white.png" alt="Oppy"></a>
@@ -7,8 +7,8 @@
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Menu recolhido">
     <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="col-md-10 pl-0 pr-0 collapse navbar-collapse justify-content-end align-items-center" id="navbarNav">
-      <ul class="navbar-nav">
+    <div class="col-md-9 col-lg-10 pl-0 pr-0 m-0 collapse navbar-collapse justify-content-end align-items-center" id="navbarNav">
+      <ul class="navbar-nav p-0">
         <li class="nav-item active">
             <a class="nav-link" href="index.php"><span class="fa">&#xf015;</span> Home <span class="sr-only">(current)</span></a>
         </li>
