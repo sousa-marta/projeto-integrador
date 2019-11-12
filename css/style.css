@@ -18,15 +18,16 @@ p {
   font-size: 16px;
 }
 
-h1 {font-size:50px;}
-h2 {font-size:40px;}
-h3 {font-size:30px;}
-h4 {font-size:25px;}
-h5 {font-size:18px; font-weight: bold;}
-
-.btn {
-  padding: 1.0vh 2.2vh;
+h1 {font-size: 50px;}
+h2 {font-size: 40px;}
+h3 {font-size: 30px;}
+h4 {font-size: 25px;}
+h5 {
+  font-size: 18px; 
+  font-weight: bold;
 }
+
+.btn {padding: 1.0vh 2.2vh;}
 
 /*Botão Turquesa*/
 .btn-primary {
@@ -44,14 +45,12 @@ h5 {font-size:18px; font-weight: bold;}
 /*Botão Amarelo*/
 .btn-secondary {
   color: #000;
-  background:#FFD54F;
+  background: #FFD54F;
   border: none;
   text-transform: uppercase;
 }
 
-.btn-secondary:hover, .btn-secondary:focus {
-  background: #005662;
-}
+.btn-secondary:hover, .btn-secondary:focus {background: #005662;}
 
 .row {
   margin-left: 0;
@@ -63,18 +62,14 @@ h5 {font-size:18px; font-weight: bold;}
   padding-right: 0;
 }
 
-a {
-  color: #4fb3bf;
-}
+a {color: #4fb3bf;}
 
 a:hover, a:focus {
   text-decoration: none;
   color: #005662;
 }
 
-.indent {
-  text-indent: 1.8em;
-}
+.indent {text-indent: 1.8em;}
 
 .pages-title-bg {
   background-color: #005662;
@@ -90,7 +85,7 @@ a:hover, a:focus {
   background: #FFD54FF0;
   border-bottom: 1px #FFD54F solid;
   z-index: 99;
-  height: 11vh;
+  height: 10vh;
 }
 
 .navbar-nav {
@@ -98,14 +93,9 @@ a:hover, a:focus {
   text-align: center;
 }
 
-.logo-header .logo-column, .logo-row {display: none;}
+.logo-header .logo-img {display: none;}
 
 .logo-header .logo-name {width: 100px;}
-
-.btn-login {
-  max-height: 9vh;
-  align-self: center;
-}
 
 nav a {color: #47525E;}
 
@@ -116,9 +106,7 @@ nav a:hover, nav a:focus {
 
 nav #register-link {color: #005662;}
 
-nav #register-link:hover, nav #register-link:focus {
-  background: none;
-}
+nav #register-link:hover, nav #register-link:focus {background: none;}
 
 .modal-backdrop {z-index: unset;}
 
@@ -140,7 +128,7 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
 
 /* Início HOME */
 .home-banner {
-  margin-top:10vh;
+  margin-top: 10vh;
   background-image: url('../img/home-banner.jpg');
   background-size: cover;
   background-position: center;
@@ -164,7 +152,7 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
   padding: 0.5rem 2rem;
 }
 
-.home-btn-big {display:none;}
+.home-btn-big {display: none;}
 
 .home-summary {
   padding: 1rem 0;
@@ -179,11 +167,11 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
   width: 50%;
 } 
 
-.home-card-img-md {display:none;}
+.home-card-img-md {display: none;}
 
 .home-card .card-title {
   font-weight: bold;
-  margin-top:0.5em;
+  margin-top: 0.5em;
   border-bottom: solid 2px #4fb3bf;
 }
 
@@ -196,21 +184,13 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
 /* Fim HOME */
 
 /* Início QUEM SOMOS */
-.about-banner {
-  display: none;
-}
+.about-banner {display: none;}
 
-.oppy-info h2, .oppy-proposal h2 {
-  text-align: center;
-}
+.oppy-info h2, .oppy-proposal h2 {text-align: center;}
 
-.oppy-info p, .oppy-proposal p {
-  text-align: center;
-}
+.oppy-info p, .oppy-proposal p {text-align: center;}
 
-.border-config {
-  border: 1px solid grey;
-}
+.border-config {border: 1px solid grey;}
 
 .statistics-block {
   display: flex;
@@ -220,9 +200,7 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
   line-height: 1.5rem;
 }
 
-.statistics-images {
-  width: 50px;
-}
+.statistics-images {width: 50px;}
 
 .oppy-info {
   background-color: #EBF0F7;
@@ -237,9 +215,7 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
   font-weight: bold;
 }
 
-.oppy-info img, .oppy-proposal img {
-  width: 200px;
-}
+.oppy-info img, .oppy-proposal img {width: 200px;}
 
 .oppy-proposal {
   align-items: center;
@@ -253,9 +229,7 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
   font-weight: bold;
 }
 
-.oppy-values {
-  background-color: #EBF0F7;
-}
+.oppy-values {background-color: #EBF0F7;}
 /* Fim QUEM SOMOS */
 
 /* Início CURSOS-GERAL */
@@ -266,17 +240,13 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
 
 .courses-g-cards h5 {
   color: #FFF;
-  background-color:#00838F;
-  margin:0;
+  background-color: #00838F;
+  margin: 0;
 }
 
-.complete-menu {
-  display: none;
-}
+.complete-menu {display: none;}
 
-.keyword-search {
-  display: flex;
-}
+.keyword-search {display: flex;}
 /* Fim CURSOS-GERAL */
 
 /* Início CURSO-DETALHE */
@@ -285,33 +255,19 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
   color: #FFF;
 }
 
-.course-detail-offered-by, .course-detail-provider {
-  display: none;
-}
+.course-detail-offered-by, .course-detail-provider {display: none;}
 
-.course-detail-logo-img {
-  height: 200px;
-}
+.course-detail-logo-img {height: 200px;}
 
-.course-detail-schedule-past {
-  background-color: #595f66;
-}
+.course-detail-schedule-past {background-color: #595f66;}
 
-.course-detail-shedule-soon {
-  background-color: #C8A415;
-}
+.course-detail-shedule-soon {background-color: #C8A415;}
 
-.course-detail-schedule-legend {
-  font-size:2.3vw;
-}
+.course-detail-schedule-legend {font-size: 2.3vw;}
 
-.course-detail-similar-courses-top {
-  background: #FFD54F;
-}
+.course-detail-similar-courses-top {background: #FFD54F;}
 
-.course-detail-similar-courses-bottom {
-  background-color: #e4e4e4;
-}
+.course-detail-similar-courses-bottom {background-color: #e4e4e4;}
 
 .course-detail-card {
   background-color: #FFF;
@@ -326,9 +282,7 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
   padding-bottom: 5px;
 }
 
-.course-detail-card-title * {
-  color: #FFF;
-}
+.course-detail-card-title * {color: #FFF;}
 
 .course-detail-logo-img-alike {
   max-height: 100px;
@@ -337,25 +291,19 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
 }
 
 /* div que segura os cards */
-.course-detail-div-cards { 
-  justify-content: center;
-}
+.course-detail-div-cards {justify-content: center;}
 /* Fim CURSO-DETALHE */
 
 /* Início OPORTUNIDADES */
 .opportunities-bg {
   background-color: #4FB3BF;
-  color:#FFF;
+  color: #FFF;
   height: 30vh;
 }
 
-.list-green{
-  background-color:#005662
-}
+.list-green {background-color: #005662;}
 
-.nowrap{
-  white-space: normal;
-}
+.nowrap {white-space: normal;}
 /* Fim OPORTUNIDADES */
 
 /* Início APOIO */
@@ -364,13 +312,9 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
   justify-content: center;
 }
 
-.background-apoio {
-  background-color: #00838F;
-}
+.background-apoio {background-color: #00838F;}
 
-.h4-apoio a{
-  color: #FFD54F;
-}
+.h4-apoio a {color: #FFD54F;}
 
 .support-card {
   font-weight: bold;
@@ -379,9 +323,7 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
   text-align: center;
 }
 
-.card-bg-green{
-  background-color:#4FB3BF;
-}
+.card-bg-green {background-color: #4FB3BF;}
 /* Fim APOIO */
 
 /* Início CONTRIBUA */
@@ -401,9 +343,7 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
   justify-content: center;
 }
 
-.contribute-text img, .contribute-enterprise img {
-  width:70%;
-}
+.contribute-text img, .contribute-enterprise img {width: 70%;}
 
 /* Fim CONTRIBUA */
 
@@ -432,21 +372,10 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
   width: 100%;
 }
 
-.questions-bg {
-  background-color: #EBF0F7;
-}
-
-.questions-subject {
-  color: #4FB3BF;
-}
-
-.plus-sign {
-  width: 20px;
-}
-
-.questions-color {
-  color: #47525E;
-}
+.questions-bg {background-color: #EBF0F7;}
+.questions-subject {color: #4FB3BF;}
+.plus-sign {width: 20px;}
+.questions-color {color: #47525E;}
 /* Fim CONTATO */
 
 /* Início LOGIN */
@@ -488,9 +417,7 @@ card {
 /* Fim LOGIN */
 
 /* Início PÁGINA USUÁRIO */
-.user-page-font-bold {
-  font-weight: bold;
-}
+.user-page-font-bold {font-weight: bold;}
 
 .user-page-main-banner {
   background-color: #005662;
@@ -514,9 +441,7 @@ card {
   position: relative;
 }
 
-.user-page-section-courses {
-  background-color: #FFD54F;
-}
+.user-page-section-courses {background-color: #FFD54F;}
 
 .user-page-item-inside-card {
   background-color: #e4e4e4;
@@ -543,9 +468,7 @@ card {
   flex-wrap: wrap;
 }
 
-.user-page-text-category {
-  text-decoration: underline;
-}
+.user-page-text-category {text-decoration: underline;}
 /* Fim PÁGINA USUÁRIO */
 
 /* Início INFORMAÇÕES USUÁRIO */
@@ -563,9 +486,7 @@ card {
   width: auto;
 }
 
-.user-info-main {
-  background-color: #FFFF81;
-}
+.user-info-main {background-color: #FFFF81;}
 /* Fim INFORMAÇÕES USUÁRIO */
 
 /* Início FOOTER */
@@ -574,13 +495,9 @@ footer {
   padding: 2% 0;
 }
 
-footer img {
-  width: 17vw;
-}
+footer img {width: 17vw;}
 
-footer p {
-  color: #FFF;
-}
+footer p {color: #FFF;}
 /* Fim FOOTER */
 
 /* --------------------------------- MEDIAS QUERIES --------------------------------- */
@@ -590,59 +507,49 @@ footer p {
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
-  p {font-size:2.7vw;}
-  h1 {font-size:8.0vw;} 
-  h2 {font-size:6.0vw;}
-  h3 {font-size:4.3vw;}
-  h4 {font-size:3.8vw;}
-  h5 {font-size:3.2vw;}
+  p {font-size: 2.7vw;}
+  h1 {font-size: 8.0vw;} 
+  h2 {font-size: 6.0vw;}
+  h3 {font-size: 4.3vw;}
+  h4 {font-size: 3.8vw;}
+  h5 {font-size: 3.2vw;}
 
   .pages-title-bg {height: 25vh;}
 
   /* Início HOME */
-  .home-btn-sm{display:none;}
-  .home-btn-big{display:flex;}
+  .home-btn-sm {display: none;}
+  .home-btn-big {display: flex;}
   /* Fim HOME */
 
   /* Início QUEM SOMOS */
-  .oppy-info img, .oppy-proposal img {
-    height: 30vh;
-  }
+  .oppy-info img, .oppy-proposal img {height: 30vh;}
   /* Fim QUEM SOMOS */
 
   /* Início CURSO-DETALHE */
-  .course-detail-schedule-legend {
-    font-size: 0.8em;
-  }
+  .course-detail-schedule-legend {font-size: 0.8em;}
   /* Fim CURSO-DETALHE */
 
   /* Início FOOTER */
-  footer img {
-    width: 15vw;
-  }
+  footer img {width: 15vw;}
   /* Fim FOOTER */
 }
 
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-  p {font-size:2.3vw;}
-  h1 {font-size:7.0vw;}
-  h2 {font-size:5.0vw;}
-  h3 {font-size:3.8vw;}
-  h4 {font-size:3.3vw;}
-  h5 {font-size:2.8vw;}
+  p {font-size: 2.3vw;}
+  h1 {font-size: 7.0vw;}
+  h2 {font-size: 5.0vw;}
+  h3 {font-size: 3.8vw;}
+  h4 {font-size: 3.3vw;}
+  h5 {font-size: 2.8vw;}
 
   .pages-title-bg {height: 30vh;}
 
-  /* Início HEADER */
-  .logo-header logo-name {width: 110px;}
-  /* Fim HEADER */
-
   /* Início HOME */
   .home-card {margin: 0 1rem;}
-  .home-card-img-sm{display:none;}
-  .home-card-img-md{display:flex;}
+  .home-card-img-sm {display: none;}
+  .home-card-img-md {display: flex;}
   .home-card-img {
     height: 60%;
     width: 60%;
@@ -650,9 +557,7 @@ footer p {
   /* Fim HOME */
 
   /* Início CONTRIBUA */
-  .contribute-volunteer div {
-    margin-bottom:1rem;
-  }
+  .contribute-volunteer div {margin-bottom: 1rem;}
   /* Fim CONTRIBUA */
 
   /* Início USUÁRIO */
@@ -660,43 +565,46 @@ footer p {
   /* Fim USUÁRIO */
 
   /* Início FOOTER */
-  footer img {
-    width: 10vw;
-  }
+  footer img {width: 10vw;}
   /* Fim FOOTER */
-
 }
 
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
-  p {font-size:1.7vw;}
-  h1 {font-size:6.0vw;}
-  h2 {font-size:4.0vw;}
-  h3 {font-size:3.2vw;}
-  h4 {font-size:2.7vw}
-  h5 {font-size:2.2vw;}
+  p {font-size: 1.7vw;}
+  h1 {font-size: 6.0vw;}
+  h2 {font-size: 4.0vw;}
+  h3 {font-size: 3.2vw;}
+  h4 {font-size: 2.7vw;}
+  h5 {font-size: 2.2vw;}
 
   /* Início HEADER */
   .navbar-nav {
     background-color: transparent;
     text-align: center;
-    align-items: baseline;
   }
 
-  .menu {height: 13vh;}
+  .btn-login {
+    padding-left: 6px;
+    padding-right: 6px;
+    align-self: center;
+  }
 
-  .logo-header .logo-name, .logo-row {display:none;}  
-
-  .logo-header .logo-column {
-    max-height: 12vh;
+  .logo-header .logo-img {
+    height: 10vh;
+    margin-right: 10px;
     display: flex;
+  }
+
+  .logo-header .logo-name {
+    width: 100%;
+    height: 5vh;
   }
   /* Fim HEADER */
   
   /* Início HOME */
-  .home-card-section {margin:2rem 0;}
-  .home-banner {margin-top:13vh;}
+  .home-card-section {margin: 2rem 0;}
   /* Fim HOME */
 
   /* Início QUEM SOMOS */
@@ -711,7 +619,6 @@ footer p {
     height: 82vh;
     text-align: center;
     color: #FFF;
-    /* justify-content: center; */
   }
   
   .bg-color {
@@ -735,37 +642,20 @@ footer p {
     font-size: 1.5em;
   }
   
-  .quotation-author {
-    font-style: italic;
-  }
-  
-  .quotation-author::before {
-    content: "\2014 \00A0";
-  }
-
-  .oppy-info h2, .oppy-proposal h2 {
-    text-align: left;
-  }
-
-  .oppy-info p, .oppy-proposal p {
-    text-align: left;
-  }
+  .quotation-author {font-style: italic;}
+  .quotation-author::before {content: "\2014 \00A0";}
+  .oppy-info h2, .oppy-proposal h2 {text-align: left;}
+  .oppy-info p, .oppy-proposal p {text-align: left;}
   /* Fim QUEM SOMOS */
 
   /* Início CURSO-GERAL */
-  .complete-menu {
-    display: block;
-  }
+  .complete-menu {display: block;}
 
-  .keyword-search {
-    display: none;
-  }
+  .keyword-search {display: none;}
   /* Fim CURSO_GERAL */
 
   /* Início CURSO-DETALHE */
-  .course-detail-offered-by {
-    display: block;
-  }
+  .course-detail-offered-by {display: block;}
   
   .course-detail-provider {
     display: flex;
@@ -776,50 +666,45 @@ footer p {
   .course-detail-div-cards {justify-content: space-between;}
   /* Fim CURSO-DETALHE */
 
+  /* Início APOIO */
+  .support-card {margin: 2rem 0;}
+  /* Fim APOIO */
+
   /* Início FOOTER */
   footer img {width: 8vw;}
   /* Fim FOOTER */
 }
 
-  /* Início APOIO */
-  .support-card {margin: 2rem 0;}
-  /* Fim APOIO */
-
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
   p {
-    font-size:1.4vw;
-    line-height:1.6;
+    font-size: 1.4vw;
+    line-height: 1.6;
   }
-  h1 {font-size:5.0vw;}
-  h2 {font-size:3.0vw;}
-  h5 {font-size:1.7vw;}
+  h1 {font-size: 5.0vw;}
+  h2 {font-size: 3.0vw;}
+  h5 {font-size: 1.7vw;}
   
   /* Início HEADER */
-  .menu {height: 10vh;}
-
-  .logo-header .logo-name, .logo-header .logo-column {display:none;}  
-
-  .logo-header .logo-row {
-    max-height: 10vh;
-    max-width:100%;
-    display: flex;
+  .btn-login {
+    padding-left: 8px;
+    padding-right: 8px;
+    align-self: center;
   }
   /* Fim HEADER */
-
 
   /* Início HOME */
   .home-summary {padding: 3.2rem 0 2.4rem 0;}
 
   .home-summary p {line-height: 2.2;}
 
-  .home-summary p {margin-bottom:1rem;}
+  .home-summary p {margin-bottom: 1rem;}
 
   .home-summary button {
-    padding-left:2rem;
-    padding-right:2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
-  .home-banner {margin-top:10vh;}
+  .home-banner {margin-top: 10vh;}
   /* Fim HOME */
 }
