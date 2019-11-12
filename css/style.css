@@ -262,15 +262,6 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
 /* Fim QUEM SOMOS */
 
 /* Início CURSOS-GERAL */
-.courses-g-search {
-  background-color: #BDBDBD;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  height: 25vh;
-}
-
 .courses-g-cards {
   width: 80%;
   text-transform: uppercase;
@@ -280,10 +271,6 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
   color: #FFF;
   background-color:#00838F;
   margin:0;
-}
-
-.courses-g-aside {
-  background:#FFD54F;
 }
 /* Fim CURSOS-GERAL */
 
