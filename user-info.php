@@ -22,8 +22,10 @@ $countries = ["Afeganistão","África do Sul","Akrotiri","Albânia","Alemanha","
 </head>
 <body>
 
-  <!-- CABEÇALHO -->
+  <!-- Header -->
   <?php include_once('header.php'); ?>
+
+  <!-- Breadcrumb -->
   <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
       <li class="breadcrumb-item"><a class="breadcrumb-item-link" href="index.php">Home</a></li>
