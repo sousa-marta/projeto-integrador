@@ -58,8 +58,8 @@
                                     <h6 class="card-text"> email: contato@padarialegal.com.br </h6>
                                     <hr>
                                     <div class="d-flex justify-content-between">
-                                        <a href="#" class="btn btn-primary">enviar curriculo</a>
-                                        <a href="courses.php" class="btn btn-secondary">verificar cursos</a>
+                                        <a href="#" class="btn btn-primary nowrap">enviar curriculo</a>
+                                        <a href="courses.php" class="btn btn-secondary nowrap">verificar cursos</a>
                                     </div>
                             </div>
                         </div>
@@ -84,8 +84,8 @@
                                     <h6 class="card-text"> email: contato@padarialegal.com.br </h6>
                                     <hr>
                                     <div class="d-flex justify-content-between">
-                                        <a href="#" class="btn btn-primary">enviar curriculo</a>
-                                        <a href="courses.php" class="btn btn-secondary">verificar cursos</a>
+                                        <a href="#" class="btn btn-primary nowrap">enviar curriculo</a>
+                                        <a href="courses.php" class="btn btn-secondary nowrap">verificar cursos</a>
                                     </div>
                             </div>
                         </div>
@@ -110,8 +110,8 @@
                                     <h6 class="card-text"> email: contato@padarialegal.com.br </h6>
                                     <hr>
                                     <div class="d-flex justify-content-between">
-                                        <a href="#" class="btn btn-primary">enviar curriculo</a>
-                                        <a href="courses.php" class="btn btn-secondary">verificar cursos</a>
+                                        <a href="#" class="btn btn-primary nowrap">enviar curriculo</a>
+                                        <a href="courses.php" class="btn btn-secondary nowrap">verificar cursos</a>
                                     </div>
                             </div>
                         </div>

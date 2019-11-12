@@ -352,6 +352,10 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
 .list-green{
   background-color:#005662
 }
+
+.nowrap{
+  white-space: normal;
+}
 /* Fim OPORTUNIDADES */
 
 /* Início APOIO */
