@@ -7,7 +7,7 @@
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Menu recolhido">
     <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="col-md-9 col-lg-10 pl-0 pr-0 m-0 collapse navbar-collapse justify-content-end align-items-center" id="navbarNav">
+    <div class="pl-0 pr-0 m-0 collapse navbar-collapse justify-content-end align-items-center" id="navbarNav">
       <ul class="navbar-nav p-0">
         <li class="nav-item active">
             <a class="nav-link" href="index.php"><span class="fa">&#xf015;</span> Home <span class="sr-only">(current)</span></a>
