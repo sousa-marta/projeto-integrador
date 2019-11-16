@@ -36,7 +36,7 @@
     </section>
 
     <!-- Dados Estatísticos -->
-    <section class="container-fluid text-center border-config pt-3 pb-3">
+    <section class="container-fluid text-center border-config py-3">
       <h2 class="text-uppercase pb-3">Dados estatísticos</h2>
       <div class="row">
         <div class="col-sm-4 statistics-block mt-3">
@@ -77,7 +77,7 @@
     </section>
 
     <!-- Nossos Valores -->
-    <section class="container-fluid oppy-values text-center pt-4 pb-4">
+    <section class="container-fluid oppy-values text-center py-4">
       <h2 class="text-uppercase">Nossos Valores</h2>
       <div class="row">
           <div class="col-md-4 statistics-block mt-3">
@@ -100,7 +100,7 @@
     </section>
 
     <!-- O time -->
-    <section class="container-fluid text-center team-info pt-4 pb-4">
+    <section class="container-fluid text-center team-info py-4">
       <h2 class="text-uppercase">As pessoas por trás de tudo isso</h2>
       <div class="row">
         <div class="col-md-4 col-lg-2 statistics-block mt-3">

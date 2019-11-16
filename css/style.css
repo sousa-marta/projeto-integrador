@@ -90,20 +90,17 @@ a:hover, a:focus {
 
 .navbar-nav {
   background-color: #FFD54F;
-  text-align: center;
+  padding: 10px;
+  line-height: normal;
 }
 
 .logo-header .logo-img {display: none;}
 
 .logo-header .logo-name {width: 100px;}
 
-.navbar-nav a:hover, .navbar-nav a:focus {
-  background: #4FB3BF;
-  max-height: 98%;
-  color: #FFF;
-}
+.fa {color: #4FB3BF;}
 
-nav #register-link {color: #005662;}
+#register-link {color: #005662;}
 
 nav #register-link:hover, nav #register-link:focus {background: none;}
 
@@ -584,6 +581,11 @@ footer p {color: #FFF;}
     text-align: center;
   }
 
+  .navbar-nav a:hover, .navbar-nav a:focus {
+    background: #FFFF81;
+    max-height: 98%;
+  }
+
   .btn-login {
     padding-left: 5px;
     padding-right: 5px;
@@ -591,10 +593,12 @@ footer p {color: #FFF;}
   }
 
   .logo-header .logo-img {
-    height: 7vh;
+    height: 10vh;
     margin-right: 5px;
     display: flex;
   }
+
+  .logo-header .logo-name {width: 90px;}
   /* Fim HEADER */
   
   /* Início HOME */
@@ -680,11 +684,7 @@ footer p {color: #FFF;}
   h5 {font-size: 1.7vw;}
 
   /* Início HEADER */
-  .logo-header .logo-img {
-    height: 10vh;
-    margin-right: 5px;
-    display: flex;
-  }
+  .logo-header .logo-name {width: 100px;}
   /* Fim HEADER */
 
   /* Início HOME */
