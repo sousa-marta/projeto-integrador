@@ -61,7 +61,7 @@
         <div class="col-8 col-md-4 m-3 user-page-card">
           <h3 class="user-page-cards-title">Vagas Concluídas</h3>
           <!-- vaga 1 -->
-          <div class="user-page-card-item m-3 p-2">
+          <div class="user-page-item-inside-card">
             <span class="badge badge-danger user-page-icon">X</span> <!-- ícone de status -->
             <div class="user-page-item-inside-card-top">
               <span class="user-page-text-category">Gastronomia</span>
@@ -70,7 +70,7 @@
             <h4>Cozinheiro</h4>
           </div>
           <!-- vaga 2 -->
-          <div class="user-page-card-item m-3 p-2">
+          <div class="user-page-item-inside-card">
             <span class="badge badge-success user-page-icon">&#10003</span> <!-- ícone de status -->
             <div class="user-page-item-inside-card-top">
               <span class="user-page-text-category">Serviços Gerais</span>
@@ -115,7 +115,7 @@
           <div class="col-8 col-md-4 m-3 user-page-card">
             <h3 class="user-page-cards-title">Cursos Concluídos</h3>
             <!-- curso 1 -->
-            <div class="user-page-card-item m-3 p-2">
+            <div class="user-page-item-inside-card">
               <span class="badge badge-success user-page-icon">&#10003</span> <!-- ícone de status -->
               <div class="user-page-item-inside-card-top">
                 <span class="user-page-text-category">Gastronomia</span>
