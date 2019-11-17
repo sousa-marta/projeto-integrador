@@ -48,13 +48,22 @@
         <div class="col-8 col-md-4 m-3 user-page-card">
           <h3 class="user-page-cards-title">Vagas Inscritas</h3>
           <!-- vaga 1 -->
-          <div class="user-page-item-inside-card">
-            <div class="user-page-item-inside-card-top">
-              <span class="user-page-text-category">Hotelaria</span>
-              <span>prazo: 20/11</span>
+          <div>
+            <!-- item -->
+            <div class="user-page-item-inside-card user-page-item-inside-card-clickable" data-toggle="dropdown">
+              <div class="user-page-item-inside-card-top">
+                <span class="user-page-text-category">Hotelaria</span>
+                <span>prazo: 20/11</span>
+              </div>
+              <h4>Recepcionista</h4>
             </div>
-            <h4>Recepcionista</h4>
+            <!-- menu quando clica -->
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Ver Detalhes</a>
+              <a class="dropdown-item" href="#">Desistir</a>
+            </div>
           </div>
+
         </div>
 
         <!-- vagas concluídas -->
@@ -69,6 +78,7 @@
             </div>
             <h4>Cozinheiro</h4>
           </div>
+          
           <!-- vaga 2 -->
           <div class="user-page-item-inside-card">
             <span class="badge badge-success user-page-icon">&#10003</span> <!-- ícone de status -->
@@ -94,20 +104,37 @@
           <div class="col-8 col-md-4 m-3 user-page-card">
             <h3 class="user-page-cards-title">Cursos Inscritos</h3>
             <!-- curso 1 -->
-            <div class="user-page-item-inside-card">
-              <div class="user-page-item-inside-card-top">
-                <span class="user-page-text-category p-1">Hotelaria</span>
-                <span>prazo: 20/11</span>
+            <div>
+              <!-- item -->
+              <div class="user-page-item-inside-card user-page-item-inside-card-clickable" data-toggle="dropdown">
+                <div class="user-page-item-inside-card-top">
+                  <span class="user-page-text-category p-1">Hotelaria</span>
+                  <span>prazo: 20/11</span>
+                </div>
+                <h4>Recepcionista</h4>
               </div>
-              <h4>Recepcionista</h4>
+              <!-- menu quando clica -->
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Ver Detalhes</a>
+                <a class="dropdown-item" href="#">Desistir</a>
+              </div>
             </div>
+              
             <!-- curso 2 -->
-            <div class="user-page-item-inside-card">
-              <div class="user-page-item-inside-card-top">
-                <span class="user-page-text-category">Serviços Gerais</span>
-                <span>prazo: 20/11</span>
+            <div>
+              <!-- item -->
+              <div class="user-page-item-inside-card user-page-item-inside-card-clickable" data-toggle="dropdown">
+                <div class="user-page-item-inside-card-top">
+                  <span class="user-page-text-category">Serviços Gerais</span>
+                  <span>prazo: 20/11</span>
+                </div>
+                <h4>Atendente</h4>
               </div>
-              <h4>Atendente</h4>
+              <!-- menu quando clica -->
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Ver Detalhes</a>
+                <a class="dropdown-item" href="#">Desistir</a>
+              </div>
             </div>
           </div>
 
