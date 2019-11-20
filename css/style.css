@@ -229,20 +229,23 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
 /* Fim QUEM SOMOS */
 
 /* Início CURSOS-GERAL */
-.courses-g-cards {
+.courses-bg-cards {
   width: 80%;
   text-transform: uppercase;
 }
 
-.courses-g-cards h5 {
+.courses-bg-cards h5 {
   color: #FFF;
   background-color: #00838F;
   margin: 0;
 }
 
-.complete-menu {display: none;}
+.btn:focus {box-shadow: none;}
 
-.keyword-search {display: flex;}
+.list-group-item:hover, .list-group-item:focus {z-index: auto;}
+
+.complete-menu {display: block;}
+
 /* Fim CURSOS-GERAL */
 
 /* Início CURSO-DETALHE */
@@ -297,7 +300,10 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
   height: 30vh;
 }
 
-.list-green {background-color: #005662;}
+.filter-title-bg {background-color: #005662;}
+
+.collapse-bg {background-color: #BDBDBD;}
+
 
 .nowrap {white-space: normal;}
 /* Fim OPORTUNIDADES */
@@ -650,12 +656,6 @@ footer p {color: #FFF;}
   .oppy-info h2, .oppy-proposal h2 {text-align: left;}
   .oppy-info p, .oppy-proposal p {text-align: left;}
   /* Fim QUEM SOMOS */
-
-  /* Início CURSO-GERAL */
-  .complete-menu {display: block;}
-
-  .keyword-search {display: none;}
-  /* Fim CURSO_GERAL */
 
   /* Início CURSO-DETALHE */
   .course-detail-offered-by {display: block;}
