@@ -490,6 +490,28 @@ card {
 .user-info-main {background-color: #FFFF81;}
 /* Fim INFORMAÇÕES USUÁRIO */
 
+
+/* Início PÁGINA ADMINISTRADOR */
+
+.admin-course-section {background-color: #fff8e3;}
+
+.admin-btn-table {
+  color: #FFF;
+  background:#005662;
+  border: none;
+  padding: 0 2px;
+  border-radius: 3px;
+}
+
+.admin-btn-table:hover, .admin-btn-table:focus {
+  background: #4FB3BF;
+  color: #000;
+}
+
+/* Fim PÁGINA ADMINISTRADOR */
+
+
+
 /* Início FOOTER */
 footer {
   background:#616161;
