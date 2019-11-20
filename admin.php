@@ -26,27 +26,30 @@
   </nav>
   
   <main>
-    <!-- botões para adicionar cursos ou oportunidades -->
-    <nav class="d-flex justify-content-end">
-      <button type="button" class="btn btn-secondary m-3"><span class="fa">&#xf19d;</span></i> +Cursos</button>
-      <button type="button" class="btn btn-secondary m-3"><span class="fa">&#xf0b1;</span></i> +Oportunidades</button>
-    </nav>
-  
-    <!-- gerenciamento dos cursos -->
-    <section class="admin-course-section p-5">
 
-			<div class="container table-responsive">
+		<!-- botões para adicionar cursos ou oportunidades -->
+		<div class="container">
+			<nav class="row d-flex justify-content-center m-2">	
+				<button type="button" class="col-12 col-md-5 col-lg-3 btn btn-secondary m-2"><span class="fa">&#xf19d;</span></i> +Cursos</button>
+				<button type="button" class="col-12 col-md-5 col-lg-3 btn btn-secondary m-2"><span class="fa">&#xf0b1;</span></i> +Oportunidades</button>
+			</nav>
+		</div>
+
+    <!-- gerenciamento dos cursos -->
+    <section class="admin-course-section admin-tables-section">
+
+			<div class="table-responsive">
 				<h2>CURSOS</h2>
 				<table class="table">
 					<thead>
 						<tr>
 							<th scope="col">#</th>
 							<th scope="col">Nome</th>
-							<th scope="col">Categoria</th>
-							<th scope="col">Empresa</th>
-							<th scope="col">Vagas</th>
-							<th scope="col">Inscritos</th>
-							<th scope="col">Encerramento Inscrições</th>
+							<th scope="col" class="d-none d-sm-table-cell">Categoria</th>
+							<th scope="col" class="d-none d-sm-table-cell">Empresa</th>
+							<th scope="col" class="d-none d-sm-table-cell">Vagas</th>
+							<th scope="col" class="d-none d-sm-table-cell">Inscritos</th>
+							<th scope="col" class="d-none d-sm-table-cell">Encerramento Inscrições</th>
 							<th scope="col">Estado</th>
 							<th scope="col">Ações</th>
 						</tr>
@@ -55,13 +58,13 @@
 						<tr>
 							<th scope="row">1</th>
 							<td>Curso de Atendente</td>
-							<td>Hotelaria</td>
-							<td>evolke Treinamentos</td>
-							<td>50</td>
-							<td>46</td>
-							<td>20/12/2019</td>
+							<td class="d-none d-sm-table-cell">Hotelaria</td>
+							<td class="d-none d-sm-table-cell">evolke Treinamentos</td>
+							<td class="d-none d-sm-table-cell">50</td>
+							<td class="d-none d-sm-table-cell">46</td>
+							<td class="d-none d-sm-table-cell">20/12/2019</td>
 							<td>Aberto</td>
-							<td>
+							<td class="d-flex justify-content-start align-items-center">
 								<button type="button" class="admin-btn-table">editar</button>
 								<button type="button" class="admin-btn-table">fechar</button>
 							</td>
@@ -69,13 +72,13 @@
 						<tr>
 							<th scope="row">2</th>
 							<td>Curso de Garçom</td>
-							<td>Serviços Gerais</td>
-							<td>Restaurando Cursos</td>
-							<td>100</td>
-							<td>12</td>
-							<td>10/12/2019</td>
+							<td class="d-none d-sm-table-cell">Serviços Gerais</td>
+							<td class="d-none d-sm-table-cell">Restaurando Cursos</td>
+							<td class="d-none d-sm-table-cell">100</td>
+							<td class="d-none d-sm-table-cell">12</td>
+							<td class="d-none d-sm-table-cell">10/12/2019</td>
 							<td>Fechado</td>
-							<td>
+							<td class="d-flex justify-content-start align-items-center">
 								<button type="button" class="admin-btn-table">editar</button>
 								<button type="button" class="admin-btn-table">fechar</button>
 							</td>
@@ -86,18 +89,18 @@
     </section>
   
     <!-- gerenciamento das vagas -->
-			<section class="p-5">
-				<div class="container table-responsive">
+			<section class="admin-tables-section">
+				<div class="table-responsive">
 					<h2>OPORTUNIDADES</h2>
 					<table class="table">
 						<thead>
 							<tr>
 								<th scope="col">#</th>
 								<th scope="col">Nome</th>
-								<th scope="col">Categoria</th>
-								<th scope="col">Empresa</th>
-								<th scope="col">Vagas</th>
-								<th scope="col">Inscritos</th>
+								<th scope="col" class="d-none d-sm-table-cell">Categoria</th>
+								<th scope="col" class="d-none d-sm-table-cell">Empresa</th>
+								<th scope="col" class="d-none d-sm-table-cell">Vagas</th>
+								<th scope="col" class="d-none d-sm-table-cell">Inscritos</th>
 								<th scope="col">Estado</th>
 								<th scope="col">Ações</th>
 							</tr>
@@ -106,12 +109,12 @@
 							<tr>
 								<th scope="row">1</th>
 								<td>Vaga de Atendente</td>
-								<td>Hotelaria</td>
-								<td>Hotel Blue Tree</td>
-								<td>1</td>
-								<td>30</td>
+								<td class="d-none d-sm-table-cell">Hotelaria</td>
+								<td class="d-none d-sm-table-cell">Hotel Blue Tree</td>
+								<td class="d-none d-sm-table-cell">1</td>
+								<td class="d-none d-sm-table-cell">30</td>
 								<td>Aberta</td>
-								<td>
+								<td class="d-flex justify-content-start align-items-center">
 									<button type="button" class="admin-btn-table">editar</button>
 									<button type="button" class="admin-btn-table">fechar</button>
 							</td>
@@ -119,12 +122,12 @@
 							<tr>
 								<th scope="row">2</th>
 								<td>Vaga de Garçom</td>
-								<td>Serviços Gerais</td>
-								<td>Habib's</td>
-								<td>2</td>
-								<td>12</td>
+								<td class="d-none d-sm-table-cell">Serviços Gerais</td>
+								<td class="d-none d-sm-table-cell">Habib's</td>
+								<td class="d-none d-sm-table-cell">2</td>
+								<td class="d-none d-sm-table-cell">12</td>
 								<td>Fechada</td>
-								<td>
+								<td class="d-flex justify-content-start align-items-center">
 									<button type="button" class="admin-btn-table">editar</button>
 									<button type="button" class="admin-btn-table">fechar</button>
 							</td>
@@ -132,12 +135,12 @@
 							<tr>
 								<th scope="row">3</th>
 								<td>Vaga Padeiro Jabaquara</td>
-								<td>Serviços Gerais</td>
-								<td>Padaria Jabaquara</td>
-								<td>1</td>
-								<td>22</td>
+								<td class="d-none d-sm-table-cell">Serviços Gerais</td>
+								<td class="d-none d-sm-table-cell">Padaria Jabaquara</td>
+								<td class="d-none d-sm-table-cell">1</td>
+								<td class="d-none d-sm-table-cell">22</td>
 								<td>Aberta</td>
-								<td>
+								<td class="d-flex justify-content-start align-items-center">
 									<button type="button" class="admin-btn-table">editar</button>
 									<button type="button" class="admin-btn-table">fechar</button>
 							</td>

@@ -492,14 +492,20 @@ card {
 
 
 /* Início PÁGINA ADMINISTRADOR */
+.admin-course-section {
+  background-color: #fff8e3;
+}
 
-.admin-course-section {background-color: #fff8e3;}
+.admin-tables-section {
+  padding: 25px 0;
+}
 
 .admin-btn-table {
   color: #FFF;
   background:#005662;
   border: none;
   padding: 0 2px;
+  margin: 0 2px;
   border-radius: 3px;
 }
 
@@ -507,7 +513,6 @@ card {
   background: #4FB3BF;
   color: #000;
 }
-
 /* Fim PÁGINA ADMINISTRADOR */
 
 
@@ -586,6 +591,10 @@ footer p {color: #FFF;}
   /* Início USUÁRIO */
   .user-page-photo {display: block;}
   /* Fim USUÁRIO */
+
+  /* Início PÁGINA ADMINISTRADOR */
+  .admin-tables-section {padding: 25px 30px;}
+  /* Fim PÁGINA ADMINISTRADOR */
 
   /* Início FOOTER */
   footer img {width: 10vw;}
