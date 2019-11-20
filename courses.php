@@ -34,36 +34,36 @@
       </section>
  
       <!-- Conteúdo Central da Página -->
-      <section class="col-lg-9 order-2">
+      <section class="col-md-8 col-lg-9 order-2">
       
         <!-- Categorias de Cursos Imagens -->
         <div class="row justify-content-center my-4">
           <div class="col-lg-5 col-sm-6 d-flex flex-column align-items-center">
-            <div class="courses-g-cards my-4">
+            <div class="courses-bg-cards my-4">
               <h5 class="card-title text-center py-2">Idiomas</h5>
               <img src="img/courses-g-languages.jpg" aria-hidden="true" alt="" class="card-img-bottom">
             </div>
           </div>
           <div class="col-lg-5 col-sm-6 d-flex flex-column align-items-center">
-            <div class="courses-g-cards my-4">
+            <div class="courses-bg-cards my-4">
               <h5 class="card-title text-center py-2">Saúde</h5>
               <img src="img/courses-g-health.jpg"aria-hidden="true" alt="" class="card-img-bottom">
             </div>
           </div>
           <div class="col-lg-5 col-sm-6 d-flex flex-column align-items-center">
-            <div class="courses-g-cards my-4">
+            <div class="courses-bg-cards my-4">
               <h5 class="card-title text-center py-2">Beleza</h5>
               <img src="img/courses-g-beauty.jpg" aria-hidden="true" alt="" class="card-img-bottom">
             </div>
           </div>
           <div class="col-lg-5 col-sm-6 d-flex flex-column align-items-center">
-            <div class="courses-g-cards my-4">
+            <div class="courses-bg-cards my-4">
               <h5 class="card-title text-center py-2">Programação</h5>
               <img src="img/courses-g-programming.jpg" aria-hidden="true" alt="" class="card-img-bottom">
             </div>
           </div>
           <div class="col-lg-5 col-sm-6 d-flex flex-column align-items-center">
-            <div class="courses-g-cards my-4">
+            <div class="courses-bg-cards my-4">
               <h5 class="card-title text-center py-2">Direção</h5>
               <img src="img/courses-g-car.jpg" aria-hidden="true" alt="" class="card-img-bottom">
             </div>
@@ -72,88 +72,54 @@
       </section>
 
       <!-- Barra de Navegação Lateral -->      
-      <aside class="complete-menu col-md-4 col-lg-3 order-1 p-3">
-        <div class="list-group-item row list-green text-white">
-          <h5 class="text-center">Filtros</h5>
-        </div>
+      <aside class="complete-menu col-md-4 col-lg-3 order-1 mt-5">
+        <button type="button" class="col-lg-12 btn rounded-0 filter-title-bg text-white text-left font-weight-bold m-0 py-3 visible-xs visible-sm collapsed" data-toggle="collapse" data-target="#collapseFilter">Filtros <span class="fa fa-angle-down px-1"></span></button>
 
-        <div class="list-group-item row form-group bg-secondary text-white border-top">
-            <h5>Área de Atuação</h5>
-        </div>
+        <!-- Iníco collapse -->
+        <div id="collapseFilter" class="collapse">
+          <button type="button" class="col-lg-12 text-white btn rounded-0 collapse-bg font-weight-bold text-left m-0 py-3" data-toggle="collapse" data-target="#collapseCategory">Área de Atuação <i class="fa fa-caret-square-o-down px-1"></i></button>
+        
+          <div id="collapseCategory" class="collapse list-group-item bg-light">
 
-        <div class="list-group-item row form-group bg-light">
-          <div class="container">
-
-            <!-- Seção com Collapses das Áreas de Cursos -->
-            <div class="panel-group">
-              <div class="panel panel-default">
-                <div class="panel-heading mt-2">
-                  <h5 class="panel-title">
-                    <a data-toggle="collapse" href="#collapse1"><i class="fa fa-caret-square-o-down"></i> Idiomas</a>
-                  </h5>
-                </div>
-                <div id="collapse1" class="panel-collapse collapse">
-                  <ul class="list-group">
-                    <li class="list-group-item"><a href="#portugues">Português</a></li>
-                    <li class="list-group-item"><a href="#ingles">Inglês</a></li>
-                    <li class="list-group-item"><a href="#espanhol">Espanhol</a></li>
-                  </ul>
-                </div>
-              </div>
+            <!-- Collapse do primeiro tópico de busca -->
+            <div>
+              <a data-toggle="collapse" href="#collapseLanguages">Idiomas<i class="fa fa-angle-down px-1"></i></a>
+                <ul id="collapseLanguages" class="collapse list-group">
+                  <li class="list-group-item"><a href="#portugues">Português</a></li>
+                  <li class="list-group-item"><a href="#ingles">Inglês</a></li>
+                  <li class="list-group-item"><a href="#espanhol">Espanhol</a></li>
+                </ul>
             </div>
 
-            <div class="panel-group">
-              <div class="panel panel-default">
-                <div class="panel-heading mt-2">
-                  <h5 class="panel-title">
-                    <a data-toggle="collapse" href="#collapse2"><i class="fa fa-caret-square-o-down"></i> Hotelaria</a>
-                  </h5>
-                </div>
-                <div id="collapse2" class="panel-collapse collapse">
-                  <ul class="list-group">
-                    <li class="list-group-item"><a href="#camareiro">Camareiro</a></li>
-                    <li class="list-group-item"><a href="#recepcionista">Recepcionista</a></li>
-                    <li class="list-group-item"><a href="#mensageiro">Mensageiro</a></li>
-                  </ul>
-                </div>
-              </div>
+            <!-- Collapse do segundo tópico de busca -->
+            <div>
+              <a data-toggle="collapse" href="#collapseHotel">Hotelaria<i class="fa fa-angle-down px-1"></i></a>
+                <ul id="collapseHotel" class="collapse list-group">
+                  <li class="list-group-item"><a href="#camareiro">Camareiro</a></li>
+                  <li class="list-group-item"><a href="#recepcionista">Recepcionista</a></li>
+                  <li class="list-group-item"><a href="#mensageiro">Mensageiro</a></li>
+                </ul>
             </div>
 
-            <div class="panel-group">
-              <div class="panel panel-default">
-                <div class="panel-heading mt-2">
-                  <h5 class="panel-title">
-                    <a data-toggle="collapse" href="#collapse3"><i class="fa fa-caret-square-o-down"></i> Programação</a>
-                  </h5>
-                </div>
-                <div id="collapse3" class="panel-collapse collapse">
-                  <ul class="list-group">
-                    <li class="list-group-item"><a href="#csshtlm">CSS + HTML</a></li>
-                    <li class="list-group-item"><a href="#phyton">Phyton</a></li>
-                    <li class="list-group-item"><a href="#logica">Lógica de Programação</a></li>
-                  </ul>
-                </div>
-              </div>
+            <!-- Collapse do terceiro tópico de busca -->
+            <div>
+              <a data-toggle="collapse" href="#collapseProgramming">Programação<i class="fa fa-angle-down px-1"></i></a>
+                <ul id="collapseProgramming" class="collapse list-group">
+                  <li class="list-group-item"><a href="#csshtlm">CSS + HTML</a></li>
+                  <li class="list-group-item"><a href="#phyton">Phyton</a></li>
+                  <li class="list-group-item"><a href="#logica">Lógica de Programação</a></li>
+                </ul>
             </div>
           </div>
-        </div>
 
+        <!-- Campo de busca por palavra -->
         <div class="list-group-item row form-group p-3 bg-secondary">
           <div class="form-group ">
             <label class="font-weight-bold text-light" for="busca">Busca por Palavra Chave</label>
             <input type="text" class="form-control" id="busca" placeholder="Procurar...">
           </div>
-          <button type="button" class="btn btn-secondary" onclick="location.href='course-detail.php'"><i class="fa fa-search"></i> Procurar Cursos</button>
+          <button type="button" class="btn btn-secondary col-lg-12" onclick="location.href='course-detail.php'"><i class="fa fa-search"></i> Buscar</button>
         </div>
-      </aside>
-
-      <aside class="container keyword-search">
-        <div class="list-group-item row form-group col-12 mt-3 p-3 bg-secondary">
-          <div class="form-group text-center">
-            <label class="font-weight-bold text-light" for="busca">Busca por Palavra Chave</label>
-            <input type="text" class="form-control" id="busca" placeholder="Procurar...">
-          </div>
-          <button type="button" class="btn btn-secondary col-12" onclick="location.href='course-detail.php'"><i class="fa fa-search"></i> Procurar Cursos</button>
         </div>
       </aside>
     </div>
