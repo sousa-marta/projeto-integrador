@@ -73,7 +73,7 @@
 
       <!-- Barra de Navegação Lateral -->      
       <aside class="complete-menu col-md-4 col-lg-3 order-1 mt-5">
-        <button type="button" class="col-lg-12 btn rounded-0 filter-title-bg text-white text-left font-weight-bold m-0 py-3" data-toggle="collapse" data-target="#collapseFilter">Filtros <span class="fa fa-angle-down px-1"></span></button>
+        <button type="button" class="col-lg-12 btn rounded-0 filter-title-bg text-white text-left font-weight-bold m-0 py-3 visible-xs visible-sm collapsed" data-toggle="collapse" data-target="#collapseFilter">Filtros <span class="fa fa-angle-down px-1"></span></button>
 
         <!-- Iníco collapse -->
         <div id="collapseFilter" class="collapse">

@@ -245,7 +245,6 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
 .list-group-item:hover, .list-group-item:focus {z-index: auto;}
 
 .complete-menu {display: block;}
-
 /* Fim CURSOS-GERAL */
 
 /* Início CURSO-DETALHE */
@@ -562,6 +561,10 @@ footer p {color: #FFF;}
     width: 60%;
   } 
   /* Fim HOME */
+
+  /* Início CURSOS */
+  #collapseFilter {display: block;}
+  /* Fim CURSOS */
 
   /* Início CONTRIBUA */
   .contribute-volunteer div {margin-bottom: 1rem;}
