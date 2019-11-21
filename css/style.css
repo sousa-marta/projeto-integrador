@@ -329,6 +329,7 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
 /* Início CONTRIBUA */
 .contribute-banner-session {
   align-items: center;
+  text-align: center;
   background: #005662;
   color: #fff;
   display: flex;
