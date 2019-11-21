@@ -69,8 +69,6 @@ a:hover, a:focus {
   color: #005662;
 }
 
-.indent {text-indent: 1.8em;}
-
 .pages-title-bg {
   background-color: #005662;
   height: 20vh;
@@ -151,9 +149,10 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
 .home-btn-big {display: none;}
 
 .home-summary {
-  padding: 1rem 0;
+  padding: 1rem 1.9rem;
   line-height: 2rem;
   background-color: #FFFF81;
+  text-align: center;
 }
 
 .home-card {text-align: center;}
@@ -616,7 +615,10 @@ footer p {color: #FFF;}
   /* Fim HEADER */
   
   /* Início HOME */
+  .home-summary {text-align: left;}
+  .indent {text-indent: 1.8em;}
   .home-card-section {margin: 2rem 0;}
+  .home-summary {padding: 3.2rem 3rem 2.4rem 3rem;}
   /* Fim HOME */
 
   /* Início QUEM SOMOS */
@@ -696,7 +698,7 @@ footer p {color: #FFF;}
   /* Fim HEADER */
 
   /* Início HOME */
-  .home-summary {padding: 3.2rem 0 2.4rem 0;}
+  .home-summary {padding: 3.2rem auto 2.4rem auto;}
 
   .home-summary p {line-height: 2.2;}
 

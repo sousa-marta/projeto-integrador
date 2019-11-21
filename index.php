@@ -29,7 +29,7 @@
 
     <!-- Texto Resumo Sobre o Site -->
     <section class="home-summary">
-      <div class="container d-flex flex-column">
+      <div class="justify-content-around align-itens-center d-flex flex-column">
         <p class="indent">A Oppy foi criada em 2019 com o objetivo de dar a oportunidade para pessoas que emigraram obterem as habilidades técnicas e emocionais para entrar no mercado de trabalho no novo país e melhorar suas condições de vida.</p>
         <p class="indent">Contamos com o apoio de empresas e pessoas voluntárias para conectar essa mão-de-obra qualificada e cheia de energia e auxiliar a integração delas.</p>
         <button type="button" aria-label="Saiba mais sobre a Oppy" class="btn btn-primary align-self-center my-2" onclick="location.href='about.php'">Saiba mais</button>
@@ -79,7 +79,7 @@
     <!-- Banner Chamada Apoiadores -->
     <section class="home-banner-apoie">
       <div class="row justify-content-center align-items-center py-2">
-        <h5 class="col-12 col-lg-4 text-center mt-2">Ajude-nos a ir mais longe!</h5>
+        <h5 class="col-12 col-lg-3 text-center mt-2">Ajude-nos a ir mais longe!</h5>
         <button type="button" aria-label="Clique para saber mais sobre como ajudar como voluntário" class="btn btn-primary col-10 col-sm-5 col-md-5 col-lg-3" onclick="location.href='contribute.php'">Seja Voluntário</button>
         <button type="button" aria-label="Clique para saber mais sobre como apoiar como empresa" class="btn btn-primary col-10 col-sm-5 col-md-5 col-lg-3" onclick="location.href='contribute.php'">Seja Patrocinador</button>
       </div>
