@@ -228,11 +228,9 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
 /* Fim QUEM SOMOS */
 
 /* Início CURSOS-GERAL */
-/*card-container */
 .courses-bg-cards {
-  /* width: 80%; */
   position: relative;
-  width: 18rem;
+  width: 90%;
   height: 300px;
   text-transform: uppercase;
   perspective: 200rem;
@@ -268,14 +266,20 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
   position:relative;
 }
 
+.flip-card-back img {
+  opacity:0.3;
+}
+
 .flip-card-back ul {
   position:absolute;
-  top:50%;
-  left:50%;
-  margin: 10% 0 0 -25%;
+  top:25%;
+  left:30%;
+  /* margin: 10% 0 0 -25%; */
 }
 
 .flip-card-back li {
+  color:#005662;
+  margin-bottom: 5px;
   list-style-type: none;
 }
 

@@ -36,10 +36,10 @@
       <!-- Conteúdo Central da Página -->
       <section class="col-md-7 col-lg-8 order-2">
       
-        <!-- Categorias de Cursos Imagens -->
+        <!-- Categorias de Cursos Imagens - Flip Cards -->
         <div class="row justify-content-center my-4">
-          <div class="col-lg-5 col-sm-6 align-items-center">
-            <div class="courses-bg-cards my-4">
+          <div class="col-lg-5 col-md-12 col-sm-6 align-items-center d-flex flex-column">
+            <div class="courses-bg-cards mb-3">
               <div class="flip-card flip-card-front">
                 <h5 class="card-title text-center py-2">Hotelaria</h5>
                 <img src="img/courses-g-hospitality.jpg" aria-hidden="true" alt="" class="card-img-bottom">
@@ -47,7 +47,7 @@
               <div class="flip-card flip-card-back">
                 <div class="card-back-body">
                   <h5 class="card-title text-center py-2">Hotelaria</h5>
-                  <!-- <img src="img/courses-g-hospitality.jpg" aria-hidden="true" alt="" class="card-img-bottom"> -->
+                  <img src="img/courses-g-hospitality.jpg" aria-hidden="true" alt="" class="card-img-bottom">
                   <ul>
                     <a href="course-detail.php"><li>Atendente</li></a>
                     <a href="#"><li>Camareiro</li></a>
@@ -57,68 +57,80 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-5 col-sm-6 align-items-center">
-            <div class="courses-bg-cards my-4">
+          <div class="col-lg-5 col-md-12 col-sm-6 align-items-center d-flex flex-column">
+            <div class="courses-bg-cards mb-2">
               <div class="flip-card flip-card-front">
-                <h5 class="card-title text-center py-2">Hotelaria</h5>
-                <img src="img/courses-g-hospitality.jpg" aria-hidden="true" alt="" class="card-img-bottom">
+                <h5 class="card-title text-center py-2">Idiomas</h5>
+                <img src="img/courses-g-languages.jpg" aria-hidden="true" alt="" class="card-img-bottom">
               </div>
               <div class="flip-card flip-card-back">
                 <div class="card-back-body">
-                  <h5 class="card-title text-center py-2">Hotelaria</h5>
-                  <!-- <img src="img/courses-g-hospitality.jpg" aria-hidden="true" alt="" class="card-img-bottom"> -->
+                  <h5 class="card-title text-center py-2">Idiomas</h5>
+                  <img src="img/courses-g-languages.jpg" aria-hidden="true" alt="" class="card-img-bottom">
                   <ul>
-                    <a href="course-detail.php"><li>Atendente</li></a>
-                    <a href="#"><li>Camareiro</li></a>
-                    <a href="#"><li>Recepcionista</li></a>
+                    <a href="#"><li>Português</li></a>
+                    <a href="#"><li>Inglês</li></a>
+                    <a href="#"><li>Espanhol</li></a>
                   </ul>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-5 col-sm-6 align-items-center">
-            <div class="courses-bg-cards my-4">
+          <div class="col-lg-5 col-md-12 col-sm-6 align-items-center d-flex flex-column">
+            <div class="courses-bg-cards mb-2">
               <div class="flip-card flip-card-front">
-                <h5 class="card-title text-center py-2">Hotelaria</h5>
-                <img src="img/courses-g-hospitality.jpg" aria-hidden="true" alt="" class="card-img-bottom">
+                <h5 class="card-title text-center py-2">Programação</h5>
+                <img src="img/courses-g-programming.jpg" aria-hidden="true" alt="" class="card-img-bottom">
               </div>
               <div class="flip-card flip-card-back">
                 <div class="card-back-body">
-                  <h5 class="card-title text-center py-2">Hotelaria</h5>
-                  <!-- <img src="img/courses-g-hospitality.jpg" aria-hidden="true" alt="" class="card-img-bottom"> -->
+                  <h5 class="card-title text-center py-2">Programação</h5>
+                  <img src="img/courses-g-programming.jpg" aria-hidden="true" alt="" class="card-img-bottom">
                   <ul>
-                    <a href="course-detail.php"><li>Atendente</li></a>
-                    <a href="#"><li>Camareiro</li></a>
-                    <a href="#"><li>Recepcionista</li></a>
+                    <a href="#"><li>CSS + HTML</li></a>
+                    <a href="#"><li>Phyton</li></a>
+                    <a href="#"><li>Lógica de Programação</li></a>
                   </ul>
                 </div>
               </div>
             </div>
           </div>
-          
-
-          <div class="col-lg-5 col-sm-6 d-flex flex-column align-items-center">
-            <div class="courses-bg-cards my-4">
-              <h5 class="card-title text-center py-2">Idiomas</h5>
-              <img src="img/courses-g-languages.jpg" aria-hidden="true" alt="" class="card-img-bottom">
+          <div class="col-lg-5 col-md-12 col-sm-6 align-items-center d-flex flex-column">
+            <div class="courses-bg-cards mb-2">
+              <div class="flip-card flip-card-front">
+                <h5 class="card-title text-center py-2">Saúde</h5>
+                <img src="img/courses-g-health.jpg" aria-hidden="true" alt="" class="card-img-bottom">
+              </div>
+              <div class="flip-card flip-card-back">
+                <div class="card-back-body">
+                  <h5 class="card-title text-center py-2">Saúde</h5>
+                  <img src="img/courses-g-health.jpg" aria-hidden="true" alt="" class="card-img-bottom">
+                  <ul>
+                    <a href="#"><li></li></a>
+                    <a href="#"><li></li></a>
+                    <a href="#"><li></li></a>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="col-lg-5 col-sm-6 d-flex flex-column align-items-center">
-            <div class="courses-bg-cards my-4">
-              <h5 class="card-title text-center py-2">Saúde</h5>
-              <img src="img/courses-g-health.jpg"aria-hidden="true" alt="" class="card-img-bottom">
-            </div>
-          </div>
-          <div class="col-lg-5 col-sm-6 d-flex flex-column align-items-center">
-            <div class="courses-bg-cards my-4">
-              <h5 class="card-title text-center py-2">Beleza</h5>
-              <img src="img/courses-g-beauty.jpg" aria-hidden="true" alt="" class="card-img-bottom">
-            </div>
-          </div>
-          <div class="col-lg-5 col-sm-6 d-flex flex-column align-items-center">
-            <div class="courses-bg-cards my-4">
-              <h5 class="card-title text-center py-2">Programação</h5>
-              <img src="img/courses-g-programming.jpg" aria-hidden="true" alt="" class="card-img-bottom">
+          <div class="col-lg-5 col-md-12 col-sm-6 align-items-center d-flex flex-column">
+            <div class="courses-bg-cards mb-2">
+              <div class="flip-card flip-card-front">
+                <h5 class="card-title text-center py-2">Beleza</h5>
+                <img src="img/courses-g-beauty.jpg" aria-hidden="true" alt="" class="card-img-bottom">
+              </div>
+              <div class="flip-card flip-card-back">
+                <div class="card-back-body">
+                  <h5 class="card-title text-center py-2">Beleza</h5>
+                  <img src="img/courses-g-beauty.jpg" aria-hidden="true" alt="" class="card-img-bottom">
+                  <ul>
+                    <a href="#"><li></li></a>
+                    <a href="#"><li></li></a>
+                    <a href="#"><li></li></a>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>
