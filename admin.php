@@ -1,3 +1,10 @@
+<?php
+
+$categories = ["Gastronomia", "Serviços Gerais", "Hotelaria"];
+$companies = ["evolke Treinamentos", "Padaria Jabaquara", "Restaurante Árabe"];
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -30,10 +37,8 @@
 		<!-- botões para adicionar empresa e voluntário -->
 		<div class="container">
 			<nav class="row d-flex justify-content-center m-2">	
-				<button type="button" class="col-md-5 col-lg-3 btn btn-secondary m-2"><i class="fa fa-building" aria-hidden="true"></i> +Empresa</button>
-				<button type="button" class="col-md-5 col-lg-3 btn btn-secondary m-2"><i class="fa fa-user-circle-o" aria-hidden="true"></i> +Voluntário</button>
-				
-				<!-- <button type="button" class="col-md-5 col-lg-3 btn btn-secondary m-2"><span class="fa">&#xf0b1;</span> +Voluntário</button> -->
+				<a class="col-md-5 col-lg-3 btn btn-secondary m-2" href="register-company.php"><i class="fa fa-building" aria-hidden="true"></i> +Empresa</a>
+				<a class="col-md-5 col-lg-3 btn btn-secondary m-2" href="register-volunteer.php"><i class="fa fa-user-circle-o" aria-hidden="true"></i> +Voluntário</a>
 			</nav>
 		</div>
 
@@ -43,7 +48,7 @@
 			<div class="table-responsive">
         <div class="d-flex justify-content-start align-items-center mb-1">
           <h2>CURSOS</h2>
-          <button type="button" class="btn btn-secondary ml-3 p-2"><i class="fa fa-plus-circle fa-2x" aria-hidden="true"></i></button>
+          <button type="button" class="btn btn-secondary ml-3 p-2" data-toggle="modal" data-target="#admin-add-course-modal" href="#"><i class="fa fa-plus-circle fa-2x" aria-hidden="true"></i></button>
         </div>
         <table class="table">
 					<thead>
@@ -92,7 +97,67 @@
 				</table>
 			</div>
     </section>
-  
+
+    <!-- Modal do Login -->
+    <div class="modal fade" id="admin-add-course-modal" tabindex="-1" role="dialog" aria-labelledby="admin-add-course-modal" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <dialog class="modal-content">
+          <header class="modal-header">
+            <h5 class="modal-title" id="admin-add-course-modal">Adicionar Curso</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+          </header>
+          <main class="modal-body">
+            <form>
+
+              <div class="form-group">
+                <label for="courseName">Nome do curso</label>
+                <input type="text" class="form-control" name="courseName" id="courseName" placeholder="Nome do curso" required>
+              </div>
+              <div class="form-group">
+                <label for="courseCategory">Catagoria</label>
+                <select class="col-lg-12" name="courseCategory" id="courseCategory" required>
+                  <option value="">Selecione a categoria</option>
+                  <?php
+                    foreach ($categories as $category) {
+                      echo "<option value='$category'>$category</option>";
+                    }
+                  ?>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="courseCompany">Empresa</label>
+                <select class="col-lg-12" name="courseCompany" id="courseCompany" required>
+                  <option value="">Selecione a empresa</option>
+                  <?php
+                    foreach ($companies as $company) {
+                      echo "<option value='$company'>$company</option>";
+                    }
+                  ?>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="courseStart">Início</label>
+                <input type="date" class="form-control" name="courseStart" id="courseStart" placeholder="Nome do curso" required>
+              </div>
+              <div class="form-group">
+                <label for="courseDuration">Duração</label>
+                <input type="text" class="form-control" name="courseDuration" id="courseDuration" placeholder="Duração" required>
+              </div>
+              <div class="form-group">
+                <label for="courseDescription">Descrição</label>
+                <textarea type="text" class="form-control" name="courseDescription" id="courseDescription" placeholder="Descrição" required></textarea>
+              </div>
+            </form>
+          </main>
+          <footer class="modal-footer modal-footer-bg-color">
+            <button type="submit" class="btn btn-primary col-lg-12">Adicionar</button>
+          </footer>
+        </dialog>
+      </div>
+    </div>
+
     <!-- gerenciamento das vagas -->
 			<section class="admin-tables-section">
 				<div class="table-responsive">

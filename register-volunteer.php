@@ -27,7 +27,7 @@ $countries = ["Afeganistão","África do Sul","Akrotiri","Albânia","Alemanha","
   <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
       <li class="breadcrumb-item"><a class="breadcrumb-item-link" href="index.php">Home</a></li>
-      <li class="breadcrumb-item"><a class="breadcrumb-item-link" href="index.php">Administrador</a></li>
+      <li class="breadcrumb-item"><a class="breadcrumb-item-link" href="admin.php">Administrador</a></li>
       <li class="breadcrumb-item active" aria-current="page">Cadastrar Voluntário</li>
     </ol>
   </nav>
@@ -43,7 +43,7 @@ $countries = ["Afeganistão","África do Sul","Akrotiri","Albânia","Alemanha","
       <!-- informações obrigatórias -->
       <div class="form-group">
         <label for="volunteerName">Nome Completo</label>
-        <input type="text" class="form-control" name="volunteerName" id="volunteerName" placeholder="Nome da empresa" required>
+        <input type="text" class="form-control" name="volunteerName" id="volunteerName" placeholder="Nome do voluntário" required>
       </div>
       <div class="form-group">
         <label for="volunteerEmail">E-mail</label>
@@ -54,18 +54,6 @@ $countries = ["Afeganistão","África do Sul","Akrotiri","Albânia","Alemanha","
         <input type="tel" class="form-control" name="volunteerPhone" id="volunteerPhone" placeholder="11 12345-1234" pattern="[0-9]{2} [0-9]{5}-[0-9]{4}" required>
         <small>Formato: 11 12345-1234</small>
       </div>
-      <label for="volunteerCountry">País</label>
-      <div class="form-group">
-        <select class="col-lg-12" name="volunteerCountry" id="volunteerCountry" required>
-          <option value="">Selecione seu país de origem</option>
-          <?php
-            foreach ($countries as $country) {
-              echo "<option value='$country'>$country</option>";
-            }
-          ?>
-        </select>
-      </div>
-
       <div class="row">
         <div class="form-group col-8 p-0">
             <label for="volunteerAddressStr">Endereço</label>
