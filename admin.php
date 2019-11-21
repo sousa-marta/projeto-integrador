@@ -27,11 +27,13 @@
   
   <main>
 
-		<!-- botões para adicionar cursos ou oportunidades -->
+		<!-- botões para adicionar empresa e voluntário -->
 		<div class="container">
 			<nav class="row d-flex justify-content-center m-2">	
-				<button type="button" class="col-12 col-md-5 col-lg-3 btn btn-secondary m-2"><span class="fa">&#xf19d;</span></i> +Cursos</button>
-				<button type="button" class="col-12 col-md-5 col-lg-3 btn btn-secondary m-2"><span class="fa">&#xf0b1;</span></i> +Oportunidades</button>
+				<button type="button" class="col-md-5 col-lg-3 btn btn-secondary m-2"><i class="fa fa-building" aria-hidden="true"></i> +Empresa</button>
+				<button type="button" class="col-md-5 col-lg-3 btn btn-secondary m-2"><i class="fa fa-user-circle-o" aria-hidden="true"></i> +Voluntário</button>
+				
+				<!-- <button type="button" class="col-md-5 col-lg-3 btn btn-secondary m-2"><span class="fa">&#xf0b1;</span> +Voluntário</button> -->
 			</nav>
 		</div>
 
@@ -39,8 +41,11 @@
     <section class="admin-course-section admin-tables-section">
 
 			<div class="table-responsive">
-				<h2>CURSOS</h2>
-				<table class="table">
+        <div class="d-flex justify-content-start align-items-center mb-1">
+          <h2>CURSOS</h2>
+          <button type="button" class="btn btn-secondary ml-3 p-2"><i class="fa fa-plus-circle fa-2x" aria-hidden="true"></i></button>
+        </div>
+        <table class="table">
 					<thead>
 						<tr>
 							<th scope="col">#</th>
@@ -91,7 +96,10 @@
     <!-- gerenciamento das vagas -->
 			<section class="admin-tables-section">
 				<div class="table-responsive">
-					<h2>OPORTUNIDADES</h2>
+          <div class="d-flex justify-content-start align-items-center mb-1">
+            <h2>OPORTUNIDADES</h2>
+            <button type="button" class="btn btn-secondary ml-3 p-2"><i class="fa fa-plus-circle fa-2x" aria-hidden="true"></i></button>
+          </div>
 					<table class="table">
 						<thead>
 							<tr>
