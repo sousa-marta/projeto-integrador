@@ -39,6 +39,28 @@
         <!-- Categorias de Cursos Imagens -->
         <div class="row justify-content-center my-4">
           <div class="col-lg-5 col-sm-6 d-flex flex-column align-items-center">
+            <div class="flip-card">
+              <div class="courses-bg-cards flip-card-inner my-4">
+                <div class="flip-card-front">
+                  <h5 class="card-title text-center py-2">Hotelaria</h5>
+                  <img src="img/courses-g-hospitality.jpg" aria-hidden="true" alt="" class="card-img-bottom">
+                </div>
+                <div class="flip-card-back">
+                  <h5 class="card-title text-center py-2">Hotelaria</h5>
+                  <ul>
+                    <a href="course-detail.php"><li>Atendente</li></a>
+                    <a href="#"><li>Camareiro</li></a>
+                    <a href="#"><li>Recepcionista</li></a>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          
+
+
+          <div class="col-lg-5 col-sm-6 d-flex flex-column align-items-center">
             <div class="courses-bg-cards my-4">
               <h5 class="card-title text-center py-2">Idiomas</h5>
               <img src="img/courses-g-languages.jpg" aria-hidden="true" alt="" class="card-img-bottom">
@@ -62,12 +84,6 @@
               <img src="img/courses-g-programming.jpg" aria-hidden="true" alt="" class="card-img-bottom">
             </div>
           </div>
-          <div class="col-lg-5 col-sm-6 d-flex flex-column align-items-center">
-            <div class="courses-bg-cards my-4">
-              <h5 class="card-title text-center py-2">Direção</h5>
-              <img src="img/courses-g-car.jpg" aria-hidden="true" alt="" class="card-img-bottom">
-            </div>
-          </div>          
         </div>
       </section>
 
@@ -83,21 +99,21 @@
 
             <!-- Collapse do primeiro tópico de busca -->
             <div>
+              <a data-toggle="collapse" href="#collapseHotel">Hotelaria<i class="fa fa-angle-down px-1"></i></a>
+                <ul id="collapseHotel" class="collapse list-group">
+                  <li class="list-group-item"><a href="#atendente">Atendente</a></li>
+                  <li class="list-group-item"><a href="#camareiro">Camareiro</a></li>
+                  <li class="list-group-item"><a href="#recepcionista">Recepcionista</a></li>
+                </ul>
+            </div>
+            
+            <!-- Collapse do segundo tópico de busca -->
+            <div>
               <a data-toggle="collapse" href="#collapseLanguages">Idiomas<i class="fa fa-angle-down px-1"></i></a>
                 <ul id="collapseLanguages" class="collapse list-group">
                   <li class="list-group-item"><a href="#portugues">Português</a></li>
                   <li class="list-group-item"><a href="#ingles">Inglês</a></li>
                   <li class="list-group-item"><a href="#espanhol">Espanhol</a></li>
-                </ul>
-            </div>
-
-            <!-- Collapse do segundo tópico de busca -->
-            <div>
-              <a data-toggle="collapse" href="#collapseHotel">Hotelaria<i class="fa fa-angle-down px-1"></i></a>
-                <ul id="collapseHotel" class="collapse list-group">
-                  <li class="list-group-item"><a href="#camareiro">Camareiro</a></li>
-                  <li class="list-group-item"><a href="#recepcionista">Recepcionista</a></li>
-                  <li class="list-group-item"><a href="#mensageiro">Mensageiro</a></li>
                 </ul>
             </div>
 
