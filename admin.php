@@ -75,7 +75,7 @@ $companies = ["evolke Treinamentos", "Padaria Jabaquara", "Restaurante Árabe"];
 							<td class="d-none d-sm-table-cell">20/12/2019</td>
 							<td>Aberto</td>
 							<td class="d-flex justify-content-start align-items-center">
-								<button type="button" class="admin-btn-table">editar</button>
+								<button type="button" class="admin-btn-table" data-toggle="modal" data-target="#admin-add-course-modal">editar</button>
 								<button type="button" class="admin-btn-table">fechar</button>
 							</td>
 						</tr>
@@ -89,7 +89,7 @@ $companies = ["evolke Treinamentos", "Padaria Jabaquara", "Restaurante Árabe"];
 							<td class="d-none d-sm-table-cell">10/12/2019</td>
 							<td>Fechado</td>
 							<td class="d-flex justify-content-start align-items-center">
-								<button type="button" class="admin-btn-table">editar</button>
+								<button type="button" class="admin-btn-table" data-toggle="modal" data-target="#admin-add-course-modal">editar</button>
 								<button type="button" class="admin-btn-table">fechar</button>
 							</td>
 						</tr>
@@ -103,7 +103,7 @@ $companies = ["evolke Treinamentos", "Padaria Jabaquara", "Restaurante Árabe"];
       <div class="modal-dialog" role="document">
         <dialog class="modal-content">
           <header class="modal-header">
-            <h5 class="modal-title" id="admin-add-course-modal">Adicionar Curso</h5>
+            <h5 class="modal-title" id="admin-add-course-modal">Adicionar/Editar Curso</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
             </button>
@@ -152,7 +152,7 @@ $companies = ["evolke Treinamentos", "Padaria Jabaquara", "Restaurante Árabe"];
             </form>
           </main>
           <footer class="modal-footer modal-footer-bg-color">
-            <button type="submit" class="btn btn-primary col-lg-12">Adicionar</button>
+            <button type="submit" class="btn btn-primary col-lg-12">Adicionar/Editar</button>
           </footer>
         </dialog>
       </div>
@@ -188,7 +188,7 @@ $companies = ["evolke Treinamentos", "Padaria Jabaquara", "Restaurante Árabe"];
               <td class="d-none d-sm-table-cell">30</td>
               <td>Aberta</td>
               <td class="d-flex justify-content-start align-items-center">
-                <button type="button" class="admin-btn-table">editar</button>
+                <button type="button" class="admin-btn-table" data-toggle="modal" data-target="#admin-add-opportunity-modal">editar</button>
                 <button type="button" class="admin-btn-table">fechar</button>
             </td>
             </tr>
@@ -201,7 +201,7 @@ $companies = ["evolke Treinamentos", "Padaria Jabaquara", "Restaurante Árabe"];
               <td class="d-none d-sm-table-cell">12</td>
               <td>Fechada</td>
               <td class="d-flex justify-content-start align-items-center">
-                <button type="button" class="admin-btn-table">editar</button>
+                <button type="button" class="admin-btn-table" data-toggle="modal" data-target="#admin-add-opportunity-modal">editar</button>
                 <button type="button" class="admin-btn-table">fechar</button>
             </td>
             </tr>
@@ -214,7 +214,7 @@ $companies = ["evolke Treinamentos", "Padaria Jabaquara", "Restaurante Árabe"];
               <td class="d-none d-sm-table-cell">22</td>
               <td>Aberta</td>
               <td class="d-flex justify-content-start align-items-center">
-                <button type="button" class="admin-btn-table">editar</button>
+                <button type="button" class="admin-btn-table" data-toggle="modal" data-target="#admin-add-opportunity-modal">editar</button>
                 <button type="button" class="admin-btn-table">fechar</button>
             </td>
             </tr>
@@ -228,7 +228,7 @@ $companies = ["evolke Treinamentos", "Padaria Jabaquara", "Restaurante Árabe"];
       <div class="modal-dialog" role="document">
         <dialog class="modal-content">
           <header class="modal-header">
-            <h5 class="modal-title" id="admin-add-opportunity-modal">Adicionar Vaga</h5>
+            <h5 class="modal-title" id="admin-add-opportunity-modal">Adicionar/Editar Vaga</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
             </button>
@@ -299,7 +299,7 @@ $companies = ["evolke Treinamentos", "Padaria Jabaquara", "Restaurante Árabe"];
             </form>
           </main>
           <footer class="modal-footer modal-footer-bg-color">
-            <button type="submit" class="btn btn-primary col-lg-12">Adicionar</button>
+            <button type="submit" class="btn btn-primary col-lg-12">Adicionar/Editar</button>
           </footer>
         </dialog>
       </div>
