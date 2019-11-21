@@ -38,15 +38,54 @@
       
         <!-- Categorias de Cursos Imagens -->
         <div class="row justify-content-center my-4">
-          <div class="col-lg-5 col-sm-6 d-flex flex-column align-items-center">
-            <div class="flip-card">
-              <div class="courses-bg-cards flip-card-inner my-4">
-                <div class="flip-card-front">
+          <div class="col-lg-5 col-sm-6 align-items-center">
+            <div class="courses-bg-cards my-4">
+              <div class="flip-card flip-card-front">
+                <h5 class="card-title text-center py-2">Hotelaria</h5>
+                <img src="img/courses-g-hospitality.jpg" aria-hidden="true" alt="" class="card-img-bottom">
+              </div>
+              <div class="flip-card flip-card-back">
+                <div class="card-back-body">
                   <h5 class="card-title text-center py-2">Hotelaria</h5>
-                  <img src="img/courses-g-hospitality.jpg" aria-hidden="true" alt="" class="card-img-bottom">
+                  <!-- <img src="img/courses-g-hospitality.jpg" aria-hidden="true" alt="" class="card-img-bottom"> -->
+                  <ul>
+                    <a href="course-detail.php"><li>Atendente</li></a>
+                    <a href="#"><li>Camareiro</li></a>
+                    <a href="#"><li>Recepcionista</li></a>
+                  </ul>
                 </div>
-                <div class="flip-card-back">
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5 col-sm-6 align-items-center">
+            <div class="courses-bg-cards my-4">
+              <div class="flip-card flip-card-front">
+                <h5 class="card-title text-center py-2">Hotelaria</h5>
+                <img src="img/courses-g-hospitality.jpg" aria-hidden="true" alt="" class="card-img-bottom">
+              </div>
+              <div class="flip-card flip-card-back">
+                <div class="card-back-body">
                   <h5 class="card-title text-center py-2">Hotelaria</h5>
+                  <!-- <img src="img/courses-g-hospitality.jpg" aria-hidden="true" alt="" class="card-img-bottom"> -->
+                  <ul>
+                    <a href="course-detail.php"><li>Atendente</li></a>
+                    <a href="#"><li>Camareiro</li></a>
+                    <a href="#"><li>Recepcionista</li></a>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5 col-sm-6 align-items-center">
+            <div class="courses-bg-cards my-4">
+              <div class="flip-card flip-card-front">
+                <h5 class="card-title text-center py-2">Hotelaria</h5>
+                <img src="img/courses-g-hospitality.jpg" aria-hidden="true" alt="" class="card-img-bottom">
+              </div>
+              <div class="flip-card flip-card-back">
+                <div class="card-back-body">
+                  <h5 class="card-title text-center py-2">Hotelaria</h5>
+                  <!-- <img src="img/courses-g-hospitality.jpg" aria-hidden="true" alt="" class="card-img-bottom"> -->
                   <ul>
                     <a href="course-detail.php"><li>Atendente</li></a>
                     <a href="#"><li>Camareiro</li></a>
@@ -57,8 +96,6 @@
             </div>
           </div>
           
-          
-
 
           <div class="col-lg-5 col-sm-6 d-flex flex-column align-items-center">
             <div class="courses-bg-cards my-4">

@@ -228,9 +228,34 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
 /* Fim QUEM SOMOS */
 
 /* Início CURSOS-GERAL */
+/*card-container */
 .courses-bg-cards {
-  width: 80%;
+  /* width: 80%; */
+  position: relative;
+  width: 18rem;
+  height: 300px;
   text-transform: uppercase;
+  perspective: 200rem;
+}
+
+.courses-bg-cards:hover .flip-card-front{
+  transform: rotateY(180deg);
+}
+
+.courses-bg-cards:hover .flip-card-back{
+  transform: rotateY(0deg);
+}
+
+.flip-card {
+  position: absolute;
+  height:100%;
+  width:100%;
+  transition: all 0.9s;
+  backface-visibility: hidden;
+}
+
+.flip-card-back {
+  transform:rotateY(180deg);
 }
 
 .courses-bg-cards h5 {
@@ -239,50 +264,26 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
   margin: 0;
 }
 
+.card-back-body {
+  position:relative;
+}
+
+.flip-card-back ul {
+  position:absolute;
+  top:50%;
+  left:50%;
+  margin: 10% 0 0 -25%;
+}
+
+.flip-card-back li {
+  list-style-type: none;
+}
+
 .btn:focus {box-shadow: none;}
 
 .list-group-item:hover, .list-group-item:focus {z-index: auto;}
 
 .complete-menu {display: block;}
-
-.flip-card {
-  background-color: transparent;
-  width: 300px;
-  height: 200px;
-  border: 1px solid #f1f1f1;
-  perspective: 1000px;
-}
-
-.flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
-}
-
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
-
-.flip-card-front, .flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-}
-
-.flip-card-front {
-  background-color: #bbb;
-  color: black;
-}
-
-.flip-card-back {
-  background-color: dodgerblue;
-  color: white;
-  transform: rotateY(180deg);
-}
 /* Fim CURSOS-GERAL */
 
 /* Início CURSO-DETALHE */
