@@ -231,7 +231,7 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
 .courses-bg-cards {
   position: relative;
   width: 90%;
-  height: 300px;
+  height: 250px;
   text-transform: uppercase;
   perspective: 200rem;
 }
@@ -272,9 +272,10 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
 
 .flip-card-back ul {
   position:absolute;
-  top:25%;
-  left:30%;
-  /* margin: 10% 0 0 -25%; */
+  top:50%;
+  left:50%;
+  margin: -15% 0 0 -35%;
+  /* text-align: center; */
 }
 
 .flip-card-back li {
