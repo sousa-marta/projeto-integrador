@@ -31,14 +31,14 @@
   </nav>
 
   <main>
-    <div class="row">
+    <div class="row justify-content-around">
       <!-- Banner -->
       <section class="pages-title-bg d-flex justify-content-center align-items-center">
         <h1>Empregos</h1>
       </section>
 
       <!-- Conteúdo Central da Página -->
-      <div class="col-md-8 col-lg-9 order-2 my-4">
+      <div class="col-md-7 col-lg-8 order-2 my-4">
         <div class="container">
           <div class="card">
             <div class="row">

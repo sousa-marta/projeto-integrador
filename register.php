@@ -31,11 +31,11 @@ $countries = ["Afeganistão","África do Sul","Akrotiri","Albânia","Alemanha","
     </ol>
   </nav>
   
-  <main class="d-flex justify-content-center align-items-center">
-    <form action="" method="post" class="card p-5 col-sm-7 col-md-6 col-lg-5 contact-form-design">
+  <main class="d-flex justify-content-center align-items-center m-4">
+    <form action="" method="post" class="card p-4 col-11 col-sm-8 col-lg-6 contact-form-design">
       <div class="form-group text-center">
         <h4>Estamos felizes por você querer fazer parte da nossa comunidade</h4>
-        <p>Crie uma nova conta informando os dados abaixo</p>
+        <p>Crie uma conta gratuitamente informando os dados abaixo.</p>
       </div>  
       <div class="form-group">
         <label for="userFullName"><h5>Nome completo</h5></label>
@@ -51,7 +51,7 @@ $countries = ["Afeganistão","África do Sul","Akrotiri","Albânia","Alemanha","
       </div>
       <label for="userCountry"><h5>País de origem</h5></label>
       <div class="form-group">
-        <select class="col-lg-12" name="userCountry" id="userCountry">
+        <select class="col-lg-12 form-control" name="userCountry" id="userCountry">
           <option value="">Selecione seu país de origem</option>
           <?php
             foreach ($countries as $country) {
@@ -61,7 +61,9 @@ $countries = ["Afeganistão","África do Sul","Akrotiri","Albânia","Alemanha","
           ?>
         </select>
       </div>
-      <button type="submit" class="btn btn-primary align-self-center mt-3">Criar conta gratuitamente</button>
+      <!-- <div class="form-group"> -->
+      <button type="submit" class="btn btn-primary align-self-center mt-3">Criar conta</button>
+      <!-- </div> -->
       <p class="text-center mt-3">Ao criar minha conta, eu aceito os Termos de Uso e a Política de Privacidade da Oppy.</p>
     </form>
   </main>
