@@ -36,7 +36,7 @@
     </section>
 
     <!-- Dados Estatísticos -->
-    <section class="container-fluid text-center border-config py-3">
+    <section class="container-fluid text-center border-config py-5">
       <h2 class="text-uppercase pb-3">Dados estatísticos</h2>
       <div class="row">
         <div class="col-sm-4 statistics-block mt-3">
@@ -56,10 +56,10 @@
 
     <!-- Como surgiu a Oppy? -->
     <section class="container-fluid">
-      <div class="row oppy-info p-4">
-        <img src="img/creativity.svg" aria-hidden="true" alt="" class="col-sm-6 col-lg-4">
-        <div class="col-sm-6 col-lg-7">
-          <h2 class="text-uppercase mt-3">Como surgiu a oppy?</h2>
+      <div class="row oppy-info p-4 py-5">
+        <img src="img/creativity.svg" aria-hidden="true" alt="" class="col-sm-4 col-lg-3">
+        <div class="col-sm-7 mt-3">
+          <h2 class="text-uppercase">Como surgiu a oppy?</h2>
           <p>Criada em 2019 com o objetivo de integrar milhões de emigrantes do mundo a seus países receptores, facilitando a aquisição de habilidades técnicas que lhes permitam entrar no mercado de trabalho e melhorar suas condições de vida. Além disso, conta com o apoio de empresas e recrutadores para conectar essa mão-de-obra qualificada de modo a garantir que essas pessoas alcancem seus objetivos.</p>
         </div>
       </div>
@@ -67,18 +67,18 @@
 
     <!-- Nossa Proposta -->
     <section class="container-fluid">
-      <div class="row oppy-proposal p-4">
-        <div class="col-sm-6 col-lg-7 mb-3">
+      <div class="row oppy-proposal p-4 py-5">
+        <div class="col-sm-7 mb-3">
           <h2 class="text-uppercase">Nossa Proposta</h2>
           <p>Inserir imigrantes (homens e mulheres) no mercado de trabalho do país destino, gerando valor agregado aos seus currículos, por meio do uso de ferramentas digitais que lhes permitam adquirir habilidades técnicas, e sem desconsiderar suas próprias bagagens pessoais e profissionais.</p>
         </div>
-        <img src="img/population-system.svg" aria-hidden="true" alt="" class="col-sm-6 col-lg-4">
+        <img src="img/population-system.svg" aria-hidden="true" alt="" class="col-sm-4 col-lg-3">
       </div>
     </section>
 
     <!-- Nossos Valores -->
-    <section class="container-fluid oppy-values text-center py-4">
-      <h2 class="text-uppercase">Nossos Valores</h2>
+    <section class="container-fluid oppy-values text-center py-5">
+      <h2 class="text-uppercase col-12">Nossos Valores</h2>
       <div class="row">
           <div class="col-md-4 statistics-block mt-3">
             <img src="img/hands.svg" aria-hidden="true" alt="" class="statistics-images">
@@ -95,43 +95,6 @@
             <h5>Inovação</h5>
             <p>Sabemos da importância de se manter atualizado nessa era digital e, por isso, buscamos oferecer as melhores ferramentas que auxiliem nessa adaptação e atualização pessoal.</p>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- O time -->
-    <section class="container-fluid text-center team-info py-4">
-      <h2 class="text-uppercase">As pessoas por trás de tudo isso</h2>
-      <div class="row">
-        <div class="col-md-4 col-lg-2 statistics-block mt-3">
-          <img src="img/boy.svg" alt="" class="statistics-images">
-          <h5>Alex</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius praesentium amet soluta assumenda tenetur facere nemo, quod repudiandae excepturi esse quos, veritatis quia illum vero, nostrum ab ipsa totam neque?</p>
-        </div>
-        <div class="col-md-4 col-lg-2 statistics-block mt-3">
-          <img src="img/girl.svg" alt="" class="statistics-images">
-          <h5>Lislaine</h5>
-          <p>Dev que pretende trabalhar com Segurança da Informação e acredita que saber programar será o diferencial para entrar na nova área.</p>
-        </div>
-        <div class="col-md-4 col-lg-2 statistics-block mt-3">
-          <img src="img/girl.svg" alt="" class="statistics-images">
-          <h5>Marta</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius praesentium amet soluta assumenda tenetur facere nemo, quod repudiandae excepturi esse quos, veritatis quia illum vero, nostrum ab ipsa totam neque?</p>
-        </div>
-        <div class="col-md-4 col-lg-2 statistics-block mt-3">
-          <img src="img/boy.svg" alt="" class="statistics-images">
-          <h5>Ricardo</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius praesentium amet soluta assumenda tenetur facere nemo, quod repudiandae excepturi esse quos, veritatis quia illum vero, nostrum ab ipsa totam neque?</p>
-        </div>
-        <div class="col-md-4 col-lg-2 statistics-block mt-3">
-          <img src="img/boy.svg" alt="" class="statistics-images">
-          <h5>Victor</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius praesentium amet soluta assumenda tenetur facere nemo, quod repudiandae excepturi esse quos, veritatis quia illum vero, nostrum ab ipsa totam neque?</p>
-        </div>
-        <div class="col-md-4 col-lg-2 statistics-block mt-3">
-          <img src="img/boy.svg" alt="" class="statistics-images">
-          <h5>Yuri</h5>
-          <p>Dev que acredita que programação se tornará essencial em todas as áreas em um futuro próximo e começa a investir nesse futuro desde agora.</p>
         </div>
       </div>
     </section>

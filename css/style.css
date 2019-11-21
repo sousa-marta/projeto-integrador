@@ -69,8 +69,6 @@ a:hover, a:focus {
   color: #005662;
 }
 
-.indent {text-indent: 1.8em;}
-
 .pages-title-bg {
   background-color: #005662;
   height: 20vh;
@@ -151,9 +149,10 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
 .home-btn-big {display: none;}
 
 .home-summary {
-  padding: 1rem 0;
+  padding: 1rem 1.9rem;
   line-height: 2rem;
   background-color: #FFFF81;
+  text-align: center;
 }
 
 .home-card {text-align: center;}
@@ -192,7 +191,7 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 3rem;
+  padding: 0 4rem;
   line-height: 1.5rem;
 }
 
@@ -229,20 +228,22 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
 /* Fim QUEM SOMOS */
 
 /* Início CURSOS-GERAL */
-.courses-g-cards {
+.courses-bg-cards {
   width: 80%;
   text-transform: uppercase;
 }
 
-.courses-g-cards h5 {
+.courses-bg-cards h5 {
   color: #FFF;
   background-color: #00838F;
   margin: 0;
 }
 
-.complete-menu {display: none;}
+.btn:focus {box-shadow: none;}
 
-.keyword-search {display: flex;}
+.list-group-item:hover, .list-group-item:focus {z-index: auto;}
+
+.complete-menu {display: block;}
 /* Fim CURSOS-GERAL */
 
 /* Início CURSO-DETALHE */
@@ -297,7 +298,10 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
   height: 30vh;
 }
 
-.list-green {background-color: #005662;}
+.filter-title-bg {background-color: #005662;}
+
+.collapse-bg {background-color: #BDBDBD;}
+
 
 .nowrap {white-space: normal;}
 /* Fim OPORTUNIDADES */
@@ -325,6 +329,7 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
 /* Início CONTRIBUA */
 .contribute-banner-session {
   align-items: center;
+  text-align: center;
   background: #005662;
   color: #fff;
   display: flex;
@@ -590,6 +595,10 @@ footer p {color: #FFF;}
   } 
   /* Fim HOME */
 
+  /* Início CURSOS */
+  #collapseFilter {display: block;}
+  /* Fim CURSOS */
+
   /* Início CONTRIBUA */
   .contribute-volunteer div {margin-bottom: 1rem;}
   /* Fim CONTRIBUA */
@@ -644,7 +653,10 @@ footer p {color: #FFF;}
   /* Fim HEADER */
   
   /* Início HOME */
+  .home-summary {text-align: left;}
+  .indent {text-indent: 1.8em;}
   .home-card-section {margin: 2rem 0;}
+  .home-summary {padding: 3.2rem 3rem 2.4rem 3rem;}
   /* Fim HOME */
 
   /* Início QUEM SOMOS */
@@ -688,12 +700,6 @@ footer p {color: #FFF;}
   .oppy-info p, .oppy-proposal p {text-align: left;}
   /* Fim QUEM SOMOS */
 
-  /* Início CURSO-GERAL */
-  .complete-menu {display: block;}
-
-  .keyword-search {display: none;}
-  /* Fim CURSO_GERAL */
-
   /* Início CURSO-DETALHE */
   .course-detail-offered-by {display: block;}
   
@@ -730,7 +736,7 @@ footer p {color: #FFF;}
   /* Fim HEADER */
 
   /* Início HOME */
-  .home-summary {padding: 3.2rem 0 2.4rem 0;}
+  .home-summary {padding: 3.2rem auto 2.4rem auto;}
 
   .home-summary p {line-height: 2.2;}
 
