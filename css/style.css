@@ -264,10 +264,15 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
 
 .card-back-body {
   position:relative;
+  height:100%;
 }
 
 .flip-card-back img {
   opacity:0.3;
+}
+
+.course-img {
+  height:100%;
 }
 
 .flip-card-back ul {
