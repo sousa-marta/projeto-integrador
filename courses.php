@@ -36,38 +36,104 @@
       <!-- Conteúdo Central da Página -->
       <section class="col-md-7 col-lg-8 order-2">
       
-        <!-- Categorias de Cursos Imagens -->
-        <div class="row justify-content-center my-4">
-          <div class="col-lg-5 col-sm-6 d-flex flex-column align-items-center">
-            <div class="courses-bg-cards my-4">
-              <h5 class="card-title text-center py-2">Idiomas</h5>
-              <img src="img/courses-g-languages.jpg" aria-hidden="true" alt="" class="card-img-bottom">
+        <!-- Categorias de Cursos Imagens - Flip Cards -->
+        <div class="row justify-content-center mb-4">
+          <div class="col-lg-5 col-md-12 col-sm-6 align-items-center d-flex flex-column mt-5 mb-4">
+            <div class="courses-bg-cards">
+              <div class="flip-card flip-card-front">
+                <h5 class="card-title text-center py-2">Hotelaria</h5>
+                <img src="img/courses-g-hospitality.jpg" aria-hidden="true" alt="" class="course-img card-img-bottom">
+              </div>
+              <div class="flip-card flip-card-back">
+                <div class="card-back-body">
+                  <h5 class="card-title text-center py-2">Hotelaria</h5>
+                  <img src="img/courses-g-hospitality.jpg" aria-hidden="true" alt="" class="course-img card-img-bottom">
+                  <ul>
+                    <a href="course-detail.php"><li>Atendente</li></a>
+                    <a href="#"><li>Camareiro</li></a>
+                    <a href="#"><li>Recepcionista</li></a>
+                    <a href="#"><li>Garçom</li></a>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="col-lg-5 col-sm-6 d-flex flex-column align-items-center">
-            <div class="courses-bg-cards my-4">
-              <h5 class="card-title text-center py-2">Saúde</h5>
-              <img src="img/courses-g-health.jpg"aria-hidden="true" alt="" class="card-img-bottom">
+          <div class="col-lg-5 col-md-12 col-sm-6 align-items-center d-flex flex-column mt-5 mb-4">
+            <div class="courses-bg-cards">
+              <div class="flip-card flip-card-front">
+                <h5 class="card-title text-center py-2">Idiomas</h5>
+                <img src="img/courses-g-languages.jpg" aria-hidden="true" alt="" class="course-img card-img-bottom">
+              </div>
+              <div class="flip-card flip-card-back">
+                <div class="card-back-body">
+                  <h5 class="card-title text-center py-2">Idiomas</h5>
+                  <img src="img/courses-g-languages.jpg" aria-hidden="true" alt="" class="course-img card-img-bottom">
+                  <ul>
+                    <a href="#"><li>Português</li></a>
+                    <a href="#"><li>Inglês</li></a>
+                    <a href="#"><li>Espanhol</li></a>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="col-lg-5 col-sm-6 d-flex flex-column align-items-center">
-            <div class="courses-bg-cards my-4">
-              <h5 class="card-title text-center py-2">Beleza</h5>
-              <img src="img/courses-g-beauty.jpg" aria-hidden="true" alt="" class="card-img-bottom">
+          <div class="col-lg-5 col-md-12 col-sm-6 align-items-center d-flex flex-column mt-5 mb-4">
+            <div class="courses-bg-cards">
+              <div class="flip-card flip-card-front">
+                <h5 class="card-title text-center py-2">Programação</h5>
+                <img src="img/courses-g-programming.jpg" aria-hidden="true" alt="" class="course-img card-img-bottom">
+              </div>
+              <div class="flip-card flip-card-back">
+                <div class="card-back-body">
+                  <h5 class="card-title text-center py-2">Programação</h5>
+                  <img src="img/courses-g-programming.jpg" aria-hidden="true" alt="" class="course-img card-img-bottom">
+                  <ul>
+                    <a href="#"><li>CSS + HTML</li></a>
+                    <a href="#"><li>Phyton</li></a>
+                    <a href="#"><li>Lógica de Programação</li></a>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="col-lg-5 col-sm-6 d-flex flex-column align-items-center">
-            <div class="courses-bg-cards my-4">
-              <h5 class="card-title text-center py-2">Programação</h5>
-              <img src="img/courses-g-programming.jpg" aria-hidden="true" alt="" class="card-img-bottom">
+          <div class="col-lg-5 col-md-12 col-sm-6 align-items-center d-flex flex-column mt-5 mb-4">
+            <div class="courses-bg-cards">
+              <div class="flip-card flip-card-front">
+                <h5 class="card-title text-center py-2">Saúde</h5>
+                <img src="img/courses-g-health.jpg" aria-hidden="true" alt="" class="course-img card-img-bottom">
+              </div>
+              <div class="flip-card flip-card-back">
+                <div class="card-back-body">
+                  <h5 class="card-title text-center py-2">Saúde</h5>
+                  <img src="img/courses-g-health.jpg" aria-hidden="true" alt="" class="course-img card-img-bottom">
+                  <ul>
+                    <a href="#"><li></li></a>
+                    <a href="#"><li></li></a>
+                    <a href="#"><li></li></a>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="col-lg-5 col-sm-6 d-flex flex-column align-items-center">
-            <div class="courses-bg-cards my-4">
-              <h5 class="card-title text-center py-2">Direção</h5>
-              <img src="img/courses-g-car.jpg" aria-hidden="true" alt="" class="card-img-bottom">
+          <div class="col-lg-5 col-md-12 col-sm-6 align-items-center d-flex flex-column mt-5 mb-4">
+            <div class="courses-bg-cards">
+              <div class="flip-card flip-card-front">
+                <h5 class="card-title text-center py-2">Beleza</h5>
+                <img src="img/courses-g-beauty.jpg" aria-hidden="true" alt="" class="course-img card-img-bottom">
+              </div>
+              <div class="flip-card flip-card-back">
+                <div class="card-back-body">
+                  <h5 class="card-title text-center py-2">Beleza</h5>
+                  <img src="img/courses-g-beauty.jpg" aria-hidden="true" alt="" class="course-img card-img-bottom">
+                  <ul>
+                    <a href="#"><li></li></a>
+                    <a href="#"><li></li></a>
+                    <a href="#"><li></li></a>
+                  </ul>
+                </div>
+              </div>
             </div>
-          </div>          
+          </div>
         </div>
       </section>
 
@@ -83,21 +149,21 @@
 
             <!-- Collapse do primeiro tópico de busca -->
             <div>
+              <a data-toggle="collapse" href="#collapseHotel">Hotelaria<i class="fa fa-angle-down px-1"></i></a>
+                <ul id="collapseHotel" class="collapse list-group">
+                  <li class="list-group-item"><a href="#atendente">Atendente</a></li>
+                  <li class="list-group-item"><a href="#camareiro">Camareiro</a></li>
+                  <li class="list-group-item"><a href="#recepcionista">Recepcionista</a></li>
+                </ul>
+            </div>
+            
+            <!-- Collapse do segundo tópico de busca -->
+            <div>
               <a data-toggle="collapse" href="#collapseLanguages">Idiomas<i class="fa fa-angle-down px-1"></i></a>
                 <ul id="collapseLanguages" class="collapse list-group">
                   <li class="list-group-item"><a href="#portugues">Português</a></li>
                   <li class="list-group-item"><a href="#ingles">Inglês</a></li>
                   <li class="list-group-item"><a href="#espanhol">Espanhol</a></li>
-                </ul>
-            </div>
-
-            <!-- Collapse do segundo tópico de busca -->
-            <div>
-              <a data-toggle="collapse" href="#collapseHotel">Hotelaria<i class="fa fa-angle-down px-1"></i></a>
-                <ul id="collapseHotel" class="collapse list-group">
-                  <li class="list-group-item"><a href="#camareiro">Camareiro</a></li>
-                  <li class="list-group-item"><a href="#recepcionista">Recepcionista</a></li>
-                  <li class="list-group-item"><a href="#mensageiro">Mensageiro</a></li>
                 </ul>
             </div>
 

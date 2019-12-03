@@ -229,14 +229,64 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
 
 /* Início CURSOS-GERAL */
 .courses-bg-cards {
-  width: 80%;
+  position: relative;
+  width: 90%;
+  height: 250px;
   text-transform: uppercase;
+  perspective: 200rem;
+}
+
+.courses-bg-cards:hover .flip-card-front{
+  transform: rotateY(180deg);
+}
+
+.courses-bg-cards:hover .flip-card-back{
+  transform: rotateY(0deg);
+}
+
+.flip-card {
+  position: absolute;
+  height:100%;
+  width:100%;
+  transition: all 0.9s;
+  backface-visibility: hidden;
+}
+
+.flip-card-back {
+  transform:rotateY(180deg);
 }
 
 .courses-bg-cards h5 {
   color: #FFF;
   background-color: #00838F;
   margin: 0;
+}
+
+.card-back-body {
+  position:relative;
+  height:100%;
+}
+
+.flip-card-back img {
+  opacity:0.3;
+}
+
+.course-img {
+  height:100%;
+}
+
+.flip-card-back ul {
+  position:absolute;
+  top:50%;
+  left:50%;
+  margin: -15% 0 0 -35%;
+  /* text-align: center; */
+}
+
+.flip-card-back li {
+  color:#005662;
+  margin-bottom: 5px;
+  list-style-type: none;
 }
 
 .btn:focus {box-shadow: none;}
