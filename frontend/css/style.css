@@ -1,0 +1,802 @@
+/* Início CONFIGURAÇÕES GERAIS  */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {scroll-behavior: smooth;}
+
+body {
+  font-family: 'Lato', sans-serif;
+  color: #47525E;
+}
+
+nav a {font-weight: bold;}
+
+p {
+  margin: 0;
+  font-size: 16px;
+}
+
+h1 {font-size: 50px;}
+h2 {font-size: 40px;}
+h3 {font-size: 30px;}
+h4 {font-size: 25px;}
+h5 {
+  font-size: 18px; 
+  font-weight: bold;
+}
+
+.btn {padding: 1.0vh 2.2vh;}
+
+/*Botão Turquesa*/
+.btn-primary {
+  color: #FFF;
+  background:#005662;
+  border: none;
+  text-transform: uppercase;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+  background: #4FB3BF;
+  color: #000;
+}
+
+/*Botão Amarelo*/
+.btn-secondary {
+  color: #000;
+  background: #FFD54F;
+  border: none;
+  text-transform: uppercase;
+}
+
+.btn-secondary:hover, .btn-secondary:focus {background: #005662;}
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+a {color: #4fb3bf;}
+
+a:hover, a:focus {
+  text-decoration: none;
+  color: #005662;
+}
+
+.pages-title-bg {
+  background-color: #005662;
+  height: 20vh;
+  color: #FFF;
+  font-weight: bold;
+  width: 100%;
+}
+/* Fim CONFIGURAÇÕES GERAIS  */
+
+/* Início HEADER */
+.menu {
+  background: #FFD54FF0;
+  border-bottom: 1px #FFD54F solid;
+  z-index: 99;
+  height: 10vh;
+}
+
+.navbar-nav {
+  background-color: #FFD54F;
+  padding: 10px;
+  line-height: normal;
+}
+
+.logo-header .logo-img {display: none;}
+
+.logo-header .logo-name {width: 100px;}
+
+.fa {color: #4FB3BF;}
+
+#register-link {color: #005662;}
+
+nav #register-link:hover, nav #register-link:focus {background: none;}
+
+.modal-backdrop {z-index: unset;}
+
+.modal-footer-bg-color {background-color: #FFF;}
+/* Fim HEADER */
+
+/* Início BREADCRUMB */
+.breadcrumb {
+  border-radius: 0;
+  margin-bottom: 0;
+  margin-top: 10vh;
+}
+
+nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
+  background: #4FB3BF;
+  text-decoration: none;
+}
+/* Fim BREADCRUMB */
+
+/* Início HOME */
+.home-banner {
+  margin-top: 10vh;
+  background-image: url('../img/home-banner.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  color: #FFF;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.home-banner h1 {
+  text-transform: uppercase;
+  font-family: 'Baloo', cursive;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.home-banner button {
+  margin-bottom: 10vh;
+  padding: 0.5rem 2rem;
+}
+
+.home-btn-big {display: none;}
+
+.home-summary {
+  padding: 1rem 1.9rem;
+  line-height: 2rem;
+  background-color: #FFFF81;
+  text-align: center;
+}
+
+.home-card {text-align: center;}
+
+.home-card-img {
+  height: 50%;
+  width: 50%;
+} 
+
+.home-card-img-md {display: none;}
+
+.home-card .card-title {
+  font-weight: bold;
+  margin-top: 0.5em;
+  border-bottom: solid 2px #4fb3bf;
+}
+
+.home-banner-apoie {background: #FFD54F;}
+
+.home-banner-apoie button {
+  margin: 0.5em;
+  padding: 0.3em 1em;
+}
+/* Fim HOME */
+
+/* Início QUEM SOMOS */
+.about-banner {display: none;}
+
+.oppy-info h2, .oppy-proposal h2 {text-align: center;}
+
+.oppy-info p, .oppy-proposal p {text-align: center;}
+
+.border-config {border: 1px solid grey;}
+
+.statistics-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 4rem;
+  line-height: 1.5rem;
+}
+
+.statistics-images {width: 50px;}
+
+.oppy-info {
+  background-color: #EBF0F7;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.5rem;
+}
+
+.oppy-info h2, .oppy-values h2 {
+  color: #4FB3BF;
+  padding-bottom: 20px;
+  font-weight: bold;
+}
+
+.oppy-info img, .oppy-proposal img {width: 200px;}
+
+.oppy-proposal {
+  align-items: center;
+  justify-content: center;
+  line-height: 1.5rem;
+}
+
+.oppy-proposal h2, .team-info h2 {
+  color: #F95F62;
+  padding-bottom: 20px;
+  font-weight: bold;
+}
+
+.oppy-values {background-color: #EBF0F7;}
+/* Fim QUEM SOMOS */
+
+/* Início CURSOS-GERAL */
+.courses-bg-cards {
+  position: relative;
+  width: 90%;
+  height: 250px;
+  text-transform: uppercase;
+  perspective: 200rem;
+}
+
+.courses-bg-cards:hover .flip-card-front{
+  transform: rotateY(180deg);
+}
+
+.courses-bg-cards:hover .flip-card-back{
+  transform: rotateY(0deg);
+}
+
+.flip-card {
+  position: absolute;
+  height:100%;
+  width:100%;
+  transition: all 0.9s;
+  backface-visibility: hidden;
+}
+
+.flip-card-back {
+  transform:rotateY(180deg);
+}
+
+.courses-bg-cards h5 {
+  color: #FFF;
+  background-color: #00838F;
+  margin: 0;
+}
+
+.card-back-body {
+  position:relative;
+  height:100%;
+}
+
+.flip-card-back img {
+  opacity:0.3;
+}
+
+.course-img {
+  height:100%;
+}
+
+.flip-card-back ul {
+  position:absolute;
+  top:50%;
+  left:50%;
+  margin: -15% 0 0 -35%;
+  /* text-align: center; */
+}
+
+.flip-card-back li {
+  color:#005662;
+  margin-bottom: 5px;
+  list-style-type: none;
+}
+
+.btn:focus {box-shadow: none;}
+
+.list-group-item:hover, .list-group-item:focus {z-index: auto;}
+
+.complete-menu {display: block;}
+/* Fim CURSOS-GERAL */
+
+/* Início CURSO-DETALHE */
+.course-detail-main-banner {
+  background-color: #00838F;
+  color: #FFF;
+}
+
+.course-detail-offered-by, .course-detail-provider {display: none;}
+
+.course-detail-logo-img {height: 200px;}
+
+.course-detail-schedule-past {background-color: #595f66;}
+
+.course-detail-shedule-soon {background-color: #C8A415;}
+
+.course-detail-schedule-legend {font-size: 2.3vw;}
+
+.course-detail-similar-courses-top {background: #FFD54F;}
+
+.course-detail-similar-courses-bottom {background-color: #e4e4e4;}
+
+.course-detail-card {
+  background-color: #FFF;
+  position: relative;
+  top: -40px;
+  border: 1px solid #005662;
+}
+
+.course-detail-card-title {
+  background-color: #005662;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.course-detail-card-title * {color: #FFF;}
+
+.course-detail-logo-img-alike {
+  max-height: 100px;
+  max-width: 100%;
+  margin: 20px;
+}
+
+/* div que segura os cards */
+.course-detail-div-cards {justify-content: center;}
+/* Fim CURSO-DETALHE */
+
+/* Início OPORTUNIDADES */
+.opportunities-bg {
+  background-color: #4FB3BF;
+  color: #FFF;
+  height: 30vh;
+}
+
+.filter-title-bg {background-color: #005662;}
+
+.collapse-bg {background-color: #BDBDBD;}
+
+
+.nowrap {white-space: normal;}
+/* Fim OPORTUNIDADES */
+
+/* Início APOIO */
+.banner-support-page {
+  align-items: center;
+  justify-content: center;
+}
+
+.support-page-bg {background-color: #00838F;}
+
+.support-anchor a {color: #FFD54F;}
+
+.support-card {
+  font-weight: bold;
+  border-bottom: solid 2px #4fb3bf;
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.card-bg-green {background-color: #4FB3BF;}
+/* Fim APOIO */
+
+/* Início CONTRIBUA */
+.contribute-banner-session {
+  align-items: center;
+  text-align: center;
+  background: #005662;
+  color: #fff;
+  display: flex;
+  height: 20vh;
+  justify-content: center;
+}
+
+.contribute-text {
+  display: flex;
+  align-items: center;
+  background: #FFFF81;
+  justify-content: center;
+}
+
+.contribute-text img, .contribute-enterprise img {width: 70%;}
+
+/* Fim CONTRIBUA */
+
+/* Início CONTATO */
+.contact-email {
+  color: #005662;
+  font-weight: bold;
+}
+
+.contact-email:hover, .contact-email:focus {
+  text-decoration: none;
+  color: #005662;
+}
+
+.contact-form-design {
+  background-color: #FFD54F;
+  margin: 2%;
+  padding: 2% 1%;
+}
+
+.questions-title-bg {
+  background-color: #005662;
+  height: 30vh;
+  color: #FFF;
+  font-weight: bold;
+  width: 100%;
+}
+
+.questions-bg {background-color: #EBF0F7;}
+.questions-subject {color: #4FB3BF;}
+.plus-sign {width: 20px;}
+.questions-color {color: #47525E;}
+/* Fim CONTATO */
+
+/* Início LOGIN */
+card {
+  border: #47525E;
+}
+
+.login-indicator {
+  background-color: #FFD54F;
+  color: #47525E;
+  margin: 0;
+}
+
+.triangle-isosceles {
+  position: relative;
+  padding: 15px;
+  color: #000;
+  background: #f3961c;
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#FFD54F), to(#f3961c));
+  background: -moz-linear-gradient(#FFD54F, #f3961c);
+  background: -o-linear-gradient(#FFD54F, #f3961c);
+  background: linear-gradient(#FFD54F, #f3961c);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+
+.triangle-isosceles:after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 20px;
+  border-width: 15px 15px 0;
+  border-style: solid;
+  border-color: #f3961c transparent;
+  display: block;
+  width: 0;
+}
+/* Fim LOGIN */
+
+/* Início PÁGINA USUÁRIO */
+.user-page-font-bold {font-weight: bold;}
+
+.user-page-main-banner {
+  background-color: #005662;
+  color: #FFF;
+}
+
+.user-page-cards-title {
+  background-color: #005662;
+  padding: 10px;
+  color: #FFF;
+  width: 100%;
+}
+
+.user-page-card {
+  padding: 0;
+  border: 2px solid #005662;
+}
+
+/* .user-page-card-item {
+  background-color: #e4e4e4;
+  position: relative;
+} */
+
+.user-page-section-courses {background-color: #FFD54F;}
+
+.user-page-item-inside-card {
+  background-color: #e4e4e4;
+  margin: 10px;
+  padding: 5px;
+  position: relative;
+}
+
+.user-page-item-inside-card-clickable {
+  cursor: pointer;
+}
+
+.user-page-icon {
+  position: absolute;
+  top: -8px;
+  right: -7px;
+}
+
+.user-page-photo {
+  display: none;
+  height: 350px;
+  border: 2px solid #FFF;
+}
+
+.user-page-item-inside-card-top{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.user-page-text-category {text-decoration: underline;}
+/* Fim PÁGINA USUÁRIO */
+
+/* Início INFORMAÇÕES USUÁRIO */
+.user-info-top {
+  height: 250px;
+  align-self: center;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.user-info-photo {
+  height: 80%;
+  width: auto;
+}
+
+.user-info-main {background-color: #FFFF81;}
+/* Fim INFORMAÇÕES USUÁRIO */
+
+
+/* Início PÁGINA ADMINISTRADOR */
+.admin-course-section {
+  background-color: #fff8e3;
+}
+
+.admin-tables-section {
+  padding: 25px 0;
+}
+
+.admin-btn-table {
+  color: #FFF;
+  background:#005662;
+  border: none;
+  padding: 0 2px;
+  margin: 0 2px;
+  border-radius: 3px;
+}
+
+.admin-btn-table:hover, .admin-btn-table:focus {
+  background: #4FB3BF;
+  color: #000;
+}
+/* Fim PÁGINA ADMINISTRADOR */
+
+/* Início CADASTRO EMPRESA */
+.register-company-main {background-color: #FFFF81;}
+/* Fim CADASTRO EMPRESA */
+
+/* Início CADASTRO VOLUNTÁRIO */
+.register-volunteer-main {background-color: #FFFF81;}
+/* Fim CADASTRO VOLUNTÁRIO */
+
+/* Início FOOTER */
+footer {
+  background:#616161;
+  padding: 2% 0;
+}
+
+footer img {width: 17vw;}
+
+footer p {color: #FFF;}
+/* Fim FOOTER */
+
+/* --------------------------------- MEDIAS QUERIES --------------------------------- */
+
+/* Extra small devices (portrait phones, less than 576px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  p {font-size: 2.7vw;}
+  h1 {font-size: 8.0vw;} 
+  h2 {font-size: 6.0vw;}
+  h3 {font-size: 4.3vw;}
+  h4 {font-size: 3.8vw;}
+  h5 {font-size: 3.2vw;}
+
+  .pages-title-bg {height: 25vh;}
+
+  /* Início HOME */
+  .home-btn-sm {display: none;}
+  .home-btn-big {display: flex;}
+  /* Fim HOME */
+
+  /* Início QUEM SOMOS */
+  .oppy-info img, .oppy-proposal img {height: 30vh;}
+  /* Fim QUEM SOMOS */
+
+  /* Início CURSO-DETALHE */
+  .course-detail-schedule-legend {font-size: 0.8em;}
+  /* Fim CURSO-DETALHE */
+
+  /* Início FOOTER */
+  footer img {width: 15vw;}
+  /* Fim FOOTER */
+}
+
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  p {font-size: 2.3vw;}
+  h1 {font-size: 7.0vw;}
+  h2 {font-size: 5.0vw;}
+  h3 {font-size: 3.8vw;}
+  h4 {font-size: 3.3vw;}
+  h5 {font-size: 2.8vw;}
+
+  .pages-title-bg {height: 30vh;}
+
+  /* Início HOME */
+  .home-card {margin: 0 1rem;}
+  .home-card-img-sm {display: none;}
+  .home-card-img-md {display: flex;}
+  .home-card-img {
+    height: 60%;
+    width: 60%;
+  } 
+  /* Fim HOME */
+
+  /* Início CURSOS */
+  #collapseFilter {display: block;}
+  /* Fim CURSOS */
+
+  /* Início CONTRIBUA */
+  .contribute-volunteer div {margin-bottom: 1rem;}
+  /* Fim CONTRIBUA */
+
+  /* Início USUÁRIO */
+  .user-page-photo {display: block;}
+  /* Fim USUÁRIO */
+
+  /* Início PÁGINA ADMINISTRADOR */
+  .admin-tables-section {padding: 25px 30px;}
+  /* Fim PÁGINA ADMINISTRADOR */
+
+  /* Início FOOTER */
+  footer img {width: 10vw;}
+  /* Fim FOOTER */
+}
+
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  p {font-size: 1.7vw;}
+  h1 {font-size: 6.0vw;}
+  h2 {font-size: 4.0vw;}
+  h3 {font-size: 3.2vw;}
+  h4 {font-size: 2.7vw;}
+  h5 {font-size: 2.2vw;}
+
+  /* Início HEADER */
+  .navbar-nav {
+    background-color: transparent;
+    text-align: center;
+  }
+
+  .navbar-nav a:hover, .navbar-nav a:focus {
+    background: #FFFF81;
+    max-height: 98%;
+  }
+
+  .btn-login {
+    padding-left: 5px;
+    padding-right: 5px;
+    align-self: center;
+  }
+
+  .logo-header .logo-img {
+    height: 10vh;
+    margin-right: 5px;
+    display: flex;
+  }
+
+  .logo-header .logo-name {width: 90px;}
+  /* Fim HEADER */
+  
+  /* Início HOME */
+  .home-summary {text-align: left;}
+  .indent {text-indent: 1.8em;}
+  .home-card-section {margin: 2rem 0;}
+  .home-summary {padding: 3.2rem 3rem 2.4rem 3rem;}
+  /* Fim HOME */
+
+  /* Início QUEM SOMOS */
+  .about-banner {
+    display: flex;
+    background-image: url('../img/about-banner.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    flex-direction: column-reverse;
+    height: 82vh;
+    text-align: center;
+    color: #FFF;
+  }
+  
+  .bg-color {
+    background-color: #0003;
+    height: 30%;
+  }
+  
+  .quotation {
+    padding: 0 15vw;
+    line-height: 1.7em;
+    margin-bottom: 0.5rem;
+  }
+  
+  .quotation::before {
+    content: open-quote;
+    font-size: 1.5em;
+  }
+  
+  .quotation::after {
+    content: close-quote;
+    font-size: 1.5em;
+  }
+  
+  .quotation-author {font-style: italic;}
+  .quotation-author::before {content: "\2014 \00A0";}
+  .oppy-info h2, .oppy-proposal h2 {text-align: left;}
+  .oppy-info p, .oppy-proposal p {text-align: left;}
+  /* Fim QUEM SOMOS */
+
+  /* Início CURSO-DETALHE */
+  .course-detail-offered-by {display: block;}
+  
+  .course-detail-provider {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  /* div que segura os cards */
+  .course-detail-div-cards {justify-content: space-between;}
+  /* Fim CURSO-DETALHE */
+
+  /* Início APOIO */
+  .support-card {margin: 2rem 0;}
+  /* Fim APOIO */
+
+  /* Início FOOTER */
+  footer img {width: 8vw;}
+  /* Fim FOOTER */
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+  p {
+    font-size: 1.4vw;
+    line-height: 1.6;
+  }
+  h1 {font-size: 5.0vw;}
+  h2 {font-size: 3.0vw;}
+  h5 {font-size: 1.7vw;}
+
+  /* Início HEADER */
+  .logo-header .logo-name {width: 100px;}
+  /* Fim HEADER */
+
+  /* Início HOME */
+  .home-summary {padding: 3.2rem auto 2.4rem auto;}
+
+  .home-summary p {line-height: 2.2;}
+
+  .home-summary p {margin-bottom: 1rem;}
+
+  .home-summary button {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .home-banner {margin-top: 10vh;}
+  /* Fim HOME */
+}
