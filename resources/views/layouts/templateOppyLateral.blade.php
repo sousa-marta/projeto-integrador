@@ -1,4 +1,4 @@
-@extends('templateOppy')
+@extends('layouts.templateOppy')
 
 @section('content')
 
