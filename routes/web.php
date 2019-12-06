@@ -16,3 +16,11 @@
 // });
 
 Route::get('/welcome', "SiteController@viewHome"); 
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+Route::get('/apoio', "SupportController@viewSupport");
+Route::get('/cursos', "CourseController@viewCourses");
+Route::get('/usuario', "UserController@viewUser");
+Route::get('/admin', "AdminController@viewAdmin");
