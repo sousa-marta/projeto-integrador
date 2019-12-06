@@ -16,3 +16,4 @@ Route::get('/', function () {
 });
 
 Route::get('/usuario', "UserController@viewUser");
+Route::get('/admin', "AdminController@viewAdmin");
