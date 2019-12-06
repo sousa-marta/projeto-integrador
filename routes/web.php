@@ -16,3 +16,5 @@ Route::get('/', function () {
 });
 
 Route::get('/cursos', "CourseController@viewCourses");
+Route::get('/usuario', "UserController@viewUser");
+Route::get('/admin', "AdminController@viewAdmin");
