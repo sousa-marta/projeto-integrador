@@ -1,26 +1,28 @@
-@extends('layouts.templateOppyLateral')
+@extends('layouts.lateralTemplate')
 
 @section('title')
-
-    Cursos
-
+Cursos
 @endsection
 
-    <!-- Breadcrumb  -->
-    <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a class="breadcrumb-item-link" href="index.php">Home</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Cursos</li>
-        </ol>
-    </nav>
+@section('breadcrumb')
+<!-- Breadcrumb  -->
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a class="breadcrumb-item-link" href="index.php">Home</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Cursos</li>
+    </ol>
+</nav>
+@endsection
     
-    <!-- Banner -->
-    <section class="pages-title-bg d-flex justify-content-center align-items-center">
-    <h1>Cursos</h1>
-    </section>
+@section('banner')
+<!-- Banner -->
+<section class="pages-title-bg d-flex justify-content-center align-items-center">
+  <h1>Cursos</h1>
+</section>
+@endsection    
     
 
-@section('content1')
+@section('menu-content')
 
       <!-- Barra de Navegação Lateral -->      
       <aside class="complete-menu mt-5">
@@ -76,8 +78,8 @@
 
 @endsection
 
+@section('text-content')
 
-@section('content2')
 <div>
  
       <!-- Conteúdo Central da Página -->

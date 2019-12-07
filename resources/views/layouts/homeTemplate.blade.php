@@ -94,11 +94,9 @@
         </div>
     </div>
 
-    @yield('breadcrumb');
-
     <main>
         <!-- Conteúdo do Site -->
-        @yield('content');
+        @yield('content')
     
     </main>
 

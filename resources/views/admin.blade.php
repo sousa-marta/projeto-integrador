@@ -1,10 +1,19 @@
-@extends('layouts.templateOppy')
-
+@extends('layouts.mainTemplate')
 
 @section('title')
-    Página do Administrador
+Página do Administrador
 @endsection
 
+<!-- FIXME: acho que não vamos precisar do breadcrumb pro admin já que sabemos como chegamos lá haha -->
+@section('breadcrumb')
+<!-- Breadcrumb -->
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a class="breadcrumb-item-link" href="index.php">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Administrador</li>
+    </ol>
+</nav>
+@endsection
 
 @section('content')
 
@@ -13,15 +22,6 @@
         $categories = ["Gastronomia", "Serviços Gerais", "Hotelaria"];
         $companies = ["evolke Treinamentos", "Padaria Jabaquara", "Restaurante Árabe"];
     ?>
-
-    <!-- FIXME: colocar o Breadcrumb no lugar certo -->
-    <!-- Breadcrumb -->
-    <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a class="breadcrumb-item-link" href="index.php">Home</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Administrador</li>
-        </ol>
-    </nav>
     
     <!-- botões para adicionar empresa e voluntário -->
     <div class="container">

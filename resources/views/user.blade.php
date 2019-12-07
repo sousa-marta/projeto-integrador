@@ -1,19 +1,21 @@
-@extends('layouts.templateOppy')
+@extends('layouts.mainTemplate')
 
 @section('title')
   Página Usuário
 @endsection
 
-@section('content')
-
+@section('breadcrumb')
 <!-- Breadcrumb -->
 <nav aria-label="breadcrumb">
-    <ol class="breadcrumb">
-      <li class="breadcrumb-item"><a class="breadcrumb-item-link" href="index.php">Home</a></li>
-      <li class="breadcrumb-item active" aria-current="page">Página do Usuário</li>
-    </ol>
-  </nav>
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a class="breadcrumb-item-link" href="index.php">Home</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Página do Usuário</li>
+  </ol>
+</nav>
+@endsection
 
+
+@section('content')
 <!-- INFORMAÇÕES -->
   <section class="user-page-main-banner">
       <div class="container d-flex justify-content-around p-3 align-items-center">
