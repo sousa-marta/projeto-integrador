@@ -93,9 +93,7 @@
             </dialog>
         </div>
     </div>
-
     @yield('breadcrumb')
-
     <main>
         <!-- Conteúdo do Site -->
         @yield('content')
@@ -119,4 +117,3 @@
 
 </body>
 </html>
-

@@ -1,4 +1,4 @@
-@extends('layouts.homeTemplate')
+@extends('layouts.mainTemplate')
 
 @section('title')
     Oppy
