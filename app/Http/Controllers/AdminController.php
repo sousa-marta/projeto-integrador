@@ -35,4 +35,16 @@ class AdminController extends Controller
         
     }
 
+    //mostra a página do cadastrar doação
+    public function viewDonationRegister(Request $request) {
+        return view('register-donation');
+    }
+
+    //cria nova doação
+    public function createNewDonation(Request $request) {
+        //TODO: cria nova doação e registra na base de dados
+
+        
+    }
+
 }

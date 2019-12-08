@@ -9,7 +9,7 @@ Página do Administrador
 <!-- Breadcrumb -->
 <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a class="breadcrumb-item-link" href="index.php">Home</a></li>
+        <li class="breadcrumb-item"><a class="breadcrumb-item-link" href="/">Home</a></li>
         <li class="breadcrumb-item active" aria-current="page">Administrador</li>
     </ol>
 </nav>
@@ -26,8 +26,8 @@ Página do Administrador
     <!-- botões para adicionar empresa e voluntário -->
     <div class="container">
         <nav class="row d-flex justify-content-center m-2">	
-            <a class="col-md-5 col-lg-3 btn btn-secondary m-2" href="register-company.php"><i class="fa fa-building" aria-hidden="true"></i> +Empresa</a>
-            <a class="col-md-5 col-lg-3 btn btn-secondary m-2" href="register-volunteer.php"><i class="fa fa-user-circle-o" aria-hidden="true"></i> +Voluntário</a>
+            <a class="col-md-5 col-lg-3 btn btn-secondary m-2" href="/admin/cadastro-empresa"><i class="fa fa-building" aria-hidden="true"></i> +Empresa</a>
+            <a class="col-md-5 col-lg-3 btn btn-secondary m-2" href="/admin/cadastro-voluntario"><i class="fa fa-user-circle-o" aria-hidden="true"></i> +Voluntário</a>
         </nav>
     </div>
 
