@@ -35,12 +35,12 @@ Route::post('/cadastro-usuario', "UserController@createNewUser");
 Route::get('/perfil/{id}', "UserController@viewUserProfile");
 Route::get('/editar-perfil', "UserController@updateUserProfile");
 
-Route::get('/admin', "AdminController@viewAdmin");
+Route::get('/admin', "AdminController@viewAdmin"); //ok
 
-Route::get('/admin/cadastro-voluntario', "AdminController@viewVolunteerRegister");
+Route::get('/admin/cadastro-voluntario', "AdminController@viewVolunteerRegister"); //ok
 Route::post('/admin/cadastro-voluntario', "AdminController@createNewVolunteer");
 
-Route::get('/admin/cadastro-empresa', "AdminController@viewCompanyRegister");
+Route::get('/admin/cadastro-empresa', "AdminController@viewCompanyRegister"); //ok
 Route::post('/admin/cadastro-empresa', "AdminController@createNewCompany");
 
 Route::get('/admin/cadastro-doacao', "AdminController@viewDonationRegister");

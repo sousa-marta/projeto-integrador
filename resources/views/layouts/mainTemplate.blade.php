@@ -15,7 +15,7 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
 
 </head>
 <body>
@@ -24,8 +24,8 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-light menu fixed-top">
             <div class="col-1 col-lg-3 px-0 logo-header row align-items-center">
-            <a href="index.php" role="logo"><img class="logo-img" src="img/a_logo-img_turquesa-dark.png" alt="Logo da Oppy: desenho de árvore com pessoa de pé embaixo dos galhos"></a>
-            <a href="index.php" role="logo"><img class="logo-name" src="img/b_logo-nome_turquesa-dark-white.png" alt="Oppy"></a>
+            <a href="index.php" role="logo"><img class="logo-img" src="/img/a_logo-img_turquesa-dark.png" alt="Logo da Oppy: desenho de árvore com pessoa de pé embaixo dos galhos"></a>
+            <a href="index.php" role="logo"><img class="logo-name" src="/img/b_logo-nome_turquesa-dark-white.png" alt="Oppy"></a>
             </div>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Menu recolhido">
             <span class="navbar-toggler-icon"></span>
@@ -104,7 +104,7 @@
     <footer class="container-fluid">
         <section class="row justify-content-center">
             <div class="col-md-5 text-center">
-                <img src="img/c_logo-img_white.png" alt="Logo da Oppy: desenho de árvore com pessoa de pé embaixo dos galhos e o nome Oppy embaixo">
+                <img src="/img/c_logo-img_white.png" alt="Logo da Oppy: desenho de árvore com pessoa de pé embaixo dos galhos e o nome Oppy embaixo">
                 <p>Copyright &#169; Oppy 2019</p>
             </div>
         </section>
