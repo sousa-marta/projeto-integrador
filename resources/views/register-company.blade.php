@@ -24,7 +24,7 @@ Cadastrar Empresa
 
     <!-- Formulário -->
     <section class="d-flex justify-content-center align-items-center p-4 mb-5">
-        <form action="" method="post" class="register-company-main card p-5 col-lg-5">
+        <form action="/admin/cadastro-empresa" method="post" class="register-company-main card p-5 col-lg-5">
 
             <div class="form-group text-center mt-3">
                 <h2>Cadastrar Nova Empresa</h2>
@@ -70,7 +70,7 @@ Cadastrar Empresa
             </div>
 
             <button type="submit" class="btn btn-primary align-self-center mt-3">Salvar</button>
-            
+
         </form>
     </section>
 
