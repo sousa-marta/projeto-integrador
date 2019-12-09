@@ -4,7 +4,6 @@
 Página do Administrador
 @endsection
 
-<!-- FIXME: acho que não vamos precisar do breadcrumb pro admin já que sabemos como chegamos lá haha -->
 @section('breadcrumb')
 <!-- Breadcrumb -->
 <nav aria-label="breadcrumb">
@@ -289,6 +288,96 @@ Página do Administrador
       </main>
       <footer class="modal-footer modal-footer-bg-color">
         <button type="submit" class="btn btn-primary col-lg-12">Adicionar/Editar</button>
+      </footer>
+    </dialog>
+  </div>
+</div>
+
+<!-- gerenciamento das doações -->
+<section class="admin-donation-section admin-tables-section">
+
+  <div class="table-responsive">
+    <div class="d-flex justify-content-start align-items-center mb-1">
+      <h2>DOAÇÕES</h2>
+      <button type="button" class="btn btn-secondary ml-3 p-2" data-toggle="modal" data-target="#admin-add-donation-modal" href="#"><i class="fa fa-plus-circle fa-2x" aria-hidden="true"></i></button>
+    </div>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Empresa</th>
+          <th scope="col">Valor</th>
+          <th scope="col">Estado</th>
+          <th scope="col">Ações</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Digital House</td>
+          <td>R$ 10.000,00</td>
+          <td>Aguardando</td>
+          <td class="d-flex justify-content-start align-items-center">
+            <button type="button" class="admin-btn-table">excluir</button>
+            <button type="button" class="admin-btn-table">recebido</button>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Nosso Consultor</td>
+          <td>R$ 500,00</td>
+          <td>Recebido</td>
+          <td class="d-flex justify-content-start align-items-center">
+            <button type="button" class="admin-btn-table">excluir</button>
+            <button type="button" class="admin-btn-table">recebido</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- modal para adicionar doação -->
+<div class="modal fade" id="admin-add-donation-modal" tabindex="-1" role="dialog" aria-labelledby="admin-add-donation-modal" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <dialog class="modal-content">
+      <header class="modal-header">
+        <h5 class="modal-title" id="admin-add-donation-modal">Adicionar Doação</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+        </button>
+      </header>
+      <main class="modal-body">
+        <form>
+                
+          <div class="form-group">
+            <label for="donationCompany">Empresa</label>
+            <select class="col-lg-12" name="donationCompany" id="donationCompany" required>
+              <option value="">Selecione a empresa</option>
+              <?php
+                foreach ($companies as $company) {
+                  echo "<option value='$company'>$company</option>";
+                }
+              ?>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="donationValue">Valor</label>
+            <input type="number" class="form-control" name="donationValue" id="donationValue" placeholder="Valor" required>
+          </div>
+          <div class="form-group">
+            <label for="donationStatus">Estado</label>
+            <select class="col-lg-12" name="donationStatus" id="donationStatus" required>
+              <option value="">Estado</option>
+              <option value="Aguardando">Aguardando</option>
+              <option value="Recebido">Recebido</option>
+            </select>
+          </div>
+
+        </form>
+      </main>
+      <footer class="modal-footer modal-footer-bg-color">
+        <button type="submit" class="btn btn-primary col-lg-12">Adicionar</button>
       </footer>
     </dialog>
   </div>
