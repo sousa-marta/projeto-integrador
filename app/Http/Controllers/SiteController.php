@@ -13,4 +13,12 @@ class SiteController extends Controller
     public function viewAbout(Request $request){
         return view('about');
     }
+
+    public function viewContact(Request $request){
+        return view('contact');
+    }
+
+    public function viewForgottenPassword(Request $request){
+        return view('forgotten-password');
+    }
 }
