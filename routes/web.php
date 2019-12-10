@@ -16,7 +16,8 @@ Route::get('/', "SiteController@viewHome");
 Route::get('/sobre', "SiteController@viewAbout"); 
 
 Route::get('/cursos', "CourseController@viewCourses");
-Route::get('/cursos/{id?}', "CourseController@viewCourseDetail");
+// Route::get('/cursos/{id?}', "CourseController@viewCourseDetail"); 
+Route::get('/curso-detalhe', "CourseController@viewCourseDetail"); //deixando rota estática no momento pois precisamos do db para deixar dinâmica
 
 Route::get('/vagas', "VacancyController@viewVacancies");
 Route::get('/vagas/{id?}', "VacancyController@viewVacancyDetail");

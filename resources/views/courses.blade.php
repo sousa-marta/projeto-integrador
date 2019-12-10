@@ -98,7 +98,8 @@ Cursos
                   <h5 class="card-title text-center py-2">Hotelaria</h5>
                   <img src="img/courses-g-hospitality.jpg" aria-hidden="true" alt="" class="course-img card-img-bottom">
                   <ul>
-                    <a href="course-detail.php"><li>Atendente</li></a>
+                    {{-- TO DO: DEIXAR CURSOS DINÂMICOS PUXANDO DO BANCO DE DADOS --}}
+                    <a href="/curso-detalhe"><li>Atendente</li></a>
                     <a href="#"><li>Camareiro</li></a>
                     <a href="#"><li>Recepcionista</li></a>
                     <a href="#"><li>Garçom</li></a>
