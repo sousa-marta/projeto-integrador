@@ -24,11 +24,11 @@ Route::get('/vagas/{id?}', "VacancyController@viewVacancyDetail");
 
 Route::get('/apoio', "SupportController@viewSupport");
 
-Route::get('/contato', "SiteController@viewContact");
-Route::get('/faq', "SiteController@viewContact");
+Route::get('/contato', "SiteController@viewContact"); //Está tendo problema com bd
+Route::get('/faq', "SiteController@viewContact"); //Está tendo problema com bd
 Route::get('/esqueceu-a-senha', "SiteController@viewForgottenPassword"); //ou UserController (precisa checar)
-Route::get('/nova-senha', "SiteController@viewResetPassword"); //ou UserController (precisa checar)
-Route::post('/nova-senha', "SiteController@createNewPassword"); //ou UserController (precisa checar)
+Route::get('/trocar-senha', "SiteController@viewResetPassword"); //ou UserController (precisa checar)
+Route::post('/nova-senha', "SiteController@createNewPassword"); //Está tendo problema com bd
 
 Route::get('/cadastro-usuario', "UserController@viewUserRegister");
 Route::post('/cadastro-usuario', "UserController@createNewUser");
