@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateUsersTable extends Migration
+class CreateVacanciesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,21 +13,20 @@ class CreateUsersTable extends Migration
      */
     public function up()
     {
-        Schema::create('users', function (Blueprint $table) {
+        Schema::create('vacancies', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('name'); //nome completo
-            $table->date('birth_date');
-            $table->string('email')->unique();
+            $table->string('name');
             $table->string('phone');
-            $table->string('address');
-            $table->string('complement');
-            $table->string('zip');
-            $table->timestamp('email_verified_at')->nullable();
-            $table->string('password');
-            // $table->rememberToken();
+            $table->string('email');
+            $table->string('description');
+            $table->float('wage',8,2);
             $table->timestamps();
+            $table->unsignedBigInteger('company_id'); //FK
+            $table->foreign('company_id')->references('id')->on('companies'); //FK
             $table->unsignedBigInteger('location_id'); //FK
             $table->foreign('location_id')->references('id')->on('locations'); //FK
+            $table->unsignedBigInteger('category_id'); //FK
+            $table->foreign('category_id')->references('id')->on('categories'); //FK
         });
     }
 
@@ -38,6 +37,6 @@ class CreateUsersTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('users');
+        Schema::dropIfExists('vacancies');
     }
 }
