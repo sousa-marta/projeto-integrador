@@ -7,7 +7,24 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 
 class User extends Authenticatable
-{
+{   
+
+    // Relationships
+    public function courses()
+    {
+        return $this->belongsToMany('App\Course');
+    }
+
+    public function vacancies()
+    {
+        return $this->belongsToMany('App\Vacancy');
+    }
+
+    public function location()
+    {
+        return $this->belongsTo('App\Location');
+    }
+
     use Notifiable;
 
     /**
