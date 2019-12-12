@@ -11,9 +11,29 @@
 |
 */
 
-Route::get('/', "SiteController@viewHome"); 
+Route::get('/', "SiteController@index");
+Route::get('/about', "SiteController@viewAbout"); 
+Route::get('/contact', "SiteController@viewContact"); //Está tendo problema com bd
+// Route::get('/esqueceu-a-senha', "SiteController@viewForgottenPassword"); //ou UserController (precisa checar)
+// Route::get('/trocar-senha', "SiteController@viewResetPassword"); //ou UserController (precisa checar)
+// Route::post('/nova-senha', "SiteController@createNewPassword"); //Está tendo problema com bd
+Route::get('/apoio', "SiteController@viewSupport");
+// Route::resource('support', 'SupportController');
 
-Route::get('/sobre', "SiteController@viewAbout"); 
+Route::get('users/forgotten-password', 'GeneralUserController@indexForgotten');
+Route::get('users/change-password', 'GeneralUserController@indexReset');
+Route::post('users/change-password', 'GeneralUserController@createNewPassword');
+
+Route::resources([
+  'courses' => 'CourseController',
+  'vacancies' => 'VacancyController',
+  'register' => 'UserController',
+  'users' => 'GeneralUserController',
+  'volunteers' => 'VolunteerController',
+  'companies' => 'CompanyController',
+  'donations' => 'DonationController',
+]);
+
 
 Route::get('/cursos', "CourseController@viewCourses");
 // Route::get('/cursos/{id?}', "CourseController@viewCourseDetail"); 
@@ -22,14 +42,6 @@ Route::get('/curso-detalhe', "CourseController@viewCourseDetail"); //deixando ro
 Route::get('/vagas', "VacancyController@viewVacancies");
 Route::get('/vagas/{id?}', "VacancyController@viewVacancyDetail");
 
-// Route::get('/apoio', "SupportController@viewSupport");
-Route::resource('support', 'SupportController');
-
-Route::get('/contato', "SiteController@viewContact"); //Está tendo problema com bd
-Route::get('/faq', "SiteController@viewContact"); //Está tendo problema com bd
-Route::get('/esqueceu-a-senha', "SiteController@viewForgottenPassword"); //ou UserController (precisa checar)
-Route::get('/trocar-senha', "SiteController@viewResetPassword"); //ou UserController (precisa checar)
-Route::post('/nova-senha', "SiteController@createNewPassword"); //Está tendo problema com bd
 
 Route::get('/cadastro-usuario', "UserController@viewUserRegister");
 Route::post('/cadastro-usuario', "UserController@createNewUser");
