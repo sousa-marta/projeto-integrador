@@ -16,8 +16,6 @@ Contato | FAQ
 @endsection
 
 @section('content')
-
-<main class="container-fluid">
     <!-- Formulário de Contato -->
     <h1 class="pages-title-bg d-flex justify-content-center align-items-center">Contato</h1>
     <div class="row align-self-center justify-content-center m-4">
@@ -97,6 +95,5 @@ Contato | FAQ
       </div>
     </div>
     </div>
-  </main>
 
 @endsection

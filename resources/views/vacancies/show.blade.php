@@ -1,0 +1,1 @@
+<!-- Página que mostra detalhes apenas de uma vaga -->

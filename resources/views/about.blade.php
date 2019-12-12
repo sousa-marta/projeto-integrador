@@ -15,8 +15,6 @@ Sobre Nós
 @endsection
 
 @section('content')
-
-<main>
     <!-- Banner com citação -->
     <section class="about-banner">
       <blockquote class="bg-color">
@@ -88,5 +86,4 @@ Sobre Nós
         </div>
       </div>
     </section>
-  </main>
   @endsection

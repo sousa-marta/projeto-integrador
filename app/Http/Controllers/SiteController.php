@@ -21,6 +21,11 @@ class SiteController extends Controller
         return view('support');
     }
 
+    public function viewContribute(Request $request)
+    {
+        return view('contribute');
+    }
+
     public function viewContact(Request $request)
     {
         return view('contact');

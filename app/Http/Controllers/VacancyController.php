@@ -14,7 +14,7 @@ class VacancyController extends Controller
      */
     public function index()
     {
-        //
+        return view('vacancies.index');
     }
 
     /**
@@ -47,6 +47,11 @@ class VacancyController extends Controller
     public function show(Vacancy $vacancy)
     {
         //
+        //Assim que ficar dinâmico, pra receber o id é só substituir o código acima por:
+        /*public function show(Vacancy $vacancy)
+        {
+        return view('vacancies.show',compact('vacancy',$vacancy));
+        }*/
     }
 
     /**
