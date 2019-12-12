@@ -8,13 +8,13 @@ Página do Administrador
 
 <!-- TODO: depois montarmos a base de dados temos que tirar essa parte -->
 <?php
-  $categories = ["Gastronomia", "Serviços Gerais", "Hotelaria"];
-  $companies = ["evolke Treinamentos", "Padaria Jabaquara", "Restaurante Árabe"];
+$categories = ["Gastronomia", "Serviços Gerais", "Hotelaria"];
+$companies = ["evolke Treinamentos", "Padaria Jabaquara", "Restaurante Árabe"];
 ?>
 
 <!-- botões para adicionar empresa e voluntário -->
 <div class="container mt-5 py-5">
-  <nav class="row d-flex justify-content-center m-2">	
+  <nav class="row d-flex justify-content-center m-2">
     <a class="col-md-5 col-lg-3 btn btn-secondary m-2" href="/admin/cadastro-empresa"><i class="fa fa-building" aria-hidden="true"></i> +Empresa</a>
     <a class="col-md-5 col-lg-3 btn btn-secondary m-2" href="/admin/cadastro-voluntario"><i class="fa fa-user-circle-o" aria-hidden="true"></i> +Voluntário</a>
   </nav>
@@ -83,7 +83,7 @@ Página do Administrador
       <header class="modal-header">
         <h5 class="modal-title" id="admin-add-course-modal">Adicionar/Editar Curso</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-        <span aria-hidden="true">&times;</span>
+          <span aria-hidden="true">&times;</span>
         </button>
       </header>
       <main class="modal-body">
@@ -98,9 +98,9 @@ Página do Administrador
             <select class="col-lg-12" name="courseCategory" id="courseCategory" required>
               <option value="">Selecione a categoria</option>
               <?php
-                foreach ($categories as $category) {
-                  echo "<option value='$category'>$category</option>";
-                }
+              foreach ($categories as $category) {
+                echo "<option value='$category'>$category</option>";
+              }
               ?>
             </select>
           </div>
@@ -109,9 +109,9 @@ Página do Administrador
             <select class="col-lg-12" name="courseCompany" id="courseCompany" required>
               <option value="">Selecione a empresa</option>
               <?php
-                foreach ($companies as $company) {
-                  echo "<option value='$company'>$company</option>";
-                }
+              foreach ($companies as $company) {
+                echo "<option value='$company'>$company</option>";
+              }
               ?>
             </select>
           </div>
@@ -139,10 +139,10 @@ Página do Administrador
 <!-- gerenciamento das vagas -->
 <section class="admin-tables-section">
   <div class="table-responsive">
-        <div class="d-flex justify-content-start align-items-center mb-1">
-            <h2>OPORTUNIDADES</h2>
-            <button type="button" class="btn btn-secondary ml-3 p-2" data-toggle="modal" data-target="#admin-add-opportunity-modal" href="#"><i class="fa fa-plus-circle fa-2x" aria-hidden="true"></i></button>
-          </div>
+    <div class="d-flex justify-content-start align-items-center mb-1">
+      <h2>OPORTUNIDADES</h2>
+      <button type="button" class="btn btn-secondary ml-3 p-2" data-toggle="modal" data-target="#admin-add-opportunity-modal" href="#"><i class="fa fa-plus-circle fa-2x" aria-hidden="true"></i></button>
+    </div>
     <table class="table">
       <thead>
         <tr>
@@ -168,7 +168,7 @@ Página do Administrador
           <td class="d-flex justify-content-start align-items-center">
             <button type="button" class="admin-btn-table" data-toggle="modal" data-target="#admin-add-opportunity-modal">editar</button>
             <button type="button" class="admin-btn-table">fechar</button>
-        </td>
+          </td>
         </tr>
         <tr>
           <th scope="row">2</th>
@@ -181,7 +181,7 @@ Página do Administrador
           <td class="d-flex justify-content-start align-items-center">
             <button type="button" class="admin-btn-table" data-toggle="modal" data-target="#admin-add-opportunity-modal">editar</button>
             <button type="button" class="admin-btn-table">fechar</button>
-        </td>
+          </td>
         </tr>
         <tr>
           <th scope="row">3</th>
@@ -194,7 +194,7 @@ Página do Administrador
           <td class="d-flex justify-content-start align-items-center">
             <button type="button" class="admin-btn-table" data-toggle="modal" data-target="#admin-add-opportunity-modal">editar</button>
             <button type="button" class="admin-btn-table">fechar</button>
-        </td>
+          </td>
         </tr>
       </tbody>
     </table>
@@ -208,7 +208,7 @@ Página do Administrador
       <header class="modal-header">
         <h5 class="modal-title" id="admin-add-opportunity-modal">Adicionar/Editar Vaga</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-        <span aria-hidden="true">&times;</span>
+          <span aria-hidden="true">&times;</span>
         </button>
       </header>
       <main class="modal-body">
@@ -223,9 +223,9 @@ Página do Administrador
             <select class="col-lg-12" name="opportunityCategory" id="opportunityCategory" required>
               <option value="">Selecione a categoria</option>
               <?php
-                foreach ($categories as $category) {
-                  echo "<option value='$category'>$category</option>";
-                }
+              foreach ($categories as $category) {
+                echo "<option value='$category'>$category</option>";
+              }
               ?>
             </select>
           </div>
@@ -234,16 +234,16 @@ Página do Administrador
             <select class="col-lg-12" name="opportunityCompany" id="opportunityCompany" required>
               <option value="">Selecione a empresa</option>
               <?php
-                foreach ($companies as $company) {
-                  echo "<option value='$company'>$company</option>";
-                }
+              foreach ($companies as $company) {
+                echo "<option value='$company'>$company</option>";
+              }
               ?>
             </select>
           </div>
           <div class="form-group">
             <label for="opportunityDescription">Descrição</label>
             <textarea type="text" class="form-control" name="opportunityDescription" id="opportunityDescription" placeholder="Descrição" required></textarea>
-          </div>   
+          </div>
           <div class="form-group">
             <label for="companyEmail">E-mail</label>
             <input type="email" class="form-control" name="companyEmail" id="companyEmail" placeholder="E-mail" required>
@@ -255,25 +255,25 @@ Página do Administrador
           </div>
           <div class="row">
             <div class="form-group col-8 p-0">
-                <label for="userAddressStr">Endereço</label>
-                <input type="text" class="form-control" name="userAddressStr" id="userAddressStr" placeholder="Endereço">
+              <label for="userAddressStr">Endereço</label>
+              <input type="text" class="form-control" name="userAddressStr" id="userAddressStr" placeholder="Endereço">
             </div>
             <div class="form-group col-4 p-0 pl-2">
-                <label for="userAddressNo">Número</label>
-                <input type="text" class="form-control" name="userAddressNo" id="userAddressNo" placeholder="Número">
+              <label for="userAddressNo">Número</label>
+              <input type="text" class="form-control" name="userAddressNo" id="userAddressNo" placeholder="Número">
             </div>
           </div>
           <div class="row">
             <div class="form-group col-6 p-0">
-                <label for="userAddressComp">Complemento</label>
-                <input type="text" class="form-control" name="userAddressComp" id="userAddressComp" placeholder="Complemento">
+              <label for="userAddressComp">Complemento</label>
+              <input type="text" class="form-control" name="userAddressComp" id="userAddressComp" placeholder="Complemento">
             </div>
             <div class="form-group col-6 p-0 pl-2">
-                <label for="userAddressPC">CEP</label>
-                <input type="text" class="form-control" name="userAddressPC" id="userAddressPC" placeholder="CEP">
+              <label for="userAddressPC">CEP</label>
+              <input type="text" class="form-control" name="userAddressPC" id="userAddressPC" placeholder="CEP">
             </div>
           </div>
-          
+
         </form>
       </main>
       <footer class="modal-footer modal-footer-bg-color">
@@ -334,20 +334,20 @@ Página do Administrador
       <header class="modal-header">
         <h5 class="modal-title" id="admin-add-donation-modal">Adicionar Doação</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-        <span aria-hidden="true">&times;</span>
+          <span aria-hidden="true">&times;</span>
         </button>
       </header>
       <main class="modal-body">
         <form>
-                
+
           <div class="form-group">
             <label for="donationCompany">Empresa</label>
             <select class="col-lg-12" name="donationCompany" id="donationCompany" required>
               <option value="">Selecione a empresa</option>
               <?php
-                foreach ($companies as $company) {
-                  echo "<option value='$company'>$company</option>";
-                }
+              foreach ($companies as $company) {
+                echo "<option value='$company'>$company</option>";
+              }
               ?>
             </select>
           </div>
