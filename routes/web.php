@@ -14,7 +14,7 @@
 Route::get('/', "SiteController@index"); //OK
 Route::get('/about', "SiteController@viewAbout"); //OK
 Route::get('/contact', "SiteController@viewContact"); //OK
-Route::get('/support', "SiteController@viewSupport"); // OK
+Route::get('/support', "SiteController@viewSupport"); //OK
 // Route::get('/esqueceu-a-senha', "SiteController@viewForgottenPassword"); //ou UserController (precisa checar)
 // Route::get('/trocar-senha', "SiteController@viewResetPassword"); //ou UserController (precisa checar)
 // Route::post('/nova-senha', "SiteController@createNewPassword"); //Está tendo problema com bd
@@ -29,8 +29,8 @@ Route::resources([
   'vacancies' => 'VacancyController',
   'register' => 'UserController',
   'users' => 'GeneralUserController',
-  'volunteers' => 'VolunteerController',
-  'companies' => 'CompanyController',
+  'volunteers' => 'VolunteerController', //OK
+  'companies' => 'CompanyController', //OK
   'donations' => 'DonationController',
 ]);
 
@@ -50,12 +50,6 @@ Route::get('/perfil/{id}', "UserController@viewUserProfile");
 Route::get('/editar-perfil', "UserController@updateUserProfile");
 
 Route::get('/admin', "AdminController@viewAdmin");
-
-Route::get('/admin/cadastro-voluntario', "AdminController@viewVolunteerRegister");
-Route::post('/admin/cadastro-voluntario', "AdminController@createNewVolunteer");
-
-Route::get('/admin/cadastro-empresa', "AdminController@viewCompanyRegister");
-Route::post('/admin/cadastro-empresa', "AdminController@createNewCompany");
 
 Route::get('/admin/cadastro-doacao', "AdminController@viewDonationRegister");
 Route::post('/admin/cadastro-doacao', "AdminController@createNewDonation");
