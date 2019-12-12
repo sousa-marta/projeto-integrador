@@ -54,7 +54,6 @@ $subjects = ["Apoio","Cadastro","Cursos","Doação","Voluntariado","Outros"];
           <?php
           foreach ($subjects as $subject) {
             echo "<option value='$subject'>$subject</option>";
-            $i++;
           }
           ?>
         </select>

@@ -17,6 +17,21 @@ class GeneralUserController extends Controller
         //
     }
 
+    public function viewForgottenPassword(Request $request)
+    {
+        return view('forgotten-password');
+    }
+
+    public function viewResetPassword(Request $request)
+    {
+        return view('reset-password');
+    }
+
+    public function viewNewPassword(Request $request)
+    {
+        return view('new-password');
+    }
+
     /**
      * Show the form for creating a new resource.
      *

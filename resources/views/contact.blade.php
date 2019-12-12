@@ -1,4 +1,19 @@
 @extends('layouts.mainTemplate')
+<?php $subjects = ["Apoio","Cadastro","Cursos","Doação","Voluntariado","Outros"]; ?>
+
+@section('title')
+Contato | FAQ
+@endsection
+
+@section('breadcrumb')
+<!-- Breadcrumb -->
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a class="breadcrumb-item-link" href="index.php">Home</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Contato</li>
+  </ol>
+</nav>
+@endsection
 
 @section('content')
 
@@ -22,9 +37,8 @@
         <select class="col-lg-12 form-control" name="contactSubject" id="contactSubject">
           <option value="">Selecione o assunto</option>;
           <?php
-          foreach ($subjects ?? '' as $subject) {
+          foreach ($subjects as $subject) {
             echo "<option value='$subject'>$subject</option>";
-            $i++;
           }
           ?>
         </select>

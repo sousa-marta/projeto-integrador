@@ -11,13 +11,13 @@
 |
 */
 
-Route::get('/', "SiteController@index");
-Route::get('/about', "SiteController@viewAbout"); 
-Route::get('/contact', "SiteController@viewContact"); //Está tendo problema com bd
+Route::get('/', "SiteController@index"); //OK
+Route::get('/about', "SiteController@viewAbout"); //OK
+Route::get('/contact', "SiteController@viewContact"); //OK
+Route::get('/support', "SiteController@viewSupport"); // OK
 // Route::get('/esqueceu-a-senha', "SiteController@viewForgottenPassword"); //ou UserController (precisa checar)
 // Route::get('/trocar-senha', "SiteController@viewResetPassword"); //ou UserController (precisa checar)
 // Route::post('/nova-senha', "SiteController@createNewPassword"); //Está tendo problema com bd
-Route::get('/apoio', "SiteController@viewSupport");
 // Route::resource('support', 'SupportController');
 
 Route::get('users/forgotten-password', 'GeneralUserController@indexForgotten');
