@@ -8,38 +8,43 @@ use Illuminate\Http\Request;
 class GeneralUserController extends Controller
 {
     /**
-     * Display a listing of the resource.
+     * Display a listing of the users.
      *
      * @return \Illuminate\Http\Response
      */
     public function index()
     {
         //
-    }
-
-    public function viewForgottenPassword(Request $request)
-    {
-        return view('forgotten-password');
-    }
-
-    public function viewResetPassword(Request $request)
-    {
-        return view('reset-password');
-    }
-
-    public function viewNewPassword(Request $request)
-    {
-        return view('new-password');
-    }
+    }    
 
     /**
-     * Show the form for creating a new resource.
+     * Show the form for creating a new user.
      *
      * @return \Illuminate\Http\Response
      */
     public function create()
     {
-        //
+        return view('users.create');
+    }
+    
+    /**
+     * Show the form for receiving an email and reset password.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function indexForgotten(Request $request)
+    {
+        return view('users.forgotten-password');
+    }
+
+    /**
+     * Show the form for creating a new password.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function createNewPassword(Request $request)
+    {
+        return view('users.reset-password');
     }
 
     /**
@@ -61,7 +66,9 @@ class GeneralUserController extends Controller
      */
     public function show(GeneralUser $generalUser)
     {
-        //
+        return view('users.show');
+        //Assim que a página estiver dinâmica, trocar pelo código abaixo:
+        //return view('users.show',compact('generalUser',$generalUser));
     }
 
     /**
@@ -72,7 +79,9 @@ class GeneralUserController extends Controller
      */
     public function edit(GeneralUser $generalUser)
     {
-        //
+        return view('users.edit');
+        //Assim que a página estiver dinâmica, trocar pelo código abaixo:
+        //return view('users.edit',compact('generalUser',$generalUser));
     }
 
     /**
