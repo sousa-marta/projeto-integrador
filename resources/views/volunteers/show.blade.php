@@ -1,1 +1,1 @@
-<!-- Tela opcional: se quisermos ver as infos de usuário individualmente -->
+<!-- Tela opcional: se quisermos ver as infos de voluntário individualmente -->

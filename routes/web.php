@@ -25,13 +25,13 @@ Route::get('users/change-password', 'GeneralUserController@indexReset');
 Route::post('users/change-password', 'GeneralUserController@createNewPassword');
 
 Route::resources([
-  'courses' => 'CourseController',
+  'courses' => 'CourseController', //OK
   'vacancies' => 'VacancyController',
-  'register' => 'UserController',
+  // 'register' => 'UserController',
   'users' => 'GeneralUserController',
   'volunteers' => 'VolunteerController', //OK
   'companies' => 'CompanyController', //OK
-  'donations' => 'DonationController',
+  'donations' => 'DonationController', //precisa criar páginas
 ]);
 
 
@@ -50,6 +50,3 @@ Route::get('/perfil/{id}', "UserController@viewUserProfile");
 Route::get('/editar-perfil', "UserController@updateUserProfile");
 
 Route::get('/admin', "AdminController@viewAdmin");
-
-Route::get('/admin/cadastro-doacao', "AdminController@viewDonationRegister");
-Route::post('/admin/cadastro-doacao', "AdminController@createNewDonation");
