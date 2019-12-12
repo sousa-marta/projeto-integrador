@@ -22,7 +22,8 @@ Route::get('/curso-detalhe', "CourseController@viewCourseDetail"); //deixando ro
 Route::get('/vagas', "VacancyController@viewVacancies");
 Route::get('/vagas/{id?}', "VacancyController@viewVacancyDetail");
 
-Route::get('/apoio', "SupportController@viewSupport");
+// Route::get('/apoio', "SupportController@viewSupport");
+Route::resource('support', 'SupportController');
 
 Route::get('/contato', "SiteController@viewContact"); //Está tendo problema com bd
 Route::get('/faq', "SiteController@viewContact"); //Está tendo problema com bd
