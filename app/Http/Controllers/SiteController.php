@@ -30,4 +30,8 @@ class SiteController extends Controller
     {
         return view('contact');
     }
+
+    public function viewAdmin(Request $request) {
+        return view('admin');
+    }
 }

@@ -16,7 +16,7 @@ Route::get('/about', "SiteController@viewAbout"); //OK
 Route::get('/contact', "SiteController@viewContact"); //OK
 Route::get('/support', "SiteController@viewSupport"); //OK
 Route::get('/contribute', "SiteController@viewContribute"); //OK
-Route::get('/admin', "AdminController@viewAdmin");
+Route::get('/admin', "SiteController@viewAdmin");
 Route::get('users/forgotten-password', 'GeneralUserController@indexForgotten'); //OK
 Route::get('users/change-password', 'GeneralUserController@createNewPassword'); //depois precisamos arrumar pra puxar o id do usuário já que ele vai receber um e-mail pra resetar a senha
 Route::post('users/change-password', 'GeneralUserController@updateNewPassword'); //OK
