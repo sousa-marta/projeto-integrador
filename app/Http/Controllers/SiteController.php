@@ -6,32 +6,33 @@ use Illuminate\Http\Request;
 
 class SiteController extends Controller
 {
-    public function index(Request $request)
-    {
-        return view('home');
-    }
+  public function index(Request $request)
+  {
+    return view('home');
+  }
 
-    public function viewAbout(Request $request)
-    {
-        return view('about');
-    }
-    
-    public function viewSupport(Request $request)
-    {
-        return view('support');
-    }
+  public function viewAbout(Request $request)
+  {
+    return view('about');
+  }
 
-    public function viewContribute(Request $request)
-    {
-        return view('contribute');
-    }
+  public function viewSupport(Request $request)
+  {
+    return view('support');
+  }
 
-    public function viewContact(Request $request)
-    {
-        return view('contact');
-    }
+  public function viewContribute(Request $request)
+  {
+    return view('contribute');
+  }
 
-    public function viewAdmin(Request $request) {
-        return view('admin');
-    }
+  public function viewContact(Request $request)
+  {
+    return view('contact');
+  }
+
+  public function viewAdmin(Request $request)
+  {
+    return view('admin');
+  }
 }
