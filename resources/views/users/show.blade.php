@@ -8,7 +8,7 @@ Página Usuário
 <!-- Breadcrumb -->
 <nav aria-label="breadcrumb">
   <ol class="breadcrumb">
-    <li class="breadcrumb-item"><a class="breadcrumb-item-link" href="index.php">Home</a></li>
+    <li class="breadcrumb-item"><a class="breadcrumb-item-link" href="/">Home</a></li>
     <li class="breadcrumb-item active" aria-current="page">Perfil do Usuário</li>
   </ol>
 </nav>
@@ -23,7 +23,8 @@ Página Usuário
     <div>
       <h1>Alex Watanabe</h1>
       <p><b>País de origem:</b> Japão</p>
-      <button class="mt-3 col-lg-12 btn btn-secondary" onclick="location.href='user-info.php'">Editar informações</a>
+      <!-- TODO: arrumar href de Editar Info após deixar dinâmico com banco de dados -->
+      <button class="mt-3 col-lg-12 btn btn-secondary" onclick="location.href='/users/1/edit'">Editar informações</a>
     </div>
   </div>
 </section>

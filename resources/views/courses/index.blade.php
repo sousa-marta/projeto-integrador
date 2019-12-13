@@ -8,7 +8,7 @@ Cursos
 <!-- Breadcrumb  -->
 <nav aria-label="breadcrumb">
   <ol class="breadcrumb">
-    <li class="breadcrumb-item"><a class="breadcrumb-item-link" href="index.php">Home</a></li>
+    <li class="breadcrumb-item"><a class="breadcrumb-item-link" href="/">Home</a></li>
     <li class="breadcrumb-item active" aria-current="page">Cursos</li>
   </ol>
 </nav>
@@ -71,7 +71,8 @@ Cursos
         <label class="font-weight-bold text-light" for="busca">Busca por Palavra Chave</label>
         <input type="text" class="form-control" id="busca" placeholder="Procurar...">
       </div>
-      <button type="button" class="btn btn-secondary col-lg-12" onclick="location.href='course-detail.php'"><i class="fa fa-search"></i> Buscar</button>
+      <!-- TODO: arrumar href de buscar após deixar site dinâmico com banco de dados -->
+      <button type="button" class="btn btn-secondary col-lg-12" onclick="location.href='/courses/id'"><i class="fa fa-search"></i> Buscar</button>
     </div>
   </div>
 </aside>
@@ -98,8 +99,8 @@ Cursos
               <h5 class="card-title text-center py-2">Hotelaria</h5>
               <img src="img/courses-g-hospitality.jpg" aria-hidden="true" alt="" class="course-img card-img-bottom">
               <ul>
-                {{-- TO DO: DEIXAR CURSOS DINÂMICOS PUXANDO DO BANCO DE DADOS --}}
-                <a href="/curso-detalhe">
+                {{-- TODO: DEIXAR CURSOS DINÂMICOS PUXANDO DO BANCO DE DADOS --}}
+                <a href="/courses/id">
                   <li>Atendente</li>
                 </a>
                 <a href="#">

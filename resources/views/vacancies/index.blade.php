@@ -8,7 +8,7 @@ Oportunidades
 <!-- Breadcrumb  -->
 <nav aria-label="breadcrumb">
   <ol class="breadcrumb">
-    <li class="breadcrumb-item"><a class="breadcrumb-item-link" href="index.php">Home</a></li>
+    <li class="breadcrumb-item"><a class="breadcrumb-item-link" href="/">Home</a></li>
     <li class="breadcrumb-item active" aria-current="page">Oportunidades</li>
   </ol>
 </nav>
@@ -132,7 +132,8 @@ Oportunidades
         <label class="font-weight-bold text-light" for="busca">Busca por Palavra Chave</label>
         <input type="text" class="form-control" id="busca" placeholder="Procurar...">
       </div>
-      <button type="button" class="btn btn-secondary col-lg-12" onclick="location.href='course-detail.php'"><i class="fa fa-search"></i> Buscar</button>
+      <!-- TODO: arrumar href do botão buscar -->
+      <button type="button" class="btn btn-secondary col-lg-12" onclick="location.href='/courses/id'"><i class="fa fa-search"></i> Buscar</button>
     </div>
   </div>
 </aside>
@@ -163,7 +164,7 @@ Oportunidades
               <hr>
               <div class="d-flex justify-content-between">
                 <a href="#" class="btn btn-primary nowrap m-1">enviar curriculo</a>
-                <a href="courses.php" class="btn btn-secondary nowrap m-1">verificar cursos</a>
+                <a href="/courses" class="btn btn-secondary nowrap m-1">verificar cursos</a>
               </div>
           </div>
         </div>
@@ -189,7 +190,7 @@ Oportunidades
               <hr>
               <div class="d-flex justify-content-between">
                 <a href="#" class="btn btn-primary nowrap m-1">enviar curriculo</a>
-                <a href="courses.php" class="btn btn-secondary nowrap m-1">verificar cursos</a>
+                <a href="/courses" class="btn btn-secondary nowrap m-1">verificar cursos</a>
               </div>
           </div>
         </div>
@@ -215,7 +216,7 @@ Oportunidades
               <hr>
               <div class="d-flex justify-content-between">
                 <a href="#" class="btn btn-primary nowrap m-1">enviar curriculo</a>
-                <a href="courses.php" class="btn btn-secondary nowrap m-1">verificar cursos</a>
+                <a href="/courses" class="btn btn-secondary nowrap m-1">verificar cursos</a>
               </div>
           </div>
         </div>

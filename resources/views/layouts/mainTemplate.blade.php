@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
 
@@ -8,7 +8,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>@yield('title')</title>
 
-  <link rel="icon" href="img/favicon.ico">
+  <link rel="icon" href="/img/favicon.ico">
   <!-- Fontes -->
   <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Baloo&display=swap" rel="stylesheet">
@@ -26,8 +26,8 @@
   <header>
     <nav class="navbar navbar-expand-lg navbar-light menu fixed-top">
       <div class="col-1 col-lg-3 px-0 logo-header row align-items-center">
-        <a href="index.php" role="logo"><img class="logo-img" src="/img/a_logo-img_turquesa-dark.png" alt="Logo da Oppy: desenho de árvore com pessoa de pé embaixo dos galhos"></a>
-        <a href="index.php" role="logo"><img class="logo-name" src="/img/b_logo-nome_turquesa-dark-white.png" alt="Oppy"></a>
+        <a href="/" role="logo"><img class="logo-img" src="/img/a_logo-img_turquesa-dark.png" alt="Logo da Oppy: desenho de árvore com pessoa de pé embaixo dos galhos"></a>
+        <a href="/" role="logo"><img class="logo-name" src="/img/b_logo-nome_turquesa-dark-white.png" alt="Oppy"></a>
       </div>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Menu recolhido">
         <span class="navbar-toggler-icon"></span>
@@ -35,28 +35,28 @@
       <div class="px-0 collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="index.php"><span class="fa">&#xf015;</span> Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="/"><span class="fa">&#xf015;</span> Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="about.php"><span class="fa">&#xf0c0;</span> Quem Somos</a>
+            <a class="nav-link" href="/about"><span class="fa">&#xf0c0;</span> Quem Somos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="courses.php"><span class="fa">&#xf19d;</span> Cursos</a>
+            <a class="nav-link" href="/courses"><span class="fa">&#xf19d;</span> Cursos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="opportunities.php"><span class="fa">&#xf0b1;</span> Oportunidades</a>
+            <a class="nav-link" href="/vacancies"><span class="fa">&#xf0b1;</span> Oportunidades</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="support.php"><span class="fa">&#xf004;</span> Apoio</a>
+            <a class="nav-link" href="/support"><span class="fa">&#xf004;</span> Apoio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contribute.php"><span class="fa">&#xf155;</span> Contribua</a>
+            <a class="nav-link" href="/contribute"><span class="fa">&#xf155;</span> Contribua</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contact.php"><span class="fa">&#xf086;</span> Contato</a>
+            <a class="nav-link" href="/contact"><span class="fa">&#xf086;</span> Contato</a>
           </li>
           <li class="nav-item">
-            <a id="register-link" class="nav-link" href="register.php"><span id="register-link" class="fa">&#xf2b9;</span> Cadastre-se</a>
+            <a id="register-link" class="nav-link" href="/users/create"><span id="register-link" class="fa">&#xf2b9;</span> Cadastre-se</a>
           </li>
           <button type="button" class="btn btn-primary btn-login" data-toggle="modal" data-target="#login-modal" href="#">Login</button>
         </ul>
@@ -85,7 +85,7 @@
               <input type="password" class="form-control" id="userPass" name="userPass" placeholder="Digite a senha cadastrada" required>
             </div>
             <div class="form-group">
-              <p class="text-center mt-2"><a href="forgotten-password.php">Esqueceu sua senha?</a></p>
+              <p class="text-center mt-2"><a href="/users/forgotten-password">Esqueceu sua senha?</a></p>
             </div>
           </form>
         </main>

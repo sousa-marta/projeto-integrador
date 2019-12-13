@@ -8,7 +8,7 @@ Apoio
 <!-- Breadcrumb  -->
 <nav aria-label="breadcrumb">
   <ol class="breadcrumb">
-    <li class="breadcrumb-item"><a class="breadcrumb-item-link" href="index.php">Home</a></li>
+    <li class="breadcrumb-item"><a class="breadcrumb-item-link" href="/">Home</a></li>
     <li class="breadcrumb-item active" aria-current="page">@yield('title')</li>
   </ol>
 </nav>
@@ -64,7 +64,7 @@ Apoio
       <p class="p-2">As questões tratadas pela Oppy já envolvem pedidos de naturalização e nacionalização, vistos, previdência, casamento, acesso à educação e à saúde, entre outras.</p>
       <p class="p-2">A Oppy possui um forte trabalho em rede, destacando-se as parcerias com Alto Comissariado das Nações Unidas para Refugiados (ACNUR), a Associação Antonio Vieira (ASAV) e o CIBAI Migrações. Ademais, integra o Fórum Permanente de Mobilidade Humana (FPMH), o Comitê Estadual de Atenção a Migrantes, Refugiados, Apátridas e Vítimas de Tráfico de Pessoas (COMIRAT-SP), e tem representantes junto ao Comitê de Acompanhamento pela Sociedade Civil sobre ações de Migração e Refúgio (CASC-Migrante) da Secretaria Nacional de Justiça.</p>
     </div>
-    <button type="button" aria-label="Para saber mais sobre o apoio jurídico" class="btn btn-secondary align-self-center mb-3" onclick="location.href='contact.php'">Entre em contato</button>
+    <button type="button" aria-label="Para saber mais sobre o apoio jurídico" class="btn btn-secondary align-self-center mb-3" onclick="location.href='/contact'">Entre em contato</button>
   </div>
 </section>
 
@@ -112,7 +112,7 @@ Apoio
       <p class="p-2">Promover o voluntariado, a cidadania participativa e a troca positiva de experiências;</p>
       <p class="p-2">Contribuir para o enriquecimento pessoal, social e organizacional das pessoas e entidades envolvidas.</p>
     </div>
-    <button type="button" aria-label="Para saber mais sobre a mentoria profissional" class="btn btn-secondary align-self-center mb-3" onclick="location.href='contact.php'">Entre em contato</button>
+    <button type="button" aria-label="Para saber mais sobre a mentoria profissional" class="btn btn-secondary align-self-center mb-3" onclick="location.href='/contact'">Entre em contato</button>
   </div>
 </section>
 
@@ -149,7 +149,7 @@ Apoio
     <div class="card-body">
       <p class="p-2">Ramo da psicologia que visa fornecer solução para problemas práticos e cotidianos do comportamento humano, aumentar a qualidade de vida ou otimizar o funcionamento de grupos de pessoas. Dessa forma, utiliza o conhecimento acumulado, as várias técnicas e métodos desenvolvidos pela psicologia básica para atingir seu fim.</p>
     </div>
-    <button type="button" aria-label="Saiba mais sobre o apoio psicológico" class="btn btn-secondary align-self-center mb-3" onclick="location.href='contact.php'">Entre em contato</button>
+    <button type="button" aria-label="Saiba mais sobre o apoio psicológico" class="btn btn-secondary align-self-center mb-3" onclick="location.href='/contact'">Entre em contato</button>
   </div>
 </section>
 @endsection

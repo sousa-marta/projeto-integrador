@@ -9,7 +9,7 @@ Detalhes do Curso
 <nav aria-label="breadcrumb">
   <ol class="breadcrumb">
     <li class="breadcrumb-item"><a class="breadcrumb-item-link" href="/">Home</a></li>
-    <li class="breadcrumb-item"><a class="breadcrumb-item-link" href="/cursos">Cursos</a></li>
+    <li class="breadcrumb-item"><a class="breadcrumb-item-link" href="/courses">Cursos</a></li>
     {{-- TODO: deixar dinâmico o nome do curso --}}
     <li class="breadcrumb-item active" aria-current="page">Hotelaria</li>
   </ol>

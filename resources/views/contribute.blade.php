@@ -8,7 +8,7 @@ Contribua
 <!-- Breadcrumb -->
 <nav aria-label="breadcrumb">
   <ol class="breadcrumb">
-    <li class="breadcrumb-item"><a class="breadcrumb-item-link" href="index.php">Home</a></li>
+    <li class="breadcrumb-item"><a class="breadcrumb-item-link" href="/">Home</a></li>
     <li class="breadcrumb-item active" aria-current="page">Contribua</li>
   </ol>
 </nav>
@@ -70,7 +70,7 @@ Contribua
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex quos ullam</p>
         </div>
       </div>
-      <button class="btn btn-primary mt-5" onclick="location.href='contact.php'">Contate-nos</button>
+      <button class="btn btn-primary mt-5" onclick="location.href='/contact'">Contate-nos</button>
     </div>
   </div>
 </section>
