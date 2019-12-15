@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Donation;
 
 class SiteController extends Controller
 {
@@ -33,6 +34,8 @@ class SiteController extends Controller
 
   public function viewAdmin(Request $request)
   {
-    return view('admin');
+    //lê informações das doações
+    $donations = Donation::all();
+    return view('admin',["donations" => $donations]);
   }
 }
