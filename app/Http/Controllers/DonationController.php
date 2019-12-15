@@ -68,7 +68,7 @@ class DonationController extends Controller
    */
   public function edit(Donation $donation)
   {
-    //
+    return view('donations.edit',['donation' => $donation]);
   }
 
   /**
@@ -80,7 +80,20 @@ class DonationController extends Controller
    */
   public function update(Request $request, Donation $donation)
   {
-    //
+
+    //TODO: montar validação das doações
+    // $request->validate([
+    //   'title' => 'required|min:3',
+    //   'description' => 'required',
+    // ]);
+  
+    $donation->name = $request->donationName;
+    $donation->phone = $request->donationPhone;
+    $donation->amount = $request->donationValue;
+    $donation->status = $request->donationStatus;
+    $donation->save();
+    return redirect('/admin');
+
   }
 
   /**

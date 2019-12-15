@@ -79,7 +79,7 @@ Página do Administrador
   <div class="modal-dialog" role="document">
     <dialog class="modal-content">
       <header class="modal-header">
-        <h5 class="modal-title" id="admin-add-course-modal">Adicionar/Editar Curso</h5>
+        <h5 class="modal-title" id="admin-add-course-modal">Adicionar Curso</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -130,7 +130,7 @@ Página do Administrador
             <textarea type="text" class="form-control" name="courseDescription" id="courseDescription" placeholder="Descrição" required></textarea>
           </div>
           <div class="modal-footer modal-footer-bg-color">
-            <button type="submit" class="btn btn-primary col-lg-12">Adicionar/Editar</button>
+            <button type="submit" class="btn btn-primary col-lg-12">Adicionar</button>
           </div>
         </form>
       </main>
@@ -204,7 +204,7 @@ Página do Administrador
   <div class="modal-dialog" role="document">
     <dialog class="modal-content">
       <header class="modal-header">
-        <h5 class="modal-title" id="admin-add-opportunity-modal">Adicionar/Editar Vaga</h5>
+        <h5 class="modal-title" id="admin-add-opportunity-modal">Adicionar Vaga</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -287,7 +287,7 @@ Página do Administrador
             </div>
           </div>
           <div class="modal-footer modal-footer-bg-color">
-            <button type="submit" class="btn btn-primary col-lg-12">Adicionar/Editar</button>
+            <button type="submit" class="btn btn-primary col-lg-12">Adicionar</button>
           </div>
         </form>
       </main>
@@ -322,7 +322,10 @@ Página do Administrador
             <td>{{ $donation->amount }}</td>
             <td>{{ $donation->status }}</td>
             <td class="d-flex justify-content-start align-items-center">
-              <button type="button" class="admin-btn-table">editar</button>
+              <!-- botão editar -->
+              <a href="{{ URL::to('donations/' . $donation->id . '/edit') }}">
+                <button type="button" class="admin-btn-table">editar</button>
+              </a>&nbsp;
               <!-- botão excluir -->
               <form action="{{url('donations', [$donation->id])}}" method="POST">
                 <input type="hidden" name="_method" value="DELETE">
