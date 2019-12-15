@@ -8,8 +8,9 @@ Página do Administrador
 
 <!-- TODO: depois montarmos a base de dados temos que tirar essa parte -->
 <?php
-$categories = ["Gastronomia", "Serviços Gerais", "Hotelaria"];
-$companies = ["evolke Treinamentos", "Padaria Jabaquara", "Restaurante Árabe"];
+  $categories = ["Gastronomia", "Serviços Gerais", "Hotelaria"];
+  $companies = ["evolke Treinamentos", "Padaria Jabaquara", "Restaurante Árabe"];
+  $countries = ["Afeganistão", "África do Sul", "Akrotiri", "Albânia", "Alemanha", "Andorra", "Angola", "Anguila", "Antárctida", "Antígua e Barbuda", "Arábia Saudita", "Arctic Ocean", "Argélia", "Argentina", "Arménia", "Aruba", "Ashmore and Cartier Islands", "Atlantic Ocean", "Austrália", "Áustria", "Azerbaijão", "Baamas", "Bangladeche", "Barbados", "Barém", "Bélgica", "Belize", "Benim", "Bermudas", "Bielorrússia", "Birmânia", "Bolívia", "Bósnia e Herzegovina", "Botsuana", "Brasil", "Brunei", "Bulgária", "Burquina Faso", "Burúndi", "Butão", "Cabo Verde", "Camarões", "Camboja", "Canadá", "Catar", "Cazaquistão", "Chade", "Chile", "China", "Chipre", "Clipperton Island", "Colômbia", "Comores", "Congo-Brazzaville", "Congo-Kinshasa", "Coral Sea Islands", "Coreia do Norte", "Coreia do Sul", "Costa do Marfim", "Costa Rica", "Croácia", "Cuba", "Curacao", "Dhekelia", "Dinamarca", "Domínica", "Egipto", "Emiratos Árabes Unidos", "Equador", "Eritreia", "Eslováquia", "Eslovénia", "Espanha", "Estados Unidos", "Estónia", "Etiópia", "Faroé", "Fiji", "Filipinas", "Finlândia", "França", "Gabão", "Gâmbia", "Gana", "Gaza Strip", "Geórgia", "Geórgia do Sul e Sandwich do Sul", "Gibraltar", "Granada", "Grécia", "Gronelândia", "Guame", "Guatemala", "Guernsey", "Guiana", "Guiné", "Guiné Equatorial", "Guiné-Bissau", "Haiti", "Honduras", "Hong Kong", "Hungria", "Iémen", "Ilha Bouvet", "Ilha do Natal", "Ilha Norfolk", "Ilhas Caimão", "Ilhas Cook", "Ilhas dos Cocos", "Ilhas Falkland", "Ilhas Heard e McDonald", "Ilhas Marshall", "Ilhas Salomão", "Ilhas Turcas e Caicos", "Ilhas Virgens Americanas", "Ilhas Virgens Britânicas", "Índia", "Indian Ocean", "Indonésia", "Irão", "Iraque", "Irlanda", "Islândia", "Israel", "Itália", "Jamaica", "Jan Mayen", "Japão", "Jersey", "Jibuti", "Jordânia", "Kosovo", "Kuwait", "Laos", "Lesoto", "Letónia", "Líbano", "Libéria", "Líbia", "Listenstaine", "Lituânia", "Luxemburgo", "Macau", "Macedónia", "Madagáscar", "Malásia", "Malávi", "Maldivas", "Mali", "Malta", "Man, Isle of", "Marianas do Norte", "Marrocos", "Maurícia", "Mauritânia", "México", "Micronésia", "Moçambique", "Moldávia", "Mónaco", "Mongólia", "Monserrate", "Montenegro", "Mundo", "Namíbia", "Nauru", "Navassa Island", "Nepal", "Nicarágua", "Níger", "Nigéria", "Niue", "Noruega", "Nova Caledónia", "Nova Zelândia", "Omã", "Pacific Ocean", "Países Baixos", "Palau", "Panamá", "Papua-Nova Guiné", "Paquistão", "Paracel Islands", "Paraguai", "Peru", "Pitcairn", "Polinésia Francesa", "Polónia", "Porto Rico", "Portugal", "Quénia", "Quirguizistão", "Quiribáti", "Reino Unido", "República Centro-Africana", "República Checa", "República Dominicana", "Roménia", "Ruanda", "Rússia", "Salvador", "Samoa", "Samoa Americana", "Santa Helena", "Santa Lúcia", "São Bartolomeu", "São Cristóvão e Neves", "São Marinho", "São Martinho", "São Pedro e Miquelon", "São Tomé e Príncipe", "São Vicente e Granadinas", "Sara Ocidental", "Seicheles", "Senegal", "Serra Leoa", "Sérvia", "Singapura", "Sint Maarten", "Síria", "Somália", "Southern Ocean", "Spratly Islands", "Sri Lanca", "Suazilândia", "Sudão", "Sudão do Sul", "Suécia", "Suíça", "Suriname", "Svalbard e Jan Mayen", "Tailândia", "Taiwan", "Tajiquistão", "Tanzânia", "Território Britânico do Oceano Índico", "Territórios Austrais Franceses", "Timor Leste", "Togo", "Tokelau", "Tonga", "Trindade e Tobago", "Tunísia", "Turquemenistão", "Turquia", "Tuvalu", "Ucrânia", "Uganda", "União Europeia", "Uruguai", "Usbequistão", "Vanuatu", "Vaticano", "Venezuela", "Vietname", "Wake Island", "Wallis e Futuna", "West Bank", "Zâmbia", "Zimbabué"]
 ?>
 
 <!-- botões para adicionar empresa e voluntário -->
@@ -35,9 +36,8 @@ $companies = ["evolke Treinamentos", "Padaria Jabaquara", "Restaurante Árabe"];
           <th scope="col">Nome</th>
           <th scope="col" class="d-none d-sm-table-cell">Categoria</th>
           <th scope="col" class="d-none d-sm-table-cell">Empresa</th>
-          <th scope="col" class="d-none d-sm-table-cell">Vagas</th>
-          <th scope="col" class="d-none d-sm-table-cell">Inscritos</th>
-          <th scope="col" class="d-none d-sm-table-cell">Encerramento Inscrições</th>
+          <th scope="col" class="d-none d-sm-table-cell">Início</th>
+          <th scope="col" class="d-none d-sm-table-cell">Fim</th>
           <th scope="col">Estado</th>
           <th scope="col">Ações</th>
         </tr>
@@ -48,8 +48,7 @@ $companies = ["evolke Treinamentos", "Padaria Jabaquara", "Restaurante Árabe"];
           <td>Curso de Atendente</td>
           <td class="d-none d-sm-table-cell">Hotelaria</td>
           <td class="d-none d-sm-table-cell">evolke Treinamentos</td>
-          <td class="d-none d-sm-table-cell">50</td>
-          <td class="d-none d-sm-table-cell">46</td>
+          <td class="d-none d-sm-table-cell">20/12/2019</td>
           <td class="d-none d-sm-table-cell">20/12/2019</td>
           <td>Aberto</td>
           <td class="d-flex justify-content-start align-items-center">
@@ -62,8 +61,7 @@ $companies = ["evolke Treinamentos", "Padaria Jabaquara", "Restaurante Árabe"];
           <td>Curso de Garçom</td>
           <td class="d-none d-sm-table-cell">Serviços Gerais</td>
           <td class="d-none d-sm-table-cell">Restaurando Cursos</td>
-          <td class="d-none d-sm-table-cell">100</td>
-          <td class="d-none d-sm-table-cell">12</td>
+          <td class="d-none d-sm-table-cell">10/12/2019</td>
           <td class="d-none d-sm-table-cell">10/12/2019</td>
           <td>Fechado</td>
           <td class="d-flex justify-content-start align-items-center">
@@ -96,7 +94,7 @@ $companies = ["evolke Treinamentos", "Padaria Jabaquara", "Restaurante Árabe"];
           <div class="form-group">
             <label for="courseCategory">Catagoria</label>
             <select class="col-lg-12" name="courseCategory" id="courseCategory" required>
-              <option value="">Selecione a categoria</option>
+              <option value="" selected disabled>Selecione a categoria</option>
               <?php
               foreach ($categories as $category) {
                 echo "<option value='$category'>$category</option>";
@@ -107,7 +105,7 @@ $companies = ["evolke Treinamentos", "Padaria Jabaquara", "Restaurante Árabe"];
           <div class="form-group">
             <label for="courseCompany">Empresa</label>
             <select class="col-lg-12" name="courseCompany" id="courseCompany" required>
-              <option value="">Selecione a empresa</option>
+              <option value="" selected disabled>Selecione a empresa</option>
               <?php
               foreach ($companies as $company) {
                 echo "<option value='$company'>$company</option>";
@@ -120,8 +118,12 @@ $companies = ["evolke Treinamentos", "Padaria Jabaquara", "Restaurante Árabe"];
             <input type="date" class="form-control" name="courseStart" id="courseStart" placeholder="Nome do curso" required>
           </div>
           <div class="form-group">
-            <label for="courseDuration">Duração</label>
-            <input type="text" class="form-control" name="courseDuration" id="courseDuration" placeholder="Duração" required>
+            <label for="endStart">Fim</label>
+            <input type="date" class="form-control" name="endStart" id="endStart" placeholder="Nome do curso" required>
+          </div>
+          <div class="form-group">
+            <label for="courseDuration">Duração (h)</label>
+            <input type="number" class="form-control" name="courseDuration" id="courseDuration" placeholder="Duração" required>
           </div>
           <div class="form-group">
             <label for="courseDescription">Descrição</label>
@@ -150,8 +152,7 @@ $companies = ["evolke Treinamentos", "Padaria Jabaquara", "Restaurante Árabe"];
           <th scope="col">Nome</th>
           <th scope="col" class="d-none d-sm-table-cell">Categoria</th>
           <th scope="col" class="d-none d-sm-table-cell">Empresa</th>
-          <th scope="col" class="d-none d-sm-table-cell">Vagas</th>
-          <th scope="col" class="d-none d-sm-table-cell">Inscritos</th>
+          <th scope="col" class="d-none d-sm-table-cell">Salário</th>
           <th scope="col">Estado</th>
           <th scope="col">Ações</th>
         </tr>
@@ -162,8 +163,7 @@ $companies = ["evolke Treinamentos", "Padaria Jabaquara", "Restaurante Árabe"];
           <td>Vaga de Atendente</td>
           <td class="d-none d-sm-table-cell">Hotelaria</td>
           <td class="d-none d-sm-table-cell">Hotel Blue Tree</td>
-          <td class="d-none d-sm-table-cell">1</td>
-          <td class="d-none d-sm-table-cell">30</td>
+          <td class="d-none d-sm-table-cell">R$ 2.000,00</td>
           <td>Aberta</td>
           <td class="d-flex justify-content-start align-items-center">
             <button type="button" class="admin-btn-table" data-toggle="modal" data-target="#admin-add-opportunity-modal">editar</button>
@@ -175,8 +175,7 @@ $companies = ["evolke Treinamentos", "Padaria Jabaquara", "Restaurante Árabe"];
           <td>Vaga de Garçom</td>
           <td class="d-none d-sm-table-cell">Serviços Gerais</td>
           <td class="d-none d-sm-table-cell">Habib's</td>
-          <td class="d-none d-sm-table-cell">2</td>
-          <td class="d-none d-sm-table-cell">12</td>
+          <td class="d-none d-sm-table-cell">R$ 1.500,00</td>
           <td>Fechada</td>
           <td class="d-flex justify-content-start align-items-center">
             <button type="button" class="admin-btn-table" data-toggle="modal" data-target="#admin-add-opportunity-modal">editar</button>
@@ -188,8 +187,7 @@ $companies = ["evolke Treinamentos", "Padaria Jabaquara", "Restaurante Árabe"];
           <td>Vaga Padeiro Jabaquara</td>
           <td class="d-none d-sm-table-cell">Serviços Gerais</td>
           <td class="d-none d-sm-table-cell">Padaria Jabaquara</td>
-          <td class="d-none d-sm-table-cell">1</td>
-          <td class="d-none d-sm-table-cell">22</td>
+          <td class="d-none d-sm-table-cell">R$ 3.200,00</td>
           <td>Aberta</td>
           <td class="d-flex justify-content-start align-items-center">
             <button type="button" class="admin-btn-table" data-toggle="modal" data-target="#admin-add-opportunity-modal">editar</button>
@@ -221,7 +219,7 @@ $companies = ["evolke Treinamentos", "Padaria Jabaquara", "Restaurante Árabe"];
           <div class="form-group">
             <label for="opportunityCategory">Catagoria</label>
             <select class="col-lg-12" name="opportunityCategory" id="opportunityCategory" required>
-              <option value="">Selecione a categoria</option>
+              <option value="" selected disabled>Selecione a categoria</option>
               <?php
               foreach ($categories as $category) {
                 echo "<option value='$category'>$category</option>";
@@ -232,7 +230,7 @@ $companies = ["evolke Treinamentos", "Padaria Jabaquara", "Restaurante Árabe"];
           <div class="form-group">
             <label for="opportunityCompany">Empresa</label>
             <select class="col-lg-12" name="opportunityCompany" id="opportunityCompany" required>
-              <option value="">Selecione a empresa</option>
+              <option value="" selected disabled>Selecione a empresa</option>
               <?php
               foreach ($companies as $company) {
                 echo "<option value='$company'>$company</option>";
@@ -253,24 +251,39 @@ $companies = ["evolke Treinamentos", "Padaria Jabaquara", "Restaurante Árabe"];
             <input type="tel" class="form-control" name="companyPhone" id="companyPhone" placeholder="11 12345-1234" pattern="[0-9]{2} [0-9]{5}-[0-9]{4}" required>
             <small>Formato: 11 12345-1234</small>
           </div>
+          <div class="form-group">
+            <label for="wage">Salário</label>
+            <input type="number" class="form-control" name="wage" id="wage" placeholder="Salário" required>
+          </div>
+          <label for="companyCountry">País</label>
+          <div class="form-group">
+            <select class="col-lg-12" name="companyCountry" id="companyCountry" required >
+              <option value="" selected disabled>Selecione o país da empresa</option>
+              <?php
+                foreach ($countries as $country) {
+                  echo "<option value='$country'>$country</option>";
+                }
+              ?>
+            </select>
+          </div>
           <div class="row">
             <div class="form-group col-8 p-0">
-              <label for="userAddressStr">Endereço</label>
-              <input type="text" class="form-control" name="userAddressStr" id="userAddressStr" placeholder="Endereço">
+              <label for="companyAddressStr">Endereço</label>
+              <input type="text" class="form-control" name="companyAddressStr" id="companyAddressStr" placeholder="Endereço">
             </div>
             <div class="form-group col-4 p-0 pl-2">
-              <label for="userAddressNo">Número</label>
-              <input type="text" class="form-control" name="userAddressNo" id="userAddressNo" placeholder="Número">
+              <label for="companyAddressNo">Número</label>
+              <input type="text" class="form-control" name="companyAddressNo" id="companyAddressNo" placeholder="Número">
             </div>
           </div>
           <div class="row">
             <div class="form-group col-6 p-0">
-              <label for="userAddressComp">Complemento</label>
-              <input type="text" class="form-control" name="userAddressComp" id="userAddressComp" placeholder="Complemento">
+              <label for="companyAddressComp">Complemento</label>
+              <input type="text" class="form-control" name="companyAddressComp" id="companyAddressComp" placeholder="Complemento">
             </div>
             <div class="form-group col-6 p-0 pl-2">
-              <label for="userAddressPC">CEP</label>
-              <input type="text" class="form-control" name="userAddressPC" id="userAddressPC" placeholder="CEP">
+              <label for="companyAddressPC">CEP</label>
+              <input type="text" class="form-control" name="companyAddressPC" id="companyAddressPC" placeholder="CEP">
             </div>
           </div>
 
@@ -295,7 +308,7 @@ $companies = ["evolke Treinamentos", "Padaria Jabaquara", "Restaurante Árabe"];
       <thead>
         <tr>
           <th scope="col">#</th>
-          <th scope="col">Empresa</th>
+          <th scope="col">Nome</th>
           <th scope="col">Valor</th>
           <th scope="col">Estado</th>
           <th scope="col">Ações</th>
@@ -304,7 +317,7 @@ $companies = ["evolke Treinamentos", "Padaria Jabaquara", "Restaurante Árabe"];
       <tbody>
         <tr>
           <th scope="row">1</th>
-          <td>Digital House</td>
+          <td>João da Silva</td>
           <td>R$ 10.000,00</td>
           <td>Aguardando</td>
           <td class="d-flex justify-content-start align-items-center">
@@ -314,7 +327,7 @@ $companies = ["evolke Treinamentos", "Padaria Jabaquara", "Restaurante Árabe"];
         </tr>
         <tr>
           <th scope="row">2</th>
-          <td>Nosso Consultor</td>
+          <td>Frederico Figueiredo</td>
           <td>R$ 500,00</td>
           <td>Recebido</td>
           <td class="d-flex justify-content-start align-items-center">
@@ -339,17 +352,14 @@ $companies = ["evolke Treinamentos", "Padaria Jabaquara", "Restaurante Árabe"];
       </header>
       <main class="modal-body">
         <form>
-
           <div class="form-group">
-            <label for="donationCompany">Empresa</label>
-            <select class="col-lg-12" name="donationCompany" id="donationCompany" required>
-              <option value="">Selecione a empresa</option>
-              <?php
-              foreach ($companies as $company) {
-                echo "<option value='$company'>$company</option>";
-              }
-              ?>
-            </select>
+            <label for="donationName">Nome</label>
+            <input type="text" class="form-control" name="donationName" id="donationName" placeholder="Nome" required>
+          </div>
+          <div class="form-group">
+            <label for="donationPhone">Telefone</label>
+            <input type="tel" class="form-control" name="donationPhone" id="donationPhone" placeholder="11 12345-1234" pattern="[0-9]{2} [0-9]{5}-[0-9]{4}" required>
+            <small>Formato: 11 12345-1234</small>
           </div>
           <div class="form-group">
             <label for="donationValue">Valor</label>
@@ -358,7 +368,7 @@ $companies = ["evolke Treinamentos", "Padaria Jabaquara", "Restaurante Árabe"];
           <div class="form-group">
             <label for="donationStatus">Estado</label>
             <select class="col-lg-12" name="donationStatus" id="donationStatus" required>
-              <option value="">Estado</option>
+              <option value="" selected disabled>Estado</option>
               <option value="Aguardando">Aguardando</option>
               <option value="Recebido">Recebido</option>
             </select>
