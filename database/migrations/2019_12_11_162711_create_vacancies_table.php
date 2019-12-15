@@ -20,6 +20,7 @@ class CreateVacanciesTable extends Migration
             $table->string('email');
             $table->string('description');
             $table->float('wage',8,2);
+            $table->string('state');
             $table->timestamps();
             $table->unsignedBigInteger('company_id'); //FK
             $table->foreign('company_id')->references('id')->on('companies'); //FK
