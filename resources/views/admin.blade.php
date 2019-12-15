@@ -129,11 +129,11 @@ Página do Administrador
             <label for="courseDescription">Descrição</label>
             <textarea type="text" class="form-control" name="courseDescription" id="courseDescription" placeholder="Descrição" required></textarea>
           </div>
+          <div class="modal-footer modal-footer-bg-color">
+            <button type="submit" class="btn btn-primary col-lg-12">Adicionar/Editar</button>
+          </div>
         </form>
       </main>
-      <footer class="modal-footer modal-footer-bg-color">
-        <button type="submit" class="btn btn-primary col-lg-12">Adicionar/Editar</button>
-      </footer>
     </dialog>
   </div>
 </div>
@@ -248,7 +248,7 @@ Página do Administrador
           </div>
           <div class="form-group">
             <label for="companyPhone">Telefone</label>
-            <input type="tel" class="form-control" name="companyPhone" id="companyPhone" placeholder="11 12345-1234" pattern="[0-9]{2} [0-9]{5}-[0-9]{4}" required>
+            <input type="tel" class="form-control" name="companyPhone" id="companyPhone" placeholder="11 12345-1234" required>
             <small>Formato: 11 12345-1234</small>
           </div>
           <div class="form-group">
@@ -286,12 +286,12 @@ Página do Administrador
               <input type="text" class="form-control" name="companyAddressPC" id="companyAddressPC" placeholder="CEP">
             </div>
           </div>
-
+          <div class="modal-footer modal-footer-bg-color">
+            <button type="submit" class="btn btn-primary col-lg-12">Adicionar/Editar</button>
+          </div>
         </form>
       </main>
-      <footer class="modal-footer modal-footer-bg-color">
-        <button type="submit" class="btn btn-primary col-lg-12">Adicionar/Editar</button>
-      </footer>
+
     </dialog>
   </div>
 </div>
@@ -351,14 +351,16 @@ Página do Administrador
         </button>
       </header>
       <main class="modal-body">
-        <form>
+
+        <form action="donations" method="post">
+          {{ csrf_field() }}
           <div class="form-group">
             <label for="donationName">Nome</label>
             <input type="text" class="form-control" name="donationName" id="donationName" placeholder="Nome" required>
           </div>
           <div class="form-group">
             <label for="donationPhone">Telefone</label>
-            <input type="tel" class="form-control" name="donationPhone" id="donationPhone" placeholder="11 12345-1234" pattern="[0-9]{2} [0-9]{5}-[0-9]{4}" required>
+            <input type="tel" class="form-control" name="donationPhone" id="donationPhone" placeholder="11 12345-1234" required>
             <small>Formato: 11 12345-1234</small>
           </div>
           <div class="form-group">
@@ -373,12 +375,13 @@ Página do Administrador
               <option value="Recebido">Recebido</option>
             </select>
           </div>
-
+          <div class="modal-footer modal-footer-bg-color">
+            <button type="submit" class="btn btn-primary col-lg-12">Adicionar</button>
+          </div>
+          
         </form>
+
       </main>
-      <footer class="modal-footer modal-footer-bg-color">
-        <button type="submit" class="btn btn-primary col-lg-12">Adicionar</button>
-      </footer>
     </dialog>
   </div>
 </div>

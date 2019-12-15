@@ -14,7 +14,7 @@ class DonationController extends Controller
    */
   public function index()
   {
-    //
+    //Não implementado, pois utiliaremos a página admin (Alex)
   }
 
   /**
@@ -24,7 +24,7 @@ class DonationController extends Controller
    */
   public function create()
   {
-    //
+    //Não implementado, pois utiliaremos um modal na página admin (Alex)
   }
 
   /**
@@ -35,7 +35,18 @@ class DonationController extends Controller
    */
   public function store(Request $request)
   {
-    //
+
+    //TODO: montar validação das doações
+    // $request->validate([
+    //   'title' => 'required|min:3',
+    //   'description' => 'required',
+    // ]);
+    
+    $donation = Donation::create(['name' => $request->donationName,
+                                  'phone' => $request->donationPhone,
+                                  'amount' => $request->donationValue,
+                                  'status' => $request->donationStatus]);
+    return redirect('/admin');
   }
 
   /**
