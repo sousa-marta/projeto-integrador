@@ -322,8 +322,13 @@ Página do Administrador
             <td>{{ $donation->amount }}</td>
             <td>{{ $donation->status }}</td>
             <td class="d-flex justify-content-start align-items-center">
-              <button type="button" class="admin-btn-table">excluir</button>
-              <button type="button" class="admin-btn-table">recebido</button>
+              <button type="button" class="admin-btn-table">editar</button>
+              <!-- botão excluir -->
+              <form action="{{url('donations', [$donation->id])}}" method="POST">
+                <input type="hidden" name="_method" value="DELETE">
+                <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                <input type="submit" class="admin-btn-table" value="Excluir"/>
+              </form>
             </td>
           </tr>
         @endforeach

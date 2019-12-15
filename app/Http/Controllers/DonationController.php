@@ -57,7 +57,7 @@ class DonationController extends Controller
    */
   public function show(Donation $donation)
   {
-    //
+    //Não implementado pois não mostraremos as doações individualmente (Alex)
   }
 
   /**
@@ -91,6 +91,7 @@ class DonationController extends Controller
    */
   public function destroy(Donation $donation)
   {
-    //
+    $donation->delete();
+    return redirect('admin');
   }
 }
