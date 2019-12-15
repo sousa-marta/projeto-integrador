@@ -20,6 +20,7 @@ class CreateVolunteersTable extends Migration
             $table->string('email');
             $table->string('phone');
             $table->string('address');
+            $table->integer('address_number');
             $table->string('complement');
             $table->string('zip');
             $table->timestamps();
