@@ -8,8 +8,8 @@ Página do Administrador
 
 <!-- TODO: depois montarmos a base de dados temos que tirar essa parte -->
 <?php
-$categories = ["Gastronomia", "Serviços Gerais", "Hotelaria"];
-$companies = ["evolke Treinamentos", "Padaria Jabaquara", "Restaurante Árabe"];
+  $categories = ["Gastronomia", "Serviços Gerais", "Hotelaria"];
+  $companies = ["evolke Treinamentos", "Padaria Jabaquara", "Restaurante Árabe"];
 ?>
 
 <!-- botões para adicionar empresa e voluntário -->

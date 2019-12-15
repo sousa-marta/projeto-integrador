@@ -21,6 +21,7 @@ class CreateCompaniesTable extends Migration
             $table->string('phone');
             $table->string('email');
             $table->string('address');
+            $table->integer('address_number');
             $table->string('complement');
             $table->string('zip');
             $table->unsignedBigInteger('location_id'); //FK
