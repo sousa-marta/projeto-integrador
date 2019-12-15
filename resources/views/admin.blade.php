@@ -35,9 +35,8 @@ Página do Administrador
           <th scope="col">Nome</th>
           <th scope="col" class="d-none d-sm-table-cell">Categoria</th>
           <th scope="col" class="d-none d-sm-table-cell">Empresa</th>
-          <th scope="col" class="d-none d-sm-table-cell">Vagas</th>
-          <th scope="col" class="d-none d-sm-table-cell">Inscritos</th>
-          <th scope="col" class="d-none d-sm-table-cell">Encerramento Inscrições</th>
+          <th scope="col" class="d-none d-sm-table-cell">Início</th>
+          <th scope="col" class="d-none d-sm-table-cell">Fim</th>
           <th scope="col">Estado</th>
           <th scope="col">Ações</th>
         </tr>
@@ -48,8 +47,7 @@ Página do Administrador
           <td>Curso de Atendente</td>
           <td class="d-none d-sm-table-cell">Hotelaria</td>
           <td class="d-none d-sm-table-cell">evolke Treinamentos</td>
-          <td class="d-none d-sm-table-cell">50</td>
-          <td class="d-none d-sm-table-cell">46</td>
+          <td class="d-none d-sm-table-cell">20/12/2019</td>
           <td class="d-none d-sm-table-cell">20/12/2019</td>
           <td>Aberto</td>
           <td class="d-flex justify-content-start align-items-center">
@@ -62,8 +60,7 @@ Página do Administrador
           <td>Curso de Garçom</td>
           <td class="d-none d-sm-table-cell">Serviços Gerais</td>
           <td class="d-none d-sm-table-cell">Restaurando Cursos</td>
-          <td class="d-none d-sm-table-cell">100</td>
-          <td class="d-none d-sm-table-cell">12</td>
+          <td class="d-none d-sm-table-cell">10/12/2019</td>
           <td class="d-none d-sm-table-cell">10/12/2019</td>
           <td>Fechado</td>
           <td class="d-flex justify-content-start align-items-center">
@@ -96,7 +93,7 @@ Página do Administrador
           <div class="form-group">
             <label for="courseCategory">Catagoria</label>
             <select class="col-lg-12" name="courseCategory" id="courseCategory" required>
-              <option value="">Selecione a categoria</option>
+              <option value="" selected disabled>Selecione a categoria</option>
               <?php
               foreach ($categories as $category) {
                 echo "<option value='$category'>$category</option>";
@@ -107,7 +104,7 @@ Página do Administrador
           <div class="form-group">
             <label for="courseCompany">Empresa</label>
             <select class="col-lg-12" name="courseCompany" id="courseCompany" required>
-              <option value="">Selecione a empresa</option>
+              <option value="" selected disabled>Selecione a empresa</option>
               <?php
               foreach ($companies as $company) {
                 echo "<option value='$company'>$company</option>";
@@ -120,8 +117,12 @@ Página do Administrador
             <input type="date" class="form-control" name="courseStart" id="courseStart" placeholder="Nome do curso" required>
           </div>
           <div class="form-group">
-            <label for="courseDuration">Duração</label>
-            <input type="text" class="form-control" name="courseDuration" id="courseDuration" placeholder="Duração" required>
+            <label for="endStart">Fim</label>
+            <input type="date" class="form-control" name="endStart" id="endStart" placeholder="Nome do curso" required>
+          </div>
+          <div class="form-group">
+            <label for="courseDuration">Duração (h)</label>
+            <input type="number" class="form-control" name="courseDuration" id="courseDuration" placeholder="Duração" required>
           </div>
           <div class="form-group">
             <label for="courseDescription">Descrição</label>

@@ -21,6 +21,7 @@ class CreateCoursesTable extends Migration
             $table->date('start');
             $table->date('end');
             $table->timestamps();
+            $table->string('status');
             $table->unsignedBigInteger('category_id'); //FK
             $table->foreign('category_id')->references('id')->on('categories'); //FK
             $table->unsignedBigInteger('company_id'); //FK
