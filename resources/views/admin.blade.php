@@ -308,7 +308,7 @@ Página do Administrador
       <thead>
         <tr>
           <th scope="col">#</th>
-          <th scope="col">Empresa</th>
+          <th scope="col">Nome</th>
           <th scope="col">Valor</th>
           <th scope="col">Estado</th>
           <th scope="col">Ações</th>
@@ -317,7 +317,7 @@ Página do Administrador
       <tbody>
         <tr>
           <th scope="row">1</th>
-          <td>Digital House</td>
+          <td>João da Silva</td>
           <td>R$ 10.000,00</td>
           <td>Aguardando</td>
           <td class="d-flex justify-content-start align-items-center">
@@ -327,7 +327,7 @@ Página do Administrador
         </tr>
         <tr>
           <th scope="row">2</th>
-          <td>Nosso Consultor</td>
+          <td>Frederico Figueiredo</td>
           <td>R$ 500,00</td>
           <td>Recebido</td>
           <td class="d-flex justify-content-start align-items-center">
@@ -352,17 +352,14 @@ Página do Administrador
       </header>
       <main class="modal-body">
         <form>
-
           <div class="form-group">
-            <label for="donationCompany">Empresa</label>
-            <select class="col-lg-12" name="donationCompany" id="donationCompany" required>
-              <option value="">Selecione a empresa</option>
-              <?php
-              foreach ($companies as $company) {
-                echo "<option value='$company'>$company</option>";
-              }
-              ?>
-            </select>
+            <label for="donationName">Nome</label>
+            <input type="text" class="form-control" name="donationName" id="donationName" placeholder="Nome" required>
+          </div>
+          <div class="form-group">
+            <label for="donationPhone">Telefone</label>
+            <input type="tel" class="form-control" name="donationPhone" id="donationPhone" placeholder="11 12345-1234" pattern="[0-9]{2} [0-9]{5}-[0-9]{4}" required>
+            <small>Formato: 11 12345-1234</small>
           </div>
           <div class="form-group">
             <label for="donationValue">Valor</label>
@@ -371,7 +368,7 @@ Página do Administrador
           <div class="form-group">
             <label for="donationStatus">Estado</label>
             <select class="col-lg-12" name="donationStatus" id="donationStatus" required>
-              <option value="">Estado</option>
+              <option value="" selected disabled>Estado</option>
               <option value="Aguardando">Aguardando</option>
               <option value="Recebido">Recebido</option>
             </select>
