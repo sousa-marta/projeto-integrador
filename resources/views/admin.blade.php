@@ -14,7 +14,7 @@ Página do Administrador
 ?>
 
 <!-- botões para adicionar empresa e voluntário -->
-<div class="container mt-5 pt-5 pb-3">
+<div class="container mt-5 pt-4 pb-3">
   <nav class="row d-flex justify-content-center m-2">
     <a class="col-md-5 col-lg-3 btn btn-primary m-2" href="/companies/create"><i class="fa fa-building" aria-hidden="true"></i> +Empresa</a>
     <a class="col-md-5 col-lg-3 btn btn-primary m-2" href="/volunteers/create"><i class="fa fa-user-circle-o" aria-hidden="true"></i> +Voluntário</a>
@@ -24,15 +24,15 @@ Página do Administrador
 <!-- menu para cursos, oportunidades e doações -->
 <section class="admin-menu-section d-flex justify-content-center">
   <nav class="container row d-flex justify-content-center">
-    <a class="col-md-5 col-lg-3 btn btn-secondary py-3 mx-2 my-3" href="/courses/create"><span class="fa">&#xf19d;</span> Cursos</a>
-    <a class="col-md-5 col-lg-3 btn btn-secondary py-3 mx-2 my-3" href="/vacancies/create"><span class="fa">&#xf0b1;</span> Oportunidades</a>
-    <a class="col-md-5 col-lg-3 btn btn-secondary py-3 mx-2 my-3" href="/donations/create"><span class="fa">&#xf004;</span> Doações</a>
+    <a class="col-md-5 col-lg-3 btn btn-secondary py-3 mx-2 my-5" href="/courses/create"><span class="fa">&#xf19d;</span> Cursos</a>
+    <a class="col-md-5 col-lg-3 btn btn-secondary py-3 mx-2 my-5" href="/vacancies/create"><span class="fa">&#xf0b1;</span> Oportunidades</a>
+    <a class="col-md-5 col-lg-3 btn btn-secondary py-3 mx-2 my-5" href="/donations/create"><span class="fa">&#xf004;</span> Doações</a>
   </nav>
 </section>
 
 <!-- indicadores gerais -->
 <section class="container">
-  <div class="row justify-content-between">
+  <div class="row justify-content-between align-items-stretch">
     <div class="col-md-4">
       <div class="card admin-card">
         <h1 class="admin-card-text">10.000</h1>
@@ -47,8 +47,9 @@ Página do Administrador
     </div>
     <div class="col-md-4">
       <div class="card admin-card">
-        <h1 class="admin-card-text">10.000</h1>
-        <p class="admin-card-text">coloca cursos, opoortunidades usuários</p>
+        <p class="admin-card-text"><b>10.000</b> usuário</p>
+        <p class="admin-card-text"><b>10.000</b> oportunidades</p>
+        <p class="admin-card-text"><b>10.000</b> cursos</p>
       </div>
     </div>
   </div>
