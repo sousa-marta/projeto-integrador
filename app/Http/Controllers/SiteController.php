@@ -34,8 +34,6 @@ class SiteController extends Controller
 
   public function viewAdmin(Request $request)
   {
-    //lê informações das doações
-    $donations = Donation::all();
-    return view('admin',["donations" => $donations]);
+    return view('admin');
   }
 }

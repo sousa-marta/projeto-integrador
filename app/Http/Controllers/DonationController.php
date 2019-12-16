@@ -14,7 +14,7 @@ class DonationController extends Controller
    */
   public function index()
   {
-    //Não implementado, pois utiliaremos a página admin (Alex)
+    //
   }
 
   /**
@@ -24,7 +24,8 @@ class DonationController extends Controller
    */
   public function create()
   {
-    //Não implementado, pois utiliaremos um modal na página admin (Alex)
+    $donations = Donation::all();
+    return view('donations.create',["donations" => $donations]);
   }
 
   /**
@@ -46,7 +47,7 @@ class DonationController extends Controller
                                   'phone' => $request->donationPhone,
                                   'amount' => $request->donationValue,
                                   'status' => $request->donationStatus]);
-    return redirect('/admin');
+    return redirect('/donations/create');
   }
 
   /**
@@ -57,7 +58,7 @@ class DonationController extends Controller
    */
   public function show(Donation $donation)
   {
-    //Não implementado pois não mostraremos as doações individualmente (Alex)
+    //
   }
 
   /**
@@ -92,7 +93,7 @@ class DonationController extends Controller
     $donation->amount = $request->donationValue;
     $donation->status = $request->donationStatus;
     $donation->save();
-    return redirect('/admin');
+    return redirect('/donations/create');
 
   }
 
@@ -105,6 +106,6 @@ class DonationController extends Controller
   public function destroy(Donation $donation)
   {
     $donation->delete();
-    return redirect('admin');
+    return redirect('/donations/create');
   }
 }
