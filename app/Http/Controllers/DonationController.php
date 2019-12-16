@@ -24,7 +24,8 @@ class DonationController extends Controller
    */
   public function create()
   {
-    //
+    $donations = Donation::all();
+    return view('donations.create',["donations" => $donations]);
   }
 
   /**
@@ -35,7 +36,18 @@ class DonationController extends Controller
    */
   public function store(Request $request)
   {
-    //
+
+    //TODO: montar validação das doações
+    // $request->validate([
+    //   'title' => 'required|min:3',
+    //   'description' => 'required',
+    // ]);
+    
+    $donation = Donation::create(['name' => $request->donationName,
+                                  'phone' => $request->donationPhone,
+                                  'amount' => $request->donationValue,
+                                  'status' => $request->donationStatus]);
+    return redirect('/donations/create');
   }
 
   /**
@@ -57,7 +69,7 @@ class DonationController extends Controller
    */
   public function edit(Donation $donation)
   {
-    //
+    return view('donations.edit',['donation' => $donation]);
   }
 
   /**
@@ -69,7 +81,20 @@ class DonationController extends Controller
    */
   public function update(Request $request, Donation $donation)
   {
-    //
+
+    //TODO: montar validação das doações
+    // $request->validate([
+    //   'title' => 'required|min:3',
+    //   'description' => 'required',
+    // ]);
+  
+    $donation->name = $request->donationName;
+    $donation->phone = $request->donationPhone;
+    $donation->amount = $request->donationValue;
+    $donation->status = $request->donationStatus;
+    $donation->save();
+    return redirect('/donations/create');
+
   }
 
   /**
@@ -80,6 +105,7 @@ class DonationController extends Controller
    */
   public function destroy(Donation $donation)
   {
-    //
+    $donation->delete();
+    return redirect('/donations/create');
   }
 }

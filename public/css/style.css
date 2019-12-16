@@ -547,6 +547,21 @@ card {
 
 
 /* Início PÁGINA ADMINISTRADOR */
+.admin-menu-section {
+  background-color: #fff8e3;
+}
+
+.admin-card {
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.admin-card-text {
+  text-align: center;
+}
+
 .admin-course-section {
   background-color: #fff8e3;
 }
@@ -663,6 +678,10 @@ footer p {color: #FFF;}
 
   /* Início PÁGINA ADMINISTRADOR */
   .admin-tables-section {padding: 25px 30px;}
+  .admin-card {
+    margin: 70px 0;
+    height: 70%;
+  }
   /* Fim PÁGINA ADMINISTRADOR */
 
   /* Início FOOTER */

@@ -21,10 +21,11 @@ class Company extends Model
     return $this->belongsTo('App\Location');
   }
 
-  public function donations()
-  {
-    return $this->belongsToMany('App\Donation');
-  }
+  //Comentei essa parte porque as doações vamos fazer sem ligar a empresas ou voluntários (Alex)
+  // public function donations()
+  // {
+  //   return $this->belongsToMany('App\Donation');
+  // }
 
   public function supports()
   {
