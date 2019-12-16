@@ -6,6 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Vacancy extends Model
 {
+  protected $fillable = ['name','phone','email','description','wage','state','category','location','company'];
+
   public function categories()
   {
     return $this->belongsTo('App\Category');
