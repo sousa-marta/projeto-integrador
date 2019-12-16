@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\VacanciesFormRequest;
-use App\{Category, Vacancy};
+use App\{Category, Vacancy, Location, Company};
 use App\Services\VacancyCreator;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -27,14 +27,9 @@ class VacancyController extends Controller
    */
   public function create(Request $request)
   {
-    // $vacancies = Vacancy::query()->orderBy('name')->get();
-    // foreach ($vacancies as $vacancy) {
-      // $category = DB::table('categories')->where('id', $vacancy->category_id)->get();
-      // var_dump($category[0]->name);
-      // exit;
-    // }
-    // $vacancy->location()->create(['location' => $location_id]);
-    // $vacancy->company()->create(['company' => $company_id]);
+    $categories = Category::query()->orderBy('name')->get();
+    $locations = Location::query()->orderBy('city')->get();
+    $companies = Company::query()->orderBy('name')->get();
     $vacancies = DB::table('vacancies')
       ->join('categories', 'categories.id', '=', 'vacancies.category_id')
       ->join('locations', 'locations.id', '=', 'vacancies.location_id')
@@ -44,7 +39,7 @@ class VacancyController extends Controller
     var_dump($vacancies);
     // exit;
     $message = $request->session()->get('message');
-    return view('vacancies.create',compact('vacancies','message'));
+    return view('vacancies.create',compact('vacancies','message','categories','locations','companies'));
   }
 
   /**

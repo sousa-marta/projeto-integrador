@@ -51,7 +51,7 @@ Vagas
           <form action="" method="post">
             @csrf
             <!-- @method('EDIT') -->
-            <button class="btn btn-success btn-sm"><i class='fas fa-pencil-alt'></i></button>
+            <button class="btn btn-success btn-sm mr-1"><i class='fas fa-pencil-alt'></i></button>
           </form>
           <form action="" method="post" onsubmit="return confirm('Tem certeza de que deseja remover?')">
             @csrf
@@ -86,32 +86,37 @@ Vagas
           </ul>
         </div>
       @endif
-        <form>
+        <form method="post">
         @csrf
           <div class="form-group">
             <label for="opportunityName">Nome da vaga</label>
-            <input type="text" class="form-control" name="name" id="opportunityName" placeholder="Nome do curso" required>
+            <input type="text" class="form-control" name="name" id="opportunityName" placeholder="Nome da vaga" required>
           </div>
           <div class="form-group">
             <label for="opportunityCategory">Categoria</label>
             <select class="col-lg-12" name="category" id="opportunityCategory" required>
               <option value="" selected disabled>Selecione a categoria</option>
-              <!-- <?php 
-              // foreach ($categories as $category) {
-                // echo "<option value='$category'>$category</option>";
-              // }
-              // ?> -->
+                @foreach ($categories as $category)
+                  echo "<option value='{{ $category->id }}'>{{ $category->name }}</option>";
+                @endforeach
             </select>
           </div>
           <div class="form-group">
             <label for="opportunityCompany">Empresa</label>
             <select class="col-lg-12" name="company" id="opportunityCompany" required>
               <option value="" selected disabled>Selecione a empresa</option>
-              <!-- <?php 
-              // foreach ($companies as $company) {
-              //  echo "<option value='$company'>$company</option>";
-              // }
-              ?> -->
+              @foreach ($companies as $company)
+                echo "<option value='{{ $company->id }}'>{{ $company->name }}</option>";
+              @endforeach
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="opportunityLocation">Cidade</label>
+            <select class="col-lg-12" name="location" id="opportunityLocation" required>
+              <option value="" selected disabled>Selecione o local da vaga</option>
+              @foreach ($locations as $location)
+                echo "<option value='{{ $location->id }}'>{{ $location->city }}</option>";
+              @endforeach
             </select>
           </div>
           <div class="form-group">
