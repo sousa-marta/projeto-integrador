@@ -86,12 +86,13 @@ Vagas
           </ul>
         </div>
       @endif
-        <form method="post">
+        <form action="/vacancies" method="post">
         @csrf
           <div class="form-group">
             <label for="opportunityName">Nome da vaga</label>
             <input type="text" class="form-control" name="name" id="opportunityName" placeholder="Nome da vaga" required>
           </div>
+          <input type="hidden" name="state" value="aberta">
           <div class="form-group">
             <label for="opportunityCategory">Categoria</label>
             <select class="col-lg-12" name="category" id="opportunityCategory" required>
@@ -136,11 +137,11 @@ Vagas
             <label for="wage">Salário</label>
             <input type="number" class="form-control" name="wage" id="wage" placeholder="Salário" required>
           </div>          
-        </form>
-      </main>
-      <footer class="modal-footer modal-footer-bg-color">
-        <button type="submit" class="btn btn-primary col-lg-12">Adicionar/Editar</button>
-      </footer>
+        </main>
+        <footer class="modal-footer modal-footer-bg-color">
+          <button type="submit" class="btn btn-primary col-lg-12">Adicionar/Editar</button>
+        </footer>
+      </form>
     </dialog>
   </div>
 </div>

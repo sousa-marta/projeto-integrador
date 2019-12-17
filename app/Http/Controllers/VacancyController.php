@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\VacanciesFormRequest;
 use App\{Category, Vacancy, Location, Company};
-use App\Services\VacancyCreator;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -35,6 +34,7 @@ class VacancyController extends Controller
       ->join('locations', 'locations.id', '=', 'vacancies.location_id')
       ->join('companies', 'companies.id', '=', 'vacancies.company_id')
       ->select('vacancies.*', 'companies.name as company_name', 'locations.city', 'categories.name as category_name')
+      ->orderBy('name')
       ->get();
     var_dump($vacancies);
     // exit;
@@ -48,11 +48,11 @@ class VacancyController extends Controller
    * @param  \Illuminate\Http\Request  $request
    * @return \Illuminate\Http\Response
    */
-  public function store(VacanciesFormRequest $request, VacancyCreator $vacancyCreator)
+  public function store(Request $request)
   {
-    $vacancy = $vacancyCreator->createVacancy($request->name,$request->phone,$request->email,$request->description,$request->wage,$request->state,$request->category,$request->location,$request->company);
-    $request->session()->flash('mensagem', "Inserir mensagem aqui");
-    return redirect('/vacancies/'.$vacancy->id);
+    Vacancy::create(['name' => $request->name,'phone' => $request->phone, 'email' => $request->email, 'description' => $request->description, 'wage' => $request->wage, 'state' => $request->state, 'category_id' => $request->category, 'location_id' => $request->location, 'company_id' => $request->company]);
+    $request->session()->flash('message', "Inserir mensagem aqui");
+    return redirect('/vacancies/create');
   }
 
   /**
