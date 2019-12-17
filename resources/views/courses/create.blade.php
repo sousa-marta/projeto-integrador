@@ -1,4 +1,6 @@
-<!-- Página com o formulário para criação de novo curso -->
+{{-- TODO: 
+  - categorias e empresas no form dinâmicas
+  Acrescentar required nos forms --}}
 
 @extends('layouts.mainTemplate')
 
@@ -29,7 +31,7 @@ Cursos
   <div class="table-responsive">
     <div class="d-flex justify-content-start align-items-center mb-1">
       <h2>CURSOS</h2>
-      <button type="button"  onclick="setAddDonation()" class="btn btn-secondary ml-3 p-2" data-toggle="modal" data-target="#admin-add-donation-modal" href="#"><i class="fa fa-plus-circle fa-2x" aria-hidden="true"></i></button>
+      <button type="button" class="btn btn-secondary ml-3 p-2" data-toggle="modal" data-target="#admin-add-course-modal" href="#"><i class="fa fa-plus-circle fa-2x" aria-hidden="true"></i></button>
     </div>
     <table class="table">
       <thead>
@@ -80,44 +82,62 @@ Cursos
 </section>
 
 <!-- modal para adicionar novo curso -->
-<div class="modal fade" id="admin-add-donation-modal" tabindex="-1" role="dialog" aria-labelledby="admin-add-donation-modal" aria-hidden="true">
+<div class="modal fade" id="admin-add-course-modal" tabindex="-1" role="dialog" aria-labelledby="admin-add-course-modal" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <dialog class="modal-content">
       <header class="modal-header">
-        <h5 class="modal-title" id="admin-add-donation-modal">Adicionar Doação</h5>
+        <h5 class="modal-title" id="admin-add-course-modal">Adicionar Curso</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </header>
       <main class="modal-body">
 
-        <form action="/donations" method="post">
-          {{ csrf_field() }}
+        <form action="/courses" method="post">
+          @csrf
           <div class="form-group">
-            <label for="donationName">Nome</label>
-            <input type="text" class="form-control" name="donationName" id="donationName" placeholder="Nome" required>
+            <label for="courseName">Nome</label>
+            <input type="text" class="form-control" name="courseName" id="courseName" placeholder="Nome do curso" required>
           </div>
           <div class="form-group">
-            <label for="donationPhone">Telefone</label>
-            <input type="tel" class="form-control" name="donationPhone" id="donationPhone" placeholder="11 12345-1234" required>
-            <small>Formato: 11 12345-1234</small>
+            <label for="courseDescription">Descrição</label>
+            <textarea class="form-control" name="courseDescription" id="courseDescription" placeholder="Descrição do curso" rows="3"></textarea>
           </div>
           <div class="form-group">
-            <label for="donationValue">Valor</label>
-            <input type="number" class="form-control" name="donationValue" id="donationValue" placeholder="Valor" required>
+            <label for="courseDuration">Duração (meses)</label>
+            <input type="number" class="form-control" name="courseDuration" id="courseDuration" placeholder="Duração do curso em meses">
           </div>
           <div class="form-group">
-            <label for="donationStatus">Estado</label>
-            <select class="col-lg-12" name="donationStatus" id="donationStatus" required>
-              <option value="" selected disabled>Estado</option>
-              <option value="Aguardando">Aguardando</option>
-              <option value="Recebido">Recebido</option>
-            </select>
+            <label for="courseStart">Início</label>
+            <input type="date" class="form-control" name="courseStart" id="courseStart" placeholder="Data início do curso">
+            {{-- <small>Formato: mm/dd/yyyy </small> --}}
           </div>
+          <div class="form-group">
+            <label for="courseEnd">Fim</label>
+            <input type="date" class="form-control" name="courseEnd" id="courseEnd" placeholder="Data final do curso">
+            {{-- <small>Formato: mm/dd/yyyy </small> --}}
+          </div>
+          <div class="form-group">
+              <label for="courseCategory">Categoria</label>
+              <select class="col-lg-12" name="category" id="courseCategory" required>
+                <option value="" selected disabled>Selecione a categoria</option>
+                  @foreach ($categories as $category)
+                    echo "<option value='{{ $category }} ' ></option>";
+                  @endforeach
+              </select>
+            </div>
+          <div class="form-group">
+              <label for="courseCompany">Empresa</label>
+              <select class="col-lg-12" name="category" id="courseCompany" required>
+                <option value="" selected disabled>Selecione a empresa</option>
+                  @foreach ($companies as $company)
+                    echo "<option value='{{ $company }} ' ></option>";
+                  @endforeach
+              </select>
+            </div>
           <div class="modal-footer modal-footer-bg-color">
-            <button type="submit" class="btn btn-primary col-lg-12">Adicionar</button>
+            <button type="submit" class="btn btn-primary col-lg-12">Salvar Curso</button>
           </div>
-          
         </form>
 
       </main>
