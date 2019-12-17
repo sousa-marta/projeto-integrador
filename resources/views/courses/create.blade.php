@@ -117,12 +117,13 @@ Cursos
             <input type="date" class="form-control" name="courseEnd" id="courseEnd" placeholder="Data final do curso">
             {{-- <small>Formato: mm/dd/yyyy </small> --}}
           </div>
+          <input type="hidden" name="courseStatus" value="disponível">
           <div class="form-group">
               <label for="courseCategory">Categoria</label>
-              <select class="col-lg-12" name="category" id="courseCategory" required>
+              <select class="col-lg-12" name="courseCategory" id="courseCategory">
                 <option value="" selected disabled>Selecione a categoria</option>
                   @foreach ($categories as $category)
-                    echo "<option value='{{ $category }} ' ></option>";
+                    <option value='{{ $category->id }}'> {{ $category->name }} </option>;
                   @endforeach
               </select>
             </div>
@@ -131,7 +132,7 @@ Cursos
               <select class="col-lg-12" name="category" id="courseCompany" required>
                 <option value="" selected disabled>Selecione a empresa</option>
                   @foreach ($companies as $company)
-                    echo "<option value='{{ $company }} ' ></option>";
+                    <option value='{{ $company->id }}'> {{ $company->name }} </option>;
                   @endforeach
               </select>
             </div>

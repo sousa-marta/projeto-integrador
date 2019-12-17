@@ -34,9 +34,26 @@ class CourseController extends Controller
    * @param  \Illuminate\Http\Request  $request
    * @return \Illuminate\Http\Response
    */
+
+  // Método para salvar novo curso
   public function store(Request $request)
   {
-    //
+    dd($request);
+    Course::create([
+      'name' => $request->courseName,
+      'description' => $request->courseDescription, 
+      'duration' => $request->courseDuration, 
+      'start' => $request->courseStart, 
+      'end' => $request->courseEnd, 
+      'status' => $request->courseStatus,
+      'category_id' => $request->courseCategory, 
+      'company_id' => $request->courseCompany
+    ]);
+
+    //Enviando mensagem de inserção com sucesso (aparece apenas a primeira vez):
+    /* $request->session()->flash('message', "Curso inserido com sucesso");*/
+
+    return redirect('/courses'); 
   }
 
   /**
