@@ -24,7 +24,8 @@ class CourseController extends Controller
    */
   public function create()
   {
-    //
+    $courses = Course::all();
+    return view('courses.create',compact('courses'));
   }
 
   /**
