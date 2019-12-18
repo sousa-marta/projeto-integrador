@@ -48,10 +48,10 @@ class VacancyController extends Controller
    * @param  \Illuminate\Http\Request  $request
    * @return \Illuminate\Http\Response
    */
-  public function store(Request $request)
+  public function store(VacanciesFormRequest $request)
   {
     Vacancy::create(['name' => $request->name,'phone' => $request->phone, 'email' => $request->email, 'description' => $request->description, 'wage' => $request->wage, 'state' => $request->state, 'category_id' => $request->category, 'location_id' => $request->location, 'company_id' => $request->company]);
-    $request->session()->flash('message', "Inserir mensagem aqui");
+    $request->session()->flash('message', "A vaga {$request->name} foi salva com sucesso");
     return redirect('/vacancies/create');
   }
 
