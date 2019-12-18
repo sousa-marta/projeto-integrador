@@ -110,7 +110,6 @@ Cursos
           <div class="form-group">
             <label for="courseStart">Início</label>
             <input type="date" class="form-control" name="courseStart" id="courseStart" placeholder="Data início do curso">
-            {{-- <small>Formato: mm/dd/yyyy </small> --}}
           </div>
           <div class="form-group">
             <label for="courseEnd">Fim</label>
@@ -123,16 +122,16 @@ Cursos
               <select class="col-lg-12" name="courseCategory" id="courseCategory">
                 <option value="" selected disabled>Selecione a categoria</option>
                   @foreach ($categories as $category)
-                    <option value='{{ $category->id }}'> {{ $category->name }} </option>;
+                    <option value={{ 1 }}> {{ $category }} </option>;
                   @endforeach
               </select>
             </div>
           <div class="form-group">
               <label for="courseCompany">Empresa</label>
-              <select class="col-lg-12" name="category" id="courseCompany" required>
+              <select class="col-lg-12" name="courseCompany" id="courseCompany" >
                 <option value="" selected disabled>Selecione a empresa</option>
                   @foreach ($companies as $company)
-                    <option value='{{ $company->id }}'> {{ $company->name }} </option>;
+                    <option value={{ 1 }}> {{ $company }} </option>;
                   @endforeach
               </select>
             </div>

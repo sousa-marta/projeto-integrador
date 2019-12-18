@@ -38,7 +38,7 @@ class CourseController extends Controller
   // Método para salvar novo curso
   public function store(Request $request)
   {
-    dd($request);
+    // dd($request);
     Course::create([
       'name' => $request->courseName,
       'description' => $request->courseDescription, 
