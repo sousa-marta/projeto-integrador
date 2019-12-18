@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Vacancy extends Model
 {
-  protected $fillable = ['name','phone','email','description','wage','state','category_id','location_id','company_id'];
+  protected $fillable = ['name','phone','email','city','description','wage','status','category_id','company_id'];
 
   public function category()
   {
@@ -21,10 +21,5 @@ class Vacancy extends Model
   public function company()
   {
     return $this->belongsTo('App\Company');
-  }
-
-  public function location()
-  {
-    return $this->belongsTo('App\Location');
   }
 }

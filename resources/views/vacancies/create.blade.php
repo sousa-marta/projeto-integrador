@@ -46,16 +46,16 @@ Vagas
           <td class="d-none d-sm-table-cell">{{ $vacancy->category_name }}</td>
           <td class="d-none d-sm-table-cell">{{ $vacancy->company_name }}</td>
           <td class="d-none d-sm-table-cell">R$ {{ $vacancy->wage }}</td>
-          <td class="d-none d-sm-table-cell">{{ $vacancy->state }}</td>
+          <td class="d-none d-sm-table-cell">{{ $vacancy->status }}</td>
           <td class="row justify-content-center align-items-center">
+            <a href="/vacancies/{{ $vacancy->id }}" class="btn btn-info btn-sm mr-2">
+              <i class="fas fa-external-link-alt"></i>
+            </a>
             <form action="/vacancies/{{ $vacancy->id }}" method="post" onsubmit="return confirm('Tem certeza de que deseja remover?')">
               @csrf
               @method('DELETE')
               <button class="btn btn-danger btn-sm"><i class='fas fa-trash-alt'></i></button>
             </form>
-            <a href="/vacancies/{{ $vacancy->id }}" class="btn btn-info btn-sm">
-              <i class="fas fa-external-link-alt"></i>
-            </a>
           </td>
         </tr>
         @endforeach
@@ -69,7 +69,7 @@ Vagas
   <div class="modal-dialog modal-lg" role="document">
     <dialog class="modal-content">
       <header class="modal-header">
-        <h5 class="modal-title" id="admin-add-opportunity-modal">Adicionar/Editar Vaga</h5>
+        <h5 class="modal-title" id="admin-add-opportunity-modal">Adicionar Vaga</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -81,13 +81,14 @@ Vagas
             <label for="opportunityName">Nome da vaga</label>
             <input type="text" class="form-control" name="name" id="opportunityName" placeholder="Nome da vaga" required>
           </div>
+          <input type="hidden" name="status" value="aberta">
           <div class="form-group col-md-6">
-            <label for="opportunityState">Status da vaga</label>
-            <select class="col-lg-12 form-control" name="state" id="opportunityState" required>
-              <option value="" selected disabled>Selecione o status da vaga</option>
-              <option value="aberta">aberta</option>
-              <option value="incompleta">incompleta</option>
-              <option value="fechada">fechada</option>
+            <label for="opportunityCompany">Empresa</label>
+            <select class="col-lg-12 form-control" name="company" id="opportunityCompany" required>
+              <option value="" selected disabled>Selecione a empresa</option>
+              @foreach ($companies as $company)
+              <option value='{{ $company->id }}'>{{ $company->name }}</option>
+              @endforeach
             </select>
           </div>
           <div class="form-group col-md-4">
@@ -100,43 +101,29 @@ Vagas
             </select>
           </div>
           <div class="form-group col-md-4">
-            <label for="opportunityCompany">Empresa</label>
-            <select class="col-lg-12 form-control" name="company" id="opportunityCompany" required>
-              <option value="" selected disabled>Selecione a empresa</option>
-              @foreach ($companies as $company)
-              <option value='{{ $company->id }}'>{{ $company->name }}</option>
-              @endforeach
-            </select>
-          </div>
-          <div class="form-group col-md-4">
             <label for="opportunityLocation">Cidade</label>
-            <select class="col-lg-12 form-control" name="location" id="opportunityLocation" required>
-              <option value="" selected disabled>Selecione o local da vaga</option>
-              @foreach ($locations as $location)
-              <option value='{{ $location->id }}'>{{ $location->city }}</option>
-              @endforeach
-            </select>
-          </div>
-          <div class="form-group col-12">
-            <label for="opportunityDescription">Descrição</label>
-            <textarea type="text" class="form-control" name="description" id="opportunityDescription" placeholder="Descrição" required></textarea>
-          </div>
-          <div class="form-group col-md-4">
-            <label for="companyEmail">E-mail para envio de CV</label>
-            <input type="email" class="form-control" name="email" id="companyEmail" placeholder="E-mail" required>
-          </div>
-          <div class="form-group col-md-4">
-            <label for="companyPhone">Telefone</label>
-            <input type="tel" class="form-control" name="phone" id="companyPhone" placeholder="11 12345-1234" pattern="[0-9]{2} [0-9]{5}-[0-9]{4}" required>
-            <small><strong>Formato:</strong> 11 12345-1234</small>
+            <input type="text" class="form-control" name="city" id="opportunityLocation" placeholder="Cidade da vaga" required>
           </div>
           <div class="form-group col-md-4">
             <label for="wage">Salário</label>
             <input type="number" class="form-control" name="wage" id="wage" placeholder="Salário" required>
           </div>
-      </main>
+          <div class="form-group col-md-6">
+            <label for="companyEmail">E-mail para envio de CV</label>
+            <input type="email" class="form-control" name="email" id="companyEmail" placeholder="E-mail" required>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="companyPhone">Telefone</label>
+            <input type="tel" class="form-control" name="phone" id="companyPhone" placeholder="11 12345-1234" pattern="[0-9]{2} [0-9]{5}-[0-9]{4}" required>
+            <small><strong>Formato:</strong> 11 12345-1234</small>
+          </div>
+          <div class="form-group col-12">
+            <label for="opportunityDescription">Descrição</label>
+            <textarea type="text" class="form-control" name="description" id="opportunityDescription" placeholder="Descrição" required></textarea>
+          </div>
+        </main>
       <footer class="modal-footer modal-footer-bg-color justify-content-center">
-        <button type="submit" class="btn btn-primary">Adicionar/Editar</button>
+        <button type="submit" class="btn btn-primary">Adicionar</button>
       </footer>
       </form>
     </dialog>

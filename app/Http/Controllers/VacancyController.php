@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\VacanciesFormRequest;
-use App\{Category, Vacancy, Location, Company};
+use App\{Category, Vacancy, Company};
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -27,19 +27,17 @@ class VacancyController extends Controller
   public function create(Request $request)
   {
     $categories = Category::query()->orderBy('name')->get();
-    $locations = Location::query()->orderBy('city')->get();
     $companies = Company::query()->orderBy('name')->get();
     $vacancies = DB::table('vacancies')
       ->join('categories', 'categories.id', '=', 'vacancies.category_id')
-      ->join('locations', 'locations.id', '=', 'vacancies.location_id')
       ->join('companies', 'companies.id', '=', 'vacancies.company_id')
-      ->select('vacancies.*', 'companies.name as company_name', 'locations.city', 'categories.name as category_name')
+      ->select('vacancies.*', 'companies.name as company_name', 'categories.name as category_name')
       ->orderBy('name')
       ->get();
-    var_dump($vacancies);
+    // var_dump($vacancies);
     // exit;
     $message = $request->session()->get('message');
-    return view('vacancies.create',compact('vacancies','message','categories','locations','companies'));
+    return view('vacancies.create',compact('vacancies','message','categories','companies'));
   }
 
   /**
@@ -50,7 +48,7 @@ class VacancyController extends Controller
    */
   public function store(VacanciesFormRequest $request)
   {
-    Vacancy::create(['name' => $request->name,'phone' => $request->phone, 'email' => $request->email, 'description' => $request->description, 'wage' => $request->wage, 'state' => $request->state, 'category_id' => $request->category, 'location_id' => $request->location, 'company_id' => $request->company]);
+    Vacancy::create(['name' => $request->name,'phone' => $request->phone, 'email' => $request->email, 'description' => $request->description, 'wage' => $request->wage, 'status' => $request->status, 'city' => $request->city, 'category_id' => $request->category, 'company_id' => $request->company]);
     $request->session()->flash('message', "A vaga {$request->name} foi salva com sucesso");
     return redirect('/vacancies/create');
   }
@@ -65,12 +63,10 @@ class VacancyController extends Controller
   { 
     $vacancy = Vacancy::find($id);
     $category = $vacancy->category;
-    $location = $vacancy->location;
     $company = $vacancy->company;
     $categoriesList = Category::query()->orderBy('name')->get();
-    $locationsList = Location::query()->orderBy('city')->get();
     $companiesList = Company::query()->orderBy('name')->get();
-    return view('vacancies.show',compact('vacancy','category','location','company','categoriesList','locationsList','companiesList'));
+    return view('vacancies.show',compact('vacancy','category','company','categoriesList','companiesList'));
   }
 
   /**
@@ -94,13 +90,13 @@ class VacancyController extends Controller
   public function update(VacanciesFormRequest $request, Vacancy $vacancy)
   {
     $vacancy->name = $request->name;
-    $vacancy->state = $request->state;
+    $vacancy->status = $request->status;
     $vacancy->phone = $request->phone;
     $vacancy->email = $request->email;
     $vacancy->description = $request->description;
     $vacancy->wage = $request->wage;
+    $vacancy->city = $request->city;
     $vacancy->category_id = $request->category;
-    $vacancy->location_id = $request->location;
     $vacancy->company_id = $request->company;
     $vacancy->save();
     $request->session()->flash('message', 'Successfully modified the task!');

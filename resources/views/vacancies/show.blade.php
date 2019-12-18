@@ -22,20 +22,20 @@ Vaga {{ $vacancy->name }}
       </div>
     @endif
     <div class="row align-items-center mt-2">
-      <img src="/img/boy.svg" alt="" class="img-especial">
+      <img src="/img/boy.svg" alt="" class="img-especial mr-2">
       <div>
         <h5>Vaga de {{ $vacancy->name }}</h5>
-        <p><strong>Status da vaga:</strong> {{ $vacancy->state }}</p>
+        <p><strong>Status da vaga:</strong> {{ $vacancy->status }}</p>
       </div>
     </div>
       <div class="row my-3">
         <p class="col-md-4"><strong>Empresa:</strong> {{ $company->name }}</p>
-        <p class="col-md-4"><strong>Cidade:</strong> {{ $location->city }}</p>
+        <p class="col-md-4"><strong>Cidade:</strong> {{ $vacancy->city }}</p>
         <p class="col-md-4"><strong>Categoria:</strong> {{ $category->name }}</p>
         <p class="col-md-4"><strong>E-mail:</strong> {{ $vacancy->email }}</p>
         <p class="col-md-4"><strong>Telefone:</strong> {{ $vacancy->phone }}</p>
         <p class="col-md-4"><strong>Salário:</strong> {{ $vacancy->wage }}</p>
-        <p class="col-md-6"><strong>Descrição:</strong> {{ $vacancy->description }}</p>
+        <p class="col-md-12"><strong>Descrição:</strong> {{ $vacancy->description }}</p>
       </div>
       <div class="row justify-content-center mb-3">
         <button class="btn btn-dark mr-3" onclick="location.href='/vacancies/create'">Voltar</button>
@@ -64,12 +64,16 @@ Vaga {{ $vacancy->name }}
             <input type="text" class="form-control" name="name" id="opportunityName" placeholder="Nome da vaga" value="{{ $vacancy->name }}" required>
           </div>
           <div class="form-group col-md-6">
-            <label for="opportunityState">Status da vaga</label>
-            <select class="col-lg-12 form-control" name="state" id="opportunityState" required>
+            <label for="opportunityStatus">Status da vaga</label>
+            <select class="col-lg-12 form-control" name="status" id="opportunityStatus" required>
               <option value="" selected disabled>Selecione o status da vaga</option>
-              <option value="aberta">aberta</option>
-              <option value="incompleta">incompleta</option>
-              <option value="fechada">fechada</option>
+              @if ($vacancy->status == 'aberta')
+                <option selected value='{{ $vacancy->status }}'>aberta</option>
+                <option value="fechada">fechada</option>
+              @else
+                <option value="aberta">aberta</option>
+                <option selected value='{{ $vacancy->status }}'>fechada</option>
+              @endif
             </select>
           </div>
           <div class="form-group col-md-4">
@@ -100,16 +104,7 @@ Vaga {{ $vacancy->name }}
           </div>
           <div class="form-group col-md-4">
             <label for="opportunityLocation">Cidade</label>
-            <select class="col-lg-12 form-control" name="location" id="opportunityLocation" required>
-              <option value="" selected disabled>Selecione o local da vaga</option>
-              @foreach ($locationsList as $locationItem)
-                @if ($location->id == $locationItem->id)
-                  <option selected value='{{ $locationItem->id }}'>{{ $locationItem->city }}</option>
-                @else
-                  <option value='{{ $locationItem->id }}'>{{ $locationItem->city }}</option>
-                @endif
-              @endforeach
-            </select>
+            <input type="text" class="form-control" name="city" id="opportunityLocation" placeholder="Cidade da vaga" value="{{ $vacancy->city }}" required>
           </div>
           <div class="form-group col-12">
             <label for="opportunityDescription">Descrição</label>
