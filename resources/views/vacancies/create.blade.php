@@ -34,8 +34,8 @@ Vagas
           <th scope="col" class="d-none d-sm-table-cell">Categoria</th>
           <th scope="col" class="d-none d-sm-table-cell">Empresa</th>
           <th scope="col" class="d-none d-sm-table-cell">Salário</th>
-          <th scope="col">Estado</th>
-          <th scope="col">Ações</th>
+          <th scope="col" class="d-none d-sm-table-cell">Status</th>
+          <th scope="col" class="d-none d-sm-table-cell">Ações</th>
         </tr>
       </thead>
       <tbody>
@@ -46,18 +46,21 @@ Vagas
           <td class="d-none d-sm-table-cell">{{ $vacancy->category_name }}</td>
           <td class="d-none d-sm-table-cell">{{ $vacancy->company_name }}</td>
           <td class="d-none d-sm-table-cell">R$ {{ $vacancy->wage }}</td>
-          <td>{{ $vacancy->state }}</td>
-          <td class="d-flex justify-content-center align-items-center">
+          <td class="d-none d-sm-table-cell">{{ $vacancy->state }}</td>
+          <td class="row justify-content-center align-items-center">
             <form action="" method="post">
               @csrf
               <!-- @method('EDIT') -->
-              <button class="btn btn-success btn-sm mr-1"><i class='fas fa-pencil-alt'></i></button>
+              <button class="btn btn-success btn-sm mr-2" data-toggle="modal" data-target="#admin-add-opportunity-modal" href="#"><i class='fas fa-pencil-alt'></i></button>
             </form>
-            <form action="" method="post" onsubmit="return confirm('Tem certeza de que deseja remover?')">
+            <form action="/vacancies/{{ $vacancy->id }}" method="post" onsubmit="return confirm('Tem certeza de que deseja remover?')">
               @csrf
-              <!-- @method('DELETE') -->
+              @method('DELETE')
               <button class="btn btn-danger btn-sm"><i class='fas fa-trash-alt'></i></button>
             </form>
+            <a href="/vacancies/{{ $vacancy->id }}" class="btn btn-info btn-sm">
+              <i class="fas fa-external-link-alt"></i>
+            </a>
           </td>
         </tr>
         @endforeach

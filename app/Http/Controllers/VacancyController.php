@@ -62,13 +62,9 @@ class VacancyController extends Controller
    * @return \Illuminate\Http\Response
    */
   public function show(Vacancy $vacancy)
-  {
-    //
-    //Assim que ficar dinâmico, pra receber o id é só substituir o código acima por:
-    /*public function show(Vacancy $vacancy)
-        {
-        return view('vacancies.show',compact('vacancy',$vacancy));
-        }*/ }
+  {    
+    return view('vacancies.show',compact('vacancy',$vacancy));
+  }
 
   /**
    * Show the form for editing the specified resource.
@@ -99,8 +95,10 @@ class VacancyController extends Controller
    * @param  \App\Vacancy  $vacancy
    * @return \Illuminate\Http\Response
    */
-  public function destroy(Vacancy $vacancy)
+  public function destroy(Request $request, Vacancy $vacancy)
   {
-    //
+    $vacancy->delete();
+    $request->session()->flash('message', 'Successfully deleted the task!');
+    return redirect('/vacancies/create');
   }
 }
