@@ -31,4 +31,8 @@ class Company extends Model
   {
     return $this->belongsToMany('App\Support');
   }
+
+  protected $fillable = [
+    'name', 'img', 'birth_date', 'email', 'phone', 'address', 'complement', 'zip', 'password', 'location_id'
+  ];
 }

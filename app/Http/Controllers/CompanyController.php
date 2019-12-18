@@ -12,9 +12,9 @@ class CompanyController extends Controller
    *
    * @return \Illuminate\Http\Response
    */
-  public function index()
+  public function index(Request $request)
   {
-    return view('companies.index');//
+    return view('companies.create');//
   }
 
   /**
@@ -22,9 +22,25 @@ class CompanyController extends Controller
    *
    * @return \Illuminate\Http\Response
    */
-  public function create()
+  public function create(Request $request)
   {
-    return view('companies.create');
+    $newCompany = new Company();
+    $newCompany->name = $request->name;
+    $newCompany->logo = $request->logo;
+    $newCompany->POC = $request->POC;
+    $newCompany->phone = $request->phone;
+    $newCompany->email = $request->email;
+    $newCompany->address = $request->address;
+    $newCompany->address_number = $request->address_number;
+    $newCompany->complement = $request->complement;
+    $newCompany->zip = $request->zip;
+    $newCompany->location_id = $request->location_id;
+    $newCompany->city = $request->city;
+    $newCompany->state = $request->state;
+
+    $result = $newCompany->save();
+
+    return view('companies.create', ["result"=>$result]);    
   }
 
   /**
@@ -46,7 +62,7 @@ class CompanyController extends Controller
    */
   public function show(Company $company)
   {
-    //
+    return view('companies.show');
   }
 
   /**
