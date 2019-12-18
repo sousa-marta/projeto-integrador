@@ -48,11 +48,6 @@ Vagas
           <td class="d-none d-sm-table-cell">R$ {{ $vacancy->wage }}</td>
           <td class="d-none d-sm-table-cell">{{ $vacancy->state }}</td>
           <td class="row justify-content-center align-items-center">
-            <form action="" method="post">
-              @csrf
-              <!-- @method('EDIT') -->
-              <button class="btn btn-success btn-sm mr-2" data-toggle="modal" data-target="#admin-add-opportunity-modal" href="#"><i class='fas fa-pencil-alt'></i></button>
-            </form>
             <form action="/vacancies/{{ $vacancy->id }}" method="post" onsubmit="return confirm('Tem certeza de que deseja remover?')">
               @csrf
               @method('DELETE')
@@ -95,13 +90,12 @@ Vagas
               <option value="fechada">fechada</option>
             </select>
           </div>
-          <input type="hidden" name="state" value="aberta">
           <div class="form-group col-md-4">
             <label for="opportunityCategory">Categoria</label>
             <select class="col-lg-12 form-control" name="category" id="opportunityCategory" required>
               <option value="" selected disabled>Selecione a categoria</option>
               @foreach ($categories as $category)
-              echo "<option value='{{ $category->id }}'>{{ $category->name }}</option>";
+              <option value='{{ $category->id }}'>{{ $category->name }}</option>
               @endforeach
             </select>
           </div>
@@ -110,7 +104,7 @@ Vagas
             <select class="col-lg-12 form-control" name="company" id="opportunityCompany" required>
               <option value="" selected disabled>Selecione a empresa</option>
               @foreach ($companies as $company)
-              echo "<option value='{{ $company->id }}'>{{ $company->name }}</option>";
+              <option value='{{ $company->id }}'>{{ $company->name }}</option>
               @endforeach
             </select>
           </div>
@@ -119,7 +113,7 @@ Vagas
             <select class="col-lg-12 form-control" name="location" id="opportunityLocation" required>
               <option value="" selected disabled>Selecione o local da vaga</option>
               @foreach ($locations as $location)
-              echo "<option value='{{ $location->id }}'>{{ $location->city }}</option>";
+              <option value='{{ $location->id }}'>{{ $location->city }}</option>
               @endforeach
             </select>
           </div>

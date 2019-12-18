@@ -61,9 +61,16 @@ class VacancyController extends Controller
    * @param  \App\Vacancy  $vacancy
    * @return \Illuminate\Http\Response
    */
-  public function show(Vacancy $vacancy)
-  {    
-    return view('vacancies.show',compact('vacancy',$vacancy));
+  public function show($id)
+  { 
+    $vacancy = Vacancy::find($id);
+    $category = $vacancy->category;
+    $location = $vacancy->location;
+    $company = $vacancy->company;
+    $categoriesList = Category::query()->orderBy('name')->get();
+    $locationsList = Location::query()->orderBy('city')->get();
+    $companiesList = Company::query()->orderBy('name')->get();
+    return view('vacancies.show',compact('vacancy','category','location','company','categoriesList','locationsList','companiesList'));
   }
 
   /**
@@ -84,9 +91,20 @@ class VacancyController extends Controller
    * @param  \App\Vacancy  $vacancy
    * @return \Illuminate\Http\Response
    */
-  public function update(Request $request, Vacancy $vacancy)
+  public function update(VacanciesFormRequest $request, Vacancy $vacancy)
   {
-    //
+    $vacancy->name = $request->name;
+    $vacancy->state = $request->state;
+    $vacancy->phone = $request->phone;
+    $vacancy->email = $request->email;
+    $vacancy->description = $request->description;
+    $vacancy->wage = $request->wage;
+    $vacancy->category_id = $request->category;
+    $vacancy->location_id = $request->location;
+    $vacancy->company_id = $request->company;
+    $vacancy->save();
+    $request->session()->flash('message', 'Successfully modified the task!');
+    return redirect()->route('vacancies.show', [$vacancy]);
   }
 
   /**

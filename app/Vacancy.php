@@ -8,7 +8,7 @@ class Vacancy extends Model
 {
   protected $fillable = ['name','phone','email','description','wage','state','category_id','location_id','company_id'];
 
-  public function categories()
+  public function category()
   {
     return $this->belongsTo('App\Category');
   }

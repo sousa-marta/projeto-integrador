@@ -220,7 +220,7 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
   font-weight: bold;
 }
 
-.oppy-info img, .oppy-proposal img {width: 200px;}
+.oppy-info img, .oppy-proposal img, .img-especial {width: 200px;}
 
 .oppy-proposal {
   align-items: center;
