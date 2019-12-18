@@ -12,8 +12,8 @@ Cadastrar Empresa
 ?>
 
 <!-- Formulário -->
-<section class="d-flex justify-content-center align-items-center p-4 my-5">
-  <form action="/admin/cadastro-empresa" method="post" class="register-company-main card p-5 mt-5 col-lg-5" enctype="multipart/form-data">
+<section class="d-flex justify-content-center align-items-center p-4 admin-start-margin">
+  <form action="/admin/cadastro-empresa" method="post" class="register-company-main card p-5 col-lg-5" enctype="multipart/form-data">
 
     <div class="form-group text-center mt-3">
       <h2>Cadastrar Nova Empresa</h2>

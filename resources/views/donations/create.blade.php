@@ -14,7 +14,7 @@ Página do Administrador
 ?>
 
 <!-- gerenciamento das doações -->
-<section class="admin-tables-section mt-5 py-5">
+<section class="admin-tables-section admin-start-margin py-5">
 
   <div class="table-responsive">
     <div class="d-flex justify-content-start align-items-center mb-1">

@@ -12,8 +12,8 @@ Cadastrar Voluntário
 ?>
 
 <!-- Formulário -->
-<section class="d-flex justify-content-center align-items-center p-4 my-5">
-  <form action="/admin/cadastro-voluntario" method="post" class="register-volunteer-main card mt-5 p-5 col-lg-5">
+<section class="d-flex justify-content-center align-items-center p-4 admin-start-margin">
+  <form action="/admin/cadastro-voluntario" method="post" class="register-volunteer-main card p-5 col-lg-5">
 
     <div class="form-group text-center mt-3">
       <h2>Cadastrar Novo Voluntário</h2>

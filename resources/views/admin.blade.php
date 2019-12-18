@@ -14,7 +14,7 @@ Página do Administrador
 ?>
 
 <!-- botões para adicionar empresa e voluntário -->
-<div class="container mt-5 pt-4 pb-3">
+<div class="container admin-start-margin py-3">
   <nav class="row d-flex justify-content-center m-2">
     <a class="col-md-5 col-lg-3 btn btn-primary m-2" href="/companies/create"><i class="fa fa-building" aria-hidden="true"></i> +Empresa</a>
     <a class="col-md-5 col-lg-3 btn btn-primary m-2" href="/volunteers/create"><i class="fa fa-user-circle-o" aria-hidden="true"></i> +Voluntário</a>
@@ -32,7 +32,7 @@ Página do Administrador
 
 <!-- indicadores gerais -->
 <section class="container">
-  <div class="row justify-content-between align-items-stretch">
+  <div class="row justify-content-between my-5">
     <div class="col-md-4">
       <div class="card admin-card">
         <h1 class="admin-card-text">10.000</h1>
@@ -47,7 +47,7 @@ Página do Administrador
     </div>
     <div class="col-md-4">
       <div class="card admin-card">
-        <p class="admin-card-text"><b>10.000</b> usuário</p>
+        <p class="admin-card-text"><b>10.000</b> usuários</p>
         <p class="admin-card-text"><b>10.000</b> oportunidades</p>
         <p class="admin-card-text"><b>10.000</b> cursos</p>
       </div>
