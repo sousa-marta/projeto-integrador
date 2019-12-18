@@ -82,7 +82,7 @@ class CourseController extends Controller
    */
   public function edit(Course $course)
   {
-    //
+    return view('courses.edit',['course' => $course]);
   }
 
   /**
@@ -94,7 +94,16 @@ class CourseController extends Controller
    */
   public function update(Request $request, Course $course)
   {
-    //
+    $course->name = $request->courseName;
+    $course->description = $request->courseDescription; 
+    $course->duration = $request->courseDuration; 
+    $course->start = $request->courseStart; 
+    $course->end = $request->courseEnd; 
+    $course->status = $request->courseStatus;
+    $course->category_id = $request->courseCategory; 
+    $course->company_id = $request->courseCompany;
+    $course->save();
+    return redirect('/courses/create');
   }
 
   /**

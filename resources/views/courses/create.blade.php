@@ -61,14 +61,14 @@ Cursos
             <td class="d-flex justify-content-start align-items-center">
 
               {{-- botão editar --}}
-              <form action="" method="post">
+              <form action="/courses/{{$course->id}}/edit" method="get">
                 @csrf
-                @method('EDIT')
+                {{-- @method('EDIT') --}}
                 <button class="btn btn-success btn-sm mr-1"><i class='fas fa-pencil-alt'></i></button>
               </form>
 
               {{-- botão excluir --}}
-              <form action="/courses/{{ $course->id }}" method="post" 
+              <form action="/courses/{{$course->id}}" method="post" 
                     onsubmit="return confirm('Tem certeza que quer remover {{ addslashes($course->name) }}?')">
                 @csrf
                 @method('DELETE')
