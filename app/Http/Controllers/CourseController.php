@@ -53,7 +53,7 @@ class CourseController extends Controller
     //Enviando mensagem de inserção com sucesso (aparece apenas a primeira vez):
     /* $request->session()->flash('message', "Curso inserido com sucesso");*/
 
-    return redirect('/courses'); 
+    return redirect('/courses/create'); 
   }
 
   /**
