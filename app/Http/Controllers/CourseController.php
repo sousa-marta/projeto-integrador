@@ -103,8 +103,18 @@ class CourseController extends Controller
    * @param  \App\Course  $course
    * @return \Illuminate\Http\Response
    */
-  public function destroy(Course $course)
-  {
-    //
+  public function destroy($id){
+    // dd($id);
+
+    $result = Course::destroy($id);
+    if($result){
+      return redirect('/courses/create'); 
+    }
+/*     $request->session()->flash(
+        'mensagem', 
+        "Série excluida com sucesso:"
+    ); */    
+    
+
   }
 }

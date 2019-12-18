@@ -68,10 +68,11 @@ Cursos
               </form>
 
               {{-- botão excluir --}}
-              <form action="" method="post">
+              <form action="/courses/{{ $course->id }}" method="post" 
+                    onsubmit="return confirm('Tem certeza que quer remover {{ addslashes($course->name) }}?')">
                 @csrf
                 @method('DELETE')
-                <button class="btn btn-danger btn-sm"><i class='fas fa-trash-alt'></i></button>                
+                <button type="submit" class="btn btn-danger btn-sm"><i class="far fa-trash-alt"></i></button>
               </form>
             </td>
           </tr>
