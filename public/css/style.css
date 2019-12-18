@@ -547,6 +547,10 @@ card {
 
 
 /* Início PÁGINA ADMINISTRADOR */
+.admin-start-margin { /* margem para ficar abaixo da navbar (já que não temos o breadcrump) */
+  margin-top: 10vh;
+}
+
 .admin-menu-section {
   background-color: #fff8e3;
 }
@@ -679,8 +683,7 @@ footer p {color: #FFF;}
   /* Início PÁGINA ADMINISTRADOR */
   .admin-tables-section {padding: 25px 30px;}
   .admin-card {
-    margin: 70px 0;
-    height: 70%;
+    height: 100%;
   }
   /* Fim PÁGINA ADMINISTRADOR */
 
