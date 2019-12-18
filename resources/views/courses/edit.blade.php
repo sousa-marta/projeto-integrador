@@ -20,30 +20,33 @@
     <form class="bg-light py-2 px-5" action="{{url('courses', [$course->id])}}" method="post">
       @csrf
       @method('PUT')
-      <input type="hidden" name="_method" value="PUT">
+      {{-- <input type="hidden" name="_method" value="PUT"> --}}
+
       <h5>Editar Curso</h5>
       <div class="form-group">
         <label for="courseName">Nome</label>
-        <input type="text" class="form-control" name="courseName" id="courseName" placeholder="Nome do curso" required>
+      <input type="text" class="form-control" name="courseName" id="courseName" value="{{$course->name}}" required>
       </div>
       <div class="form-group">
         <label for="courseDescription">Descrição</label>
-        <textarea class="form-control" name="courseDescription" id="courseDescription" placeholder="Descrição do curso" rows="3"></textarea>
+        <textarea class="form-control" name="courseDescription" id="courseDescription" rows="3">{{$course->description}}</textarea>
       </div>
       <div class="form-group">
         <label for="courseDuration">Duração (meses)</label>
-        <input type="number" class="form-control" name="courseDuration" id="courseDuration" placeholder="Duração do curso em meses">
+        <input type="number" class="form-control" name="courseDuration" id="courseDuration" value="{{$course->duration}}">
       </div>
       <div class="form-group">
         <label for="courseStart">Início</label>
-        <input type="date" class="form-control" name="courseStart" id="courseStart" placeholder="Data início do curso">
+        <input type="date" class="form-control" name="courseStart" id="courseStart" value="{{$course->start}}">
       </div>
       <div class="form-group">
         <label for="courseEnd">Fim</label>
-        <input type="date" class="form-control" name="courseEnd" id="courseEnd" placeholder="Data final do curso">
+        <input type="date" class="form-control" name="courseEnd" id="courseEnd" value="{{$course->end}}">
         {{-- <small>Formato: mm/dd/yyyy </small> --}}
       </div>
+
       <input type="hidden" name="courseStatus" value="disponível">
+      
       <div class="form-group">
           <label for="courseCategory">Categoria</label>
           <select class="col-lg-12" name="courseCategory" id="courseCategory">
