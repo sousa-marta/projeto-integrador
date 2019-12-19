@@ -56,8 +56,8 @@ Cursos
             <td>{{ $course->duration }}</td>
             <td>{{ $course->start }}</td>
             <td>{{ $course->end }}</td>
-            <td>{{ $course->category_id }}</td>
-            <td>{{ $course->company_id }}</td>
+            <td>{{ $course->category->name }}</td>
+            <td>{{ $course->company->name }}</td>
             <td class="d-flex justify-content-start align-items-center">
 
               {{-- botão editar --}}

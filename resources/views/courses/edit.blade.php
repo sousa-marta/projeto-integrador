@@ -20,7 +20,6 @@
     <form class="bg-light py-2 px-5" action="{{url('courses', [$course->id])}}" method="post">
       @csrf
       @method('PUT')
-      {{-- <input type="hidden" name="_method" value="PUT"> --}}
 
       <h5>Editar Curso</h5>
       <div class="form-group">
