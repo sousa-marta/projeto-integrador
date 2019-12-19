@@ -24,6 +24,18 @@ class CompanyController extends Controller
    */
   public function create(Request $request)
   {
+    $companies = Company::all();
+    return view('companies.index', compact('companies'));
+  }
+
+  /**
+   * Store a newly created resource in storage.
+   *
+   * @param  \Illuminate\Http\Request  $request
+   * @return \Illuminate\Http\Response
+   */
+  public function store(Request $request)
+  {
     Company::create([
       'name' => $request->companyName,
       'logo' => $request->companyLogo,
@@ -40,17 +52,6 @@ class CompanyController extends Controller
     ]);
     
     return redirect('/companies/create');
-  }
-
-  /**
-   * Store a newly created resource in storage.
-   *
-   * @param  \Illuminate\Http\Request  $request
-   * @return \Illuminate\Http\Response
-   */
-  public function store(Request $request)
-  {
-    //
   }
 
   /**
