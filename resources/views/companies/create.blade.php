@@ -13,7 +13,7 @@ Cadastrar Empresa
 
 <!-- Formulário -->
 <section class="d-flex justify-content-center align-items-center p-4 my-5">
-  <form action="{{ action('CompanyController@store') }}" method="POST" class="register-company-main card p-5 mt-5 col-lg-5" enctype="multipart/form-data">
+  <form action="/companies" method="post" class="register-company-main card p-5 mt-5 col-lg-5" enctype="multipart/form-data">
     @csrf
     <div class="form-group text-center mt-3">
       <h2>Cadastrar Nova Empresa</h2>
@@ -21,48 +21,48 @@ Cadastrar Empresa
 
     <div class="form-group">
       <label for="companyName">Nome da empresa</label>
-      <input type="text" class="form-control" name="name" id="companyName" placeholder="Nome da empresa" required>
+      <input type="text" class="form-control" name="companyName" id="companyName" placeholder="Nome da empresa" required>
     </div>
     <div class="from-group">
       <label for="companyLogo">Logo da Empresa</label>
-      <input class="form-control" type="file" name="logo" id="companyLogo">
+      <input class="form-control" type="file" name="companyLogo" id="companyLogo">
     </div>
     <div class="form-group">
       <label for="personContact"><strong>Pessoa de contato</strong></label>
-      <input type="text" class="form-control" name="POC" id="personContact" placeholder="Nome completo do contato" required>
+      <input type="text" class="form-control" name="companyPOC" id="personContact" placeholder="Nome completo do contato" required>
     </div>
     <div class="form-group">
       <label for="companyPhone">Telefone</label>
-      <input type="tel" class="form-control" name="phone" id="companyPhone" placeholder="11 12345-1234" pattern="[0-9]{2} [0-9]{5}-[0-9]{4}" required>
+      <input type="tel" class="form-control" name="companyPhone" id="companyPhone" placeholder="11 12345-1234" pattern="[0-9]{2} [0-9]{5}-[0-9]{4}" required>
       <small>Formato: 11 12345-1234</small>
     </div>
     <div class="form-group">
       <label for="companyEmail">E-mail</label>
-      <input type="email" class="form-control" name="email" id="companyEmail" placeholder="E-mail" required>
+      <input type="email" class="form-control" name="companyEmail" id="companyEmail" placeholder="E-mail" required>
     </div>
     <div class="row">
       <div class="form-group col-8 p-0">
-        <label for="companyAddressStr">Endereço</label>
-        <input type="text" class="form-control" name="address" id="companyAddressStr" placeholder="Endereço" required>
+        <label for="companyAddress">Endereço</label>
+        <input type="text" class="form-control" name="companyAddress" id="companyAddress" placeholder="Endereço" required>
       </div>
       <div class="form-group col-4 p-0 pl-2">
         <label for="companyAddressNo">Número</label>
-        <input type="text" class="form-control" name="address_number" id="companyAddressNo" placeholder="Número" required>
+        <input type="text" class="form-control" name="companyAddressNo" id="companyAddressNo" placeholder="Número" required>
       </div>
     </div>
     <div class="row">
       <div class="form-group col-6 p-0">
         <label for="companyAddressComp">Complemento</label>
-        <input type="text" class="form-control" name="complement" id="companyAddressComp" placeholder="Complemento" required>
+        <input type="text" class="form-control" name="companyAddressComp" id="companyAddressComp" placeholder="Complemento" required>
       </div>
       <div class="form-group col-6 p-0 pl-2">
-        <label for="companyAddressPC">CEP</label>
-        <input type="text" class="form-control" name="zip" id="companyAddressPC" placeholder="CEP" required>
+        <label for="companyZip">CEP</label>
+        <input type="text" class="form-control" name="companyZip" id="companyZip" placeholder="CEP" required>
       </div>
     </div>
     <label for="companyCountry">País</label>
     <div class="form-group">
-      <select class="col-lg-12" name="location_id" id="companyCountry" required >
+      <select class="col-lg-12" name="companyCountry" id="companyCountry" required >
         <option value="" selected disabled>Selecione o país da empresa</option>
         <?php
           foreach ($countries as $country) {
@@ -73,11 +73,11 @@ Cadastrar Empresa
     </div>
     <div class="form-group">
       <label for="city">Cidade</label>
-      <input type="text" class="form-control" name="city" id="city" placeholder="Cidade" required>
+      <input type="text" class="form-control" name="companyCity" id="city" placeholder="Cidade" required>
     </div>
     <div class="form-group">
       <label for="state">Estado</label>
-      <input type="text" class="form-control" name="state" id="state" placeholder="Estado" required>
+      <input type="text" class="form-control" name="companyState" id="state" placeholder="Estado" required>
     </div>
     <button type="submit" class="btn btn-primary align-self-center mt-3">Salvar</button>
 

@@ -24,23 +24,22 @@ class CompanyController extends Controller
    */
   public function create(Request $request)
   {
-    $newCompany = new Company();
-    $newCompany->name = $request->name;
-    $newCompany->logo = $request->logo;
-    $newCompany->POC = $request->POC;
-    $newCompany->phone = $request->phone;
-    $newCompany->email = $request->email;
-    $newCompany->address = $request->address;
-    $newCompany->address_number = $request->address_number;
-    $newCompany->complement = $request->complement;
-    $newCompany->zip = $request->zip;
-    $newCompany->location_id = $request->location_id;
-    $newCompany->city = $request->city;
-    $newCompany->state = $request->state;
-
-    $result = $newCompany->save();
-
-    return view('companies.create', ["result"=>$result]);    
+    Company::create([
+      'name' => $request->companyName,
+      'logo' => $request->companyLogo,
+      'POC' => $request->companyPOC,
+      'phone' => $request->companyPhone,
+      'email' => $request->companyEmail,
+      'address' => $request->companyAddress,
+      'address_number' => $request->companyAddressNo,
+      'complement' => $request->companyAddressComp,
+      'zip' => $request->companyZip,
+      'location_id' => $request->companyCountry,
+      'city' => $request->companyCity,
+      'state' => $request->companyState
+    ]);
+    
+    return redirect('/companies/create');
   }
 
   /**
