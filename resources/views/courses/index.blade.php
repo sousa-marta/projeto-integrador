@@ -101,19 +101,13 @@ Cursos
               <h5 class="card-title text-center py-2">{{ $category->name }}</h5>
               <img src="{{ $category->img }}" aria-hidden="true" alt="" class="course-img card-img-bottom">
               <ul>
-                {{-- TODO: DEIXAR CURSOS DINÂMICOS PUXANDO DO BANCO DE DADOS --}}
-                <a href="/courses/id">
-                  <li>Atendente</li>
-                </a>
-                <a href="#">
-                  <li>Camareiro</li>
-                </a>
-                <a href="#">
-                  <li>Recepcionista</li>
-                </a>
-                <a href="#">
-                  <li>Garçom</li>
-                </a>
+                @foreach ($courses as $course)
+                    @if ($course->category_id == $category->id)
+                      <a href="#">
+                        <li>{{ $course->name }}</li>
+                      </a>
+                    @endif
+                @endforeach
               </ul>
             </div>
           </div>
