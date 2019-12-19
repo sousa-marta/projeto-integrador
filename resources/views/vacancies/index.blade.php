@@ -146,14 +146,15 @@ Oportunidades
   <section>
     <!-- <div class="row justify-content-center mb-4">
       <div class="col-md-7 col-lg-8 order-2 my-4"> -->
-    <div class="container">
-      <div class="card">
-        <div class="row">
-          <div class="d-flex align-items-center col-lg-5">
-            <img class="card-img-top h-90 " src="img/panificadora-quadro.jpg" alt="Imagem de capa do card">
-          </div>
-          <div class="col-lg-7 p-3">
-            <h3 class="card-title"> Vaga Padeiro Jabaquara</h2>
+        <div class="container">
+          @foreach ($vacancies as $vacancy)
+          <div class="card my-5">
+            <div class="row">
+              <div class="d-flex align-items-center col-lg-5">
+                <img class="card-img-top h-90 " src="/img/panificadora-quadro.jpg" alt="Imagem de capa do card">
+              </div>
+              <div class="col-lg-7 p-3">
+            <h3 class="card-title"> Vaga {{ $vacancy->name }}</h2>
               <h6 class="card-text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Est modi delectus quos? Commodi eius doloribus ipsam iste autem sequi ad natus nobis,
                 quae numquam perspiciatis. Veniam repellendus voluptate recusandae illo. </h6>
@@ -166,65 +167,11 @@ Oportunidades
                 <a href="#" class="btn btn-primary nowrap m-1">enviar curriculo</a>
                 <a href="/courses" class="btn btn-secondary nowrap m-1">verificar cursos</a>
               </div>
+            </div>
           </div>
         </div>
+        @endforeach
       </div>
-    </div>
-
-
-    <div class="container p-3">
-      <div class="card">
-        <div class="row">
-          <div class="d-flex align-items-center col-lg-5">
-            <img class="card-img-top h-90 " src="img/panificadora-quadro.jpg" alt="Imagem de capa do card">
-          </div>
-          <div class="col-lg-7 p-3">
-            <h3 class="card-title"> Vaga Padeiro Jabaquara</h2>
-              <h6 class="card-text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Est modi delectus quos? Commodi eius doloribus ipsam iste autem sequi ad natus nobis,
-                quae numquam perspiciatis. Veniam repellendus voluptate recusandae illo. </h6>
-              <h6 class="card-text"> cidade: São Paulo </h6>
-              <h6 class="card-text"> estado: SP </h6>
-              <h6 class="card-text"> salário: R$ 1.500,00</h6>
-              <h6 class="card-text"> email: contato@padarialegal.com.br </h6>
-              <hr>
-              <div class="d-flex justify-content-between">
-                <a href="#" class="btn btn-primary nowrap m-1">enviar curriculo</a>
-                <a href="/courses" class="btn btn-secondary nowrap m-1">verificar cursos</a>
-              </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="container p-3">
-      <div class="card">
-        <div class="row">
-          <div class="d-flex align-items-center col-lg-5">
-            <img class="card-img-top h-90 " src="img/panificadora-quadro.jpg" alt="Imagem de capa do card">
-          </div>
-          <div class="col-lg-7 p-3">
-            <h3 class="card-title"> Vaga Padeiro Jabaquara</h2>
-              <h6 class="card-text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Est modi delectus quos? Commodi eius doloribus ipsam iste autem sequi ad natus nobis,
-                quae numquam perspiciatis. Veniam repellendus voluptate recusandae illo. </h6>
-              <h6 class="card-text"> cidade: São Paulo </h6>
-              <h6 class="card-text"> estado: SP </h6>
-              <h6 class="card-text"> salário: R$ 1.500,00</h6>
-              <h6 class="card-text"> email: contato@padarialegal.com.br </h6>
-              <hr>
-              <div class="d-flex justify-content-between">
-                <a href="#" class="btn btn-primary nowrap m-1">enviar curriculo</a>
-                <a href="/courses" class="btn btn-secondary nowrap m-1">verificar cursos</a>
-              </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    </section>
 </div>
-</div>
-</section>
-</div>
-
 @endsection
