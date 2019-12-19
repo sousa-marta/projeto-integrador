@@ -94,12 +94,12 @@ Cursos
         <div class="courses-bg-cards">
           <div class="flip-card flip-card-front">
             <h5 class="card-title text-center py-2">{{ $category->name }}</h5>
-            <img src="img/courses-g-hospitality.jpg" aria-hidden="true" alt="" class="course-img card-img-bottom">
+            <img src="{{ $category->img }}" aria-hidden="true" alt="" class="course-img card-img-bottom">
           </div>
           <div class="flip-card flip-card-back">
             <div class="card-back-body">
               <h5 class="card-title text-center py-2">{{ $category->name }}</h5>
-              <img src="img/courses-g-hospitality.jpg" aria-hidden="true" alt="" class="course-img card-img-bottom">
+              <img src="{{ $category->img }}" aria-hidden="true" alt="" class="course-img card-img-bottom">
               <ul>
                 {{-- TODO: DEIXAR CURSOS DINÂMICOS PUXANDO DO BANCO DE DADOS --}}
                 <a href="/courses/id">
