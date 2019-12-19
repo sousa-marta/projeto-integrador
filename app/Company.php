@@ -33,6 +33,6 @@ class Company extends Model
   }
 
   protected $fillable = [
-    'name', 'img', 'birth_date', 'email', 'phone', 'address', 'complement', 'zip', 'password', 'location_id'
+    'name', 'logo', 'POC', 'phone', 'email', 'address', 'address_number', 'complement', 'zip', 'location_id', 'city', 'state'
   ];
 }
