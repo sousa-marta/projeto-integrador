@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Course;
+use App\Category;
+use App\Company;
 use Illuminate\Http\Request;
 
 class CourseController extends Controller
@@ -27,7 +29,9 @@ class CourseController extends Controller
   public function create()
   {
     $courses = Course::all();
-    return view('courses.create',compact('courses'));
+    $categories = Category::all();
+    $companies = Company::all();
+    return view('courses.create',compact('courses','categories','companies'));
   }
 
   /**
@@ -84,7 +88,10 @@ class CourseController extends Controller
    */
   public function edit(Course $course)
   {
-    return view('courses.edit',['course' => $course]);
+    $categories = Category::all();
+    $companies = Company::all();
+
+    return view('courses.edit',['course' => $course, 'categories' => $categories, 'companies'=> $companies]);
   }
 
   /**
