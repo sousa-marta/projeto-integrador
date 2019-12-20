@@ -201,7 +201,6 @@ class LocationsTableSeeder extends Seeder
       ['country'=>"Romênia"],
       ['country'=>"Ruanda"],
       ['country'=>"Rússia"],
-      
       ['country'=>"Samoa"],
       ['country'=>"Santa Helena"],
       ['country'=>"Santa Lúcia"],
