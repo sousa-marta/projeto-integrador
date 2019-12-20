@@ -11,7 +11,7 @@ Curso de {{ $course->name }}
     <li class="breadcrumb-item"><a class="breadcrumb-item-link" href="/">Home</a></li>
     <li class="breadcrumb-item"><a class="breadcrumb-item-link" href="/courses">Cursos</a></li>
     {{-- TODO: deixar dinâmico o nome do curso --}}
-    <li class="breadcrumb-item active" aria-current="page">Hotelaria</li>
+    <li class="breadcrumb-item active" aria-current="page">{{ $course->name }}</li>
   </ol>
 </nav>
 @endsection
@@ -31,7 +31,7 @@ Curso de {{ $course->name }}
       </div>
       <div class="col-12 col-lg-6 text-right course-detail-offered-by">
         <h4>oferecido por:</h4>
-        <h3>{{ $course->company->name }}</h3>
+        <h3>{{$course->company->name}}</h3>
       </div>
     </div>
 
@@ -49,32 +49,26 @@ Curso de {{ $course->name }}
         </div>
         <div class="row d-flex text-center mt-3">
           <!-- cronograma-data -->
-          <div class="col-3 border course-detail-schedule-past">
-            <p class="m-0">01/10</p>
+          <div class="col-4 border course-detail-schedule-past">
+            <p class="m-0">{{$course->start}}</p>
           </div>
-          <div class="col-3 border course-detail-schedule-past">
-            <p class="m-0">31/10</p>
+          <div class="col-4 border course-detail-schedule-past">
+            <p class="m-0">{{$course->end}}</p>
           </div>
-          <div class="col-3 border course-detail-shedule-soon">
-            <p class="m-0">10/11</p>
-          </div>
-          <div class="col-3 border">
-            <p class="m-0">20/11</p>
+          <div class="col-4 border course-detail-shedule-soon">
+            <p class="m-0">{{$course->duration}} meses</p>
           </div>
         </div>
         <div class="row d-flex text-center">
           <!-- cronograma-legenda -->
-          <div class="col-3">
-            <p class="course-detail-schedule-legend">Abertura</p>
+          <div class="col-4">
+            <p class="course-detail-schedule-legend">Início do Curso</p>
           </div>
-          <div class="col-3">
-            <p class="course-detail-schedule-legend">Encerramento Inscrições</p>
+          <div class="col-4">
+            <p class="course-detail-schedule-legend">Fim do Curso</p>
           </div>
-          <div class="col-3">
-            <p class="course-detail-schedule-legend">Divulgação Selecionados</p>
-          </div>
-          <div class="col-3">
-            <p class="course-detail-schedule-legend">Início Curso</p>
+          <div class="col-4">
+            <p class="course-detail-schedule-legend">Duração</p>
           </div>
         </div>
         <div class="row pb-5 mt-3">
@@ -85,7 +79,7 @@ Curso de {{ $course->name }}
 
       <!-- imagem do ofertante do treinamento -->
       <div class="col-12 col-lg-6 course-detail-provider">
-        <img src="img/emp-evolke.jpg" alt="Logo da empresa XPTO de treinamento" class="rounded pb-5 course-detail-logo-img">
+        <img src="{{$course->company->logo}}" alt="Logo da empresa {{$course->company->name}} de treinamento" class="rounded pb-5 course-detail-logo-img">
       </div>
     </div>
   </div>
@@ -94,8 +88,8 @@ Curso de {{ $course->name }}
 <!-- INFORMAÇÕES DETALHADAS -->
 <section class="container mt-4 mb-5 px-4">
   <h2 class="pt-4 pb-2">Informações sobre o curso</h2>
-  <p>Preparar profissionais para confeccionar e reparar móveis e objetos em madeira. Além disso, você aprenderá a interpretar projetos e especificações em todo o seu processo fabril, através de plantas e especificações técnicas, operando equipamentos manuais e elétricos e observando as normas técnicas de segurança.</p>
-  <p><strong>Duração:</strong> 2 semanas</p>
+  <p>{{$course->description}}</p>
+  <p><strong>Duração:</strong> {{$course->duration}} meses </p>
   <p><strong>Requisitos:</strong></p>
   <ul class="px-4">
     <li>Idade mínima de 16 anos.</li>

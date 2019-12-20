@@ -52,14 +52,10 @@ Cursos
             <td>{{ $course->category->name }}</td>
             <td>{{ $course->company->name }}</td>
             <td class="d-flex justify-content-start align-items-center">
-
               {{-- botão editar --}}
-              <form action="/courses/{{$course->id}}/edit" method="get">
-                @csrf
-                {{-- @method('EDIT') --}}
-                <button class="btn btn-success btn-sm mr-1"><i class='fas fa-pencil-alt'></i></button>
-              </form>
-
+              <a href="/courses/{{ $course->id }}/edit" class="btn btn-info btn-sm mr-2">
+                <i class="fas fa-edit"></i>
+              </a>
               {{-- botão excluir --}}
               <form action="/courses/{{$course->id}}" method="post" 
                     onsubmit="return confirm('Tem certeza que quer remover {{ addslashes($course->name) }}?')">
