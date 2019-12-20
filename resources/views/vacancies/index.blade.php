@@ -150,26 +150,33 @@ Oportunidades
           @foreach ($vacancies as $vacancy)
           <div class="card my-5">
             <div class="row">
-              <div class="d-flex align-items-center col-lg-5">
-                <img class="card-img-top h-90 " src="/img/panificadora-quadro.jpg" alt="Imagem de capa do card">
+              <div class="d-flex align-items-center justify-content-center col-12 col-lg-4">
+                <img class="logo-size" src="/img/contribute-enterprise-logo1.png" alt="Imagem de capa do card">
               </div>
-              <div class="col-lg-7 p-3">
-            <h3 class="card-title"> Vaga {{ $vacancy->name }}</h2>
-              <h6 class="card-text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Est modi delectus quos? Commodi eius doloribus ipsam iste autem sequi ad natus nobis,
-                quae numquam perspiciatis. Veniam repellendus voluptate recusandae illo. </h6>
-              <h6 class="card-text"> cidade: São Paulo </h6>
-              <h6 class="card-text"> estado: SP </h6>
-              <h6 class="card-text"> salário: R$ 1.500,00</h6>
-              <h6 class="card-text"> email: contato@padarialegal.com.br </h6>
-              <hr>
-              <div class="d-flex justify-content-between">
-                <a href="#" class="btn btn-primary nowrap m-1">enviar curriculo</a>
-                <a href="/courses" class="btn btn-secondary nowrap m-1">verificar cursos</a>
+              <div class="col-lg-8 p-3 text-center">
+                <h4> Vaga {{ $vacancy->name }}</h4>
+                <div class="row justify-content-around">
+                  <p class="col-6"><strong>Cidade:</strong> {{ $vacancy->city }}</p>
+                  <p class="col-6"><strong>Salário:</strong> R$ {{ $vacancy->wage }}</p>
+                  <p class="col-6"><strong>Categoria:</strong> {{ $vacancy->category_name }}</p>
+                  <p class="col-6"><strong>Empresa:</strong> {{ $vacancy->company_name }}</p>
+                </div>
+                  <p><button type="button" class="btn btn-secondary my-2">Veja cursos relacionados</button></p>
+                  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#moreInfo" aria-expanded="false" aria-controls="moreInfo">Leia mais <i class='far fa-plus-square ml-1'></i></button>
+                <div class="collapse" id="moreInfo">
+                  <div class="card card-body border-0">
+                    <p><strong>Descrição:</strong></p>
+                    <p>{{ $vacancy->description }}</p>
+                  </div>
+                  <hr>
+                  <div class="d-flex justify-content-center">
+                    <a href="#" class="btn btn-primary m-1">enviar curriculo <i class='fas fa-envelope-square ml-1'></i></a>
+                    <a href="/courses" class="btn btn-secondary m-1">ligar <i class='fas fa-phone-square-alt ml-1'></i></a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
         @endforeach
       </div>
     </section>

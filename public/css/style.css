@@ -29,6 +29,7 @@ h5 {
 
 .btn {padding: 1.0vh 2.2vh;}
 
+/* Removing arrows in input:number fields */
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -352,18 +353,11 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
 /* Fim CURSO-DETALHE */
 
 /* Início OPORTUNIDADES */
-.opportunities-bg {
-  background-color: #4FB3BF;
-  color: #FFF;
-  height: 30vh;
-}
-
 .filter-title-bg {background-color: #005662;}
 
 .collapse-bg {background-color: #BDBDBD;}
 
-
-.nowrap {white-space: normal;}
+.logo-size {max-height: 100px;}
 /* Fim OPORTUNIDADES */
 
 /* Início APOIO */
@@ -631,6 +625,8 @@ footer p {color: #FFF;}
   /* Início CURSO-DETALHE */
   .course-detail-schedule-legend {font-size: 0.8em;}
   /* Fim CURSO-DETALHE */
+
+  .logo-size {max-height: 150px;}
 
   /* Início FOOTER */
   footer img {width: 15vw;}
