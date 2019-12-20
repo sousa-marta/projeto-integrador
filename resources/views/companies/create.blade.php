@@ -8,7 +8,7 @@ Cadastrar Empresa
 
 <!-- Formulário -->
 <section class="d-flex justify-content-center align-items-center p-4 admin-start-margin">
-  <form action="/admin/cadastro-empresa" method="post" class="register-company-main card p-5 col-lg-5" enctype="multipart/form-data">
+  <form action="/companies" method="post" class="register-company-main card p-5 col-lg-5" enctype="multipart/form-data">
     @csrf
     <div class="form-group text-center mt-3">
       <h2>Cadastrar Nova Empresa</h2>
@@ -34,14 +34,6 @@ Cadastrar Empresa
     <div class="form-group">
       <label for="companyEmail">E-mail</label>
       <input type="email" class="form-control" name="companyEmail" id="companyEmail" placeholder="E-mail" required>
-      <select class="col-lg-12" name="companyCountry" id="companyCountry" required >
-        <option value="" selected disabled>Selecione o país da empresa</option>
-        <?php
-          foreach ($locations as $location) {
-            echo "<option value='$location->country'>$location->country</option>";
-          }
-        ?>
-      </select>
     </div>
     <div class="row">
       <div class="form-group col-8 p-0">
@@ -66,9 +58,9 @@ Cadastrar Empresa
     <label for="companyCountry">País</label>
     <div class="form-group">
       <select class="col-lg-12" name="companyCountry" id="companyCountry" required >
-        <option value="{{$country->id}}" selected disabled>{{$country->name}}</option>
-          @foreach ($countries as $country)
-            <option value='{{$country->id}}'>{{$country->name}}</option>;
+        <option value="" selected disabled>Escolha um país</option>
+          @foreach ($locations as $location)
+            <option value='{{$location->id}}'>{{$location->country}}</option>;
         @endforeach
       </select>
     </div>

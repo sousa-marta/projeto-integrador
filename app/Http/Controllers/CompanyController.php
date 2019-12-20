@@ -16,7 +16,8 @@ class CompanyController extends Controller
    */
   public function index(Request $request)
   {
-    return view('companies.create');//
+    $companies = Company::all();
+    return view('companies.index', ["companies" => $companies]);
   }
 
   /**
@@ -28,6 +29,7 @@ class CompanyController extends Controller
   {
     $locations = Location::all(); //busca todos os países na base de dados locations
     return view('companies.create',["locations" => $locations]);
+    
   }
 
   /**
@@ -48,12 +50,12 @@ class CompanyController extends Controller
       'address_number' => $request->companyAddressNo,
       'complement' => $request->companyAddressComp,
       'zip' => $request->companyZip,
-      'location_id' => $request->country->id,
+      'location_id' => $request->companyCountry,
       'city' => $request->companyCity,
       'state' => $request->companyState
     ]);
     
-    return redirect('/companies/create');
+    return redirect('/companies');
   }
 
   /**
@@ -64,7 +66,7 @@ class CompanyController extends Controller
    */
   public function show(Company $company)
   {
-    return view('companies.show');
+    return view('companies.show', ['company'=>$company]);
   }
 
   /**
@@ -75,7 +77,8 @@ class CompanyController extends Controller
    */
   public function edit(Company $company)
   {
-    return view('companies.edit', ['company' => $company]);
+    $locations = Location::all();
+    return view('companies.edit', ['company' => $company, 'locations' => $locations]);
   }
 
   /**
@@ -93,13 +96,16 @@ class CompanyController extends Controller
     $company->phone = $request->companyPhone;
     $company->email = $request->companyEmail;
     $company->address = $request->companyAddress;
-    $company->address_number = $request->companyAddress;
+    $company->address_number = $request->companyAddressNo;
     $company->complement = $request->companyAddressComp;
     $company->zip = $request->companyZip;
-    $company->location_id = $request->country->id;
+    $company->location_id = $request->companyCountry;
     $company->city = $request->companyCity;
     $company->state = $request->companyState;
 
+    $company->save();
+    
+    return redirect('companies');
   }
 
   /**
@@ -111,6 +117,6 @@ class CompanyController extends Controller
   public function destroy(Company $company)
   {
     $company->delete();
-    return redirect('companies/create');
+    return redirect('companies');
   }
 }
