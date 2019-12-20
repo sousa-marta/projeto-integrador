@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Company;
 use Illuminate\Http\Request;
 
+use App\Location;
+
 class CompanyController extends Controller
 {
   /**
@@ -24,8 +26,8 @@ class CompanyController extends Controller
    */
   public function create(Request $request)
   {
-    $companies = Company::all();
-    return view('companies.index', compact('companies'));
+    $locations = Location::all(); //busca todos os países na base de dados locations
+    return view('companies.create',["locations" => $locations]);
   }
 
   /**
