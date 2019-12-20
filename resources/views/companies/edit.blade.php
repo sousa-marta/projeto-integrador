@@ -12,7 +12,7 @@ Cadastrar Empresa
   <input type="hidden" name="_method" value="PUT">
     @csrf
     <div class="form-group text-center mt-3">
-      <h2>Cadastrar Nova Empresa</h2>
+      <h2>Editar Empresa Cadastrada</h2>
     </div>
 
     <div class="form-group">
