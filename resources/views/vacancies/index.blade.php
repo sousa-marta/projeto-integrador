@@ -158,8 +158,8 @@ Oportunidades
           <p class="col-6"><strong>Empresa:</strong> {{ $vacancy->company_name }}</p>
         </div>
         <p><button type="button" class="btn btn-secondary my-2">Veja cursos relacionados</button></p>
-        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#moreInfo" aria-expanded="false" aria-controls="moreInfo">Leia mais <i class='far fa-plus-square ml-1'></i></button>
-        <div class="collapse" id="moreInfo">
+        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#moreInfo{{$vacancy->id}}" aria-expanded="false" aria-controls="moreInfo{{$vacancy->id}}">Leia mais <i class='far fa-plus-square ml-1'></i></button>
+        <div class="collapse" id="moreInfo{{$vacancy->id}}">
           <div class="card card-body border-0">
             <p><strong>Descrição:</strong></p>
             <p>{{ $vacancy->description }}</p>
