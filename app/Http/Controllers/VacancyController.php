@@ -21,7 +21,7 @@ class VacancyController extends Controller
     $vacancies = DB::table('vacancies')
       ->join('categories', 'categories.id', '=', 'vacancies.category_id')
       ->join('companies', 'companies.id', '=', 'vacancies.company_id')
-      ->select('vacancies.*', 'companies.name as company_name', 'categories.name as category_name')
+      ->select('vacancies.*', 'companies.name as company_name', 'companies.logo as company_logo', 'categories.name as category_name')
       ->orderBy('name')
       ->get();
     // var_dump($vacancies);
@@ -41,7 +41,7 @@ class VacancyController extends Controller
     $vacancies = DB::table('vacancies')
       ->join('categories', 'categories.id', '=', 'vacancies.category_id')
       ->join('companies', 'companies.id', '=', 'vacancies.company_id')
-      ->select('vacancies.*', 'companies.name as company_name', 'categories.name as category_name')
+      ->select('vacancies.*', 'companies.name as company_name', 'companies.logo as company_logo', 'categories.name as category_name')
       ->orderBy('name')
       ->get();
     // var_dump($vacancies);

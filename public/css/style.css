@@ -86,6 +86,7 @@ a:hover, a:focus {
   color: #FFF;
   font-weight: bold;
   width: 100%;
+  text-align: center;
 }
 /* Fim CONFIGURAÇÕES GERAIS  */
 
@@ -626,7 +627,9 @@ footer p {color: #FFF;}
   .course-detail-schedule-legend {font-size: 0.8em;}
   /* Fim CURSO-DETALHE */
 
+  /* Início OPORTUNIDADES */
   .logo-size {max-height: 150px;}
+  /* Início OPORTUNIDADES */
 
   /* Início FOOTER */
   footer img {width: 15vw;}

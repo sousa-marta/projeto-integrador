@@ -141,44 +141,38 @@ Oportunidades
 @endsection
 
 @section('text-content')
-<div>
-  <!-- Conteúdo Central da Página -->
-  <section>
-    <!-- <div class="row justify-content-center mb-4">
-      <div class="col-md-7 col-lg-8 order-2 my-4"> -->
-        <div class="container">
-          @foreach ($vacancies as $vacancy)
-          <div class="card my-5">
-            <div class="row">
-              <div class="d-flex align-items-center justify-content-center col-12 col-lg-4">
-                <img class="logo-size" src="/img/contribute-enterprise-logo1.png" alt="Imagem de capa do card">
-              </div>
-              <div class="col-lg-8 p-3 text-center">
-                <h4> Vaga {{ $vacancy->name }}</h4>
-                <div class="row justify-content-around">
-                  <p class="col-6"><strong>Cidade:</strong> {{ $vacancy->city }}</p>
-                  <p class="col-6"><strong>Salário:</strong> R$ {{ $vacancy->wage }}</p>
-                  <p class="col-6"><strong>Categoria:</strong> {{ $vacancy->category_name }}</p>
-                  <p class="col-6"><strong>Empresa:</strong> {{ $vacancy->company_name }}</p>
-                </div>
-                  <p><button type="button" class="btn btn-secondary my-2">Veja cursos relacionados</button></p>
-                  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#moreInfo" aria-expanded="false" aria-controls="moreInfo">Leia mais <i class='far fa-plus-square ml-1'></i></button>
-                <div class="collapse" id="moreInfo">
-                  <div class="card card-body border-0">
-                    <p><strong>Descrição:</strong></p>
-                    <p>{{ $vacancy->description }}</p>
-                  </div>
-                  <hr>
-                  <div class="d-flex justify-content-center">
-                    <a href="#" class="btn btn-primary m-1">enviar curriculo <i class='fas fa-envelope-square ml-1'></i></a>
-                    <a href="/courses" class="btn btn-secondary m-1">ligar <i class='fas fa-phone-square-alt ml-1'></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        @endforeach
+<!-- Conteúdo Central da Página -->
+<section class="container">
+  @foreach ($vacancies as $vacancy)
+  <div class="card my-5">
+    <div class="row">
+      <div class="d-flex align-items-center justify-content-center col-12 col-lg-4">
+        <img class="logo-size" src="/img/contribute-enterprise-logo1.png" alt="Logo da empresa {{ $vacancy->company_name }}">
       </div>
-    </section>
-</div>
+      <div class="col-lg-8 p-3 text-center">
+        <h4> Vaga {{ $vacancy->name }}</h4>
+        <div class="row justify-content-around">
+          <p class="col-6"><strong>Cidade:</strong> {{ $vacancy->city }}</p>
+          <p class="col-6"><strong>Salário:</strong> R$ {{ $vacancy->wage }}</p>
+          <p class="col-6"><strong>Categoria:</strong> {{ $vacancy->category_name }}</p>
+          <p class="col-6"><strong>Empresa:</strong> {{ $vacancy->company_name }}</p>
+        </div>
+        <p><button type="button" class="btn btn-secondary my-2">Veja cursos relacionados</button></p>
+        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#moreInfo" aria-expanded="false" aria-controls="moreInfo">Leia mais <i class='far fa-plus-square ml-1'></i></button>
+        <div class="collapse" id="moreInfo">
+          <div class="card card-body border-0">
+            <p><strong>Descrição:</strong></p>
+            <p>{{ $vacancy->description }}</p>
+          </div>
+          <hr>
+          <div class="d-flex justify-content-center">
+            <a href="mailto:{{$vacancy->email}}?Subject=Vaga%20{{$vacancy->name}}" class="btn btn-primary m-1">Enviar currículo <i class='fas fa-envelope-square ml-1'></i></a>
+            <a href="tel://+55{{$vacancy->phone}}" class="btn btn-secondary m-1">Ligar <i class='fas fa-phone-square-alt ml-1'></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  @endforeach
+</section>
 @endsection
