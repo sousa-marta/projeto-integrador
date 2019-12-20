@@ -29,6 +29,17 @@ h5 {
 
 .btn {padding: 1.0vh 2.2vh;}
 
+/* Removing arrows in input:number fields */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {-moz-appearance:textfield;}
+
 /*Botão Turquesa*/
 .btn-primary {
   color: #FFF;
@@ -75,6 +86,7 @@ a:hover, a:focus {
   color: #FFF;
   font-weight: bold;
   width: 100%;
+  text-align: center;
 }
 /* Fim CONFIGURAÇÕES GERAIS  */
 
@@ -210,7 +222,7 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
   font-weight: bold;
 }
 
-.oppy-info img, .oppy-proposal img {width: 200px;}
+.oppy-info img, .oppy-proposal img, .img-especial {width: 200px;}
 
 .oppy-proposal {
   align-items: center;
@@ -342,18 +354,11 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
 /* Fim CURSO-DETALHE */
 
 /* Início OPORTUNIDADES */
-.opportunities-bg {
-  background-color: #4FB3BF;
-  color: #FFF;
-  height: 30vh;
-}
-
 .filter-title-bg {background-color: #005662;}
 
 .collapse-bg {background-color: #BDBDBD;}
 
-
-.nowrap {white-space: normal;}
+.logo-size {max-height: 100px;}
 /* Fim OPORTUNIDADES */
 
 /* Início APOIO */
@@ -640,6 +645,10 @@ footer p {color: #FFF;}
   /* Início CURSO-DETALHE */
   .course-detail-schedule-legend {font-size: 0.8em;}
   /* Fim CURSO-DETALHE */
+
+  /* Início OPORTUNIDADES */
+  .logo-size {max-height: 150px;}
+  /* Início OPORTUNIDADES */
 
   /* Início FOOTER */
   footer img {width: 15vw;}
