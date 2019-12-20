@@ -102,7 +102,7 @@ Curso de {{ $course->name }}
   <!-- div do fundo amarelo -->
   <div class="course-detail-similar-courses-top">
     <div class="container pt-3 pb-5">
-      <h2>Cursos Semelhantes</h2>
+      <h2>Cursos Semelhantes na área de {{$course->category->name}}</h2>
     </div>
   </div>
 
@@ -111,62 +111,31 @@ Curso de {{ $course->name }}
     <div class="container">
       <div class="row d-flex container course-detail-div-cards">
 
-        <!-- 1o card -->
-        <div class="col-12 col-md-8 col-lg-4 p-2">
-          <div class="course-detail-card">
-            <div class="container course-detail-card-title">
-              <p>Hotelaria</p>
-              <h2>Curso para Recepção</h2>
-            </div>
-            <div class="container d-flex flex-column">
-              <img src="img/emp-direan.png" alt="Logo da empresa XPTO de treinamento" class="align-self-center course-detail-logo-img-alike">
-              <div class="pb-2">
-                <p><strong>Inscritos:</strong> 505</p>
-                <p><strong>Vagas:</strong> 10</p>
-                <p><strong>Inscrição até:</strong> 15/11/2019</p>
-                <p><strong>Início:</strong> 01/12/2019</p>
+        {{-- TODO: Quero que mostre apenas os três primeiros cursos e não mostre o que a página já está exibindo --}}
+        {{-- Erro: o take(3) está contando mesmo os casos que não passam no if. --}}
+        
+        {{-- Mostrando os três primeiros cursos da mesma área, exceto o que já está mostrando no detalhe --}}
+        @foreach ($courses->take(3) as $courseOne)
+          @if ($courseOne->id != $course->id && $courseOne->category_id == $course->category_id)
+            <div class="col-12 col-md-8 col-lg-4 p-2">
+              <div class="course-detail-card">
+                <div class="container course-detail-card-title">
+                  <p>{{$courseOne->category->name}}</p>
+                  <h2>Curso de {{$courseOne->name}}</h2>
+                </div>
+                <div class="container d-flex flex-column">
+                  <img src="{{$courseOne->company->logo}}" alt="Logo da empresa {{$courseOne->company->name}}" class="align-self-center course-detail-logo-img-alike">
+                  <div class="pb-2">
+                    <p><strong>Duração:</strong>{{$courseOne->duration}} meses</p>
+                    <p><strong>Vagas:</strong> 10</p>
+                    <p><strong>Início:</strong> {{$courseOne->start}}</p>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
+          @endif
+        @endforeach
 
-        <!-- 2o card -->
-        <div class="col-12 col-md-8 col-lg-4 p-2">
-          <div class="course-detail-card">
-            <div class="container course-detail-card-title">
-              <p>Gastronomia</p>
-              <h2>Curso de Auxiliar</h2>
-            </div>
-            <div class="container d-flex flex-column">
-              <img src="img/emp-cookinglogo.png" alt="Logo da empresa XPTO de treinamento" class="align-self-center course-detail-logo-img-alike">
-              <div class="pb-2">
-                <p><strong>Inscritos:</strong> 505</p>
-                <p><strong>Vagas:</strong> 10</p>
-                <p><strong>Inscrição até:</strong> 15/11/2019</p>
-                <p><strong>Início:</strong> 01/12/2019</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- 3o card -->
-        <div class="col-12 col-md-8 col-lg-4 p-2">
-          <div class="course-detail-card">
-            <div class="container course-detail-card-title">
-              <p>Serviços Gerais</p>
-              <h2>Curso de Marcenaria</h2>
-            </div>
-            <div class="container d-flex flex-column">
-              <img src="img/emp-marcenaria.jpg" alt="Logo da empresa XPTO de treinamento" class="align-self-center course-detail-logo-img-alike">
-              <div class="pb-2">
-                <p><strong>Inscritos:</strong> 505</p>
-                <p><strong>Vagas:</strong> 10</p>
-                <p><strong>Inscrição até:</strong> 15/11/2019</p>
-                <p><strong>Início:</strong> 01/12/2019</p>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   </div>
