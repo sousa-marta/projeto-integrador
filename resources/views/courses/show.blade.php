@@ -1,7 +1,7 @@
 @extends('layouts.mainTemplate')
 
 @section('title')
-Detalhes do Curso
+Curso de {{ $course->name }}
 @endsection
 
 @section('breadcrumb')
@@ -26,12 +26,12 @@ Detalhes do Curso
     <!-- nome do curso e ofertante do treinamento -->
     <div class="row pt-3">
       <div class="col-12 col-lg-6">
-        <h4>Hotelaria</h4>
-        <h1>Curso de Atendente</h1>
+        <h4>{{ $course->category->name }}</h4>
+        <h1>{{ $course->name }}</h1>
       </div>
       <div class="col-12 col-lg-6 text-right course-detail-offered-by">
         <h4>oferecido por:</h4>
-        <h3>evolke Treinamentos</h3>
+        <h3>{{ $course->company->name }}</h3>
       </div>
     </div>
 

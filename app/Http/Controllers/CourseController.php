@@ -72,17 +72,11 @@ class CourseController extends Controller
    * @param  \App\Course  $course
    * @return \Illuminate\Http\Response
    */
-  public function show()
+  public function show(Course $course)
   {
-    //
-    return view('courses.show');
-
-    //Assim que ficar dinâmico, pra receber o id é só substituir o código acima por:
-    /*public function show(Course $course)
-        {
-        return view('courses.show',compact('course',$course));
-        }*/
+    return view('courses.show',compact('course',$course));
   }
+  
 
   /**
    * Show the form for editing the specified resource.
