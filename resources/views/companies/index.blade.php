@@ -163,8 +163,17 @@ Companhias
               <h6 class="card-text"> email: contato@padarialegal.com.br </h6>
               <hr>
               <div class="d-flex justify-content-between">
-                <a href="#" class="btn btn-primary nowrap m-1">Ver vagas</a>
-                <a href="/courses" class="btn btn-secondary nowrap m-1">Ver cursos</a>
+                <div>
+                  <a href="#" class="btn btn-primary nowrap m-1">Ver vagas</a>
+                  <a href="/courses" class="btn btn-secondary nowrap m-1">Ver cursos</a>
+                </div>
+                <div>
+                  <a href="#" class="btn btn-primary nowrap m-1">Editar</a>
+                  <a href="/courses" class="btn btn-danger nowrap m-1">Excluir</a>
+                </div>
+              </div>
+              <div class="d-flex justify-content-between">
+                
               </div>
         </div>
       </div>

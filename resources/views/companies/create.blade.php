@@ -63,12 +63,10 @@ Cadastrar Empresa
     <label for="companyCountry">País</label>
     <div class="form-group">
       <select class="col-lg-12" name="companyCountry" id="companyCountry" required >
-        <option value="" selected disabled>Selecione o país da empresa</option>
-        <?php
-          foreach ($countries as $country) {
-            echo "<option value='$country'>$country</option>";
-          }
-        ?>
+        <option value="{{$country->id}}" selected disabled>{{$country->name}}</option>
+          @foreach ($countries as $country)
+            <option value='{{$country->id}}'>{{$country->name}}</option>;
+        @endforeach
       </select>
     </div>
     <div class="form-group">

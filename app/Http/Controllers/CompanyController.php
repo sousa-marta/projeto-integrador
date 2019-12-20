@@ -14,7 +14,7 @@ class CompanyController extends Controller
    */
   public function index(Request $request)
   {
-    return view('companies.create');//
+    return view('companies.index');//
   }
 
   /**
@@ -37,17 +37,17 @@ class CompanyController extends Controller
   public function store(Request $request)
   {
     Company::create([
-      'name' => $request->companyName,
-      'logo' => $request->companyLogo,
-      'POC' => $request->companyPOC,
-      'phone' => $request->companyPhone,
-      'email' => $request->companyEmail,
-      'address' => $request->companyAddress,
-      'address_number' => $request->companyAddressNo,
-      'complement' => $request->companyAddressComp,
-      'zip' => $request->companyZip,
-      'location_id' => $request->companyCountry,
-      'city' => $request->companyCity,
+      'name' => $request->companyName;
+      'logo' => $request->companyLogo;
+      'POC' => $request->companyPOC;
+      'phone' => $request->companyPhone;
+      'email' => $request->companyEmail;
+      'address' => $request->companyAddress;
+      'address_number' => $request->companyAddressNo;
+      'complement' => $request->companyAddressComp;
+      'zip' => $request->companyZip;
+      'location_id' => $request->country->id;
+      'city' => $request->companyCity;
       'state' => $request->companyState
     ]);
     
@@ -73,7 +73,7 @@ class CompanyController extends Controller
    */
   public function edit(Company $company)
   {
-    //
+    return view('companies.edit', ['company' => $company]);
   }
 
   /**
@@ -85,7 +85,19 @@ class CompanyController extends Controller
    */
   public function update(Request $request, Company $company)
   {
-    //
+    $company->name = $request->companyName;
+    $company->logo = $request->companyLogo;
+    $company->POC = $request->companyPOC;
+    $company->phone = $request->companyPhone;
+    $company->email = $request->companyEmail;
+    $company->address = $request->companyAddress;
+    $company->address_number = $request->companyAddress;
+    $company->complement = $request->companyAddressComp;
+    $company->zip = $request->companyZip;
+    $company->location_id = $request->country->id;
+    $company->city = $request->companyCity;
+    $company->state = $request->companyState;
+
   }
 
   /**
@@ -96,6 +108,7 @@ class CompanyController extends Controller
    */
   public function destroy(Company $company)
   {
-    //
+    $company->delete();
+    return redirect('companies/create');
   }
 }
