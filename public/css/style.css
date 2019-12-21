@@ -61,7 +61,16 @@ input[type=number] {-moz-appearance:textfield;}
   text-transform: uppercase;
 }
 
-.btn-secondary:hover, .btn-secondary:focus {background: #005662;}
+/*Botão Vermelho*/
+
+.btn-danger {
+  background: #ae2029;
+  color: #fff;
+  border:none;
+  text-transform: uppercase;
+}
+
+.btn-secondary:hover, .btn-secondary:focus, .btn-danger:hover {background: #005662;}
 
 .row {
   margin-left: 0;

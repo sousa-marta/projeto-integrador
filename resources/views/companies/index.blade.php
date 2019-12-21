@@ -20,9 +20,11 @@ Companhias
 
 @section('banner')
 <!-- Banner -->
-<section class="pages-title-bg d-flex justify-content-center align-items-center">
+<section class="pages-title-bg d-flex-column justify-content-center align-items-center p-3">
   <h1>Companhías Cadastradas</h1>
+  <a href="/companies/create" class="btn btn-secondary col-lg-2"><span class='fa'>&#xf1ad;</span> Cadastrar</a>
 </section>
+
 @endsection
 
 @section('menu-content')
@@ -91,27 +93,27 @@ Companhias
         </div>
           <div class="col-lg-12 p-3">
               <h6 class="card-text"> No Bairro dos Jardins, a um quarteirão da Avenida Paulista, descubra o Tivoli Mofarrej São Paulo Hotel, situado no coração da cidade. Quer esteja numa viagem de negócios ou de lazer, este hotel de cinco estrelas em São Paulo tem tudo para tornar a sua estadia uma experiência inesquecível.</h6>
-                <h6 class="card-text">Endereço: <strong>Alameda Santos. 1437. Cerqueira César. CEP: 07020240 </strong></h6>
-                <h6 class="card-text"> Pessoa de contato: <strong>Lislaine Oliveira </strong></h6>
-              <h6 class="card-text"> Phone: <strong>+5511957637348</strong> </h6>
-              <h6 class="card-text"> email: contato@padarialegal.com.br </h6>
+                <h6 class="card-text">Endereço: <strong>{{$company->address}} {{$company->address_number}} Apto/Ofic: {{$company->complement}}</strong></h6>
+                <h6 class="card-text">CEP: <strong>{{$company->zip}} </strong></h6>
+                <h6 class="card-text">Cidade: <strong>{{$company->city}} </strong></h6>
+                <h6 class="card-text">Estado: <strong>{{$company->state}} </strong></h6>
+                <h6 class="card-text"> Pessoa de contato: <strong>{{$company->POC}}</strong></h6>
+              <h6 class="card-text"> Phone: <strong>{{$company->phone}}</strong> </h6>
+              <h6 class="card-text"> email: <strong> {{$company->email}} </strong></h6>
               <hr>
               <div class="d-flex justify-content-between">
                 <div>
                   <a href="#" class="btn btn-primary nowrap m-1">Ver vagas</a>
                   <a href="/courses" class="btn btn-secondary nowrap m-1">Ver cursos</a>
                 </div>
-                <div>
+                <div class="row">
                   <a href="/companies/{{$company->id}}/edit" class="btn btn-primary nowrap m-1">Editar</a>
-                  <!-- <a href="/courses" class="btn btn-danger nowrap m-1">Excluir</a> -->
                   <form action="/companies/{{$company->id}}" method="POST">
                     <input type="hidden" name="_method" value="DELETE">
                     <input type="hidden" name="_token" value="{{csrf_token() }}">
                     <input type="submit" class="btn btn-danger" value="Delete">
                   </form>
                 </div>
-              </div>
-              <div class="d-flex justify-content-between"> 
               </div>
         </div>
       </div>

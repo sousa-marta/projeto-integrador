@@ -10,10 +10,12 @@ Cadastrar Empresa
 <section class="d-flex justify-content-center align-items-center p-4 admin-start-margin">
   <form action="/companies" method="post" class="register-company-main card p-5 col-lg-5" enctype="multipart/form-data">
     @csrf
+    <div class="d-flex justify-content-end"> 
+      <a href="/companies" class="btn btn-primary col-lg-3 p-1"><span class='fa'>&#xf1ad;</span> Voltar</a>
+    </div>
     <div class="form-group text-center mt-3">
       <h2>Cadastrar Nova Empresa</h2>
     </div>
-
     <div class="form-group">
       <label for="companyName">Nome da empresa</label>
       <input type="text" class="form-control" name="companyName" id="companyName" placeholder="Nome da empresa" required>
