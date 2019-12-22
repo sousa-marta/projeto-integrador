@@ -86,8 +86,8 @@ Companhias
     <div class="container">
       <div class="card mt-4">
         <div class="row d-flex align-items-center">
-          <div class="col-lg-3">
-            <img class="card-img-top h-90 " src="img/tivoli-hotel.jpg" alt="Imagem de capa do card">
+          <div class="col-lg-3 pt-2">
+            <img class="card-img-top h-90 " src="img/{{$company->logo}}" alt="Imagem de capa do card">
           </div>
           <h2 class="card-title align-center">{{$company->name}}</h2>
         </div>
@@ -95,8 +95,10 @@ Companhias
               <h6 class="card-text"> No Bairro dos Jardins, a um quarteirão da Avenida Paulista, descubra o Tivoli Mofarrej São Paulo Hotel, situado no coração da cidade. Quer esteja numa viagem de negócios ou de lazer, este hotel de cinco estrelas em São Paulo tem tudo para tornar a sua estadia uma experiência inesquecível.</h6>
                 <h6 class="card-text">Endereço: <strong>{{$company->address}} {{$company->address_number}} Apto/Ofic: {{$company->complement}}</strong></h6>
                 <h6 class="card-text">CEP: <strong>{{$company->zip}} </strong></h6>
-                <h6 class="card-text">Cidade: <strong>{{$company->city}} </strong></h6>
+              <div class="row d-flex justify-content-start">
+                <h6 class="card-text">Cidade: <strong>{{$company->city}}</strong></h6>
                 <h6 class="card-text">Estado: <strong>{{$company->state}} </strong></h6>
+              </div>
                 <h6 class="card-text"> Pessoa de contato: <strong>{{$company->POC}}</strong></h6>
               <h6 class="card-text"> Phone: <strong>{{$company->phone}}</strong> </h6>
               <h6 class="card-text"> email: <strong> {{$company->email}} </strong></h6>

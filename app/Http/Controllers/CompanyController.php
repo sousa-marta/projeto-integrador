@@ -42,7 +42,9 @@ class CompanyController extends Controller
   {
     Company::create([
       'name' => $request->companyName,
-      'logo' => $request->companyLogo,
+      $imgLogo = $request->file('companyLogo'),
+      $imgLogo->move(public_path().'/img', time().$imgLogo->getClientOriginalName()),
+      'logo' => $imgLogo->getClientOriginalName(),
       'POC' => $request->companyPOC,
       'phone' => $request->companyPhone,
       'email' => $request->companyEmail,
@@ -91,7 +93,13 @@ class CompanyController extends Controller
   public function update(Request $request, Company $company)
   {
     $company->name = $request->companyName;
-    $company->logo = $request->companyLogo;
+    $company->fill($request->except('companyLogo'));
+    if($request->hasFile('companyLogo')){
+    $imgLogo = $request->file('companyLogo');
+    $name = time().$imgLogo->getClientOriginalName();
+    $company->logo = $name;
+    $imgLogo->move(public_path().'/img', $name);
+    }
     $company->POC = $request->companyPOC;
     $company->phone = $request->companyPhone;
     $company->email = $request->companyEmail;
@@ -102,7 +110,7 @@ class CompanyController extends Controller
     $company->location_id = $request->companyCountry;
     $company->city = $request->companyCity;
     $company->state = $request->companyState;
-
+    
     $company->save();
     
     return redirect('companies');

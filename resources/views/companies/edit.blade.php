@@ -21,7 +21,7 @@ Cadastrar Empresa
     </div>
     <div class="from-group">
       <label for="companyLogo">Logo da Empresa</label>
-      <input class="form-control" type="file" name="companyLogo" id="companyLogo">
+      <input class="form-control" type="file" name="companyLogo" id="companyLogo" value="{{$company->logo}}">
     </div>
     <div class="form-group">
       <label for="personContact"><strong>Pessoa de contato</strong></label>
