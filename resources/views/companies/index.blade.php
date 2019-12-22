@@ -108,13 +108,8 @@ Companhias
                   <a href="#" class="btn btn-primary nowrap m-1">Ver vagas</a>
                   <a href="/courses" class="btn btn-secondary nowrap m-1">Ver cursos</a>
                 </div>
-                <div class="row">
-                  <a href="/companies/{{$company->id}}/edit" class="btn btn-primary nowrap m-1">Editar</a>
-                  <form action="/companies/{{$company->id}}" method="POST">
-                    <input type="hidden" name="_method" value="DELETE">
-                    <input type="hidden" name="_token" value="{{csrf_token() }}">
-                    <input type="submit" class="btn btn-danger" value="Delete">
-                  </form>
+                <div>
+                  <a href="/companies/{{$company->id}}" class="btn btn-primary nowrap m-1">Ver perfil</a>
                 </div>
               </div>
         </div>

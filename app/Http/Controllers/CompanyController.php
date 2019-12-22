@@ -66,9 +66,10 @@ class CompanyController extends Controller
    * @param  \App\Company  $company
    * @return \Illuminate\Http\Response
    */
-  public function show(Company $company)
+  public function show($id)
   {
-    return view('companies.show', ['company'=>$company]);
+    $company = Company::find($id);
+    return view('companies.show', compact('company'));
   }
 
   /**
@@ -110,7 +111,7 @@ class CompanyController extends Controller
     $company->location_id = $request->companyCountry;
     $company->city = $request->companyCity;
     $company->state = $request->companyState;
-    
+
     $company->save();
     
     return redirect('companies');
