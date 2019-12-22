@@ -26,6 +26,8 @@ class CreateCompaniesTable extends Migration
             $table->string('zip');
             $table->unsignedBigInteger('location_id'); //FK
             $table->foreign('location_id')->references('id')->on('locations'); //FK
+            $table->string('city');
+            $table->string('state');
 
             $table->timestamps();
         });
