@@ -110,7 +110,7 @@ class VacancyController extends Controller
     $vacancy->category_id = $request->category;
     $vacancy->company_id = $request->company;
     $vacancy->save();
-    $request->session()->flash('message', 'Successfully modified the task!');
+    $request->session()->flash('message', 'Vaga atualizada!');
     return redirect()->route('vacancies.show', [$vacancy]);
   }
 
@@ -123,7 +123,7 @@ class VacancyController extends Controller
   public function destroy(Request $request, Vacancy $vacancy)
   {
     $vacancy->delete();
-    $request->session()->flash('message', 'Successfully deleted the task!');
+    $request->session()->flash('message', 'Vaga deletada!');
     return redirect('/vacancies/create');
   }
 }
