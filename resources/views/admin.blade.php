@@ -9,7 +9,7 @@ Página do Administrador
 <div class="container admin-start-margin py-3">
   <nav class="row d-flex justify-content-center">
     <a class="col-md-5 col-lg-3 btn btn-primary py-3 mx-2 my-2" href="/companies"><i class="fa fa-building" aria-hidden="true"></i> Empresa</a>
-    <a class="col-md-5 col-lg-3 btn btn-primary py-3 mx-2 my-2" href="/volunteers"><i class="fa fa-user-circle-o" aria-hidden="true"></i> Voluntário</a>
+    <a class="col-md-5 col-lg-3 btn btn-primary py-3 mx-2 my-2" href="/volunteers"><i class="fa fa-user" aria-hidden="true"></i> Voluntário</a>
   </nav>
 </div>
 
