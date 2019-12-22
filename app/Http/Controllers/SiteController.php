@@ -3,7 +3,14 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Donation;
+
+//para buscar informações do número de cadastros na página geral de admin
+use App\Company;
+use App\Volunteer;
+use App\User;
+use App\Vacancy;
+use App\Course;
+// use App\Donation;
 
 class SiteController extends Controller
 {
@@ -34,6 +41,15 @@ class SiteController extends Controller
 
   public function viewAdmin(Request $request)
   {
-    return view('admin');
+    $companies = Company::all();
+    $volunteers = Volunteer::all();
+    $users = User::all();
+    $vacancies = Vacancy::all();
+    $courses = Course::all();
+    return view('admin',["companies" => $companies,
+                         "volunteers" => $volunteers,
+                         "users" => $users,
+                         "vacancies" => $vacancies,
+                         "courses" => $courses]);
   }
 }
