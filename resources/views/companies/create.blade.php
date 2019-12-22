@@ -14,14 +14,14 @@ Cadastrar Empresa
       <a href="/companies" class="btn btn-primary col-lg-3 p-1"><span class='fa'>&#xf1ad;</span> Voltar</a>
     </div>
     <div class="form-group text-center mt-3">
-      <h2>Cadastrar Nova Empresa</h2>
+      <h2><strong>Cadastrar Nova Empresa</strong></h2>
     </div>
     <div class="form-group">
-      <label for="companyName">Nome da empresa</label>
+      <label for="companyName"><strong>Nome da empresa</strong></label>
       <input type="text" class="form-control" name="companyName" id="companyName" placeholder="Nome da empresa" required>
     </div>
     <div class="from-group">
-      <label for="companyLogo">Logo da Empresa</label>
+      <label for="companyLogo"><strong>Logo da empresa</strong></label>
       <input class="form-control" type="file" name="companyLogo" id="companyLogo">
     </div>
     <div class="form-group">
@@ -29,35 +29,35 @@ Cadastrar Empresa
       <input type="text" class="form-control" name="companyPOC" id="personContact" placeholder="Nome completo do contato" required>
     </div>
     <div class="form-group">
-      <label for="companyPhone">Telefone</label>
+      <label for="companyPhone"><strong>Telefone</strong></label>
       <input type="tel" class="form-control" name="companyPhone" id="companyPhone" placeholder="11 12345-1234" pattern="[0-9]{2} [0-9]{5}-[0-9]{4}" required>
       <small>Formato: 11 12345-1234</small>
     </div>
     <div class="form-group">
-      <label for="companyEmail">E-mail</label>
+      <label for="companyEmail"><strong>E-mail</strong></label>
       <input type="email" class="form-control" name="companyEmail" id="companyEmail" placeholder="E-mail" required>
     </div>
     <div class="row">
       <div class="form-group col-8 p-0">
-        <label for="companyAddress">Endereço</label>
+        <label for="companyAddress"><strong>Endereço</strong></label>
         <input type="text" class="form-control" name="companyAddress" id="companyAddress" placeholder="Endereço" required>
       </div>
       <div class="form-group col-4 p-0 pl-2">
-        <label for="companyAddressNo">Número</label>
+        <label for="companyAddressNo"><strong>Número</strong></label>
         <input type="text" class="form-control" name="companyAddressNo" id="companyAddressNo" placeholder="Número" required>
       </div>
     </div>
     <div class="row">
       <div class="form-group col-6 p-0">
-        <label for="companyAddressComp">Complemento</label>
+        <label for="companyAddressComp"><strong>Complemento</strong></label>
         <input type="text" class="form-control" name="companyAddressComp" id="companyAddressComp" placeholder="Complemento" required>
       </div>
       <div class="form-group col-6 p-0 pl-2">
-        <label for="companyZip">CEP</label>
+        <label for="companyZip"><strong>CEP</strong></label>
         <input type="text" class="form-control" name="companyZip" id="companyZip" placeholder="CEP" required>
       </div>
     </div>
-    <label for="companyCountry">País</label>
+    <label for="companyCountry"><strong>País</strong></label>
     <div class="form-group">
       <select class="col-lg-12" name="companyCountry" id="companyCountry" required >
         <option value="" selected disabled>Escolha um país</option>
@@ -67,11 +67,11 @@ Cadastrar Empresa
       </select>
     </div>
     <div class="form-group">
-      <label for="city">Cidade</label>
+      <label for="city"><strong>Cidade</strong></label>
       <input type="text" class="form-control" name="companyCity" id="city" placeholder="Cidade" required>
     </div>
     <div class="form-group">
-      <label for="state">Estado</label>
+      <label for="state"><strong>Estado</strong></label>
       <input type="text" class="form-control" name="companyState" id="state" placeholder="Estado" required>
     </div>
     <button type="submit" class="btn btn-primary align-self-center mt-3">Salvar</button>
