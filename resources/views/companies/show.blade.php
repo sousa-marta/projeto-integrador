@@ -1,35 +1,16 @@
 <!-- Tela opcional: se quisermos ver as infos de empresa individualmente -->
-
-<!-- Tela com a lista de empresas cadastradas + botões com as opções de editar e deletar -->
-
 @extends('layouts.mainTemplate')
 
-@section('')
-Companhias
-@endsection
-
-@section('breadcrumb')
-<!-- Breadcrumb  -->
-<nav aria-label="breadcrumb">
-  <ol class="breadcrumb">
-    <li class="breadcrumb-item"><a class="breadcrumb-item-link" href="/">Home</a></li>
-    <li class="breadcrumb-item active" aria-current="page">Companhias</li>
-  </ol>
-</nav>
-@endsection
-
-@section('banner')
-<!-- Banner -->
-<section class="pages-title-bg d-flex justify-content-center align-items-center">
-  <h1>Perfil da Empresa</h1>
-</section>
+@section('title')
+Empresas
 @endsection
 
 @section('content')
-
-<section class="pages-title-bg d-flex-column justify-content-center align-items-center p-3">
+<div class="pt-3">
+<section class="pages-title-bg d-flex justify-content-center align-items-center mt-5">
   <h1>Perfil da Empresa</h1>
 </section>
+</div>
 
 <div>
   <!-- Conteúdo Central da Página -->
@@ -38,7 +19,7 @@ Companhias
       <div class="col-md-7 col-lg-8 order-2 my-4"> -->
     <div class="container">
       <div class="d-flex justify-content-end mt-3"> 
-        <a href="/companies" class="btn btn-primary col-lg-4 p-1"><span class='fa'>&#xf1ad;</span> Voltar para companhias</a>
+        <a href="/companies" class="btn btn-primary col-lg-4 p-1"><span class='fa'>&#xf1ad;</span> Voltar para empresas</a>
       </div>
       <div class="card mt-4">
         <div class="row d-flex align-items-center">
@@ -48,11 +29,11 @@ Companhias
           <h2 class="card-title align-center">{{$company->name}}</h2>
         </div>
           <div class="col-lg-12 p-3">
-              <h6 class="card-text"> No Bairro dos Jardins, a um quarteirão da Avenida Paulista, descubra o Tivoli Mofarrej São Paulo Hotel, situado no coração da cidade. Quer esteja numa viagem de negócios ou de lazer, este hotel de cinco estrelas em São Paulo tem tudo para tornar a sua estadia uma experiência inesquecível.</h6>
+              <h6 class="card-text"><strong>Descrição:</strong> No Bairro dos Jardins, a um quarteirão da Avenida Paulista, descubra o Tivoli Mofarrej São Paulo Hotel, situado no coração da cidade. Quer esteja numa viagem de negócios ou de lazer, este hotel de cinco estrelas em São Paulo tem tudo para tornar a sua estadia uma experiência inesquecível.</h6>
                 <h6 class="card-text">Endereço: <strong>{{$company->address}} {{$company->number}} {{$company->complement}} CEP: {{$company->zip}} </strong></h6>
-                <h6 class="card-text"> Pessoa de contato: <strong>{{$company->POC}} </strong></h6>
-              <h6 class="card-text"> Phone: <strong>{{$company->phone}}</strong> </h6>
-              <h6 class="card-text"> email: <strong>{{$company->email}}</strong> </h6>
+                <h6 class="card-text">Contato: <strong>{{$company->POC}} </strong></h6>
+              <h6 class="card-text">Telefone: <strong>{{$company->phone}}</strong> </h6>
+              <h6 class="card-text">E-mail: <strong>{{$company->email}}</strong> </h6>
               <hr>
               <div class="d-flex justify-content-between">
                 <div>

@@ -7,40 +7,40 @@ Vaga {{ $vacancy->name }}
 @section('content')
 <section class="pt-5">
   <div class="my-5 container border">
-  @if ($errors->any())
-      <div class="alert alert-danger">
-        <ul>
-          @foreach ($errors->all() as $error)
-            <li>{{ $error }}</li>
-          @endforeach
-        </ul>
-      </div>
+    @if ($errors->any())
+    <div class="alert alert-danger">
+      <ul>
+        @foreach ($errors->all() as $error)
+        <li>{{ $error }}</li>
+        @endforeach
+      </ul>
+    </div>
     @endif
     @if(!empty($message))
-      <div class="alert alert-success">
-        {{ $message }}
-      </div>
+    <div class="alert alert-success">
+      {{ $message }}
+    </div>
     @endif
     <div class="row align-items-center mt-2">
-      <img src="/img/boy.svg" alt="" class="img-especial mr-2">
+      <img src="/img/{{ $company->logo }}" alt="" class="img-especial mr-2">
       <div>
         <h5>Vaga de {{ $vacancy->name }}</h5>
         <p><strong>Status da vaga:</strong> {{ $vacancy->status }}</p>
       </div>
     </div>
-      <div class="row my-3">
-        <p class="col-md-4"><strong>Empresa:</strong> {{ $company->name }}</p>
-        <p class="col-md-4"><strong>Cidade:</strong> {{ $vacancy->city }}</p>
-        <p class="col-md-4"><strong>Categoria:</strong> {{ $category->name }}</p>
-        <p class="col-md-4"><strong>E-mail:</strong> {{ $vacancy->email }}</p>
-        <p class="col-md-4"><strong>Telefone:</strong> {{ $vacancy->phone }}</p>
-        <p class="col-md-4"><strong>Salário:</strong> {{ $vacancy->wage }}</p>
-        <p class="col-md-12"><strong>Descrição:</strong> {{ $vacancy->description }}</p>
-      </div>
-      <div class="row justify-content-center mb-3">
-        <button class="btn btn-dark mr-3" onclick="location.href='/vacancies/create'">Voltar</button>
-        <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#vacancy-edit-modal" href="#">Editar</button>
-      </div>
+    <div class="row my-3">
+      <p class="col-md-4"><strong>Empresa:</strong> {{ $company->name }}</p>
+      <p class="col-md-4"><strong>Cidade:</strong> {{ $vacancy->city }}</p>
+      <p class="col-md-4"><strong>Categoria:</strong> {{ $category->name }}</p>
+      <p class="col-md-4"><strong>E-mail:</strong> {{ $vacancy->email }}</p>
+      <p class="col-md-4"><strong>Telefone:</strong> {{ $vacancy->phone }}</p>
+      <p class="col-md-4"><strong>Salário:</strong> {{ $vacancy->wage }}</p>
+      <p class="col-md-12"><strong>Descrição:</strong> {{ $vacancy->description }}</p>
+    </div>
+    <div class="row justify-content-center mb-3">
+      <button class="btn btn-dark mr-3" onclick="location.href='/vacancies/create'">Voltar</button>
+      <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#vacancy-edit-modal" href="#">Editar</button>
+    </div>
   </div>
 </section>
 
@@ -68,11 +68,11 @@ Vaga {{ $vacancy->name }}
             <select class="col-lg-12 form-control" name="status" id="opportunityStatus" required>
               <option value="" selected disabled>Selecione o status da vaga</option>
               @if ($vacancy->status == 'aberta')
-                <option selected value='{{ $vacancy->status }}'>aberta</option>
-                <option value="fechada">fechada</option>
+              <option selected value='{{ $vacancy->status }}'>aberta</option>
+              <option value="fechada">fechada</option>
               @else
-                <option value="aberta">aberta</option>
-                <option selected value='{{ $vacancy->status }}'>fechada</option>
+              <option value="aberta">aberta</option>
+              <option selected value='{{ $vacancy->status }}'>fechada</option>
               @endif
             </select>
           </div>
@@ -81,24 +81,24 @@ Vaga {{ $vacancy->name }}
             <select class="col-lg-12 form-control" name="category" id="opportunityCategory" required>
               <option value="" selected disabled>Selecione a categoria</option>
               @foreach ($categoriesList as $categoryItem)
-                @if ($category->id == $categoryItem->id)
-                  <option selected value='{{ $categoryItem->id }}'>{{ $categoryItem->name }}</option>
-                @else
-                  <option value='{{ $categoryItem->id }}'>{{ $categoryItem->name }}</option>
-                @endif
+              @if ($category->id == $categoryItem->id)
+              <option selected value='{{ $categoryItem->id }}'>{{ $categoryItem->name }}</option>
+              @else
+              <option value='{{ $categoryItem->id }}'>{{ $categoryItem->name }}</option>
+              @endif
               @endforeach
             </select>
           </div>
           <div class="form-group col-md-4">
             <label for="opportunityCompany">Empresa</label>
             <select class="col-lg-12 form-control" name="company" id="opportunityCompany" required>
-            <option value="" selected disabled>Selecione a empresa</option>
+              <option value="" selected disabled>Selecione a empresa</option>
               @foreach ($companiesList as $companyItem)
-                @if ($company->id == $companyItem->id)
-                  <option selected value='{{ $companyItem->id }}'>{{ $companyItem->name }}</option>
-                @else
-                  <option value='{{ $companyItem->id }}'>{{ $companyItem->name }}</option>
-                @endif
+              @if ($company->id == $companyItem->id)
+              <option selected value='{{ $companyItem->id }}'>{{ $companyItem->name }}</option>
+              @else
+              <option value='{{ $companyItem->id }}'>{{ $companyItem->name }}</option>
+              @endif
               @endforeach
             </select>
           </div>
