@@ -97,7 +97,7 @@ class CompanyController extends Controller
     $company->fill($request->except('companyLogo'));
     if($request->hasFile('companyLogo')) {
       $imgLogo = $request->file('companyLogo');
-      $name = random_bytes(5).'.'.$imgLogo->getClientOriginalExtension();
+      $name = bin2hex(random_bytes(5)).'.'.$imgLogo->getClientOriginalExtension();
       $company->logo = $name;
       $imgLogo->move(public_path('img'), $name);
     }

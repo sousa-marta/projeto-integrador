@@ -21,7 +21,6 @@ Empresas
       <div class="d-flex justify-content-end mt-3"> 
         <a href="/companies" class="btn btn-primary col-lg-4 p-1"><span class='fa'>&#xf1ad;</span> Voltar para empresas</a>
       </div>
-      {{var_dump($company)}}
       <div class="card mt-4">
         <div class="row d-flex align-items-center">
           <div class="col-lg-3 pt-2">
