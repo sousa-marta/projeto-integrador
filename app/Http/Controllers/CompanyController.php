@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Company;
 use Illuminate\Http\Request;
-
 use App\Location;
 
 class CompanyController extends Controller
@@ -43,8 +42,9 @@ class CompanyController extends Controller
     Company::create([
       'name' => $request->companyName,
       $imgLogo = $request->file('companyLogo'),
-      $imgLogo->move(public_path().'/img', time().$imgLogo->getClientOriginalName()),
-      'logo' => $imgLogo->getClientOriginalName(),
+      $newImgName = bin2hex(random_bytes(5)).'.'.$imgLogo->getClientOriginalExtension(),
+      $imgLogo->move(public_path('img'), $newImgName),
+      'logo' => $newImgName,
       'POC' => $request->companyPOC,
       'phone' => $request->companyPhone,
       'email' => $request->companyEmail,
@@ -95,11 +95,11 @@ class CompanyController extends Controller
   {
     $company->name = $request->companyName;
     $company->fill($request->except('companyLogo'));
-    if($request->hasFile('companyLogo')){
-    $imgLogo = $request->file('companyLogo');
-    $name = time().$imgLogo->getClientOriginalName();
-    $company->logo = $name;
-    $imgLogo->move(public_path().'/img', $name);
+    if($request->hasFile('companyLogo')) {
+      $imgLogo = $request->file('companyLogo');
+      $name = random_bytes(5).'.'.$imgLogo->getClientOriginalExtension();
+      $company->logo = $name;
+      $imgLogo->move(public_path('img'), $name);
     }
     $company->POC = $request->companyPOC;
     $company->phone = $request->companyPhone;
