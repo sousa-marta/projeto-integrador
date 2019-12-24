@@ -111,6 +111,7 @@ class CourseController extends Controller
     $course->status = $request->courseStatus;
     $course->category_id = $request->courseCategory; 
     $course->company_id = $request->courseCompany;
+    $course->status = $request->courseStatus;
     $course->save();
     return redirect('/courses/create');
   }

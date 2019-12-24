@@ -38,6 +38,7 @@ Cursos
           <th scope="col">Categoria</th>
           <th scope="col">Empresa</th>
           <th scope="col">Status</th>
+          <th scope="col"></th>
         </tr>
       </thead>
       <tbody>
@@ -51,6 +52,7 @@ Cursos
             <td>{{ $course->end }}</td>
             <td>{{ $course->category->name }}</td>
             <td>{{ $course->company->name }}</td>
+            <td>{{ $course->status }}</td>
             <td class="d-flex justify-content-start align-items-center">
               {{-- botão editar --}}
               <a href="/courses/{{ $course->id }}/edit" class="btn btn-info btn-sm mr-2">
@@ -73,7 +75,7 @@ Cursos
 
 <!-- modal para adicionar novo curso -->
 <div class="modal fade" id="admin-add-course-modal" tabindex="-1" role="dialog" aria-labelledby="admin-add-course-modal" aria-hidden="true">
-  <div class="modal-dialog" role="document">
+  <div class="modal-dialog modal-lg" role="document">
     <dialog class="modal-content">
       <header class="modal-header">
         <h5 class="modal-title" id="admin-add-course-modal">Adicionar Curso</h5>
@@ -83,50 +85,50 @@ Cursos
       </header>
       <main class="modal-body">
 
-        <form action="/courses" method="post">
+        <form action="/courses" method="post" class="row">
           @csrf
-          <div class="form-group">
+          <div class="form-group col-md-12">
             <label for="courseName">Nome</label>
             <input type="text" class="form-control" name="courseName" id="courseName" placeholder="Nome do curso" required>
           </div>
-          <div class="form-group">
+          <div class="form-group col-md-12">
             <label for="courseDescription">Descrição</label>
-            <textarea class="form-control" name="courseDescription" id="courseDescription" placeholder="Descrição do curso" rows="3"></textarea>
+            <textarea class="form-control" name="courseDescription" id="courseDescription" placeholder="Descrição do curso" rows="2"></textarea>
           </div>
-          <div class="form-group">
+          <div class="form-group col-md-4">
             <label for="courseDuration">Duração (meses)</label>
             <input type="number" class="form-control" name="courseDuration" id="courseDuration" placeholder="Duração do curso em meses">
           </div>
-          <div class="form-group">
+          <div class="form-group col-md-4">
             <label for="courseStart">Início</label>
             <input type="date" class="form-control" name="courseStart" id="courseStart" placeholder="Data início do curso">
           </div>
-          <div class="form-group">
+          <div class="form-group col-md-4">
             <label for="courseEnd">Fim</label>
             <input type="date" class="form-control" name="courseEnd" id="courseEnd" placeholder="Data final do curso">
             {{-- <small>Formato: mm/dd/yyyy </small> --}}
           </div>
+          <div class="form-group col-md-6">
+            <label for="courseCategory">Categoria</label>
+            <select class="col-lg-12 form-control" name="courseCategory" id="courseCategory">
+              <option selected disabled>Selecione a categoria</option>
+              @foreach ($categories as $category)
+              <option value="{{ $category->id }}"> {{ $category->name }} </option>;
+              @endforeach
+            </select>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="courseCompany">Empresa</label>
+            <select class="col-lg-12 form-control" name="courseCompany" id="courseCompany" >
+              <option selected disabled>Selecione a empresa</option>
+              @foreach ($companies as $company)
+              <option value="{{ $company->id }}"> {{ $company->name }} </option>;
+              @endforeach
+            </select>
+          </div>
           <input type="hidden" name="courseStatus" value="disponível">
-          <div class="form-group">
-              <label for="courseCategory">Categoria</label>
-              <select class="col-lg-12" name="courseCategory" id="courseCategory">
-                <option selected disabled>Selecione a categoria</option>
-                  @foreach ($categories as $category)
-                    <option value="{{ $category->id }}"> {{ $category->name }} </option>;
-                  @endforeach
-              </select>
-            </div>
-          <div class="form-group">
-              <label for="courseCompany">Empresa</label>
-              <select class="col-lg-12" name="courseCompany" id="courseCompany" >
-                <option selected disabled>Selecione a empresa</option>
-                  @foreach ($companies as $company)
-                    <option value="{{ $company->id }}"> {{ $company->name }} </option>;
-                  @endforeach
-              </select>
-            </div>
-          <div class="modal-footer modal-footer-bg-color">
-            <button type="submit" class="btn btn-primary col-lg-12">Salvar Curso</button>
+          <div class="modal-footer modal-footer-bg-color col-md-12 justify-content-center">
+            <button type="submit" class="btn btn-primary">Salvar Curso</button>
           </div>
         </form>
 

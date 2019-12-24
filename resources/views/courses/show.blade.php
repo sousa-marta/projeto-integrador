@@ -79,7 +79,7 @@ Curso de {{ $course->name }}
 
       <!-- imagem do ofertante do treinamento -->
       <div class="col-12 col-lg-6 course-detail-provider">
-        <img src="{{$course->company->logo}}" alt="Logo da empresa {{$course->company->name}} de treinamento" class="rounded pb-5 course-detail-logo-img">
+        <img src="/img/{{$course->company->logo}}" alt="Logo da empresa {{$course->company->name}} de treinamento" class="rounded pb-5 course-detail-logo-img">
       </div>
     </div>
   </div>
@@ -113,9 +113,9 @@ Curso de {{ $course->name }}
 
         {{-- TODO: Quero que mostre apenas os três primeiros cursos e não mostre o que a página já está exibindo --}}
         {{-- Erro: o take(3) está contando mesmo os casos que não passam no if. --}}
-        
-        {{-- Mostrando os três primeiros cursos da mesma área, exceto o que já está mostrando no detalhe --}}
-        @foreach ($courses->take(3) as $courseOne)
+        {{-- @foreach ($courses->take(3) as $courseOne) --}}
+
+        @foreach ($courses as $courseOne)
           @if ($courseOne->id != $course->id && $courseOne->category_id == $course->category_id)
             <div class="col-12 col-md-8 col-lg-4 p-2">
               <div class="course-detail-card">
@@ -124,7 +124,7 @@ Curso de {{ $course->name }}
                   <h2>Curso de {{$courseOne->name}}</h2>
                 </div>
                 <div class="container d-flex flex-column">
-                  <img src="{{$courseOne->company->logo}}" alt="Logo da empresa {{$courseOne->company->name}}" class="align-self-center course-detail-logo-img-alike">
+                  <img src="/img/{{$courseOne->company->logo}}" alt="Logo da empresa {{$courseOne->company->name}}" class="align-self-center course-detail-logo-img-alike">
                   <div class="pb-2">
                     <p><strong>Duração:</strong>{{$courseOne->duration}} meses</p>
                     <p><strong>Vagas:</strong> 10</p>
