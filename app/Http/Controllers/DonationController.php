@@ -22,10 +22,12 @@ class DonationController extends Controller
    *
    * @return \Illuminate\Http\Response
    */
-  public function create()
+  public function create(Request $request)
   {
     $donations = Donation::all();
-    return view('donations.create',["donations" => $donations]);
+    $message = $request->session()->get('message');
+    return view('donations.create',["donations" => $donations,
+                                    "message" => $message]);
   }
 
   /**
@@ -47,6 +49,7 @@ class DonationController extends Controller
                                   'phone' => $request->donationPhone,
                                   'amount' => $request->donationValue,
                                   'status' => $request->donationStatus]);
+    $request->session()->flash('message', "A doação foi salva com sucesso");
     return redirect('/donations/create');
   }
 
@@ -58,7 +61,7 @@ class DonationController extends Controller
    */
   public function show(Donation $donation)
   {
-    //
+    return view('donations.show',['donation' => $donation]);
   }
 
   /**
@@ -69,7 +72,7 @@ class DonationController extends Controller
    */
   public function edit(Donation $donation)
   {
-    return view('donations.edit',['donation' => $donation]);
+    //
   }
 
   /**
@@ -93,7 +96,8 @@ class DonationController extends Controller
     $donation->amount = $request->donationValue;
     $donation->status = $request->donationStatus;
     $donation->save();
-    return redirect('/donations/create');
+    $request->session()->flash('message', 'Doação atualizada!');
+    return redirect()->route('donations.show', [$donation]);
 
   }
 
@@ -103,9 +107,10 @@ class DonationController extends Controller
    * @param  \App\Donation  $donation
    * @return \Illuminate\Http\Response
    */
-  public function destroy(Donation $donation)
+  public function destroy(Request $request, Donation $donation)
   {
     $donation->delete();
+    $request->session()->flash('message', 'Doação deletada!');
     return redirect('/donations/create');
   }
 }

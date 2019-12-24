@@ -24,9 +24,10 @@ class CreateCompaniesTable extends Migration
             $table->integer('address_number');
             $table->string('complement');
             $table->string('zip');
+            $table->string('city');
+            $table->string('state');
             $table->unsignedBigInteger('location_id'); //FK
             $table->foreign('location_id')->references('id')->on('locations'); //FK
-
             $table->timestamps();
         });
     }

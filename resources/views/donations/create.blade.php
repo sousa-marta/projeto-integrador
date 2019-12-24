@@ -1,17 +1,10 @@
 @extends('layouts.mainTemplate')
 
 @section('title')
-Página do Administrador
+Doações
 @endsection
 
 @section('content')
-
-<!-- TODO: depois montarmos a base de dados temos que tirar essa parte -->
-<?php
-  $categories = ["Gastronomia", "Serviços Gerais", "Hotelaria"];
-  $companies = ["evolke Treinamentos", "Padaria Jabaquara", "Restaurante Árabe"];
-?>
-
 <!-- gerenciamento das doações -->
 <section class="admin-tables-section admin-start-margin py-5">
 
@@ -20,6 +13,23 @@ Página do Administrador
       <h2>DOAÇÕES</h2>
       <button type="button"  onclick="setAddDonation()" class="btn btn-secondary ml-3 p-2" data-toggle="modal" data-target="#admin-add-donation-modal" href="#"><i class="fa fa-plus-circle fa-2x" aria-hidden="true"></i></button>
     </div>
+
+    <!-- mensagens de alerta e de alterações -->
+    @if ($errors->any())
+      <div class="alert alert-danger">
+        <ul>
+          @foreach ($errors->all() as $error)
+            <li>{{ $error }}</li>
+          @endforeach
+        </ul>
+      </div>
+    @endif
+    @if(!empty($message))
+      <div class="alert alert-success">
+        {{ $message }}
+      </div>
+    @endif
+
     <table class="table">
       <thead>
         <tr>
@@ -35,18 +45,18 @@ Página do Administrador
           <tr>
             <th scope="row">{{ $donation->id }}</th>
             <td>{{ $donation->name }}</td>
-            <td>{{ $donation->amount }}</td>
+            <td>R$ {{ $donation->amount }}</td>
             <td>{{ $donation->status }}</td>
             <td class="d-flex justify-content-start align-items-center">
               <!-- botão editar -->
-              <a href="{{ URL::to('donations/' . $donation->id . '/edit') }}">
-                <button type="button" class="admin-btn-table">editar</button>
-              </a>&nbsp;
+              <a href="/donations/{{ $donation->id }}" class="btn btn-info btn-sm mr-2">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
               <!-- botão excluir -->
-              <form action="{{url('donations', [$donation->id])}}" method="POST">
+              <form action="/donations/{{ $donation->id }}" method="POST" onsubmit="return confirm('Tem certeza de que deseja remover?')">
                 <input type="hidden" name="_method" value="DELETE">
                 <input type="hidden" name="_token" value="{{ csrf_token() }}">
-                <input type="submit" class="admin-btn-table" value="excluir"/>
+                <button class="btn btn-danger btn-sm"><i class='fas fa-trash-alt'></i></button>
               </form>
             </td>
           </tr>
