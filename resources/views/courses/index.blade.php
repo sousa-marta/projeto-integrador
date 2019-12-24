@@ -81,146 +81,38 @@ Cursos
 
 @section('text-content')
 
-<div>
+<!-- Conteúdo Central da Página -->
+<section>
 
-  <!-- Conteúdo Central da Página -->
-  <section>
+  <!-- Categorias de Cursos Imagens - Flip Cards -->
+  <div class="row justify-content-center mb-4">
 
-    <!-- Categorias de Cursos Imagens - Flip Cards -->
-    <div class="row justify-content-center mb-4">
-      <div class="col-lg-5 col-md-12 col-sm-6 align-items-center d-flex flex-column mt-5 mb-4">
-        <div class="courses-bg-cards">
-          <div class="flip-card flip-card-front">
-            <h5 class="card-title text-center py-2">Hotelaria</h5>
-            <img src="img/courses-g-hospitality.jpg" aria-hidden="true" alt="" class="course-img card-img-bottom">
-          </div>
-          <div class="flip-card flip-card-back">
-            <div class="card-back-body">
-              <h5 class="card-title text-center py-2">Hotelaria</h5>
-              <img src="img/courses-g-hospitality.jpg" aria-hidden="true" alt="" class="course-img card-img-bottom">
-              <ul>
-                {{-- TODO: DEIXAR CURSOS DINÂMICOS PUXANDO DO BANCO DE DADOS --}}
-                <a href="/courses/id">
-                  <li>Atendente</li>
-                </a>
-                <a href="#">
-                  <li>Camareiro</li>
-                </a>
-                <a href="#">
-                  <li>Recepcionista</li>
-                </a>
-                <a href="#">
-                  <li>Garçom</li>
-                </a>
-              </ul>
-            </div>
+    @foreach ($categories as $category)
+    <div class="col-lg-5 col-md-12 col-sm-6 align-items-center d-flex flex-column mt-5 mb-4">
+      <div class="courses-bg-cards">
+        <div class="flip-card flip-card-front">
+          <h5 class="card-title text-center py-2">{{ $category->name }}</h5>
+          <img src="{{ $category->img }}" aria-hidden="true" alt="" class="course-img card-img-bottom">
+        </div>
+        <div class="flip-card flip-card-back">
+          <div class="card-back-body">
+            <h5 class="card-title text-center py-2">{{ $category->name }}</h5>
+            <img src="{{ $category->img }}" aria-hidden="true" alt="" class="course-img card-img-bottom">
+            <ul>
+              @foreach ($courses as $course)
+                  @if ($course->category_id == $category->id)
+                    <a href="/courses/{{$course->id}}">
+                      <li>{{ $course->name }}</li>
+                    </a>
+                  @endif
+              @endforeach
+            </ul>
           </div>
         </div>
-      </div>
-      <div class="col-lg-5 col-md-12 col-sm-6 align-items-center d-flex flex-column mt-5 mb-4">
-        <div class="courses-bg-cards">
-          <div class="flip-card flip-card-front">
-            <h5 class="card-title text-center py-2">Idiomas</h5>
-            <img src="img/courses-g-languages.jpg" aria-hidden="true" alt="" class="course-img card-img-bottom">
-          </div>
-          <div class="flip-card flip-card-back">
-            <div class="card-back-body">
-              <h5 class="card-title text-center py-2">Idiomas</h5>
-              <img src="img/courses-g-languages.jpg" aria-hidden="true" alt="" class="course-img card-img-bottom">
-              <ul>
-                <a href="#">
-                  <li>Português</li>
-                </a>
-                <a href="#">
-                  <li>Inglês</li>
-                </a>
-                <a href="#">
-                  <li>Espanhol</li>
-                </a>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-5 col-md-12 col-sm-6 align-items-center d-flex flex-column mt-5 mb-4">
-        <div class="courses-bg-cards">
-          <div class="flip-card flip-card-front">
-            <h5 class="card-title text-center py-2">Programação</h5>
-            <img src="img/courses-g-programming.jpg" aria-hidden="true" alt="" class="course-img card-img-bottom">
-          </div>
-          <div class="flip-card flip-card-back">
-            <div class="card-back-body">
-              <h5 class="card-title text-center py-2">Programação</h5>
-              <img src="img/courses-g-programming.jpg" aria-hidden="true" alt="" class="course-img card-img-bottom">
-              <ul>
-                <a href="#">
-                  <li>CSS + HTML</li>
-                </a>
-                <a href="#">
-                  <li>Phyton</li>
-                </a>
-                <a href="#">
-                  <li>Lógica de Programação</li>
-                </a>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-5 col-md-12 col-sm-6 align-items-center d-flex flex-column mt-5 mb-4">
-        <div class="courses-bg-cards">
-          <div class="flip-card flip-card-front">
-            <h5 class="card-title text-center py-2">Saúde</h5>
-            <img src="img/courses-g-health.jpg" aria-hidden="true" alt="" class="course-img card-img-bottom">
-          </div>
-          <div class="flip-card flip-card-back">
-            <div class="card-back-body">
-              <h5 class="card-title text-center py-2">Saúde</h5>
-              <img src="img/courses-g-health.jpg" aria-hidden="true" alt="" class="course-img card-img-bottom">
-              <ul>
-                <a href="#">
-                  <li></li>
-                </a>
-                <a href="#">
-                  <li></li>
-                </a>
-                <a href="#">
-                  <li></li>
-                </a>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-5 col-md-12 col-sm-6 align-items-center d-flex flex-column mt-5 mb-4">
-        <div class="courses-bg-cards">
-          <div class="flip-card flip-card-front">
-            <h5 class="card-title text-center py-2">Beleza</h5>
-            <img src="img/courses-g-beauty.jpg" aria-hidden="true" alt="" class="course-img card-img-bottom">
-          </div>
-          <div class="flip-card flip-card-back">
-            <div class="card-back-body">
-              <h5 class="card-title text-center py-2">Beleza</h5>
-              <img src="img/courses-g-beauty.jpg" aria-hidden="true" alt="" class="course-img card-img-bottom">
-              <ul>
-                <a href="#">
-                  <li></li>
-                </a>
-                <a href="#">
-                  <li></li>
-                </a>
-                <a href="#">
-                  <li></li>
-                </a>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
+      </div>  
     </div>
-  </section>
-
-</div>
-
+    @endforeach
+  </div>
+</section>
 
 @endsection
