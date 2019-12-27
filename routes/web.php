@@ -18,15 +18,15 @@ Route::get('support', "SiteController@viewSupport");
 Route::get('contribute', "SiteController@viewContribute");
 Route::get('admin', "SiteController@viewAdmin");
 
-Route::get('users/forgotten-password', 'GeneralUserController@indexForgotten');
-Route::get('users/change-password', 'GeneralUserController@createNewPassword'); // TODO: depois precisamos arrumar pra puxar o id do usuário já que ele vai receber um e-mail pra resetar a senha
-Route::post('users/change-password', 'GeneralUserController@updateNewPassword');
+Route::get('users/forgotten-password', 'UserController@indexForgotten');
+Route::get('users/change-password', 'UserController@createNewPassword'); // TODO: depois precisamos arrumar pra puxar o id do usuário já que ele vai receber um e-mail pra resetar a senha
+Route::post('users/change-password', 'UserController@updateNewPassword');
 
 Route::resources([
   'courses' => 'CourseController',
   'vacancies' => 'VacancyController',
-  'users' => 'GeneralUserController',
+  'users' => 'UserController',
   'volunteers' => 'VolunteerController',
   'companies' => 'CompanyController',
-  'donations' => 'DonationController', // TODO: precisa criar todas as páginas nas views
+  'donations' => 'DonationController',
 ]);
