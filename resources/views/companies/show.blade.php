@@ -34,7 +34,7 @@ Empresas
               <h6 class="card-text"><strong>Telefone:</strong><a href="tel://+55{{$company->phone}}"> <i style="font-size:14px" class="fa">&#xf095;</i> {{$company->phone}}</a></h6>
               <h6 class="card-text"><strong>E-mail: </strong> <a href="mailto:{{$company->email}}?Subject=Contato%20{{$company->name}}"><i style="font-size:14px" class="fa">&#xf0e0;</i> {{$company->email}}</a></h6>
               <hr>
-              <div class="d-flex justify-content-end">
+              <div class="d-flex justify-content-around">
                 <div>
                   <a href="#" class="btn btn-primary nowrap m-1">Ver vagas</a>
                   <a href="/courses" class="btn btn-secondary nowrap m-1">Ver cursos</a>
