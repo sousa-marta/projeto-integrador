@@ -1,4 +1,3 @@
-<!-- Tela opcional: se quisermos ver as infos de empresa individualmente -->
 @extends('layouts.mainTemplate')
 
 @section('title')
@@ -13,10 +12,7 @@ Empresas
 </div>
 
 <div>
-  <!-- Conteúdo Central da Página -->
   <section>
-    <!-- <div class="row justify-content-center mb-4">
-      <div class="col-md-7 col-lg-8 order-2 my-4"> -->
     <div class="container">
       <div class="d-flex justify-content-end mt-3"> 
         <a href="/companies" class="btn btn-primary col-lg-4 p-1"><span class='fa'>&#xf1ad;</span> Voltar para empresas</a>

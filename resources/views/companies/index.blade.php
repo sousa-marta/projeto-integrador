@@ -1,4 +1,3 @@
-<!-- Tela com a lista de empresas cadastradas + botões com as opções de editar e deletar -->
 @extends('layouts.lateralTemplate')
 
 @section('title')
@@ -6,11 +5,10 @@ Empresas Cadastradas
 @endsection
 
 @section('banner')
-<!-- Banner -->
 <div class="pt-3">
 <section class="pages-title-bg d-flex-column justify-content-center align-items-center p-3 mt-5">
   <h1>Empresas Cadastradas</h1>
-  <a href="/companies/create" class="btn btn-secondary col-lg-2"><span class='fa'>&#xf1ad;</span> Cadastrar</a>
+  <a href="/companies/create" class="btn btn-secondary col-lg-2"><i style="font-size:18px" class="fa">&#xf055;</i>  Cadastrar</a>
 </section>
 </div>
 @endsection
@@ -67,10 +65,7 @@ Empresas Cadastradas
 @section('text-content')
 
 <div>
-  <!-- Conteúdo Central da Página -->
   <section>
-    <!-- <div class="row justify-content-center mb-4">
-      <div class="col-md-7 col-lg-8 order-2 my-4"> -->
       @foreach($companies as $company)
     <div class="container">
       <div class="card m-4 bg-light">
@@ -84,7 +79,7 @@ Empresas Cadastradas
         </div>
           <div class="col-lg-12 p-3">
               <h6 class="card-text"><strong>Descrição: </strong> {{$company->description}}</h6>
-                <h6 class="card-text"><strong>Endereço: </strong> {{$company->address}} {{$company->address_number}} Apto/Ofic: {{$company->complement}}</h6>
+                <h6 class="card-text"><strong>Endereço: </strong> {{$company->address}} {{$company->address_number}} <strong>Apto/Ofic:</strong> {{$company->complement}}</h6>
                 <h6 class="card-text"><strong>CEP: </strong> {{$company->zip}} </h6>
               <div class="row d-flex justify-content-start">
                 <h6 class="card-text"><strong>Cidade: </strong> {{$company->city}}</h6>

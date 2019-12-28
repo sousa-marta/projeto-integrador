@@ -12,7 +12,7 @@ Cadastrar Empresa
   <input type="hidden" name="_method" value="PUT">
     @csrf
     <div class="d-flex justify-content-end"> 
-      <a href="/companies" class="btn btn-primary col-lg-3 p-1"><span class='fa'>&#xf1ad;</span> Voltar</a>
+      <a href="/companies" class="btn btn-primary col-lg-3 p-1"><i style="font-size:18px" class="fa">&#xf137;</i> Voltar</a>
     </div>
     <div class="form-group text-center mt-3">
       <h2><strong>Editar Empresa Cadastrada</strong></h2>
@@ -95,7 +95,6 @@ Cadastrar Empresa
           @endif
         @endif
       </div>
-
 </div>
 
 @endsection
