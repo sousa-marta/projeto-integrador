@@ -98,12 +98,12 @@ Empresas Cadastradas
                 <div>
                   <a href="/companies/{{$company->id}}" class="btn btn-primary nowrap m-1">Ver perfil</a>
                 </div>
-                <div class="row">
+                <div class="d-flex align-baseline">
                   <a href="/companies/{{$company->id}}/edit" class="btn btn-primary nowrap m-1">Editar</a>
-                  <form action="/companies/{{$company->id}}" method="POST">
+                  <form class="d-flex align-baseline" action="/companies/{{$company->id}}" method="POST">
                     <input type="hidden" name="_method" value="DELETE">
                     <input type="hidden" name="_token" value="{{csrf_token() }}">
-                    <input type="submit" class="btn btn-danger" value="Delete">
+                    <input type="submit" class="btn btn-danger nowrap m-1" value="Delete">
                   </form>
                 </div>
               </div>
