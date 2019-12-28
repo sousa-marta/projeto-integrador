@@ -45,6 +45,7 @@ class CompanyController extends Controller
       $newImgName = bin2hex(random_bytes(5)).'.'.$imgLogo->getClientOriginalExtension(),
       $imgLogo->move(public_path('img'), $newImgName),
       'logo' => $newImgName,
+      'description' => $request->companyDescription,
       'POC' => $request->companyPOC,
       'phone' => $request->companyPhone,
       'email' => $request->companyEmail,
@@ -101,6 +102,7 @@ class CompanyController extends Controller
       $company->logo = $name;
       $imgLogo->move(public_path('img'), $name);
     }
+    $company->description = $request->companyDescription;
     $company->POC = $request->companyPOC;
     $company->phone = $request->companyPhone;
     $company->email = $request->companyEmail;

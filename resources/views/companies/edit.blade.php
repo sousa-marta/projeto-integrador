@@ -8,7 +8,7 @@ Cadastrar Empresa
 
 <!-- Formulário -->
 <section class="d-flex justify-content-center align-items-center p-4 admin-start-margin">
-  <form action="/companies/{{$company->id}}" method="post" class="register-company-main card p-5 col-lg-5" enctype="multipart/form-data">
+  <form action="/companies/{{$company->id}}" method="post" class="register-company-main card p-5 col-md-8" enctype="multipart/form-data">
   <input type="hidden" name="_method" value="PUT">
     @csrf
     <div class="d-flex justify-content-end"> 
@@ -25,6 +25,10 @@ Cadastrar Empresa
     <div class="from-group">
       <label for="companyLogo"><strong>Logo da Empresa</strong></label>
       <input class="form-control" type="file" name="companyLogo" id="companyLogo" value="{{$company->logo}}">
+    </div>
+    <div class="from-group">
+      <label for="companyDescription"><strong>Descrição da empresa</strong></label>
+      <textarea class="form-control" type="textarea" name="companyDescription" id="companyDescription">{{$company->description}}</textarea>
     </div>
     <div class="form-group">
       <label for="personContact"><strong>Pessoa de contato</strong></label>

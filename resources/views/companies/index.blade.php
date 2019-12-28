@@ -73,32 +73,38 @@ Empresas Cadastradas
       <div class="col-md-7 col-lg-8 order-2 my-4"> -->
       @foreach($companies as $company)
     <div class="container">
-      <div class="card mt-4">
+      <div class="card m-4 bg-light">
         <div class="row d-flex align-items-center">
-          <div class="col-lg-3 pt-2">
-            <img class="card-img-top h-90 " src="/img/{{$company->logo}}" alt="Imagem de capa do card">
+          <div class="col-lg-4 pt-2">
+            <img class="card-img-top h-90" src="/img/{{$company->logo}}" alt="Imagem de capa do card">
           </div>
-          <h2 class="card-title align-center">{{$company->name}}</h2>
+          <div class="col-lg-8">
+            <h2 class="card-title align-center">{{$company->name}}</h2>
+          </div>
         </div>
           <div class="col-lg-12 p-3">
-              <h6 class="card-text"><strong>Descrição:</strong> No Bairro dos Jardins, a um quarteirão da Avenida Paulista, descubra o Tivoli Mofarrej São Paulo Hotel, situado no coração da cidade. Quer esteja numa viagem de negócios ou de lazer, este hotel de cinco estrelas em São Paulo tem tudo para tornar a sua estadia uma experiência inesquecível.</h6>
-                <h6 class="card-text">Endereço: <strong>{{$company->address}} {{$company->address_number}} Apto/Ofic: {{$company->complement}}</strong></h6>
-                <h6 class="card-text">CEP: <strong>{{$company->zip}} </strong></h6>
+              <h6 class="card-text"><strong>Descrição: </strong> {{$company->description}}</h6>
+                <h6 class="card-text"><strong>Endereço: </strong> {{$company->address}} {{$company->address_number}} Apto/Ofic: {{$company->complement}}</h6>
+                <h6 class="card-text"><strong>CEP: </strong> {{$company->zip}} </h6>
               <div class="row d-flex justify-content-start">
-                <h6 class="card-text">Cidade: <strong>{{$company->city}}</strong></h6>
-                <h6 class="card-text">Estado: <strong>{{$company->state}} </strong></h6>
+                <h6 class="card-text"><strong>Cidade: </strong> {{$company->city}}</h6>
+                <h6 class="card-text"><strong>Estado: </strong> {{$company->state}} </h6>
               </div>
-                <h6 class="card-text">Contato: <strong>{{$company->POC}}</strong></h6>
-              <h6 class="card-text">Telefone: <strong>{{$company->phone}}</strong> </h6>
-              <h6 class="card-text">E-mail: <strong> {{$company->email}} </strong></h6>
+                <h6 class="card-text"><strong>Contato: </strong> {{$company->POC}}</h6>
+              <h6 class="card-text"><strong>Telefone: </strong> {{$company->phone}}</h6>
+              <h6 class="card-text"><strong>E-mail: </strong> {{$company->email}} </h6>
               <hr>
               <div class="d-flex justify-content-between">
                 <div>
-                  <a href="#" class="btn btn-primary nowrap m-1">Ver vagas</a>
-                  <a href="/courses" class="btn btn-secondary nowrap m-1">Ver cursos</a>
-                </div>
-                <div>
                   <a href="/companies/{{$company->id}}" class="btn btn-primary nowrap m-1">Ver perfil</a>
+                </div>
+                <div class="row">
+                  <a href="/companies/{{$company->id}}/edit" class="btn btn-primary nowrap m-1">Editar</a>
+                  <form action="/companies/{{$company->id}}" method="POST">
+                    <input type="hidden" name="_method" value="DELETE">
+                    <input type="hidden" name="_token" value="{{csrf_token() }}">
+                    <input type="submit" class="btn btn-danger" value="Delete">
+                  </form>
                 </div>
               </div>
         </div>
