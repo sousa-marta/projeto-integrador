@@ -8,15 +8,11 @@ Cadastrar Empresa
 
 <!-- Formulário -->
 <section class="d-flex justify-content-center align-items-center p-3 admin-start-margin">
-  <form action="/companies" method="post" class="card p-5 col-md-7" enctype="multipart/form-data">
+  <form action="/companies" method="post" class="card p-5 col-md-10" enctype="multipart/form-data">
     @csrf
-    <div class="row">
-      <div class="form-group col-md-8">
-        <h4>Cadastrar Nova Empresa</h4>
-      </div>
-      <div class="form-group col-md-4 text-center"> 
-        <a href="/companies" class="btn btn-primary col-lg-12 p-1"><i style="font-size:18px" class="fa">&#xf137;</i> Voltar</a>
-      </div>
+    <div class="row justify-content-between align-items-center">
+      <h4>Cadastrar Nova Empresa</h4>
+      <a href="/companies" class="btn btn-primary p-1"><i class="fa">&#xf137;</i> Voltar</a>
     </div>
     <hr>
     <div class="row">
@@ -26,15 +22,15 @@ Cadastrar Empresa
       </div>
       <div class="from-group col-md-6">
         <label for="companyLogo">Logo da empresa</label>
-        <input class="form-control" type="file" name="companyLogo" id="companyLogo">
+        <input class="form-control" type="file" name="companyLogo" id="companyLogo" required>
       </div>
       <div class="from-group col-md-12">
         <label for="companyDescription">Descrição da empresa</label>
-        <input class="form-control" type="textarea" name="companyDescription" id="companyDescription">
+        <textarea class="form-control" name="companyDescription" id="companyDescription" required></textarea>
       </div>
       <div class="form-group col-md-4 mt-3">
         <label for="personContact">Pessoa de contato</label>
-        <input type="text" class="form-control" name="companyPOC" id="personContact" placeholder="Nome completo do contato" required>
+        <input type="text" class="form-control" name="companyPOC" id="personContact" placeholder="Nome completo" required>
       </div>
       <div class="form-group col-md-4 mt-3">
         <label for="companyPhone">Telefone</label>
@@ -45,30 +41,21 @@ Cadastrar Empresa
         <label for="companyEmail">E-mail</label>
         <input type="email" class="form-control" name="companyEmail" id="companyEmail" placeholder="E-mail" required>
       </div>
-      <div class="form-group col-md-4">
+      <div class="form-group col-md-6">
         <label for="companyAddress">Endereço</label>
         <input type="text" class="form-control" name="companyAddress" id="companyAddress" placeholder="Endereço" required>
       </div>
-      <div class="form-group col-md-3 p-0 pl-2">
+      <div class="form-group col-md-3">
         <label for="companyAddressNo">Número</label>
         <input type="text" class="form-control" name="companyAddressNo" id="companyAddressNo" placeholder="Número" required>
       </div>
-      <div class="form-group col-md-3 p-0 pl-2">
+      <div class="form-group col-md-3">
         <label for="companyAddressComp">Complemento</label>
         <input type="text" class="form-control" name="companyAddressComp" id="companyAddressComp" placeholder="Complemento" required>
       </div>
-      <div class="form-group col-md-2 p-0 pl-2">
+      <div class="form-group col-md-3">
         <label for="companyZip">CEP</label>
         <input type="text" class="form-control" name="companyZip" id="companyZip" placeholder="CEP" required>
-      </div>
-      <div class="form-group col-md-6">
-        <label for="companyCountry">País</label>
-          <select class="col-md-12" name="companyCountry" id="companyCountry" required >
-            <option value="" selected disabled>Escolha um país</option>
-            @foreach ($locations as $location)
-            <option value='{{$location->id}}'>{{$location->country}}</option>;
-            @endforeach
-          </select>
       </div>
       <div class="form-group col-md-3">
         <label for="city">Cidade</label>
@@ -78,21 +65,17 @@ Cadastrar Empresa
         <label for="state">Estado</label>
         <input type="text" class="form-control" name="companyState" id="state" placeholder="Estado" required>
       </div>
+      <div class="form-group col-md-3">
+        <label for="companyCountry">País</label>
+        <select class="form-control col-md-12" name="companyCountry" id="companyCountry" required>
+          <option value="" selected disabled>Escolha um país</option>
+          @foreach ($locations as $location)
+          <option value='{{$location->id}}'>{{$location->country}}</option>
+          @endforeach
+        </select>
+      </div>
     </div>
-    <button type="submit" class="btn btn-primary align-self-center mt-3">Salvar</button>
+    <button type="submit" class="btn btn-primary align-self-center mt-3">Cadastrar</button>
   </form>
 </section>
-
-<div class="row">
-      <div class="col-md-12">
-        @if(isset($result))
-          @if($result)
-            <h1>Deu certo campeao!</h1>
-          @else
-            <h1>Nao deu certo seu cadastro, e foi sua culpa!</h1>
-          @endif
-        @endif
-      </div>
-</div>
-
 @endsection

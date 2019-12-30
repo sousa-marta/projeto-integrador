@@ -70,7 +70,7 @@ input[type=number] {-moz-appearance:textfield;}
   text-transform: uppercase;
 }
 
-.btn-secondary:hover, .btn-secondary:focus, .btn-danger:hover {background: #005662;}
+.btn-secondary:hover, .btn-secondary:focus {background: #005662;}
 
 .row {
   margin-left: 0;
