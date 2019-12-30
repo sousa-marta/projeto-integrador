@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Company;
+use App\{Company, Location};
 use Illuminate\Http\Request;
-use App\Location;
+use Illuminate\Support\Facades\DB;
 
 class CompanyController extends Controller
 {
@@ -13,10 +13,14 @@ class CompanyController extends Controller
    *
    * @return \Illuminate\Http\Response
    */
-  public function index(Request $request)
+  public function index()
   {
-    $companies = Company::all();
-    return view('companies.index', ["companies" => $companies]);
+    $companies = DB::table('companies')
+      ->join('locations', 'locations.id', '=', 'companies.location_id')
+      ->select('companies.*', 'locations.country as company_country')
+      ->orderBy('name')
+      ->get();
+    return view('companies.index', compact('companies'));
   }
 
   /**
@@ -70,7 +74,8 @@ class CompanyController extends Controller
   public function show($id)
   {
     $company = Company::find($id);
-    return view('companies.show', compact('company'));
+    $location = $company->location;
+    return view('companies.show', compact('company','location'));
   }
 
   /**
@@ -128,6 +133,6 @@ class CompanyController extends Controller
   public function destroy(Company $company)
   {
     $company->delete();
-    return redirect('companies');
+    return redirect()->back();
   }
 }

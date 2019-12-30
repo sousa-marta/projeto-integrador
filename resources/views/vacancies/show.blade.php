@@ -79,26 +79,18 @@ Vaga {{ $vacancy->name }}
           <div class="form-group col-md-4">
             <label for="opportunityCategory">Categoria</label>
             <select class="col-lg-12 form-control" name="category" id="opportunityCategory" required>
-              <option value="" selected disabled>Selecione a categoria</option>
-              @foreach ($categoriesList as $categoryItem)
-              @if ($category->id == $categoryItem->id)
-              <option selected value='{{ $categoryItem->id }}'>{{ $categoryItem->name }}</option>
-              @else
-              <option value='{{ $categoryItem->id }}'>{{ $categoryItem->name }}</option>
-              @endif
-              @endforeach
+              <option value="" disabled>Selecione a categoria</option>
+            @foreach ($categoriesList as $categoryItem)
+              <option {{($category->id == $categoryItem->id)? "selected":""}} value='{{$categoryItem->id}}'>{{$categoryItem->name}}</option>
+            @endforeach
             </select>
           </div>
           <div class="form-group col-md-4">
             <label for="opportunityCompany">Empresa</label>
             <select class="col-lg-12 form-control" name="company" id="opportunityCompany" required>
-              <option value="" selected disabled>Selecione a empresa</option>
+              <option value="" disabled>Selecione a empresa</option>
               @foreach ($companiesList as $companyItem)
-              @if ($company->id == $companyItem->id)
-              <option selected value='{{ $companyItem->id }}'>{{ $companyItem->name }}</option>
-              @else
-              <option value='{{ $companyItem->id }}'>{{ $companyItem->name }}</option>
-              @endif
+              <option {{($company->id == $companyItem->id)?"selected":""}} value='{{ $companyItem->id }}'>{{ $companyItem->name }}</option>
               @endforeach
             </select>
           </div>
@@ -125,7 +117,7 @@ Vaga {{ $vacancy->name }}
           </div>
       </main>
       <footer class="modal-footer modal-footer-bg-color justify-content-center">
-        <button type="submit" class="btn btn-primary">Editar</button>
+        <button type="submit" class="btn btn-primary">Salvar</button>
       </footer>
       </form>
     </dialog>
