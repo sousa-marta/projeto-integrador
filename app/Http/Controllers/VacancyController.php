@@ -71,8 +71,8 @@ class VacancyController extends Controller
     $vacancy = Vacancy::find($id);
     $category = $vacancy->category;
     $company = $vacancy->company;
-    $categoriesList = Category::query()->orderBy('name')->get();
-    $companiesList = Company::query()->orderBy('name')->get();
+    $categoriesList = DB::table('categories')->select('name', 'id')->orderBy('name')->get();
+    $companiesList = DB::table('companies')->select('name', 'id')->orderBy('name')->get();
     return view('vacancies.show', compact('vacancy', 'category', 'company', 'categoriesList', 'companiesList'));
   }
 
