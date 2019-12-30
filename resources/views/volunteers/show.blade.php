@@ -20,7 +20,7 @@ Voluntárias(os)
       <div class="card m-5 bg-light">
         <div class="row d-flex align-items-center">
           <div class="col-lg-4 py-2">
-            <img class="card-img-top" src="/img/{{$volunteer->picture}}" alt="Foto de perfil da pessoa {{$volunteer->name}}">
+            <img class="card-img-top" src="/img/volunteers/{{$volunteer->picture}}" alt="Foto de perfil da pessoa {{$volunteer->name}}">
           </div>
           <div class="col-lg-8">
             <h3 class="card-title align-center">{{$volunteer->name}}</h3>

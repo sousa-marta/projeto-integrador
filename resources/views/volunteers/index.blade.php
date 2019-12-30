@@ -56,7 +56,7 @@ Voluntárias(os) Cadastradas(os)
 
 @section('text-content')
 @if ($errors->any())
-<div class="alert alert-danger">
+<div class="alert alert-danger mt-2">
   <ul>
     @foreach ($errors->all() as $error)
     <li>{{ $error }}</li>
@@ -65,7 +65,7 @@ Voluntárias(os) Cadastradas(os)
 </div>
 @endif
 @if(!empty($message))
-<div class="alert alert-success">
+<div class="alert alert-success mt-2">
   {{ $message }}
 </div>
 @endif
@@ -76,7 +76,7 @@ Voluntárias(os) Cadastradas(os)
       <div class="card m-4 bg-light">
         <div class="row d-flex align-items-center">
           <div class="col-lg-4 pt-2">
-            <img class="card-img-top" src="/img/{{$volunteer->picture}}" alt="Foto de perfil da pessoa {{$volunteer->name}}">
+            <img class="card-img-top" src="/img/volunteers/{{$volunteer->picture}}" alt="Foto de perfil da pessoa {{$volunteer->name}}">
           </div>
           <div class="col-lg-8">
             <h2 class="card-title align-center">{{$volunteer->name}}</h2>
@@ -104,7 +104,7 @@ Voluntárias(os) Cadastradas(os)
               <form class="d-flex align-baseline" action="/volunteers/{{$volunteer->id}}" method="POST" onsubmit="return confirm('Tem certeza de que deseja remover?')">
                 <input type="hidden" name="_method" value="DELETE">
                 <input type="hidden" name="_token" value="{{csrf_token() }}">
-                <input type="submit" class="btn btn-danger nowrap m-1" value="Delete">
+                <input type="submit" class="btn btn-danger nowrap m-1" value="Deletar">
               </form>
             </div>
           </div>

@@ -19,8 +19,8 @@ Empresas
       </div>
       <div class="card m-5 bg-light">
         <div class="row d-flex align-items-center">
-          <div class="col-lg-4 pt-2">
-            <img class="card-img-top" src="/img/{{$company->logo}}" alt="Logo da empresa {{$company->name}}">
+          <div class="col-lg-4 py-2">
+            <img class="card-img-top" src="/img/companies/{{$company->logo}}" alt="Logo da empresa {{$company->name}}">
           </div>
           <div class="col-lg-8 p-3">
             <h3 class="card-title align-center">{{$company->name}}</h3>

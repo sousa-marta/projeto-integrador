@@ -47,7 +47,7 @@ class VolunteerController extends Controller
       'name' => $request->volunteerName,
       $imgVolunteer = $request->file('volunteerImg'),
       $newImgName = bin2hex(random_bytes(5)).'.'.$imgVolunteer->getClientOriginalExtension(),
-      $imgVolunteer->move(public_path('img'), $newImgName),
+      $imgVolunteer->move(public_path('img/volunteers'), $newImgName),
       'picture' => $newImgName,
       'birth_date' => $request->volunteerBirth,
       'phone' => $request->volunteerPhone,
@@ -104,7 +104,7 @@ class VolunteerController extends Controller
       $imgVolunteer = $request->file('volunteerImg');
       $name = bin2hex(random_bytes(5)).'.'.$imgVolunteer->getClientOriginalExtension();
       $volunteer->img = $name;
-      $imgVolunteer->move(public_path('img'), $name);
+      $imgVolunteer->move(public_path('img/volunteers'), $name);
     }
     $volunteer->birth_date = $request->volunteerBirth;
     $volunteer->phone = $request->volunteerPhone;

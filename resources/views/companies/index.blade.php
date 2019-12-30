@@ -56,7 +56,7 @@ Empresas Cadastradas
 
 @section('text-content')
 @if ($errors->any())
-<div class="alert alert-danger">
+<div class="alert alert-danger mt-2">
   <ul>
     @foreach ($errors->all() as $error)
     <li>{{ $error }}</li>
@@ -65,7 +65,7 @@ Empresas Cadastradas
 </div>
 @endif
 @if(!empty($message))
-<div class="alert alert-success">
+<div class="alert alert-success mt-2">
   {{ $message }}
 </div>
 @endif
@@ -76,7 +76,7 @@ Empresas Cadastradas
       <div class="card m-4 bg-light">
         <div class="row d-flex align-items-center">
           <div class="row align-items-center justify-content-center">
-            <img class="card-img-top col-3" src="/img/{{$company->logo}}" alt="Logo da empresa {{$company->name}}">
+            <img class="card-img-top col-3" src="/img/companies/{{$company->logo}}" alt="Logo da empresa {{$company->name}}">
             <h2 class="card-title align-center">{{$company->name}}</h2>
           </div>
         </div>
@@ -104,7 +104,7 @@ Empresas Cadastradas
               <form class="d-flex align-baseline" action="/companies/{{$company->id}}" method="POST" onsubmit="return confirm('Tem certeza de que deseja remover?')">
                 <input type="hidden" name="_method" value="DELETE">
                 <input type="hidden" name="_token" value="{{csrf_token() }}">
-                <input type="submit" class="btn btn-danger nowrap m-1" value="Delete">
+                <input type="submit" class="btn btn-danger nowrap m-1" value="Deletar">
               </form>
             </div>
           </div>
