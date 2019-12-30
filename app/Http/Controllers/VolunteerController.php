@@ -12,9 +12,10 @@ class VolunteerController extends Controller
    *
    * @return \Illuminate\Http\Response
    */
-  public function index()
+  public function index(Request $request)
   {
-    //
+    $volunteers = Volunteer::all();
+    return view('volunteers.index', ["volunteers" => $volunteers]);
   }
 
   /**
@@ -22,9 +23,10 @@ class VolunteerController extends Controller
    *
    * @return \Illuminate\Http\Response
    */
-  public function create()
+  public function create(Request $request)
   {
-    return view('volunteers.create');
+    $locations = Location::all();
+    return view('companies.create',["locations" => $locations]);
   }
 
   /**
@@ -35,7 +37,26 @@ class VolunteerController extends Controller
    */
   public function store(Request $request)
   {
-    //
+    Company::create([
+      'name' => $request->companyName, // Falta por configurar
+      $imgVolunteer = $request->file('companyLogo'),
+      $newImgName = bin2hex(random_bytes(5)).'.'.$imgLogo->getClientOriginalExtension(),
+      $imgLogo->move(public_path('img'), $newImgName),
+      'logo' => $newImgName,
+      'description' => $request->companyDescription,
+      'POC' => $request->companyPOC,
+      'phone' => $request->companyPhone,
+      'email' => $request->companyEmail,
+      'address' => $request->companyAddress,
+      'address_number' => $request->companyAddressNo,
+      'complement' => $request->companyAddressComp,
+      'zip' => $request->companyZip,
+      'location_id' => $request->companyCountry,
+      'city' => $request->companyCity,
+      'state' => $request->companyState
+    ]);
+    
+    return redirect('/volunteers');
   }
 
   /**
@@ -44,9 +65,10 @@ class VolunteerController extends Controller
    * @param  \App\Volunteer  $volunteer
    * @return \Illuminate\Http\Response
    */
-  public function show(Volunteer $volunteer)
+  public function show($id)
   {
-    //
+    $company = Company::find($id);
+    return view('volunteers.show', compact('volunteer'));
   }
 
   /**
@@ -57,7 +79,8 @@ class VolunteerController extends Controller
    */
   public function edit(Volunteer $volunteer)
   {
-    //
+    $locations = Location::all();
+    return view('volunteers.edit', ['volunteer' => $volunteer, 'volunteers' => $volunteer]);
   }
 
   /**
@@ -69,7 +92,29 @@ class VolunteerController extends Controller
    */
   public function update(Request $request, Volunteer $volunteer)
   {
-    //
+    $company->name = $request->companyName; // Falta configurar para volunteers
+    $company->fill($request->except('companyLogo'));
+    if($request->hasFile('companyLogo')) {
+      $imgLogo = $request->file('companyLogo');
+      $name = bin2hex(random_bytes(5)).'.'.$imgLogo->getClientOriginalExtension();
+      $company->logo = $name;
+      $imgLogo->move(public_path('img'), $name);
+    }
+    $company->description = $request->companyDescription;
+    $company->POC = $request->companyPOC;
+    $company->phone = $request->companyPhone;
+    $company->email = $request->companyEmail;
+    $company->address = $request->companyAddress;
+    $company->address_number = $request->companyAddressNo;
+    $company->complement = $request->companyAddressComp;
+    $company->zip = $request->companyZip;
+    $company->location_id = $request->companyCountry;
+    $company->city = $request->companyCity;
+    $company->state = $request->companyState;
+
+    $company->save();
+    
+    return redirect('volunteers');
   }
 
   /**
@@ -80,6 +125,7 @@ class VolunteerController extends Controller
    */
   public function destroy(Volunteer $volunteer)
   {
-    //
+    $volunteer->delete();
+    return redirect('volunteers');
   }
 }

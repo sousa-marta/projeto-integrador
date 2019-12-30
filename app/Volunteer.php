@@ -21,4 +21,8 @@ class Volunteer extends Model
   {
     return $this->belongsToMany('App\Support');
   }
+
+  protected $fillable = [
+    'name', 'img', 'birth_date', 'email', 'phone', 'address', 'address_number', 'complement', 'zip', 'location_id', 'city', 'state'
+  ];
 }
