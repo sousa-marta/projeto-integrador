@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Company;
+use App\{Company, Location};
 use Illuminate\Http\Request;
-use App\Location;
+use Illuminate\Support\Facades\DB;
 
 class CompanyController extends Controller
 {
@@ -15,8 +15,13 @@ class CompanyController extends Controller
    */
   public function index(Request $request)
   {
-    $companies = Company::all();
-    return view('companies.index', ["companies" => $companies]);
+    $companies = DB::table('companies')
+      ->join('locations', 'locations.id', '=', 'companies.location_id')
+      ->select('companies.*', 'locations.country as company_country')
+      ->orderBy('name')
+      ->get();
+    $message = $request->session()->get('message');
+    return view('companies.index', compact('companies','message'));
   }
 
   /**
@@ -43,8 +48,9 @@ class CompanyController extends Controller
       'name' => $request->companyName,
       $imgLogo = $request->file('companyLogo'),
       $newImgName = bin2hex(random_bytes(5)).'.'.$imgLogo->getClientOriginalExtension(),
-      $imgLogo->move(public_path('img'), $newImgName),
+      $imgLogo->move(public_path('img/companies'), $newImgName),
       'logo' => $newImgName,
+      'description' => $request->companyDescription,
       'POC' => $request->companyPOC,
       'phone' => $request->companyPhone,
       'email' => $request->companyEmail,
@@ -69,7 +75,8 @@ class CompanyController extends Controller
   public function show($id)
   {
     $company = Company::find($id);
-    return view('companies.show', compact('company'));
+    $location = $company->location;
+    return view('companies.show', compact('company','location'));
   }
 
   /**
@@ -99,8 +106,9 @@ class CompanyController extends Controller
       $imgLogo = $request->file('companyLogo');
       $name = bin2hex(random_bytes(5)).'.'.$imgLogo->getClientOriginalExtension();
       $company->logo = $name;
-      $imgLogo->move(public_path('img'), $name);
+      $imgLogo->move(public_path('img/companies'), $name);
     }
+    $company->description = $request->companyDescription;
     $company->POC = $request->companyPOC;
     $company->phone = $request->companyPhone;
     $company->email = $request->companyEmail;
@@ -123,9 +131,10 @@ class CompanyController extends Controller
    * @param  \App\Company  $company
    * @return \Illuminate\Http\Response
    */
-  public function destroy(Company $company)
+  public function destroy(Request $request, Company $company)
   {
     $company->delete();
-    return redirect('companies');
+    $request->session()->flash('message', 'Empresa deletada!');
+    return redirect()->back();
   }
 }

@@ -16,6 +16,7 @@ class CreateVolunteersTable extends Migration
         Schema::create('volunteers', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('name');
+            $table->string('picture');
             $table->date('birth_date');
             $table->string('email');
             $table->string('phone');
@@ -23,6 +24,10 @@ class CreateVolunteersTable extends Migration
             $table->integer('address_number');
             $table->string('complement');
             $table->string('zip');
+            $table->string('city');
+            $table->string('state');
+            $table->unsignedBigInteger('location_id'); //FK
+            $table->foreign('location_id')->references('id')->on('locations');
             $table->timestamps();
         });
     }

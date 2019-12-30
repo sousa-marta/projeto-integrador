@@ -2,8 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Volunteer;
+use App\{Volunteer, Location};
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class VolunteerController extends Controller
 {
@@ -12,9 +13,15 @@ class VolunteerController extends Controller
    *
    * @return \Illuminate\Http\Response
    */
-  public function index()
+  public function index(Request $request)
   {
-    //
+    $volunteers = DB::table('volunteers')
+    ->join('locations', 'locations.id', '=', 'volunteers.location_id')
+    ->select('volunteers.*', 'locations.country as volunteer_country')
+    ->orderBy('name')
+    ->get();
+    $message = $request->session()->get('message');
+    return view('volunteers.index', compact('volunteers','message'));
   }
 
   /**
@@ -22,9 +29,10 @@ class VolunteerController extends Controller
    *
    * @return \Illuminate\Http\Response
    */
-  public function create()
+  public function create(Request $request)
   {
-    return view('volunteers.create');
+    $locations = Location::all();
+    return view('volunteers.create',["locations" => $locations]);
   }
 
   /**
@@ -35,7 +43,25 @@ class VolunteerController extends Controller
    */
   public function store(Request $request)
   {
-    //
+    Volunteer::create([
+      'name' => $request->volunteerName,
+      $imgVolunteer = $request->file('volunteerImg'),
+      $newImgName = bin2hex(random_bytes(5)).'.'.$imgVolunteer->getClientOriginalExtension(),
+      $imgVolunteer->move(public_path('img/volunteers'), $newImgName),
+      'picture' => $newImgName,
+      'birth_date' => $request->volunteerBirth,
+      'phone' => $request->volunteerPhone,
+      'email' => $request->volunteerEmail,
+      'address' => $request->volunteerAddress,
+      'address_number' => $request->volunteerAddressNo,
+      'complement' => $request->volunteerAddressComp,
+      'zip' => $request->volunteerZip,
+      'location_id' => $request->volunteerCountry,
+      'city' => $request->volunteerCity,
+      'state' => $request->volunteerState
+    ]);
+    
+    return redirect('/volunteers');
   }
 
   /**
@@ -44,9 +70,11 @@ class VolunteerController extends Controller
    * @param  \App\Volunteer  $volunteer
    * @return \Illuminate\Http\Response
    */
-  public function show(Volunteer $volunteer)
+  public function show($id)
   {
-    //
+    $volunteer = Volunteer::find($id);
+    $location = $volunteer->location;
+    return view('volunteers.show', compact('volunteer','location'));
   }
 
   /**
@@ -57,7 +85,8 @@ class VolunteerController extends Controller
    */
   public function edit(Volunteer $volunteer)
   {
-    //
+    $locations = Location::all();
+    return view('volunteers.edit', ['volunteer' => $volunteer, 'locations' => $locations]);
   }
 
   /**
@@ -69,7 +98,28 @@ class VolunteerController extends Controller
    */
   public function update(Request $request, Volunteer $volunteer)
   {
-    //
+    $volunteer->name = $request->volunteerName;
+    $volunteer->fill($request->except('volunteerImg'));
+    if($request->hasFile('volunteerImg')) {
+      $imgVolunteer = $request->file('volunteerImg');
+      $name = bin2hex(random_bytes(5)).'.'.$imgVolunteer->getClientOriginalExtension();
+      $volunteer->img = $name;
+      $imgVolunteer->move(public_path('img/volunteers'), $name);
+    }
+    $volunteer->birth_date = $request->volunteerBirth;
+    $volunteer->phone = $request->volunteerPhone;
+    $volunteer->email = $request->volunteerEmail;
+    $volunteer->address = $request->volunteerAddress;
+    $volunteer->address_number = $request->volunteerAddressNo;
+    $volunteer->complement = $request->volunteerAddressComp;
+    $volunteer->zip = $request->volunteerZip;
+    $volunteer->location_id = $request->volunteerCountry;
+    $volunteer->city = $request->volunteerCity;
+    $volunteer->state = $request->volunteerState;
+
+    $volunteer->save();
+    
+    return redirect('volunteers');
   }
 
   /**
@@ -78,8 +128,10 @@ class VolunteerController extends Controller
    * @param  \App\Volunteer  $volunteer
    * @return \Illuminate\Http\Response
    */
-  public function destroy(Volunteer $volunteer)
+  public function destroy(Request $request, Volunteer $volunteer)
   {
-    //
+    $volunteer->delete();
+    $request->session()->flash('message', 'Voluntária(o) deletada(o)!');
+    return redirect('volunteers');
   }
 }

@@ -17,17 +17,15 @@ class VacancyController extends Controller
    */
   public function index()
   {
-    $categories = Category::query()->orderBy('name')->get();
-    $companies = Company::query()->orderBy('name')->get();
+    // Puxando apenas a coluna 'name' de categorias para usar no filtro
+    $categories = DB::table('categories')->select('name')->orderBy('name')->get();
     $vacancies = DB::table('vacancies')
       ->join('categories', 'categories.id', '=', 'vacancies.category_id')
       ->join('companies', 'companies.id', '=', 'vacancies.company_id')
       ->select('vacancies.*', 'companies.name as company_name', 'companies.logo as company_logo', 'categories.name as category_name')
       ->orderBy('name')
       ->get();
-    // var_dump($vacancies);
-    // exit;
-    return view('vacancies.index', compact('vacancies', 'categories', 'companies'));
+    return view('vacancies.index', compact('vacancies', 'categories'));
   }
 
   /**
@@ -37,16 +35,14 @@ class VacancyController extends Controller
    */
   public function create(Request $request)
   {
-    $categories = Category::query()->orderBy('name')->get();
-    $companies = Company::query()->orderBy('name')->get();
+    $categories = DB::table('categories')->select('name', 'id')->orderBy('name')->get();
+    $companies = DB::table('companies')->select('name', 'id')->orderBy('name')->get();
     $vacancies = DB::table('vacancies')
       ->join('categories', 'categories.id', '=', 'vacancies.category_id')
       ->join('companies', 'companies.id', '=', 'vacancies.company_id')
       ->select('vacancies.*', 'companies.name as company_name', 'companies.logo as company_logo', 'categories.name as category_name')
       ->orderBy('name')
       ->get();
-    // var_dump($vacancies);
-    // exit;
     $message = $request->session()->get('message');
     return view('vacancies.create', compact('vacancies', 'message', 'categories', 'companies'));
   }
@@ -75,8 +71,8 @@ class VacancyController extends Controller
     $vacancy = Vacancy::find($id);
     $category = $vacancy->category;
     $company = $vacancy->company;
-    $categoriesList = Category::query()->orderBy('name')->get();
-    $companiesList = Company::query()->orderBy('name')->get();
+    $categoriesList = DB::table('categories')->select('name', 'id')->orderBy('name')->get();
+    $companiesList = DB::table('companies')->select('name', 'id')->orderBy('name')->get();
     return view('vacancies.show', compact('vacancy', 'category', 'company', 'categoriesList', 'companiesList'));
   }
 
@@ -88,7 +84,7 @@ class VacancyController extends Controller
    */
   public function edit(Vacancy $vacancy)
   {
-    //
+    //O método edit está em modal dentro da página show
   }
 
   /**
@@ -124,6 +120,6 @@ class VacancyController extends Controller
   {
     $vacancy->delete();
     $request->session()->flash('message', 'Vaga deletada!');
-    return redirect('/vacancies/create');
+    return redirect()->back();
   }
 }
