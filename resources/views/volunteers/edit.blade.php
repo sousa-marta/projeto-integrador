@@ -1,7 +1,7 @@
-volunteerBirth@extends('layouts.mainTemplate')
+@extends('layouts.mainTemplate')
 
 @section('title')
-Cadastrar Empresa
+Editar Voluntario
 @endsection
 
 @section('content')
@@ -60,7 +60,7 @@ Cadastrar Empresa
       </div>
       <div class="form-group col-md-6">
       <label for="volunteerCountry">País</label>
-        <select class="col-lg-12" name="volunteerCountry" id="volunteerCountry" required >
+        <select class="col-lg-12" name="volunteerCountry" id="volunteerCountry">
           <option value="" disabled>Escolha um país</option>
             @foreach ($locations as $location)
               <option <?php echo ($volunteer->location_id == $location->id)? "selected":""?> value='{{$location->id}}'>{{$location->country}}</option>;

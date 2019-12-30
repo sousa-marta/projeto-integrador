@@ -20,7 +20,6 @@ class CreateVolunteersSupportsTable extends Migration
             $table->foreign('volunteer_id')->references('id')->on('volunteers'); //FK
             $table->unsignedBigInteger('support_id'); //FK
             $table->foreign('support_id')->references('id')->on('supports'); //FK
-
         });
     }
 

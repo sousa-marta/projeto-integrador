@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Volunteer;
 use Illuminate\Http\Request;
+use App\Location;
 
 class VolunteerController extends Controller
 {
@@ -37,7 +38,7 @@ class VolunteerController extends Controller
    */
   public function store(Request $request)
   {
-    Company::create([
+    Volunteer::create([
       'name' => $request->volunteerName, // Falta por configurar
       $imgVolunteer = $request->file('volunteerImg'),
       $newImgName = bin2hex(random_bytes(5)).'.'.$imgVolunteer->getClientOriginalExtension(),
@@ -66,7 +67,7 @@ class VolunteerController extends Controller
    */
   public function show($id)
   {
-    $company = Company::find($id);
+    $volunteer = Volunteer::find($id);
     return view('volunteers.show', compact('volunteer'));
   }
 
