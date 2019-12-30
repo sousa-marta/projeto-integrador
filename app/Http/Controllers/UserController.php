@@ -68,7 +68,7 @@ class UserController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\GeneralUser  $generalUser
+     * @param  \App\lUser  $user
      * @return \Illuminate\Http\Response
      */
     public function show(User $user)
@@ -79,7 +79,7 @@ class UserController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\GeneralUser  $generalUser
+     * @param  \App\lUser  $user
      * @return \Illuminate\Http\Response
      */
     public function edit(User $user)
@@ -92,21 +92,38 @@ class UserController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\GeneralUser  $generalUser
+     * @param  \App\User  $user
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, GeneralUser $generalUser)
+    public function update(Request $request, User $user)
     {
-      //
+      //Validate
+      // $request->validate([
+      //   'title' => 'required|min:3',
+      //   'description' => 'required',
+      // ]);
+      
+      $user->name = $request->userFullName;
+      $user->email = $request->userEmail;
+      $user->location_id = $request->userCountry;
+      $user->phone = $request->userPhone;
+      $user->address = $request->userAddressStr;
+      $user->address_number = $request->userAddressNo;
+      $user->complement = $request->userAddressComp;
+      $user->zip = $request->userAddressPC;
+
+      $user->save();
+      $request->session()->flash('message', 'Cadastro alterado com sucesso!');
+      return redirect('users/'.$user->id);
     }
   
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\GeneralUser  $generalUser
+     * @param  \App\lUser  $user
      * @return \Illuminate\Http\Response
      */
-    public function destroy(GeneralUser $generalUser)
+    public function destroy(User $user)
     {
       //
     }

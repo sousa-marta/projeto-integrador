@@ -19,7 +19,9 @@ Editar Informação do usuário
 
 <!-- INFORMAÇÕES DO USUÁRIO -->
 <section class="d-flex justify-content-center align-items-center p-4 mb-5">
-  <form action="" method="post" class="user-info-main card p-5 col-lg-5">
+  <form action="{{url('users', [$user->id])}}" method="post" class="user-info-main card p-5 col-lg-5">
+     <input type="hidden" name="_method" value="PUT">
+     {{ csrf_field() }}
 
     <!-- foto -->
     <div class="user-info-top">
@@ -65,7 +67,7 @@ Editar Informação do usuário
       </div>
       <div class="form-group col-4 p-0 pl-2">
         <label for="userAddressNo">Número</label>
-        <input type="text" class="form-control" name="userAddressNo" id="userAddressNo" value='{{ $user->addres_number }}'>
+        <input type="text" class="form-control" name="userAddressNo" id="userAddressNo" value='{{ $user->address_number }}'>
       </div>
     </div>
 
