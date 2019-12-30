@@ -28,9 +28,9 @@ Empresas
             <h6 class="card-text"><strong>Endereço:</strong> {{$company->address}}, {{$company->address_number}} / {{$company->complement}}</h6>
             <div class="row d-flex justify-content-between">
               <h6 class="card-text"><strong>CEP:</strong> {{$company->zip}} </h6>
-              <h6 class="card-text"><strong>Cidade: </strong> {{$company->city}}</h6>
-              <h6 class="card-text"><strong>Estado: </strong> {{$company->state}} </h6>
-              <h6 class="card-text"><strong>País: </strong> {{$location->country}} </h6>
+              <h6 class="card-text"><strong>Cidade:</strong> {{$company->city}}</h6>
+              <h6 class="card-text"><strong>Estado:</strong> {{$company->state}} </h6>
+              <h6 class="card-text"><strong>País:</strong> {{$location->country}} </h6>
             </div>
             <div class="d-flex justify-content-between">
               <h6 class="card-text"><strong>Contato:</strong> {{$company->POC}}</h6>
@@ -40,13 +40,11 @@ Empresas
             <hr>
             <div class="d-flex justify-content-around">
               <div>
-                <a href="#" class="btn btn-primary nowrap m-1">Ver vagas</a>
+                <a href="/vacancies" class="btn btn-primary nowrap m-1">Ver vagas</a>
                 <a href="/courses" class="btn btn-secondary nowrap m-1">Ver cursos</a>
               </div>
             </div>
           </div>
-
-          <div class="d-flex justify-content-between">
           </div>
         </div>
       </div>
