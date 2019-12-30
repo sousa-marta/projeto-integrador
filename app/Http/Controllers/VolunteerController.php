@@ -26,7 +26,7 @@ class VolunteerController extends Controller
   public function create(Request $request)
   {
     $locations = Location::all();
-    return view('companies.create',["locations" => $locations]);
+    return view('volunteers.create',["locations" => $locations]);
   }
 
   /**
@@ -38,22 +38,21 @@ class VolunteerController extends Controller
   public function store(Request $request)
   {
     Company::create([
-      'name' => $request->companyName, // Falta por configurar
-      $imgVolunteer = $request->file('companyLogo'),
-      $newImgName = bin2hex(random_bytes(5)).'.'.$imgLogo->getClientOriginalExtension(),
-      $imgLogo->move(public_path('img'), $newImgName),
-      'logo' => $newImgName,
-      'description' => $request->companyDescription,
-      'POC' => $request->companyPOC,
-      'phone' => $request->companyPhone,
-      'email' => $request->companyEmail,
-      'address' => $request->companyAddress,
-      'address_number' => $request->companyAddressNo,
-      'complement' => $request->companyAddressComp,
-      'zip' => $request->companyZip,
-      'location_id' => $request->companyCountry,
-      'city' => $request->companyCity,
-      'state' => $request->companyState
+      'name' => $request->volunteerName, // Falta por configurar
+      $imgVolunteer = $request->file('volunteerImg'),
+      $newImgName = bin2hex(random_bytes(5)).'.'.$imgVolunteer->getClientOriginalExtension(),
+      $imgVolunteer->move(public_path('img'), $newImgName),
+      'img' => $newImgName,
+      'birth_date' => $request->volunteerBirth,
+      'phone' => $request->volunteerPhone,
+      'email' => $request->volunteerEmail,
+      'address' => $request->volunteerAddress,
+      'address_number' => $request->volunteerAddressNo,
+      'complement' => $request->volunteerAddressComp,
+      'zip' => $request->volunteerZip,
+      'location_id' => $request->volunteerCountry,
+      'city' => $request->volunteerCity,
+      'state' => $request->volunteerState
     ]);
     
     return redirect('/volunteers');
@@ -92,27 +91,26 @@ class VolunteerController extends Controller
    */
   public function update(Request $request, Volunteer $volunteer)
   {
-    $company->name = $request->companyName; // Falta configurar para volunteers
-    $company->fill($request->except('companyLogo'));
-    if($request->hasFile('companyLogo')) {
-      $imgLogo = $request->file('companyLogo');
-      $name = bin2hex(random_bytes(5)).'.'.$imgLogo->getClientOriginalExtension();
-      $company->logo = $name;
-      $imgLogo->move(public_path('img'), $name);
+    $volunteer->name = $request->volunteerName; // Falta configurar para volunteers
+    $volunteer->fill($request->except('volunteerImg'));
+    if($request->hasFile('volunteerImg')) {
+      $imgVolunteer = $request->file('volunteerImg');
+      $name = bin2hex(random_bytes(5)).'.'.$imgVolunteer->getClientOriginalExtension();
+      $volunteer->img = $name;
+      $imgVolunteer->move(public_path('img'), $name);
     }
-    $company->description = $request->companyDescription;
-    $company->POC = $request->companyPOC;
-    $company->phone = $request->companyPhone;
-    $company->email = $request->companyEmail;
-    $company->address = $request->companyAddress;
-    $company->address_number = $request->companyAddressNo;
-    $company->complement = $request->companyAddressComp;
-    $company->zip = $request->companyZip;
-    $company->location_id = $request->companyCountry;
-    $company->city = $request->companyCity;
-    $company->state = $request->companyState;
+    $volunteer->birth_date = $request->volunteerBirth;
+    $volunteer->phone = $request->volunteerPhone;
+    $volunteer->email = $request->volunteerEmail;
+    $volunteer->address = $request->volunteerAddress;
+    $volunteer->address_number = $request->volunteerAddressNo;
+    $volunteer->complement = $request->volunteerAddressComp;
+    $volunteer->zip = $request->volunteerZip;
+    $volunteer->location_id = $request->volunteerCountry;
+    $volunteer->city = $request->volunteerCity;
+    $volunteer->state = $request->volunteerState;
 
-    $company->save();
+    $volunteer->save();
     
     return redirect('volunteers');
   }

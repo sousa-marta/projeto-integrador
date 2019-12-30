@@ -82,17 +82,4 @@ Cadastrar Empresa
     <button type="submit" class="btn btn-primary align-self-center mt-3">Salvar</button>
   </form>
 </section>
-
-<div class="row">
-      <div class="col-md-12">
-        @if(isset($result))
-          @if($result)
-            <h1>Deu certo campeao!</h1>
-          @else
-            <h1>Nao deu certo seu cadastro, e foi sua culpa!</h1>
-          @endif
-        @endif
-      </div>
-</div>
-
 @endsection
