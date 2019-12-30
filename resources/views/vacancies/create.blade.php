@@ -9,7 +9,7 @@ Vagas
 <section class="admin-tables-section mt-5 pt-5">
   <div class="table-responsive">
     <div class="d-flex justify-content-start align-items-center mb-1">
-      <h2>OPORTUNIDADES</h2>
+      <h2>Oportunidades</h2>
       <button type="button" class="btn btn-secondary ml-3 p-2" data-toggle="modal" data-target="#admin-add-opportunity-modal" href="#"><i class="fa fa-plus-circle fa-2x" aria-hidden="true"></i></button>
     </div>
     @if ($errors->any())

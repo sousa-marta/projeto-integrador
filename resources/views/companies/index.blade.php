@@ -8,7 +8,7 @@ Empresas Cadastradas
 <div class="pt-3">
   <section class="pages-title-bg d-flex-column justify-content-center align-items-center p-3 mt-5">
     <h1>Empresas Cadastradas</h1>
-    <a href="/companies/create" class="btn btn-secondary col-lg-2"><i style="font-size:18px" class="fa">&#xf055;</i> Cadastrar</a>
+    <a href="/companies/create" class="btn btn-secondary col-lg-2"><i class="fa">&#xf055;</i> Cadastrar</a>
   </section>
 </div>
 @endsection
@@ -55,17 +55,28 @@ Empresas Cadastradas
 @endsection
 
 @section('text-content')
-
+@if ($errors->any())
+<div class="alert alert-danger">
+  <ul>
+    @foreach ($errors->all() as $error)
+    <li>{{ $error }}</li>
+    @endforeach
+  </ul>
+</div>
+@endif
+@if(!empty($message))
+<div class="alert alert-success">
+  {{ $message }}
+</div>
+@endif
 <div>
   <section>
     @foreach($companies as $company)
     <div class="container">
       <div class="card m-4 bg-light">
         <div class="row d-flex align-items-center">
-          <div class="col-lg-4 pt-2">
-            <img class="card-img-top h-90" src="/img/{{$company->logo}}" alt="Imagem de capa do card">
-          </div>
-          <div class="col-lg-8">
+          <div class="row align-items-center justify-content-center">
+            <img class="card-img-top col-3" src="/img/{{$company->logo}}" alt="Logo da empresa {{$company->name}}">
             <h2 class="card-title align-center">{{$company->name}}</h2>
           </div>
         </div>
@@ -74,9 +85,9 @@ Empresas Cadastradas
           <h6 class="card-text"><strong>Endereço:</strong> {{$company->address}}, {{$company->address_number}} / {{$company->complement}}</h6>
           <div class="row d-flex justify-content-between">
             <h6 class="card-text"><strong>CEP:</strong> {{$company->zip}} </h6>
-            <h6 class="card-text"><strong>Cidade: </strong> {{$company->city}}</h6>
-            <h6 class="card-text"><strong>Estado: </strong> {{$company->state}} </h6>
-            <h6 class="card-text"><strong>País: </strong> {{$company->company_country}} </h6>
+            <h6 class="card-text"><strong>Cidade:</strong> {{$company->city}}</h6>
+            <h6 class="card-text"><strong>Estado:</strong> {{$company->state}} </h6>
+            <h6 class="card-text"><strong>País:</strong> {{$company->company_country}} </h6>
           </div>
           <div class="d-flex justify-content-between">
             <h6 class="card-text"><strong>Contato:</strong> {{$company->POC}}</h6>
@@ -90,7 +101,7 @@ Empresas Cadastradas
             </div>
             <div class="d-flex align-baseline">
               <a href="/companies/{{$company->id}}/edit" class="btn btn-primary nowrap m-1">Editar</a>
-              <form class="d-flex align-baseline" action="/companies/{{$company->id}}" method="POST">
+              <form class="d-flex align-baseline" action="/companies/{{$company->id}}" method="POST" onsubmit="return confirm('Tem certeza de que deseja remover?')">
                 <input type="hidden" name="_method" value="DELETE">
                 <input type="hidden" name="_token" value="{{csrf_token() }}">
                 <input type="submit" class="btn btn-danger nowrap m-1" value="Delete">

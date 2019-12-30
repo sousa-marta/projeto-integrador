@@ -23,6 +23,6 @@ class Volunteer extends Model
   }
 
   protected $fillable = [
-    'name', 'img', 'birth_date', 'email', 'phone', 'address', 'address_number', 'complement', 'zip', 'location_id', 'city', 'state'
+    'name', 'picture', 'birth_date', 'email', 'phone', 'address', 'address_number', 'complement', 'zip', 'location_id', 'city', 'state'
   ];
 }

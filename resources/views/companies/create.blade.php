@@ -34,8 +34,8 @@ Cadastrar Empresa
       </div>
       <div class="form-group col-md-4 mt-3">
         <label for="companyPhone">Telefone</label>
-        <input type="tel" class="form-control" name="companyPhone" id="companyPhone" placeholder="11 12345-1234" pattern="[0-9]{2}[0-9]{5}[0-9]{4}" required>
-        <small><strong>Formato:</strong> 11 12345-1234</small>
+        <input type="tel" class="form-control" name="companyPhone" id="companyPhone" placeholder="11123451234" pattern="[0-9]{2}[0-9]{5}[0-9]{4}" required>
+        <small><strong>Formato:</strong> 11123451234</small>
       </div>
       <div class="form-group col-md-4 mt-3">
         <label for="companyEmail">E-mail</label>
@@ -68,14 +68,14 @@ Cadastrar Empresa
       <div class="form-group col-md-3">
         <label for="companyCountry">País</label>
         <select class="form-control col-md-12" name="companyCountry" id="companyCountry" required>
-          <option value="" selected disabled>Escolha um país</option>
+          <option value="" selected disabled>Selecione um país</option>
           @foreach ($locations as $location)
           <option value='{{$location->id}}'>{{$location->country}}</option>
           @endforeach
         </select>
       </div>
     </div>
-    <button type="submit" class="btn btn-primary align-self-center mt-3">Cadastrar</button>
+    <button type="submit" class="btn btn-primary align-self-center mt-3">Salvar</button>
   </form>
 </section>
 @endsection

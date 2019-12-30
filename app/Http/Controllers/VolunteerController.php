@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Volunteer;
+use App\{Volunteer, Location};
 use Illuminate\Http\Request;
-use App\Location;
+use Illuminate\Support\Facades\DB;
 
 class VolunteerController extends Controller
 {
@@ -15,8 +15,13 @@ class VolunteerController extends Controller
    */
   public function index(Request $request)
   {
-    $volunteers = Volunteer::all();
-    return view('volunteers.index', ["volunteers" => $volunteers]);
+    $volunteers = DB::table('volunteers')
+    ->join('locations', 'locations.id', '=', 'volunteers.location_id')
+    ->select('volunteers.*', 'locations.country as volunteer_country')
+    ->orderBy('name')
+    ->get();
+    $message = $request->session()->get('message');
+    return view('volunteers.index', compact('volunteers','message'));
   }
 
   /**
@@ -39,11 +44,11 @@ class VolunteerController extends Controller
   public function store(Request $request)
   {
     Volunteer::create([
-      'name' => $request->volunteerName, // Falta por configurar
+      'name' => $request->volunteerName,
       $imgVolunteer = $request->file('volunteerImg'),
       $newImgName = bin2hex(random_bytes(5)).'.'.$imgVolunteer->getClientOriginalExtension(),
       $imgVolunteer->move(public_path('img'), $newImgName),
-      'img' => $newImgName,
+      'picture' => $newImgName,
       'birth_date' => $request->volunteerBirth,
       'phone' => $request->volunteerPhone,
       'email' => $request->volunteerEmail,
@@ -68,7 +73,8 @@ class VolunteerController extends Controller
   public function show($id)
   {
     $volunteer = Volunteer::find($id);
-    return view('volunteers.show', compact('volunteer'));
+    $location = $volunteer->location;
+    return view('volunteers.show', compact('volunteer','location'));
   }
 
   /**
@@ -80,7 +86,7 @@ class VolunteerController extends Controller
   public function edit(Volunteer $volunteer)
   {
     $locations = Location::all();
-    return view('volunteers.edit', ['volunteer' => $volunteer, 'volunteers' => $volunteer]);
+    return view('volunteers.edit', ['volunteer' => $volunteer, 'locations' => $locations]);
   }
 
   /**
@@ -92,7 +98,7 @@ class VolunteerController extends Controller
    */
   public function update(Request $request, Volunteer $volunteer)
   {
-    $volunteer->name = $request->volunteerName; // Falta configurar para volunteers
+    $volunteer->name = $request->volunteerName;
     $volunteer->fill($request->except('volunteerImg'));
     if($request->hasFile('volunteerImg')) {
       $imgVolunteer = $request->file('volunteerImg');
@@ -122,9 +128,10 @@ class VolunteerController extends Controller
    * @param  \App\Volunteer  $volunteer
    * @return \Illuminate\Http\Response
    */
-  public function destroy(Volunteer $volunteer)
+  public function destroy(Request $request, Volunteer $volunteer)
   {
     $volunteer->delete();
+    $request->session()->flash('message', 'Voluntária(o) deletada(o)!');
     return redirect('volunteers');
   }
 }

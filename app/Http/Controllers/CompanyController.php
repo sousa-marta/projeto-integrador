@@ -13,14 +13,15 @@ class CompanyController extends Controller
    *
    * @return \Illuminate\Http\Response
    */
-  public function index()
+  public function index(Request $request)
   {
     $companies = DB::table('companies')
       ->join('locations', 'locations.id', '=', 'companies.location_id')
       ->select('companies.*', 'locations.country as company_country')
       ->orderBy('name')
       ->get();
-    return view('companies.index', compact('companies'));
+    $message = $request->session()->get('message');
+    return view('companies.index', compact('companies','message'));
   }
 
   /**
@@ -130,9 +131,10 @@ class CompanyController extends Controller
    * @param  \App\Company  $company
    * @return \Illuminate\Http\Response
    */
-  public function destroy(Company $company)
+  public function destroy(Request $request, Company $company)
   {
     $company->delete();
+    $request->session()->flash('message', 'Empresa deletada!');
     return redirect()->back();
   }
 }
