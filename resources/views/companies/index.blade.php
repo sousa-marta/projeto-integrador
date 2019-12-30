@@ -23,39 +23,31 @@ Empresas Cadastradas
     <!-- Collapse do primeiro tópico de busca -->
     <button type="button" class="col-lg-12 text-white btn rounded-0 collapse-bg font-weight-bold text-left m-0 py-3" data-toggle="collapse" data-target="#collapseLocation">Localização <i class="fa fa-caret-square-o-down px-1"></i></button>
 
-    <!-- TODO: deixar dinâmico -->
+
     <div id="collapseLocation" class="collapse list-group-item bg-light">
       <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-        <option selected>Cidade</option>
-        <option value="1">São Paulo</option>
-        <option value="2">Rio de Janeiro</option>
-        <option value="3">Minas Gerais</option>
-        <option value="1">Salvador</option>
-        <option value="2">Vitória</option>
-        <option value="3">Santos</option>
-        <option value="2">Rio de Janeiro</option>
-        <option value="3">Minas Gerais</option>
-        <option value="1">Salvador</option>
-        <option value="2">Vitória</option>
-        <option value="3">Santos</option>
+        <option selected disabled>Cidade</option>
+        @foreach ($companies as $company)
+        <option value="{{$company->city}}" onclick="filterHTML('#id01', '.item', this.value)">{{$company->city}}</option>
+        @endforeach
       </select>
       <hr>
       <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-        <option selected>Região</option>
-        <option value="1">Norte</option>
-        <option value="2">Nordeste</option>
-        <option value="3">Centroeste</option>
-        <option value="2">Sudeste</option>
-        <option value="3">Sul</option>
+        <option selected disabled>Estado</option>
+        @foreach ($companies as $company)
+        <option value="{{$company->state}}" onclick="filterHTML('#id01', '.item', this.value)">{{$company->state}}</option>
+        @endforeach
       </select>
     </div>
+
     <div class="list-group-item row form-group p-3 bg-secondary">
+      <!-- TODO: arrumar href do botão buscar -->
+    <button type="submit" class="btn btn-secondary col-lg-12"><i class="fa fa-search"></i> Buscar</button>
+  <hr>
       <div class="form-group ">
         <label class="font-weight-bold text-light" for="busca">Busca por Palavra Chave</label>
-        <input type="text" class="form-control" id="busca" placeholder="Procurar...">
+        <input type="text" class="form-control" id="busca" placeholder="Procurar..." oninput="filterHTML('#id01', '.item', this.value)">
       </div>
-      <!-- TODO: arrumar href do botão buscar -->
-      <button type="button" class="btn btn-secondary col-lg-12" onclick="location.href='/courses/id'"><i class="fa fa-search"></i> Buscar</button>
     </div>
   </div>
 </aside>
@@ -86,11 +78,9 @@ Empresas Cadastradas
                 <h6 class="card-text"><strong>Estado: </strong> {{$company->state}} </h6>
               </div>
               <div class="d-flex justify-content-between">
-                <div> 
-                  <h6 class="card-text"><strong>Contato: </strong> {{$company->POC}}</h6>
-                </div>
-                <h6 class="card-text"><strong>Telefone: </strong> <a href="tel://+55{{$company->phone}}"> <i style="font-size:14px" class="fa">&#xf095;</i> {{$company->phone}}</a></h6>
-                <h6 class="card-text"><strong>E-mail: </strong> <a href="mailto:{{$company->email}}?Subject=Contato%20{{$company->name}}"><i style="font-size:14px" class="fa">&#xf0e0;</i> {{$company->email}}</a></h6>
+                <h6 class="card-text"><strong>Contato: </strong> {{$company->POC}}</h6>
+              <h6 class="card-text"><strong>Telefone: </strong> <a href="tel://+55{{$company->phone}}"> <i style="font-size:14px" class="fa">&#xf095;</i> {{$company->phone}}</a></h6>
+              <h6 class="card-text"><strong>E-mail: </strong> <a href="mailto:{{$company->email}}?Subject=Contato%20{{$company->name}}"><i style="font-size:14px" class="fa">&#xf0e0;</i> {{$company->email}}</a></h6>
               </div>
               <hr>
               <div class="d-flex justify-content-between">
