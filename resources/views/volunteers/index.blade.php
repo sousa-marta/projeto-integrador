@@ -77,8 +77,7 @@ Voluntarios Cadastrados
                 <h6 class="card-text"><strong>Cidade: </strong> {{$volunteer->city}}</h6>
                 <h6 class="card-text"><strong>Estado: </strong> {{$volunteer->state}} </h6>
               </div>
-              <div class="d-flex justify-content-between">
-                <h6 class="card-text"><strong>Contato: </strong> {{$volunteer->POC}}</h6>
+              <div class="d-flex justify-content-start">
               <h6 class="card-text"><strong>Telefone: </strong> <a href="tel://+55{{$volunteer->phone}}"> <i style="font-size:14px" class="fa">&#xf095;</i> {{$volunteer->phone}}</a></h6>
               <h6 class="card-text"><strong>E-mail: </strong> <a href="mailto:{{$volunteer->email}}?Subject=Contato%20{{$volunteer->name}}"><i style="font-size:14px" class="fa">&#xf0e0;</i> {{$volunteer->email}}</a></h6>
               </div>
