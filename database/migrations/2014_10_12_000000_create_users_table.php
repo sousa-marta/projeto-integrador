@@ -27,8 +27,8 @@ class CreateUsersTable extends Migration
             $table->string('password');
             // $table->rememberToken();
             $table->timestamps();
-            // $table->unsignedBigInteger('location_id'); //FK
-            // $table->foreign('location_id')->references('id')->on('locations'); //FK
+            $table->unsignedBigInteger('location_id'); //FK
+            $table->foreign('location_id')->references('id')->on('locations'); //FK
         });
     }
 

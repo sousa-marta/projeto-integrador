@@ -7,6 +7,11 @@ use Illuminate\Http\Request;
 
 class DonationController extends Controller
 {
+  public function __construct()
+  {
+    $this->middleware('auth');
+  }
+  
   /**
    * Display a listing of the resource.
    *
@@ -26,8 +31,10 @@ class DonationController extends Controller
   {
     $donations = Donation::all();
     $message = $request->session()->get('message');
-    return view('donations.create',["donations" => $donations,
-                                    "message" => $message]);
+    return view('donations.create', [
+      "donations" => $donations,
+      "message" => $message
+    ]);
   }
 
   /**
@@ -44,11 +51,13 @@ class DonationController extends Controller
     //   'title' => 'required|min:3',
     //   'description' => 'required',
     // ]);
-    
-    $donation = Donation::create(['name' => $request->donationName,
-                                  'phone' => $request->donationPhone,
-                                  'amount' => $request->donationValue,
-                                  'status' => $request->donationStatus]);
+
+    $donation = Donation::create([
+      'name' => $request->donationName,
+      'phone' => $request->donationPhone,
+      'amount' => $request->donationValue,
+      'status' => $request->donationStatus
+    ]);
     $request->session()->flash('message', "A doação foi salva com sucesso");
     return redirect('/donations/create');
   }
@@ -61,7 +70,7 @@ class DonationController extends Controller
    */
   public function show(Donation $donation)
   {
-    return view('donations.show',['donation' => $donation]);
+    return view('donations.show', ['donation' => $donation]);
   }
 
   /**
@@ -90,7 +99,7 @@ class DonationController extends Controller
     //   'title' => 'required|min:3',
     //   'description' => 'required',
     // ]);
-  
+
     $donation->name = $request->donationName;
     $donation->phone = $request->donationPhone;
     $donation->amount = $request->donationValue;
@@ -98,7 +107,6 @@ class DonationController extends Controller
     $donation->save();
     $request->session()->flash('message', 'Doação atualizada!');
     return redirect()->route('donations.show', [$donation]);
-
   }
 
   /**

@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 //para buscar informações do número de cadastros na página geral de admin
-use App\{Company,Course,User,Vacancy,Volunteer};
+use App\{Company, Course, User, Vacancy, Volunteer};
 // use App\Donation;
 use Illuminate\Support\Facades\Auth;
 
@@ -43,19 +43,22 @@ class SiteController extends Controller
     $users = User::all();
     $vacancies = Vacancy::all();
     $courses = Course::all();
-    return view('admin',["companies" => $companies,
-                         "volunteers" => $volunteers,
-                         "users" => $users,
-                         "vacancies" => $vacancies,
-                         "courses" => $courses]);
+    return view('admin', [
+      "companies" => $companies,
+      "volunteers" => $volunteers,
+      "users" => $users,
+      "vacancies" => $vacancies,
+      "courses" => $courses
+    ]);
   }
 
-  public function entrar(Request $request)
-    {
-        if(!Auth::attempt($request->only(['email','password']))) {
-            return redirect()->back()->withErrors('Usuário e/ou senha incorretos');
-        }
-
-        return redirect()->back();
+  public function logIn(Request $request)
+  {
+    if (!Auth::attempt($request->only(['email', 'password']))) {
+      return redirect()->back()->withErrors('Usuário e/ou senha incorretos');
     }
+    // $user = Auth::user();
+    // return redirect('/',compact('user',$user));
+    return redirect()->back();
+  }
 }

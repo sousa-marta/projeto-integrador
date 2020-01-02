@@ -48,7 +48,7 @@ input[type=number] {-moz-appearance:textfield;}
   text-transform: uppercase;
 }
 
-.btn-primary:hover, .btn-primary:focus {
+.btn-primary:hover, .btn-loggedin:hover, .btn-primary:focus, .btn-loggedin:focus {
   background: #4FB3BF;
   color: #000;
 }
@@ -62,12 +62,18 @@ input[type=number] {-moz-appearance:textfield;}
 }
 
 /*Botão Vermelho*/
-
 .btn-danger {
   background: #ae2029;
   color: #fff;
   border:none;
   text-transform: uppercase;
+}
+
+/*Botão Usuário Logado*/
+.btn-loggedin {
+  color: #FFF;
+  background:#005662;
+  border: none;
 }
 
 .btn-secondary:hover, .btn-secondary:focus {background: #005662;}
