@@ -11,7 +11,10 @@
 |
 */
 
-Route::get('/', "SiteController@index");
+use Illuminate\Support\Facades\Auth;
+
+Route::get('/', "SiteController@index"); //mostra a página principal (Home)
+Route::post('/', 'SiteController@logIn'); //faz login
 Route::get('about', "SiteController@viewAbout");
 Route::get('contact', "SiteController@viewContact");
 Route::get('support', "SiteController@viewSupport");
@@ -25,8 +28,20 @@ Route::post('users/change-password', 'GeneralUserController@updateNewPassword');
 Route::resources([
   'courses' => 'CourseController',
   'vacancies' => 'VacancyController',
-  'users' => 'GeneralUserController',
+  'users' => 'GeneralUserController', //TODO: arrumar middleware
   'volunteers' => 'VolunteerController',
   'companies' => 'CompanyController',
-  'donations' => 'DonationController', // TODO: precisa criar todas as páginas nas views
+  'donations' => 'DonationController',
 ]);
+
+Route::group(array('middleware' => 'auth'), function()
+{
+    Route::resource('courses', 'CourseController', ['except' => ['index']]);
+    Route::resource('vacancies', 'VacancyController', ['except' => ['index']]);
+});
+
+
+Route::get('/signout', function () {
+  Auth::logout();
+  return redirect()->back();
+});

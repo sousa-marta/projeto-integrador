@@ -8,6 +8,11 @@ use Illuminate\Support\Facades\DB;
 
 class VolunteerController extends Controller
 {
+  public function __construct()
+  {
+    $this->middleware('auth');
+  }
+
   /**
    * Display a listing of the resource.
    *
@@ -16,12 +21,12 @@ class VolunteerController extends Controller
   public function index(Request $request)
   {
     $volunteers = DB::table('volunteers')
-    ->join('locations', 'locations.id', '=', 'volunteers.location_id')
-    ->select('volunteers.*', 'locations.country as volunteer_country')
-    ->orderBy('name')
-    ->get();
+      ->join('locations', 'locations.id', '=', 'volunteers.location_id')
+      ->select('volunteers.*', 'locations.country as volunteer_country')
+      ->orderBy('name')
+      ->get();
     $message = $request->session()->get('message');
-    return view('volunteers.index', compact('volunteers','message'));
+    return view('volunteers.index', compact('volunteers', 'message'));
   }
 
   /**
@@ -32,7 +37,7 @@ class VolunteerController extends Controller
   public function create(Request $request)
   {
     $locations = Location::all();
-    return view('volunteers.create',["locations" => $locations]);
+    return view('volunteers.create', ["locations" => $locations]);
   }
 
   /**
@@ -46,7 +51,7 @@ class VolunteerController extends Controller
     Volunteer::create([
       'name' => $request->volunteerName,
       $imgVolunteer = $request->file('volunteerImg'),
-      $newImgName = bin2hex(random_bytes(5)).'.'.$imgVolunteer->getClientOriginalExtension(),
+      $newImgName = bin2hex(random_bytes(5)) . '.' . $imgVolunteer->getClientOriginalExtension(),
       $imgVolunteer->move(public_path('img/volunteers'), $newImgName),
       'picture' => $newImgName,
       'birth_date' => $request->volunteerBirth,
@@ -60,7 +65,7 @@ class VolunteerController extends Controller
       'city' => $request->volunteerCity,
       'state' => $request->volunteerState
     ]);
-    
+
     return redirect('/volunteers');
   }
 
@@ -74,7 +79,7 @@ class VolunteerController extends Controller
   {
     $volunteer = Volunteer::find($id);
     $location = $volunteer->location;
-    return view('volunteers.show', compact('volunteer','location'));
+    return view('volunteers.show', compact('volunteer', 'location'));
   }
 
   /**
@@ -100,9 +105,9 @@ class VolunteerController extends Controller
   {
     $volunteer->name = $request->volunteerName;
     $volunteer->fill($request->except('volunteerImg'));
-    if($request->hasFile('volunteerImg')) {
+    if ($request->hasFile('volunteerImg')) {
       $imgVolunteer = $request->file('volunteerImg');
-      $name = bin2hex(random_bytes(5)).'.'.$imgVolunteer->getClientOriginalExtension();
+      $name = bin2hex(random_bytes(5)) . '.' . $imgVolunteer->getClientOriginalExtension();
       $volunteer->img = $name;
       $imgVolunteer->move(public_path('img/volunteers'), $name);
     }
@@ -118,7 +123,7 @@ class VolunteerController extends Controller
     $volunteer->state = $request->volunteerState;
 
     $volunteer->save();
-    
+
     return redirect('volunteers');
   }
 

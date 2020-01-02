@@ -2,8 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\GeneralUser;
+use App\{GeneralUser, Location, User};
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\{Auth, Hash};
 
 class GeneralUserController extends Controller
 {
@@ -24,7 +25,8 @@ class GeneralUserController extends Controller
    */
   public function create()
   {
-    return view('users.create');
+    $locations = Location::all(); //busca todos os países na base de dados locations
+    return view('users.create', compact('locations', $locations));
   }
 
   /**
@@ -48,14 +50,20 @@ class GeneralUserController extends Controller
   }
 
   /**
-   * Store a newly created resource in storage.
+   * Store a newly created user in storage.
    *
    * @param  \Illuminate\Http\Request  $request
    * @return \Illuminate\Http\Response
    */
   public function store(Request $request)
   {
-    //
+    $data = $request->except('_token');
+    $data['password'] = Hash::make($data['password']);
+    $user = User::create($data);
+
+    Auth::login($user);
+
+    return redirect('/');
   }
 
   /**

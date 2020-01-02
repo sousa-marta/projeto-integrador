@@ -8,6 +8,11 @@ use Illuminate\Support\Facades\DB;
 
 class CompanyController extends Controller
 {
+  public function __construct()
+  {
+    $this->middleware('auth');
+  }
+
   /**
    * Display a listing of the resource.
    *
@@ -21,7 +26,7 @@ class CompanyController extends Controller
       ->orderBy('name')
       ->get();
     $message = $request->session()->get('message');
-    return view('companies.index', compact('companies','message'));
+    return view('companies.index', compact('companies', 'message'));
   }
 
   /**
@@ -32,8 +37,7 @@ class CompanyController extends Controller
   public function create(Request $request)
   {
     $locations = Location::all(); //busca todos os países na base de dados locations
-    return view('companies.create',["locations" => $locations]);
-    
+    return view('companies.create', ["locations" => $locations]);
   }
 
   /**
@@ -47,7 +51,7 @@ class CompanyController extends Controller
     Company::create([
       'name' => $request->companyName,
       $imgLogo = $request->file('companyLogo'),
-      $newImgName = bin2hex(random_bytes(5)).'.'.$imgLogo->getClientOriginalExtension(),
+      $newImgName = bin2hex(random_bytes(5)) . '.' . $imgLogo->getClientOriginalExtension(),
       $imgLogo->move(public_path('img/companies'), $newImgName),
       'logo' => $newImgName,
       'description' => $request->companyDescription,
@@ -62,7 +66,7 @@ class CompanyController extends Controller
       'city' => $request->companyCity,
       'state' => $request->companyState
     ]);
-    
+
     return redirect('/companies');
   }
 
@@ -76,7 +80,7 @@ class CompanyController extends Controller
   {
     $company = Company::find($id);
     $location = $company->location;
-    return view('companies.show', compact('company','location'));
+    return view('companies.show', compact('company', 'location'));
   }
 
   /**
@@ -102,9 +106,9 @@ class CompanyController extends Controller
   {
     $company->name = $request->companyName;
     $company->fill($request->except('companyLogo'));
-    if($request->hasFile('companyLogo')) {
+    if ($request->hasFile('companyLogo')) {
       $imgLogo = $request->file('companyLogo');
-      $name = bin2hex(random_bytes(5)).'.'.$imgLogo->getClientOriginalExtension();
+      $name = bin2hex(random_bytes(5)) . '.' . $imgLogo->getClientOriginalExtension();
       $company->logo = $name;
       $imgLogo->move(public_path('img/companies'), $name);
     }
@@ -121,7 +125,7 @@ class CompanyController extends Controller
     $company->state = $request->companyState;
 
     $company->save();
-    
+
     return redirect('companies');
   }
 
