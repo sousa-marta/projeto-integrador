@@ -11,6 +11,8 @@
 |
 */
 
+use Illuminate\Support\Facades\Auth;
+
 Route::get('/', "SiteController@index");
 Route::get('about', "SiteController@viewAbout");
 Route::get('contact', "SiteController@viewContact");
@@ -30,3 +32,14 @@ Route::resources([
   'companies' => 'CompanyController',
   'donations' => 'DonationController', // TODO: precisa criar todas as páginas nas views
 ]);
+
+Auth::routes();
+
+Route::get('/registrar', 'RegistroController@create');
+Route::post('/registrar', 'RegistroController@store');
+Route::post('/', 'SiteController@entrar');
+
+Route::get('/sair', function () {
+  Auth::logout();
+  return redirect('/');
+});

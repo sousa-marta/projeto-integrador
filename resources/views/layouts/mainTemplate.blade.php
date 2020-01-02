@@ -57,9 +57,15 @@
             <a class="nav-link" href="/contact"><span class="fa">&#xf086;</span> Contato</a>
           </li>
           <li class="nav-item">
+          @auth
+          <a href="/sair" class="nav-link text-danger">Sair</a>
+          @endauth
+          
+          @guest
             <a id="register-link" class="nav-link" href="/users/create"><span id="register-link" class="fa">&#xf2b9;</span> Cadastre-se</a>
           </li>
-          <button type="button" class="btn btn-primary btn-login" data-toggle="modal" data-target="#login-modal" href="#">Login</button>
+            <button type="button" class="btn btn-primary btn-login" data-toggle="modal" data-target="#login-modal" href="#">Login</button>
+          @endguest
         </ul>
       </div>
     </nav>
@@ -76,23 +82,24 @@
           </button>
         </header>
         <main class="modal-body">
-          <form>
+          <form method="POST">
+            @csrf
             <div class="form-group">
-              <label for="userEmail">E-mail</label>
-              <input type="email" class="form-control" name="userEmail" id="userEmail" placeholder="Digite o e-mail cadastrado" required>
+              <label for="email">E-mail</label>
+              <input type="email" class="form-control" name="email" id="email" placeholder="Digite o e-mail cadastrado" required>
             </div>
             <div class="form-group">
-              <label for="userPass">Senha</label>
-              <input type="password" class="form-control" id="userPass" name="userPass" placeholder="Digite a senha cadastrada" required>
+              <label for="password">Senha</label>
+              <input type="password" class="form-control" id="password" name="password" placeholder="Digite a senha cadastrada" required>
             </div>
             <div class="form-group">
               <p class="text-center mt-2"><a href="/users/forgotten-password">Esqueceu sua senha?</a></p>
             </div>
-          </form>
-        </main>
-        <footer class="modal-footer modal-footer-bg-color">
-          <button type="submit" class="btn btn-primary col-lg-12">Enviar</button>
-        </footer>
+          </main>
+          <footer class="modal-footer modal-footer-bg-color">
+            <button type="submit" class="btn btn-primary col-lg-12">Enviar</button>
+          </footer>
+        </form>
       </dialog>
     </div>
   </div>

@@ -5,12 +5,9 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 //para buscar informações do número de cadastros na página geral de admin
-use App\Company;
-use App\Volunteer;
-use App\User;
-use App\Vacancy;
-use App\Course;
+use App\{Company,Course,User,Vacancy,Volunteer};
 // use App\Donation;
+use Illuminate\Support\Facades\Auth;
 
 class SiteController extends Controller
 {
@@ -52,4 +49,13 @@ class SiteController extends Controller
                          "vacancies" => $vacancies,
                          "courses" => $courses]);
   }
+
+  public function entrar(Request $request)
+    {
+        if(!Auth::attempt($request->only(['email','password']))) {
+            return redirect()->back()->withErrors('Usuário e/ou senha incorretos');
+        }
+
+        return redirect()->back();
+    }
 }

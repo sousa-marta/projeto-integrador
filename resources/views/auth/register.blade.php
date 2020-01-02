@@ -20,45 +20,32 @@ $countries = ["Afeganistão", "África do Sul", "Akrotiri", "Albânia", "Alemanh
 ?>
 
 <section class="d-flex justify-content-center align-items-center m-4">
-  <form action="" method="post" class="card p-4 col-11 col-sm-8 col-lg-6 contact-form-design">
+  <form method="POST" class="card p-4 col-11 col-sm-8 col-lg-6 contact-form-design">
+    @csrf
     <div class="form-group text-center">
       <h4>Estamos felizes por você querer fazer parte da nossa comunidade</h4>
       <p>Crie uma conta gratuitamente informando os dados abaixo.</p>
     </div>
     <div class="form-group">
-      <label for="userFullName">
+      <label for="name">
         <h5>Nome completo</h5>
       </label>
-      <input type="text" class="form-control" name="userFullName" id="userFullName" placeholder="Nome completo" required>
+      <input type="text" class="form-control" name="name" id="name" placeholder="Nome completo" required>
     </div>
     <div class="form-group">
-      <label for="userEmail">
+      <label for="email">
         <h5>E-mail</h5>
       </label>
-      <input type="email" class="form-control" name="userEmail" id="userEmail" placeholder="E-mail" required>
+      <input type="email" class="form-control" name="email" id="email" placeholder="E-mail" required>
     </div>
     <div class="form-group">
-      <label for="userPassword">
+      <label for="password">
         <h5>Senha</h5>
       </label>
-      <input type="password" class="form-control" name="userPassword" id="userPassword" placeholder="Senha" required>
+      <input type="password" class="form-control" name="password" id="password" placeholder="Senha" required>
     </div>
-    <label for="userCountry">
-      <h5>País de origem</h5>
-    </label>
-    <div class="form-group">
-      <select class="col-lg-12 form-control" name="userCountry" id="userCountry">
-        <option value="">Selecione seu país de origem</option>
-        <?php
-        foreach ($countries as $country) {
-          echo "<option value='$country'>$country</option>";
-        }
-        ?>
-      </select>
-    </div>
-    <!-- <div class="form-group"> -->
+    
     <button type="submit" class="btn btn-primary align-self-center mt-3">Criar conta</button>
-    <!-- </div> -->
     <p class="text-center mt-3">Ao criar minha conta, eu aceito os Termos de Uso e a Política de Privacidade da Oppy.</p>
   </form>
 </section>
