@@ -5,6 +5,7 @@ Página do Administrador
 @endsection
 
 @section('content')
+
 <!-- botões para adicionar empresa e voluntário -->
 <div class="container admin-start-margin py-3">
   <nav class="row d-flex justify-content-center">

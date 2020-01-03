@@ -40,8 +40,11 @@ Route::group(array('middleware' => 'auth'), function()
     Route::resource('vacancies', 'VacancyController', ['except' => ['index']]);
 });
 
+Route::get('/admins', function(){
+  return 'You are admin';
+})->middleware(['auth','auth.admin']);
 
 Route::get('/signout', function () {
   Auth::logout();
-  return redirect()->back();
+  return redirect('/');
 });

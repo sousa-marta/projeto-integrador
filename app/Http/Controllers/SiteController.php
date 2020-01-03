@@ -57,8 +57,7 @@ class SiteController extends Controller
     if (!Auth::attempt($request->only(['email', 'password']))) {
       return redirect()->back()->withErrors('Usuário e/ou senha incorretos');
     }
-    // $user = Auth::user();
-    // return redirect('/',compact('user',$user));
+  
     return redirect()->back();
   }
 }
