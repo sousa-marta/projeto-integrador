@@ -66,6 +66,9 @@
                 <a class="dropdown-item" href="/users/1">Ver perfil</a>
                 <a class="dropdown-item" href="/users/1/edit">Editar perfil</a>
                 <a class="dropdown-item" href="/signout">Sair</a>
+                @impersonate
+                <a class="dropdown-item" href="{{ route('admin.impersonate.destroy') }}">Stop Impersonating</a>
+                @endimpersonate
               </div>
             </div>
             @endauth

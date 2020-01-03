@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\{GeneralUser, Location, User};
+use App\{GeneralUser, Location, Role, User};
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\{Auth, Hash};
 
@@ -60,6 +60,10 @@ class GeneralUserController extends Controller
     $data = $request->except('_token');
     $data['password'] = Hash::make($data['password']);
     $user = User::create($data);
+
+    $role = Role::select('id')->where('name','user')->first();
+    $user->roles()->attach($role);
+    // return $user;
 
     Auth::login($user);
 
