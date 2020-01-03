@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Vacancy extends Model
 {
-  protected $fillable = ['name','phone','email','city','description','wage','status','category_id','company_id'];
+  protected $fillable = ['name', 'phone', 'email', 'city', 'description', 'wage', 'status', 'category_id', 'company_id'];
 
   public function category()
   {

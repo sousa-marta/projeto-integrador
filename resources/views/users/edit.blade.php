@@ -51,10 +51,10 @@ $countries = ["Afeganistão", "África do Sul", "Akrotiri", "Albânia", "Alemanh
     <div class="form-group">
       <select class="col-lg-12" name="userCountry" id="userCountry" required>
         <option value="" selected disabled>Selecione seu país de origem</option>
-          <?php
-            foreach ($countries as $country) {
-              echo "<option value='$country'>$country</option>";
-            }
+        <?php
+        foreach ($countries as $country) {
+          echo "<option value='$country'>$country</option>";
+        }
         ?>
       </select>
     </div>

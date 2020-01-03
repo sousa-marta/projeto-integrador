@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Course extends Model
 {
   //Utilizando fillable para poder inserir informações no db:
-  protected $fillable = ['name','description','duration','start','end','status','category_id','company_id'];
+  protected $fillable = ['name', 'description', 'duration', 'start', 'end', 'status', 'category_id', 'company_id'];
 
   public function category()
   {

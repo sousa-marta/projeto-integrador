@@ -79,7 +79,7 @@ Curso de {{ $course->name }}
 
       <!-- imagem do ofertante do treinamento -->
       <div class="col-12 col-lg-6 course-detail-provider">
-        <img src="/img/{{$course->company->logo}}" alt="Logo da empresa {{$course->company->name}} de treinamento" class="rounded pb-5 course-detail-logo-img">
+        <img src="/img/companies/{{$course->company->logo}}" alt="Logo da empresa {{$course->company->name}} de treinamento" class="rounded pb-5 course-detail-logo-img">
       </div>
     </div>
   </div>
@@ -116,24 +116,24 @@ Curso de {{ $course->name }}
         {{-- @foreach ($courses->take(3) as $courseOne) --}}
 
         @foreach ($courses as $courseOne)
-          @if ($courseOne->id != $course->id && $courseOne->category_id == $course->category_id)
-            <div class="col-12 col-md-8 col-lg-4 p-2">
-              <div class="course-detail-card">
-                <div class="container course-detail-card-title">
-                  <p>{{$courseOne->category->name}}</p>
-                  <h2>Curso de {{$courseOne->name}}</h2>
-                </div>
-                <div class="container d-flex flex-column">
-                  <img src="/img/{{$courseOne->company->logo}}" alt="Logo da empresa {{$courseOne->company->name}}" class="align-self-center course-detail-logo-img-alike">
-                  <div class="pb-2">
-                    <p><strong>Duração:</strong>{{$courseOne->duration}} meses</p>
-                    <p><strong>Vagas:</strong> 10</p>
-                    <p><strong>Início:</strong> {{$courseOne->start}}</p>
-                  </div>
-                </div>
+        @if ($courseOne->id != $course->id && $courseOne->category_id == $course->category_id)
+        <div class="col-12 col-md-8 col-lg-4 p-2">
+          <div class="course-detail-card">
+            <div class="container course-detail-card-title">
+              <p>{{$courseOne->category->name}}</p>
+              <h2>Curso de {{$courseOne->name}}</h2>
+            </div>
+            <div class="container d-flex flex-column">
+              <img src="/img/{{$courseOne->company->logo}}" alt="Logo da empresa {{$courseOne->company->name}}" class="align-self-center course-detail-logo-img-alike">
+              <div class="pb-2">
+                <p><strong>Duração:</strong>{{$courseOne->duration}} meses</p>
+                <p><strong>Vagas:</strong> 10</p>
+                <p><strong>Início:</strong> {{$courseOne->start}}</p>
               </div>
             </div>
-          @endif
+          </div>
+        </div>
+        @endif
         @endforeach
 
       </div>
