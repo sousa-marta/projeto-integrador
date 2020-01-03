@@ -29,13 +29,13 @@ Editar Doações
     <div class="form-group">
       <label for="donationStatus">Estado</label>
       <select class="col-lg-12" name="donationStatus" id="donationStatus" required>
-          <option value="" disabled>Estado</option>
-          <option value="Aguardando" <?php echo ($donation->status=="Aguardando")? "selected":"" ?>>Aguardando</option>
-          <option value="Recebido" <?php echo ($donation->status=="Recebido")? "selected":"" ?>>Recebido</option>
+        <option value="" disabled>Estado</option>
+        <option value="Aguardando" <?php echo ($donation->status == "Aguardando") ? "selected" : "" ?>>Aguardando</option>
+        <option value="Recebido" <?php echo ($donation->status == "Recebido") ? "selected" : "" ?>>Recebido</option>
       </select>
     </div>
     <button type="submit" class="btn btn-primary col-lg-12">Salvar</button>
-      
+
   </form>
 
 </section>

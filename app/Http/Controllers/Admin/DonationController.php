@@ -7,7 +7,7 @@ use App\Donation;
 use Illuminate\Http\Request;
 
 class DonationController extends Controller
-{  
+{
   /**
    * Display a listing of the resource.
    *

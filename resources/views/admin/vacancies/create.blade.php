@@ -13,18 +13,18 @@ Vagas
       <button type="button" class="btn btn-secondary ml-3 p-2" data-toggle="modal" data-target="#admin-add-opportunity-modal" href="#"><i class="fa fa-plus-circle fa-2x" aria-hidden="true"></i></button>
     </div>
     @if ($errors->any())
-      <div class="alert alert-danger">
-        <ul>
-          @foreach ($errors->all() as $error)
-            <li>{{ $error }}</li>
-          @endforeach
-        </ul>
-      </div>
+    <div class="alert alert-danger">
+      <ul>
+        @foreach ($errors->all() as $error)
+        <li>{{ $error }}</li>
+        @endforeach
+      </ul>
+    </div>
     @endif
     @if(!empty($message))
-      <div class="alert alert-success">
-        {{ $message }}
-      </div>
+    <div class="alert alert-success">
+      {{ $message }}
+    </div>
     @endif
     <table class="table">
       <thead>
@@ -121,7 +121,7 @@ Vagas
             <label for="opportunityDescription">Descrição</label>
             <textarea type="text" class="form-control" name="description" id="opportunityDescription" placeholder="Descrição" required></textarea>
           </div>
-        </main>
+      </main>
       <footer class="modal-footer modal-footer-bg-color justify-content-center">
         <button type="submit" class="btn btn-primary">Adicionar</button>
       </footer>

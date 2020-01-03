@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
-use App\{Course,Category,Company};
+use App\{Course, Category, Company};
 use Illuminate\Http\Request;
 
 class CourseController extends Controller
@@ -28,7 +28,7 @@ class CourseController extends Controller
     $courses = Course::all();
     $categories = Category::all();
     $companies = Company::all();
-    return view('admin.courses.create',compact('courses','categories','companies'));
+    return view('admin.courses.create', compact('courses', 'categories', 'companies'));
   }
 
   /**
@@ -44,19 +44,19 @@ class CourseController extends Controller
     // dd($request);
     Course::create([
       'name' => $request->courseName,
-      'description' => $request->courseDescription, 
-      'duration' => $request->courseDuration, 
-      'start' => $request->courseStart, 
-      'end' => $request->courseEnd, 
+      'description' => $request->courseDescription,
+      'duration' => $request->courseDuration,
+      'start' => $request->courseStart,
+      'end' => $request->courseEnd,
       'status' => $request->courseStatus,
-      'category_id' => $request->courseCategory, 
+      'category_id' => $request->courseCategory,
       'company_id' => $request->courseCompany
     ]);
 
     //Enviando mensagem de inserção com sucesso (aparece apenas a primeira vez):
     /* $request->session()->flash('message', "Curso inserido com sucesso");*/
 
-    return redirect('/admin/courses/create'); 
+    return redirect('/admin/courses/create');
   }
 
   /**
@@ -69,7 +69,7 @@ class CourseController extends Controller
   {
     //
   }
-  
+
 
   /**
    * Show the form for editing the specified resource.
@@ -82,7 +82,7 @@ class CourseController extends Controller
     $categories = Category::all();
     $companies = Company::all();
 
-    return view('admin.courses.edit',['course' => $course, 'categories' => $categories, 'companies'=> $companies]);
+    return view('admin.courses.edit', ['course' => $course, 'categories' => $categories, 'companies' => $companies]);
   }
 
   /**
@@ -95,12 +95,12 @@ class CourseController extends Controller
   public function update(Request $request, Course $course)
   {
     $course->name = $request->courseName;
-    $course->description = $request->courseDescription; 
-    $course->duration = $request->courseDuration; 
-    $course->start = $request->courseStart; 
-    $course->end = $request->courseEnd; 
+    $course->description = $request->courseDescription;
+    $course->duration = $request->courseDuration;
+    $course->start = $request->courseStart;
+    $course->end = $request->courseEnd;
     $course->status = $request->courseStatus;
-    $course->category_id = $request->courseCategory; 
+    $course->category_id = $request->courseCategory;
     $course->company_id = $request->courseCompany;
     $course->status = $request->courseStatus;
     $course->save();
@@ -113,18 +113,17 @@ class CourseController extends Controller
    * @param  \App\Course  $course
    * @return \Illuminate\Http\Response
    */
-  public function destroy($id){
+  public function destroy($id)
+  {
     // dd($id);
 
     $result = Course::destroy($id);
-    if($result){
-      return redirect('/admin/courses/create'); 
+    if ($result) {
+      return redirect('/admin/courses/create');
     }
-/*     $request->session()->flash(
+    /*     $request->session()->flash(
         'mensagem', 
         "Série excluida com sucesso:"
-    ); */    
-    
-
+    ); */
   }
 }

@@ -11,23 +11,23 @@ Doações
   <div class="table-responsive">
     <div class="d-flex justify-content-start align-items-center mb-1">
       <h2>DOAÇÕES</h2>
-      <button type="button"  onclick="setAddDonation()" class="btn btn-secondary ml-3 p-2" data-toggle="modal" data-target="#admin-add-donation-modal" href="#"><i class="fa fa-plus-circle fa-2x" aria-hidden="true"></i></button>
+      <button type="button" onclick="setAddDonation()" class="btn btn-secondary ml-3 p-2" data-toggle="modal" data-target="#admin-add-donation-modal" href="#"><i class="fa fa-plus-circle fa-2x" aria-hidden="true"></i></button>
     </div>
 
     <!-- mensagens de alerta e de alterações -->
     @if ($errors->any())
-      <div class="alert alert-danger">
-        <ul>
-          @foreach ($errors->all() as $error)
-            <li>{{ $error }}</li>
-          @endforeach
-        </ul>
-      </div>
+    <div class="alert alert-danger">
+      <ul>
+        @foreach ($errors->all() as $error)
+        <li>{{ $error }}</li>
+        @endforeach
+      </ul>
+    </div>
     @endif
     @if(!empty($message))
-      <div class="alert alert-success">
-        {{ $message }}
-      </div>
+    <div class="alert alert-success">
+      {{ $message }}
+    </div>
     @endif
 
     <table class="table">
@@ -42,24 +42,24 @@ Doações
       </thead>
       <tbody>
         @foreach ($donations as $donation)
-          <tr>
-            <th scope="row">{{ $donation->id }}</th>
-            <td>{{ $donation->name }}</td>
-            <td>R$ {{ $donation->amount }}</td>
-            <td>{{ $donation->status }}</td>
-            <td class="d-flex justify-content-start align-items-center">
-              <!-- botão editar -->
-              <a href="/admin/donations/{{ $donation->id }}" class="btn btn-info btn-sm mr-2">
-                <i class="fas fa-external-link-alt"></i>
-              </a>
-              <!-- botão excluir -->
-              <form action="/admin/donations/{{ $donation->id }}" method="POST" onsubmit="return confirm('Tem certeza de que deseja remover?')">
-                <input type="hidden" name="_method" value="DELETE">
-                <input type="hidden" name="_token" value="{{ csrf_token() }}">
-                <button class="btn btn-danger btn-sm"><i class='fas fa-trash-alt'></i></button>
-              </form>
-            </td>
-          </tr>
+        <tr>
+          <th scope="row">{{ $donation->id }}</th>
+          <td>{{ $donation->name }}</td>
+          <td>R$ {{ $donation->amount }}</td>
+          <td>{{ $donation->status }}</td>
+          <td class="d-flex justify-content-start align-items-center">
+            <!-- botão editar -->
+            <a href="/admin/donations/{{ $donation->id }}" class="btn btn-info btn-sm mr-2">
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+            <!-- botão excluir -->
+            <form action="/admin/donations/{{ $donation->id }}" method="POST" onsubmit="return confirm('Tem certeza de que deseja remover?')">
+              <input type="hidden" name="_method" value="DELETE">
+              <input type="hidden" name="_token" value="{{ csrf_token() }}">
+              <button class="btn btn-danger btn-sm"><i class='fas fa-trash-alt'></i></button>
+            </form>
+          </td>
+        </tr>
         @endforeach
       </tbody>
     </table>
@@ -104,7 +104,7 @@ Doações
           <div class="modal-footer modal-footer-bg-color">
             <button type="submit" class="btn btn-primary col-lg-12">Adicionar</button>
           </div>
-          
+
         </form>
 
       </main>

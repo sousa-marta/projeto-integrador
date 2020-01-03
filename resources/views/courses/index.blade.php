@@ -100,16 +100,16 @@ Cursos
             <img src="{{ $category->img }}" aria-hidden="true" alt="" class="course-img card-img-bottom">
             <ul>
               @foreach ($courses as $course)
-                  @if ($course->category_id == $category->id)
-                    <a href="/courses/{{$course->id}}">
-                      <li>{{ $course->name }}</li>
-                    </a>
-                  @endif
+              @if ($course->category_id == $category->id)
+              <a href="/courses/{{$course->id}}">
+                <li>{{ $course->name }}</li>
+              </a>
+              @endif
               @endforeach
             </ul>
           </div>
         </div>
-      </div>  
+      </div>
     </div>
     @endforeach
   </div>

@@ -3,7 +3,7 @@
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
-class AdminsTableSeeder extends Seeder
+class SupportsTableSeeder extends Seeder
 {
   /**
    * Run the database seeds.
@@ -12,8 +12,10 @@ class AdminsTableSeeder extends Seeder
    */
   public function run()
   {
-    DB::table('admins')->insert([
-      ['login'=>"oppy", 'password'=>password_hash('oppy', PASSWORD_DEFAULT)]
+    DB::table('supports')->insert([
+      ['type' => 'jurídico'],
+      ['type' => 'psicológico'],
+      ['type' => 'profissional'],
     ]);
   }
 }

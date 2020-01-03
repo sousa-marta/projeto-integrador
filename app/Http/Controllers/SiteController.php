@@ -72,7 +72,7 @@ class SiteController extends Controller
     $categories = Category::all();
     $companies = Company::all();
 
-    return view('courses.index',compact('courses','categories','companies'));
+    return view('courses.index', compact('courses', 'categories', 'companies'));
 
     // return view('courses.index', compact('courses',$courses));
   }
@@ -81,7 +81,7 @@ class SiteController extends Controller
   {
     $course = Course::find($id);
     $courses = Course::all();
-    return view('courses.show',compact('course','courses'));
+    return view('courses.show', compact('course', 'courses'));
   }
 
   public function logIn(Request $request)
@@ -90,10 +90,10 @@ class SiteController extends Controller
       return redirect()->back()->withErrors('Usuário e/ou senha incorretos');
     }
 
-    if(Auth::user()->email == 'admin@admin.com') {
+    if (Auth::user()->email == 'admin@admin.com') {
       return redirect('/admin');
     }
-  
+
     return redirect()->back();
   }
 }

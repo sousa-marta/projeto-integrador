@@ -5,7 +5,7 @@ namespace App\Http\Middleware;
 use Closure;
 use Illuminate\Support\Facades\Auth;
 
-class Impersonate
+class AccessAdmin
 {
   /**
    * Handle an incoming request.
@@ -16,10 +16,9 @@ class Impersonate
    */
   public function handle($request, Closure $next)
   {
-    if (session()->has('impersonate')) {
-      Auth::onceUsingId(session('impersonate'));
+    if (Auth::user()->hasAnyRole('admin')) {
+      return $next($request);
     }
-
-    return $next($request);
+    return redirect('/');
   }
 }

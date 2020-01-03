@@ -80,9 +80,9 @@ Vaga {{ $vacancy->name }}
             <label for="opportunityCategory">Categoria</label>
             <select class="col-lg-12 form-control" name="category" id="opportunityCategory" required>
               <option value="" disabled>Selecione a categoria</option>
-            @foreach ($categoriesList as $categoryItem)
+              @foreach ($categoriesList as $categoryItem)
               <option {{($category->id == $categoryItem->id)? "selected":""}} value='{{$categoryItem->id}}'>{{$categoryItem->name}}</option>
-            @endforeach
+              @endforeach
             </select>
           </div>
           <div class="form-group col-md-4">

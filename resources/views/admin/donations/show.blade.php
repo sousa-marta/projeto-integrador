@@ -9,18 +9,18 @@ Doação {{ $donation->name }}
 <section class="pt-5 row justify-content-center">
   <div class="my-5 mx-3 border col-md-4">
     @if ($errors->any())
-      <div class="alert alert-danger">
-        <ul>
-          @foreach ($errors->all() as $error)
-            <li>{{ $error }}</li>
-          @endforeach
-        </ul>
-      </div>
+    <div class="alert alert-danger">
+      <ul>
+        @foreach ($errors->all() as $error)
+        <li>{{ $error }}</li>
+        @endforeach
+      </ul>
+    </div>
     @endif
     @if(!empty($message))
-      <div class="alert alert-success">
-        {{ $message }}
-      </div>
+    <div class="alert alert-success">
+      {{ $message }}
+    </div>
     @endif
 
     <div class="row align-items-center mt-2">
@@ -74,15 +74,15 @@ Doação {{ $donation->name }}
           <div class="form-group">
             <label for="donationStatus">Estado</label>
             <select class="col-lg-12" name="donationStatus" id="donationStatus" required>
-                <option value="" disabled>Estado</option>
-                <option value="Aguardando" <?php echo ($donation->status=="Aguardando")? "selected":"" ?>>Aguardando</option>
-                <option value="Recebido" <?php echo ($donation->status=="Recebido")? "selected":"" ?>>Recebido</option>
+              <option value="" disabled>Estado</option>
+              <option value="Aguardando" <?php echo ($donation->status == "Aguardando") ? "selected" : "" ?>>Aguardando</option>
+              <option value="Recebido" <?php echo ($donation->status == "Recebido") ? "selected" : "" ?>>Recebido</option>
             </select>
           </div>
           <div class="modal-footer modal-footer-bg-color">
             <button type="submit" class="btn btn-primary col-lg-12">Salvar</button>
           </div>
-          
+
         </form>
 
       </main>

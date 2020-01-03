@@ -24,10 +24,14 @@ Route::get('vacancies',"SiteController@viewVacancies");
 Route::get('courses',"SiteController@viewCourses");
 Route::get('/courses/{id}',"SiteController@showCourse");
 
-// TODO: falta configurar
+// TODO: falta configurar as 3 rotas abaixo referente à senha
 Route::get('users/forgotten-password', 'GeneralUserController@indexForgotten');
 Route::get('users/change-password', 'GeneralUserController@createNewPassword');
 Route::post('users/change-password', 'GeneralUserController@updateNewPassword');
+
+Route::resource('users',"UserController");
+Route::get('/users/{user}/edit',"UserController@edit")->middleware(['auth']);
+Route::get('/users/{user}',"UserController@show")->middleware(['auth']);
 
 // Função de deslogar
 Route::get('/signout', function () {

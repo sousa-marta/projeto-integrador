@@ -15,15 +15,15 @@ Lista de Usuários
 
         <div class="card-body">
           <form action="{{ route('admin.users.update',['user'=>$user->id]) }}" method="post">
-          @csrf  
-          {{ method_field('PUT') }}
-          @foreach($roles as $role)
-          <div class="form-check">
-            <input type="checkbox" name="roles[]" value="{{$role->id}}" {{ $user->hasAnyRole($role->name)?'checked':'' }}>
-            <label>{{ $role->name }}</label>
-          </div>
-          @endforeach
-          <button type="submit" class="btn btn-success">Salvar</button>
+            @csrf
+            {{ method_field('PUT') }}
+            @foreach($roles as $role)
+            <div class="form-check">
+              <input type="checkbox" name="roles[]" value="{{$role->id}}" {{ $user->hasAnyRole($role->name)?'checked':'' }}>
+              <label>{{ $role->name }}</label>
+            </div>
+            @endforeach
+            <button type="submit" class="btn btn-success">Salvar</button>
           </form>
         </div>
       </div>

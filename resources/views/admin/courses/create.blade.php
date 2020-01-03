@@ -14,7 +14,7 @@ Cursos
 {{-- @if(!empty($message))
   <div class="alert alert-success">
     {{ $message }}
-  </div>
+</div>
 @endif --}}
 
 
@@ -43,30 +43,29 @@ Cursos
       </thead>
       <tbody>
         @foreach ($courses as $course)
-          <tr>
-            <th scope="row">{{ $course->id }}</th>
-            <td>{{ $course->name }}</td>
-            <td>{{ $course->description }}</td>
-            <td>{{ $course->duration }}</td>
-            <td>{{ $course->start }}</td>
-            <td>{{ $course->end }}</td>
-            <td>{{ $course->category->name }}</td>
-            <td>{{ $course->company->name }}</td>
-            <td>{{ $course->status }}</td>
-            <td class="d-flex justify-content-start align-items-center">
-              {{-- botão editar --}}
-              <a href="/admin/courses/{{ $course->id }}/edit" class="btn btn-info btn-sm mr-2">
-                <i class="fas fa-edit"></i>
-              </a>
-              {{-- botão excluir --}}
-              <form action="/admin/courses/{{$course->id}}" method="post" 
-                    onsubmit="return confirm('Tem certeza que quer remover {{ addslashes($course->name) }}?')">
-                @csrf
-                @method('DELETE')
-                <button type="submit" class="btn btn-danger btn-sm"><i class="far fa-trash-alt"></i></button>
-              </form>
-            </td>
-          </tr>
+        <tr>
+          <th scope="row">{{ $course->id }}</th>
+          <td>{{ $course->name }}</td>
+          <td>{{ $course->description }}</td>
+          <td>{{ $course->duration }}</td>
+          <td>{{ $course->start }}</td>
+          <td>{{ $course->end }}</td>
+          <td>{{ $course->category->name }}</td>
+          <td>{{ $course->company->name }}</td>
+          <td>{{ $course->status }}</td>
+          <td class="d-flex justify-content-start align-items-center">
+            {{-- botão editar --}}
+            <a href="/admin/courses/{{ $course->id }}/edit" class="btn btn-info btn-sm mr-2">
+              <i class="fas fa-edit"></i>
+            </a>
+            {{-- botão excluir --}}
+            <form action="/admin/courses/{{$course->id}}" method="post" onsubmit="return confirm('Tem certeza que quer remover {{ addslashes($course->name) }}?')">
+              @csrf
+              @method('DELETE')
+              <button type="submit" class="btn btn-danger btn-sm"><i class="far fa-trash-alt"></i></button>
+            </form>
+          </td>
+        </tr>
         @endforeach
       </tbody>
     </table>
@@ -119,7 +118,7 @@ Cursos
           </div>
           <div class="form-group col-md-6">
             <label for="courseCompany">Empresa</label>
-            <select class="col-lg-12 form-control" name="courseCompany" id="courseCompany" >
+            <select class="col-lg-12 form-control" name="courseCompany" id="courseCompany">
               <option selected disabled>Selecione a empresa</option>
               @foreach ($companies as $company)
               <option value="{{ $company->id }}"> {{ $company->name }} </option>;

@@ -67,8 +67,8 @@
                 <a class="dropdown-item" href="/admin">Painel Admin</a>
                 @endhasrole
                 @hasrole('user')
-                <a class="dropdown-item" href="/users/1">Ver perfil</a>
-                <a class="dropdown-item" href="/users/1/edit">Editar perfil</a>
+                <a class="dropdown-item" href="/users/{{Auth::user()->id}}">Ver perfil</a>
+                <a class="dropdown-item" href="/users/{{Auth::user()->id}}/edit">Editar perfil</a>
                 @impersonate
                 <a class="dropdown-item" href="{{ route('admin.impersonate.destroy') }}">Stop Impersonating</a>
                 @endimpersonate
