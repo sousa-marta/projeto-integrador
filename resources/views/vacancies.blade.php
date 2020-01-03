@@ -90,7 +90,7 @@ Oportunidades
   <div class="card my-5 item">
     <div class="row">
       <div class="d-flex align-items-center justify-content-center col-12 col-lg-4">
-        <img class="logo-size" src="/img/{{$vacancy->company_logo}}" alt="Logo da empresa {{ $vacancy->company_name }}">
+        <img class="logo-size" src="/img/companies/{{$vacancy->company_logo}}" alt="Logo da empresa {{ $vacancy->company_name }}">
       </div>
       <div class="col-lg-8 p-3 text-center">
         <h4> Vaga {{ $vacancy->name }}</h4>

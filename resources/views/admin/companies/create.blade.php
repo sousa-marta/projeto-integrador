@@ -8,11 +8,11 @@ Cadastrar Empresa
 
 <!-- Formulário -->
 <section class="d-flex justify-content-center align-items-center p-3 admin-start-margin">
-  <form action="/companies" method="post" class="card p-5 col-md-10" enctype="multipart/form-data">
+  <form action="/admin/companies" method="post" class="card p-5 col-md-10" enctype="multipart/form-data">
     @csrf
     <div class="row justify-content-between align-items-center">
       <h4>Cadastrar Nova Empresa</h4>
-      <a href="/companies" class="btn btn-primary p-1"><i class="fa">&#xf137;</i> Voltar</a>
+      <a href="/admin/companies" class="btn btn-primary p-1"><i class="fa">&#xf137;</i> Voltar</a>
     </div>
     <hr>
     <div class="row">

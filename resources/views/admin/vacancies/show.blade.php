@@ -22,7 +22,7 @@ Vaga {{ $vacancy->name }}
     </div>
     @endif
     <div class="row align-items-center mt-2">
-      <img src="/img/{{ $company->logo }}" alt="" class="img-especial mr-2">
+      <img src="/img/companies/{{ $company->logo }}" alt="" class="img-especial mr-2">
       <div>
         <h5>Vaga de {{ $vacancy->name }}</h5>
         <p><strong>Status da vaga:</strong> {{ $vacancy->status }}</p>
@@ -38,7 +38,7 @@ Vaga {{ $vacancy->name }}
       <p class="col-md-12"><strong>Descrição:</strong> {{ $vacancy->description }}</p>
     </div>
     <div class="row justify-content-center mb-3">
-      <button class="btn btn-dark mr-3" onclick="location.href='/vacancies/create'">Voltar</button>
+      <button class="btn btn-dark mr-3" onclick="location.href='/admin/vacancies/create'">Voltar</button>
       <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#vacancy-edit-modal" href="#">Editar</button>
     </div>
   </div>
@@ -56,7 +56,7 @@ Vaga {{ $vacancy->name }}
         </button>
       </header>
       <main class="modal-body">
-        <form action="/vacancies/{{ $vacancy->id }}" method="post" class="row">
+        <form action="/admin/vacancies/{{ $vacancy->id }}" method="post" class="row">
           @csrf
           @method('PUT')
           <div class="form-group col-md-6">

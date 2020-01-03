@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
+use App\Http\Controllers\Controller;
 use App\Http\Requests\VacanciesFormRequest;
-use App\{Category, Vacancy, Company};
-use Facade\FlareClient\Http\Response;
+use App\Vacancy;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -17,15 +17,7 @@ class VacancyController extends Controller
    */
   public function index()
   {
-    // Puxando apenas a coluna 'name' de categorias para usar no filtro
-    $categories = DB::table('categories')->select('name')->orderBy('name')->get();
-    $vacancies = DB::table('vacancies')
-      ->join('categories', 'categories.id', '=', 'vacancies.category_id')
-      ->join('companies', 'companies.id', '=', 'vacancies.company_id')
-      ->select('vacancies.*', 'companies.name as company_name', 'companies.logo as company_logo', 'categories.name as category_name')
-      ->orderBy('name')
-      ->get();
-    return view('vacancies.index', compact('vacancies', 'categories'));
+    //
   }
 
   /**
@@ -44,7 +36,7 @@ class VacancyController extends Controller
       ->orderBy('name')
       ->get();
     $message = $request->session()->get('message');
-    return view('vacancies.create', compact('vacancies', 'message', 'categories', 'companies'));
+    return view('admin.vacancies.create', compact('vacancies', 'message', 'categories', 'companies'));
   }
 
   /**
@@ -57,7 +49,7 @@ class VacancyController extends Controller
   {
     Vacancy::create(['name' => $request->name, 'phone' => $request->phone, 'email' => $request->email, 'description' => $request->description, 'wage' => $request->wage, 'status' => $request->status, 'city' => $request->city, 'category_id' => $request->category, 'company_id' => $request->company]);
     $request->session()->flash('message', "A vaga {$request->name} foi salva com sucesso");
-    return redirect('/vacancies/create');
+    return redirect('/admin/vacancies/create');
   }
 
   /**
@@ -73,7 +65,7 @@ class VacancyController extends Controller
     $company = $vacancy->company;
     $categoriesList = DB::table('categories')->select('name', 'id')->orderBy('name')->get();
     $companiesList = DB::table('companies')->select('name', 'id')->orderBy('name')->get();
-    return view('vacancies.show', compact('vacancy', 'category', 'company', 'categoriesList', 'companiesList'));
+    return view('admin.vacancies.show', compact('vacancy', 'category', 'company', 'categoriesList', 'companiesList'));
   }
 
   /**
@@ -107,7 +99,7 @@ class VacancyController extends Controller
     $vacancy->company_id = $request->company;
     $vacancy->save();
     $request->session()->flash('message', 'Vaga atualizada!');
-    return redirect()->route('vacancies.show', [$vacancy]);
+    return redirect()->route('admin.vacancies.show', [$vacancy]);
   }
 
   /**

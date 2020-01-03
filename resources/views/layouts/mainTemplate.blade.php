@@ -63,12 +63,17 @@
                 Olá, <strong>{{Auth::user()->name}}</strong>!
               </button>
               <div class="dropdown-menu" aria-labelledby="dropdownUserMenu">
+                @hasrole('admin')
+                <a class="dropdown-item" href="/admin">Painel Admin</a>
+                @endhasrole
+                @hasrole('user')
                 <a class="dropdown-item" href="/users/1">Ver perfil</a>
                 <a class="dropdown-item" href="/users/1/edit">Editar perfil</a>
-                <a class="dropdown-item" href="/signout">Sair</a>
                 @impersonate
                 <a class="dropdown-item" href="{{ route('admin.impersonate.destroy') }}">Stop Impersonating</a>
                 @endimpersonate
+                @endhasrole
+                <a class="dropdown-item" href="/signout">Sair</a>
               </div>
             </div>
             @endauth

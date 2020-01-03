@@ -49,11 +49,11 @@ Doações
             <td>{{ $donation->status }}</td>
             <td class="d-flex justify-content-start align-items-center">
               <!-- botão editar -->
-              <a href="/donations/{{ $donation->id }}" class="btn btn-info btn-sm mr-2">
+              <a href="/admin/donations/{{ $donation->id }}" class="btn btn-info btn-sm mr-2">
                 <i class="fas fa-external-link-alt"></i>
               </a>
               <!-- botão excluir -->
-              <form action="/donations/{{ $donation->id }}" method="POST" onsubmit="return confirm('Tem certeza de que deseja remover?')">
+              <form action="/admin/donations/{{ $donation->id }}" method="POST" onsubmit="return confirm('Tem certeza de que deseja remover?')">
                 <input type="hidden" name="_method" value="DELETE">
                 <input type="hidden" name="_token" value="{{ csrf_token() }}">
                 <button class="btn btn-danger btn-sm"><i class='fas fa-trash-alt'></i></button>
@@ -78,7 +78,7 @@ Doações
       </header>
       <main class="modal-body">
 
-        <form action="/donations" method="post">
+        <form action="/admin/donations" method="post">
           {{ csrf_field() }}
           <div class="form-group">
             <label for="donationName">Nome</label>

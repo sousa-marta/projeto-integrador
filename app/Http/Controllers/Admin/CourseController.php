@@ -1,10 +1,9 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
-use App\Course;
-use App\Category;
-use App\Company;
+use App\Http\Controllers\Controller;
+use App\{Course,Category,Company};
 use Illuminate\Http\Request;
 
 class CourseController extends Controller
@@ -16,13 +15,7 @@ class CourseController extends Controller
    */
   public function index()
   {
-    $courses = Course::all();
-    $categories = Category::all();
-    $companies = Company::all();
-
-    return view('courses.index',compact('courses','categories','companies'));
-
-    // return view('courses.index', compact('courses',$courses));
+    //
   }
 
   /**
@@ -35,7 +28,7 @@ class CourseController extends Controller
     $courses = Course::all();
     $categories = Category::all();
     $companies = Company::all();
-    return view('courses.create',compact('courses','categories','companies'));
+    return view('admin.courses.create',compact('courses','categories','companies'));
   }
 
   /**
@@ -63,7 +56,7 @@ class CourseController extends Controller
     //Enviando mensagem de inserção com sucesso (aparece apenas a primeira vez):
     /* $request->session()->flash('message', "Curso inserido com sucesso");*/
 
-    return redirect('/courses/create'); 
+    return redirect('/admin/courses/create'); 
   }
 
   /**
@@ -74,9 +67,7 @@ class CourseController extends Controller
    */
   public function show(Course $course)
   {
-    $courses = Course::all();
-
-    return view('courses.show',compact('course',$course,'courses'));
+    //
   }
   
 
@@ -91,7 +82,7 @@ class CourseController extends Controller
     $categories = Category::all();
     $companies = Company::all();
 
-    return view('courses.edit',['course' => $course, 'categories' => $categories, 'companies'=> $companies]);
+    return view('admin.courses.edit',['course' => $course, 'categories' => $categories, 'companies'=> $companies]);
   }
 
   /**
@@ -113,7 +104,7 @@ class CourseController extends Controller
     $course->company_id = $request->courseCompany;
     $course->status = $request->courseStatus;
     $course->save();
-    return redirect('/courses/create');
+    return redirect('/admin/courses/create');
   }
 
   /**
@@ -127,7 +118,7 @@ class CourseController extends Controller
 
     $result = Course::destroy($id);
     if($result){
-      return redirect('/courses/create'); 
+      return redirect('/admin/courses/create'); 
     }
 /*     $request->session()->flash(
         'mensagem', 

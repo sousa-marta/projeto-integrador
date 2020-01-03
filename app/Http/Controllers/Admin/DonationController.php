@@ -1,17 +1,13 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
+use App\Http\Controllers\Controller;
 use App\Donation;
 use Illuminate\Http\Request;
 
 class DonationController extends Controller
-{
-  public function __construct()
-  {
-    $this->middleware('auth');
-  }
-  
+{  
   /**
    * Display a listing of the resource.
    *
@@ -31,7 +27,7 @@ class DonationController extends Controller
   {
     $donations = Donation::all();
     $message = $request->session()->get('message');
-    return view('donations.create', [
+    return view('admin.donations.create', [
       "donations" => $donations,
       "message" => $message
     ]);
@@ -59,7 +55,7 @@ class DonationController extends Controller
       'status' => $request->donationStatus
     ]);
     $request->session()->flash('message', "A doação foi salva com sucesso");
-    return redirect('/donations/create');
+    return redirect('/admin/donations/create');
   }
 
   /**
@@ -70,7 +66,7 @@ class DonationController extends Controller
    */
   public function show(Donation $donation)
   {
-    return view('donations.show', ['donation' => $donation]);
+    return view('admin.donations.show', ['donation' => $donation]);
   }
 
   /**
@@ -106,7 +102,7 @@ class DonationController extends Controller
     $donation->status = $request->donationStatus;
     $donation->save();
     $request->session()->flash('message', 'Doação atualizada!');
-    return redirect()->route('donations.show', [$donation]);
+    return redirect()->route('admin.donations.show', [$donation]);
   }
 
   /**
@@ -119,6 +115,6 @@ class DonationController extends Controller
   {
     $donation->delete();
     $request->session()->flash('message', 'Doação deletada!');
-    return redirect('/donations/create');
+    return redirect('/admin/donations/create');
   }
 }

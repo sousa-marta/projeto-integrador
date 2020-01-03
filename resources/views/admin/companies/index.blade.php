@@ -8,7 +8,7 @@ Empresas Cadastradas
 <div class="pt-3">
   <section class="pages-title-bg d-flex-column justify-content-center align-items-center p-3 mt-5">
     <h1>Empresas Cadastradas</h1>
-    <a href="/companies/create" class="btn btn-secondary col-lg-2"><i class="fa">&#xf055;</i> Cadastrar</a>
+    <a href="/admin/companies/create" class="btn btn-secondary col-lg-2"><i class="fa">&#xf055;</i> Cadastrar</a>
   </section>
 </div>
 @endsection
@@ -81,7 +81,7 @@ Empresas Cadastradas
           </div>
         </div>
         <div class="col-lg-12 p-3">
-          <h6 class="card-text"><strong>Descrição:</strong> </h6>
+          <h6 class="card-text"><strong>Descrição:</strong> {{$company->description}}</h6>
           <h6 class="card-text"><strong>Endereço:</strong> {{$company->address}}, {{$company->address_number}} / {{$company->complement}}</h6>
           <div class="row d-flex justify-content-between">
             <h6 class="card-text"><strong>CEP:</strong> {{$company->zip}} </h6>
@@ -97,11 +97,11 @@ Empresas Cadastradas
           <hr>
           <div class="d-flex justify-content-between">
             <div>
-              <a href="/companies/{{$company->id}}" class="btn btn-primary nowrap m-1">Ver perfil</a>
+              <a href="/admin/companies/{{$company->id}}" class="btn btn-primary nowrap m-1">Ver perfil</a>
             </div>
             <div class="d-flex align-baseline">
-              <a href="/companies/{{$company->id}}/edit" class="btn btn-primary nowrap m-1">Editar</a>
-              <form class="d-flex align-baseline" action="/companies/{{$company->id}}" method="POST" onsubmit="return confirm('Tem certeza de que deseja remover?')">
+              <a href="/admin/companies/{{$company->id}}/edit" class="btn btn-primary nowrap m-1">Editar</a>
+              <form class="d-flex align-baseline" action="/admin/companies/{{$company->id}}" method="POST" onsubmit="return confirm('Tem certeza de que deseja remover?')">
                 <input type="hidden" name="_method" value="DELETE">
                 <input type="hidden" name="_token" value="{{csrf_token() }}">
                 <input type="submit" class="btn btn-danger nowrap m-1" value="Deletar">

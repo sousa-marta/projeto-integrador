@@ -1,18 +1,15 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
+
+use App\Http\Controllers\Controller;
 use App\{Volunteer, Location};
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
 class VolunteerController extends Controller
 {
-  public function __construct()
-  {
-    $this->middleware('auth');
-  }
-
   /**
    * Display a listing of the resource.
    *
@@ -26,7 +23,7 @@ class VolunteerController extends Controller
       ->orderBy('name')
       ->get();
     $message = $request->session()->get('message');
-    return view('volunteers.index', compact('volunteers', 'message'));
+    return view('admin.volunteers.index', compact('volunteers', 'message'));
   }
 
   /**
@@ -37,7 +34,7 @@ class VolunteerController extends Controller
   public function create(Request $request)
   {
     $locations = Location::all();
-    return view('volunteers.create', ["locations" => $locations]);
+    return view('admin.volunteers.create', ["locations" => $locations]);
   }
 
   /**
@@ -66,7 +63,7 @@ class VolunteerController extends Controller
       'state' => $request->volunteerState
     ]);
 
-    return redirect('/volunteers');
+    return redirect('/admin/volunteers');
   }
 
   /**
@@ -79,7 +76,7 @@ class VolunteerController extends Controller
   {
     $volunteer = Volunteer::find($id);
     $location = $volunteer->location;
-    return view('volunteers.show', compact('volunteer', 'location'));
+    return view('admin.volunteers.show', compact('volunteer', 'location'));
   }
 
   /**
@@ -91,7 +88,7 @@ class VolunteerController extends Controller
   public function edit(Volunteer $volunteer)
   {
     $locations = Location::all();
-    return view('volunteers.edit', ['volunteer' => $volunteer, 'locations' => $locations]);
+    return view('admin.volunteers.edit', ['volunteer' => $volunteer, 'locations' => $locations]);
   }
 
   /**
@@ -124,7 +121,7 @@ class VolunteerController extends Controller
 
     $volunteer->save();
 
-    return redirect('volunteers');
+    return redirect('/admin/volunteers');
   }
 
   /**
@@ -137,6 +134,6 @@ class VolunteerController extends Controller
   {
     $volunteer->delete();
     $request->session()->flash('message', 'Voluntária(o) deletada(o)!');
-    return redirect('volunteers');
+    return redirect()->back();
   }
 }

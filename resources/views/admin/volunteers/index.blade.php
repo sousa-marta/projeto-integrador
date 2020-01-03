@@ -8,7 +8,7 @@ Voluntárias(os) Cadastradas(os)
 <div class="pt-3">
   <section class="pages-title-bg d-flex-column justify-content-center align-items-center p-3 mt-5">
     <h1>Voluntárias(os) Cadastradas(os)</h1>
-    <a href="/volunteers/create" class="btn btn-secondary col-lg-2"><i class="fa">&#xf055;</i> Cadastrar</a>
+    <a href="/admin/volunteers/create" class="btn btn-secondary col-lg-2"><i class="fa">&#xf055;</i> Cadastrar</a>
   </section>
 </div>
 @endsection
@@ -97,11 +97,11 @@ Voluntárias(os) Cadastradas(os)
           <hr>
           <div class="d-flex justify-content-between">
             <div>
-              <a href="/volunteers/{{$volunteer->id}}" class="btn btn-primary nowrap m-1">Ver perfil</a>
+              <a href="/admin/volunteers/{{$volunteer->id}}" class="btn btn-primary nowrap m-1">Ver perfil</a>
             </div>
             <div class="d-flex align-baseline">
-              <a href="/volunteers/{{$volunteer->id}}/edit" class="btn btn-primary nowrap m-1">Editar</a>
-              <form class="d-flex align-baseline" action="/volunteers/{{$volunteer->id}}" method="POST" onsubmit="return confirm('Tem certeza de que deseja remover?')">
+              <a href="/admin/volunteers/{{$volunteer->id}}/edit" class="btn btn-primary nowrap m-1">Editar</a>
+              <form class="d-flex align-baseline" action="/admin/volunteers/{{$volunteer->id}}" method="POST" onsubmit="return confirm('Tem certeza de que deseja remover?')">
                 <input type="hidden" name="_method" value="DELETE">
                 <input type="hidden" name="_token" value="{{csrf_token() }}">
                 <input type="submit" class="btn btn-danger nowrap m-1" value="Deletar">

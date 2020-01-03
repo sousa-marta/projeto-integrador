@@ -48,10 +48,10 @@ Vagas
           <td class="d-none d-sm-table-cell">R$ {{ $vacancy->wage }}</td>
           <td class="d-none d-sm-table-cell">{{ $vacancy->status }}</td>
           <td class="row justify-content-center align-items-center">
-            <a href="/vacancies/{{ $vacancy->id }}" class="btn btn-info btn-sm mr-2">
+            <a href="/admin/vacancies/{{ $vacancy->id }}" class="btn btn-info btn-sm mr-2">
               <i class="fas fa-external-link-alt"></i>
             </a>
-            <form action="/vacancies/{{ $vacancy->id }}" method="post" onsubmit="return confirm('Tem certeza de que deseja remover?')">
+            <form action="/admin/vacancies/{{ $vacancy->id }}" method="post" onsubmit="return confirm('Tem certeza de que deseja remover?')">
               @csrf
               @method('DELETE')
               <button class="btn btn-danger btn-sm"><i class='fas fa-trash-alt'></i></button>
@@ -75,7 +75,7 @@ Vagas
         </button>
       </header>
       <main class="modal-body">
-        <form action="/vacancies" method="post" class="row">
+        <form action="/admin/vacancies" method="post" class="row">
           @csrf
           <div class="form-group col-md-6">
             <label for="opportunityName">Nome da vaga</label>

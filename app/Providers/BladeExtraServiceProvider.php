@@ -26,6 +26,15 @@ class BladeExtraServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        Blade::if('hasrole',function ($expression) {
+            if(Auth::user()) {
+                if(Auth::user()->hasAnyRole($expression)) {
+                    return true;
+                }
+                return false;
+            }
+        });
+
         Blade::if('impersonate',function(){
             if(session()->get('impersonate')) {
                 return true;

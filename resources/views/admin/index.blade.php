@@ -9,17 +9,18 @@ Página do Administrador
 <!-- botões para adicionar empresa e voluntário -->
 <div class="container admin-start-margin py-3">
   <nav class="row d-flex justify-content-center">
-    <a class="col-md-5 col-lg-3 btn btn-primary py-3 mx-2 my-2" href="/companies"><i class="fa fa-building" aria-hidden="true"></i> Empresa</a>
-    <a class="col-md-5 col-lg-3 btn btn-primary py-3 mx-2 my-2" href="/volunteers"><i class="fa fa-user" aria-hidden="true"></i> Voluntário</a>
+    <a class="col-md-5 col-lg-3 btn btn-primary py-3 mx-2 my-2" href="/admin/companies"><i class="fa fa-building" aria-hidden="true"></i> Empresa</a>
+    <a class="col-md-5 col-lg-3 btn btn-primary py-3 mx-2 my-2" href="/admin/users"><i class="fa fa-user" aria-hidden="true"></i> Usuários</a>
+    <a class="col-md-5 col-lg-3 btn btn-primary py-3 mx-2 my-2" href="/admin/volunteers"><i class="fa fa-user" aria-hidden="true"></i> Voluntário</a>
   </nav>
 </div>
 
 <!-- menu para cursos, oportunidades e doações -->
 <section class="admin-menu-section d-flex justify-content-center">
   <nav class="container row d-flex justify-content-center">
-    <a class="col-md-5 col-lg-3 btn btn-secondary py-3 mx-2 my-3" href="/courses/create"><span class="fa">&#xf19d;</span> Cursos</a>
-    <a class="col-md-5 col-lg-3 btn btn-secondary py-3 mx-2 my-3" href="/vacancies/create"><span class="fa">&#xf0b1;</span> Oportunidades</a>
-    <a class="col-md-5 col-lg-3 btn btn-secondary py-3 mx-2 my-3" href="/donations/create"><span class="fa">&#xf004;</span> Doações</a>
+    <a class="col-md-5 col-lg-3 btn btn-secondary py-3 mx-2 my-3" href="/admin/courses/create"><span class="fa">&#xf19d;</span> Cursos</a>
+    <a class="col-md-5 col-lg-3 btn btn-secondary py-3 mx-2 my-3" href="/admin/vacancies/create"><span class="fa">&#xf0b1;</span> Oportunidades</a>
+    <a class="col-md-5 col-lg-3 btn btn-secondary py-3 mx-2 my-3" href="/admin/donations/create"><span class="fa">&#xf004;</span> Doações</a>
   </nav>
 </section>
 

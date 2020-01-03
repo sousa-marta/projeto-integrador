@@ -1,18 +1,14 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
+use App\Http\Controllers\Controller;
 use App\{Company, Location};
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
 class CompanyController extends Controller
 {
-  public function __construct()
-  {
-    $this->middleware('auth');
-  }
-
   /**
    * Display a listing of the resource.
    *
@@ -26,7 +22,7 @@ class CompanyController extends Controller
       ->orderBy('name')
       ->get();
     $message = $request->session()->get('message');
-    return view('companies.index', compact('companies', 'message'));
+    return view('admin.companies.index', compact('companies', 'message'));
   }
 
   /**
@@ -37,7 +33,7 @@ class CompanyController extends Controller
   public function create(Request $request)
   {
     $locations = Location::all(); //busca todos os países na base de dados locations
-    return view('companies.create', ["locations" => $locations]);
+    return view('admin.companies.create', ["locations" => $locations]);
   }
 
   /**
@@ -67,7 +63,7 @@ class CompanyController extends Controller
       'state' => $request->companyState
     ]);
 
-    return redirect('/companies');
+    return redirect('/admin/companies');
   }
 
   /**
@@ -80,7 +76,7 @@ class CompanyController extends Controller
   {
     $company = Company::find($id);
     $location = $company->location;
-    return view('companies.show', compact('company', 'location'));
+    return view('admin.companies.show', compact('company', 'location'));
   }
 
   /**
@@ -92,7 +88,7 @@ class CompanyController extends Controller
   public function edit(Company $company)
   {
     $locations = Location::all();
-    return view('companies.edit', ['company' => $company, 'locations' => $locations]);
+    return view('admin.companies.edit', ['company' => $company, 'locations' => $locations]);
   }
 
   /**
@@ -126,7 +122,7 @@ class CompanyController extends Controller
 
     $company->save();
 
-    return redirect('companies');
+    return redirect('/admin/companies');
   }
 
   /**

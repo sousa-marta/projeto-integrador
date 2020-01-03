@@ -72,7 +72,7 @@ Cursos
         <input type="text" class="form-control" id="busca" placeholder="Procurar...">
       </div>
       <!-- TODO: arrumar href de buscar após deixar site dinâmico com banco de dados -->
-      <button type="button" class="btn btn-secondary col-lg-12" onclick="location.href='/courses/id'"><i class="fa fa-search"></i> Buscar</button>
+      <button type="button" class="btn btn-secondary col-lg-12" onclick="location.href='/courses/1'"><i class="fa fa-search"></i> Buscar</button>
     </div>
   </div>
 </aside>

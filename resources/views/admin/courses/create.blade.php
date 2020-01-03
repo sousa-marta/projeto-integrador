@@ -55,11 +55,11 @@ Cursos
             <td>{{ $course->status }}</td>
             <td class="d-flex justify-content-start align-items-center">
               {{-- botão editar --}}
-              <a href="/courses/{{ $course->id }}/edit" class="btn btn-info btn-sm mr-2">
+              <a href="/admin/courses/{{ $course->id }}/edit" class="btn btn-info btn-sm mr-2">
                 <i class="fas fa-edit"></i>
               </a>
               {{-- botão excluir --}}
-              <form action="/courses/{{$course->id}}" method="post" 
+              <form action="/admin/courses/{{$course->id}}" method="post" 
                     onsubmit="return confirm('Tem certeza que quer remover {{ addslashes($course->name) }}?')">
                 @csrf
                 @method('DELETE')
@@ -85,7 +85,7 @@ Cursos
       </header>
       <main class="modal-body">
 
-        <form action="/courses" method="post" class="row">
+        <form action="/admin/courses" method="post" class="row">
           @csrf
           <div class="form-group col-md-12">
             <label for="courseName">Nome</label>

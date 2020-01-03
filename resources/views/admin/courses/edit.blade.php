@@ -10,7 +10,7 @@
   
   <section class="d-flex justify-content-center align-items-center p-4 my-5">
   
-    <form class="bg-light py-2 px-5" action="{{url('courses', [$course->id])}}" method="post">
+    <form class="bg-light py-2 px-5" action="{{url('/admin/courses', [$course->id])}}" method="post">
       @csrf
       @method('PUT')
 

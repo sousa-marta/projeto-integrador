@@ -8,7 +8,7 @@ Editar Doações
 
 <section class="d-flex justify-content-center align-items-center p-4 my-5">
 
-  <form class="bg-light py-2 px-5" action="{{url('donations', [$donation->id])}}" method="post">
+  <form class="bg-light py-2 px-5" action="{{url('/admin/donations', [$donation->id])}}" method="post">
     {{ csrf_field() }}
     <input type="hidden" name="_method" value="PUT">
 

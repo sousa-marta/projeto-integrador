@@ -10,7 +10,7 @@
         </button>
       </header>
       <main class="modal-body">
-        <form action="/vacancies" method="post" class="row">
+        <form action="/admin/vacancies" method="post" class="row">
           @csrf
           <div class="form-group col-md-6">
             <label for="opportunityName">Nome da vaga</label>

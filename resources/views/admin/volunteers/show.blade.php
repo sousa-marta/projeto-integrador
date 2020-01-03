@@ -15,7 +15,7 @@ Voluntárias(os)
   <section>
     <div class="container">
       <div class="d-flex justify-content-end mt-3">
-        <a href="/volunteers" class="btn btn-primary col-lg-4 p-1"><i class="fa">&#xf137;</i> Voltar para voluntárias(os)</a>
+        <a href="/admin/volunteers" class="btn btn-primary col-lg-4 p-1"><i class="fa">&#xf137;</i> Voltar para voluntárias(os)</a>
       </div>
       <div class="card m-5 bg-light">
         <div class="row d-flex align-items-center">

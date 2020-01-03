@@ -15,7 +15,7 @@ Empresas
   <section>
     <div class="container">
       <div class="d-flex justify-content-end mt-3">
-        <a href="/companies" class="btn btn-primary col-lg-4 p-1"><i class="fa">&#xf137;</i> Voltar para empresas</a>
+        <a href="/admin/companies" class="btn btn-primary col-lg-4 p-1"><i class="fa">&#xf137;</i> Voltar para empresas</a>
       </div>
       <div class="card m-5 bg-light">
         <div class="row d-flex align-items-center">
@@ -40,8 +40,8 @@ Empresas
             <hr>
             <div class="d-flex justify-content-around">
               <div>
-                <a href="/vacancies" class="btn btn-primary nowrap m-1">Ver vagas</a>
-                <a href="/courses" class="btn btn-secondary nowrap m-1">Ver cursos</a>
+                <a href="/admin/vacancies" class="btn btn-primary nowrap m-1">Ver vagas</a>
+                <a href="/admin/courses" class="btn btn-secondary nowrap m-1">Ver cursos</a>
               </div>
             </div>
           </div>

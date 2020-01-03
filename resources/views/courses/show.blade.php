@@ -79,7 +79,7 @@ Curso de {{ $course->name }}
 
       <!-- imagem do ofertante do treinamento -->
       <div class="col-12 col-lg-6 course-detail-provider">
-        <img src="/img/{{$course->company->logo}}" alt="Logo da empresa {{$course->company->name}} de treinamento" class="rounded pb-5 course-detail-logo-img">
+        <img src="/img/companies/{{$course->company->logo}}" alt="Logo da empresa {{$course->company->name}} de treinamento" class="rounded pb-5 course-detail-logo-img">
       </div>
     </div>
   </div>

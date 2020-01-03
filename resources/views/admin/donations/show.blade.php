@@ -35,7 +35,7 @@ Doação {{ $donation->name }}
       <p><strong>Estado:</strong> {{ $donation->status }}</p>
     </div>
     <div class="row justify-content-center mb-3">
-      <button class="btn btn-dark mr-3" onclick="location.href='/donations/create'">Voltar</button>
+      <button class="btn btn-dark mr-3" onclick="location.href='/admin/donations/create'">Voltar</button>
       <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#donation-edit-modal" href="#">Editar</button>
     </div>
   </div>
@@ -53,7 +53,7 @@ Doação {{ $donation->name }}
       </header>
       <main class="modal-body">
 
-        <form action="{{url('donations', [$donation->id])}}" method="post">
+        <form action="{{url('/admin/donations', [$donation->id])}}" method="post">
           {{ csrf_field() }}
           <input type="hidden" name="_method" value="PUT">
 
