@@ -83,17 +83,4 @@ class SiteController extends Controller
     $courses = Course::all();
     return view('courses.show', compact('course', 'courses'));
   }
-
-  public function logIn(Request $request)
-  {
-    if (!Auth::attempt($request->only(['email', 'password']))) {
-      return redirect()->back()->withErrors('Usuário e/ou senha incorretos');
-    }
-
-    if (Auth::user()->email == 'admin@admin.com') {
-      return redirect('/admin');
-    }
-
-    return redirect()->back();
-  }
 }

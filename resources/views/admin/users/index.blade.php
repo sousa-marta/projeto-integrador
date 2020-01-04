@@ -4,54 +4,59 @@
 Lista de Usuários
 @endsection
 
-@include('partials.alerts')
 @section('content')
-<!-- botões para adicionar empresa e voluntário -->
-<div class="container admin-start-margin py-3">
-  <div class="row justify-content-center">
-    <div class="col-md-12">
-      <div class="card">
-        <div class="card-header">Lista de Usuários</div>
-
-        <div class="card-body">
-          <table class="table">
-            <thead>
-              <tr>
-                <th scope="col">Name</th>
-                <th scope="col">Email</th>
-                <th scope="col">Roles</th>
-                <th scope="col">Actions</th>
-              </tr>
-            </thead>
-            <tbody>
-              @foreach($users as $user)
-              <tr>
-                <td>{{$user->name}}</td>
-                <td>{{$user->email}}</td>
-                <td>{{ implode(', ', $user->roles()->get()->pluck('name')->toArray()) }}</td>
-                <td>
-                  <a href="{{route('admin.users.edit',$user->id)}}" class="float-left mr-2">
-                    <button type="button" class="btn btn-primary">Editar</button>
-                  </a>
-                  <a href="{{route('admin.impersonate',$user->id)}}" class="float-left mr-2">
-                    <button type="button" class="btn btn-secondary">Impersonate</button>
-                  </a>
-                  <form action="{{ route('admin.users.destroy',$user->id) }}" method="post" class="float-left">
-                    @csrf
-                    {{ method_field('DELETE') }}
-                    <button type="submit" class="btn btn-danger">Deletar</button>
-                  </form>
-                </td>
-              </tr>
-              @endforeach
-            </tbody>
-          </table>
-          {{$users->links()}}
-        </div>
-      </div>
+<section class="admin-tables-section mt-5 pt-5">
+  <div class="table-responsive">
+    <div class="d-flex justify-content-start align-items-center mb-1">
+      <h2>Lista de Usuários</h2>
     </div>
+    @if ($errors->any())
+    <div class="alert alert-danger">
+      <ul>
+        @foreach ($errors->all() as $error)
+        <li>{{ $error }}</li>
+        @endforeach
+      </ul>
+    </div>
+    @endif
+    @if(!empty($message))
+    <div class="alert alert-success">
+      {{ $message }}
+    </div>
+    @endif
+    <table class="table">
+      <thead>
+        <tr class="text-center">
+          <th scope="col">#</th>
+          <th scope="col">Nome</th>
+          <th scope="col" class="d-none d-sm-table-cell">E-mail</th>
+          <th scope="col" class="d-none d-sm-table-cell">Função</th>
+          <th scope="col" class="d-none d-sm-table-cell">Status</th>
+          <th scope="col" class="d-none d-sm-table-cell">Ações</th>
+        </tr>
+      </thead>
+      <tbody>
+        @foreach ($users as $user)
+        <tr class="text-center">
+          <th scope="row">{{ $user->id }}</th>
+          <td>{{ $user->name }}</td>
+          <td class="d-none d-sm-table-cell">{{ $user->email }}</td>
+          <td class="d-none d-sm-table-cell">{{ implode(', ', $user->roles()->get()->pluck('name')->toArray()) }}</td>
+          <td class="d-none d-sm-table-cell">N/A</td>
+          <td class="row justify-content-center align-items-center">
+            <a href="{{route('admin.users.edit',$user->id)}}" class="btn btn-primary btn-sm float-left mr-2">Editar</a>
+            <a href="{{route('admin.impersonate',$user->id)}}" class="btn btn-secondary btn-sm float-left mr-2">Personificar</a>
+            <form action="{{ route('admin.users.destroy',$user->id) }}" method="post" class="float-left" onsubmit="return confirm('Tem certeza de que deseja remover?')">
+              @csrf
+              @method('DELETE')
+              <button type="submit" class="btn btn-danger btn-sm">Deletar</button>
+            </form>
+          </td>
+        </tr>
+        @endforeach
+      </tbody>
+    </table>
+    {{$users->links()}}
   </div>
-</div>
-
-
+</section>
 @endsection

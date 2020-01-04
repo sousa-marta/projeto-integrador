@@ -123,7 +123,9 @@
   @yield('breadcrumb')
   <main>
     <!-- Conteúdo do Site -->
+    @include('partials.alerts')
     @yield('content')
+
 
   </main>
 
