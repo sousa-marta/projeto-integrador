@@ -13,3 +13,9 @@
   </div>
 </div>
 @endif
+
+@if(session('wrongLogin'))
+<script type='text/javascript'>
+  alert('Usuário e/ou senha incorretos')
+</script>
+@endif

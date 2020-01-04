@@ -2,7 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\{Location, Role, User};
+use App\{AppliedVacancy, Location, Role, User, Vacancy};
+use App\Http\Requests\AppliedVacanciesFormRequest;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\{Auth, Hash};
 
@@ -123,5 +124,36 @@ class UserController extends Controller
   public function destroy(User $user)
   {
     //Não será usado
+  }
+
+  public function logIn(Request $request)
+  {
+    if (!Auth::attempt($request->only(['email', 'password']))) {
+      return redirect()->back()->with('wrongLogin', 'message');
+    }
+
+    if (Auth::user()->email == 'admin@oppy.com') {
+      return redirect('/admin');
+    }
+
+    return redirect()->back();
+  }
+
+  public function sendResume(AppliedVacanciesFormRequest $request)
+  {
+    AppliedVacancy::create([
+      'name' => $request->name,
+      'email' => $request->email,
+      $resume = $request->file('resume'),
+      $newResumeName = bin2hex(random_bytes(5)) . '.' . $resume->getClientOriginalExtension(),
+      $resume->move(public_path('resume'), $newResumeName),
+      'resume' => $newResumeName
+    ]);
+
+    $user = User::find(Auth::user()->id);
+    $vacancy = Vacancy::select('id')->where('id', $request->vacancyId)->first();
+    $user->vacancies()->attach($vacancy);
+
+    return redirect('/');
   }
 }

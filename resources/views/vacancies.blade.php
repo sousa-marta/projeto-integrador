@@ -19,6 +19,15 @@ Oportunidades
 <section class="pages-title-bg d-flex justify-content-center align-items-center">
   <h1>Vagas de Emprego</h1>
 </section>
+@if ($errors->any())
+<div class="alert alert-danger">
+  <ul>
+    @foreach ($errors->all() as $error)
+    <li>{{ $error }}</li>
+    @endforeach
+  </ul>
+</div>
+@endif
 @endsection
 
 
@@ -108,10 +117,14 @@ Oportunidades
             <p>{{ $vacancy->description }}</p>
           </div>
           <hr>
+          @auth
           <div class="d-flex justify-content-center">
-            <a href="mailto:{{$vacancy->email}}?Subject=Vaga%20{{$vacancy->name}}" class="btn btn-primary m-1">Enviar currículo <i class='fas fa-envelope-square ml-1'></i></a>
+            <button type="button" class="btn btn-primary btn-login" data-toggle="modal" data-target="#resume-modal" href="#">Enviar currículo <i class='fas fa-envelope-square ml-1'></i></button>
+            <!-- <button name="vacancyId" value="{{$vacancy->id}}" type="submit"><a href="mailto:{{$vacancy->email}}?Subject=Vaga%20{{$vacancy->name}}" class="btn btn-primary m-1">Enviar currículo <i class='fas fa-envelope-square ml-1'></i></a></button> -->
+            </form>
             <a href="tel://+55{{$vacancy->phone}}" class="btn btn-secondary m-1">Ligar <i class='fas fa-phone-square-alt ml-1'></i></a>
           </div>
+          @endauth
         </div>
       </div>
     </div>
@@ -119,3 +132,39 @@ Oportunidades
   @endforeach
 </section>
 @endsection
+
+@auth
+<!-- Modal do Login -->
+<div class="modal fade" id="resume-modal" tabindex="-1" role="dialog" aria-labelledby="resume-modal" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <dialog class="modal-content">
+      <header class="modal-header">
+        <h5 class="modal-title" id="resume-modal">Candidate-se à vaga</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </header>
+      <main class="modal-body">
+        <form action="{{ route('user.apply.vacancy',['id'=>Auth::user()->id]) }}" method="post" enctype="multipart/form-data">
+          @csrf
+          <div class="form-group">
+            <label for="name">Nome Completo</label>
+            <input type="text" class="form-control" id="name" name="name" placeholder="Digite seu nome completo">
+          </div>
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" class="form-control" name="email" id="email" placeholder="Digite seu melhor e-mail para contato">
+          </div>
+          <div class="form-group">
+            <label for="resume">Currículo</label>
+            <input class="form-control" type="file" name="resume" id="resume">
+          </div>
+      </main>
+      <footer class="modal-footer modal-footer-bg-color">
+        <button name="vacancyId" value="{{$vacancy->id ?? ''}}" type="submit" class="btn btn-primary col-lg-12">Enviar</button>
+      </footer>
+      </form>
+    </dialog>
+  </div>
+</div>
+@endauth
