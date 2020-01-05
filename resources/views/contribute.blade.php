@@ -20,6 +20,7 @@ Contribua
 <section class="pages-title-bg d-flex justify-content-center align-items-center">
   <h1>Contribua</h1>
 </section>
+@include('partials.alerts')
 
 <!-- Cards Resumo Auxílio Pessoa e Empresa-->
 <section class="container text-center">

@@ -62,6 +62,7 @@ class VolunteerController extends Controller
       'city' => $request->volunteerCity,
       'state' => $request->volunteerState
     ]);
+    $request->session()->flash('message', "Voluntária(o) {$request->volunteerName} foi criada(o) com sucesso");
 
     return redirect('/admin/volunteers');
   }
@@ -118,8 +119,8 @@ class VolunteerController extends Controller
     $volunteer->location_id = $request->volunteerCountry;
     $volunteer->city = $request->volunteerCity;
     $volunteer->state = $request->volunteerState;
-
     $volunteer->save();
+    $request->session()->flash('message', "Os dados da(o) voluntária(o) {$request->volunteerName} foram atualizados!");
 
     return redirect('/admin/volunteers');
   }
@@ -133,7 +134,7 @@ class VolunteerController extends Controller
   public function destroy(Request $request, Volunteer $volunteer)
   {
     $volunteer->delete();
-    $request->session()->flash('message', 'Voluntária(o) deletada(o)!');
+    $request->session()->flash('message', 'Voluntária(o) {$volunteer->name} deletada(o)!');
     return redirect()->back();
   }
 }

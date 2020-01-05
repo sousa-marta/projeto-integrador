@@ -52,7 +52,7 @@ class UserController extends Controller
     $user = User::find($id);
     $user->roles()->sync($request->roles);
 
-    return redirect()->route('admin.users.index')->with('success', "Usuário foi atualizado");
+    return redirect()->route('admin.users.index')->with('success', "A função da(o) usuária(o) {request->name} foi atualizada");
   }
 
   /**
@@ -72,9 +72,9 @@ class UserController extends Controller
     if ($user) {
       $user->roles()->detach();
       $user->delete();
-      return redirect()->route('admin.users.index')->with('success', "Usuário foi removido");
+      return redirect()->route('admin.users.index')->with('success', "Usuária(o) {$user->name} foi removida(o)");
     }
 
-    return redirect()->route('admin.users.index')->with('warning', "Este usuário não pode ser removido");
+    return redirect()->route('admin.users.index')->with('warning', "Usuária(o) {$user->name} não pode ser removida(o)");
   }
 }

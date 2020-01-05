@@ -8,21 +8,7 @@ Doação {{ $donation->name }}
 <!-- mostra detalhes da doação -->
 <section class="pt-5 row justify-content-center">
   <div class="my-5 mx-3 border col-md-4">
-    @if ($errors->any())
-    <div class="alert alert-danger">
-      <ul>
-        @foreach ($errors->all() as $error)
-        <li>{{ $error }}</li>
-        @endforeach
-      </ul>
-    </div>
-    @endif
-    @if(!empty($message))
-    <div class="alert alert-success">
-      {{ $message }}
-    </div>
-    @endif
-
+  @include('partials.alerts')
     <div class="row align-items-center mt-2">
       <div>
         <h5>Doação de {{ $donation->name }}</h5>

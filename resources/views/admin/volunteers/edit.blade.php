@@ -12,7 +12,7 @@ Editar Voluntária(o)
     <input type="hidden" name="_method" value="PUT">
     @csrf
     <div class="row justify-content-between align-items-center">
-      <h4>Editar Voluntária(o)</strong></h4>
+      <h4>Editar {{$volunteer->name}}</h4>
       <a href="/admin/volunteers" class="btn btn-primary p-1"><i class="fa">&#xf137;</i> Voltar</a>
     </div>
     <hr>

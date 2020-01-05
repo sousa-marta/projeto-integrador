@@ -9,15 +9,6 @@ Cursos
 @endsection
 
 @section('content')
-
-{{-- Usar após definir uma mensagem de sucesso no cadastramento --}}
-{{-- @if(!empty($message))
-  <div class="alert alert-success">
-    {{ $message }}
-</div>
-@endif --}}
-
-
 <!-- Listar cursos já cadastrados -->
 <section class="admin-tables-section mt-5 py-5">
 
@@ -26,6 +17,7 @@ Cursos
       <h2>CURSOS</h2>
       <button type="button" class="btn btn-secondary ml-3 p-2" data-toggle="modal" data-target="#admin-add-course-modal" href="#"><i class="fa fa-plus-circle fa-2x" aria-hidden="true"></i></button>
     </div>
+    @include('partials.alerts')
     <table class="table">
       <thead>
         <tr>

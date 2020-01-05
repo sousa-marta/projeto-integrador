@@ -154,6 +154,6 @@ class UserController extends Controller
     $vacancy = Vacancy::select('id')->where('id', $request->vacancyId)->first();
     $user->vacancies()->attach($vacancy);
 
-    return redirect('/');
+    return redirect()->back();
   }
 }

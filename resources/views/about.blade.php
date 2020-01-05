@@ -12,6 +12,7 @@ Sobre Nós
     <li class="breadcrumb-item active" aria-current="page">Quem somos</li>
   </ol>
 </nav>
+@include('partials.alerts')
 @endsection
 
 @section('content')

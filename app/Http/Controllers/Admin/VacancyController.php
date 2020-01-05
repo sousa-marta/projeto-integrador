@@ -98,7 +98,7 @@ class VacancyController extends Controller
     $vacancy->category_id = $request->category;
     $vacancy->company_id = $request->company;
     $vacancy->save();
-    $request->session()->flash('message', 'Vaga atualizada!');
+    $request->session()->flash('message', "Vaga {$request->name} atualizada!");
     return redirect()->route('admin.vacancies.show', [$vacancy]);
   }
 
@@ -111,7 +111,7 @@ class VacancyController extends Controller
   public function destroy(Request $request, Vacancy $vacancy)
   {
     $vacancy->delete();
-    $request->session()->flash('message', 'Vaga deletada!');
+    $request->session()->flash('message', "Vaga {$vacancy->name} deletada!");
     return redirect()->back();
   }
 }

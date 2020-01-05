@@ -7,20 +7,7 @@ Vaga {{ $vacancy->name }}
 @section('content')
 <section class="pt-5">
   <div class="my-5 container border">
-    @if ($errors->any())
-    <div class="alert alert-danger">
-      <ul>
-        @foreach ($errors->all() as $error)
-        <li>{{ $error }}</li>
-        @endforeach
-      </ul>
-    </div>
-    @endif
-    @if(!empty($message))
-    <div class="alert alert-success">
-      {{ $message }}
-    </div>
-    @endif
+  @include('partials.alerts')
     <div class="row align-items-center mt-2">
       <img src="/img/companies/{{ $company->logo }}" alt="" class="img-especial mr-2">
       <div>

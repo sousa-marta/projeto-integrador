@@ -10,20 +10,7 @@ Lista de Usuários
     <div class="d-flex justify-content-start align-items-center mb-1">
       <h2>Lista de Usuários</h2>
     </div>
-    @if ($errors->any())
-    <div class="alert alert-danger">
-      <ul>
-        @foreach ($errors->all() as $error)
-        <li>{{ $error }}</li>
-        @endforeach
-      </ul>
-    </div>
-    @endif
-    @if(!empty($message))
-    <div class="alert alert-success">
-      {{ $message }}
-    </div>
-    @endif
+    @include('partials.alerts')
     <table class="table">
       <thead>
         <tr class="text-center">

@@ -56,13 +56,13 @@
           <li class="nav-item">
             <a class="nav-link" href="/contact"><span class="fa">&#xf086;</span> Contato</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item align-self-center">
             @auth
             <div class="dropdown">
               <button class="btn btn-loggedin dropdown-toggle" type="button" id="dropdownUserMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Olá, <strong>{{Auth::user()->name}}</strong>!
               </button>
-              <div class="dropdown-menu" aria-labelledby="dropdownUserMenu">
+              <div class="dropdown-menu px-0" aria-labelledby="dropdownUserMenu">
                 @hasrole('admin')
                 <a class="dropdown-item" href="/admin">Painel Admin</a>
                 @endhasrole
@@ -70,7 +70,7 @@
                 <a class="dropdown-item" href="/users/{{Auth::user()->id}}">Ver perfil</a>
                 <a class="dropdown-item" href="/users/{{Auth::user()->id}}/edit">Editar perfil</a>
                 @impersonate
-                <a class="dropdown-item" href="{{ route('admin.impersonate.destroy') }}">Stop Impersonating</a>
+                <a class="dropdown-item" href="{{ route('admin.impersonate.destroy') }}">Sair da persona</a>
                 @endimpersonate
                 @endhasrole
                 <a class="dropdown-item" href="/signout">Sair</a>
@@ -123,7 +123,7 @@
   @yield('breadcrumb')
   <main>
     <!-- Conteúdo do Site -->
-    @include('partials.alerts')
+    @yield('banner')
     @yield('content')
 
 

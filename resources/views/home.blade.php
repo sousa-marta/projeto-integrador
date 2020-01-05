@@ -5,7 +5,7 @@ Oppy
 @endsection
 
 @section('content')
-
+@include('partials.alerts')
 <!-- Banner -->
 <section class="home-banner">
   <h1>Onde a esperança se reencontra</h1>

@@ -19,15 +19,7 @@ Oportunidades
 <section class="pages-title-bg d-flex justify-content-center align-items-center">
   <h1>Vagas de Emprego</h1>
 </section>
-@if ($errors->any())
-<div class="alert alert-danger">
-  <ul>
-    @foreach ($errors->all() as $error)
-    <li>{{ $error }}</li>
-    @endforeach
-  </ul>
-</div>
-@endif
+@include('partials.alerts')
 @endsection
 
 

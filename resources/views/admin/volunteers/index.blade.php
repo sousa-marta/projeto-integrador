@@ -11,6 +11,7 @@ Voluntárias(os) Cadastradas(os)
     <a href="/admin/volunteers/create" class="btn btn-secondary col-lg-2"><i class="fa">&#xf055;</i> Cadastrar</a>
   </section>
 </div>
+@include('partials.alerts')
 @endsection
 
 @section('menu-content')
@@ -55,20 +56,6 @@ Voluntárias(os) Cadastradas(os)
 @endsection
 
 @section('text-content')
-@if ($errors->any())
-<div class="alert alert-danger mt-2">
-  <ul>
-    @foreach ($errors->all() as $error)
-    <li>{{ $error }}</li>
-    @endforeach
-  </ul>
-</div>
-@endif
-@if(!empty($message))
-<div class="alert alert-success mt-2">
-  {{ $message }}
-</div>
-@endif
 <div>
   <section>
     @foreach($volunteers as $volunteer)

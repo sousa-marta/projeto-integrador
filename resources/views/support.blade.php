@@ -12,6 +12,7 @@ Apoio
     <li class="breadcrumb-item active" aria-current="page">@yield('title')</li>
   </ol>
 </nav>
+@include('partials.alerts')
 @endsection
 
 @section('content')

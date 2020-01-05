@@ -18,6 +18,7 @@ Contato | FAQ
 @section('content')
 <!-- Formulário de Contato -->
 <h1 class="pages-title-bg d-flex justify-content-center align-items-center">Contato</h1>
+@include('partials.alerts')
 <div class="row align-self-center justify-content-center m-4">
   <form action="" method="post" class="card col-11 col-sm-8 col-lg-6 contact-form-design">
     <p class="text-center">Caso não encontre a resposta para a sua pergunta abaixo, não hesite em nos contatar usando o formulário ou diretamente pelo e-mail: <a class="contact-email" href="mailto:">contato@oppy.com.br</a></p>

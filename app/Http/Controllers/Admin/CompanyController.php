@@ -62,6 +62,7 @@ class CompanyController extends Controller
       'city' => $request->companyCity,
       'state' => $request->companyState
     ]);
+    $request->session()->flash('message', "A empresa {$request->companyName} foi salva com sucesso");
 
     return redirect('/admin/companies');
   }
@@ -119,8 +120,8 @@ class CompanyController extends Controller
     $company->location_id = $request->companyCountry;
     $company->city = $request->companyCity;
     $company->state = $request->companyState;
-
     $company->save();
+    $request->session()->flash('message', "Empresa {$request->companyName} atualizada!");
 
     return redirect('/admin/companies');
   }
@@ -134,7 +135,7 @@ class CompanyController extends Controller
   public function destroy(Request $request, Company $company)
   {
     $company->delete();
-    $request->session()->flash('message', 'Empresa deletada!');
+    $request->session()->flash('message', "Empresa {$company->name} deletada!");
     return redirect()->back();
   }
 }

@@ -12,20 +12,7 @@ Vagas
       <h2>Oportunidades</h2>
       <button type="button" class="btn btn-secondary ml-3 p-2" data-toggle="modal" data-target="#admin-add-opportunity-modal" href="#"><i class="fa fa-plus-circle fa-2x" aria-hidden="true"></i></button>
     </div>
-    @if ($errors->any())
-    <div class="alert alert-danger">
-      <ul>
-        @foreach ($errors->all() as $error)
-        <li>{{ $error }}</li>
-        @endforeach
-      </ul>
-    </div>
-    @endif
-    @if(!empty($message))
-    <div class="alert alert-success">
-      {{ $message }}
-    </div>
-    @endif
+    @include('partials.alerts')
     <table class="table">
       <thead>
         <tr class="text-center">
@@ -51,7 +38,7 @@ Vagas
             <a href="/admin/vacancies/{{ $vacancy->id }}" class="btn btn-info btn-sm mr-2">
               <i class="fas fa-external-link-alt"></i>
             </a>
-            <form action="/admin/vacancies/{{ $vacancy->id }}" method="post" onsubmit="return confirm('Tem certeza de que deseja remover?')">
+            <form action="/admin/vacancies/{{ $vacancy->id }}" method="post" onsubmit="return confirm('Tem certeza de que deseja remover {{$vacancy->name}}?')">
               @csrf
               @method('DELETE')
               <button class="btn btn-danger btn-sm"><i class='fas fa-trash-alt'></i></button>

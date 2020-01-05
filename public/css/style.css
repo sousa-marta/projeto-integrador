@@ -133,6 +133,10 @@ nav #register-link:hover, nav #register-link:focus {background: none;}
 .modal-backdrop {z-index: unset;}
 
 .modal-footer-bg-color {background-color: #FFF;}
+
+.dropdown-menu {min-width: 7.5rem;}
+
+.dropdown-item {padding: 5px 10px;}
 /* Fim HEADER */
 
 /* Início BREADCRUMB */
