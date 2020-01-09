@@ -44,9 +44,7 @@ Cadastre-se
       <input type="email" class="form-control" name="email" id="email" placeholder="E-mail" required>
     </div>
     <div class="form-group col-12 col-sm-6">
-      <label for="password">
-        <strong>Senha</strong>
-      </label>
+      <label for="password"><strong>Senha</strong></label>
       <input type="password" class="form-control" name="password" id="password" placeholder="Senha" required>
     </div>
     </div>
