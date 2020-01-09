@@ -26,6 +26,10 @@ class UserController extends Controller
    */
   public function create()
   {
+    if(Auth::user()) {
+      return redirect('/');
+    }
+
     $locations = Location::all(); //busca todos os países na base de dados locations
     return view('users.create', compact('locations', $locations));
   }

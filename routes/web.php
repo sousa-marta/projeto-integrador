@@ -29,6 +29,7 @@ Route::post('vacancies', 'UserController@logIn'); //faz login
 Route::get('courses',"SiteController@viewCourses");
 Route::post('courses', 'UserController@logIn'); //faz login
 Route::get('/courses/{id}',"SiteController@showCourse");
+Route::post('/users/create','UserController@logIn'); //faz login
 
 // TODO: falta configurar as 3 rotas abaixo referente à senha
 Route::get('users/forgotten-password', 'GeneralUserController@indexForgotten');
