@@ -19,14 +19,14 @@ Editar Informação do usuário
 
 <!-- INFORMAÇÕES DO USUÁRIO -->
 <section class="d-flex justify-content-center align-items-center p-4 mb-5">
-  <form action="{{url('users', [$user->id])}}" method="post" class="user-info-main card p-5 col-lg-5">
+  <form action="{{url('users', [$user->id])}}" method="post" class="user-info-main card p-5 col-lg-5" enctype="multipart/form-data">
      <input type="hidden" name="_method" value="PUT">
      {{ csrf_field() }}
 
     <!-- foto -->
     <div class="user-info-top">
-      <img src="/img/foto.png" alt="foto usuário" class="rounded m-1 user-info-photo">
-      <button type="button" class="btn btn-primary m-1">Alterar foto</button>
+      <img src="/img/users/{{ $user->img }}" alt="foto usuário" class="rounded m-1 user-info-photo">
+      <input type="file" name="userImage" id="userImage">
     </div>
 
 

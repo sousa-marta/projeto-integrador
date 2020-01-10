@@ -132,7 +132,14 @@ class UserController extends Controller
     $user->address_number = $request->userAddressNo;
     $user->complement = $request->userAddressComp;
     $user->zip = $request->userAddressPC;
-
+    
+    if ($request->hasFile('userImage')) {
+      $img = $request->file('userImage');
+      $name = bin2hex(random_bytes(5)) . '.' . $img->getClientOriginalExtension();
+      $user->img = $name;
+      $img->move(public_path('img/users'), $name);
+    }
+    
     $user->save();
     $request->session()->flash('message', 'Cadastro alterado com sucesso!');
     return redirect('users/'.$user->id);

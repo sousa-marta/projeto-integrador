@@ -19,8 +19,7 @@ Página Usuário
 <!-- INFORMAÇÕES -->
 <section class="user-page-main-banner">
   <div class="container d-flex justify-content-around p-3 align-items-center">
-    <!-- TODO: colocar foto de acordo com imagem salva -->
-    <img src="/img/foto.png" alt="foto usuário" class="figure-img img-fluid rounded user-page-photo">
+    <img src="/img/users/{{ $user->img }}" alt="foto usuário" class="figure-img img-fluid rounded user-page-photo">
     <div>
       <h1>{{ $user->name }}</h1>
       <p><b>País de origem:</b> {{ $user->location->country }}</p>
