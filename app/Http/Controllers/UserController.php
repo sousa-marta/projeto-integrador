@@ -102,9 +102,8 @@ class UserController extends Controller
   public function edit(User $user)
   {
     if (Auth::user()->email == $user->email) {
-      // $locations = Location::all(); //busca todos os países na base de dados locations  //TODO: verificar se precisa disso
-      // return view('users.edit',["user" => $user, "locations" => $locations]);
-      return view('users.edit', compact('user'));
+      $locations = Location::all(); //busca todos os países na base de dados locations
+      return view('users.edit', compact('user','locations'));
     }
 
     return redirect('/');
@@ -147,7 +146,7 @@ class UserController extends Controller
    */
   public function destroy(User $user)
   {
-    //Não será usado
+    //TODO: montar excluir usuário
   }
 
   public function logIn(Request $request)
