@@ -23,7 +23,6 @@ Página Usuário
     <div>
       <h1>{{ $user->name }}</h1>
       <p><b>País de origem:</b> {{ $user->location->country }}</p>
-      <!-- TODO: arrumar href de Editar Info após deixar dinâmico com banco de dados -->
       <button class="mt-3 col-lg-12 btn btn-secondary" onclick='location.href="/users/{{ $user->id }}/edit"'>Editar informações</a>
     </div>
   </div>

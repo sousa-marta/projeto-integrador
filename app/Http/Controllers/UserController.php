@@ -66,6 +66,7 @@ class UserController extends Controller
   {
     $data = $request->except('_token');
     $data['password'] = Hash::make($data['password']);
+    $data['img'] = 'no-photo-icon.png'; //configura imagem default para novo usuário
     $user = User::create($data);
 
     $role = Role::select('id')->where('name', 'user')->first();
@@ -139,7 +140,7 @@ class UserController extends Controller
       $user->img = $name;
       $img->move(public_path('img/users'), $name);
     }
-    
+
     $user->save();
     $request->session()->flash('message', 'Cadastro alterado com sucesso!');
     return redirect('users/'.$user->id);

@@ -8,8 +8,7 @@ Editar Informação do usuário
 <nav aria-label="breadcrumb">
   <ol class="breadcrumb">
     <li class="breadcrumb-item"><a class="breadcrumb-item-link" href="/">Home</a></li>
-    <!-- TODO: arrumar href de Perfil após deixar dinâmico com banco de dados -->
-    <li class="breadcrumb-item"><a class="breadcrumb-item-link" href="/users/id">Perfil</a></li>
+    <li class="breadcrumb-item"><a class="breadcrumb-item-link" href="/users/{{ $user->id }}">Perfil</a></li>
     <li class="breadcrumb-item active" aria-current="page">Edição</li>
   </ol>
 </nav>
