@@ -31,10 +31,10 @@ Route::post('courses', 'UserController@logIn'); //faz login
 Route::get('/courses/{id}',"SiteController@showCourse");
 Route::post('/users/create','UserController@logIn'); //faz login
 
-// TODO: falta configurar as 3 rotas abaixo referente à senha
-Route::get('users/forgotten-password', 'GeneralUserController@indexForgotten');
-Route::get('users/change-password', 'GeneralUserController@createNewPassword');
-Route::post('users/change-password', 'GeneralUserController@updateNewPassword');
+Route::get('/admin/impersonate/destroy','Admin\ImpersonateController@destroy')->name('admin.impersonate.destroy');
+Route::get('users/forgotten-password', 'UserController@indexForgotten');
+Route::get('users/change-password', 'UserController@createNewPassword'); // TODO: depois precisamos arrumar pra puxar o id do usuário já que ele vai receber um e-mail pra resetar a senha
+Route::post('users/change-password', 'UserController@updateNewPassword');
 
 Route::post('/users/{id}/apply-to-vacancy', 'UserController@sendResume')->name('user.apply.vacancy')->middleware(['auth']);
 Route::resource('users',"UserController");
@@ -62,4 +62,3 @@ Route::namespace('Admin')->prefix('admin')->middleware(['auth','auth.admin'])->n
   Route::get('/impersonate/user/{id}','ImpersonateController@index')->name('impersonate');
 });
 
-Route::get('/admin/impersonate/destroy','Admin\ImpersonateController@destroy')->name('admin.impersonate.destroy');

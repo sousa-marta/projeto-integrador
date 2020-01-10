@@ -44,6 +44,7 @@ class UserController extends Controller
     return view('users.forgotten-password');
   }
 
+
   // TODO: falta ajustar
   /**
    * Show the form for creating a new password.
@@ -101,6 +102,8 @@ class UserController extends Controller
   public function edit(User $user)
   {
     if (Auth::user()->email == $user->email) {
+      // $locations = Location::all(); //busca todos os países na base de dados locations  //TODO: verificar se precisa disso
+      // return view('users.edit',["user" => $user, "locations" => $locations]);
       return view('users.edit', compact('user'));
     }
 
@@ -116,7 +119,24 @@ class UserController extends Controller
    */
   public function update(Request $request, User $user)
   {
-    //TODO: falta configurar
+    //Validate
+    // $request->validate([
+    //   'title' => 'required|min:3',
+    //   'description' => 'required',
+    // ]);
+    
+    $user->name = $request->userFullName;
+    $user->email = $request->userEmail;
+    $user->location_id = $request->userCountry;
+    $user->phone = $request->userPhone;
+    $user->address = $request->userAddressStr;
+    $user->address_number = $request->userAddressNo;
+    $user->complement = $request->userAddressComp;
+    $user->zip = $request->userAddressPC;
+
+    $user->save();
+    $request->session()->flash('message', 'Cadastro alterado com sucesso!');
+    return redirect('users/'.$user->id);
   }
 
   /**
