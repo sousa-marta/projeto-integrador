@@ -19,12 +19,11 @@ Página Usuário
 <!-- INFORMAÇÕES -->
 <section class="user-page-main-banner">
   <div class="container d-flex justify-content-around p-3 align-items-center">
-    <img src="/img/foto.png" alt="foto usuário" class="figure-img img-fluid rounded user-page-photo">
+    <img src="/img/users/{{ $user->img }}" alt="foto usuário" class="figure-img img-fluid rounded user-page-photo">
     <div>
-      <h1>Alex Watanabe</h1>
-      <p><b>País de origem:</b> Japão</p>
-      <!-- TODO: arrumar href de Editar Info após deixar dinâmico com banco de dados -->
-      <button class="mt-3 col-lg-12 btn btn-secondary" onclick="location.href='/users/1/edit'">Editar informações</a>
+      <h1>{{ $user->name }}</h1>
+      <p><b>País de origem:</b> {{ $user->location->country }}</p>
+      <button class="mt-3 col-lg-12 btn btn-secondary" onclick='location.href="/users/{{ $user->id }}/edit"'>Editar informações</a>
     </div>
   </div>
 </section>

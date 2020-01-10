@@ -554,12 +554,17 @@ card {
 
 /* Início INFORMAÇÕES USUÁRIO */
 .user-info-top {
-  height: 250px;
   align-self: center;
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
+  flex-direction: column;
   justify-content: center;
+}
+
+.user-info-top > img {
+  height: 200px;
+  width: auto;
 }
 
 .user-info-photo {

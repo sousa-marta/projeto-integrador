@@ -33,7 +33,7 @@ Cadastre-se
         <select class="col-lg-12 form-control" name="location_id" id="location_id">
           <option value="" selected disabled>Selecione um país</option>
           @foreach ($locations as $location)
-          <option value='{{$location->id}}'>{{$location->country}}</option>
+            <option value='{{$location->id}}'>{{$location->country}}</option>
           @endforeach
         </select>
       </div>
@@ -48,6 +48,7 @@ Cadastre-se
         <input type="password" class="form-control" name="password" id="password" placeholder="Senha" required>
       </div>
     </div>
+    <!-- <div class="form-group"> -->
     <button type="submit" class="btn btn-primary align-self-center mt-3">Criar conta</button>
     <p class="text-center mt-3">Ao criar minha conta, eu aceito os Termos de Uso e a Política de Privacidade da Oppy.</p>
   </form>

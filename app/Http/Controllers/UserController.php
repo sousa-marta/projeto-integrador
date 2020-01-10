@@ -44,6 +44,7 @@ class UserController extends Controller
     return view('users.forgotten-password');
   }
 
+
   // TODO: falta ajustar
   /**
    * Show the form for creating a new password.
@@ -65,6 +66,7 @@ class UserController extends Controller
   {
     $data = $request->except('_token');
     $data['password'] = Hash::make($data['password']);
+    $data['img'] = 'no-photo-icon.png'; //configura imagem default para novo usuário
     $user = User::create($data);
 
     $role = Role::select('id')->where('name', 'user')->first();
@@ -101,7 +103,8 @@ class UserController extends Controller
   public function edit(User $user)
   {
     if (Auth::user()->email == $user->email) {
-      return view('users.edit', compact('user'));
+      $locations = Location::all(); //busca todos os países na base de dados locations
+      return view('users.edit', compact('user','locations'));
     }
 
     return redirect('/');
@@ -116,7 +119,31 @@ class UserController extends Controller
    */
   public function update(Request $request, User $user)
   {
-    //TODO: falta configurar
+    //Validate
+    // $request->validate([
+    //   'title' => 'required|min:3',
+    //   'description' => 'required',
+    // ]);
+    
+    $user->name = $request->userFullName;
+    $user->email = $request->userEmail;
+    $user->location_id = $request->userCountry;
+    $user->phone = $request->userPhone;
+    $user->address = $request->userAddressStr;
+    $user->address_number = $request->userAddressNo;
+    $user->complement = $request->userAddressComp;
+    $user->zip = $request->userAddressPC;
+    
+    if ($request->hasFile('userImage')) {
+      $img = $request->file('userImage');
+      $name = bin2hex(random_bytes(5)) . '.' . $img->getClientOriginalExtension();
+      $user->img = $name;
+      $img->move(public_path('img/users'), $name);
+    }
+
+    $user->save();
+    $request->session()->flash('message', 'Cadastro alterado com sucesso!');
+    return redirect('users/'.$user->id);
   }
 
   /**
@@ -127,7 +154,7 @@ class UserController extends Controller
    */
   public function destroy(User $user)
   {
-    //Não será usado
+    //TODO: montar excluir usuário
   }
 
   public function logIn(Request $request)
