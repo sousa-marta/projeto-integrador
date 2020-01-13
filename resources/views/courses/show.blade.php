@@ -121,10 +121,10 @@ Curso de {{ $course->name }}
           <div class="course-detail-card">
             <div class="container course-detail-card-title">
               <p>{{$courseOne->category->name}}</p>
-              <h2>Curso de {{$courseOne->name}}</h2>
+              <h5>Curso de {{$courseOne->name}}</h5>
             </div>
             <div class="container d-flex flex-column">
-              <img src="/img/{{$courseOne->company->logo}}" alt="Logo da empresa {{$courseOne->company->name}}" class="align-self-center course-detail-logo-img-alike">
+              <img src="/img/companies/{{$courseOne->company->logo}}" alt="Logo da empresa {{$courseOne->company->name}}" class="align-self-center course-detail-logo-img-alike">
               <div class="pb-2">
                 <p><strong>Duração:</strong>{{$courseOne->duration}} meses</p>
                 <p><strong>Vagas:</strong> 10</p>
