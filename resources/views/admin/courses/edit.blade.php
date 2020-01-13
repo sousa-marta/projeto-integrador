@@ -42,18 +42,18 @@ Editar Cursos
       <div class="form-group col-md-4">
         <label for="courseCategory">Categoria</label>
         <select class="col-lg-12  form-control" name="courseCategory" id="courseCategory">
-          <option value="" selected disabled>Selecione a categoria</option>
+          <option value="" disabled>Selecione a categoria</option>
           @foreach ($categories as $category)
-          <option value="{{ $category->id }}"> {{ $category->name }} </option>;
+          <option {{($course->category->id == $category->id)? "selected":""}} value='{{$category->id}}'>{{$category->name}}</option>
           @endforeach
         </select>
       </div>
       <div class="form-group col-md-4">
         <label for="courseCompany">Empresa</label>
         <select class="col-lg-12  form-control" name="courseCompany" id="courseCompany">
-          <option value="" selected disabled>Selecione a empresa</option>
+          <option value="" disabled>Selecione a categoria</option>
           @foreach ($companies as $company)
-          <option value="{{ $company->id }}"> {{ $company->name }} </option>;
+          <option {{($course->company->id == $company->id)? "selected":""}} value='{{$company->id}}'>{{$company->name}}</option>
           @endforeach
         </select>
       </div>
@@ -61,8 +61,13 @@ Editar Cursos
         <label for="courseStatus">Status do Curso</label>
         <select class="col-lg-12 form-control" name="courseStatus" id="courseStatus" required>
           <option value="" selected disabled>Selecione o status do curso</option>
-          <option value="disponível">disponível</option>
+          @if ($course->status == 'disponível')
+          <option selected value='{{ $course->status }}'>disponível</option>
           <option value="indisponível">indisponível</option>
+          @else
+          <option value="disponível">disponível</option>
+          <option selected value='{{ $course->status }}'>indisponível</option>
+          @endif
         </select>
       </div>
       <div class="modal-footer modal-footer-bg-color col-md-12 justify-content-center">
