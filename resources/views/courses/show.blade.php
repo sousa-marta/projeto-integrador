@@ -32,6 +32,8 @@ Curso de {{ $course->name }}
       <div class="col-12 col-lg-6 text-right course-detail-offered-by">
         <h4>oferecido por:</h4>
         <h3>{{$course->company->name}}</h3>
+        <img src="/img/companies/{{$course->company->logo}}" alt="Logo da empresa {{$course->company->name}} de treinamento" class="rounded pb-5 course-detail-logo-img">
+
       </div>
     </div>
 
@@ -79,7 +81,6 @@ Curso de {{ $course->name }}
 
       <!-- imagem do ofertante do treinamento -->
       <div class="col-12 col-lg-6 course-detail-provider">
-        <img src="/img/companies/{{$course->company->logo}}" alt="Logo da empresa {{$course->company->name}} de treinamento" class="rounded pb-5 course-detail-logo-img">
       </div>
     </div>
   </div>
