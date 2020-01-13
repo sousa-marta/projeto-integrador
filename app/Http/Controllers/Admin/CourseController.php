@@ -23,12 +23,13 @@ class CourseController extends Controller
    *
    * @return \Illuminate\Http\Response
    */
-  public function create()
+  public function create(Request $request)
   {
     $courses = Course::all();
     $categories = Category::all();
     $companies = Company::all();
-    return view('admin.courses.create', compact('courses', 'categories', 'companies'));
+    $message = $request->session()->get('message');
+    return view('admin.courses.create', compact('courses', 'categories', 'companies', 'message'));
   }
 
   /**
@@ -53,9 +54,7 @@ class CourseController extends Controller
       'company_id' => $request->courseCompany
     ]);
 
-    //Enviando mensagem de inserção com sucesso (aparece apenas a primeira vez):
-    /* $request->session()->flash('message', "Curso inserido com sucesso");*/
-
+    $request->session()->flash('message', "O curso {$request->courseName} foi salvo com sucesso");
     return redirect('/admin/courses/create');
   }
 
@@ -77,12 +76,14 @@ class CourseController extends Controller
    * @param  \App\Course  $course
    * @return \Illuminate\Http\Response
    */
-  public function edit(Course $course)
+  public function edit(Course $course, Request $request)
   {
     $categories = Category::all();
     $companies = Company::all();
 
-    return view('admin.courses.edit', ['course' => $course, 'categories' => $categories, 'companies' => $companies]);
+    $request->session()->flash('message', "Curso atualizado com sucesso");
+
+    return view('admin.courses.edit', ['course' => $course, 'categories' => $categories, 'companies' => $companies], );
   }
 
   /**
@@ -104,6 +105,7 @@ class CourseController extends Controller
     $course->company_id = $request->courseCompany;
     $course->status = $request->courseStatus;
     $course->save();
+
     return redirect('/admin/courses/create');
   }
 
@@ -113,17 +115,14 @@ class CourseController extends Controller
    * @param  \App\Course  $course
    * @return \Illuminate\Http\Response
    */
-  public function destroy($id)
+  public function destroy(Request $request, $id)
   {
     // dd($id);
 
     $result = Course::destroy($id);
     if ($result) {
-      return redirect('/admin/courses/create');
+      $request->session()->flash('message', "Curso deletado com sucesso!");
+      return redirect()->back();
     }
-    /*     $request->session()->flash(
-        'mensagem', 
-        "Série excluida com sucesso:"
-    ); */
   }
 }
