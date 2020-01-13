@@ -25,25 +25,27 @@ Curso de {{ $course->name }}
 
     <!-- nome do curso e ofertante do treinamento -->
     <div class="row pt-3">
-      <div class="col-12 col-lg-6">
+      <div class="col-12 col-lg-7">
         <h4>{{ $course->category->name }}</h4>
         <h1>{{ $course->name }}</h1>
       </div>
-      <div class="col-12 col-lg-6 text-right course-detail-offered-by">
+      <div class="col-12 col-lg-5 text-right course-detail-offered-by">
         <h4>oferecido por:</h4>
         <h3>{{$course->company->name}}</h3>
+        <img src="/img/companies/{{$course->company->logo}}" alt="Logo da empresa {{$course->company->name}} de treinamento" class="rounded pb-5 course-detail-logo-img">
+
       </div>
     </div>
 
     <div class="row">
       <!-- informações do curso -->
-      <div class="col-12 col-lg-6 d-flex flex-column justify-content-between">
+      <div class="col-12 col-lg-7 d-flex flex-column justify-content-between">
         <div class="row">
           <!-- inscritos e vagas -->
-          <div class="col-12 col-lg-6">
+          <div class="col-12 col-lg-7">
             <p><strong>Inscritos:</strong> 2.341</p>
           </div>
-          <div class="col-12 col-lg-6">
+          <div class="col-12 col-lg-7">
             <p><strong>Vagas:</strong> 50</p>
           </div>
         </div>
@@ -75,11 +77,6 @@ Curso de {{ $course->name }}
           <!-- botão de inscrição -->
           <button type="submit" class="col-12 btn   btn-secondary">Inscreva-se</button>
         </div>
-      </div>
-
-      <!-- imagem do ofertante do treinamento -->
-      <div class="col-12 col-lg-6 course-detail-provider">
-        <img src="/img/companies/{{$course->company->logo}}" alt="Logo da empresa {{$course->company->name}} de treinamento" class="rounded pb-5 course-detail-logo-img">
       </div>
     </div>
   </div>
@@ -121,10 +118,10 @@ Curso de {{ $course->name }}
           <div class="course-detail-card">
             <div class="container course-detail-card-title">
               <p>{{$courseOne->category->name}}</p>
-              <h2>Curso de {{$courseOne->name}}</h2>
+              <h5>Curso de {{$courseOne->name}}</h5>
             </div>
             <div class="container d-flex flex-column">
-              <img src="/img/{{$courseOne->company->logo}}" alt="Logo da empresa {{$courseOne->company->name}}" class="align-self-center course-detail-logo-img-alike">
+              <img src="/img/companies/{{$courseOne->company->logo}}" alt="Logo da empresa {{$courseOne->company->name}}" class="align-self-center course-detail-logo-img-alike">
               <div class="pb-2">
                 <p><strong>Duração:</strong>{{$courseOne->duration}} meses</p>
                 <p><strong>Vagas:</strong> 10</p>
