@@ -81,8 +81,23 @@ Editar Informação do usuário
       </div>
     </div>
 
-    <button type="submit" class="btn btn-primary align-self-center mt-3">Salvar</button>
+    <div class="d-flex justify-content-center align-items-center">
+      <a class="btn btn-primary align-self-center mt-3 mx-1" href="/users/{{Auth::user()->id}}">Voltar</a>
+      <button type="submit" class="btn btn-primary align-self-center mt-3 mx-1">Salvar</button>
+    </div>
+    
   </form>
 </section>
+
+<script>
+ 
+
+  // document.getElementById("userImage").addEventListener("change", function(){
+  //   alert("ahh.. trocou a foto, nehhhhhhhhhhhhhhhhh!");
+  //   console.log(this.value);
+  // });
+
+  
+</script>
 
 @endsection

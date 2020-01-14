@@ -83,7 +83,7 @@ class CourseController extends Controller
 
     $request->session()->flash('message', "Curso atualizado com sucesso");
 
-    return view('admin.courses.edit', ['course' => $course, 'categories' => $categories, 'companies' => $companies], );
+    return view('admin.courses.edit', ['course' => $course, 'categories' => $categories, 'companies' => $companies]);
   }
 
   /**
