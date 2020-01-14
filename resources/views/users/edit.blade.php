@@ -25,6 +25,7 @@ Editar Informação do usuário
     <!-- foto -->
     <div class="user-info-top">
       <img src="/img/users/{{ $user->img }}" alt="foto usuário" class="rounded m-1 user-info-photo">
+      <p id="user-info-msg-photo-edited" class="bg-danger text-white px-2 my-2" hidden>foto alterada</p>
       <input type="file" name="userImage" id="userImage">
     </div>
 
@@ -91,11 +92,14 @@ Editar Informação do usuário
 
 <script>
  
-
-  // document.getElementById("userImage").addEventListener("change", function(){
-  //   alert("ahh.. trocou a foto, nehhhhhhhhhhhhhhhhh!");
-  //   console.log(this.value);
-  // });
+  //função para mostrar aviso de "foto alterada"
+  document.getElementById("userImage").addEventListener("change", function(){
+    if (this.value) {
+      document.getElementById("user-info-msg-photo-edited").hidden = false;
+    } else {
+      document.getElementById("user-info-msg-photo-edited").hidden = true;
+    }
+  });
 
   
 </script>
