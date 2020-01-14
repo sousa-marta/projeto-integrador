@@ -25,6 +25,7 @@ Editar Informação do usuário
     <!-- foto -->
     <div class="user-info-top">
       <img src="/img/users/{{ $user->img }}" alt="foto usuário" class="rounded m-1 user-info-photo">
+      <p id="user-info-msg-photo-edited" class="bg-danger text-white px-2 my-2" hidden>foto alterada</p>
       <input type="file" name="userImage" id="userImage">
     </div>
 
@@ -81,8 +82,26 @@ Editar Informação do usuário
       </div>
     </div>
 
-    <button type="submit" class="btn btn-primary align-self-center mt-3">Salvar</button>
+    <div class="d-flex justify-content-center align-items-center">
+      <a class="btn btn-primary align-self-center mt-3 mx-1" href="/users/{{Auth::user()->id}}">Voltar</a>
+      <button type="submit" class="btn btn-primary align-self-center mt-3 mx-1">Salvar</button>
+    </div>
+    
   </form>
 </section>
+
+<script>
+ 
+  //função para mostrar aviso de "foto alterada"
+  document.getElementById("userImage").addEventListener("change", function(){
+    if (this.value) {
+      document.getElementById("user-info-msg-photo-edited").hidden = false;
+    } else {
+      document.getElementById("user-info-msg-photo-edited").hidden = true;
+    }
+  });
+
+  
+</script>
 
 @endsection
