@@ -37,6 +37,7 @@ Route::get('users/change-password', 'UserController@createNewPassword'); // TODO
 Route::post('users/change-password', 'UserController@updateNewPassword');
 
 Route::post('/users/{id}/apply-to-vacancy', 'UserController@sendResume')->name('user.apply.vacancy')->middleware(['auth']);
+Route::post('/courses/{id}/apply-to-course', 'UserController@sendCourse')->middleware(['auth']);
 Route::resource('users',"UserController");
 Route::get('/users/{user}/edit',"UserController@edit")->middleware(['auth']);
 Route::get('/users/{user}',"UserController@show")->middleware(['auth']);

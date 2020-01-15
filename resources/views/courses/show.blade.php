@@ -42,12 +42,12 @@ Curso de {{ $course->name }}
       <div class="col-12 col-lg-7 d-flex flex-column justify-content-between">
         <div class="row">
           <!-- inscritos e vagas -->
-          <div class="col-12 col-lg-7">
+          {{-- <div class="col-12 col-lg-7">
             <p><strong>Inscritos:</strong> 2.341</p>
-          </div>
-          <div class="col-12 col-lg-7">
+          </div> --}}
+          {{-- <div class="col-12 col-lg-7">
             <p><strong>Vagas:</strong> 50</p>
-          </div>
+          </div> --}}
         </div>
         <div class="row d-flex text-center mt-3">
           <!-- cronograma-data -->
@@ -75,7 +75,10 @@ Curso de {{ $course->name }}
         </div>
         <div class="row pb-5 mt-3">
           <!-- botão de inscrição -->
-          <button type="submit" class="col-12 btn   btn-secondary">Inscreva-se</button>
+          <form action="/courses/{{$course->id}}/apply-to-course" method="post">
+            @csrf
+            <button type="submit" class="col-12 btn btn-secondary">Demonstre Interesse</button>
+          </form>
         </div>
       </div>
     </div>
@@ -87,11 +90,11 @@ Curso de {{ $course->name }}
   <h2 class="pt-4 pb-2">Informações sobre o curso</h2>
   <p>{{$course->description}}</p>
   <p><strong>Duração:</strong> {{$course->duration}} meses </p>
-  <p><strong>Requisitos:</strong></p>
+  {{-- <p><strong>Requisitos:</strong></p>
   <ul class="px-4">
     <li>Idade mínima de 16 anos.</li>
     <li>Conhecimentos equivalentes ao Ensino Fundamental completo.</li>
-  </ul>
+  </ul> --}}
 </section>
 
 <!-- CURSOS SEMELHANTES -->
