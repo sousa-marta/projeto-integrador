@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\{AppliedVacancy, Location, Role, User, Vacancy};
+use App\{AppliedVacancy, UserCourse, Location, Role, User, Vacancy};
 use App\Http\Requests\AppliedVacanciesFormRequest;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\{Auth, Hash};
@@ -187,5 +187,18 @@ class UserController extends Controller
     $user->vacancies()->attach($vacancy);
 
     return redirect()->back();
+  }
+
+  public function sendCourse(UserCourse $userCourse, $id)
+  {
+    $course_id = $id;
+    $user_id = Auth::user()->id;
+    
+    $userCourse->course_id = $course_id;
+    $userCourse->user_id = $user_id;
+    
+    $userCourse->save();
+
+    return redirect('courses');
   }
 }
