@@ -16,16 +16,6 @@ Página Usuário
 
 
 @section('content')
-
-abertas
-
-
-fechadas
-@foreach ($vacancies_closed as $vacancy)
-  {{ $vacancy->category->name }}  
-@endforeach
-
-
 <!-- INFORMAÇÕES -->
 <section class="user-page-main-banner">
   <div class="container d-flex justify-content-around p-3 align-items-center">
@@ -93,53 +83,40 @@ fechadas
       <!-- cursos inscritas -->
       <div class="col-8 col-md-4 m-3 user-page-card">
         <h3 class="user-page-cards-title">Cursos Inscritos</h3>
-        <!-- curso 1 -->
-        <div>
-          <!-- item -->
-          <div class="user-page-item-inside-card user-page-item-inside-card-clickable" data-toggle="dropdown">
-            <div class="user-page-item-inside-card-top">
-              <span class="user-page-text-category p-1">Hotelaria</span>
-              <span>prazo: 20/11</span>
+        <!-- cursos -->
+        @foreach ($courses_opened as $course)
+          <div>
+            <!-- item -->
+            <div class="user-page-item-inside-card user-page-item-inside-card-clickable" data-toggle="dropdown">
+              <div class="user-page-item-inside-card-top">
+                <span class="user-page-text-category p-1">{{ $course->category->name }}</span>
+              </div>
+              <h4>{{ $course->name }}</h4>
             </div>
-            <h4>Recepcionista</h4>
+            <!-- menu quando clica -->
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Ver Detalhes</a>
+              <a class="dropdown-item" href="#">Desistir</a>
+            </div>
           </div>
-          <!-- menu quando clica -->
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">Ver Detalhes</a>
-            <a class="dropdown-item" href="#">Desistir</a>
-          </div>
-        </div>
+        @endforeach
 
-        <!-- curso 2 -->
-        <div>
-          <!-- item -->
-          <div class="user-page-item-inside-card user-page-item-inside-card-clickable" data-toggle="dropdown">
-            <div class="user-page-item-inside-card-top">
-              <span class="user-page-text-category">Serviços Gerais</span>
-              <span>prazo: 20/11</span>
-            </div>
-            <h4>Atendente</h4>
-          </div>
-          <!-- menu quando clica -->
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">Ver Detalhes</a>
-            <a class="dropdown-item" href="#">Desistir</a>
-          </div>
-        </div>
       </div>
 
       <!-- curso concluído -->
       <div class="col-8 col-md-4 m-3 user-page-card">
         <h3 class="user-page-cards-title">Cursos Concluídos</h3>
-        <!-- curso 1 -->
-        <div class="user-page-item-inside-card">
-          <span class="badge badge-success user-page-icon">&#10003</span> <!-- ícone de status -->
-          <div class="user-page-item-inside-card-top">
-            <span class="user-page-text-category">Gastronomia</span>
-            <span>prazo: 20/08</span>
+        <!-- cursos -->
+
+        @foreach ($courses_closed as $course)
+          <div class="user-page-item-inside-card">
+            <div class="user-page-item-inside-card-top">
+              <span class="user-page-text-category">{{ $course->category->name }}</span>
+            </div>
+            <h4>{{ $course->name }}</h4>
           </div>
-          <h4>Cozinheiro</h4>
-        </div>
+        @endforeach
+
       </div>
 
     </div>
