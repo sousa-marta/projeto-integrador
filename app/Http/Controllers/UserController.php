@@ -84,13 +84,15 @@ class UserController extends Controller
    * @param  \App\User  $user
    * @return \Illuminate\Http\Response
    */
-  public function show($id)
+  public function show($id, Request $request)
   {
     $user = User::find($id);
+    $message = $request->session()->get('message');
 
     if (Auth::user()->email == $user->email) {
-      return view('users.show', compact('user'));
+      return view('users.show', compact('user','message'));
     }
+
 
     return redirect('/');
   }
@@ -189,7 +191,7 @@ class UserController extends Controller
     return redirect()->back();
   }
 
-  public function sendCourse(UserCourse $userCourse, $id)
+  public function sendCourse(UserCourse $userCourse, Request $request, $id)
   {
     $course_id = $id;
     $user_id = Auth::user()->id;
@@ -199,6 +201,9 @@ class UserController extends Controller
     
     $userCourse->save();
 
-    return redirect('courses');
+    $request->session()->flash('message', 'Demonstração de Interesse feita com sucesso!');
+
+    return redirect('/users/'.$user_id);
   }
 }
+
