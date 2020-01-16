@@ -174,7 +174,10 @@ class UserController extends Controller
   public function sendResume(AppliedVacanciesFormRequest $request)
   {
     $vacancy = Vacancy::select('id')->where('id', $request->vacancyId)->first();
-    $appliedVacancies = DB::table('user_vacancy')->select('user_id','vacancy_id')->where('user_id',Auth::user()->id and 'vacancy_id',$vacancy)->first();
+    $appliedVacancies = DB::table('user_vacancy')->select('id')->where([['user_id', Auth::user()->id], ['vacancy_id', $request->vacancyId]])->first();
+    // $vacancyApplied = DB::table('user_vacancy')->select('vacancy_id')->where()->first();
+    // var_dump($appliedVacancies);
+    // exit;
 
     if($appliedVacancies !== null) {
       return redirect()->back()->with('alreadyApplied', 'message');
