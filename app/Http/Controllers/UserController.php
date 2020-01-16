@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\{AppliedVacancy, UserCourse, Location, Role, User, Vacancy};
 use App\Http\Requests\AppliedVacanciesFormRequest;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\{Auth, Hash};
+use Illuminate\Support\Facades\{Auth, Hash, DB};
 
 class UserController extends Controller
 {
@@ -89,7 +89,33 @@ class UserController extends Controller
     $user = User::find($id);
 
     if (Auth::user()->email == $user->email) {
-      return view('users.show', compact('user'));
+
+      // busca informações das oportunidades desse usuário
+      // $vacancies_opened = DB::table('user_vacancy')
+      //                         ->join('vacancies', 'user_vacancy.vacancy_id', '=', 'vacancies.id')
+      //                         ->where('user_vacancy.user_id', $id)
+      //                         ->where('vacancies.status', 'aberta')
+      //                         ->get();
+      // $vacancies_closed = DB::table('user_vacancy')
+      //                         ->join('vacancies', 'user_vacancy.vacancy_id', '=', 'vacancies.id')
+      //                         ->where('user_vacancy.user_id', $id)
+      //                         ->where('vacancies.status', 'fechada')
+      //                         ->get();
+
+
+      // busca todas as vagas do usuário
+      $vacancies_table = DB::table('user_vacancy')->where('user_id', $id)->select('vacancy_id')->get();
+      // transforma em array
+      $vacancies = array();
+      foreach($vacancies_table as $v) {
+        array_push($vacancies, $v->vacancy_id);
+      }
+
+      //busca vagas abertas e fechadas
+      $vacancies_opened = Vacancy::findMany($vacancies)->where('status', 'aberta');
+      $vacancies_closed = Vacancy::findMany($vacancies)->where('status', 'fechada');
+
+      return view('users.show', compact('user', 'vacancies_opened', 'vacancies_closed'));
     }
 
     return redirect('/');
