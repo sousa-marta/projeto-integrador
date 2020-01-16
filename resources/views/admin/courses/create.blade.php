@@ -1,7 +1,3 @@
-{{-- TODO: 
-  - categorias e empresas no form dinâmicas
-  Acrescentar required nos forms --}}
-
 @extends('layouts.mainTemplate')
 
 @section('title')
