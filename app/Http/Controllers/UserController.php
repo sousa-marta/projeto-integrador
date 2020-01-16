@@ -177,9 +177,6 @@ class UserController extends Controller
   {
     $vacancy = Vacancy::select('id')->where('id', $request->vacancyId)->first();
     $appliedVacancies = DB::table('user_vacancy')->select('id')->where([['user_id', Auth::user()->id], ['vacancy_id', $request->vacancyId]])->first();
-    // $vacancyApplied = DB::table('user_vacancy')->select('vacancy_id')->where()->first();
-    // var_dump($appliedVacancies);
-    // exit;
 
     if($appliedVacancies !== null) {
       return redirect()->back()->with('alreadyApplied', 'message');
