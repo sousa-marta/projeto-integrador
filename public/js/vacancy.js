@@ -39,22 +39,8 @@ let email = document.getElementById("email");
 const nameError = document.querySelector(".nameError");
 const emailError = document.querySelector(".emailError");
 
-name.addEventListener("input", function(event) {
-  if(name.validity.valid) {
-    nameError.innerHTML = ""; // Reseta o conteúdo da mensagem de erro
-    nameError.className = "error"; // Reseta o visual da mensagem
-  }
-}, false);
-
-email.addEventListener("input", function(event) {
-  if(email.validity.valid) {
-    emailError.innerHTML = "";
-    emailError.className = "error";
-  }
-}, false);
-
 form.addEventListener("submit", function (event) {
-  // Sempre que o usuário clicar em enviar, verifica se os campos nome e e-mail são válidos
+  // Sempre que o usuário clicar em enviar, verifica se os campos nome, e-mail e currículo são válidos
   if (!name.validity.valid) {
     // Se o campo não for válido, mostramos uma mensagem customizada
     nameError.innerHTML = "Preencha com o nome completo";
@@ -67,5 +53,19 @@ form.addEventListener("submit", function (event) {
     emailError.innerHTML = "Preencha com um endereço de e-mail válido";
     emailError.className = "error active";
     event.preventDefault();
+  }
+}, false);
+
+name.addEventListener("input", function(event) {
+  if(name.validity.valid) {
+    nameError.innerHTML = "";
+    nameError.className = "error";
+  }
+}, false);
+
+email.addEventListener("input", function(event) {
+  if(email.validity.valid) {
+    emailError.innerHTML = "";
+    emailError.className = "error";
   }
 }, false);
