@@ -34,38 +34,40 @@ filterHTML = function(id, selector, filter) {
 
 // Validações do formulário de envio de currículo
 let form = document.querySelector("#sendCVForm");
-let name = document.getElementById("name");
-let email = document.getElementById("email");
-const nameError = document.querySelector(".nameError");
-const emailError = document.querySelector(".emailError");
-
-form.addEventListener("submit", function (event) {
-  // Sempre que o usuário clicar em enviar, verifica se os campos nome, e-mail e currículo são válidos
-  if (!name.validity.valid) {
-    // Se o campo não for válido, mostramos uma mensagem customizada
-    nameError.innerHTML = "Preencha com o nome completo";
-    nameError.className = "error active";
-    // E cancelamos o envio para o servidor
-    event.preventDefault();
-  }
-
-  if (!email.validity.valid) {
-    emailError.innerHTML = "Preencha com um endereço de e-mail válido";
-    emailError.className = "error active";
-    event.preventDefault();
-  }
-}, false);
-
-name.addEventListener("input", function(event) {
-  if(name.validity.valid) {
-    nameError.innerHTML = "";
-    nameError.className = "error";
-  }
-}, false);
-
-email.addEventListener("input", function(event) {
-  if(email.validity.valid) {
-    emailError.innerHTML = "";
-    emailError.className = "error";
-  }
-}, false);
+if(form) {
+  let name = document.getElementById("fullNameForVacancy");
+  let email = document.getElementById("emailForVacancy");
+  const nameError = document.querySelector(".nameError");
+  const emailError = document.querySelector(".emailError");
+  
+  form.addEventListener("submit", function (event) {
+    // Sempre que o usuário clicar em enviar, verifica se os campos nome, e-mail e currículo são válidos
+    if (!name.validity.valid) {
+      // Se o campo não for válido, mostramos uma mensagem customizada
+      nameError.innerHTML = "Preencha com o nome completo";
+      nameError.className = "error active";
+      // E cancelamos o envio para o servidor
+      event.preventDefault();
+    }
+  
+    if (!email.validity.valid) {
+      emailError.innerHTML = "Preencha com um endereço de e-mail válido";
+      emailError.className = "error active";
+      event.preventDefault();
+    }
+  }, false);
+  
+  name.addEventListener("input", function(event) {
+    if(name.validity.valid) {
+      nameError.innerHTML = "";
+      nameError.className = "error";
+    }
+  }, false);
+  
+  email.addEventListener("input", function(event) {
+    if(email.validity.valid) {
+      emailError.innerHTML = "";
+      emailError.className = "error";
+    }
+  }, false);
+}

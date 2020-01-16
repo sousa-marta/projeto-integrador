@@ -15,8 +15,8 @@ class CreateUserVacancyTable extends Migration
     {
         Schema::create('user_vacancy', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->unsignedBigInteger('user_id')->unique();
-            $table->unsignedBigInteger('vacancy_id')->unique();
+            $table->unsignedBigInteger('user_id');
+            $table->unsignedBigInteger('vacancy_id');
             $table->timestamps();
         });
     }

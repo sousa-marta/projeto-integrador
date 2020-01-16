@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\{AppliedVacancy, UserCourse, Location, Role, User, Vacancy};
 use App\Http\Requests\AppliedVacanciesFormRequest;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\{Auth, Hash};
+use Illuminate\Support\Facades\{Auth, DB, Hash};
 
 class UserController extends Controller
 {
@@ -173,6 +173,13 @@ class UserController extends Controller
 
   public function sendResume(AppliedVacanciesFormRequest $request)
   {
+    $vacancy = Vacancy::select('id')->where('id', $request->vacancyId)->first();
+    $appliedVacancies = DB::table('user_vacancy')->select('user_id','vacancy_id')->where('user_id',Auth::user()->id and 'vacancy_id',$vacancy)->first();
+
+    if($appliedVacancies !== null) {
+      return redirect()->back()->with('alreadyApplied', 'message');
+    }
+
     AppliedVacancy::create([
       'name' => $request->name,
       'email' => $request->email,
@@ -183,7 +190,6 @@ class UserController extends Controller
     ]);
 
     $user = User::find(Auth::user()->id);
-    $vacancy = Vacancy::select('id')->where('id', $request->vacancyId)->first();
     $user->vacancies()->attach($vacancy);
 
     return redirect()->back()->with('resumeSent', 'message');

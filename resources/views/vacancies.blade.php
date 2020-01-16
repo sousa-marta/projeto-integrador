@@ -141,17 +141,17 @@ Oportunidades
           @csrf
           <div class="form-group">
             <label for="name">Nome Completo</label>
-            <input type="text" class="form-control" id="name" name="name" pattern=".{3,}" placeholder="Digite seu nome completo" required>
+            <input type="text" class="form-control" id="fullNameForVacancy" name="name" pattern=".{3,}" placeholder="Digite seu nome completo" required>
             <span class="nameError" aria-live="polite"></span>
           </div>
           <div class="form-group">
             <label for="email">E-mail</label>
-            <input type="email" class="form-control" name="email" id="email" placeholder="Digite seu melhor e-mail para contato" required>
+            <input type="email" class="form-control" name="email" id="emailForVacancy" placeholder="Digite seu melhor e-mail para contato" required>
             <span class="emailError" aria-live="polite"></span>
           </div>
           <div class="form-group">
             <label for="resume">Currículo <em>(apenas arquivos pdf)</em></label>
-            <input class="form-control" type="file" name="resume" id="resume" required>
+            <input class="form-control" type="file" name="resume" id="resumeForVacancy" required>
           </div>
       </main>
       <footer class="modal-footer modal-footer-bg-color">
@@ -162,3 +162,5 @@ Oportunidades
   </div>
 </div>
 @endauth
+
+<script src="/js/vacancy.js"></script>

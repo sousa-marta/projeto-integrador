@@ -105,7 +105,7 @@ a:hover, a:focus {
 }
 
 /* This is our style for the invalid fields */
-input:invalid{
+#fullNameForVacancy:invalid, #emailForVacancy:invalid{
   border-color: #900;
   background-color: #FDD;
 }
