@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\{AppliedVacancy, UserCourse, Location, Role, User, Vacancy};
+use App\{AppliedVacancy, UserCourse, Location, Role, User, Vacancy, Course};
 use App\Http\Requests\AppliedVacanciesFormRequest;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\{Auth, DB, Hash};
+use Illuminate\Support\Facades\{Auth, Hash, DB};
 
 class UserController extends Controller
 {
@@ -90,7 +90,32 @@ class UserController extends Controller
     $message = $request->session()->get('message');
 
     if (Auth::user()->email == $user->email) {
-      return view('users.show', compact('user','message'));
+
+      // VAGAS
+      // busca todas as vagas do usuário
+      $vacancies_table = DB::table('user_vacancy')->where('user_id', $id)->select('vacancy_id')->get();
+      // transforma em array
+      $vacancies = array();
+      foreach($vacancies_table as $v) {
+        array_push($vacancies, $v->vacancy_id);
+      }
+      //busca vagas abertas e fechadas
+      $vacancies_opened = Vacancy::findMany($vacancies)->where('status', 'aberta');
+      $vacancies_closed = Vacancy::findMany($vacancies)->where('status', 'fechada');
+
+      // CURSOS
+      // busca todos os cursos do usuário
+      $courses_table = DB::table('user_courses')->where('user_id', $id)->select('course_id')->get();
+      // transforma em array
+      $courses = array();
+      foreach($courses_table as $c) {
+        array_push($courses, $c->course_id);
+      }
+      //busca cursos abertos e fechados
+      $courses_opened = Course::findMany($courses)->where('status', 'disponível');
+      $courses_closed = Course::findMany($courses)->where('status', 'indisponível');
+
+      return view('users.show', compact('user', 'vacancies_opened', 'vacancies_closed', 'courses_opened', 'courses_closed', 'message'));
     }
 
 
