@@ -20,6 +20,12 @@
 </script>
 @endif
 
+@if(session('resumeSent'))
+<script type='text/javascript'>
+  alert('Candidatura efetuada com sucesso!')
+</script>
+@endif
+
 @if ($errors->any())
 <div class="alert alert-danger">
   <ul>

@@ -137,15 +137,17 @@ Oportunidades
         </button>
       </header>
       <main class="modal-body">
-        <form action="{{ route('user.apply.vacancy',['id'=>Auth::user()->id]) }}" method="post" enctype="multipart/form-data">
+        <form novalidate id="sendCVForm" action="{{ route('user.apply.vacancy',['id'=>Auth::user()->id]) }}" method="post" enctype="multipart/form-data">
           @csrf
           <div class="form-group">
             <label for="name">Nome Completo</label>
-            <input type="text" class="form-control" id="name" name="name" placeholder="Digite seu nome completo">
+            <input type="text" class="form-control" id="name" name="name" pattern=".{3,}" placeholder="Digite seu nome completo">
+            <span class="nameError" aria-live="polite"></span>
           </div>
           <div class="form-group">
             <label for="email">E-mail</label>
             <input type="email" class="form-control" name="email" id="email" placeholder="Digite seu melhor e-mail para contato">
+            <span class="emailError" aria-live="polite"></span>
           </div>
           <div class="form-group">
             <label for="resume">Currículo</label>
@@ -153,7 +155,7 @@ Oportunidades
           </div>
       </main>
       <footer class="modal-footer modal-footer-bg-color">
-        <button name="vacancyId" value="{{$vacancy->id ?? ''}}" type="submit" class="btn btn-primary col-lg-12">Enviar</button>
+        <button id="sendResume" name="vacancyId" value="{{$vacancy->id ?? ''}}" type="submit" class="btn btn-primary col-lg-12">Enviar</button>
       </footer>
       </form>
     </dialog>
