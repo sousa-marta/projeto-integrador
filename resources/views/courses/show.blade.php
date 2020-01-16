@@ -73,7 +73,7 @@ Curso de {{ $course->name }}
             <p class="course-detail-schedule-legend">Duração</p>
           </div>
         </div>
-        <div class="row pb-5 mt-3">
+        <div class="row pb-5 mt-3 d-flex flex-column">
           <!-- botão de inscrição -->
           <form action="/courses/{{$course->id}}/apply-to-course" method="post" onsubmit="return confirm('Tem certeza que quer demonstrar interesse no curso de {{ addslashes($course->name) }}?')">
             @csrf
@@ -108,35 +108,32 @@ Curso de {{ $course->name }}
     </div>
   </div>
 
-  <!-- div do fundo cinza -->
   <div class="course-detail-similar-courses-bottom">
     <div class="container">
       <div class="row d-flex container course-detail-div-cards">
 
-        {{-- TODO: Quero que mostre apenas os três primeiros cursos e não mostre o que a página já está exibindo --}}
-        {{-- Erro: o take(3) está contando mesmo os casos que não passam no if. --}}
-        {{-- @foreach ($courses->take(3) as $courseOne) --}}
-
-        @foreach ($courses as $courseOne)
-        @if ($courseOne->id != $course->id && $courseOne->category_id == $course->category_id)
-        <div class="col-12 col-md-8 col-lg-4 p-2">
-          <div class="course-detail-card">
-            <div class="container course-detail-card-title">
-              <p>{{$courseOne->category->name}}</p>
-              <h5>Curso de {{$courseOne->name}}</h5>
-            </div>
-            <div class="container d-flex flex-column">
-              <img src="/img/companies/{{$courseOne->company->logo}}" alt="Logo da empresa {{$courseOne->company->name}}" class="align-self-center course-detail-logo-img-alike">
-              <div class="pb-2">
-                <p><strong>Duração:</strong>{{$courseOne->duration}} meses</p>
-                <p><strong>Vagas:</strong> 10</p>
-                <p><strong>Início:</strong> {{$courseOne->start}}</p>
+        @forelse ($courses as $courseOne)
+          @if ($courseOne->id != $course->id && $courseOne->category_id == $course->category_id)
+          <div class="col-12 col-md-8 col-lg-4 p-2">
+            <div class="course-detail-card">
+              <div class="container course-detail-card-title">
+                <p>{{$courseOne->category->name}}</p>
+                <h5>Curso de {{$courseOne->name}}</h5>
+              </div>
+              <div class="container d-flex flex-column">
+                <img src="/img/companies/{{$courseOne->company->logo}}" alt="Logo da empresa {{$courseOne->company->name}}" class="align-self-center course-detail-logo-img-alike">
+                <div class="pb-2">
+                  <p><strong>Duração:</strong>{{$courseOne->duration}} meses</p>
+                  <p><strong>Vagas:</strong> 10</p>
+                  <p><strong>Início:</strong> {{$courseOne->start}}</p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        @endif
-        @endforeach
+          @endif
+        @empty
+          <h4>Não existem cursos similares no momento, veja outros áreas disponíveis para cursos</h4>
+        @endforelse
 
       </div>
     </div>
