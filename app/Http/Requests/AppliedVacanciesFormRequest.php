@@ -26,7 +26,7 @@ class AppliedVacanciesFormRequest extends FormRequest
     return [
       'name' => 'required|min:3',
       'email' => 'required|email:rfc',
-      'resume' => 'required|mimes:pdf|max:300'
+      'resume' => 'mimes:pdf|max:200'
     ];
   }
 
