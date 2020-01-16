@@ -75,9 +75,11 @@ Curso de {{ $course->name }}
         </div>
         <div class="row pb-5 mt-3">
           <!-- botão de inscrição -->
-          <form action="/courses/{{$course->id}}/apply-to-course" method="post">
+          <form action="/courses/{{$course->id}}/apply-to-course" method="post" onsubmit="return confirm('Tem certeza que quer demonstrar interesse no curso de {{ addslashes($course->name) }}?')">
             @csrf
-            <button type="submit" class="col-12 btn btn-secondary">Demonstre Interesse</button>
+            <button type="submit" class="col-12 btn btn-secondary">
+              Demonstre Interesse
+            </button>
           </form>
         </div>
       </div>

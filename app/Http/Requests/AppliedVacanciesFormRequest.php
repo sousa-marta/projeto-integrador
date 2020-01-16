@@ -25,7 +25,17 @@ class AppliedVacanciesFormRequest extends FormRequest
   {
     return [
       'name' => 'required|min:3',
-      'resume' => 'mimes:pdf'
+      'email' => 'required|email:rfc',
+      'resume' => 'mimes:pdf|max:200'
+    ];
+  }
+
+  public function attributes()
+  {
+    return [
+      'name' => 'nome',
+      'email' => 'e-mail',
+      'resume' => 'currículo'
     ];
   }
 
@@ -34,8 +44,9 @@ class AppliedVacanciesFormRequest extends FormRequest
     return [
       // 'regra' => 'mensagem'
       'required' => 'O campo :attribute é obrigatório',
-      'min' => 'O :attribute precisa de pelo menos 3 caracteres',
-      'mimes' => 'O formato de arquivo anexado não é permitido'
+      'min' => 'O campo :attribute precisa de pelo menos 3 caracteres',
+      'mimes' => 'O formato de arquivo anexado não é permitido',
+      'max' => 'Seu arquivo PDF ultrapassou o tamanho permitido (máx.: 300KB)'
     ];
   }
 }

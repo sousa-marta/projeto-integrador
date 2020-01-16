@@ -21,7 +21,6 @@ Cursos
 </section>
 @endsection
 
-
 @section('menu-content')
 
 <!-- Barra de Navegação Lateral -->

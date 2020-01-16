@@ -12,8 +12,9 @@ Página Usuário
     <li class="breadcrumb-item active" aria-current="page">Perfil do Usuário</li>
   </ol>
 </nav>
-@endsection
 
+@include('partials.alerts')
+@endsection
 
 @section('content')
 <!-- INFORMAÇÕES -->
@@ -27,6 +28,8 @@ Página Usuário
     </div>
   </div>
 </section>
+
+
 
 <!-- VAGAS -->
 <section class="container pb-4">

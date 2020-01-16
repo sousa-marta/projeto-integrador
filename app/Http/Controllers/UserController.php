@@ -84,9 +84,10 @@ class UserController extends Controller
    * @param  \App\User  $user
    * @return \Illuminate\Http\Response
    */
-  public function show($id)
+  public function show($id, Request $request)
   {
     $user = User::find($id);
+    $message = $request->session()->get('message');
 
     if (Auth::user()->email == $user->email) {
 
@@ -114,8 +115,9 @@ class UserController extends Controller
       $courses_opened = Course::findMany($courses)->where('status', 'disponível');
       $courses_closed = Course::findMany($courses)->where('status', 'indisponível');
 
-      return view('users.show', compact('user', 'vacancies_opened', 'vacancies_closed', 'courses_opened', 'courses_closed'));
+      return view('users.show', compact('user', 'vacancies_opened', 'vacancies_closed', 'courses_opened', 'courses_closed', 'message'));
     }
+
 
     return redirect('/');
   }
@@ -198,6 +200,16 @@ class UserController extends Controller
 
   public function sendResume(AppliedVacanciesFormRequest $request)
   {
+    $vacancy = Vacancy::select('id')->where('id', $request->vacancyId)->first();
+    $appliedVacancies = DB::table('user_vacancy')->select('id')->where([['user_id', Auth::user()->id], ['vacancy_id', $request->vacancyId]])->first();
+    // $vacancyApplied = DB::table('user_vacancy')->select('vacancy_id')->where()->first();
+    // var_dump($appliedVacancies);
+    // exit;
+
+    if($appliedVacancies !== null) {
+      return redirect()->back()->with('alreadyApplied', 'message');
+    }
+
     AppliedVacancy::create([
       'name' => $request->name,
       'email' => $request->email,
@@ -208,13 +220,12 @@ class UserController extends Controller
     ]);
 
     $user = User::find(Auth::user()->id);
-    $vacancy = Vacancy::select('id')->where('id', $request->vacancyId)->first();
     $user->vacancies()->attach($vacancy);
 
-    return redirect()->back();
+    return redirect()->back()->with('resumeSent', 'message');
   }
 
-  public function sendCourse(UserCourse $userCourse, $id)
+  public function sendCourse(UserCourse $userCourse, Request $request, $id)
   {
     $course_id = $id;
     $user_id = Auth::user()->id;
@@ -224,6 +235,9 @@ class UserController extends Controller
     
     $userCourse->save();
 
-    return redirect('courses');
+    $request->session()->flash('message', 'Demonstração de Interesse feita com sucesso!');
+
+    return redirect('/users/'.$user_id);
   }
 }
+
