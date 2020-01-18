@@ -111,28 +111,26 @@ Curso de {{ $course->name }}
   <div class="course-detail-similar-courses-bottom">
     <div class="container">
       <div class="row d-flex container course-detail-div-cards">
-
-        @forelse ($courses as $courseOne)
-          @if ($courseOne->id != $course->id && $courseOne->category_id == $course->category_id)
+        <!-- Mostrando para o usuário outros cursos na mesma área: -->
+        @forelse ($coursesSameCategory as $eachCourse)
           <div class="col-12 col-md-8 col-lg-4 p-2">
             <div class="course-detail-card">
               <div class="container course-detail-card-title">
-                <p>{{$courseOne->category->name}}</p>
-                <h5>Curso de {{$courseOne->name}}</h5>
+                <p>{{$eachCourse->category->name}}</p>
+                <h5>Curso de {{$eachCourse->name}}</h5>
               </div>
               <div class="container d-flex flex-column">
-                <img src="/img/companies/{{$courseOne->company->logo}}" alt="Logo da empresa {{$courseOne->company->name}}" class="align-self-center course-detail-logo-img-alike">
+                <img src="/img/companies/{{$eachCourse->company->logo}}" alt="Logo da empresa {{$eachCourse->company->name}}" class="align-self-center course-detail-logo-img-alike">
                 <div class="pb-2">
-                  <p><strong>Duração:</strong>{{$courseOne->duration}} meses</p>
+                  <p><strong>Duração:</strong>{{$eachCourse->duration}} meses</p>
                   <p><strong>Vagas:</strong> 10</p>
-                  <p><strong>Início:</strong> {{$courseOne->start}}</p>
+                  <p><strong>Início:</strong> {{$eachCourse->start}}</p>
                 </div>
               </div>
             </div>
           </div>
-          @endif
         @empty
-          <h4>Não existem cursos similares no momento, veja outros áreas disponíveis para cursos</h4>
+          <h5 class="text-center px-3 my-5">Não existem cursos similares no momento, veja outros <a href="/courses">cursos disponíveis</a></h5>
         @endforelse
 
       </div>
