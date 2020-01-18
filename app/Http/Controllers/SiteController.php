@@ -81,7 +81,13 @@ class SiteController extends Controller
   public function showCourse($id)
   {
     $course = Course::find($id);
-    $courses = Course::all();
-    return view('courses.show', compact('course', 'courses'));
+    $courseCategory = $course->category_id;
+
+    //Enviando para view todos as rows de courses exceto do $id do curso em questão:
+    $coursesSameCategory = Course::where('category_id','=',$courseCategory)
+                                 ->where('id','!=',$id)
+                                 ->get();
+
+    return view('courses.show', compact('course', 'coursesSameCategory'));
   }
 }
