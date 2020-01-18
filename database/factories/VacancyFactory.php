@@ -13,7 +13,7 @@ $factory->define(Vacancy::class, function (Faker $faker) {
     'city' => $faker->city,
     'description' => $faker->text,
     'wage' => $faker->randomFloat($nbMaxDecimals = 2, $min = 1000, $max = 70000),
-    'status' => 'ativa',
+    'status' => 'aberta',
     'company_id' => 1,
     'category_id' => 1,
   ];

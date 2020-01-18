@@ -63,6 +63,7 @@ class SiteController extends Controller
       ->select('vacancies.*', 'companies.name as company_name', 'companies.logo as company_logo', 'categories.name as category_name')
       ->orderBy('name')
       ->get();
+
     return view('vacancies', compact('vacancies', 'categories'));
   }
 
