@@ -24,21 +24,21 @@ Oportunidades
 
 
 @section('menu-content')
-
+<form onsubmit="return select(event)">
 <!-- Barra de Navegação Lateral -->
 <aside class="complete-menu mt-4">
   <button type="button" class="col-lg-12 btn rounded-0 filter-title-bg text-white text-left font-weight-bold m-0 py-3  visible-xs visible-sm collapsed" data-toggle="collapse" data-target="#collapseFilter">Filtros <span class="fa fa-angle-down px-1"></span></button>
 
-  <form action="/vacancies">
+  
     <div id="collapseFilter" class="collapse">
       <!-- Collapse do primeiro tópico de busca -->
       <button type="button" class="col-lg-12 text-white btn rounded-0 collapse-bg font-weight-bold text-left m-0 py-3" data-toggle="collapse" data-target="#collapseLocation">Localização <i class="fa fa-caret-square-o-down px-1"></i></button>
 
       <div id="collapseLocation" class="collapse list-group-item bg-light">
-        <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-          <option selected disabled>Cidade</option>
+        <select class="custom-select mr-sm-2" id="inlineFormLocationSelect">
+          <option selected>Cidade</option>
           @foreach ($vacancies as $vacancy)
-          <option value="{{$vacancy->city}}" onclick="filterHTML('#id01', '.item', this.value)">{{$vacancy->city}}</option>
+          <option value="{{$vacancy->city}}">{{$vacancy->city}}</option>
           @endforeach
         </select>
       </div>
@@ -47,10 +47,10 @@ Oportunidades
       <button type="button" class="col-lg-12 text-white btn rounded-0 collapse-bg font-weight-bold text-left m-0 py-3" data-toggle="collapse" data-target="#collapseCategories">Área de Atuação <i class="fa fa-caret-square-o-down px-1"></i></button>
 
       <div id="collapseCategories" class="collapse list-group-item bg-light">
-        <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-          <option selected disabled>Nome da área</option>
+        <select class="custom-select mr-sm-2" id="inlineFormCategorySelect">
+          <option selected>Nome da área</option>
           @foreach ($categories as $category)
-          <option value="{{$category->name}}" onclick="filterHTML('#id01', '.item', this.value)">{{$category->name}}</option>
+          <option value="{{$category->name}}">{{$category->name}}</option>
           @endforeach
         </select>
       </div>
@@ -59,23 +59,22 @@ Oportunidades
       <button type="button" class="col-lg-12 text-white btn rounded-0 collapse-bg font-weight-bold text-left m-0 py-3" data-toggle="collapse" data-target="#collapseOccupations">Cargos <i class="fa fa-caret-square-o-down px-1"></i></button>
 
       <div id="collapseOccupations" class="collapse list-group-item bg-light">
-        <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-          <option selected disabled>Nome do cargo</option>
+        <select class="custom-select mr-sm-2" id="inlineFormOccupationSelect">
+          <option selected>Nome do cargo</option>
           @foreach ($vacancies as $vacancy)
-          <option value="{{$vacancy->name}}" onclick="filterHTML('#id01', '.item', this.value)">{{$vacancy->name}}</option>
+          <option value="{{$vacancy->name}}">{{$vacancy->name}}</option>
           @endforeach
         </select>
       </div>
 
       <!-- Campo de busca por palavra -->
       <div class="list-group-item row form-group p-3 bg-secondary">
-        <!-- TODO: arrumar href do botão buscar -->
         <button type="submit" class="btn btn-secondary col-lg-12"><i class="fa fa-search"></i> Buscar</button>
-  </form>
+</form>
   <hr>
   <div class="form-group ">
-    <label class="font-weight-bold text-light" for="busca">Busca por palavra chave</label>
-    <input type="text" class="form-control" id="busca" placeholder="Procurar..." oninput="filterHTML('#id01', '.item', this.value)">
+    <label class="font-weight-bold text-light" for="word-search">Busca por palavra chave</label>
+    <input type="text" class="form-control" id="word-search" placeholder="Procurar..." oninput="listen()">
   </div>
   </div>
   </div>
@@ -88,17 +87,17 @@ Oportunidades
 <!-- Conteúdo Central da Página -->
 <section class="container" id="id01">
   @foreach ($vacancies as $vacancy)
-  <div class="card my-5 item">
+  <div class="card my-5 item vacancy">
     <div class="row">
       <div class="d-flex align-items-center justify-content-center col-12 col-lg-4">
         <img class="logo-size" src="/img/companies/{{$vacancy->company_logo}}" alt="Logo da empresa {{ $vacancy->company_name }}">
       </div>
       <div class="col-lg-8 p-3 text-center">
-        <h4> Vaga {{ $vacancy->name }}</h4>
+        <h4 class="vacancy-name"> Vaga {{ $vacancy->name }}</h4>
         <div class="row justify-content-around">
-          <p class="col-6"><strong>Cidade:</strong> {{ $vacancy->city }}</p>
+          <p class="col-6 vacancy-city"><strong>Cidade:</strong> {{ $vacancy->city }}</p>
           <p class="col-6"><strong>Salário:</strong> R$ {{ $vacancy->wage }}</p>
-          <p class="col-6"><strong>Categoria:</strong> {{ $vacancy->category_name }}</p>
+          <p class="col-6 vacancy-category"><strong>Categoria:</strong> {{ $vacancy->category_name }}</p>
           <p class="col-6"><strong>Empresa:</strong> {{ $vacancy->company_name }}</p>
         </div>
         <p><button type="button" class="btn btn-secondary my-2">Veja cursos relacionados</button></p>
