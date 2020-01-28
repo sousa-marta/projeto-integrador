@@ -111,7 +111,6 @@ Oportunidades
           @auth
           <div class="d-flex justify-content-center">
             <button type="button" class="btn btn-primary btn-login" data-toggle="modal" data-target="#resume-modal" href="#">Enviar currículo <i class='fas fa-envelope-square ml-1'></i></button>
-            <!-- <button name="vacancyId" value="{{$vacancy->id}}" type="submit"><a href="mailto:{{$vacancy->email}}?Subject=Vaga%20{{$vacancy->name}}" class="btn btn-primary m-1">Enviar currículo <i class='fas fa-envelope-square ml-1'></i></a></button> -->
             </form>
             <a href="tel://+55{{$vacancy->phone}}" class="btn btn-secondary m-1">Ligar <i class='fas fa-phone-square-alt ml-1'></i></a>
           </div>
