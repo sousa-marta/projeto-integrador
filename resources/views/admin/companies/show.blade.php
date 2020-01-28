@@ -40,8 +40,7 @@ Empresas
             <hr>
             <div class="d-flex justify-content-around">
               <div>
-                <a href="/admin/vacancies" class="btn btn-primary nowrap m-1">Ver vagas</a>
-                <a href="/admin/courses" class="btn btn-secondary nowrap m-1">Ver cursos</a>
+                <a href="/admin/companies/{{ $company->id }}/edit" class="btn btn-primary nowrap m-1">Editar dados</a>
               </div>
             </div>
           </div>
