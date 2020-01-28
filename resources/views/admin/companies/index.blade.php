@@ -52,3 +52,4 @@ Empresas Cadastradas
     </table>
   </div>
 </section>
+@endsection

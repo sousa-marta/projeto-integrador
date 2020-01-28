@@ -35,6 +35,12 @@ Voluntárias(os)
               <h6 class="card-text"><i class="fa">&#xf095;</i> <strong>Telefone:</strong> <a href="tel://+55{{$volunteer->phone}}"> {{$volunteer->phone}}</a></h6>
               <h6 class="card-text"><i class="fa">&#xf0e0;</i> <strong>E-mail:</strong> <a href="mailto:{{$volunteer->email}}?Subject=Contato%20{{$volunteer->name}}"> {{$volunteer->email}}</a></h6>
             </div>
+            <hr>
+            <div class="d-flex justify-content-around">
+              <div>
+                <a href="/admin/volunteers/{{ $volunteer->id }}/edit" class="btn btn-primary nowrap m-1">Editar dados</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
