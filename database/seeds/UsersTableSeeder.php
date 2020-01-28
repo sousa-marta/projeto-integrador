@@ -22,7 +22,7 @@ class UsersTableSeeder extends Seeder
       'name' => 'Admin',
       'email' => 'admin@oppy.com',
       'password' => Hash::make('admin'),
-      'location_id' => '2',
+      'location_id' => '1',
     ]);
 
     $user = User::create([
