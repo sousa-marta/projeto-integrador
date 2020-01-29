@@ -101,7 +101,7 @@ Oportunidades
           <p class="col-6 vacancy-category"><strong>Categoria:</strong> {{ $vacancy->category_name }}</p>
           <p class="col-6"><strong>Empresa:</strong> {{ $vacancy->company_name }}</p>
         </div>
-        <p><button type="button" class="btn btn-secondary my-2">Veja cursos relacionados</button></p>
+        <p><a href="/courses/filter/{{$vacancy->id}}" class="btn btn-secondary my-2">Veja cursos relacionados</a></p>
         <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#moreInfo{{$vacancy->id}}" aria-expanded="false" aria-controls="moreInfo{{$vacancy->id}}">Leia mais <i class='far fa-plus-square ml-1'></i></button>
         <div class="collapse" id="moreInfo{{$vacancy->id}}">
           <div class="card card-body border-0">
