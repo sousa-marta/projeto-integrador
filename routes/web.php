@@ -27,9 +27,10 @@ Route::post('contribute', 'UserController@logIn'); //faz login
 Route::get('vacancies',"SiteController@viewVacancies")->name('vacancies');
 Route::get('vacancies/{id?}',"SiteController@filteredVacancies");
 Route::post('vacancies', 'UserController@logIn'); //faz login
-Route::get('courses',"SiteController@viewCourses");
+Route::get('courses',"SiteController@viewCourses")->name('courses.index');
 Route::post('courses', 'UserController@logIn'); //faz login
 Route::get('/courses/{id}',"SiteController@showCourse");
+Route::get('/courses/filter/{id?}',"SiteController@filteredCourses");
 Route::post('/users/create','UserController@logIn'); //faz login
 
 Route::get('/admin/impersonate/destroy','Admin\ImpersonateController@destroy')->name('admin.impersonate.destroy');

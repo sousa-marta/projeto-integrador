@@ -19,6 +19,7 @@ Cursos
 <section class="pages-title-bg d-flex justify-content-center align-items-center">
   <h1>Cursos</h1>
 </section>
+@include('partials.alerts')
 @endsection
 
 @section('menu-content')
@@ -86,6 +87,29 @@ Cursos
   <!-- Categorias de Cursos Imagens - Flip Cards -->
   <div class="row justify-content-center mb-4">
 
+    @if(isset($vacancy) && $vacancy !== NULL)
+    <div class="col-lg-5 col-md-12 col-sm-6 align-items-center d-flex flex-column mt-5 mb-4">
+      <div class="courses-bg-cards">
+        <div class="flip-card flip-card-front">
+          <h5 class="card-title text-center py-2">{{ $courses[0]->category_name }}</h5>
+          <img src="{{ $courses[0]->category_img }}" aria-hidden="true" alt="" class="course-img card-img-bottom">
+        </div>
+        <div class="flip-card flip-card-back">
+          <div class="card-back-body">
+            <h5 class="card-title text-center py-2">{{ $courses[0]->category_name }}</h5>
+            <img src="{{ $courses[0]->category_img }}" aria-hidden="true" alt="" class="course-img card-img-bottom">
+            <ul>
+              @foreach ($courses as $course)
+              <a href="/courses/{{$course->id}}">
+                <li>{{ $course->name }}</li>
+              </a>
+              @endforeach
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    @else
     @foreach ($categories as $category)
     <div class="col-lg-5 col-md-12 col-sm-6 align-items-center d-flex flex-column mt-5 mb-4">
       <div class="courses-bg-cards">
@@ -111,6 +135,7 @@ Cursos
       </div>
     </div>
     @endforeach
+    @endif
   </div>
 </section>
 
