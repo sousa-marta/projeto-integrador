@@ -39,7 +39,7 @@ class VacanciesTableSeeder extends Seeder
       'wage' => 3500,
       'status' => 'aberta',
       'company_id' => 3,
-      'category_id' => 3,]
+      'category_id' => 5,]
     ]);
   }
 }

@@ -67,6 +67,32 @@ class SiteController extends Controller
     return view('vacancies', compact('vacancies', 'categories'));
   }
 
+  public function filteredVacancies($id)
+  {
+    $course = Course::find($id);
+    if($course == NULL) {
+      return redirect()->route('vacancies')->with('noneFound',"Neste momento, não há vagas relacionadas ao curso que buscou. Aproveite para ver outras vagas abaixo!");
+    }
+
+    $courseCategory = $course->category_id;
+    $vacanciesSameCategory = Vacancy::where('category_id','=',$courseCategory)->get();
+    if(!$vacanciesSameCategory->count()) {
+      return redirect()->route('vacancies')->with('noneFound',"Neste momento, não há vagas relacionadas ao curso que buscou. Aproveite para ver outras vagas abaixo!");
+    }
+
+    $categories = DB::table('categories')->select('name')->orderBy('name')->get();
+    $vacancies = DB::table('vacancies')
+      ->join('categories', 'categories.id', '=', 'vacancies.category_id')
+      ->join('companies', 'companies.id', '=', 'vacancies.company_id')
+      ->select('vacancies.*', 'companies.name as company_name', 'companies.logo as company_logo', 'categories.name as category_name')
+      ->where('category_id','=',$courseCategory)
+      ->orderBy('name')
+      ->get();
+    
+
+    return view('vacancies', compact('vacancies','categories'));    
+  }
+
   public function viewCourses()
   {
     $courses = Course::all();

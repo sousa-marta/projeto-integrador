@@ -24,7 +24,8 @@ Route::get('support', "SiteController@viewSupport");
 Route::post('support', 'UserController@logIn'); //faz login
 Route::get('contribute', "SiteController@viewContribute");
 Route::post('contribute', 'UserController@logIn'); //faz login
-Route::get('vacancies',"SiteController@viewVacancies");
+Route::get('vacancies',"SiteController@viewVacancies")->name('vacancies');
+Route::get('vacancies/{id?}',"SiteController@filteredVacancies");
 Route::post('vacancies', 'UserController@logIn'); //faz login
 Route::get('courses',"SiteController@viewCourses");
 Route::post('courses', 'UserController@logIn'); //faz login

@@ -47,3 +47,10 @@
   {{ $message }}
 </div>
 @endif
+
+@if(session('noneFound'))
+<div class="alert alert-warning text-center mt-2">
+  {{ session('noneFound') }}
+</div>
+@endif
+
