@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class VacanciesFormRequest extends FormRequest
+class ValidatingDonationForms extends FormRequest
 {
   /**
    * Determine if the user is authorized to make this request.
@@ -24,16 +24,30 @@ class VacanciesFormRequest extends FormRequest
   public function rules()
   {
     return [
-      'name' => 'required|min:3'
+      'donationName' => 'required|min:3',
+      'donationPhone' => 'required|min:10',
+      'donationValue' => 'required|min:3',
+      'donationStatus' => 'required'
     ];
   }
+
+  public function attributes()
+  {
+    return [
+      'donationName' => 'nome',
+      'donationPhone' => 'telefone',
+      'donationValue' => 'valor da doação',
+      'donationStatus' => 'status da doação'
+    ];
+  }
+
 
   public function messages()
   {
     return [
       // 'regra' => 'mensagem'
       'required' => 'O campo :attribute é obrigatório',
-      'min' => 'O :attribute precisa de pelo menos 3 caracteres'
+      'min' => 'O campo :attribute precisa de pelo menos :min caracteres',
     ];
   }
 }

@@ -15,7 +15,7 @@ Cadastre-se
 @endsection
 
 @section('content')
-
+@include('partials.alerts')
 <section class="d-flex justify-content-center align-items-center my-2">
   <form method="POST" action="/users" class="card p-4 col-11 col-md-10 contact-form-design">
     @csrf

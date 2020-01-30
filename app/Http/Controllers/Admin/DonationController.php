@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Donation;
+use App\Http\Requests\ValidatingDonationForms;
 use Illuminate\Http\Request;
 
 class DonationController extends Controller
@@ -39,15 +40,8 @@ class DonationController extends Controller
    * @param  \Illuminate\Http\Request  $request
    * @return \Illuminate\Http\Response
    */
-  public function store(Request $request)
+  public function store(ValidatingDonationForms $request)
   {
-
-    //TODO: montar validação das doações
-    // $request->validate([
-    //   'title' => 'required|min:3',
-    //   'description' => 'required',
-    // ]);
-
     $donation = Donation::create([
       'name' => $request->donationName,
       'phone' => $request->donationPhone,
@@ -87,15 +81,8 @@ class DonationController extends Controller
    * @param  \App\Donation  $donation
    * @return \Illuminate\Http\Response
    */
-  public function update(Request $request, Donation $donation)
+  public function update(ValidatingDonationForms $request, Donation $donation)
   {
-
-    //TODO: montar validação das doações
-    // $request->validate([
-    //   'title' => 'required|min:3',
-    //   'description' => 'required',
-    // ]);
-
     $donation->name = $request->donationName;
     $donation->phone = $request->donationPhone;
     $donation->amount = $request->donationValue;

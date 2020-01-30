@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\{AppliedVacancy, UserCourse, Location, Role, User, Vacancy, Course};
-use App\Http\Requests\AppliedVacanciesFormRequest;
+use App\Http\Requests\ValidatingUserEditForm;
+use App\Http\Requests\ValidatingUserRegisterForm;
+use App\Http\Requests\ValidatingUserVacancyForm;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\{Auth, Hash, DB};
 
@@ -62,7 +64,7 @@ class UserController extends Controller
    * @param  \Illuminate\Http\Request  $request
    * @return \Illuminate\Http\Response
    */
-  public function store(Request $request)
+  public function store(ValidatingUserRegisterForm $request)
   {
     $data = $request->except('_token');
     $data['password'] = Hash::make($data['password']);
@@ -73,7 +75,6 @@ class UserController extends Controller
     $user->roles()->attach($role);
 
     Auth::login($user);
-
       
     return redirect('/');
   }
@@ -145,14 +146,8 @@ class UserController extends Controller
    * @param  \App\User  $user
    * @return \Illuminate\Http\Response
    */
-  public function update(Request $request, User $user)
-  {
-    //Validate
-    // $request->validate([
-    //   'title' => 'required|min:3',
-    //   'description' => 'required',
-    // ]);
-    
+  public function update(ValidatingUserEditForm $request, User $user)
+  {    
     $user->name = $request->userFullName;
     $user->email = $request->userEmail;
     $user->location_id = $request->userCountry;
@@ -198,7 +193,7 @@ class UserController extends Controller
     return redirect()->back();
   }
 
-  public function sendResume(AppliedVacanciesFormRequest $request)
+  public function sendResume(ValidatingUserVacancyForm $request)
   {
     $vacancy = Vacancy::select('id')->where('id', $request->vacancyId)->first();
     $appliedVacancies = DB::table('user_vacancy')->select('id')->where([['user_id', Auth::user()->id], ['vacancy_id', $request->vacancyId]])->first();

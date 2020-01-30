@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
-use App\Http\Requests\VacanciesFormRequest;
+use App\Http\Requests\ValidatingVacancyForms;
 use App\Vacancy;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -45,7 +45,7 @@ class VacancyController extends Controller
    * @param  \Illuminate\Http\Request  $request
    * @return \Illuminate\Http\Response
    */
-  public function store(VacanciesFormRequest $request)
+  public function store(ValidatingVacancyForms $request)
   {
     Vacancy::create(['name' => $request->name, 'phone' => $request->phone, 'email' => $request->email, 'description' => $request->description, 'wage' => $request->wage, 'status' => $request->status, 'city' => $request->city, 'category_id' => $request->category, 'company_id' => $request->company]);
     $request->session()->flash('message', "A vaga {$request->name} foi salva com sucesso");
@@ -86,7 +86,7 @@ class VacancyController extends Controller
    * @param  \App\Vacancy  $vacancy
    * @return \Illuminate\Http\Response
    */
-  public function update(VacanciesFormRequest $request, Vacancy $vacancy)
+  public function update(ValidatingVacancyForms $request, Vacancy $vacancy)
   {
     $vacancy->name = $request->name;
     $vacancy->status = $request->status;

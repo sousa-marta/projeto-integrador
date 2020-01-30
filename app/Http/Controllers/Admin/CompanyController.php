@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\{Company, Location};
+use App\Http\Requests\ValidatingCompanyForms;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -42,7 +43,7 @@ class CompanyController extends Controller
    * @param  \Illuminate\Http\Request  $request
    * @return \Illuminate\Http\Response
    */
-  public function store(Request $request)
+  public function store(ValidatingCompanyForms $request)
   {
     Company::create([
       'name' => $request->companyName,
@@ -99,7 +100,7 @@ class CompanyController extends Controller
    * @param  \App\Company  $company
    * @return \Illuminate\Http\Response
    */
-  public function update(Request $request, Company $company)
+  public function update(ValidatingCompanyForms $request, Company $company)
   {
     $company->name = $request->companyName;
     $company->fill($request->except('companyLogo'));

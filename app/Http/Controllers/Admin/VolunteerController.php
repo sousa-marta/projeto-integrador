@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\{Volunteer, Location};
+use App\Http\Requests\ValidatingVolunteerForms;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -43,7 +44,7 @@ class VolunteerController extends Controller
    * @param  \Illuminate\Http\Request  $request
    * @return \Illuminate\Http\Response
    */
-  public function store(Request $request)
+  public function store(ValidatingVolunteerForms $request)
   {
     Volunteer::create([
       'name' => $request->volunteerName,
@@ -99,7 +100,7 @@ class VolunteerController extends Controller
    * @param  \App\Volunteer  $volunteer
    * @return \Illuminate\Http\Response
    */
-  public function update(Request $request, Volunteer $volunteer)
+  public function update(ValidatingVolunteerForms $request, Volunteer $volunteer)
   {
     $volunteer->name = $request->volunteerName;
     $volunteer->fill($request->except('volunteerImg'));

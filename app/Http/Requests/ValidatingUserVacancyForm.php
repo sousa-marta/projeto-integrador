@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class AppliedVacanciesFormRequest extends FormRequest
+class ValidatingUserVacancyForm extends FormRequest
 {
   /**
    * Determine if the user is authorized to make this request.
@@ -29,11 +29,11 @@ class AppliedVacanciesFormRequest extends FormRequest
       'resume' => 'mimes:pdf|max:300'
     ];
   }
-
+  
   public function attributes()
   {
     return [
-      'name' => 'nome',
+      'name' => 'nome completo',
       'email' => 'e-mail',
       'resume' => 'currículo'
     ];
@@ -44,9 +44,9 @@ class AppliedVacanciesFormRequest extends FormRequest
     return [
       // 'regra' => 'mensagem'
       'required' => 'O campo :attribute é obrigatório',
-      'min' => 'O campo :attribute precisa de pelo menos 3 caracteres',
-      'mimes' => 'O formato de arquivo anexado não é permitido',
-      'max' => 'Seu arquivo PDF ultrapassou o tamanho permitido (máx.: 300KB)'
+      'min' => 'O campo :attribute precisa de pelo menos :min caracteres',
+      'max' => 'O campo :attribute ultrapassou o tamanho permitido (máx.: :max KB)',
+      'mimes' => 'O formato de arquivo anexado não é permitido'
     ];
   }
 }

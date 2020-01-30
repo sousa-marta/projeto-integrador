@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\{Course, Category, Company};
+use App\Http\Requests\ValidatingCourseForms;
 use Illuminate\Http\Request;
 
 class CourseController extends Controller
@@ -40,7 +41,7 @@ class CourseController extends Controller
    */
 
   // Método para salvar novo curso
-  public function store(Request $request)
+  public function store(ValidatingCourseForms $request)
   {
     // dd($request);
     Course::create([
@@ -93,7 +94,7 @@ class CourseController extends Controller
    * @param  \App\Course  $course
    * @return \Illuminate\Http\Response
    */
-  public function update(Request $request, Course $course)
+  public function update(ValidatingCourseForms $request, Course $course)
   {
     $course->name = $request->courseName;
     $course->description = $request->courseDescription;
