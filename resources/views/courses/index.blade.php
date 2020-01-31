@@ -34,35 +34,19 @@ Cursos
 
     <div id="collapseCategory" class="collapse list-group-item bg-light">
 
-      <!-- Collapse do primeiro tópico de busca -->
-      <div>
-        <a data-toggle="collapse" href="#collapseHotel">Hotelaria<i class="fa fa-angle-down px-1"></i></a>
-        <ul id="collapseHotel" class="collapse list-group">
-          <li class="list-group-item"><a href="#atendente">Atendente</a></li>
-          <li class="list-group-item"><a href="#camareiro">Camareiro</a></li>
-          <li class="list-group-item"><a href="#recepcionista">Recepcionista</a></li>
-        </ul>
-      </div>
+      @foreach($categories as $category) 
+        <!-- Collapse do primeiro tópico de busca -->
+        <div>
+          <a data-toggle="collapse" href="#collapseHotel">{{$category->name}}<i class="fa fa-angle-down px-1"></i></a>
+          <ul id="collapseHotel" class="collapse list-group">
+            @foreach($courses as $course)
+              <li class="list-group-item"><a href="#camareiro">{{$course->name}}</a></li>
 
-      <!-- Collapse do segundo tópico de busca -->
-      <div>
-        <a data-toggle="collapse" href="#collapseLanguages">Idiomas<i class="fa fa-angle-down px-1"></i></a>
-        <ul id="collapseLanguages" class="collapse list-group">
-          <li class="list-group-item"><a href="#portugues">Português</a></li>
-          <li class="list-group-item"><a href="#ingles">Inglês</a></li>
-          <li class="list-group-item"><a href="#espanhol">Espanhol</a></li>
-        </ul>
-      </div>
+            @endforeach
+          </ul>
+        </div>
+      @endforeach
 
-      <!-- Collapse do terceiro tópico de busca -->
-      <div>
-        <a data-toggle="collapse" href="#collapseProgramming">Programação<i class="fa fa-angle-down px-1"></i></a>
-        <ul id="collapseProgramming" class="collapse list-group">
-          <li class="list-group-item"><a href="#csshtlm">CSS + HTML</a></li>
-          <li class="list-group-item"><a href="#phyton">Phyton</a></li>
-          <li class="list-group-item"><a href="#logica">Lógica de Programação</a></li>
-        </ul>
-      </div>
     </div>
 
     <!-- Campo de busca por palavra -->
