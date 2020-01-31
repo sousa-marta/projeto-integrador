@@ -198,13 +198,23 @@ nav .breadcrumb-item-link:hover, nav .breadcrumb-item-link:focus {
 .home-banner h1 {
   text-transform: uppercase;
   font-family: 'Baloo', cursive;
-  margin-bottom: 3rem;
+  /* margin-bottom: 1rem; */
   text-align: center;
 }
 
+.home-banner p {
+  font-family: 'Baloo', cursive;
+  margin-bottom: 2rem;
+}
+
 .home-banner button {
-  margin-bottom: 10vh;
+  margin-bottom: 5vh;
   padding: 0.5rem 2rem;
+}
+
+.fa-chevron-circle-down {
+  font-size: 20px;
+  scroll-behavior: smooth;
 }
 
 .home-btn-big {display: none;}

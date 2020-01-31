@@ -49,10 +49,10 @@ Apoio
 <section id="card-legal" class="container">
   <div class="container p-3 text-center">
     <div class="row align-items-center justify-content-center">
-      <div class="col-6 col-md-4">
-        <img class="img-fluid" src="img/juridico.png" aria-hidden="true" alt="">
+      <div class="col-6 col-md-5">
+        <img class="img-fluid w-50" src="img/juridico.png" aria-hidden="true" alt="">
       </div>
-      <h2 class="col-md-8">Apoio Jurídico</h2>
+      <h2 class="col-md-6">Apoio Jurídico</h2>
     </div>
   </div>
   <div class="card text-white mb-3 card-bg-green mx-2">
@@ -73,10 +73,10 @@ Apoio
 <section id="card-professional" class="container">
   <div class="container p-3 text-center">
     <div class="row align-items-center justify-content-center">
-      <div class="col-6 col-md-4">
-        <img class="img-fluid" src="img/mentoria.svg" aria-hidden="true" alt="">
+      <div class="col-6 col-md-5">
+        <img class="img-fluid w-50" src="img/mentoria.svg" aria-hidden="true" alt="">
       </div>
-      <h2 class="col-md-8">Mentoria Profissional</h2>
+      <h2 class="col-md-6">Mentoria Profissional</h2>
     </div>
   </div>
   <div class="card text-white mb-3 card-bg-green mx-2">
@@ -121,10 +121,10 @@ Apoio
 <section id="card-psychologic" class="container">
   <div class="container p-3 text-center">
     <div class="row align-items-center justify-content-center">
-      <div class="col-6 col-md-4">
-        <img class="img-fluid" src="img/psicologia2.png" aria-hidden="true" alt="">
+      <div class="col-6 col-md-5">
+        <img class="img-fluid w-50" src="img/psicologia2.png" aria-hidden="true" alt="">
       </div>
-      <h2 class="col-md-8">Apoio Psicológico</h2>
+      <h2 class="col-md-6">Apoio Psicológico</h2>
     </div>
   </div>
   <div class="card text-white mb-3 card-bg-green mx-2">

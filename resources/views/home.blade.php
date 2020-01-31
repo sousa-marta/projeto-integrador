@@ -9,12 +9,14 @@ Oppy
 <!-- Banner -->
 <section class="home-banner">
   <h1>Onde a esperança se reencontra</h1>
+  <p>Sua vida no Brasil</p>
   <button type="button" class="btn btn-primary home-btn-big" onclick="location.href='/users/create'">Faça parte dessa comunidade</button>
   <button type="button" class="btn btn-primary home-btn-sm" onclick="location.href='/users/create'">Faça parte</button>
+  <a href="#sumary-oppy"><i class="fas fa-chevron-circle-down mb-5"></i></a>
 </section>
 
 <!-- Texto Resumo Sobre o Site -->
-<section class="home-summary">
+<section class="home-summary" id="sumary-oppy">
   <div class="justify-content-around align-itens-center d-flex flex-column">
     <p class="indent">A Oppy foi criada em 2019 com o objetivo de dar a oportunidade para pessoas que emigraram obterem as habilidades técnicas e emocionais para entrar no mercado de trabalho no novo país e melhorar suas condições de vida.</p>
     <p class="indent">Contamos com o apoio de empresas e pessoas voluntárias para conectar essa mão-de-obra qualificada e cheia de energia e auxiliar a integração delas.</p>

@@ -45,7 +45,7 @@
             <a class="nav-link" href="/courses"><span class="fa">&#xf19d;</span> Cursos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/vacancies"><span class="fa">&#xf0b1;</span> Oportunidades</a>
+            <a class="nav-link" href="/vacancies"><span class="fa">&#xf0b1;</span> Vagas</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/support"><span class="fa">&#xf004;</span> Apoio</a>
