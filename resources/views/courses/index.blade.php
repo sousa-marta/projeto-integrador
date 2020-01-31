@@ -37,11 +37,12 @@ Cursos
       @foreach($categories as $category) 
         <!-- Collapse do primeiro tópico de busca -->
         <div>
-          <a data-toggle="collapse" href="#collapseHotel">{{$category->name}}<i class="fa fa-angle-down px-1"></i></a>
-          <ul id="collapseHotel" class="collapse list-group">
+          <a data-toggle="collapse" href=" #collapse{{$category->name}}">{{$category->name}}<i class="fa fa-angle-down px-1"></i></a>
+          <ul id="collapse{{$category->name}}" class="collapse list-group">
             @foreach($courses as $course)
-              <li class="list-group-item"><a href="#camareiro">{{$course->name}}</a></li>
-
+              @if ($course->category_id == $category->id)
+                <li class="list-group-item"><a href="/courses/{{$course->id}}">{{$course->name}}</li></a>
+              @endif
             @endforeach
           </ul>
         </div>
