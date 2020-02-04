@@ -55,9 +55,9 @@ Editar Informação do usuário
 
     <!-- informações adicionais -->
     <div class="form-group">
-      <label for="userPhone">Telefone</label>
+      <label for="userPhone">Celular</label>
       <input type="tel" class="form-control" name="userPhone" id="userPhone" value='{{ $user->phone }}' pattern="[0-9]{2} [0-9]{5}-[0-9]{4}">
-      <small>Formato: 11 12345-1234</small>
+      <small><strong>Formato:</strong> 11 12345-6789</small>
     </div>
 
     <div class="row">

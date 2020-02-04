@@ -28,7 +28,7 @@ class ValidatingCompanyForms extends FormRequest
       'companyLogo' => 'mimes:jpeg,jpg,bmp,png|max:150',
       'companyDescription' => 'required|min:30',
       'companyPOC' => 'required|min:3',
-      'companyPhone' => 'required|min:10',
+      'companyPhone' => 'required|min:10|max:12',
       'companyEmail' => 'required|email:rfc',
       'companyAddress' => 'required|min:3',
       'companyAddressNo' => 'required|integer',

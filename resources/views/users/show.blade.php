@@ -22,7 +22,7 @@ Página Usuário
   <div class="container d-flex justify-content-around p-3 align-items-center">
     <img src="/img/users/{{ $user->img }}" alt="foto usuário" class="figure-img img-fluid rounded user-page-photo">
     <div>
-      <h1>{{ $user->name }}</h1>
+      <h1>{{ $userName[0] }}</h1>
       <p><b>País de origem:</b> {{ $user->location->country }}</p>
       <button class="mt-3 col-lg-12 btn btn-secondary" onclick='location.href="/users/{{ $user->id }}/edit"'>Editar informações</a>
     </div>

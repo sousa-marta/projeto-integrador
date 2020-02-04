@@ -60,7 +60,8 @@
             @auth
             <div class="dropdown">
               <button class="btn btn-loggedin dropdown-toggle" type="button" id="dropdownUserMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Olá, <strong>{{Auth::user()->name}}</strong>!
+                @php $explodedUserName = explode(' ',Auth::user()->name) @endphp
+                Olá, <strong>{{$explodedUserName[0]}}</strong>!
               </button>
               <div class="dropdown-menu px-0" aria-labelledby="dropdownUserMenu">
                 @hasrole('admin')

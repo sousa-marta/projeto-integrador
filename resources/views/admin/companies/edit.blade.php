@@ -34,9 +34,9 @@ Editar Empresa
         <input type="text" class="form-control" name="companyPOC" id="personContact" value="{{$company->POC}}" required>
       </div>
       <div class="form-group col-md-4 mt-3">
-        <label for="companyPhone">Telefone</label>
-        <input type="tel" class="form-control" name="companyPhone" id="companyPhone" value="{{$company->phone}}" pattern="[0-9]{2}[0-9]{5}[0-9]{4}" required>
-        <small><strong>Formato:</strong> 11 12345-1234</small>
+        <label for="companyPhone">Telefone Comercial</label>
+        <input type="tel" class="form-control" name="companyPhone" id="companyPhone" value="{{$company->phone}}" pattern="[0-9]{2} [0-9]{4}-[0-9]{4}" required>
+        <small><strong>Formato:</strong> 11 1234-5678</small>
       </div>
       <div class="form-group col-md-4 mt-3">
         <label for="companyEmail">E-mail</label>

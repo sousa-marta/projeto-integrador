@@ -20,12 +20,13 @@ Contato | FAQ
 
 <!-- Formulário de Contato -->
 <section class="d-flex justify-content-center align-items-center my-2">
-  <form action="" method="post" class="card p-4 col-11 col-md-10 contact-form-design">
+  <form method="post" class="card p-4 col-11 col-md-10 contact-form-design">
+  @csrf
     <p class="form-group text-center">Caso não encontre a resposta para a sua pergunta abaixo, não hesite em nos contatar usando o formulário ou diretamente pelo e-mail: <a class="contact-email" href="mailto:">contato@oppy.com.br</a></p>
     <div class="row">
       <div class="form-group col-12 col-sm-6">
         <label for="contactName"><strong>Nome</strong></label>
-        <input type="text" class="form-control" name="contactName" id="contactName" placeholder="Nome" required>
+        <input type="text" class="form-control" name="contactName" id="contactName" placeholder="Nome" pattern=".{3,}" required>
       </div>
       <div class="form-group col-12 col-sm-6">
         <label for="contactEmail"><strong>E-mail</strong></label>
@@ -34,7 +35,7 @@ Contato | FAQ
     </div>
     <div class="form-group col-12">
       <label for="contactSubject"><strong>Assunto</strong></label>
-      <select class="col-lg-12 form-control" name="contactSubject" id="contactSubject">
+      <select class="col-lg-12 form-control" name="contactSubject" id="contactSubject" required>
         <option value="" selected disabled>Selecione o assunto</option>;
         <option value="apoio">Apoio</option>
         <option value="cadastro">Cadastro</option>
@@ -48,7 +49,7 @@ Contato | FAQ
     </div>
     <div class="form-group col-12">
       <label for="contactMessage"><strong>Mensagem</strong></label>
-      <textarea class="form-control" name="contactMessage" id="contactMessage" rows="3"></textarea>
+      <textarea class="form-control" name="contactMessage" id="contactMessage" rows="3" required></textarea>
     </div>
     <button type="submit" class="btn btn-primary align-self-center mt-3">Enviar</button>
   </form>
@@ -103,5 +104,4 @@ Contato | FAQ
     </div>
   </div>
 </div>
-
 @endsection

@@ -29,9 +29,9 @@ Cadastrar Voluntária(o)
         <input type="date" class="form-control" name="volunteerBirth" id="volunteerBirth" required>
       </div>
       <div class="form-group col-md-4 mt-3">
-        <label for="volunteerPhone">Telefone</label>
-        <input type="tel" class="form-control" name="volunteerPhone" id="volunteerPhone" placeholder="11123451234" pattern="[0-9]{2}[0-9]{5}[0-9]{4}" required>
-        <small><strong>Formato:</strong> 11123451234</small>
+        <label for="volunteerPhone">Celular</label>
+        <input type="tel" class="form-control" name="volunteerPhone" id="volunteerPhone" placeholder="11 12345-6789" pattern="[0-9]{2} [0-9]{5}-[0-9]{4}" required>
+        <small><strong>Formato:</strong> 11 12345-6789</small>
       </div>
       <div class="form-group col-md-4 mt-3">
         <label for="volunteerEmail">E-mail</label>
