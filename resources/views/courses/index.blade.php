@@ -26,19 +26,20 @@ Cursos
 
 <!-- Barra de Navegação Lateral -->
 <aside class="complete-menu mt-5">
-  <button type="button" class="col-lg-12 btn rounded-0 filter-title-bg text-white text-left font-weight-bold m-0 py-3 visible-xs visible-sm collapsed" data-toggle="collapse" data-target="#collapseFilter">Filtros <span class="fa fa-angle-down px-1"></span></button>
+  <h5 class="col-lg-12 rounded-0 filter-title-bg text-white text-left font-weight-bold m-0 py-3">Cursos</h5>
 
-  <!-- Iníco collapse -->
-  <div id="collapseFilter" class="collapse">
-    <button type="button" class="col-lg-12 text-white btn rounded-0 collapse-bg font-weight-bold text-left m-0 py-3" data-toggle="collapse" data-target="#collapseCategory">Área de Atuação <i class="fa fa-caret-square-o-down px-1"></i></button>
+  <div>
+    <div class=" list-group-item rounded-0 bg-secondary">
+      <h6 class="text-white font-weight-bold text-left m-0 py-2" >Área de Atuação</h6>
+    </div>
 
-    <div id="collapseCategory" class="collapse list-group-item bg-light">
+    <div class=" list-group-item bg-light">
 
+      <!-- Collapse de Cada Categoria -->
       @foreach($categories as $category) 
-        <!-- Collapse do primeiro tópico de busca -->
-        <div>
+        <div class="my-2 font-weight-bold">
           <a data-toggle="collapse" href=" #collapse{{$category->name}}">{{$category->name}}<i class="fa fa-angle-down px-1"></i></a>
-          <ul id="collapse{{$category->name}}" class="collapse list-group">
+          <ul id="collapse{{$category->name}}" class="collapse multi-collapse list-group">
             @foreach($courses as $course)
               @if ($course->category_id == $category->id)
                 <li class="list-group-item"><a href="/courses/{{$course->id}}">{{$course->name}}</li></a>
@@ -50,15 +51,11 @@ Cursos
 
     </div>
 
-    <!-- Campo de busca por palavra -->
-    <div class="list-group-item row form-group p-3 bg-secondary">
-      <div class="form-group ">
-        <label class="font-weight-bold text-light" for="busca">Busca por Palavra Chave</label>
-        <input type="text" class="form-control" id="busca" placeholder="Procurar...">
-      </div>
-      <!-- TODO: arrumar href de buscar após deixar site dinâmico com banco de dados -->
-      <button type="button" class="btn btn-secondary col-lg-12" onclick="location.href='/courses/1'"><i class="fa fa-search"></i> Buscar</button>
+    <!-- Mostrar Todos os Cursos  -->
+    <div class="list-group-item d-flex justify-content-center py-4  bg-secondary">
+      <button class="text-light btn btn-primary" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false">Mostrar Todos</button>
     </div>
+
   </div>
 </aside>
 
@@ -125,3 +122,5 @@ Cursos
 </section>
 
 @endsection
+
+<script src="/js/courses.js"></script>
