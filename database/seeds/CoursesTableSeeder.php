@@ -13,6 +13,22 @@ class CoursesTableSeeder extends Seeder
   public function run()
   {
     DB::table('courses')->insert([
+      ['name' => "Recepcionista",
+      'description' => "Curso completo de recepcionista, pratique tanto habilidades pessoais quanto aprenda a mexer nos softwares mais utilizados nessa área.",
+      'duration' => 6,
+      'start' => '2020-05-22',
+      'end' => '2020-11-22',
+      'status' => 'disponível',
+      'category_id' => 1,
+      'company_id' => 2],
+      ['name' => "Cuidador de Idosos",
+      'description' => "Nesse curso extensivo semi-presencial serão abordados primeiros-socorros e psicologia.",
+      'duration' => 12,
+      'start' => '2020-06-13',
+      'end' => '2021-06-22',
+      'status' => 'disponível',
+      'category_id' => 4,
+      'company_id' => 3],
       ['name' => "Programação Back-end",
       'description' => "Curso completo de programação back-end com ensino das seguintes linguagens: PHP, Java e Go.",
       'duration' => 10,

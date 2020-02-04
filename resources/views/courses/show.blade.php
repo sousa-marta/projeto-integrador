@@ -97,6 +97,11 @@ Curso de {{ $course->name }}
     <li>Idade mínima de 16 anos.</li>
     <li>Conhecimentos equivalentes ao Ensino Fundamental completo.</li>
   </ul> --}}
+
+  <!-- LINK PARA VAGAS PARA CURSO -->
+  <h5 class="mt-5 font-italic">Veja as <a href="/vacancies/{{$course->id}}" class="btn btn-primary font-weight-bold mx-2 px-5">vagas</a> dessa mesma área de conhecimento</h5>
+
+
 </section>
 
 <!-- CURSOS SEMELHANTES -->
