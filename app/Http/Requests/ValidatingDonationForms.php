@@ -25,7 +25,7 @@ class ValidatingDonationForms extends FormRequest
   {
     return [
       'donationName' => 'required|min:3',
-      'donationPhone' => 'required|min:10',
+      'donationPhone' => 'required|min:10|max:13',
       'donationValue' => 'required|min:3',
       'donationStatus' => 'required'
     ];
@@ -35,7 +35,7 @@ class ValidatingDonationForms extends FormRequest
   {
     return [
       'donationName' => 'nome',
-      'donationPhone' => 'telefone',
+      'donationPhone' => 'celular',
       'donationValue' => 'valor da doação',
       'donationStatus' => 'status da doação'
     ];

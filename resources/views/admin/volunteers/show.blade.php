@@ -32,7 +32,7 @@ Voluntárias(os)
               <h6 class="card-text"><strong>País:</strong> {{$location->country}}</h6>
             </div>
             <div class="row d-flex justify-content-between">
-              <h6 class="card-text"><i class="fa">&#xf095;</i> <strong>Telefone:</strong> <a href="tel://+55{{$volunteer->phone}}"> {{$volunteer->phone}}</a></h6>
+              <h6 class="card-text"><i class="fa">&#xf095;</i> <strong>Celular:</strong> <a href="tel://+55{{$volunteer->phone}}"> {{$volunteer->phone}}</a></h6>
               <h6 class="card-text"><i class="fa">&#xf0e0;</i> <strong>E-mail:</strong> <a href="mailto:{{$volunteer->email}}?Subject=Contato%20{{$volunteer->name}}"> {{$volunteer->email}}</a></h6>
             </div>
             <hr>

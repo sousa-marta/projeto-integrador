@@ -18,9 +18,9 @@ Editar Doações
       <input type="text" class="form-control" name="donationName" id="donationName" value="{{$donation->name}}" required>
     </div>
     <div class="form-group">
-      <label for="donationPhone">Telefone</label>
-      <input type="tel" class="form-control" name="donationPhone" id="donationPhone" value="{{$donation->phone}}" required>
-      <small>Formato: 11 12345-1234</small>
+      <label for="donationPhone">Celular</label>
+      <input type="tel" class="form-control" name="donationPhone" id="donationPhone" value="{{$donation->phone}}" pattern="[0-9]{2} [0-9]{5}-[0-9]{4}" required>
+      <small><strong>Formato:</strong> 11 12345-6789</small>
     </div>
     <div class="form-group">
       <label for="donationValue">Valor</label>

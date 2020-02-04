@@ -30,7 +30,7 @@ class ValidatingVacancyForms extends FormRequest
       'city' => 'required|min:3',
       'wage' => 'required|min:3',
       'email' => 'required|email:rfc',
-      'phone' => 'required|min:10',
+      'phone' => 'required|min:10|max:12',
       'description' => 'required|min:30',
       'status' => 'required'
     ];
