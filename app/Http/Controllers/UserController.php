@@ -88,6 +88,7 @@ class UserController extends Controller
   public function show($id, Request $request)
   {
     $user = User::find($id);
+    $userName = explode(' ', $user->name);
     $message = $request->session()->get('message');
 
     if (Auth::user()->email == $user->email) {
@@ -116,7 +117,7 @@ class UserController extends Controller
       $courses_opened = Course::findMany($courses)->where('status', 'disponível');
       $courses_closed = Course::findMany($courses)->where('status', 'indisponível');
 
-      return view('users.show', compact('user', 'vacancies_opened', 'vacancies_closed', 'courses_opened', 'courses_closed', 'message'));
+      return view('users.show', compact('user', 'vacancies_opened', 'vacancies_closed', 'courses_opened', 'courses_closed', 'message', 'userName'));
     }
 
 
@@ -190,7 +191,9 @@ class UserController extends Controller
       return redirect('/admin');
     }
 
-    return redirect()->back();
+    $userName = explode(' ',Auth::user()->name);
+
+    return redirect()->back()->with('userName');
   }
 
   public function sendResume(ValidatingUserVacancyForm $request)
