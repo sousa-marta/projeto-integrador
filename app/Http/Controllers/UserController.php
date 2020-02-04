@@ -186,14 +186,12 @@ class UserController extends Controller
     if (!Auth::attempt($request->only(['email', 'password']))) {
       return redirect()->back()->with('wrongLogin', 'message');
     }
-
+    
     if (Auth::user()->email == 'admin@oppy.com') {
       return redirect('/admin');
     }
-
-    $userName = explode(' ',Auth::user()->name);
-
-    return redirect()->back()->with('userName');
+    
+    return redirect()->back();
   }
 
   public function sendResume(ValidatingUserVacancyForm $request)
