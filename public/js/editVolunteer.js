@@ -1,4 +1,4 @@
-$("#userAddressPC").keyup(function(){
+$("#volunteerZip").keyup(function(){
     //Início do Comando AJAX
     
     if($(this).val().length >= 8)
@@ -7,9 +7,11 @@ $("#userAddressPC").keyup(function(){
               dataType: 'json',
               success: function(resposta){
                  
-                  $("#userAddressStr").val(resposta.logradouro);
+                  $("#volunteerAddress").val(resposta.logradouro);
+                  $("#volunteerState").val(resposta.uf);
+                  $("#volunteerCity").val(resposta.localidade);
                   
-                  $("#userAddressNo").focus();
+                  $("#volunteerAddressComp").focus();
               }
           });
 });
