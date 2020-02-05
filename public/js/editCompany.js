@@ -11,7 +11,7 @@ $("#companyZip").keyup(function(){
                   $("#companyCity").val(resposta.uf);
                   $("#companyState").val(resposta.localidade);
                   
-                  $("#companyAddressComp").focus();
+                  $("#companyAddressNo").focus();
               }
           });
 });

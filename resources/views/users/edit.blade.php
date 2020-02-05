@@ -62,7 +62,7 @@ Editar Informação do usuário
 
 
     <div class="row">
-      <div class="form-group col-3 pr-1 pl-0 align-center">
+      <div class="form-group col-3 pr-1 pl-0 ">
         <label for="userAddressPC">CEP</label>
         <input type="text" class="form-control" name="userAddressPC" id="userAddressPC" value='{{ $user->zip }}'>
       </div>

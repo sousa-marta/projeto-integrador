@@ -11,7 +11,7 @@ $("#volunteerZip").keyup(function(){
                   $("#volunteerState").val(resposta.uf);
                   $("#volunteerCity").val(resposta.localidade);
                   
-                  $("#volunteerAddressComp").focus();
+                  $("#volunteerAddressNo").focus();
               }
           });
 });

@@ -41,6 +41,10 @@ Cadastrar Empresa
         <label for="companyEmail">E-mail</label>
         <input type="email" class="form-control" name="companyEmail" id="companyEmail" placeholder="E-mail" required>
       </div>
+      <div class="form-group col-md-3">
+        <label for="companyZip">CEP</label>
+        <input type="text" class="form-control" name="companyZip" id="companyZip" placeholder="CEP" required>
+      </div>
       <div class="form-group col-md-6">
         <label for="companyAddress">Endereço</label>
         <input type="text" class="form-control" name="companyAddress" id="companyAddress" placeholder="Endereço" required>
@@ -54,16 +58,12 @@ Cadastrar Empresa
         <input type="text" class="form-control" name="companyAddressComp" id="companyAddressComp" placeholder="Complemento" required>
       </div>
       <div class="form-group col-md-3">
-        <label for="companyZip">CEP</label>
-        <input type="text" class="form-control" name="companyZip" id="companyZip" placeholder="CEP" required>
-      </div>
-      <div class="form-group col-md-3">
         <label for="city">Cidade</label>
-        <input type="text" class="form-control" name="companyCity" id="city" placeholder="Cidade" required>
+        <input type="text" class="form-control" name="companyCity" id="companyCity" placeholder="Cidade" required>
       </div>
       <div class="form-group col-md-3">
         <label for="state">Estado</label>
-        <input type="text" class="form-control" name="companyState" id="state" placeholder="Estado" required>
+        <input type="text" class="form-control" name="companyState" id="companyState" placeholder="Estado" required>
       </div>
       <div class="form-group col-md-3">
         <label for="companyCountry">País</label>

@@ -37,6 +37,10 @@ Cadastrar Voluntária(o)
         <label for="volunteerEmail">E-mail</label>
         <input type="email" class="form-control" name="volunteerEmail" id="volunteerEmail" placeholder="E-mail" required>
       </div>
+      <div class="form-group col-md-3">
+        <label for="volunteerZip">CEP</label>
+        <input type="text" class="form-control" name="volunteerZip" id="volunteerZip" placeholder="CEP" required>
+      </div>
       <div class="form-group col-md-6">
         <label for="volunteerAddress">Endereço</label>
         <input type="text" class="form-control" name="volunteerAddress" id="volunteerAddress" placeholder="Endereço" required>
@@ -50,16 +54,12 @@ Cadastrar Voluntária(o)
         <input type="text" class="form-control" name="volunteerAddressComp" id="volunteerAddressComp" placeholder="Complemento" required>
       </div>
       <div class="form-group col-md-3">
-        <label for="volunteerZip">CEP</label>
-        <input type="text" class="form-control" name="volunteerZip" id="volunteerZip" placeholder="CEP" required>
-      </div>
-      <div class="form-group col-md-3">
         <label for="city">Cidade</label>
-        <input type="text" class="form-control" name="volunteerCity" id="city" placeholder="Cidade" required>
+        <input type="text" class="form-control" name="volunteerCity" id="volunteerCity" placeholder="Cidade" required>
       </div>
       <div class="form-group col-md-3">
         <label for="state">Estado</label>
-        <input type="text" class="form-control" name="volunteerState" id="state" placeholder="Estado" required>
+        <input type="text" class="form-control" name="volunteerState" id="volunteerState" placeholder="Estado" required>
       </div>
       <div class="form-group col-md-3">
         <label for="volunteerCountry">País</label>

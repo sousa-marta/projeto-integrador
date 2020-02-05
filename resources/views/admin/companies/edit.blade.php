@@ -42,6 +42,10 @@ Editar Empresa
         <label for="companyEmail">E-mail</label>
         <input type="email" class="form-control" name="companyEmail" id="companyEmail" value="{{$company->email}}" required>
       </div>
+      <div class="form-group col-md-3">
+        <label for="companyZip">CEP</label>
+        <input type="text" class="form-control" name="companyZip" id="companyZip" value="{{$company->zip}}" required>
+      </div>
       <div class="form-group col-md-6">
         <label for="companyAddress">Endereço</label>
         <input type="text" class="form-control" name="companyAddress" id="companyAddress" value="{{$company->address}}" required>
@@ -55,16 +59,12 @@ Editar Empresa
         <input type="text" class="form-control" name="companyAddressComp" id="companyAddressComp" value="{{$company->complement}}" required>
       </div>
       <div class="form-group col-md-3">
-        <label for="companyZip">CEP</label>
-        <input type="text" class="form-control" name="companyZip" id="companyZip" value="{{$company->zip}}" required>
-      </div>
-      <div class="form-group col-md-3">
         <label for="city">Cidade</label>
-        <input type="text" class="form-control" name="companyCity" id="city" value="{{$company->city}}" required>
+        <input type="text" class="form-control" name="companyCity" id="companyCity" value="{{$company->city}}" required>
       </div>
       <div class="form-group col-md-3">
         <label for="state">Estado</label>
-        <input type="text" class="form-control" name="companyState" id="state" value="{{$company->state}}" required>
+        <input type="text" class="form-control" name="companyState" id="companyState" value="{{$company->state}}" required>
       </div>
       <div class="form-group col-md-3">
         <label for="companyCountry">País</label>
