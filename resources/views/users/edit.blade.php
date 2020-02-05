@@ -60,6 +60,18 @@ Editar Informação do usuário
       <small><strong>Formato:</strong> 11 12345-6789</small>
     </div>
 
+
+    <div class="row">
+      <div class="form-group col-4 pr-1 pl-0">
+        <label for="userAddressPC">CEP</label>
+        <input type="text" class="form-control" name="userAddressPC" id="userAddressPC" value='{{ $user->zip }}'>
+      </div>
+      <div class="form-group col-8 p-0">
+        <label for="userAddressComp">Complemento</label>
+        <input type="text" class="form-control" name="userAddressComp" id="userAddressComp" value='{{ $user->complement }}'>
+      </div>
+    </div>
+
     <div class="row">
       <div class="form-group col-8 p-0">
         <label for="userAddressStr">Endereço</label>
@@ -68,17 +80,6 @@ Editar Informação do usuário
       <div class="form-group col-4 p-0 pl-2">
         <label for="userAddressNo">Número</label>
         <input type="text" class="form-control" name="userAddressNo" id="userAddressNo" value='{{ $user->address_number }}'>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="form-group col-6 p-0">
-        <label for="userAddressComp">Complemento</label>
-        <input type="text" class="form-control" name="userAddressComp" id="userAddressComp" value='{{ $user->complement }}'>
-      </div>
-      <div class="form-group col-6 p-0 pl-2">
-        <label for="userAddressPC">CEP</label>
-        <input type="text" class="form-control" name="userAddressPC" id="userAddressPC" value='{{ $user->zip }}'>
       </div>
     </div>
 

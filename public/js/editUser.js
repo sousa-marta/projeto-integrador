@@ -9,7 +9,7 @@ $("#userAddressPC").keyup(function(){
                  
                   $("#userAddressStr").val(resposta.logradouro);
                   
-                  $("#userAddressNo").focus();
+                  $("#userAddressComp").focus();
               }
           });
 });
