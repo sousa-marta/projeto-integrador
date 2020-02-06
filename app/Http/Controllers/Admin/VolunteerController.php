@@ -87,10 +87,11 @@ class VolunteerController extends Controller
    * @param  \App\Volunteer  $volunteer
    * @return \Illuminate\Http\Response
    */
-  public function edit(Volunteer $volunteer)
+  public function edit(Volunteer $volunteer, Request $request)
   {
     $locations = Location::all();
-    return view('admin.volunteers.edit', ['volunteer' => $volunteer, 'locations' => $locations]);
+    $message = $request->session()->get('message');
+    return view('admin.volunteers.edit', ['volunteer' => $volunteer, 'locations' => $locations, 'message' => $message]);
   }
 
   /**
