@@ -12,6 +12,7 @@ Editar Informação do usuário
     <li class="breadcrumb-item active" aria-current="page">Edição</li>
   </ol>
 </nav>
+@include('partials.alerts')
 @endsection
 
 @section('content')

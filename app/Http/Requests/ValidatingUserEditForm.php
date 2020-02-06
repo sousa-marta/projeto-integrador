@@ -28,11 +28,11 @@ class ValidatingUserEditForm extends FormRequest
       'userFullName' => 'required|min:3',
       'userEmail' => 'required|email:rfc',
       'userCountry' => 'required',
-      'userPhone' => 'required|min:10|max:13',
-      'userAddressStr' => 'required|min:3',
-      'userAddressNo' => 'required|integer',
-      'userAddressComp' => 'max: 10',
-      'userAddressPC' => 'required|size:9'
+      'userPhone' => 'nullable|min:10|max:13',
+      'userAddressStr' => 'nullable|min:3',
+      'userAddressNo' => 'nullable|integer',
+      'userAddressComp' => 'nullable|max: 10',
+      'userAddressPC' => 'nullable|size:9'
     ];
   }
   

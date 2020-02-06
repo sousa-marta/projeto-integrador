@@ -22,7 +22,7 @@ class CreateVolunteersTable extends Migration
             $table->string('phone');
             $table->string('address');
             $table->integer('address_number');
-            $table->string('complement');
+            $table->string('complement')->nullable();
             $table->string('zip');
             $table->string('city');
             $table->string('state');
