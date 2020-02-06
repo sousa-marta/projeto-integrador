@@ -9,6 +9,7 @@ Editar Empresa
 <!-- Formulário -->
 <section class="d-flex justify-content-center align-items-center p-3 admin-start-margin">
   <form action="/admin/companies/{{$company->id}}" method="post" class="card p-5 col-md-10" enctype="multipart/form-data">
+  @include('partials.alerts')
     <input type="hidden" name="_method" value="PUT">
     @csrf
     <div class="row justify-content-between align-items-center">
@@ -52,7 +53,7 @@ Editar Empresa
       </div>
       <div class="form-group col-md-3">
         <label for="companyAddressComp">Complemento</label>
-        <input type="text" class="form-control" name="companyAddressComp" id="companyAddressComp" value="{{$company->complement}}" required>
+        <input type="text" class="form-control" name="companyAddressComp" id="companyAddressComp" value="{{$company->complement}}">
       </div>
       <div class="form-group col-md-3">
         <label for="companyZip">CEP</label>

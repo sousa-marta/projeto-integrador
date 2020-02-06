@@ -9,6 +9,7 @@ Editar Voluntária(o)
 <!-- Formulário -->
 <section class="d-flex justify-content-center align-items-center p-3 admin-start-margin">
   <form action="/admin/volunteers/{{$volunteer->id}}" method="post" class="card p-5 col-md-10" enctype="multipart/form-data">
+  @include('partials.alerts')
     <input type="hidden" name="_method" value="PUT">
     @csrf
     <div class="row justify-content-between align-items-center">
@@ -48,7 +49,7 @@ Editar Voluntária(o)
       </div>
       <div class="form-group col-md-3">
         <label for="volunteerAddressComp">Complemento</label>
-        <input type="text" class="form-control" name="volunteerAddressComp" id="volunteerAddressComp" value="{{$volunteer->complement}}" required>
+        <input type="text" class="form-control" name="volunteerAddressComp" id="volunteerAddressComp" value="{{$volunteer->complement}}">
       </div>
       <div class="form-group col-md-3">
         <label for="volunteerZip">CEP</label>

@@ -23,7 +23,7 @@ class CreateCompaniesTable extends Migration
             $table->string('email');
             $table->string('address');
             $table->integer('address_number');
-            $table->string('complement');
+            $table->string('complement')->nullable();
             $table->string('zip');
             $table->string('city');
             $table->string('state');

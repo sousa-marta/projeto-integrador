@@ -87,10 +87,11 @@ class CompanyController extends Controller
    * @param  \App\Company  $company
    * @return \Illuminate\Http\Response
    */
-  public function edit(Company $company)
+  public function edit(Company $company, Request $request)
   {
     $locations = Location::all();
-    return view('admin.companies.edit', ['company' => $company, 'locations' => $locations]);
+    $message = $request->session()->get('message');
+    return view('admin.companies.edit', ['company' => $company, 'locations' => $locations, $message => 'message']);
   }
 
   /**
