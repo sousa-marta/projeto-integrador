@@ -1,18 +1,3 @@
-$("#userAddressPC").keyup(function(){
-    //Início do Comando AJAX
-    
-    if($(this).val().length >= 8)
-          $.ajax({
-              url: 'https://viacep.com.br/ws/'+$(this).val()+'/json/unicode/',
-              dataType: 'json',
-              success: function(resposta){
-                 
-                  $("#userAddressStr").val(resposta.logradouro);
-                  
-                  $("#userAddressNo").focus();
-              }
-          });
-});
 
 // Validações no formulário de edição do usuário
 let editForm = document.querySelector('.user-info-main');
@@ -34,25 +19,11 @@ let spanAddressNo = document.querySelector('.addressNoError');
 let spanAddressComp = document.querySelector('.addressCompError');
 
 editName.addEventListener("change", function(event){
-     if(editName.change){
+     if(!editName.change){
         spanName.innerHTML = "Preencha o nome completo";
         spanName.className = "error active";
      }
  });
-
-editEmail.addEventListener("change", function(event){
-    if(editEmail.change){
-        spanEmail.innerHTML = "Preencha o nome válido";
-        spanEmail.className = "error active";
-    }
-});
-
-editPhone.addEventListener("change", function(event){
-    if(editPhone.change){
-        spanPhone.innerHTML = "Indique um número de telefone";
-        spanPhone.className = "error active";
-    }
-});
 
 editZIP.addEventListener("change", function(event){
     if(!editZIP){
@@ -96,24 +67,10 @@ editForm.addEventListener("submit", function(event){
 			})
 	}
 
-	if (editEmail.value != email) {
-			errors.push({
-					input: editEmail,
-					msg: "Preencha um email válido"
-			})
-	}
-
 	if (!editCountry.value) {
 			errors.push({
 					input: editCountry,
 					msg: "Ensira um país de residencia"
-			})
-	}
-
-	if (!editPhone.value) {
-			errors.push({
-					input: editPhone,
-					msg: "Ensira um nome de telefone (Formato: 11 12345-6789)"
 			})
 	}
 
@@ -123,6 +80,8 @@ editForm.addEventListener("submit", function(event){
 					msg: "Ensira um CEP válido. (8 números)"
 			})
 	}
+	console.log(editZIP.value);
+	
 
 	if (!editAddress){
 			errors.push({
@@ -130,6 +89,8 @@ editForm.addEventListener("submit", function(event){
 					msg: "Ensira o seu endereço"
 			})
 	}
+
+	console.log(editAddress.value);
 
 	if (!editAddressNo){
 			errors.push({
@@ -145,12 +106,29 @@ editForm.addEventListener("submit", function(event){
 			})
 	}
 
+	console.log(editAddressComp);
+	
+
 	if (errors.length) {
 			event.preventDefault()
 			errors.forEach(error => {
 					let span = error.input.parentChild.querySelector('span');
 
-					//codigo de exibicao
+				errorName = spanName.innerHTML = "Preencha o nome completo";
+				errorClass = spanName.className = "error active";
+				
+				errorZip = spanZIP.innerHTML = "Indique um CEP válido";
+				errorZipClass = spanZIP.className = "error active";
+				
+				errorAddress = spanAddress.innerHTML = "Indique o seu endereço (Rua, avenida, logradouro)";
+				errorAddressClass = spanAddress.className = "error active";
+
+				errorAddressNo = spanAddressNo.innerHTML = "Indique o número do seu endereço";
+				errorAddressNoClass = spanAddressNo.className = "error active";
+				
+				errorAddressComp = spanAddressComp.innerHTML = "Indique o complemento do seu endereço";
+				errorAddressCompClass = spanAddressComp.className = "error active";
+
 			})
 	}
 })
