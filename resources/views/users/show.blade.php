@@ -12,7 +12,6 @@ Página Usuário
     <li class="breadcrumb-item active" aria-current="page">Perfil do Usuário</li>
   </ol>
 </nav>
-
 @include('partials.alerts')
 @endsection
 

@@ -130,11 +130,12 @@ class UserController extends Controller
    * @param  \App\User  $user
    * @return \Illuminate\Http\Response
    */
-  public function edit(User $user)
+  public function edit(User $user, Request $request)
   {
     if (Auth::user()->email == $user->email) {
       $locations = Location::all(); //busca todos os países na base de dados locations
-      return view('users.edit', compact('user','locations'));
+      $message = $request->session()->get('message');
+      return view('users.edit', compact('user','locations','message'));
     }
 
     return redirect('/');
