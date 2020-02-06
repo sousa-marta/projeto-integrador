@@ -94,7 +94,7 @@ Oportunidades
         <img class="logo-size" src="/img/companies/{{$vacancy->company_logo}}" alt="Logo da empresa {{ $vacancy->company_name }}">
       </div>
       <div class="col-lg-8 p-3 text-center">
-        <h4 class="vacancy-name"> Vaga {{ $vacancy->name }}</h4>
+        <h4 class="vacancy-name">Vaga {{ $vacancy->name }}</h4>
         <div class="row justify-content-around">
           <p class="col-6 vacancy-city"><strong>Cidade:</strong> {{ $vacancy->city }}</p>
           <p class="col-6"><strong>Salário:</strong> R$ {{ $vacancy->wage }}</p>
