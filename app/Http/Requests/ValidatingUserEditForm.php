@@ -32,7 +32,7 @@ class ValidatingUserEditForm extends FormRequest
       'userAddressStr' => 'nullable|min:3',
       'userAddressNo' => 'nullable|integer',
       'userAddressComp' => 'nullable|max: 10',
-      'userAddressPC' => 'nullable|size:9'
+      'userAddressPC' => 'nullable|size:8'
     ];
   }
   
