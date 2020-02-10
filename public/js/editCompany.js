@@ -6,11 +6,9 @@ $("#companyZip").keyup(function(){
               url: 'https://viacep.com.br/ws/'+$(this).val()+'/json/unicode/',
               dataType: 'json',
               success: function(resposta){
-                 
                   $("#companyAddress").val(resposta.logradouro);
                   $("#companyCity").val(resposta.uf);
                   $("#companyState").val(resposta.localidade);
-                  
                   $("#companyAddressNo").focus();
               }
           });

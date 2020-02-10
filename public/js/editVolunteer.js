@@ -10,7 +10,7 @@ $("#volunteerZip").keyup(function(){
                   $("#volunteerAddress").val(resposta.logradouro);
                   $("#volunteerState").val(resposta.uf);
                   $("#volunteerCity").val(resposta.localidade);
-                  
+                
                   $("#volunteerAddressNo").focus();
               }
           });
