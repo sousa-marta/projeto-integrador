@@ -31,7 +31,7 @@ class ValidatingVacancyForms extends FormRequest
       'wage' => 'required|min:3',
       'email' => 'required|email:rfc',
       'phone' => 'required|min:10|max:12',
-      'description' => 'required|min:30',
+      'description' => 'required|min:3',
       'status' => 'required'
     ];
   }
@@ -56,7 +56,7 @@ class ValidatingVacancyForms extends FormRequest
     return [
       // 'regra' => 'mensagem'
       'required' => 'O campo :attribute é obrigatório',
-      'min' => 'O campo :attribute precisa de pelo menos 3 caracteres'
+      'min' => 'O campo :attribute precisa de pelo menos :min caracteres'
     ];
   }
 }

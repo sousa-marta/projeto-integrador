@@ -28,13 +28,6 @@ editName.addEventListener("change", function(event){
      }
  });
 
-editName.addEventListener("change", function(event){
-	if(!editName.change){
-		spanName.innerHTML = "Nome modificado";
-		spanName.className = "error active";
-	}
-});
-
 editEmail.addEventListener("change", function(event){
 	if(!editEmail.change){
 		spanEmail.innerHTML = "Email do usuario modificado";
